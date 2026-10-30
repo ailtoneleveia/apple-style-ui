@@ -54,6 +54,7 @@ cada passagem, a largura fica a menos de 4 px da medida do Satellite. Detalhes n
 ```
 estilo/
   ESTILO.md          este arquivo
+  RECEITAS.md        o que fazer quando uma peça reprova no loop de qualidade, por sintoma
   estilo.js          a biblioteca (window.ESTILO no navegador, require no Node)
   teste.js           autoteste: node teste.js
   demo/              composição HyperFrames da prova (index.html usa só o estilo.js)

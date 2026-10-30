@@ -23,7 +23,7 @@ apple-style-ui/
 │   ├── voiceos/           idem
 │   ├── fala-destaque/     pessoa falando com a palavra em destaque: index.html, montar.py, NOTAS.md, exemplo/ (Pexels)
 │   └── pecas_livres.py    gera as peças livres que ocupam o lugar dos recortes e do áudio do original
-├── estilo/                estilo.js, ESTILO.md, teste.js, render.sh, demo/ e medidas/: as molas e a caixa que se transforma
+├── estilo/                estilo.js, ESTILO.md, RECEITAS.md (correção por sintoma), teste.js, render.sh, demo/ e medidas/: as molas e a caixa que se transforma
 ├── clonar/                o kit de clonagem com prova: clonar.py, caso.py, scripts/, modelo/, testes/, CLONAR.md
 ├── biblioteca/            a lista curada (README.md), fichas/, prompts/, site/ (a galeria), GLOSSARIO.md e o classificador
 ├── aprendizado/           portao.py, aprender.py, COMO.md, regressao/ e testes/ (a catraca)

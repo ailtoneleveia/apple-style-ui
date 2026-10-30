@@ -94,6 +94,13 @@
         const Wm = q[2] - q[0] + 1, Hm = q[3] - q[1] + 1;
         const sw = Wm / (m.w * c + m.h * s), sh = Hm / (m.w * s + m.h * c);
         const k = (o.escala || (o.porAltura ? sh : o.porLargura ? sw : Math.sqrt(sw * sh))) * (o.mult || 1);
+        // real: true refaz no tamanho final (meio px). O SF Pro muda o desenho com o tamanho (opsz): medir a 100 px e
+        // escalar põe a letra de título num texto de 15 px (teste cego B3). Use em texto pequeno (até ~60 px).
+        if (o.real && Math.abs(k - 1) > 0.02) {
+          const px0 = parseFloat(fonte.match(/([\d.]+)px/)[1]), px = Math.max(1, Math.round(px0 * k * 2) / 2);
+          const k2 = encaixa(txt, fonte.replace(/[\d.]+px/, px + "px"), q, Object.assign({}, o, { real: false, escala: o.escala && o.escala * px0 / px, esp: esp * px / px0 }), g);
+          return k2 * px / px0;
+        }
         const cx = (o.ancora === "esq" ? q[0] + (m.w * k) / 2 : (q[0] + q[2]) / 2) + (o.dx || 0), cy = (q[1] + q[3]) / 2 + (o.dy || 0);
         g.save();
         if (o.corte != null) { g.beginPath(); g.rect(0, 0, o.corte, H); g.clip(); }

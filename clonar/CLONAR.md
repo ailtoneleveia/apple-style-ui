@@ -99,7 +99,9 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    fica guardada em `.apple-style-ui/mascara.json` para as próximas rodadas e para o `final`.
 6. **Comparar e corrigir.** A rodada roda o medidor por peça (`scripts/qualidade.py comparar`, com a checagem de
    código em `hf/`) e o `proximo` lista as 3 piores peças com o motivo técnico e a correção. Ataque essas 3, uma
-   hipótese por peça. O `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`) e o `diffview.py` mostram onde
+   hipótese por peça. **Antes de mexer, ache o sintoma de cada uma em `estilo/RECEITAS.md`** (na raiz do produto): o
+   que medir, a técnica com os números dos nossos clones e o código ou a ferramenta que faz (rastro de motion blur,
+   deformação líquida, lista em escada, tamanho óptico do texto, ponta do cursor, avatar, profundidade). O `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`) e o `diffview.py` mostram onde
    está o erro no quadro. Detalhes na seção "O loop de qualidade".
 7. **Fechar.** Ao bater o alvo (na mesma hora, sem polir), ou na 6ª rodada: `python3 clonar.py final <pasta>` gera
    `saidas/final.mp4` (a melhor rodada aprovada, de preferência uma em que todas as peças passaram) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
@@ -305,7 +307,8 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 | `compara_mascara.py` | nota só na máscara (camada recriada sobre placa de vídeo), com o "sem camada" ao lado; aceita pegada PNG por peça |
 | `placa_video.py` | placa de um vídeo de pessoa: o original com a camada antiga apagada (inpaint) na pegada de cada quadro |
 | `aparicao.py` | entrada e saída de cada peça (opacidade, deslocamento, escala, desfoque por quadro) medidas contra a placa |
-| `medir.py` | caixa ou momentos de uma peça por cor, quadro a quadro, direto do vídeo |
+| `medir.py` | caixa ou momentos de uma peça por cor, quadro a quadro, direto do vídeo; `--forma faixas` (largura por faixa: escala ou deformação líquida) e `--forma rampa` (borrão da borda: obturador da peça) |
+| `cursor.py` | ponta, ângulo e escala do cursor por quadro (seta macOS ou o PNG do cursor do clone com `--modelo --ponta`); `--autoteste` |
 | `corner.py`, `maskfit.py` | raio de canto; ajuste afim de uma forma do clone contra o original |
 | `inkspan.py`, `inkspan_light.py` | extensão e quantidade de tinta de um texto (escuro, claro ou colorido) |
 | `track.py`, `camtrack.py` | pose de um objeto e câmera contínua por ECC encadeado |

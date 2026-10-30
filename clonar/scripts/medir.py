@@ -6,14 +6,39 @@ teste: escuro (luma<L) | naobranco (255-min>L) | claro (luma>fundo+L) | verde | 
 outros > L) | saturado (max-min > L).
 --forma caixa (padrão): f x0 y0 x1 y1 w h cx cy area da caixa dos pixels que passam (linha/coluna precisa de 3).
 --forma momentos: centro, lados do retângulo equivalente (sqrt(12*autovalor)) e ângulo do eixo longo. Aguenta
-desfoque e motion blur, onde a caixa e o canto não aguentam (bom para morph que gira)."""
+desfoque e motion blur, onde a caixa e o canto não aguentam (bom para morph que gira).
+--forma faixas [--faixas N]: corta a região em N faixas horizontais e dá x0:x1 dos pixels que passam em cada uma.
+Escala pura mantém a razão das larguras entre faixas; deformação líquida não (o meio incha, ou o topo anda e a base
+fica: cisalhamento). Ver estilo/RECEITAS.md, "O cartão estica como líquido".
+--forma rampa: largura da rampa 10-90 % da borda mais forte da região, na horizontal (rx) e na vertical (ry), em px;
+o teste de cor não entra. Com a peça andando v px/quadro em x: borrão L = sqrt(rx² - ry²) / 0,8 e obturador = L / v
+(Satellite: rx 24, ry 12, v 111 → L 26 px, obturador 0,23). Ver RECEITAS.md, "A peça rápida sai nítida demais"."""
 import argparse, subprocess
 import numpy as np
 
 ap = argparse.ArgumentParser()
 ap.add_argument("video"); ap.add_argument("a", type=int); ap.add_argument("b", type=int); ap.add_argument("teste")
 ap.add_argument("--regiao"); ap.add_argument("--limiar", type=float, default=40); ap.add_argument("--forma", default="caixa")
+ap.add_argument("--faixas", type=int, default=6)
 a = ap.parse_args()
+
+
+def rampa(lu, L):
+    """mediana, entre as linhas com degrau acima de L, da largura 10-90 % em volta do maior gradiente da linha"""
+    larg = []
+    for p in lu:
+        lo, hi = p.min(), p.max()
+        if hi - lo < L:
+            continue
+        n = (p - lo) / (hi - lo); g = np.gradient(n); i = int(np.argmax(np.abs(g))); sobe = g[i] > 0
+        e = i
+        while e > 0 and (n[e] > 0.1 if sobe else n[e] < 0.9):
+            e -= 1
+        d = i
+        while d < len(n) - 1 and (n[d] < 0.9 if sobe else n[d] > 0.1):
+            d += 1
+        larg.append(d - e)
+    return float(np.median(larg)) if larg else float("nan")
 w, h = map(int, subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
                                 "-of", "csv=p=0", a.video], capture_output=True, text=True, check=True).stdout.strip().split(","))
 raw = subprocess.run(["ffmpeg", "-v", "error", "-i", a.video, "-vf", f"select=between(n\\,{a.a}\\,{a.b})", "-fps_mode",
@@ -39,6 +64,16 @@ for k, q in enumerate(Q):
         ang = np.degrees(np.arctan2(vec[1, 1], vec[0, 1]))
         ang = ang - 180 if ang > 90 else ang + 180 if ang <= -90 else ang
         print(f"{f} c {cx + reg[0]:.1f},{cy + reg[1]:.1f} W {np.sqrt(12 * ev[1]):.1f} H {np.sqrt(12 * ev[0]):.1f} ang {ang:.1f} area {len(xs)}")
+        continue
+    if a.forma == "rampa":
+        print(f, f"rx {rampa(lu, L):.1f} ry {rampa(lu.T, L):.1f}")
+        continue
+    if a.forma == "faixas":
+        out = []
+        for fx in np.array_split(np.arange(m.shape[0]), a.faixas):
+            cols = np.where(m[fx].sum(0) >= 1)[0]
+            out.append(f"{cols[0] + reg[0]}:{cols[-1] + reg[0]}" if len(cols) else "-")
+        print(f, " ".join(out))
         continue
     rows = np.where(m.sum(1) >= 3)[0]; cols = np.where(m.sum(0) >= 3)[0]
     if len(rows) == 0 or len(cols) == 0:

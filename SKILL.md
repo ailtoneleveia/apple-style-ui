@@ -130,8 +130,10 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 0. **Loop de qualidade, antes de mostrar qualquer vídeo.** Clone: a `rodada` já mede peça por peça. Molde ou vídeo
    novo: `python3 clonar/scripts/qualidade.py estilo <video>/saidas/<nome>.mp4 [--hf <composição>]` (contra o perfil
    do `estilo.js`: molas, obturador, nada parado, escalonamento, velocidade sem quebra, texto nítido na área segura,
-   fundo neutro). Reprovou: corrija as 3 piores do `proximo` com mola paramétrica (nunca pose quadro a quadro),
-   renderize e meça de novo, até 6 voltas. Só entregue com `aprovada: true`; no fim do orçamento, diga o que ainda
+   fundo neutro). Reprovou (clone ou molde): para cada uma das 3 piores do `proximo`, ache o sintoma em
+   `estilo/RECEITAS.md` (peça rápida nítida demais, cartão que estica como líquido, lista que entra junta, texto
+   pequeno com peso errado, cursor fora do lugar, avatar que vira mancha...), meça o que a receita manda e corrija com
+   a técnica e os números dela, sempre paramétrica (nunca pose quadro a quadro). Renderize e meça de novo, até 6 voltas. Só entregue com `aprovada: true`; no fim do orçamento, diga o que ainda
    reprova. Detalhes em `clonar/CLONAR.md`, "O loop de qualidade".
 1. O portão lê a versão resolvida (sem `"marca"` nem `"molde"`), que o `montar.py` já gravou em
    `<video>/.apple-style-ui/versao-resolvida.json`.
