@@ -10,6 +10,7 @@
 
 Peças: manchas que diferem do fundo da cena (nível 1: cartão, painel, ícone) e manchas de detalhe que diferem do
 entorno (nível 2: texto, avatar, cursor, botão dentro do cartão), seguidas quadro a quadro com o detector do raio-x.
+O fundo vem só do original e vale para os dois vídeos (mexer num trecho do clone não muda a nota de outro).
 pecas.json (opcional) dá nome às peças da FICHA: [{"nome": "cursor", "quadros": [85, 103], "caixa": [x0, y0, x1, y1]}]
 em px do vídeo; a caixa é a região onde a peça vive nesse trecho.
 
@@ -20,10 +21,11 @@ Para cada peça, medido do mesmo jeito nos dois vídeos, na região da peça no 
                raio-x): zeta, omega, passa do ponto e tempo de assentar, contra o mesmo movimento no original
   trajetória   erro RMS da posição (px) e correlação de x, y, escala e opacidade (centro e massa da máscara)
   escalonamento atraso de entrada contra a peça anterior que entra em sequência, e a sobreposição das entradas
-  motion blur  obturador equivalente (o ajuste do raio-x: borrão em linha que explica o quadro em movimento)
+  motion blur  obturador equivalente do vídeo (o ajuste do raio-x) e, por peça, o rastro: largura das bordas na
+               direção do movimento menos a da perpendicular, nos quadros em que a peça anda, contra o original
   nitidez      energia do Laplaciano sobre a variância do recorte (não depende de contraste nem de alinhamento)
   cor          ΔE2000 médio no miolo da peça (pixels que são peça nos dois)
-  forma        IoU da máscara da peça
+  forma        IoU da máscara da peça (e, no relatório, o erro do centro relativo ao tamanho, no pior trecho)
   percepção    SSIM no recorte da peça
   texto        quando o tesseract lê: conteúdo igual, altura-x e espessura do traço pela tinta
 
@@ -76,6 +78,9 @@ LIM = dict(
     texto=0.6,            # semelhança do texto lido, com o tesseract confiante (70+) nos dois
     altura_x=0.4,         # |razão - 1| da altura-x (bons: até 0,37; B2: 0,44)
     presente=0.6,         # fração dos quadros do original em que a peça também está no clone (peça de 10+ quadros)
+    rastro_v=6.0,         # px/quadro (escala 1080): abaixo disso o rastro não aparece; o motion blur por peça só mede acima
+    rastro=(4.0, 0.5),    # rastro a mais ou a menos que o original: 4 px (escala 1080) e meio quadro de obturador (180°)
+                          # no pior trecho de 0,1 s (bons: até 0,29 quadro; B2 e B3: 0,83 a 0,90 na pílula preta)
 )
 
 
@@ -138,7 +143,10 @@ def detecta(Q, D, info, cenas):
             for t in raiox.trilhas_da_cena(S, a, b, info["esc"], area_min=AREA_MIN, limiar=LIMIAR):
                 t = raiox.preenche(t); t["nivel"] = nivel; tr.append(t)
     W, H = info["w"], info["h"]
-    tr = [t for t in tr if len(t["f"]) >= 8 and np.median(t["w"] * t["h"]) <= 0.35 * W * H]
+    # peça rápida e pequena (cursor que cruza a tela) só vira mancha enquanto o borrão a engrossa: 6 quadros bastam
+    # quando ela anda metade do próprio tamanho por quadro
+    rapida = lambda t: np.median(np.hypot(np.diff(t["cx"]), np.diff(t["cy"]))) >= 0.5 * np.sqrt(np.median(t["w"] * t["h"]))
+    tr = [t for t in tr if (len(t["f"]) >= 8 or len(t["f"]) >= 6 and rapida(t)) and np.median(t["w"] * t["h"]) <= 0.35 * W * H]
     tr.sort(key=lambda t: -len(t["f"]) * float(np.median(t["w"] * t["h"])))
     fica = []
     for t in tr:  # a mesma peça vista nos dois níveis, ou perdida e achada de novo: fica a maior
@@ -333,13 +341,110 @@ def curvas(SR, SC, fps, info):
 
 
 def entrada(S):
-    """quadro de entrada (massa passa de 50 % da maior) e o trecho da entrada (10 % a 90 %)"""
+    """quadro de entrada (massa passa de 50 % da sustentada) e o trecho da entrada (10 % a 90 %)"""
     m = serie(S, "massa"); f = [s["f"] for s in S]
     if m.max() <= 0:
         return None
-    top = m.max()
+    # 50 % da massa SUSTENTADA (percentil 75), não do pico: com a massa num platô perto de 50 % do pico, um pico de
+    # tinta no fim da janela jogava o f50 dezenas de quadros para um lado ou outro sem nada mudar na entrada
+    top = float(np.percentile(m, 75))
     i10, i50, i90 = (int(np.argmax(m >= k * top)) for k in (0.1, 0.5, 0.9))
     return dict(f10=f[i10], f50=f[i50], f90=f[max(i90, i10)])
+
+
+def largura_borda(g, ux, uy, m=None, contraste=12.0):
+    """largura equivalente (px) das bordas da peça ao longo de (ux, uy): gira o recorte para a direção virar o eixo x
+    e, em cada linha, cada rampa monotônica vale Σ|d| / max|d| (borda nítida ~1-2 px; borrão em linha de L px ~L).
+    Mediana ponderada pelo contraste, só nas rampas que tocam a máscara m da peça."""
+    h, w = g.shape
+    if w < 4 or h < 4:
+        return None
+    R = cv2.getRotationMatrix2D((w / 2, h / 2), math.degrees(math.atan2(uy, ux)), 1.0)
+    r = cv2.warpAffine(g.astype(np.float32), R, (w, h), flags=cv2.INTER_LINEAR, borderValue=float("nan"))
+    d = np.diff(r, axis=1)
+    gy = np.zeros_like(r); gy[1:-1] = (r[2:] - r[:-2]) / 2
+    gy = (gy[:, 1:] + gy[:, :-1]) / 2
+    # só borda de frente para a direção (normal a até ~27°): numa borda oblíqua a largura ao longo da linha cresce
+    # sem rastro nenhum (disco, pílula) e o borrão de um lado contaminava a medida do outro
+    s = np.where(np.isfinite(d) & (np.abs(d) >= 1.0) & (np.abs(gy) <= 0.5 * np.abs(d)), np.sign(d), 0).ravel()
+    novo = (np.arange(s.size) % (w - 1) == 0) | np.r_[True, s[1:] != s[:-1]]
+    rid = np.cumsum(novo) - 1
+    a = np.abs(np.nan_to_num(d)).ravel()
+    soma = np.bincount(rid, a)
+    mx = np.maximum.reduceat(a, np.flatnonzero(novo))
+    ok_ = (s[novo] != 0) & (soma >= contraste)
+    if m is not None:
+        mk = cv2.warpAffine(m.astype(np.uint8), R, (w, h), flags=cv2.INTER_NEAREST)
+        ok_ &= np.bincount(rid, (mk[:, 1:] | mk[:, :-1]).ravel().astype(float)) > 0
+    if ok_.sum() < 4:
+        return None
+    L, P = soma[ok_] / mx[ok_], soma[ok_]
+    o = np.argsort(L); c = np.cumsum(P[o])
+    return float(L[o][np.searchsorted(c, 0.5 * c[-1])])
+
+
+def rastro(t, SR, SC, QR, QC, info):
+    """motion blur por peça: em cada quadro em que a peça anda (velocidade média de 7 quadros, pela trilha ou pela
+    correlação de fase, o que for maior), o rastro de cada vídeo = largura das bordas na direção do movimento menos
+    a largura na perpendicular (desfoque igual para todos os lados não é rastro), cada um na própria máscara. No pior
+    trecho de ~0,1 s: a diferença em px (escala 1080) e em quadros de obturador (diferença / velocidade)."""
+    n = len(SR)
+    if n < 3:
+        return None
+    a1080 = 1080 / LADO  # px da análise -> px na escala 1080
+    V = np.stack([np.gradient(np.asarray(t["cx"][:n], float)), np.gradient(np.asarray(t["cy"][:n], float))], 1) / info["esc"]
+    for i, s in enumerate(SR):
+        vf = np.array([s["vx"], s["vy"]]) / info["esc"]
+        if s["resp"] >= RESP and np.hypot(*vf) > np.hypot(*V[i]):
+            V[i] = vf
+    Vm = np.array([V[max(0, i - 3):i + 4].mean(0) for i in range(n)])  # a peça que freia ainda carrega o rastro
+    k3 = np.ones((3, 3), np.uint8)
+    fs, vs, ro, rc = [], [], [], []
+    for i, s in enumerate(SR):
+        sp = float(np.hypot(*Vm[i]))
+        if sp * a1080 < LIM["rastro_v"] or s["area"] <= 0 or SC[i]["area"] <= 0:
+            continue
+        ux, uy = Vm[i] / sp
+        x0, y0, x1, y1 = roi(t, i, info)
+        it = 1 + int(math.ceil(max(sp, float(np.hypot(*V[i]))) / 2))  # a borda borrada passa da máscara em até meio rastro
+        w = []
+        for Q, S in ((QR, SR), (QC, SC)):
+            g = cv2.cvtColor(Q[s["f"], y0:y1, x0:x1], cv2.COLOR_RGB2GRAY)
+            mk = cv2.dilate(S[i]["mask"], k3, iterations=it)
+            w += [largura_borda(g, ux, uy, mk), largura_borda(g, -uy, ux, mk)]
+        if None in w:
+            continue
+        fs.append(s["f"]); vs.append(sp); ro.append(w[0] - w[1]); rc.append(w[2] - w[3])
+    k = max(3, int(round(0.1 * info["fps"])))
+    pior = None
+    for j in range(len(fs) - k + 1):
+        if fs[j + k - 1] - fs[j] > 2 * k:
+            continue
+        d = float(np.median(np.subtract(ro[j:j + k], rc[j:j + k]))); v = float(np.median(vs[j:j + k]))
+        nota = min(abs(d) * a1080 / LIM["rastro"][0], abs(d / v) / LIM["rastro"][1])  # >= 1: passa dos dois limites
+        if pior is None or nota > pior[0]:
+            pior = (nota, d, v, j)
+    if pior is None:
+        return None
+    _, d, v, j = pior
+    return dict(quadros=[fs[j], fs[j + k - 1]], velocidade=round(v * a1080, 1), original=round(float(np.median(ro[j:j + k])) * a1080, 1),
+                clone=round(float(np.median(rc[j:j + k])) * a1080, 1), diferenca=round(d * a1080, 1), obturador=round(d / v, 2))
+
+
+def posicao(SR, SC, fps):
+    """erro do centro da máscara em relação ao tamanho da peça (raiz da área no original), no pior trecho de
+    ~0,1 s (mediana da janela): uma peça pequena fora do lugar some no RMS da trilha inteira e no IoU médio"""
+    ar, ac = serie(SR, "area"), serie(SC, "area")
+    v = (ar > 0) & (ac > 0)
+    if v.sum() < 3:
+        return None
+    e = np.hypot(serie(SR, "cx") - serie(SC, "cx"), serie(SR, "cy") - serie(SC, "cy"))[v]
+    tam = np.sqrt(ar[v]); f = serie(SR, "f")[v]
+    k = min(len(e), max(3, int(round(0.1 * fps))))
+    rel = np.array([np.median(e[j:j + k] / tam[j:j + k]) for j in range(len(e) - k + 1)])
+    j = int(np.argmax(rel))
+    return dict(erro_rel=round(float(rel[j]), 2), quadros=[int(f[j]), int(f[j + k - 1])], erro_px=round(float(np.median(e[j:j + k])), 1),
+                tamanho=round(float(np.median(tam[j:j + k])), 1))
 
 
 # ------------------------------------------------------------------ medidas de detalhe (resolução fina)
@@ -526,6 +631,7 @@ def mede_par(t, SR, SC, info, GR, GC, k, fw, fh):
     m["correlacao"] = {g: round(c, 3) for g, c in cs.items() if c is not None}
     ious = [(a["mask"] & b["mask"]).sum() / max(1, (a["mask"] | b["mask"]).sum()) for a, b in zip(SR, SC) if a["area"] > 0]
     m["iou"] = round(float(np.mean(ious)), 3) if ious else None
+    m["posicao"] = posicao(SR, SC, fps)
     m["velocidade"] = velocidade(SR, SC, max(1.5, 0.0015 * dim) * 30 / fps, fps)
     m["molas"] = curvas(SR, SC, fps, info)
     m["entrada"] = dict(original=entrada(SR), clone=entrada(SC))
@@ -562,7 +668,10 @@ def compara(ref, cand, pecas=None, obturador=True):
     QR, QC = QR[:n], QC[:n]; info["n"] = n
     cen = cenas_de(ref, n)
     DR, DC = detalhe_de(QR), detalhe_de(QC)
-    F = {1: (fundos(QR, cen), fundos(QC, cen)), 2: (fundos(DR, cen), fundos(DC, cen))}
+    # o fundo vem só do original e vale para os dois: o fundo do clone (mediana da cena inteira) mudava quando se
+    # mexia num trecho, e a nota de peças de outro trecho ou do outro painel mudava junto
+    fr1, fr2 = fundos(QR, cen), fundos(DR, cen)
+    F = {1: (fr1, fr1), 2: (fr2, fr2)}
     P = pecas_da_ficha(pecas) if pecas else detecta(QR, DR, info, cen)
     W, H, fps = info["w"], info["h"], info["fps"]
     fw = W if max(W, H) <= 1080 else int(round(W * 1080 / max(W, H) / 2)) * 2
@@ -577,7 +686,9 @@ def compara(ref, cand, pecas=None, obturador=True):
     GR, GC = burst.grab(str(ref), fr, fps, fw), burst.grab(str(cand), fr, fps, fw)
     res = []
     for t, SR, SC in SS:
-        res.append(dict(peca=t["nome"], onde=t["onde"], nivel=t["nivel"], medidas=mede_par(t, SR, SC, info, GR, GC, k, fw, fh)))
+        m = mede_par(t, SR, SC, info, GR, GC, k, fw, fh)
+        m["rastro"] = rastro(t, SR, SC, QR, QC, info)
+        res.append(dict(peca=t["nome"], onde=t["onde"], nivel=t["nivel"], medidas=m))
     escalonamento(res, cen, fps)
     glob = {}
     if obturador:
@@ -756,6 +867,15 @@ def julga(r, fps, dim):
         f.append(reprova("escalonamento", e["erro_s"], LIM["atraso_s"], f"entra {e['atraso_clone_q']} q depois de {e['anterior']}, no original "
                          f"{e['atraso_original_q']} q (sobreposição {br(e['sobreposicao_clone'])} contra {br(e['sobreposicao_original'])})",
                          f"estilo.escalona(i, {round(e['atraso_original_q'] / fps, 3)}) a partir da entrada de {e['anterior']}", e["erro_s"] / LIM["atraso_s"] - 1))
+    ra = m.get("rastro")
+    if ra and abs(ra["diferenca"]) >= LIM["rastro"][0] and abs(ra["obturador"]) >= LIM["rastro"][1]:
+        falta = ra["diferenca"] > 0
+        f.append(reprova("rastro", ra["obturador"], LIM["rastro"][1],
+                         f"f{ra['quadros'][0]}-{ra['quadros'][1]} a {br(ra['velocidade'], 1)} px/q: rastro de {br(ra['clone'], 1)} px no clone contra "
+                         f"{br(ra['original'], 1)} px no original ({'falta' if falta else 'sobra'} {br(abs(ra['obturador']))} quadro de obturador)",
+                         "obturador da peça como no original: borrão em linha na direção do movimento (round_mb.sh ou desfoque "
+                         "direcional durante o trecho)" if falta else "tirar o borrão a mais da peça nesse trecho",
+                         abs(ra["obturador"]) / LIM["rastro"][1] - 1 + 0.5))
     if m["nitidez"] is not None and m["nitidez"] < LIM["nitidez"]:
         f.append(reprova("nitidez", m["nitidez"], LIM["nitidez"], f"peça borrada: nitidez {br(m['nitidez'])}x a do original",
                          "tirar filter: blur fixo ou recorte ampliado; desenhar em vetor no tamanho final", (LIM["nitidez"] - m["nitidez"]) / LIM["nitidez"] * 3))
@@ -763,7 +883,9 @@ def julga(r, fps, dim):
         f.append(reprova("cor", m["delta_e"], LIM["delta_e"], f"cor da peça a ΔE2000 {br(m['delta_e'], 1)} do original",
                          "medir a cor num quadro numerado (select=eq(n,f)) e trocar", m["delta_e"] / LIM["delta_e"] - 1))
     if m["iou"] is not None and m["presente"] > 0 and m["iou"] < LIM["iou"]:
-        f.append(reprova("forma", m["iou"], LIM["iou"], f"forma ou lugar diferente: IoU da máscara {br(m['iou'])}",
+        po = m.get("posicao")
+        onde_ = f" (centro a {br(po['erro_px'], 1)} px, {br(po['erro_rel'])}x o tamanho da peça, f{po['quadros'][0]}-{po['quadros'][1]})" if po else ""
+        f.append(reprova("forma", m["iou"], LIM["iou"], f"forma ou lugar diferente: IoU da máscara {br(m['iou'])}{onde_}",
                          "ajustar a forma no quadro assentado (maskfit.py) e conferir o lugar", (LIM["iou"] - m["iou"]) / LIM["iou"] * 3))
     if m["ssim"] is not None and m["ssim"] < LIM["ssim"]:
         f.append(reprova("percepcao", m["ssim"], LIM["ssim"], f"o desenho da peça difere (SSIM {br(m['ssim'])} no recorte)",

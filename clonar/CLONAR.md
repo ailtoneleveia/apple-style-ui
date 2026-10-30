@@ -126,11 +126,16 @@ botão dentro do cartão). Para dar nome às peças da FICHA, escreva `pecas.jso
 | mola | cada movimento do original que é mola, e o clone na MESMA janela: curva de progresso, zeta, omega, passa do ponto, tempo de assentar | curva a mais de 0,75 (RMS), clone sem mola (resíduo 0,35 acima do original), ou movimento de 5 % do quadro que o clone não faz (menos de 15 %) |
 | escalonamento | atraso de entrada contra a peça anterior da sequência, e a sobreposição | erro acima de 0,45 s |
 | motion blur | obturador equivalente (o ajuste do raio-x) | fora de 0,5x a 2x o do original |
+| rastro (por peça) | onde a peça anda: largura das bordas na direção do movimento menos a da perpendicular, nos dois | 4 px (escala 1080) e meio quadro de obturador a mais ou a menos, no pior trecho de 0,1 s |
 | nitidez | Laplaciano sobre a variância do recorte | abaixo de 0,2x a do original |
 | cor | ΔE2000 da cor dominante da peça | acima de 46 (só pega cor trocada) |
 | forma | IoU da máscara | abaixo de 0,2 |
 | percepção | SSIM no recorte | abaixo de 0,5 |
 | texto | tesseract confiante nos dois: conteúdo, altura-x; a espessura do traço só vai no relatório | conteúdo abaixo de 0,6; altura-x fora de 0,6x a 1,4x |
+
+Depois do teste cego B3 (0 de 57 no medidor, pílula nítida e cursor fora do lugar no olho): o fundo vem só do original; cursor
+que cruza rápido vira peça com 6 quadros de trilha; o motivo de forma traz o erro do centro; a entrada usa a massa sustentada.
+Recalibrado: bons 0 reprovadas (rastro até 0,29 quadro), B2 19 de 60, B3 r09 5 de 60 (pílula sem rastro, 0,85 a 0,89; cursor).
 
 Sai `rodadas/NN/qualidade/QUALIDADE.md` (no bastidor) e `qualidade.json`, com a PIOR peça primeiro e o motivo
 técnico de cada reprovação. O `proximo` da rodada lista as 3 piores com a correção. No B2: "y f146-151 (-94 px): o
@@ -323,8 +328,8 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 
 Todas as ferramentas novas devolvem o JSON padrão `{ok, resumo, proximo}`. Autotestes: `testes/conferir_raiox.py`
 (o raio-x contra os 3 primeiros clones), `testes/conferir_pecas.py` (as peças acima num vídeo sintético, menos de
-um minuto) e `testes/conferir_qualidade.py` (o medidor por peça: mola conhecida, velocidade quebrada, peça borrada
-e a checagem de código, cerca de um minuto).
+um minuto) e `testes/conferir_qualidade.py` (o medidor por peça: mola conhecida, velocidade quebrada, peça borrada,
+rastro a menos e a mais, cursor rápido fora do lugar e a checagem de código, cerca de três minutos).
 
 ## Regras de render e disco
 

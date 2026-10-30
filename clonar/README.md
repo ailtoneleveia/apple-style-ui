@@ -39,7 +39,7 @@ o que os clones mediram; `~/.apple-style-ui/venv/bin/python testes/conferir_peca
 de vídeo), registro de câmera, nota na máscara, aparição e o encaixe do modelo num vídeo sintético (menos de 10 s);
 `~/.apple-style-ui/venv/bin/python testes/conferir_tela.py` confere o `extrair_tela.py` num cartão parado e num que anda (menos de 15 s);
 `~/.apple-style-ui/venv/bin/python testes/conferir_qualidade.py` confere o medidor por peça em vídeos sintéticos (mola conhecida,
-velocidade quebrada, peça borrada) e a checagem de código (cerca de 1 min);
+velocidade quebrada, peça borrada, rastro, cursor rápido) e a checagem de código (cerca de 3 min);
 `python3 scripts/transcrever.py --autoteste` transcreve uma fala do `say` pelo provedor local e confere o aviso da
 chave da Groq (uns 5 s); `python3 scripts/destaque.py` confere a regra do destaque.
 

@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """conferir_qualidade.py [pasta_saida]: confere o medidor por peça (scripts/qualidade.py) em vídeos sintéticos com resposta
 conhecida. Um cartão com um glifo dentro entra pela esquerda com a mola elástica do estilo.js (zeta 0,62, omega 19,2),
-renderizado com motion blur de 8 subquadros. Roda em menos de um minuto.
+renderizado com motion blur de 8 subquadros. Roda em cerca de três minutos.
 
   mola conhecida      o modo estilo acha a mola do cartão (zeta e omega perto dos verdadeiros, elástica) e aprova;
                       o original contra ele mesmo aprova todas as peças
   velocidade quebrada o mesmo caminho por pose lida à mão a cada quadro (erro de 6 a 14 px que troca de lado, interpolação linear):
                       reprova por quebras de velocidade ou movimento sem mola
   peça borrada        o mesmo vídeo com o cartão borrado (gaussiana de 6 px): reprova por nitidez
+  rastro              disco escuro a 12 px/q, original com obturador de 1 quadro contra clone sem borrão: reprova por rastro
+                      (falta); ao contrário, clone com rastro onde o original é nítido: reprova por rastro (sobra)
+  peça pequena rápida um cursor de 36 px cruza a tela em 7 quadros (40 px/q); no clone passa 30 px abaixo: a peça é
+                      detectada (trilha curta) e reprova por forma, com o erro do centro no motivo
   código              tabela de chaves com 10 poses reprova; mola do estilo.js com mapa de tempo aprova
 Sai com código 1 se algo não bater."""
 import json, os, subprocess, sys, tempfile
@@ -93,6 +97,31 @@ def grava(nome, qs):
     return p
 
 
+def quadros_disco(obt):
+    """disco escuro de 80 px que anda 12 px/q da esquerda para a direita; obt = obturador em quadros (0 = nítido)"""
+    out = []
+    for f in range(N):
+        acc = np.zeros((H, W, 3), np.float32)
+        for s in range(16):
+            img = np.full((H, W, 3), 243, np.uint8)
+            cv2.circle(img, (int(round(200 + 12 * (f + (s / 15 - 0.5) * obt))), 540), 40, (30, 30, 30), -1, cv2.LINE_AA)
+            acc += img
+        out.append((acc / 16).round().astype(np.uint8))
+    return out
+
+
+def quadros_cursor(dy=0):
+    """cursor (disco escuro de 36 px) que entra no f20 em x 900 e anda 40 px/q para a esquerda até o f26"""
+    out = []
+    for f in range(N):
+        img = np.full((H, W, 3), 243, np.uint8)
+        cv2.putText(img, "Get Info", (560, 760), cv2.FONT_HERSHEY_SIMPLEX, 1.4, (30, 30, 30), 3, cv2.LINE_AA)
+        if 20 <= f <= 26:
+            cv2.circle(img, (900 - 40 * (f - 20), 800 + dy), 18, (40, 40, 40), -1, cv2.LINE_AA)
+        out.append(img)
+    return out
+
+
 ref = grava("mola.mp4", quadros(x_mola))
 quebrado = grava("chaves.mp4", quadros(x_chaves))
 borrado = grava("borrado.mp4", quadros(x_mola, borrado=True))
@@ -139,7 +168,35 @@ c = peca_do_cartao(res)
 confere(not c["aprovada"] and "nitidez" in {x["medida"] for x in c["reprovacoes"]}, "peça borrada: reprova por nitidez",
         f"nitidez {c['medidas']['nitidez']}x a do original")
 
-# 5. código
+# 5. rastro: obturador de 1 quadro no original, clone nítido (e o contrário)
+longo, nitido = grava("obt1.mp4", quadros_disco(1.0)), grava("obt0.mp4", quadros_disco(0.0))
+for o_, c_, quer in ((longo, nitido, "falta"), (nitido, longo, "sobra")):
+    res, info, cen, g = q.compara(o_, c_, obturador=False)
+    for r in res:
+        q.julga(r, FPS, W)
+    c = max(res, key=lambda r: len(r["medidas"].get("rastro") and r["medidas"]["rastro"]["quadros"] or []) + r["medidas"]["quadros"])
+    ra = c["medidas"].get("rastro")
+    rp = [x for x in c["reprovacoes"] if x["medida"] == "rastro"]
+    confere(bool(rp) and quer in rp[0]["motivo"], f"rastro: {'clone sem o rastro do original' if quer == 'falta' else 'clone com rastro que o original não tem'} reprova ({quer})",
+            f"rastro {ra}")
+
+# 6. peça pequena e rápida (cursor): detectada e reprovada pelo lugar
+cur, cur_errado = grava("cursor.mp4", quadros_cursor()), grava("cursor-baixo.mp4", quadros_cursor(30))
+res, info, cen, g = q.compara(cur, cur, obturador=False)
+for r in res:
+    q.julga(r, FPS, W)
+achou = [r for r in res if r["onde"].startswith("f20-26")]
+confere(bool(achou) and all(r["aprovada"] for r in res), "cursor: a trilha curta e rápida vira peça e passa contra ela mesma",
+        "; ".join(r["onde"] for r in res))
+res, info, cen, g = q.compara(cur, cur_errado, obturador=False)
+for r in res:
+    q.julga(r, FPS, W)
+c = next((r for r in res if r["onde"].startswith("f20-26")), None)
+po = c and c["medidas"].get("posicao")
+confere(bool(c) and "forma" in {x["medida"] for x in c["reprovacoes"]} and bool(po) and 20 <= po["erro_px"] <= 40,
+        "cursor 30 px abaixo: reprova por forma, com o erro do centro", f"posicao {po}; iou {c and c['medidas']['iou']}")
+
+# 7. código
 hf = OUT / "hf"; hf.mkdir(exist_ok=True)
 (hf / "cena.js").write_text("const CARTAO = [[0, 70], [2, 120], [4, 200], [6, 260], [8, 300], [10, 330], [12, 350], [14, 365], [16, 375], [18, 380]];\n"
                             "function x(F) { return K(F, CARTAO); }\n")
