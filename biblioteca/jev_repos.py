@@ -2,7 +2,7 @@
 
 Uso: python3 jev_repos.py repos.json pasta_readmes saida.jsonl
 repos.json vem do `gh search repos --json fullName,description,stargazersCount,license,language,...`;
-pasta_readmes tem <dono>_<repo>.md com o começo do README. Uma chamada por repositório, 8 em paralelo.
+pasta_readmes tem ailtoneleveia_<repo>.md com o começo do README. Uma chamada por repositório, 8 em paralelo.
 """
 import json
 import pathlib

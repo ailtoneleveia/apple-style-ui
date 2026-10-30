@@ -9,7 +9,7 @@ do teu ok, então nada sai pior que o anterior.
 No Claude Code:
 
 ```
-/plugin marketplace add <dono>/apple-style-ui
+/plugin marketplace add ailtoneleveia/apple-style-ui
 /plugin install apple-style-ui@apple-style-ui
 /apple-style-ui:video começar
 ```
@@ -46,4 +46,3 @@ um ambiente Python a mais, que o caminho 2 cria com o teu ok. Para transcrever f
 
 SF Pro e emojis da Apple não vêm no repositório: o render usa os do teu Mac. Para publicar, usa `fonte: inter` ou
 `archivo` e uma música tua. Tudo de terceiros está em `LICENCAS-DE-TERCEIROS.md`; pastas e comandos, em `ESTRUTURA.md`.
-O formato de plugin com o repositório como marketplace segue o do get-brolls, do Bruno Moreira.

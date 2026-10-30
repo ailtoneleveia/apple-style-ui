@@ -12,5 +12,7 @@
     "motion",
     "estilo-apple",
     "kit-de-marca"
-  ]
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/ailtoneleveia/apple-style-ui"
 }
