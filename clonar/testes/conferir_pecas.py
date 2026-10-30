@@ -9,9 +9,10 @@ andando 4 px por quadro, e uma legenda de 8 palavras entrando uma a uma). Roda e
   compara_mascara.py  original contra ele mesmo = 0; clone deslocado > 0; sem camada > clone
   placa_video.py      a palavra some da placa (o buraco é preenchido pelo entorno)
   aparicao.py         palavra parada entrando por esmaecimento em 4 quadros: a opacidade medida bate
+  recortes.py         recorte do original sem declaração reprova; tipo interface reprova; declarado aprova; clone borrado acusado
   modelo/index.html   amostra() presa ao trecho medido (o elemento não nasce meio transparente), no node
 Sai com código 1 se algo não bater."""
-import json, os, re, subprocess, sys, tempfile
+import json, os, re, shutil, subprocess, sys, tempfile
 from pathlib import Path
 import numpy as np
 import cv2
@@ -163,6 +164,24 @@ A = json.load(open(OUT / "aparicao.json"))["entra"]
 med = [A["q"][f - A["de"]][0] for f in range(5, 9)]
 confere(all(abs(m - e) < 0.12 for m, e in zip(med, (0.25, 0.5, 0.75, 1.0))), "aparicao: opacidade da entrada (25, 50, 75, 100 %)",
         ", ".join(f"{m:.2f}" for m in med))
+
+# ------------------------------------------------------------------ recortes.py
+RP = OUT / "recortes"; (RP / "referencia").mkdir(parents=True, exist_ok=True); (RP / "hf" / "assets" / "pecas").mkdir(parents=True, exist_ok=True)
+shutil.copy2(OUT / "orig.mp4", RP / "referencia" / "original.mp4")
+x0, y0 = PAL["x"](16) - 10, PAL["y"] - 45
+cv2.imwrite(str(RP / "hf" / "assets" / "pecas" / "palavra.png"), cv2.cvtColor(com_palavra(16)[y0:y0 + 70, x0:x0 + 280], cv2.COLOR_RGB2BGR))
+grava(OUT / "borrado.mp4", [cv2.GaussianBlur(com_palavra(f), (0, 0), 3) for f in range(N)])
+md = RP / "hf" / "assets" / "RECORTES.md"
+r = roda(SCR / "recortes.py", RP, "--clone", OUT / "borrado.mp4")
+s = r["recortes"]["sem_declaracao"]
+confere(not r["aprovada"] and s and s[0]["parece_do_original"], "recortes: recorte do original sem declaração reprova", r["resumo"])
+confere(r["nitidez"]["borrado"], "recortes: clone borrado acusado na nitidez", f"razão {r['nitidez']['razao']}")
+md.write_text("| arquivo | tipo | motivo |\n|---|---|---|\n| pecas/palavra.png | interface | recorte da palavra |\n")
+confere(not roda(SCR / "recortes.py", RP, "--clone", OUT / "orig.mp4")["aprovada"], "recortes: tipo interface reprova")
+md.write_text("| arquivo | tipo | motivo |\n|---|---|---|\n| pecas/*.png | foto | teste: foto filmada |\n")
+r = roda(SCR / "recortes.py", RP, "--clone", OUT / "orig.mp4")
+confere(r["aprovada"] and not r["nitidez"]["borrado"] and abs(r["nitidez"]["razao"] - 1) < 0.05, "recortes: declarado aprova; clone igual tem nitidez 1",
+        f"razão {r['nitidez']['razao']}")
 
 # ------------------------------------------------------------------ modelo: amostra() presa ao trecho
 html = (KIT / "modelo" / "index.html").read_text()

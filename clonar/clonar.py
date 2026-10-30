@@ -7,7 +7,9 @@
   clonar.py montar <pasta>                                       cria hf/ a partir do modelo e do estilo.js
   clonar.py rodada <pasta> [--previa] [--o-que-mudou TEXTO] [--mascara M [--placa V] [--margem PX] [--elementos a,b]]
                                                                  renderiza, compara e grava rodadas/NN/nota.json; com
-                                                                 máscara (placa de vídeo) a nota é a da camada recriada
+                                                                 máscara (placa de vídeo) a nota é a da camada recriada;
+                                                                 raster de hf/assets/ sem declaração em RECORTES.md reprova
+                                                                 a rodada (aprovada: false) e a nitidez vai na nota
   clonar.py final  <pasta> [--rodada NN] [--so-camada]           saidas/final.mp4 e saidas/lado-a-lado.mp4 (e so-camada.mp4)
 
 Saída: JSON {ok, resumo, proximo: {comando, motivo, precisa_de_voce}} no stdout.
@@ -222,6 +224,7 @@ def rodada(a):
         ant = sorted((x for x in (P / BASTIDOR / "rodadas").glob("*/clone.mp4") if x.parent.name != NN), key=lambda x: x.parent.name)
         fd = roda([PY, SCR / "fdsum.py", orig, clone, "--json", B / "fdsum.json"] + (["--prev", ant[-1]] if ant else []), log=log)
         (B / "fdsum.txt").write_text(fd.stdout)
+        roda([PY, SCR / "recortes.py", P, "--clone", clone, "--json", B / "recortes.json"], log=log)
         mc = mascara_cfg(P, a)
         if mc:
             roda([PY, SCR / "compara_mascara.py", orig, clone, mc["mascara"], "--margem", mc["margem"], "--json", B / "mascara.json"]
@@ -242,11 +245,14 @@ def rodada(a):
         mascara = {k: mj[k] for k in ("distancia", "distancia_fina", "correlacao", "movimento", "pico_quadros", "sem_camada", "como")}
         mascara["piores_trechos"] = [dict(quadros=f"f{b['a']}-f{b['b']}", dist=b["dist"], anterior=b.get("anterior"), pior_quadro=b["pior_quadro"])
                                      for b in sorted(mj["blocos"], key=lambda b: -b["dist"])[:3]]
+    rc = json.load(open(B / "recortes.json"))  # recorte do original não declarado reprova, mesmo com a nota boa
     nota = dict(rodada=nn, quando=agora(), o_que_mudou=a.o_que_mudou or "", previa=bool(a.previa), **n,
                 **(dict(mascara=mascara) if mj else {}),
                 fdsum=fdj["media"], fdsum_anterior=fdj["anterior"], quadros=f"{fdj['quadros']}/{fdj['quadros_original']}",
                 piores_trechos=[dict(quadros=f"f{b['a']}-f{b['b']}", dist=b["dist"], pior_quadro=b["pior_quadro"]) for b in piores],
-                alvo=ALVO, atingiu=bool(atingiu and not a.previa), video=str(clone))
+                alvo=ALVO, atingiu=bool(atingiu and not a.previa), aprovada=rc["aprovada"],
+                **(dict(motivo_reprovada=rc["motivo_reprovada"]) if not rc["aprovada"] else {}),
+                nitidez=rc["nitidez"], video=str(clone))
     (P / "rodadas" / NN / "nota.json").write_text(json.dumps(nota, ensure_ascii=False, indent=1))
     for velha in (P / BASTIDOR / "rodadas").iterdir():  # bastidor: só as 2 últimas guardam análise e pares
         if velha.name.isdigit() and int(velha.name) <= nn - 2:
@@ -264,8 +270,19 @@ def rodada(a):
         res += (f"; NA MÁSCARA (camada): distância {mj['distancia']} (fina {mj['distancia_fina']}), correlação {mj['correlacao']}, "
                 f"pico {mj['pico_quadros']} q" + (f", sem camada {mj['sem_camada']['distancia']}" if mj.get("sem_camada") else "")
                 + f"; pior trecho da camada f{pm['a']}-f{pm['b']} ({pm['dist']})")
-    if nota["atingiu"]:
-        prox = dict(comando=f"{EU} final {P}", motivo="alvo atingido (distância, correlação e pico" + (", na máscara)" if mj else ")"),
+    nt = rc["nitidez"]
+    if nt:
+        res += f"; nitidez {nt['razao']}x a do original" + (" (BEM MAIS BORRADO que o original)" if nt["borrado"] else "")
+    if not rc["aprovada"]:
+        res += f"; REPROVADA: {rc['motivo_reprovada']}"
+        prox = dict(comando=f"{EU} rodada {shlex.quote(str(P))} --o-que-mudou \"peças recriadas em HTML, CSS ou SVG\"",
+                    motivo="recriar em HTML, CSS ou SVG, com a fonte e as cores medidas, todo elemento de interface que hoje é "
+                           "recorte do original; foto ou vídeo filmado de verdade se declara em hf/assets/RECORTES.md "
+                           f"(tipo foto, video ou fundo, e o motivo). Detalhes em {BASTIDOR}/rodadas/{NN}/recortes.json",
+                    precisa_de_voce=False)
+    elif nota["atingiu"]:
+        prox = dict(comando=f"{EU} final {shlex.quote(str(P))}",
+                    motivo="alvo batido: rode final agora e entregue. Não polir depois do alvo: só se o usuário pedir",
                     precisa_de_voce=False)
     elif nn >= MAX_RODADAS and not a.previa:
         prox = dict(comando=f"{EU} final {P}", motivo=f"{MAX_RODADAS} rodadas: fechar com a melhor e anotar em LICOES.md o que ainda difere",
@@ -283,12 +300,12 @@ def final(a):
     notas = []
     for d in sorted((P / "rodadas").glob("*/nota.json")):
         n = json.load(open(d))
-        if n.get("distancia") is not None and not n.get("previa"):
+        if n.get("distancia") is not None and not n.get("previa") and n.get("aprovada", True):
             notas.append(n)
     if a.rodada:
         notas = [n for n in notas if n["rodada"] == int(a.rodada)]
     if not notas:
-        raise Falha("nenhuma rodada com nota (rode clonar.py rodada antes)", 1)
+        raise Falha("nenhuma rodada aprovada com nota (rode clonar.py rodada; rodada com recorte não declarado não fecha)", 1)
     chave = (lambda n: (n["mascara"]["distancia_fina"], -n["rodada"])) if all("mascara" in n for n in notas) else (lambda n: (n["fdsum"], -n["rodada"]))
     best = min(notas, key=chave) if not a.rodada else notas[0]
     NN = f"{best['rodada']:02d}"

@@ -73,7 +73,8 @@ MOLDES = {
         # segunda LUT de luma do Joi (round_mb_fix.sh, v3+): Y cru medido em fundos lisos (27->29 no escuro, 233->234 no claro)
         lut="lutyuv=y='clip(val+0.5+if(lt(val\\,73)\\,2\\,if(lt(val\\,154)\\,2*(154-val)/81\\,if(lt(val\\,233)\\,0\\,1)))\\,0\\,255)'",
         momentos=[30, 88, 150, 178, 230, 262, 300, 340, 360, 450],  # ícone, pílula, lista, menu, risco, frase, cartão, fim
-        lado_na_previa=True, leve=False, provar=False, kit={"cor_principal": ["cor_principal"]}),
+        # o nome da marca vai no rótulo do ícone, onde o original diz "Joi" (o padrão do molde continua "Joi")
+        lado_na_previa=True, leve=False, provar=False, kit={"cor_principal": ["cor_principal"], "nome": ["icone_texto"]}),
     "voiceos": dict(
         pasta=os.path.join(MOLDES_DIR, "voiceos"), molde=os.path.join(MOLDES_DIR, "voiceos", "molde"),
         trava=os.path.join(MOLDES_DIR, "voiceos", "MOLDE.json"), original=os.path.join(ORIGINAIS, "voiceos.mp4"),
@@ -687,7 +688,8 @@ def montar_um(c, versao, previa, marca=None, video=None, saidas=None):
     arquivos = [final]
     tem_original = os.path.isfile(c["original"])
     if not tem_original:
-        avisos.append(f"sem o vídeo do clone original ({c['original']}), saiu só a versão: sem lado a lado, e a folha mostra só a versão")
+        avisos.append(f"sem o vídeo do clone original ({c['original']}), saiu só a versão: sem lado a lado, e a folha mostra só a versão. "
+                      "No repositório público isso é o esperado, não é falha: o original não vai junto, por direito autoral")
     elif not previa or c["lado_na_previa"]:
         lab = os.path.join(pasta, "rotulos.png")
         rotulo_png(lab, c, [(0, "ORIGINAL"), (c["largura"], f"VERSÃO {nome.upper()}")])
@@ -834,6 +836,8 @@ def autoteste(c):
     x, e, info = carregar({"marca": "junior"}, decl, c, marca="padaria-exemplo")
     assert e == [] and x[cor] == "#D4860B" and info["nome_marca"] == "padaria-exemplo"
     assert set(info["kit_sem_uso"]) == {"fonte", "nome"} - set(c["kit"])
+    kit = json.load(open(achar_marca("padaria-exemplo")))  # o kit da padaria chega às variáveis do molde (Joi: nome no ícone)
+    assert all(x[var] == kit[k] for k, vs in c["kit"].items() if k in kit for var in vs)
     assert achar_marca(os.path.relpath(os.path.join(AQUI, "marcas", "salao-exemplo"))) == os.path.join(AQUI, "marcas", "salao-exemplo", "marca.json")
     assert carregar({"marca": "nao-existe"}, decl, c)[1] and carregar({cor: "#123456"}, decl, c, marca="junior")[0][cor] == "#123456"
     assert nome_do_video("/t/marcas/padaria/videos/primeiro") == "padaria-primeiro" and nome_do_video("/t/teste/padaria/") == "padaria"

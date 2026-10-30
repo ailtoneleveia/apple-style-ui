@@ -9,7 +9,15 @@ Caminho de script é relativo à raiz do produto, `${CLAUDE_PLUGIN_ROOT}` (prefi
 Arquivo da pessoa fica no diretório atual, nunca na raiz.
 
 ## Regras
-- Português simples, "tu", sem travessão. Toda resposta termina com **Próximo passo:** e um comando ou uma pergunta.
+- Responda sempre no idioma do pedido, do começo ao fim, inclusive nos avisos de andamento e no resumo final.
+  Pedido em português: português simples, "tu", sem travessão. Os scripts, os logs e este arquivo estarem em parte em
+  inglês não muda isso. Toda resposta termina com **Próximo passo:** e um comando ou uma pergunta.
+- Comando longo (render, `montar.py`, `clonar.py rodada` e `final`) roda em primeiro plano, com o tempo limite do
+  comando no máximo (10 min). Se mandar algo para o segundo plano, espere no mesmo comando até acabar (`wait`, ou um
+  laço que confere o arquivo). Nunca termine o turno com processo pendente: sem ninguém do outro lado, o aviso de fim
+  nunca chega e o trabalho para.
+- Sem o vídeo do clone original, não sai o lado a lado e a folha mostra só a versão. No repositório público isso é o
+  esperado: o original não vai junto, por direito autoral. Não é falha; diga isso em uma frase e siga.
 - Os scripts devolvem JSON `{ok, resumo, proximo}` no stdout. Leia o `resumo` para a pessoa e use o `proximo`.
   Erro vem no stderr com `codigo`: explique em uma frase e diga o conserto.
 - Render sempre um por vez (o `montar.py` já usa `--workers 1`, e o `--lote` roda uma marca por vez). Nada é publicado nem enviado.
@@ -50,8 +58,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    instala pelo brew.sh, porque pede a senha do Mac. Avise: o 1º render baixa o HyperFrames e um Chrome (~300 MB).
 2. Mostre os exemplos: `open exemplos/satellite.mp4 exemplos/joi.mp4 exemplos/voiceos.mp4` (feitos com a Inter,
    sem música e com o pacote de sons livre; o teu sai com a SF Pro do teu Mac se tu escolher `fonte: sf`).
-   Diga que o primeiro vídeo sai no molde do Satellite (o único em que o kit troca cor, fonte e nome; no Joi e no
-   VoiceOS ele troca só a cor).
+   Diga que o primeiro vídeo sai no molde do Satellite (o único em que o kit troca cor, fonte e nome; no Joi ele troca
+   a cor e o nome, que vai no rótulo do ícone; no VoiceOS, só a cor).
 3. Pergunte o nome que aparece no balão final (ex.: @dela) e a cor da marca (#rrggbb). Fonte: `inter`, se ela não escolher.
    Avise que os textos continuam os do exemplo (o Satellite em português): trocar os textos é o caminho 3.
 4. Na pasta atual, crie `marcas/<cliente>/marca.json` e a pasta `marcas/<cliente>/videos/primeiro/` com `PEDIDO.md`
@@ -71,7 +79,11 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 3. Referência da biblioteca ou link: `python3 clonar/caso.py referencia <link ou arquivo> --pasta clone-<nome>`
    (baixa, guarda o `ORIGEM.md` e diz se é demonstrativa). Depois siga `clonar/README.md` e `clonar/CLONAR.md` a partir
    do `proximo` (`clonar.py novo`, `medir`, que é o raio-x, e as rodadas).
-   A entrega é o lado a lado e a nota de fidelidade (distância e correlação de movimento).
+   - **Recriar, não recortar.** Texto, ícone, cartão, pílula, botão e avatar desenhado são sempre recriados em HTML,
+     CSS ou SVG, com a fonte e as cores medidas. Recorte do original só para foto ou vídeo filmado de verdade, e cada
+     um declarado em `hf/assets/RECORTES.md` com o motivo. Recorte não declarado reprova a rodada, mesmo com a nota boa.
+   - **Bateu o alvo, fecha.** Quando o `proximo` da rodada disser "alvo batido: rode final", rode `clonar.py final` na
+     hora e entregue. Polir depois do alvo só se a pessoa pedir.
    A entrega é o lado a lado e a nota de fidelidade (distância e correlação de movimento).
 4. Siga **Fechar** com `--tipo clone` (sem `--versao` e sem `--molde`).
 
@@ -97,6 +109,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 - **Tem molde** (a referência é o Satellite, o Joi ou o VoiceOS do @creatoroly; veja `moldes/<molde>/NOTAS.md`):
   1. Copie `moldes/<molde>/versoes/junior.json` para `<video>/versao.json` e troque os valores pedidos.
      As tabelas de campos estão no NOTAS.md do molde. O que não estiver no arquivo fica igual ao original. No Satellite, ponha também o `"sons"` (veja **Som**).
+     Com kit de marca (`"marca"` na versão), o `nome` do kit entra sozinho no Satellite (balão final) e no Joi (rótulo
+     do ícone); um `icone_texto` na versão vale mais que o kit.
   2. Prévia: `python3 montar.py <video>/versao.json --molde <molde> --previa --video <video>` e `open` na folha de
      quadros (o último item de `arquivos` no JSON). Os três moldes gravam direto em `<video>/saidas/`.
   3. Com o ok da folha, o mesmo comando sem `--previa`. Depois, **Fechar**.

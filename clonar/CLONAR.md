@@ -7,6 +7,26 @@ o original e os recortes dele nunca saem daqui.
 O ciclo: **medir, fichar, montar, rodar, comparar, corrigir**. No máximo 6 rodadas.
 **Alvo:** distância ≤ 0,012, correlação de movimento ≥ 0,97 e pico de até 1 quadro em todas as janelas.
 
+## Três regras que o teste cego cobrou
+
+1. **Bateu o alvo, fecha na hora.** Quando a rodada bate o alvo (o `proximo` diz "alvo batido: rode final"), roda
+   `clonar.py final` e entrega. Nada de ajuste quadro a quadro depois disso: no teste, a rodada 2 já tinha distância
+   0,005, correlação 0,977 e pico 0, e a sessão gastou mais 1 h polindo a uns 5 min por quadro. Polir só se o
+   usuário pedir.
+2. **Nada fica rodando sozinho.** Todo comando longo (render, rodada, final, ajuste) roda em primeiro plano, com o
+   tempo limite do comando no máximo (10 min). Se precisar mandar para o segundo plano, espera no mesmo comando até
+   acabar (`wait`, ou um laço que confere o arquivo de saída). Nunca termina o turno com processo pendente: no modo
+   sem interação o aviso de fim nunca chega e a sessão fica parada.
+3. **Recriar, não recortar.** Texto, ícone, cartão, pílula, botão e avatar desenhado são SEMPRE recriados em HTML,
+   CSS ou SVG, com a fonte e as cores medidas. Recorte do original só vale para foto ou vídeo filmado de verdade
+   (pessoa, paisagem, foto de produto) e para o campo de luz do fundo sem nenhuma peça por cima. Cada recorte entra
+   em `hf/assets/RECORTES.md`, numa tabela `| arquivo | tipo | motivo |` (arquivo relativo a `hf/assets/`, aceita
+   `*`; tipo `foto`, `video` ou `fundo`). No teste cego, um clone recortou 21 peças do próprio original e só animou
+   os recortes: a nota ficou ótima porque o pixel era o original, mas o vídeo saiu borrado (nitidez 0,21 da do
+   original), baixo em resolução e inútil como molde (não dá para trocar texto nem cor). Por isso a `rodada` roda
+   `scripts/recortes.py`: raster sem declaração reprova a rodada (`"aprovada": false`, com o motivo), mesmo com a
+   nota boa, e o `final` não fecha rodada reprovada. A nitidez do clone contra a do original vai na nota e no resumo.
+
 ## Instalar (uma vez)
 
 ```sh
@@ -23,8 +43,8 @@ clone-<nome>/
 ├── referencia/          original.mp4 + ORIGEM.md (link, autor, data, sha256)
 ├── RAIOX.md             as medidas em português simples
 ├── FICHA.md             cena por cena: o que aparece, de que quadro a que quadro, com os números
-├── hf/                  a composição (index.html, estilo.js, assets/)
-├── rodadas/01 … 06/     nota.json de cada rodada (distância, correlação, pico, fdsum, piores trechos)
+├── hf/                  a composição (index.html, estilo.js, assets/; recortes declarados em assets/RECORTES.md)
+├── rodadas/01 … 06/     nota.json de cada rodada (distância, correlação, pico, fdsum, piores trechos, aprovada, nitidez)
 ├── saidas/              final.mp4 e lado-a-lado.mp4
 ├── LICOES.md            o que aprendeu, com evidência
 └── .apple-style-ui/     bastidor: medidas, renders das rodadas, comparações, logs
@@ -51,7 +71,7 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    que refaz o teste da batida com eles.
 4. **Montar.** `python3 clonar.py montar <pasta>` cria `hf/` com o modelo, uma cópia do `estilo.js`, a SF Pro do
    sistema, o áudio do original e as trilhas medidas (`hf/trilhas.js`). Cada cena da ficha vira uma função de
-   `draw(t)`. O modelo já traz um canvas e o encaixe na tinta: `encaixa(txt, fonte, amostra(nome, F), opções)` desenha
+   `draw(t)`, e cada peça de interface é desenhada nela (texto, forma, SVG), nunca um PNG recortado do original. O modelo já traz um canvas e o encaixe na tinta: `encaixa(txt, fonte, amostra(nome, F), opções)` desenha
    o texto ou emoji na caixa medida do original (escala, centro e ângulo), e `amostra()` prende o `F` ao trecho medido
    (sem isso o elemento nasce meio transparente). O `Fi` decide se o elemento existe. `{largura: true}` ajusta o
    espaço entre letras à proporção da caixa medida (a fonte do original quase nunca tem o mesmo espaçamento). Onde não há trilha, comece pelas
@@ -59,7 +79,9 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    `!SO_CAMADA`; sem ela, fundo neutro.
 5. **Rodar.** `python3 clonar.py rodada <pasta> --o-que-mudou "..."` renderiza com motion blur de subquadros
    (240 qps: N=8 a 30 qps, N=4 a 60 qps; um worker; ganho de luma 1,008; H.264 nível 5.1), compara com o original
-   e grava `rodadas/NN/nota.json`. `--previa` faz um render rápido sem blur para conferir a montagem.
+   e grava `rodadas/NN/nota.json`. `--previa` faz um render rápido sem blur para conferir a montagem. A rodada também
+   confere os recortes e a nitidez (`scripts/recortes.py`, regra 3 lá em cima): `"aprovada": false` manda recriar as
+   peças antes de qualquer outra correção. Roda em primeiro plano (uns 1,5 min num reel de 9 s).
    **Placa de vídeo** (a pessoa filmada é o próprio original, por baixo): o quadro inteiro fica artificialmente perto
    do original. O caminho do 5º clone: `placa_video.py` apaga a camada antiga do original na pegada dela (tinta da
    palavra assentada, caixa inteira na entrada, caixa rosa e cartão com a sombra, inclusive a passada do ponto das
@@ -71,8 +93,8 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
 6. **Comparar e corrigir.** Depois que a nota global passa, quem guia é o `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`,
    com a rodada anterior ao lado) e o `diffview.py` (onde está o erro). Mude uma hipótese por região em cada rodada e
    julgue pelos blocos, não pela média.
-7. **Fechar.** Ao bater o alvo, ou na 6ª rodada: `python3 clonar.py final <pasta>` gera `saidas/final.mp4` (a melhor
-   rodada) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
+7. **Fechar.** Ao bater o alvo (na mesma hora, sem polir), ou na 6ª rodada: `python3 clonar.py final <pasta>` gera
+   `saidas/final.mp4` (a melhor rodada aprovada) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
    `saidas/so-camada.mp4`: a mesma composição sem a placa (`camada.js`), o primeiro passo para virar molde.
    Escrever `LICOES.md`.
 
@@ -178,6 +200,7 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 | `trilha_palavra.py` | trilha de cada palavra, emoji ou caixa pela tinta (caixa, ângulo, cor, tinta por quadro) → `trilhas.js`; `--auto` acha as palavras sozinho |
 | `placa.py` | placa de fundo em coordenadas de mundo pela câmera medida; `--janela`: placa curta com alfa |
 | `registra_cam.py` | registro absoluto da câmera, cada quadro contra a placa (corrige o erro acumulado do `camtrack.py`) |
+| `recortes.py` | todo raster de `hf/assets/` declarado em `RECORTES.md` (senão a rodada reprova, e diz qual veio do original por template matching); nitidez do clone contra a do original nas bordas dos elementos |
 | `compara_mascara.py` | nota só na máscara (camada recriada sobre placa de vídeo), com o "sem camada" ao lado; aceita pegada PNG por peça |
 | `placa_video.py` | placa de um vídeo de pessoa: o original com a camada antiga apagada (inpaint) na pegada de cada quadro |
 | `aparicao.py` | entrada e saída de cada peça (opacidade, deslocamento, escala, desfoque por quadro) medidas contra a placa |

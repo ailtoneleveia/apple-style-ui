@@ -56,7 +56,7 @@ textos viram caixas, ícones e objetos viram listas e as cores têm seletor.
 
 | variável | o que é | original |
 |---|---|---|
-| `icone_texto` | texto vermelho no topo do ícone de calendário | Joi |
+| `icone_texto` | texto vermelho no topo do ícone de calendário. Com kit de marca, recebe o `nome` do `marca.json` (o valor escrito na versão vale mais); diminui acima de 220 px | Joi |
 | `digitos` | os 5 dígitos que rolam no ícone, da esquerda para a direita; o 4º abre no centro e o 5º é o último a entrar | 56789 |
 | `item1` … `item4` | itens da lista. O 1 vira o título do menu e é riscado; o 4 entra por último, do cinza ao preto | Plan a day, Drink water, Get Sunlight, Wind Down |
 | `icone1` … `icone4` | ícone de cada item: `caixa` (tracejada), `lua`, `sol`, `gota`, `coracao`, `estrela`, `raio`, `feito`, ou um emoji 🌙 ☀️ 💧 🧘 ☕ 📚 🏃 ✅ 🍎 💤. O ícone do item 1 também vai para o menu | caixa, caixa, caixa, lua |
