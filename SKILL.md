@@ -33,7 +33,7 @@ Arquivo da pessoa fica no diretório atual, nunca na raiz.
   e `nome`; opcionais `cor_destaque` e `creditos`. Modelo: `marcas/salao-exemplo/marca.json` (na raiz do produto).
 - Um vídeo: `marcas/<cliente>/videos/<video>/` com `PEDIDO.md` (o pedido em texto e o molde usado),
   `versao.json` (os campos), `saidas/` (o que a pessoa abre) e `.apple-style-ui/` (bastidor: JSON, logs, decisões).
-- **Som** (decisão do Júnior): todo vídeo novo no Satellite, o único molde com sons por elemento, leva no
+- **Som** (decisão do Júnior): todo vídeo novo nos moldes de interface (Satellite, Joi e VoiceOS) leva no
   `versao.json` `"sons": "marcado"` quando o vídeo não tem fala, e `"sons": "suave"` quando tem narração ou pessoa
   falando. A pessoa troca com essa linha. Não mexa no padrão do molde (`"nenhum"`): é ele que mantém a prova de md5
   do original.
@@ -58,8 +58,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    instala pelo brew.sh, porque pede a senha do Mac. Avise: o 1º render baixa o HyperFrames e um Chrome (~300 MB).
 2. Mostre os exemplos: `open exemplos/satellite.mp4 exemplos/joi.mp4 exemplos/voiceos.mp4` (feitos com a Inter,
    sem música e com o pacote de sons livre; o teu sai com a SF Pro do teu Mac se tu escolher `fonte: sf`).
-   Diga que o primeiro vídeo sai no molde do Satellite (o único em que o kit troca cor, fonte e nome; no Joi ele troca
-   a cor e o nome, que vai no rótulo do ícone; no VoiceOS, só a cor).
+   Diga que o primeiro vídeo sai no molde do Satellite (o kit troca cor, nome, fonte e logo nos três moldes: no Joi o
+   nome vai no rótulo do ícone e o logo no lugar da estrela; no VoiceOS o nome vai na legenda final e o logo no lugar do triângulo).
 3. Pergunte o nome que aparece no balão final (ex.: @dela) e a cor da marca (#rrggbb). Fonte: `inter`, se ela não escolher.
    Avise que os textos continuam os do exemplo (o Satellite em português): trocar os textos é o caminho 3.
 4. Na pasta atual, crie `marcas/<cliente>/marca.json` e a pasta `marcas/<cliente>/videos/primeiro/` com `PEDIDO.md`
@@ -109,14 +109,14 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
      vídeo e perguntando "Aprovas este vídeo?".
 - **Tem molde** (a referência é o Satellite, o Joi ou o VoiceOS do @creatoroly; veja `moldes/<molde>/NOTAS.md`):
   1. Copie `moldes/<molde>/versoes/junior.json` para `<video>/versao.json` e troque os valores pedidos.
-     As tabelas de campos estão no NOTAS.md do molde. O que não estiver no arquivo fica igual ao original. No Satellite, ponha também o `"sons"` (veja **Som**).
-     Com kit de marca (`"marca"` na versão), o `nome` do kit entra sozinho no Satellite (balão final) e no Joi (rótulo
-     do ícone); um `icone_texto` na versão vale mais que o kit.
+     As tabelas de campos estão no NOTAS.md do molde. O que não estiver no arquivo fica igual ao original. Ponha também o `"sons"` (veja **Som**).
+     Com kit de marca (`"marca"` na versão), o `nome` do kit entra sozinho no Satellite (balão final), no Joi (rótulo
+     do ícone) e no VoiceOS (legenda final); um `icone_texto` na versão vale mais que o kit.
   2. Prévia: `python3 montar.py <video>/versao.json --molde <molde> --previa --video <video>` e `open` na folha de
      quadros (o último item de `arquivos` no JSON). Os três moldes gravam direto em `<video>/saidas/`.
   3. Com o ok da folha, o mesmo comando sem `--previa`. Depois, **Fechar**.
 - **Não tem molde:** faça o caminho 2. Depois proponha transformar o clone em molde no padrão de
-  `moldes/joi/NOTAS.md` (campos no `<html>`, montar.py, versão travada no MOLDE.json, prova de que com os padrões
+  `moldes/joi/NOTAS.md` (campos no `<html>`, montar.py, versão travada no MOLDE.json e em `versoes-travadas/<molde>-vN/`, prova de que com os padrões
   sai o clone). Uns 35 min e US$ 7 de agente: só com o ok.
 
 ## 4. Quero uma referência
@@ -139,7 +139,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    `python3 aprendizado/aprender.py aprovar <video>/saidas/<nome>.mp4 --tipo versao --versao <video>/.apple-style-ui/versao-resolvida.json --molde moldes/<molde>/molde --projeto <video> --pendente`
    (`moldes/<molde>/molde` é relativo à raiz do produto; o resto, à pasta atual)
    (`<nome>.mp4` é o primeiro item de `arquivos` no JSON do montar.py; as decisões ficam em
-   `<video>/.apple-style-ui/decisoes.json`). REPROVOU: mostre os motivos, corrija e rode de
+   `<video>/.apple-style-ui/decisoes.jsonl`; o antigo decisoes.json continua sendo lido; para ver:
+   `python3 aprendizado/aprender.py decisoes --projeto <video>`). REPROVOU: mostre os motivos, corrija e rode de
    novo. Nunca passe por cima.
 3. Mostre o vídeo e a folha (`open`) e pergunte: "Aprovas este vídeo?".
 4. Com o ok, o mesmo comando sem `--pendente`. Se a resposta citar a `REVISAO.md`, leia para a pessoa o que muda
