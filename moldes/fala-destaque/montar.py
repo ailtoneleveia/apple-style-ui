@@ -127,7 +127,27 @@ def frases(palavras, destaques, trechos=None):
     return out
 
 
+def escolhe_escura(grupos):
+    """A frase da cena escura, ou None: no máximo uma por vídeo, só com 3 frases ou mais. Candidatas: as do meio (nem a
+    primeira, que dá o padrão, nem a última, que borra no fim), com destaque e pelo menos 2 palavras antes dele (a caixa
+    alta precisa de uma linha em cima). Ganha a de maior pausa antes: do início da última palavra da frase anterior ao
+    início da frase (é onde quem fala respira para dar ênfase). No clone, escolhe a frase 3, a mesma do original."""
+    cands = [(g[0][1] - grupos[i - 1][-1][1], -i, i) for i, g in enumerate(grupos)
+             if 0 < i < len(grupos) - 1 and g and grupos[i - 1] and any(p[2] for p in g) and [p[2] for p in g].index(1) >= 2]
+    return max(cands)[2] if cands else None
+
+
+def autoteste():
+    clone = json.loads(json.loads(re.search(r'"id": "frases".*?"default": ("(?:[^"\\]|\\.)*")', (AQUI / "index.html").read_text())
+                                  .group(1)).replace("&apos;", "'"))
+    assert escolhe_escura(clone) == 2, escolhe_escura(clone)  # a frase do neon no original
+    assert escolhe_escura(clone[:2]) is None  # menos de 3 frases: sem cena escura
+    sem = [[["a", 0, 0], ["b", .1, 1]], [["c", 1, 0], ["d", 1.1, 0], ["e", 1.2, 1]], [["f", 3, 0], ["g", 3.1, 0]], [["h", 4, 1]]]
+    assert escolhe_escura(sem) == 1  # a frase 2 não tem destaque; a 1 tem só 1 palavra antes dele e é a primeira
+
+
 def main():
+    autoteste()
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--pessoa", required=True); ap.add_argument("--saida", required=True); ap.add_argument("--voz")
     ap.add_argument("--destaques", default=""); ap.add_argument("--versao"); ap.add_argument("--cor-destaque")
@@ -151,15 +171,19 @@ def main():
     decl = json.loads(re.search(r"data-composition-variables='(.*?)'", (AQUI / "index.html").read_text(), re.S).group(1)
                       .replace("&apos;", "'"))
     valores = {d["id"]: d["default"] for d in decl}
+    regra = not a.versao  # frases novas: a cena escura sai da regra (escolhe_escura); a versão que traz `cenas` manda
     if a.versao:
-        valores.update(json.load(open(a.versao)))
+        vv = json.load(open(a.versao)); valores.update(vv)
+        regra = "frases" in vv and "cenas" not in vv  # versão antiga, sem o campo: as frases dela não são as do clone
     else:
         ws = le_palavras(a.transcricao) if a.transcricao else transcreve(fala, bastidor, a.idioma)
         if not ws:
             falha("a transcrição não achou nenhuma palavra", 2)
         valores["frases"] = json.dumps(frases(ws, [d for d in a.destaques.split(",") if d.strip()], trechos_de_fala(fala)),
                                        ensure_ascii=False)
-        valores["cenas"] = "{}"  # o padrão marca a cena escura das frases do clone; frases novas começam sem
+    if regra:
+        i = escolhe_escura(json.loads(valores["frases"]))
+        valores["cenas"] = json.dumps({} if i is None else {str(i): "escura"})
     for k, v in (("cor_destaque", a.cor_destaque), ("fonte_destaque", a.fonte), ("sombra", a.sombra), ("altura", a.altura)):
         if v is not None:
             valores[k] = v

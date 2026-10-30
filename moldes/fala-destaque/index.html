@@ -71,6 +71,8 @@
         recuoEsq: 16,         // a linha de cima começa 16 px depois da serifa (14 a 17)
         recuoDir: 8,          // e o pedaço da direita termina 8 px antes dela
         largMax: 900,         // a serifa encolhe se a linha passar disso
+        vaoPingo: 30,         // da palavra de cima até o pingo do i ou a haste da serifa (32 px do "and" ao pingo no clone, f28)
+        desviaMax: 40,        // quanto a palavra de cima pode andar de lado para não encostar num pico
         antecipa: 0.08,       // a palavra aparece ~0,08 s antes do início que a transcrição dá (mediana no clone)
         entrada: 14, desliza: 20, dx0: 12, a0: 0.85,  // entrada medida (aparicao.py + trilha): 85 % → 100 % em 14 q; 12 px → 0 em 20 q
         borra: [1.5, 3.5, 7, 9],  // saída do último grupo: σ por quadro (medido em f60-f63 e f195-f198)
@@ -109,9 +111,10 @@
         const c = document.createElement("canvas"); c.width = 2400; c.height = 700;
         const g = c.getContext("2d"); g.font = fonte; g.letterSpacing = `${esp}px`; g.textBaseline = "alphabetic"; g.fillText(txt, 200, 450);
         const d = g.getImageData(0, 0, c.width, c.height).data; let x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1;
+        const topo = new Float32Array(c.width).fill(1e9);  // topo da tinta de cada coluna (o pingo do i, a haste do t)
         for (let y = 0; y < c.height; y++) for (let x = 0; x < c.width; x++) if (d[(y * c.width + x) * 4 + 3] > 40) {
-          if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
-        const r = x1 < 0 ? { l: 0, t: 0, w: 1, h: 1, adv: 0 } : { l: x0 - 200, t: y0 - 450, w: x1 - x0 + 1, h: y1 - y0 + 1, adv: g.measureText(txt).width };
+          if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; if (topo[x] > 1e8) topo[x] = y - 450; }
+        const r = x1 < 0 ? { l: 0, t: 0, w: 1, h: 1, adv: 0, topo: [] } : { l: x0 - 200, t: y0 - 450, w: x1 - x0 + 1, h: y1 - y0 + 1, adv: g.measureText(txt).width, topo: topo.slice(x0, x1 + 1) };
         if (!document.fonts || document.fonts.check(fonte)) _tinta.set(k, r);
         return r;
       }
@@ -167,14 +170,27 @@
           let x = x0;
           const topos = [];  // topo da tinta de cada palavra em destaque (haste do t, h, f...): a linha de cima não encosta
           meio.forEach((p, k) => { out.push({ p, tipo: "serifa", x: x - ws[k].l * sx * escala, base, px: pxS * escala, sx, esp: espS * pxS / 100 });
-            topos.push([x, x + ws[k].w * sx * escala, base + ws[k].t * escala]); x += ws[k].w * sx * escala + MEDIDAS.vao * escala; });
+            topos.push([x, x + ws[k].w * sx * escala, base + ws[k].t * escala, k]); x += ws[k].w * sx * escala + MEDIDAS.vao * escala; });
           const topoX = base - MEDIDAS.xDestaque * escala, xd = x0 + largura;
+          // colunas da serifa que sobem acima da altura de x (pingo do i, hastes): a linha de cima não encosta nelas
+          const picos = [];
+          topos.forEach(([a0, , , k]) => ws[k].topo.forEach((tp, c) => { if (base + tp * escala < topoX - 2) picos.push(a0 + c * sx * escala); }));
           // linha de cima: até 2 palavras à esquerda; com 3 ou mais, as 2 últimas vão para a direita
           const L = meio.length ? x0 : W / 2 - 300, R = meio.length ? xd : W / 2 + 300;
           const baseC = meio.length ? topoX - MEDIDAS.folgaCima : base;
           const linha = (ps, xi, b, alinha, cima) => {
             const txt = ps.map((p) => p[0]).join(" "), m = tinta(txt, APOIO(pxA), espA);
             let xx = alinha === "dir" ? xi - m.w : xi;
+            // o pedaço que fica a menos de vaoPingo de um pico anda de lado (até desviaMax), como o "and" do clone, que
+            // fica à esquerda do pingo do i de "reinvent"; sem lado livre, vale a subida abaixo
+            const perto = (a) => picos.filter((X) => X > a - MEDIDAS.vaoPingo && X < a + m.w + MEDIDAS.vaoPingo);
+            const pp = cima ? perto(xx) : [];
+            if (pp.length) {
+              const s = [Math.min(...pp) - MEDIDAS.vaoPingo - (xx + m.w), Math.max(...pp) + MEDIDAS.vaoPingo - xx]
+                .filter((s) => Math.abs(s) <= MEDIDAS.desviaMax && xx + s >= 40 && xx + s + m.w <= W - 40 && !perto(xx + s).length)
+                .sort((p, q) => Math.abs(p) - Math.abs(q))[0];
+              if (s !== undefined) xx += s;
+            }
             if (cima) for (const [a0, a1, tp] of topos) if (a1 > xx && a0 < xx + m.w) b = Math.min(b, tp - 6);
             for (const p of ps) { const mm = tinta(p[0], APOIO(pxA), espA); out.push({ p, tipo: "apoio", x: xx - mm.l, base: b, px: pxA, sx: 1, esp: espA });
               xx += tinta(p[0] + " ", APOIO(pxA), espA).adv; }
