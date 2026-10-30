@@ -9,7 +9,9 @@
                                                                  renderiza, compara e grava rodadas/NN/nota.json; com
                                                                  máscara (placa de vídeo) a nota é a da camada recriada;
                                                                  raster de hf/assets/ sem declaração em RECORTES.md reprova
-                                                                 a rodada (aprovada: false) e a nitidez vai na nota
+                                                                 a rodada (aprovada: false) e a nitidez vai na nota; o
+                                                                 alvo só é batido com todas as peças aprovadas e o
+                                                                 movimento paramétrico (scripts/qualidade.py)
   clonar.py final  <pasta> [--rodada NN] [--so-camada]           saidas/final.mp4 e saidas/lado-a-lado.mp4 (e so-camada.mp4)
 
 Saída: JSON {ok, resumo, proximo: {comando, motivo, precisa_de_voce}} no stdout.
@@ -225,6 +227,10 @@ def rodada(a):
         fd = roda([PY, SCR / "fdsum.py", orig, clone, "--json", B / "fdsum.json"] + (["--prev", ant[-1]] if ant else []), log=log)
         (B / "fdsum.txt").write_text(fd.stdout)
         roda([PY, SCR / "recortes.py", P, "--clone", clone, "--json", B / "recortes.json"], log=log)
+        qd = None
+        if not a.previa:  # o loop de qualidade: peça por peça e movimento paramétrico (scripts/qualidade.py)
+            qd = json.loads(roda([PY, SCR / "qualidade.py", "comparar", orig, clone, "--hf", P / "hf", "--saida", B / "qualidade"]
+                                 + (["--pecas", P / "pecas.json"] if (P / "pecas.json").exists() else []), log=log).stdout)
         mc = mascara_cfg(P, a)
         if mc:
             roda([PY, SCR / "compara_mascara.py", orig, clone, mc["mascara"], "--margem", mc["margem"], "--json", B / "mascara.json"]
@@ -239,8 +245,9 @@ def rodada(a):
     piores = sorted(fdj["blocos"], key=lambda b: -b["dist"])[:3]
     mj = json.load(open(B / "mascara.json")) if mc else None
     alvo_n = mj or n  # com máscara, quem decide é a camada recriada (a placa de vídeo deixa o quadro inteiro baixo demais)
-    atingiu = (alvo_n["distancia"] is not None and alvo_n["distancia"] <= ALVO["distancia"] and alvo_n["correlacao"] is not None
-               and alvo_n["correlacao"] >= ALVO["correlacao"] and alvo_n["pico_quadros"] <= ALVO["pico_quadros"])
+    global_ok = (alvo_n["distancia"] is not None and alvo_n["distancia"] <= ALVO["distancia"] and alvo_n["correlacao"] is not None
+                 and alvo_n["correlacao"] >= ALVO["correlacao"] and alvo_n["pico_quadros"] <= ALVO["pico_quadros"])
+    atingiu = global_ok and bool(qd and qd["aprovada"])  # pronto = nota global E todas as peças E movimento paramétrico
     if mj:
         mascara = {k: mj[k] for k in ("distancia", "distancia_fina", "correlacao", "movimento", "pico_quadros", "sem_camada", "como")}
         mascara["piores_trechos"] = [dict(quadros=f"f{b['a']}-f{b['b']}", dist=b["dist"], anterior=b.get("anterior"), pior_quadro=b["pior_quadro"])
@@ -250,7 +257,8 @@ def rodada(a):
                 **(dict(mascara=mascara) if mj else {}),
                 fdsum=fdj["media"], fdsum_anterior=fdj["anterior"], quadros=f"{fdj['quadros']}/{fdj['quadros_original']}",
                 piores_trechos=[dict(quadros=f"f{b['a']}-f{b['b']}", dist=b["dist"], pior_quadro=b["pior_quadro"]) for b in piores],
-                alvo=ALVO, atingiu=bool(atingiu and not a.previa), aprovada=rc["aprovada"],
+                alvo=ALVO, nota_global_ok=bool(global_ok), atingiu=bool(atingiu and not a.previa), aprovada=rc["aprovada"],
+                **(dict(qualidade=dict(aprovada=qd["aprovada"], resumo=qd["resumo"], piores=qd["piores"], arquivo=qd["arquivo"])) if qd else {}),
                 **(dict(motivo_reprovada=rc["motivo_reprovada"]) if not rc["aprovada"] else {}),
                 nitidez=rc["nitidez"], video=str(clone))
     (P / "rodadas" / NN / "nota.json").write_text(json.dumps(nota, ensure_ascii=False, indent=1))
@@ -270,6 +278,8 @@ def rodada(a):
         res += (f"; NA MÁSCARA (camada): distância {mj['distancia']} (fina {mj['distancia_fina']}), correlação {mj['correlacao']}, "
                 f"pico {mj['pico_quadros']} q" + (f", sem camada {mj['sem_camada']['distancia']}" if mj.get("sem_camada") else "")
                 + f"; pior trecho da camada f{pm['a']}-f{pm['b']} ({pm['dist']})")
+    if qd:
+        res += f"; POR PEÇA: {qd['resumo']}"
     nt = rc["nitidez"]
     if nt:
         res += f"; nitidez {nt['razao']}x a do original" + (" (BEM MAIS BORRADO que o original)" if nt["borrado"] else "")
@@ -286,6 +296,12 @@ def rodada(a):
                     precisa_de_voce=False)
     elif nn >= MAX_RODADAS and not a.previa:
         prox = dict(comando=f"{EU} final {P}", motivo=f"{MAX_RODADAS} rodadas: fechar com a melhor e anotar em LICOES.md o que ainda difere",
+                    precisa_de_voce=False)
+    elif qd and not qd["aprovada"]:
+        prox = dict(comando=f"{EU} rodada {shlex.quote(str(P))} --o-que-mudou \"...\"",
+                    motivo=("nota global batida, mas não está pronto: " if global_ok else "")
+                    + "atacar as 3 piores peças (" + " | ".join(qd["piores"]) + "). Movimento por mola paramétrica (estilo.js ou "
+                    f"zeta e omega medidos), nunca pose quadro a quadro. Detalhes em {BASTIDOR}/rodadas/{NN}/qualidade/QUALIDADE.md",
                     precisa_de_voce=False)
     else:
         prox = dict(comando=f"{EU} rodada {P} --o-que-mudou \"...\"",
@@ -307,7 +323,7 @@ def final(a):
     if not notas:
         raise Falha("nenhuma rodada aprovada com nota (rode clonar.py rodada; rodada com recorte não declarado não fecha)", 1)
     chave = (lambda n: (n["mascara"]["distancia_fina"], -n["rodada"])) if all("mascara" in n for n in notas) else (lambda n: (n["fdsum"], -n["rodada"]))
-    best = min(notas, key=chave) if not a.rodada else notas[0]
+    best = min(notas, key=lambda n: (not (n.get("qualidade") or {}).get("aprovada", False), chave(n))) if not a.rodada else notas[0]
     NN = f"{best['rodada']:02d}"
     S = P / "saidas"; S.mkdir(exist_ok=True)
     guarda(S / "final.mp4"); shutil.copy2(P / BASTIDOR / "rodadas" / NN / "clone.mp4", S / "final.mp4")

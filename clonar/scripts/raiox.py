@@ -130,8 +130,9 @@ def iou(a, b):
     return i / max(1e-9, a[2] * a[3] + b[2] * b[3] - i)
 
 
-def trilhas_da_cena(Q, a, b, esc):
-    """manchas diferentes do fundo (mediana da cena), seguidas quadro a quadro. Coordenadas em px do original."""
+def trilhas_da_cena(Q, a, b, esc, area_min=0.0015, limiar=28):
+    """manchas diferentes do fundo (mediana da cena), seguidas quadro a quadro. Coordenadas em px do original.
+    area_min (fração do quadro) e limiar: o qualidade.py pede peças menores (cursor, avatar)."""
     n = b - a
     amostra = Q[a:b:max(1, n // 60)]
     fundo = np.median(amostra, axis=0).astype(np.int16)
@@ -139,11 +140,11 @@ def trilhas_da_cena(Q, a, b, esc):
     k1, k2 = np.ones((3, 3), np.uint8), np.ones((9, 9), np.uint8)
     vivas, todas = [], []
     for f in range(a, b):
-        m = (np.abs(Q[f].astype(np.int16) - fundo).max(-1) > 28).astype(np.uint8)
+        m = (np.abs(Q[f].astype(np.int16) - fundo).max(-1) > limiar).astype(np.uint8)
         m = cv2.morphologyEx(cv2.morphologyEx(m, cv2.MORPH_OPEN, k1), cv2.MORPH_CLOSE, k2)
         nc, _, st, cen = cv2.connectedComponentsWithStats(m, connectivity=8)
         comps = [(float(st[i, 0]), float(st[i, 1]), float(st[i, 2]), float(st[i, 3]), float(st[i, 4]))
-                 for i in range(1, nc) if 0.0015 * area_q <= st[i, 4] <= 0.6 * area_q]
+                 for i in range(1, nc) if area_min * area_q <= st[i, 4] <= 0.6 * area_q]
         livres = set(range(len(comps)))
         pares = []
         for ti, tr in enumerate(vivas):

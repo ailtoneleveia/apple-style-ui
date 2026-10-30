@@ -84,7 +84,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
      um declarado em `hf/assets/RECORTES.md` com o motivo. Recorte não declarado reprova a rodada, mesmo com a nota boa.
    - **Bateu o alvo, fecha.** Quando o `proximo` da rodada disser "alvo batido: rode final", rode `clonar.py final` na
      hora e entregue. Polir depois do alvo só se a pessoa pedir.
-   A entrega é o lado a lado e a nota de fidelidade (distância e correlação de movimento).
+   A entrega é o lado a lado e a nota de fidelidade (distância, correlação de movimento e a tabela por peça do
+   `QUALIDADE.md`; o alvo só fecha com todas as peças aprovadas).
 4. Siga **Fechar** com `--tipo clone` (sem `--versao` e sem `--molde`).
 
 ## 3. Quero um vídeo igual a esta referência
@@ -126,6 +127,12 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 3. Próximo passo: o caminho 3 com o link escolhido.
 
 ## Fechar (todo caminho termina aqui)
+0. **Loop de qualidade, antes de mostrar qualquer vídeo.** Clone: a `rodada` já mede peça por peça. Molde ou vídeo
+   novo: `python3 clonar/scripts/qualidade.py estilo <video>/saidas/<nome>.mp4 [--hf <composição>]` (contra o perfil
+   do `estilo.js`: molas, obturador, nada parado, escalonamento, velocidade sem quebra, texto nítido na área segura,
+   fundo neutro). Reprovou: corrija as 3 piores do `proximo` com mola paramétrica (nunca pose quadro a quadro),
+   renderize e meça de novo, até 6 voltas. Só entregue com `aprovada: true`; no fim do orçamento, diga o que ainda
+   reprova. Detalhes em `clonar/CLONAR.md`, "O loop de qualidade".
 1. O portão lê a versão resolvida (sem `"marca"` nem `"molde"`), que o `montar.py` já gravou em
    `<video>/.apple-style-ui/versao-resolvida.json`.
 2. Portão e registro pendente, num comando só (cerca de 1 min no Satellite):

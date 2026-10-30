@@ -5,12 +5,16 @@ serve para aprender o estilo de quem fez (molas, tempo, blur, letra) e vira mold
 o original e os recortes dele nunca saem daqui.
 
 O ciclo: **medir, fichar, montar, rodar, comparar, corrigir**. No máximo 6 rodadas.
-**Alvo:** distância ≤ 0,012, correlação de movimento ≥ 0,97 e pico de até 1 quadro em todas as janelas.
+**Alvo (o que é "pronto"):** a nota global (distância ≤ 0,012, correlação de movimento ≥ 0,97 e pico de até 1 quadro
+em todas as janelas) E todas as peças aprovadas no medidor por peça E o movimento paramétrico (seção "O loop de
+qualidade"). A nota global sozinha não basta: o teste cego B2 fez 0,005 / 0,977 / 0 na rodada 3 e saiu bem inferior
+aos clones bons (cursor e memoji errados, texto da chamada desalinhado, movimento por chaves lidas à mão). O fundo
+liso dilui o erro de cada peça na média do quadro.
 
 ## Três regras que o teste cego cobrou
 
-1. **Bateu o alvo, fecha na hora.** Quando a rodada bate o alvo (o `proximo` diz "alvo batido: rode final"), roda
-   `clonar.py final` e entrega. Nada de ajuste quadro a quadro depois disso: no teste, a rodada 2 já tinha distância
+1. **Bateu o alvo, fecha na hora.** Quando a rodada bate o alvo inteiro, peças incluídas (o `proximo` diz "alvo
+   batido: rode final"), roda `clonar.py final` e entrega. Nada de ajuste quadro a quadro depois disso: no teste, a rodada 2 já tinha distância
    0,005, correlação 0,977 e pico 0, e a sessão gastou mais 1 h polindo a uns 5 min por quadro. Polir só se o
    usuário pedir.
 2. **Nada fica rodando sozinho.** Todo comando longo (render, rodada, final, ajuste) roda em primeiro plano, com o
@@ -74,8 +78,11 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    `draw(t)`, e cada peça de interface é desenhada nela (texto, forma, SVG), nunca um PNG recortado do original. O modelo já traz um canvas e o encaixe na tinta: `encaixa(txt, fonte, amostra(nome, F), opções)` desenha
    o texto ou emoji na caixa medida do original (escala, centro e ângulo), e `amostra()` prende o `F` ao trecho medido
    (sem isso o elemento nasce meio transparente). O `Fi` decide se o elemento existe. `{largura: true}` ajusta o
-   espaço entre letras à proporção da caixa medida (a fonte do original quase nunca tem o mesmo espaçamento). Onde não há trilha, comece pelas
-   molas, entradas, saídas, passos e pesos do `estilo.js`. Placa de fundo (vídeo de pessoa, mapa) só quando
+   espaço entre letras à proporção da caixa medida (a fonte do original quase nunca tem o mesmo espaçamento).
+   **Movimento é mola, não pose.** A trilha medida serve para medir: cada movimento vira uma mola (`estilo.mola`,
+   `estilo.cadeia`, `estilo.entrada`) com zeta, omega, impulso e começo ajustados nela (o `qualidade.py` dá a mola
+   de cada movimento do original na correção). Tabela de pose por quadro em `hf/` reprova a rodada (veja "O loop
+   de qualidade"). Onde não há trilha, comece pelas molas, entradas, saídas, passos e pesos do `estilo.js`. Placa de fundo (vídeo de pessoa, mapa) só quando
    `!SO_CAMADA`; sem ela, fundo neutro.
 5. **Rodar.** `python3 clonar.py rodada <pasta> --o-que-mudou "..."` renderiza com motion blur de subquadros
    (240 qps: N=8 a 30 qps, N=4 a 60 qps; um worker; ganho de luma 1,008; H.264 nível 5.1), compara com o original
@@ -90,13 +97,106 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    camada recriada, só nos pixels da máscara de cada quadro (`compara_mascara.py`), com o movimento medido em
    quadro − placa e o número "sem camada" (não desenhar nada) ao lado para provar que a nota não engana. A máscara
    fica guardada em `.apple-style-ui/mascara.json` para as próximas rodadas e para o `final`.
-6. **Comparar e corrigir.** Depois que a nota global passa, quem guia é o `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`,
-   com a rodada anterior ao lado) e o `diffview.py` (onde está o erro). Mude uma hipótese por região em cada rodada e
-   julgue pelos blocos, não pela média.
+6. **Comparar e corrigir.** A rodada roda o medidor por peça (`scripts/qualidade.py comparar`, com a checagem de
+   código em `hf/`) e o `proximo` lista as 3 piores peças com o motivo técnico e a correção. Ataque essas 3, uma
+   hipótese por peça. O `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`) e o `diffview.py` mostram onde
+   está o erro no quadro. Detalhes na seção "O loop de qualidade".
 7. **Fechar.** Ao bater o alvo (na mesma hora, sem polir), ou na 6ª rodada: `python3 clonar.py final <pasta>` gera
-   `saidas/final.mp4` (a melhor rodada aprovada) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
+   `saidas/final.mp4` (a melhor rodada aprovada, de preferência uma em que todas as peças passaram) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
    `saidas/so-camada.mp4`: a mesma composição sem a placa (`camada.js`), o primeiro passo para virar molde.
    Escrever `LICOES.md`.
+
+## O loop de qualidade (medir por peça, atacar as 3 piores)
+
+A média do quadro não vê peça errada: num fundo liso, um cursor trocado ou um memoji diferente somem na conta. O
+loop mede cada peça, critica com números de motion design, corrige as 3 piores e mede de novo.
+
+**Medir por peça.** `scripts/qualidade.py comparar <original> <clone> [--pecas pecas.json] [--hf hf/]`. A `rodada`
+já roda sozinha (com `--hf` e, se existir, o `pecas.json` da pasta do clone). As peças vêm do original em dois
+níveis: o que difere do fundo da cena (cartão, painel, ícone) e o que difere do entorno (texto, avatar, cursor,
+botão dentro do cartão). Para dar nome às peças da FICHA, escreva `pecas.json` (`[{"nome", "quadros": [a, b],
+"caixa": [x0, y0, x1, y1]}]`). Cada peça é medida do mesmo jeito nos dois vídeos, na região dela no original:
+
+| medida | como | reprova quando (limite) |
+|---|---|---|
+| velocidade | correlação de fase quadro a quadro, só onde ela confia nos dois vídeos | erro RMS acima de 2,5x a velocidade do original |
+| quebras de C1 | a velocidade salta num quadro (chave linear, pose lida à mão, parada seca) | mais de 7 sem par no original (contadas como a 30 qps) |
+| mola | cada movimento do original que é mola, e o clone na MESMA janela: curva de progresso, zeta, omega, passa do ponto, tempo de assentar | curva a mais de 0,75 (RMS), clone sem mola (resíduo 0,35 acima do original), ou movimento de 5 % do quadro que o clone não faz (menos de 15 %) |
+| escalonamento | atraso de entrada contra a peça anterior da sequência, e a sobreposição | erro acima de 0,45 s |
+| motion blur | obturador equivalente (o ajuste do raio-x) | fora de 0,5x a 2x o do original |
+| nitidez | Laplaciano sobre a variância do recorte | abaixo de 0,2x a do original |
+| cor | ΔE2000 da cor dominante da peça | acima de 46 (só pega cor trocada) |
+| forma | IoU da máscara | abaixo de 0,2 |
+| percepção | SSIM no recorte | abaixo de 0,5 |
+| texto | tesseract confiante nos dois: conteúdo, altura-x; a espessura do traço só vai no relatório | conteúdo abaixo de 0,6; altura-x fora de 0,6x a 1,4x |
+
+Sai `rodadas/NN/qualidade/QUALIDADE.md` (no bastidor) e `qualidade.json`, com a PIOR peça primeiro e o motivo
+técnico de cada reprovação. O `proximo` da rodada lista as 3 piores com a correção. No B2: "y f146-151 (-94 px): o
+clone não faz esse movimento (anda -11 px); animar com estilo.mola('suave') a partir do f146" e "largura f166-170:
+curva diferente (rms 1,08): ζ 0,15 contra 0,90 medido, ω 8,2 contra 72,1; usar estilo.mola({zeta: 0.9, omega: 72.1,
+u0: 0.0})".
+
+**Atacar as 3 piores.** Uma hipótese por peça em cada rodada. A correção é sempre paramétrica: mola do `estilo.js`
+quando ela explica a medida (o kit diz qual), ou mola com os parâmetros medidos. Proibido polir pose quadro a quadro:
+a checagem de código reprova.
+
+**Movimento paramétrico** (`qualidade.py codigo hf/`, também dentro de cada rodada). Reprova:
+- tabela de chaves `[[quadro, valor], ...]` com mais de 4 chaves numa grandeza (início, fim, um passa-do-ponto e uma
+  espera bastam para uma mola; mais que isso é pose copiada);
+- trilha densa de pose (uma posição, escala ou caixa por quadro em `window.X = {...}`): a trilha medida mora no
+  bastidor e serve para ajustar a mola, não para desenhar.
+
+Passa: `estilo.mola`, `estilo.cadeia`, `estilo.entrada`, `estilo.saida`, `estilo.caixa`, `kf` e `cr` com até 4 chaves.
+**Mapa de tempo é permitido** (o `mapL` do B2: inteiros que dizem qual quadro da 1ª volta mostrar em cada quadro da
+2ª, quase sempre +1 ou 0). A diferença: o mapa de tempo só reparametriza o tempo e a pose continua saindo das molas;
+a tabela de pose substitui a mola pelos números lidos do original, com velocidade quebrada em cada chave. Cor por
+quadro (`bgL`) vai no relatório, sem reprovar. No B2 a checagem acusa 30 tabelas com 434 chaves (a maior, `PILULA`,
+com 82) e nenhuma mola do `estilo.js`; o `mapL` e o `mapR` passam como mapa de tempo.
+
+**Orçamento e pronto.** No máximo 6 rodadas. Pronto = nota global + todas as peças + código paramétrico. Na 6ª
+rodada sem tudo passar, o `final` fecha com a melhor rodada (de preferência uma com as peças aprovadas) e o
+`LICOES.md` anota o que ainda reprova, peça por peça.
+
+**Calibração** (30/10, `rascunhos/.../qualidade-calibracao/`, peças detectadas sozinhas): os 3 clones bons passam e o
+B2 reprova 16 de 57 peças. O pior de cada medida:
+
+| medida | Satellite | Joi | VoiceOS | B2 | limite |
+|---|---|---|---|---|---|
+| peças reprovadas | 0 de 53 | 0 de 58 | 0 de 60 | **16 de 57** | 0 |
+| erro de velocidade | 1,51 | 1,88 | 0,92 | **5,05** (cartão Recent com os memojis) | 2,5 |
+| quebras a mais (30 qps) | 5 | 6,5 | 3 | **8** (grade de pastas, painel direito) | 7 |
+| curva de mola (RMS) | 0,29 | 0,71 | 0,42 | **1,08** (pastas da 2ª volta) | 0,75 |
+| clone sem mola (resíduo a mais) | 0,09 | 0,33 | 0,14 | **0,90** | 0,35 |
+| movimento grande que o clone não faz | nenhum | nenhum | nenhum | **3** (anda 10 a 12 % do caminho) | 15 % |
+| SSIM mínimo | 0,59 | 0,61 | 0,53 | **0,40** (ícone do Finder), 0,48 e 0,50 (rótulo Files) | 0,5 |
+| IoU mínimo | 0,31 | 0,23 | 0,31 | **0,07** (rastro do WhatsApp), 0,18 (ⓘ e cursor do Get Info), 0,18 (aviso) | 0,2 |
+| altura-x | 0,18 | 0,05 | 0,37 | **0,44** (Recent) | 0,4 |
+| obturador (razão) | 1,53 | 0,99 | sem medida | 0,84 | 0,5 a 2 |
+
+Com as peças da FICHA (`pecas.json` de cursor, avatar, texto da chamada, Get Info e botão), o B2 reprova o avatar
+(SSIM 0,45: memoji diferente), o texto "Liam is calling" (IoU 0,15 e SSIM 0,46: desalinhado), o cursor da 2ª volta
+(SSIM 0,49) e passa o botão verde (SSIM 0,83). O cursor da 1ª volta passa raspando (0,52).
+
+O que a calibração mostrou e ainda limita:
+- As margens são finas (velocidade 1,88 contra 5,05 é a folgada; quebras 6,5 contra 8 e SSIM 0,53 contra 0,50 não).
+  Os limites saíram do pior clone bom, não de uma régua de percepção: clone novo que reprove raspando merece olho.
+- Cor (ΔE), escalonamento, espessura do traço e conteúdo do texto quase não separam: em texto sobre degradê e em
+  recorte com várias linhas o ruído dos bons é tão grande quanto o erro do B2. Ficaram com limite só para erro grosso.
+- A checagem de código também acusa os 3 clones bons (eles usam trilha medida por quadro, `tracks.js`, e chaves com
+  Catmull-Rom). A regra vale para o trabalho novo. A diferença do B2 para eles não é paramétrico contra trilha: é
+  trilha densa medida por ferramenta e interpolada sem quebra, contra chaves esparsas lidas à mão e ligadas por reta.
+
+**Sem referência** (aplicar molde, vídeo novo): `qualidade.py estilo <video.mp4> [--hf hf/]` compara contra o perfil
+do `estilo.js`: molas dentro das faixas medidas (zeta 0,4 a 2,8, omega 2,5 a 65, assenta até 1,5 s, passa do ponto
+até 40 %), metade ou mais dos movimentos de cada peça como mola, obturador entre 0,5x e 2x o do estilo (1/120 s),
+nada parado por mais de 2 s, escalonamento (3 ou mais peças entrando no mesmo quadro reprova), velocidade
+sem quebra, texto nítido e dentro da área segura (9:16: 8 % em cima, 18 % embaixo, 4 % dos lados; quadrado e 16:9:
+3 %), fundo neutro, e pelo menos 30 % dos movimentos como mola.
+Calibrado nos 3 originais, nos 3 clones bons e nos 3 exemplos dos moldes (`exemplos/`): os 9 passam (quebras por
+peça até 14,5, obturador de 0,76x a 3x o do estilo, até 1,73 s parado, 31 a 65 % dos movimentos como mola). O B2
+reprova por 55 quebras de velocidade no painel direito e pela checagem de código. Este modo só pega erro grosso:
+sem o original ao lado, o espalhamento dos bons é largo (o Joi arrasta o borrão de propósito; as peças achadas
+sozinhas incluem movimento que não é mola). Para nota fina, só o `comparar`.
 
 ## Caminho do comando de entrada: referência demonstrativa → vídeo com a pessoa do usuário
 
@@ -142,8 +242,9 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 
 ## Lista de verificação (o que os 5 primeiros clones ensinaram)
 
-- [ ] **Medir cada peça quadro a quadro.** Toda peça que mexe vira trilha medida (`medir.py`, `track.py`). Ease no olho
-      não chega lá. Trilha com buraco é preenchida por interpolação antes de desenhar.
+- [ ] **Medir cada peça quadro a quadro, animar por mola.** Toda peça que mexe vira trilha medida (`medir.py`,
+      `track.py`) e a trilha vira mola ajustada (zeta, omega, impulso, começo). Ease no olho não chega lá; pose
+      copiada quadro a quadro também não (o B2 tinha 434 chaves em 30 tabelas e saiu duro).
 - [ ] **Só blur de subquadro.** Motion blur vem do render a 240 qps com obturador medido (1/120 s no estilo). Nada de
       `filter: blur()` proporcional à velocidade. Blur de CSS só para desfoque de entrada e profundidade, medido.
 - [ ] **Corte seco não mistura lados.** `Fi` decide o que existe; os subquadros de um corte nunca juntam os dois planos.
@@ -163,8 +264,8 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 - [ ] **Saída com tombo 3D:** ajuste por pontos internos e bordas ao mesmo tempo.
 - [ ] **Recorte de objeto sobre brilho:** o alfa sai da luminância acima da borda do recorte; o brilho é camada à parte.
 - [ ] **Cor e chave de tempo só de quadros numerados** (`select=eq(n,f)`), nunca de grade com rótulo nem de snapshot.
-- [ ] **A tinta medida dirige o elemento.** Texto e emoji: `trilha_palavra.py` no original, `encaixa()` na composição.
-      Nenhum ease à mão. (4º clone: 22 elementos numa rodada, correlação 0,985 já na primeira.)
+- [ ] **A tinta medida dá a caixa, a mola dá o caminho.** Texto e emoji: `trilha_palavra.py` no original, `encaixa()`
+      na caixa assentada, e o caminho até ela por mola com os parâmetros medidos. Nenhum ease à mão.
 - [ ] **Calibrar emoji e texto contra o próprio clone:** a mesma medida no original e no render, corrigir pela razão
       (escala pela raiz da razão de tinta, ângulo pela proporção da caixa). Espelhamento a caixa não vê: olhe.
 - [ ] **Câmera encadeada acumula erro:** registre cada quadro direto contra a placa (`registra_cam.py`).
@@ -210,6 +311,7 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 | `track.py`, `camtrack.py` | pose de um objeto e câmera contínua por ECC encadeado |
 | `round_mb.sh`, `round.sh` | render com motion blur de subquadros; prévia sem blur |
 | `compare.py`, `fdsum.py`, `diffview.py` | nota global; distância por trecho com a rodada anterior; mapa da diferença |
+| `qualidade.py` | o loop de qualidade: `comparar` (clone contra original, peça por peça), `estilo` (sem referência, contra o perfil calibrado) e `codigo` (movimento paramétrico em `hf/`) |
 | `sbs.py` | lado a lado em resolução cheia |
 | `saida.py` | o que as ferramentas novas têm em comum: saída JSON padrão e leitura de quadros um a um |
 | `extrair_tela.py` | o vídeo de dentro de uma referência demonstrativa (cartão, tela, celular): acha, segue por homografia, endireita no tamanho nativo, lista trechos sem a tela e trocas de conteúdo |
@@ -217,8 +319,9 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 | `destaque.py` | a regra da palavra em destaque de cada frase (palavras vazias em português e inglês); roda sozinho como autoteste |
 
 Todas as ferramentas novas devolvem o JSON padrão `{ok, resumo, proximo}`. Autotestes: `testes/conferir_raiox.py`
-(o raio-x contra os 3 primeiros clones) e `testes/conferir_pecas.py` (as peças acima num vídeo sintético, menos de
-um minuto).
+(o raio-x contra os 3 primeiros clones), `testes/conferir_pecas.py` (as peças acima num vídeo sintético, menos de
+um minuto) e `testes/conferir_qualidade.py` (o medidor por peça: mola conhecida, velocidade quebrada, peça borrada
+e a checagem de código, cerca de um minuto).
 
 ## Regras de render e disco
 
