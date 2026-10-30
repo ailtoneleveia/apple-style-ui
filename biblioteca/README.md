@@ -9,13 +9,14 @@
 - `GLOSSARIO.md`: o nome de cada peça, o termo para usar com o Claude e o item do catálogo do HyperFrames.
 - O vídeo é do autor: aqui só o link. Pedidos de remoção por issue.
 
-## Provadas (3)
+## Provadas (4)
 
 | clone | autor | distância | correlação | lado a lado | prompt |
 |---|---|---|---|---|---|
 | VoiceOS | [@creatoroly](https://www.instagram.com/p/DafsqUut4x1/) | 0,010 | 0,999 | só local | [ver](prompts/DafsqUut4x1.md) |
 | Joi | [@creatoroly](https://www.instagram.com/p/DPJJwcujV0X/) | 0,004 | 0,997 | só local | [ver](prompts/DPJJwcujV0X.md) |
 | Satellite | [@creatoroly](https://www.instagram.com/p/DWWQEOmDfsf/) | 0,010 | 0,981 | só local | [ver](prompts/DWWQEOmDfsf.md) |
+| fala-destaque (tua gravação no estilo) | [@dopemotionzone](https://www.instagram.com/p/DaIOD8QSEAz/) | por máscara | ver `moldes/fala-destaque/NOTAS.md` | só local | [ver](prompts/DaIOD8QSEAz.md) |
 
 ## Clonáveis (92)
 

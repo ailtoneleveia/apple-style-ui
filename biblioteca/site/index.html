@@ -149,6 +149,8 @@ bIsca.onclick = () => { st.isca = !st.isca; bIsca.setAttribute('aria-pressed', s
 const ROTULO = 'Copiar para o Claude';
 // o texto que vai para o Claude Code com o plugin: muda com o nível da ficha (provada, clonável ou referência)
 function paraClaude(e) {
+  if (e.nivel === 'provada' && e.tipo === 'pessoa_estilo_apple')
+    return `/apple-style-ui:video igual ${e.url}\nJá existe molde para esta referência (${e.prova.clone}): edita a minha gravação neste estilo.\nMinha gravação: <arraste o arquivo aqui>`;
   if (e.nivel === 'provada')
     return `/apple-style-ui:video igual ${e.url}\nJá existe molde para esta referência${e.prova ? ` (${e.prova.clone})` : ''}: é só trocar a marca, o texto e a cor.`;
   if (e.nivel === 'clonavel')
@@ -179,7 +181,7 @@ function ficha(e) {
       el('div', { class: 'top' }, el('span', { class: 'autor', text: '@' + e.autor }), el('span', { class: 'nota', title: 'Nota de 0 a 100: acabamento, cara de Apple e curtidas', text: String(e.nota) })),
       el('div', { class: 'meta' }, ...meta.filter(Boolean).map(t => el('span', { text: t }))),
       ...(e.prova ? [el('div', { class: 'prova' }, el('b', { text: `Provada: clone do ${e.prova.clone}` }),
-        el('span', { text: `distância ${virg(e.prova.distancia)} · correlação ${virg(e.prova.correlacao)}` }),
+        ...(e.prova.distancia != null ? [el('span', { text: `distância ${virg(e.prova.distancia)} · correlação ${virg(e.prova.correlacao)}` })] : [el('span', { text: 'a tua gravação editada no estilo da referência' })]),
         ...(e.prova.lado_a_lado ? [el('a', { href: e.prova.lado_a_lado, target: '_blank', rel: 'noopener', text: 'Ver o lado a lado' })] : []))] : []),
       el('div', { class: 'tags' }, ...(e.nivel !== 'provada' ? [el('span', { class: 'tag nivel ' + e.nivel, text: NIVEL[e.nivel] })] : []),
         el('span', { class: 'tag tipo', text: (UNIDADE[e.unidade] || '').split(':')[0] || TIPOS[e.tipo] }),

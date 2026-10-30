@@ -566,6 +566,7 @@ PROVADAS = {  # clones com nota de fidelidade (PRODUTO.md): distância e correla
     'DWWQEOmDfsf': ('Satellite', 0.010, 0.981, ''),
     'DPJJwcujV0X': ('Joi', 0.004, 0.997, ''),
     'DafsqUut4x1': ('VoiceOS', 0.010, 0.999, ''),
+    'DaIOD8QSEAz': ('fala-destaque', None, None, ''),  # pessoa falando: a nota é por máscara (NOTAS.md do molde), sem número comparável
 }
 NIVEL = {'provada': 'Provada', 'clonavel': 'Clonável', 'referencia': 'Referência'}
 
@@ -710,7 +711,7 @@ def escrever_readme(repo, entradas, glos, total):
          '- O vídeo é do autor: aqui só o link. Pedidos de remoção por issue.', '',
          f"## Provadas ({len(por['provada'])})", '', '| clone | autor | distância | correlação | lado a lado | prompt |',
          '|---|---|---|---|---|---|']
-    virg = lambda x: f'{x:.3f}'.replace('.', ',')
+    virg = lambda x: 'por máscara (NOTAS.md do molde)' if x is None else f'{x:.3f}'.replace('.', ',')
     L += [f"| {e['prova']['clone']} | [@{e['autor']}]({e['url']}) | {virg(e['prova']['distancia'])} | {virg(e['prova']['correlacao'])} | "
           f"só local | [ver](prompts/{e['id']}.md) |" for e in por['provada']]
     L += ['', f"## Clonáveis ({len(por['clonavel'])})", ''] + cab + [linha(e) for e in por['clonavel']] + ['']

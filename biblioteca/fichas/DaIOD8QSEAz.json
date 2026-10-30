@@ -42,6 +42,11 @@
   "perfil:dopemotionzone"
  ],
  "estilo_apple": true,
- "nivel": "referencia",
- "prova": null
+ "nivel": "provada",
+ "prova": {
+  "clone": "fala-destaque",
+  "distancia": null,
+  "correlacao": null,
+  "lado_a_lado": ""
+ }
 }
