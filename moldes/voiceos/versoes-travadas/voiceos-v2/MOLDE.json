@@ -1,0 +1,29 @@
+{
+  "versao": "voiceos-v2",
+  "travado_em": "2026-10-30T04:19:27-0300",
+  "impressao_digital": {
+    "hyperframes.json": "9d8022339f0f5d9b325f5408a9d5ef5a63dfae4a3bf68abfaa243d718e54a4e9",
+    "index.html": "ed2b5a296d9c23b3000fddd87481a01fe0d6af0d8fa9bd75275d35ed98d82fba",
+    "mb.js": "a1ba40e2de19406d59c2d9cba5835e7ce9b69a95ea14e63108fe45c7e9b5d5ae",
+    "meta.json": "9edbe211fef0959178f56ea6ccd87d18a75187bf8cb271847341cb840cfc39b8",
+    "package.json": "8b53073c890d199585d772e8342989c7e15549554f290536d93a4b9f97fdbac3",
+    "plates.js": "651f35487c5222ba60c119c01594e593f7077cb30856548285d5e8ca59bebeef",
+    "sons.json": "2f169ea481f6addaf1a8e81270b1d250352ddd18b2f5a2962158eeada4d9cb59",
+    "tracks.js": "6add7bca668869bdc78486b0b4089777203bc4e510184e17091eb28cbfc14369",
+    "tracks3.js": "c80294ffaae110d05a7e231c52751958bed313e4615df5bc3b65dcb9d6352170",
+    "assets/silencio.m4a": "6f724b913a5c8e58de004df038d7be0ebd91672c38f2704367089b1d6845cb2d",
+    "assets/img/avatar.png": "9abd6087d935b0508c5e7806ff2c05c04d6985a4b11eabefa0587c02701aaf6a",
+    "assets/img/cloudmatte.png": "b30a5079c759ad203d0ce8279eae2729e536d0f6271e4ec5b0f2393a13981cfb",
+    "assets/img/ic_cube.png": "8ba16825ea4b041c7526fb28dee997a438f1e291a47206aa9610709b26a235bf",
+    "assets/img/ic_docs.png": "254a9d7141d23239b5dab116ecfc6f288d64605ccbf8ba900882a94a4f0d1f81",
+    "assets/img/ic_figma.png": "5994b8177dbb764d708b769e854b9f16a64c2296f176ed04016eb0f8bb4e2850",
+    "assets/img/ic_gmail.png": "09fbfb23ff150acb448a02acd5478365be0c69157c63a5327ac2e2f3833d6588",
+    "assets/img/ic_messages.png": "c53ceed91a31c75c41d27cbd732fafb81f50167606df536b9dc7b6147951bf38",
+    "assets/img/ic_notion.png": "4a265f929d88ca0d044f16addb0acf89dde654381e4c8c60f98b80ec95dbb78d",
+    "assets/img/ic_slack.png": "d684adc3d8d4ea6bc7e5309fbe232e83471e7a58ba02a85caf5ca4868ba1e36a",
+    "assets/img/notion_hud.png": "7cff4ade44decf40759fc7f0721d90a3b0d0236e4b0a8df5513e4a3678b48058",
+    "assets/img/sky1.jpg": "8c82aa0f2e635188534958d428e8d18615528f8a69907524a24ff4c36a668428",
+    "assets/img/sky2.jpg": "eba4dda83d11f76090960ebb3ecfbbea1a322b56469400ba98b316206b6fff2e",
+    "assets/img/vine.jpg": "3d3ecba4ce2119387ea577679e6335d601e16e7a10497f24c0fb22e0d8561f8f"
+  }
+}

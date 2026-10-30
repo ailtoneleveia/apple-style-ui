@@ -1,7 +1,7 @@
 # Origem: voiceos.mp4
 
 - **O que é:** o molde VoiceOS renderizado por este repositório, com motion blur (1920x1080, 60 qps, 11,7 s).
-- **Como:** Inter no lugar da SF Pro (`ASUI_FONTE_LIVRE=1`), cor #E54A26, textos em português, céu, vinhedo, ícones e avatar trocados pelas peças livres. Sem áudio (silêncio): o VoiceOS ainda não tem sons por elemento. Reencodado mais leve (CRF 24) para caber no repositório.
+- **Como:** Inter no lugar da SF Pro (`ASUI_FONTE_LIVRE=1`), cor #E54A26, textos em português, céu, vinhedo, ícones e avatar trocados pelas peças livres. Sem áudio (silêncio): feito no voiceos-v1, antes dos sons por elemento (o voiceos-v2 já tem: `"sons": "suave"` ou `"marcado"`). Reencodado mais leve (CRF 24) para caber no repositório.
 - **Referência do molde:** o vídeo original é de @creatoroly (https://www.instagram.com/p/DafsqUut4x1/). Aqui não entra nada dele: nem quadro, nem áudio, nem recorte.
 - **Licença:** feito com fontes SIL OFL, sons CC0 e peças livres (ver `../LICENCAS-DE-TERCEIROS.md`).
 - **Feito em:** 30/10/2026.

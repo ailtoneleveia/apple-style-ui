@@ -1,0 +1,22 @@
+{
+ "nota": "Mapa evento -> som do VoiceOS. quadro = pico do movimento no clone (60 fps, pode ter fração), tirado das trilhas medidas (tracks.js) e das chaves do index.html, conferido numa folha de quadros. nivel suave = toca no suave e no marcado; marcado = só no marcado. A trilha original tem locução: sem digitar nem numero (ficariam em cima da fala), e o padrão de musica_volume é 1 (a voz não baixa). O montar.py lê este arquivo; o som de cada tipo está em ../sons/sons.json.",
+ "eventos": [
+  {"quadro": 16, "tipo": "aparecer", "evento": "frase do céu começa a aparecer", "nivel": "suave"},
+  {"quadro": 26, "tipo": "aparecer", "evento": "dock aparece embaixo", "nivel": "marcado"},
+  {"quadro": 70, "tipo": "entrar", "evento": "céu vira o vinhedo", "nivel": "suave"},
+  {"quadro": 100, "tipo": "entrar", "evento": "dock cresce", "nivel": "marcado"},
+  {"quadro": 118, "tipo": "clicar", "evento": "cursor clica no ícone do dock", "nivel": "suave"},
+  {"quadro": 141, "tipo": "morph", "evento": "janela da mensagem abre", "nivel": "suave"},
+  {"quadro": 165, "tipo": "brilho", "evento": "ditado rosa corre", "nivel": "marcado"},
+  {"quadro": 212, "tipo": "aparecer", "evento": "botão Enviar nasce do cursor", "nivel": "suave"},
+  {"quadro": 226, "tipo": "clicar", "evento": "mão clica em Enviar", "nivel": "suave"},
+  {"quadro": 263, "tipo": "entrar", "evento": "corte para a página", "nivel": "suave"},
+  {"quadro": 312, "tipo": "tocar", "evento": "título começa a ser digitado", "nivel": "marcado"},
+  {"quadro": 412, "tipo": "entrar", "evento": "o texto da página rola", "nivel": "marcado"},
+  {"quadro": 452, "tipo": "aparecer", "evento": "a caixa cobre a palavra destaque", "nivel": "suave"},
+  {"quadro": 478, "tipo": "morph", "evento": "caixa cresce e vira a tecla", "nivel": "suave"},
+  {"quadro": 494, "tipo": "brilho", "evento": "tecla acende", "nivel": "suave"},
+  {"quadro": 578, "tipo": "entrar", "evento": "triângulo voa para o logo", "nivel": "marcado"},
+  {"quadro": 598, "tipo": "sucesso", "evento": "o logo se forma", "nivel": "suave"}
+ ]
+}

@@ -38,7 +38,7 @@ def _nome():
     return m.NOME
 
 
-NOME = _nome()  # dele saem ~/.<NOME>/perfil e <projeto>/.<NOME>/decisoes.json
+NOME = _nome()  # dele saem ~/.<NOME>/perfil e <projeto>/.<NOME>/decisoes.jsonl
 PERFIL_DIR = os.environ.get("ASUI_PERFIL") or os.path.expanduser(f"~/.{NOME}/perfil")  # testes: ASUI_PERFIL=<pasta temporária>
 SCRIPTS = os.path.join(RAIZ, "clonar", "scripts")
 TRABALHO = os.environ.get("ASUI_TRABALHO") or os.path.join(tempfile.gettempdir(), NOME, "aprendizado")
@@ -132,6 +132,19 @@ def declaracao(pasta):
     return html, m, json.loads(m.group(1))
 
 
+def trazer_imagens(proj, valores):
+    """Imagens de fora do molde (o logo do kit, as fotos do VoiceOS) vêm com caminho absoluto na versão resolvida: vão
+    para proj/assets/var/, como no montador, e o valor vira o caminho relativo (o render só serve a pasta do projeto)."""
+    v = dict(valores or {})
+    for k, x in v.items():
+        u = x.get("url") if isinstance(x, dict) else x
+        if isinstance(u, str) and os.path.isabs(u) and os.path.isfile(u) and u.lower().endswith((".jpg", ".jpeg", ".png", ".webp")):
+            os.makedirs(os.path.join(proj, "assets", "var"), exist_ok=True)
+            v[k] = f"assets/var/{k}{os.path.splitext(u)[1].lower()}"
+            shutil.copyfile(u, os.path.join(proj, v[k]))
+    return v
+
+
 def copia(origem, destino, valores=None):
     """Cópia do projeto. Com valores, injeta window.__hfVariables no começo do <head>, como o render faz: o check
     não lê --variables-file, e os padrões declarados ficam intactos porque os moldes medem "novo menos original"."""
@@ -140,6 +153,7 @@ def copia(origem, destino, valores=None):
     if os.path.exists(os.path.join(os.path.dirname(origem), "montar.py")):
         montar_de(origem).fonte_do_sistema(destino)  # a SF Pro não vai no repositório: vem do sistema (ou a Inter)
     if valores:
+        valores = trazer_imagens(destino, valores)
         caminho = os.path.join(destino, "index.html")
         html = open(caminho, encoding="utf-8").read()
         script = "<script>window.__hfVariables = " + json.dumps(valores, ensure_ascii=False).replace("</", "<\\/") + ";</script>"
@@ -195,7 +209,7 @@ def previa(mt, projeto, valores, nome):
     pasta = os.path.join(TRABALHO, nome)
     proj = copia(projeto, os.path.join(pasta, "proj"))
     vj = os.path.join(pasta, "vars.json")
-    json.dump(valores, open(vj, "w", encoding="utf-8"), ensure_ascii=False)
+    json.dump(trazer_imagens(proj, valores), open(vj, "w", encoding="utf-8"), ensure_ascii=False)
     mp4 = os.path.join(pasta, "previa.mp4")
     try:
         mt.render(proj, vj, mt.FPS, mp4)
@@ -471,6 +485,11 @@ def autoteste():
     cmp = ("Mean visual distance: 0.010 (0 identical)\nMotion-curve correlation: 0.981 (1.0)\nTotal motion vs reference: 0.94x\n"
            "Reference cuts matched within 2 frames: 2/2\n| shot | frames | distance | motion corr | lag | ratio |\n|---|---|---|---|---|---|\n"
            "| 1 | f0-9 | 0.007 | 0.99 | 0 | 0.87 |\n| 2.2 | f70-122 | 0.013 | 0.97 | -2 | 1.01 |\n| 3.4 (static) | f303-327 | 0.005 | nan |  | nan |\n")
+    with tempfile.TemporaryDirectory() as tmp:  # imagem de fora do molde entra na cópia; o resto fica como está
+        logo = os.path.join(tmp, "logo.png")
+        open(logo, "wb").write(b"x")
+        assert trazer_imagens(os.path.join(tmp, "p"), {"logo": logo, "titulo": "/x.png", "n": 3}) == {"logo": "assets/var/logo.png", "titulo": "/x.png", "n": 3}
+        assert os.path.isfile(os.path.join(tmp, "p", "assets", "var", "logo.png"))
     n = ler_compare(cmp)
     assert (n["distancia"], n["correlacao"], n["movimento"], n["lag"], n["cena_lag"], n["cortes"]) == (0.010, 0.981, 0.94, -2, "2.2", "2/2")
     base = [("text_box_overflow", 5.8, "#a > div:nth-of-type(2)", "Fire"), ("text_box_overflow", 8.3, "#a > div:nth-of-type(14)", "🚑")]

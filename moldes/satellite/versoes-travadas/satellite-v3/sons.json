@@ -1,0 +1,33 @@
+{
+ "nota": "Mapa evento -> som do Satellite. quadro = pico do movimento no clone (30 fps, pode ter fração). nivel suave = toca no suave e no marcado; marcado = só no marcado. mola = a entrada [início, quadros] que o evento segue (a mola firme adianta o evento). por_palavra = um evento por palavra da variável, a cada passo quadros vezes o ritmo (em rodízio). Ajustes ouvidos pelo Júnior (30/10): a abertura do marcado perdeu o whoosh do quadro 4 e o brilho do 10, as teclas da ilha espaçaram (passo 1,6 -> 2,6, ritmo desigual) e o \"relógio entra\" saiu (embolava com a última tecla). O montar.py lê este arquivo; o som de cada tipo está em ../sons/sons.json.",
+ "eventos": [
+  {"quadro": 7, "tipo": "aparecer", "evento": "ícone entra", "nivel": "suave", "mola": [5, 19]},
+  {"quadro": 13.5, "tipo": "tocar", "evento": "rótulo do ícone aparece", "nivel": "marcado", "mola": [11, 11]},
+  {"quadro": 33, "tipo": "morph", "evento": "ícone vira o cartão", "nivel": "suave", "mola": [30, 21]},
+  {"quadro": 39.5, "tipo": "digitar", "evento": "texto do cartão aparece", "nivel": "marcado", "mola": [30, 21]},
+  {"quadro": 72, "tipo": "brilho", "evento": "satélite aparece no arco", "nivel": "suave"},
+  {"quadro": 92, "tipo": "morph", "evento": "cartão encolhe e vira o tile", "nivel": "marcado", "mola": [86, 22]},
+  {"quadro": 97, "tipo": "sucesso", "evento": "tile conectado (a barra acende)", "nivel": "suave", "mola": [86, 22]},
+  {"quadro": 122, "tipo": "morph", "evento": "tile vira a pílula cinza", "nivel": "marcado"},
+  {"quadro": 128, "tipo": "aparecer", "evento": "pílula 5 sai da caixa", "nivel": "suave", "mola": [127, 63]},
+  {"quadro": 132.5, "tipo": "aparecer", "evento": "pílula 4 chega", "nivel": "suave", "mola": [127, 63]},
+  {"quadro": 138.5, "tipo": "aparecer", "evento": "pílula 3 chega", "nivel": "suave", "mola": [127, 63]},
+  {"quadro": 144.5, "tipo": "aparecer", "evento": "pílula 2 chega", "nivel": "suave", "mola": [127, 63]},
+  {"quadro": 150.5, "tipo": "aparecer", "evento": "pílula 1 chega", "nivel": "suave", "mola": [127, 63]},
+  {"quadro": 156, "tipo": "entrar", "evento": "título pousa, palavra a palavra", "nivel": "suave", "mola": [155, 35]},
+  {"quadro": 158.5, "tipo": "tocar", "evento": "botão do canto assenta", "nivel": "marcado", "mola": [155, 35]},
+  {"quadro": 163, "tipo": "aparecer", "evento": "emoji de alerta 1", "nivel": "marcado"},
+  {"quadro": 169.5, "tipo": "aparecer", "evento": "emoji de alerta 2", "nivel": "marcado"},
+  {"quadro": 171.5, "tipo": "aparecer", "evento": "emoji de alerta 3", "nivel": "marcado"},
+  {"quadro": 181, "tipo": "clicar", "evento": "cursor clica no item 1", "nivel": "suave"},
+  {"quadro": 199, "tipo": "entrar", "evento": "câmera corre e a rota começa", "nivel": "suave"},
+  {"quadro": 206, "tipo": "entrar", "evento": "ponto azul voa para a ilha", "nivel": "marcado"},
+  {"quadro": 216.5, "tipo": "ilha", "evento": "ilha abre", "nivel": "suave", "mola": [213, 42]},
+  {"quadro": 217.8, "tipo": "digitar", "evento": "texto da ilha, palavra a palavra", "nivel": "marcado", "mola": [213, 42], "por_palavra": {"variavel": "ilha_texto", "passo": 2.6, "ritmo": [1, 1.3, 0.8, 1.15]}},
+  {"quadro": 241.75, "tipo": "numero", "evento": "relógio vira o primeiro segundo", "nivel": "suave"},
+  {"quadro": 258.75, "tipo": "numero", "evento": "relógio vira o segundo segundo", "nivel": "suave"},
+  {"quadro": 274.5, "tipo": "sair", "evento": "cena sobe e sai", "nivel": "suave"},
+  {"quadro": 278.5, "tipo": "aparecer", "evento": "balão entra", "nivel": "suave", "mola": [277, 23]},
+  {"quadro": 283, "tipo": "brilho", "evento": "brilho passa no balão", "nivel": "marcado", "mola": [277, 23]}
+ ]
+}

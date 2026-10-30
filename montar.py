@@ -47,7 +47,7 @@ X264 = ["-c:v", "libx264", "-preset", "veryslow", "-tune", "animation", "-crf", 
         "-pix_fmt", "yuv420p", "-movflags", "+faststart"]  # sem -refs 4 -level:v 5.1 o QuickTime embaralha os blocos
 GAIN = 1.008                    # o encode do HyperFrames sai ~0,8 % escuro no luma (round_mb_fix.sh)
 TRAVESSAO = re.compile("[—–]")
-ARQUIVOS = ("musica", "logo")   # variáveis que são caminho de arquivo dentro da pasta do molde (Satellite)
+ARQUIVOS = ("musica", "logo")   # variáveis que são caminho de arquivo: a música mora no molde; o logo pode vir de fora (do kit)
 IMG_EXT = (".jpg", ".jpeg", ".png", ".webp")
 REGRAS = {"relogio": (r"\d{1,2}:[0-5]\d", "tem que ser M:SS ou MM:SS"),
           "digitos": (r"\d{5}", "tem que ter exatamente 5 dígitos, um por casa do calendário")}
@@ -74,17 +74,22 @@ MOLDES = {
         lut="lutyuv=y='clip(val+0.5+if(lt(val\\,73)\\,2\\,if(lt(val\\,154)\\,2*(154-val)/81\\,if(lt(val\\,233)\\,0\\,1)))\\,0\\,255)'",
         momentos=[30, 88, 150, 178, 230, 262, 300, 340, 360, 450],  # ícone, pílula, lista, menu, risco, frase, cartão, fim
         # o nome da marca vai no rótulo do ícone, onde o original diz "Joi" (o padrão do molde continua "Joi")
-        lado_na_previa=True, leve=False, provar=False, kit={"cor_principal": ["cor_principal"], "nome": ["icone_texto"]}),
+        # o logo da marca entra no lugar da estrela do cartão azul
+        lado_na_previa=True, leve=False, provar=False,
+        kit={"cor_principal": ["cor_principal"], "nome": ["icone_texto"], "fonte": ["fonte"], "logo": ["logo"]}),
     "voiceos": dict(
         pasta=os.path.join(MOLDES_DIR, "voiceos"), molde=os.path.join(MOLDES_DIR, "voiceos", "molde"),
         trava=os.path.join(MOLDES_DIR, "voiceos", "MOLDE.json"), original=os.path.join(ORIGINAIS, "voiceos.mp4"),
         clone_hf=os.path.join(ORIGINAIS, "voiceos-hf"), trabalho="voiceos",
         hf="0.8.184", fps=60, n=4, nf=700, lut="", largura=1920, altura=1080, rotulo=34, quadro=(400, 225),
         momentos=[40, 110, 175, 228, 330, 430, 470, 555, 640],  # céu, dock, ditado, Send, título, linhas, caixa, tecla, logo
-        lado_na_previa=False, leve=True, provar=True, kit={"cor_principal": ["cor_destaque"]}),
+        # o nome vai na legenda do logo final e o logo da marca entra no lugar do triângulo do logo VO
+        lado_na_previa=False, leve=True, provar=True,
+        kit={"cor_principal": ["cor_destaque"], "nome": ["legenda_logo"], "fonte": ["fonte"], "logo": ["logo"]}),
 }
 for _n, _c in MOLDES.items():
     _c["nome"] = _n
+    _c["travadas"] = os.path.join(_c["pasta"], "versoes-travadas")  # uma pasta por versão travada: <molde>-vN/
 
 # Só do Satellite: ritmo pelas batidas, 9:16 e sons por elemento
 SAT_FPS, SAT_NF = 30, 328
@@ -98,6 +103,10 @@ VERTICAL = [('data-resolution="square"', 'data-resolution="portrait"'), ('conten
 OY = 210                        # 9:16: deslocamento da cena quadrada (o mesmo do index.html)
 SONS = os.path.join(AQUI, "sons")  # o pacote de sons (sons.json + .wav); o mapa evento -> som é satellite/sons.json
 SONS_DB = {"suave": -4, "marcado": 0}   # nível dos efeitos, somado ao ganho de cada tipo
+LUFS_ALVO = -14.1               # loudness integrada dos três originais (Satellite, Joi e VoiceOS, medida com ebur128)
+BATIDA_DB = -6                  # efeito que cai em cima de um golpe da música desce 6 dB, para não somar com ele
+# tecla a tecla: (ganho em dB, velocidade) em rodízio, para a digitação não soar como a mesma tecla repetida
+TECLAS = [(0, 1.0), (-2, 1.06), (-1, 0.94), (-3, 1.03), (-1.5, 0.97)]
 KM_FIRME = 0.6                  # a mola firme assenta em 60 % do tempo (o mesmo KM do index.html)
 
 
@@ -163,6 +172,10 @@ def validar(valores, decl, c, base=None):
                 erros.append(f"'{k}' tem que ser um texto não vazio (veio {v!r})")
             elif TRAVESSAO.search(v):
                 erros.append(f"'{k}' tem travessão: {v!r}. Troque por vírgula, ponto ou dois-pontos")
+            elif k == "logo" and v:  # o logo pode morar fora do molde (marcas/<cliente>/logo.png): vai para a cópia de render
+                erro = achar_imagem(v, c, base or c["pasta"])[1]
+                if isinstance(erro, str):
+                    erros.append(f"'logo': {erro}")
             elif k in ARQUIVOS and v:
                 real = os.path.realpath(os.path.join(c["molde"], v))
                 if not real.startswith(os.path.realpath(c["molde"]) + os.sep) or not os.path.isfile(real):
@@ -247,15 +260,18 @@ def carregar(valores, decl, c, base=None, marca=None):
         erros.append(f"marca {caminho}: 'creditos' tem que ser um objeto {{\"asset\": \"autor e licença\"}}")
     do_kit = {var: kit[k] for k, vs in c["kit"].items() if k in kit for var in vs}
     erros += [f"marca {caminho}: {e}" for e in validar(do_kit, decl, c, os.path.dirname(caminho))]
+    if isinstance(do_kit.get("logo"), str) and do_kit["logo"]:  # o logo do kit é relativo à pasta do kit
+        achado = achar_imagem(do_kit["logo"], c, os.path.dirname(caminho))[0]
+        do_kit["logo"] = achado or do_kit["logo"]
     info = {"marca": caminho, "nome_marca": nome_da_marca(caminho),
             "kit_sem_uso": [k for k in kit if k in KIT_CAMPOS and k != "creditos" and k not in c["kit"]]}
     return {**do_kit, **v}, erros, info  # o que está escrito na versão vence
 
 
 def preparar_imagens(valores, decl, c, base, proj):
-    """Copia as imagens de fora do molde para proj/assets/var/ e troca o valor pelo caminho relativo (VoiceOS)."""
+    """Copia as imagens de fora do molde (as do VoiceOS e o logo) para proj/assets/var/ e troca o valor pelo caminho relativo."""
     for k, v in list(valores.items()):
-        if decl[k]["type"] != "image":
+        if decl[k]["type"] != "image" and not (k == "logo" and v):
             continue
         u = v.get("url") if isinstance(v, dict) else v
         caminho, dentro = achar_imagem(u, c, base)
@@ -303,25 +319,52 @@ def conferir_molde(c):
                                f"{' ...' if len(mudou) > 6 else ''}). Se a mudança fica, rode python3 {EU} --molde {c['nome']} --travar")
 
 
+def congelar(c, reg):
+    """Copia o molde para versoes-travadas/<versão>/ com o registro dela (MOLDE.json), arquivos só leitura. Uma pasta
+    que já existe nunca é reescrita. Devolve True quando criou a pasta."""
+    pasta = os.path.join(c["travadas"], reg["versao"])
+    if os.path.exists(pasta):
+        return False
+    shutil.copytree(c["molde"], pasta, ignore=shutil.ignore_patterns(".*", "renders", "MOLDE.json"))
+    json.dump(reg, open(os.path.join(pasta, "MOLDE.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    for raiz, _, arqs in os.walk(pasta):
+        for a in arqs:
+            os.chmod(os.path.join(raiz, a), 0o444)
+    return True
+
+
 def travar(c, nome=None):
-    """Grava a versão e a impressão digital do molde. Sem nome: o próximo número. Mesmo nome com outro conteúdo: recusa.
-    Devolve (versão, gravou)."""
+    """Grava a versão e a impressão digital do molde (MOLDE.json, a versão em vigor) e congela uma cópia em
+    versoes-travadas/<molde>-vN/. Sem nome: o próximo número. Mesmo nome com outro conteúdo, ou uma pasta de versão que já
+    existe: recusa. A versão em vigor sem pasta (travada antes das pastas) ganha a sua. Devolve (versão, gravou)."""
     atual, reg = impressao_digital(c), ler_trava(c)
     if nome is None:
         if reg.get("impressao_digital") == atual:
-            return reg["versao"], False
-        m = re.fullmatch(rf"{c['nome']}-v(\d+)", reg.get("versao") or "")
-        nome = f"{c['nome']}-v{int(m.group(1)) + 1 if m else 1}"
+            return reg["versao"], congelar(c, reg)
+        ns = [int(m.group(1)) for x in [reg.get("versao") or ""] + (os.listdir(c["travadas"]) if os.path.isdir(c["travadas"]) else [])
+              for m in [re.fullmatch(rf"{c['nome']}-v(\d+)", x)] if m]
+        nome = f"{c['nome']}-v{max(ns, default=0) + 1}"
     if not re.fullmatch(rf"{c['nome']}-v\d+", nome):
         raise Falha(f"a versão do molde tem que ser {c['nome']}-v<número> (veio {nome!r})", "VERSAO_DO_MOLDE_INVALIDA", 2)
     if reg.get("versao") == nome:
         if reg.get("impressao_digital") == atual:
-            return nome, False
+            return nome, congelar(c, reg)
         raise Falha(f"o molde mudou e {nome} já existe com outro conteúdo: use um número novo", "VERSAO_DO_MOLDE_REPETIDA", 2)
-    json.dump({"versao": nome, "travado_em": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "impressao_digital": atual},
-              open(c["trava"], "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    if os.path.exists(os.path.join(c["travadas"], nome)):
+        raise Falha(f"versoes-travadas/{nome} já existe e versão travada não se reescreve: use um número novo", "VERSAO_DO_MOLDE_REPETIDA", 2)
+    reg = {"versao": nome, "travado_em": time.strftime("%Y-%m-%dT%H:%M:%S%z"), "impressao_digital": atual}
+    json.dump(reg, open(c["trava"], "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     open(c["trava"], "a").write("\n")
+    congelar(c, reg)
     return nome, True
+
+
+def molde_pedido(c, pedido):
+    """O molde de uma versão que pede outra versão do molde ("joi-v1"): a pasta congelada dela, ou None."""
+    pasta = os.path.join(c["travadas"], pedido) if isinstance(pedido, str) and re.fullmatch(rf"{c['nome']}-v\d+", pedido) else None
+    if pasta and os.path.isfile(os.path.join(pasta, "index.html")):
+        return dict(c, molde=pasta, trava=os.path.join(pasta, "MOLDE.json"))
+    return None
 
 
 # ---------------------------------------------------------------- Satellite: ritmo e sons
@@ -386,15 +429,17 @@ def eventos_de_som(V, mapa, pacote, saida=float):
     """Os eventos do nível V["sons"] no tempo da saída, em ordem: [(quadro, tipo, evento, som)].
     Mola firme: um evento dentro da entrada [b, b+L] cai em b + 0,6 (f - b), como no index.html. saida(): quadro do
     clone -> quadro da saída (ritmo "batidas"). Cada tipo roda entre as suas versões (rodízio), então o mesmo arquivo
-    nunca toca duas vezes seguidas."""
+    nunca toca duas vezes seguidas. por_palavra: um evento por palavra, a cada passo quadros, vezes o "ritmo" em rodízio
+    (passos desiguais, como quem digita)."""
     km = KM_FIRME if V.get("mola") == "firme" else 1
     evs = []
     for e in mapa["eventos"]:
         if V["sons"] == "suave" and e["nivel"] != "suave":
             continue
         pp = e.get("por_palavra")
+        rit = (pp or {}).get("ritmo", [1])
         for i in range(len(V[pp["variavel"]].split()) if pp else 1):
-            f = e["quadro"] + (i * pp["passo"] if pp else 0)
+            f = e["quadro"] + (pp["passo"] * sum(rit[k % len(rit)] for k in range(i)) if pp else 0)
             b, L = e.get("mola", (0, 0))
             if b < f < b + L:
                 f = b + km * (f - b)
@@ -408,10 +453,35 @@ def eventos_de_som(V, mapa, pacote, saida=float):
     return evs
 
 
+def lufs(caminho):
+    """Loudness integrada (LUFS, ebur128 do ffmpeg) de um arquivo de áudio; None quando é silêncio."""
+    r = subprocess.run(["ffmpeg", "-nostats", "-i", caminho, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True)
+    m = re.findall(r"I:\s+(-?[\d.]+) LUFS", r.stderr)
+    return float(m[-1]) if m and float(m[-1]) > -70 else None
+
+
+def golpes(m, sr, hop=256, n=1024):
+    """Os golpes da música (mono): o fluxo espectral (como em grade_de_sinal) menos a média local, e o corte em 3 vezes o
+    percentil 90. Devolve uma função t -> há golpe a até 40 ms de t. Efeito em cima de golpe soma com ele: as pílulas do
+    Satellite caem em golpes de 7 a 13 vezes o percentil 90 da trilha original."""
+    import numpy as np
+    if len(m) < n + 2 * hop:
+        return lambda t: False
+    q = np.lib.stride_tricks.sliding_window_view(m, n)[::hop] * np.hanning(n)
+    S = np.log1p(100 * np.abs(np.fft.rfft(q, axis=1)))
+    o = np.maximum(0, np.diff(S, axis=0)).sum(1)
+    o = np.maximum(0, o - np.convolve(o, np.ones(16) / 16, "same"))
+    tt = hop / sr + n / 2 / sr + np.arange(len(o)) * hop / sr
+    corte = max(3 * float(np.percentile(o, 90)), 1e-6)
+    return lambda t: bool((o[(tt > t - 0.04) & (tt < t + 0.04)] > corte).any())
+
+
 def mixar_sons(V, musica, saida, evs, pacote, fps=SAT_FPS, nf=SAT_NF):
     """Música vezes musica_volume, mais um som por evento com o "ataque" do som no instante do evento. Sai com a
     duração do vídeo (nf quadros a fps) e passa por um limitador em -1 dBFS (com compensação de atraso, para o encaixe
-    não andar). fps e nf existem para outro molde (Joi, VoiceOS) reaproveitar a função."""
+    não andar). Três cuidados ouvidos no Satellite: cada tecla muda um pouco de ganho e de altura (TECLAS); efeito em
+    cima de um golpe da música desce BATIDA_DB; e, com música de verdade, o final vai para a loudness dos originais
+    (LUFS_ALVO). Com o silêncio do molde, os efeitos ficam no nível deles. Devolve (saída, medidas)."""
     import numpy as np
     sr = 48000
     n = round(nf / fps * sr)
@@ -419,20 +489,57 @@ def mixar_sons(V, musica, saida, evs, pacote, fps=SAT_FPS, nf=SAT_NF):
     m = np.frombuffer(raw, np.float32).reshape(-1, 2)[:n]
     mix = np.zeros((n, 2))
     mix[:len(m)] = m * V["musica_volume"]
-    for q, tipo, _, som in evs:
+    em_golpe, tecla, golpes_ = golpes(m.mean(1), sr), 0, []
+    for q, tipo, nome, som in evs:
         info = pacote["sons"][som]
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", os.path.join(SONS, info["arquivo"]), "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"], capture_output=True).stdout
-        s = np.frombuffer(raw, np.float32) * 10 ** ((pacote["tipos"][tipo]["ganho_db"] + SONS_DB[V["sons"]]) / 20)
-        i0 = round((q / fps - info["ataque"]) * sr)
+        s = np.frombuffer(raw, np.float32).astype(np.float64)
+        db, vel = pacote["tipos"][tipo]["ganho_db"] + SONS_DB[V["sons"]], 1.0
+        if tipo == "digitar":
+            d, vel = TECLAS[tecla % len(TECLAS)]
+            db, tecla = db + d, tecla + 1
+            s = np.interp(np.arange(0, len(s) - 1, vel), np.arange(len(s)), s)  # mais rápido = mais agudo
+        if em_golpe(q / fps):
+            db += BATIDA_DB
+            golpes_.append(round(q, 2))
+        s = s * 10 ** (db / 20)
+        i0 = round((q / fps - info["ataque"] / vel) * sr)
         a, b = max(0, i0), min(n, i0 + len(s))
         if b > a:
             mix[a:b] += s[a - i0:b - i0, None]
     bruto = saida + ".f32"
-    mix.astype("<f4").tofile(bruto)
-    sh(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr), "-ac", "2", "-i", bruto, "-af",
-        "alimiter=limit=0.891:attack=2:release=40:level=false:latency=true", "-c:a", "aac", "-b:a", "256k", "-ar", str(sr), saida])
+    alvo = LUFS_ALVO if lufs(musica) is not None else None
+    ganho, medido = 0.0, None
+    for _ in range(3):  # o limitador come um pouco da loudness: mede o resultado e corrige (2 voltas bastam)
+        (mix * 10 ** (ganho / 20)).astype("<f4").tofile(bruto)
+        sh(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(sr), "-ac", "2", "-i", bruto, "-af",
+            "alimiter=limit=0.891:attack=2:release=40:level=false:latency=true", "-c:a", "aac", "-b:a", "256k", "-ar", str(sr), saida])
+        medido = lufs(saida)
+        if alvo is None or medido is None or abs(medido - alvo) <= 0.5:
+            break
+        ganho += alvo - medido
     os.remove(bruto)
-    return saida
+    return saida, {"lufs": medido, "alvo_lufs": alvo, "ganho_db": round(ganho, 2), "em_golpe": golpes_}
+
+
+def sons_por_elemento(c, V, audio, pasta, saida=float):
+    """Sons por elemento (sons/SONS.md), em qualquer molde com sons.json. Com "nenhum" nada aqui roda e o áudio segue
+    como antes (o padrão continua idêntico ao clone). saida(): quadro do clone -> quadro da saída (ritmo do Satellite).
+    Devolve (áudio, texto para o resumo)."""
+    if V.get("sons", "nenhum") == "nenhum":
+        return audio, ""
+    pacote = json.load(open(os.path.join(SONS, "sons.json"), encoding="utf-8"))
+    evs = eventos_de_som(V, json.load(open(os.path.join(c["molde"], "sons.json"), encoding="utf-8")), pacote, saida)
+    audio, med = mixar_sons(V, audio, os.path.join(pasta, "musica-sons.m4a"), evs, pacote, c["fps"], c["nf"])
+    dur = c["nf"] / c["fps"]
+    json.dump({"medidas": med, "eventos": [{"quadro": round(q, 3), "tipo": t, "evento": e, "som": s} for q, t, e, s in evs]},
+              open(os.path.join(pasta, "sons-eventos.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    log(f"sons {V['sons']}: {len(evs)} eventos em {dur:.2f} s ({len(evs) / dur:.1f} por segundo), música a {V['musica_volume']:g}; "
+        f"final {med['lufs'] if med['lufs'] is not None else '-'} LUFS (alvo {med['alvo_lufs'] or 'nenhum: sem música'}), "
+        f"{len(med['em_golpe'])} efeito(s) em cima de golpe da música, -{-BATIDA_DB} dB")
+    for q, t, e, s in evs:
+        log(f"  quadro {q:6.2f}  {s:11s} {e}")
+    return audio, f", sons {V['sons']}" + (f" ({med['lufs']:.1f} LUFS)" if med["lufs"] is not None else "")
 
 
 def satellite(c, V, decl, proj, pasta):
@@ -475,18 +582,7 @@ def satellite(c, V, decl, proj, pasta):
             e = max(0, min(L, b2 - b - MEIO_MIN, n2 - n - MEIO_MIN))
             log(f"  {rot:7s} clone {b:3d} -> saída {n:3d} ({n - b:+d}); entrada {e} quadros a 1x; meio a {(b2 - b - e) / (n2 - n - e):.2f}x")
 
-    # sons por elemento: com "nenhum" nada aqui roda e a música segue como antes (o padrão continua idêntico ao clone)
-    extra = ""
-    if V["sons"] != "nenhum":
-        pacote = json.load(open(os.path.join(SONS, "sons.json"), encoding="utf-8"))
-        evs = eventos_de_som(V, json.load(open(os.path.join(c["molde"], "sons.json"), encoding="utf-8")), pacote, para_saida)
-        audio = mixar_sons(V, audio, os.path.join(pasta, "musica-sons.m4a"), evs, pacote)
-        json.dump([{"quadro": round(q, 3), "tipo": t, "evento": e, "som": s} for q, t, e, s in evs],
-                  open(os.path.join(pasta, "sons-eventos.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        log(f"sons {V['sons']}: {len(evs)} eventos em {dur:.2f} s ({len(evs) / dur:.1f} por segundo), música a {V['musica_volume']:g}")
-        for q, t, e, s in evs:
-            log(f"  quadro {q:6.2f}  {s:11s} {e}")
-        extra = f", sons {V['sons']}"
+    audio, extra = sons_por_elemento(c, V, audio, pasta, para_saida)
     quadros = [inversa(m) for m in c["momentos"]] if inversa else None
     return audio, quadros, 640 if vert else None, ("9:16" if vert else "1:1") + extra
 
@@ -523,7 +619,13 @@ def fonte_do_sistema(proj):
     """A SF Pro não vai no repositório: a cópia de render recebe a do sistema, ou a Inter (sem SF ou com ASUI_FONTE_LIVRE=1).
     Devolve o nome da fonte usada, ou None quando o molde não pede a SF."""
     alvo = os.path.join(proj, "assets", "fonts", "SFNS.ttf")
-    if "assets/fonts/SFNS.ttf" not in open(os.path.join(proj, "index.html"), encoding="utf-8").read():
+    html = open(os.path.join(proj, "index.html"), encoding="utf-8").read()
+    for livre in ("Archivo.ttf", "Inter.ttf"):  # as fontes livres do kit de marca moram uma vez só, no molde do Satellite
+        dest = os.path.join(proj, "assets", "fonts", livre)
+        if f"assets/fonts/{livre}" in html and not os.path.isfile(dest):
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            shutil.copyfile(os.path.join(os.path.dirname(INTER), livre), dest)
+    if "assets/fonts/SFNS.ttf" not in html:
         return None
     livre = os.environ.get("ASUI_FONTE_LIVRE") == "1" or not os.path.isfile(SF_SISTEMA)
     os.makedirs(os.path.dirname(alvo), exist_ok=True)
@@ -612,16 +714,22 @@ def montar_um(c, versao, previa, marca=None, video=None, saidas=None):
         raise Falha(f"não consegui ler {versao}: {e}", "ARQUIVO_ILEGIVEL")
     except ValueError as e:
         raise Falha(f"{versao} não é JSON válido: {e}", "ARQUIVO_ILEGIVEL")
+    pedido = bruto_json.get("molde") if isinstance(bruto_json, dict) else None
+    avisos = []
+    if isinstance(pedido, str) and "-v" in pedido and pedido != conferir_molde(c)[0]:
+        congelado = molde_pedido(c, pedido)  # a versão pede uma versão antiga do molde: usa a pasta congelada dela
+        if congelado:
+            c = congelado
+        else:
+            avisos.append(f"a versão pede o molde {pedido}, que não está em {os.path.relpath(c['travadas'], AQUI)}/; "
+                          f"saiu com o molde em vigor, {conferir_molde(c)[0]}")
     decl, base = declaradas(c), os.path.dirname(os.path.abspath(versao))
     valores, erros, info = carregar(bruto_json, decl, c, base, marca)
     if erros:
         raise Falha("versão inválida: " + " | ".join(erros), "VERSAO_INVALIDA")
     V = {**{k: d["default"] for k, d in decl.items()}, **valores}  # valores efetivos
     versao_molde, aviso = conferir_molde(c)
-    avisos = [aviso] if aviso else []
-    pedido = bruto_json.get("molde") if isinstance(bruto_json, dict) else None
-    if isinstance(pedido, str) and "-v" in pedido and pedido != versao_molde:
-        avisos.append(f"a versão pede o molde {pedido}, e o molde agora é {versao_molde}")
+    avisos += [aviso] if aviso else []
     for a in avisos:
         log(f"aviso: {a}")
 
@@ -646,7 +754,7 @@ def montar_um(c, versao, previa, marca=None, video=None, saidas=None):
     # a versão resolvida é o que o portão lê: sem "marca" nem "molde", imagens de fora do molde com caminho absoluto
     para_portao = dict(valores)
     for k, v in valores.items():
-        if decl[k]["type"] == "image":
+        if decl[k]["type"] == "image" or (k == "logo" and v):
             caminho, dentro = achar_imagem(v.get("url") if isinstance(v, dict) else v, c, base)
             if caminho and not dentro:
                 para_portao[k] = caminho
@@ -661,6 +769,8 @@ def montar_um(c, versao, previa, marca=None, video=None, saidas=None):
     if c["nome"] == "satellite":
         audio, quadros, alto, detalhe = satellite(c, V, decl, proj, pasta)
         detalhe = ", " + detalhe
+    else:
+        audio, detalhe = sons_por_elemento(c, V, audio, pasta)
 
     log(f"{nome} (molde {versao_molde}): {espaco_livre(pasta):.1f} GB livres")
     if previa:
@@ -835,9 +945,17 @@ def autoteste(c):
     assert e == [] and "molde" not in x and "marca" not in x and x[cor] == "#E54A26" and info["nome_marca"] == "junior"
     x, e, info = carregar({"marca": "junior"}, decl, c, marca="padaria-exemplo")
     assert e == [] and x[cor] == "#D4860B" and info["nome_marca"] == "padaria-exemplo"
-    assert set(info["kit_sem_uso"]) == {"fonte", "nome"} - set(c["kit"])
+    assert set(info["kit_sem_uso"]) == {"fonte", "nome", "logo"} - set(c["kit"])
     kit = json.load(open(achar_marca("padaria-exemplo")))  # o kit da padaria chega às variáveis do molde (Joi: nome no ícone)
-    assert all(x[var] == kit[k] for k, vs in c["kit"].items() if k in kit for var in vs)
+    assert all(x[var] == kit[k] for k, vs in c["kit"].items() if k in kit and k != "logo" for var in vs)
+    # o logo mora fora do molde (marcas/<cliente>/logo.png): chega como caminho absoluto e vai para a cópia de render
+    assert x["logo"] == os.path.join(AQUI, "marcas", "padaria-exemplo", kit["logo"]) and v({"logo": x["logo"]}) == []
+    with tempfile.TemporaryDirectory() as tmp:
+        proj = os.path.join(tmp, "proj")
+        os.makedirs(proj)
+        assert preparar_imagens({"logo": x["logo"]}, decl, c, tmp, proj)["logo"] == "assets/var/logo.png"
+        assert os.path.isfile(os.path.join(proj, "assets", "var", "logo.png"))
+    assert len(v({"logo": "nao-existe.png"})) == 1 and len(v({"logo": "../montar.py"})) == 1
     assert achar_marca(os.path.relpath(os.path.join(AQUI, "marcas", "salao-exemplo"))) == os.path.join(AQUI, "marcas", "salao-exemplo", "marca.json")
     assert carregar({"marca": "nao-existe"}, decl, c)[1] and carregar({cor: "#123456"}, decl, c, marca="junior")[0][cor] == "#123456"
     assert nome_do_video("/t/marcas/padaria/videos/primeiro") == "padaria-primeiro" and nome_do_video("/t/teste/padaria/") == "padaria"
@@ -851,18 +969,44 @@ def autoteste(c):
         g2 = guardar(a)
         assert not os.path.exists(a) and g1 != g2 and open(g1).read() == "1" and open(g2).read() == "2"
         # travar: sem nome é o próximo número; mesmo nome com outro conteúdo é recusado
-        falso = dict(c, molde=os.path.join(tmp, "m"), trava=os.path.join(tmp, "MOLDE.json"))
+        falso = dict(c, pasta=tmp, molde=os.path.join(tmp, "m"), trava=os.path.join(tmp, "MOLDE.json"), travadas=os.path.join(tmp, "vt"))
         os.makedirs(falso["molde"])
         open(os.path.join(falso["molde"], "index.html"), "w").write("a")
         assert travar(falso) == (f"{c['nome']}-v1", True) and travar(falso) == (f"{c['nome']}-v1", False)
         open(os.path.join(falso["molde"], "index.html"), "w").write("b")
         assert conferir_molde(falso)[1] and travar(falso) == (f"{c['nome']}-v2", True)
+        # cada versão tem a sua pasta, e a anterior não é reescrita
+        v1, v2 = (os.path.join(falso["travadas"], f"{c['nome']}-v{i}") for i in (1, 2))
+        assert open(os.path.join(v1, "index.html")).read() == "a" and open(os.path.join(v2, "index.html")).read() == "b"
+        assert json.load(open(os.path.join(v1, "MOLDE.json")))["versao"] == f"{c['nome']}-v1" and conferir_molde(molde_pedido(falso, f"{c['nome']}-v1"))[1] is None
+        assert molde_pedido(falso, f"{c['nome']}-v9") is None and molde_pedido(falso, "outro-v1") is None
         open(os.path.join(falso["molde"], "index.html"), "w").write("c")
-        try:
-            travar(falso, f"{c['nome']}-v2")
-            assert False, "travar aceitou um nome repetido"
-        except Falha as f:
-            assert f.codigo == "VERSAO_DO_MOLDE_REPETIDA"
+        for nome in (f"{c['nome']}-v2", f"{c['nome']}-v1"):  # o registro em vigor e uma pasta que já existe
+            try:
+                travar(falso, nome)
+                assert False, "travar aceitou um nome repetido"
+            except Falha as f:
+                assert f.codigo == "VERSAO_DO_MOLDE_REPETIDA"
+        assert travar(falso) == (f"{c['nome']}-v3", True) and open(os.path.join(v1, "index.html")).read() == "a"
+    # sons por elemento (todo molde com sons.json): opções e volume; o mapa só usa tipos do pacote; o suave é parte do
+    # marcado; nunca o mesmo arquivo duas vezes seguidas; o padrão é "nenhum"
+    pac, mapa = json.load(open(os.path.join(SONS, "sons.json"), encoding="utf-8")), json.load(open(os.path.join(c["molde"], "sons.json"), encoding="utf-8"))
+    D = {k: d["default"] for k, d in decl.items()}
+    assert D["sons"] == "nenhum" and v({"sons": "marcado", "musica_volume": 0.5}) == []
+    assert len(v({"sons": "alto"})) == 1 and len(v({"musica_volume": 1.5})) == 1 and len(v({"musica_volume": True})) == 1
+    assert all(e["tipo"] in pac["tipos"] for e in mapa["eventos"]) and all(os.path.isfile(os.path.join(SONS, s["arquivo"])) for s in pac["sons"].values())
+    assert all(0 <= e["quadro"] < c["nf"] for e in mapa["eventos"])
+    sv, mc = eventos_de_som({**D, "sons": "suave"}, mapa, pac), eventos_de_som({**D, "sons": "marcado"}, mapa, pac)
+    assert 0 < len(sv) < len(mc) and {e[:3] for e in sv} <= {e[:3] for e in mc}
+    assert all(a[3] != b[3] for a, b in zip(mc, mc[1:])) and all(a[0] <= b[0] for a, b in zip(mc, mc[1:]))
+    # golpe da música: cliques a cada 0,4 s sobre um ruído baixo são golpes; entre eles, e no silêncio, não
+    import numpy as np
+    sr, rnd = 48000, np.random.default_rng(1)
+    mus = (0.01 * rnd.standard_normal(sr * 3)).astype(np.float32)
+    for t in np.arange(0.2, 3, 0.4):
+        mus[int(t * sr):int(t * sr) + 960] += 0.5 * np.sin(np.arange(960) * 0.3) * np.exp(-np.arange(960) / 200)
+    g = golpes(mus, sr)
+    assert g(1.0) and g(1.4) and not g(1.2) and not g(0.8) and not golpes(np.zeros(sr * 3, np.float32), sr)(1.0)
     # cada molde
     if c["nome"] == "satellite":
         import numpy as np
@@ -886,23 +1030,18 @@ def autoteste(c):
         assert all(g == f for g, f in curva(encaixar([b for b, _, _ in ENTRADAS])))  # batidas nos inícios = tempo original
         pts = curva(encaixar(list(range(3, SAT_NF, 10))))
         assert all(g1 > g0 and f1 > f0 for (g0, f0), (g1, f1) in zip(pts, pts[1:])) and pts[-1] == (SAT_NF, SAT_NF)
-        # sons: opções e volume; o mapa só usa tipos do pacote; o suave é parte do marcado; a mola firme adianta só o
-        # que está dentro da entrada; um evento por palavra; nunca o mesmo arquivo duas vezes seguidas
-        assert v({"sons": "marcado", "musica_volume": 0.5}) == []
-        assert len(v({"sons": "alto"})) == 1 and len(v({"musica_volume": 1.5})) == 1 and len(v({"musica_volume": True})) == 1
-        pac, mapa = json.load(open(os.path.join(SONS, "sons.json"), encoding="utf-8")), json.load(open(os.path.join(c["molde"], "sons.json"), encoding="utf-8"))
-        assert all(e["tipo"] in pac["tipos"] for e in mapa["eventos"]) and all(os.path.isfile(os.path.join(SONS, s["arquivo"])) for s in pac["sons"].values())
-        D = {k: d["default"] for k, d in decl.items()}
-        sv, mc = eventos_de_som({**D, "sons": "suave"}, mapa, pac), eventos_de_som({**D, "sons": "marcado"}, mapa, pac)
-        assert 0 < len(sv) < len(mc) and {e[:3] for e in sv} <= {e[:3] for e in mc}
-        assert all(a[3] != b[3] for a, b in zip(mc, mc[1:])) and all(a[0] <= b[0] for a, b in zip(mc, mc[1:]))
+        # a mola firme adianta só o que está dentro da entrada; um evento por palavra, com o passo desigual do ritmo
         fm = {e[2]: e[0] for e in eventos_de_som({**D, "sons": "marcado", "mola": "firme"}, mapa, pac)}
         assert abs(fm["ícone vira o cartão"] - 31.8) < 1e-9 and fm["satélite aparece no arco"] == 72
-        assert sum(e[2] == "texto da ilha, palavra a palavra" for e in eventos_de_som({**D, "sons": "marcado", "ilha_texto": "um dois"}, mapa, pac)) == 2
+        ilha = [e[0] for e in eventos_de_som({**D, "sons": "marcado", "ilha_texto": "um dois três"}, mapa, pac) if e[2] == "texto da ilha, palavra a palavra"]
+        assert len(ilha) == 3 and abs(ilha[1] - ilha[0] - 2.6) < 1e-9 and abs(ilha[2] - ilha[1] - 2.6 * 1.3) < 1e-9
+        # a abertura do marcado ficou menos densa: no máximo 2 efeitos no primeiro meio segundo
+        assert sum(e[0] < 15 for e in mc) <= 2
     elif c["nome"] == "joi":
         assert v({"item1": "Planejar o dia", "icone4": "sol", "objeto2": "🎮", "cor_principal": "#E54A26", "digitos": "01234"}) == []
         assert len(v({"objeto1": "carro"})) == 1 and len(v({"digitos": "5678"})) == 1 and len(v({"digitos": "5678a"})) == 1
     elif c["nome"] == "voiceos":
+        assert D["musica_volume"] == 1 and not any(e["tipo"] in ("digitar", "numero") for e in mapa["eventos"])  # a trilha tem locução
         assert len(decl) == len(re.findall(r'\{"id": ', open(os.path.join(c["molde"], "index.html"), encoding="utf-8").read())), "variável repetida no molde"
         assert v({"frase_ceu": "aaah cara", "icone1": "💬", "avatar": "🙂", "cor_destaque": "#E54A26",
                   "foto_vinhedo": "assets/img/sky1.jpg", "foto_ceu": {"url": "assets/img/vine.jpg"}}) == []

@@ -67,8 +67,10 @@ prévia nova vira a régua delas) e depois o vídeo que ficou em quarentena.
 
 **No projeto** (a pasta do clone ou do motor, ou a que vier em `--projeto`):
 
-- `.apple-style-ui/decisoes.json`: cada decisão sobre aquele vídeo: aprovado, pendente, quarentena ou reprovado, com
-  os motivos, as medidas, a nota e quem decidiu.
+- `.apple-style-ui/decisoes.jsonl`: cada decisão sobre aquele vídeo, uma por linha (o arquivo só cresce): aprovado,
+  pendente, quarentena ou reprovado, com os motivos, as medidas, a nota e quem decidiu. O `decisoes.json` do formato
+  antigo (uma lista reescrita) continua sendo lido antes das linhas novas. Para ver tudo:
+  `python3 aprendizado/aprender.py decisoes --projeto <pasta>`.
 
 **Na máquina**, em `~/.apple-style-ui/perfil/` (vale para todos os vídeos):
 

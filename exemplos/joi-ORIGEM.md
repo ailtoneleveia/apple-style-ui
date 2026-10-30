@@ -1,7 +1,7 @@
 # Origem: joi.mp4
 
 - **O que é:** o molde Joi renderizado por este repositório, com motion blur (1080x1920, 60 qps, 7,5 s).
-- **Como:** Inter no lugar da SF Pro (`ASUI_FONTE_LIVRE=1`), cor #E54A26, textos em português, objetos do menu trocados pelas peças livres. Sem áudio (silêncio): o Joi ainda não tem sons por elemento.
+- **Como:** Inter no lugar da SF Pro (`ASUI_FONTE_LIVRE=1`), cor #E54A26, textos em português, objetos do menu trocados pelas peças livres. Sem áudio (silêncio): feito no joi-v1, antes dos sons por elemento (o joi-v2 já tem: `"sons": "suave"` ou `"marcado"`).
 - **Referência do molde:** o vídeo original é de @creatoroly (https://www.instagram.com/p/DPJJwcujV0X/). Aqui não entra nada dele: nem quadro, nem áudio, nem recorte.
 - **Licença:** feito com fontes SIL OFL, sons CC0 e peças livres (ver `../LICENCAS-DE-TERCEIROS.md`).
 - **Feito em:** 30/10/2026.

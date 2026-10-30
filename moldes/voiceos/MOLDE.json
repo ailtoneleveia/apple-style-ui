@@ -1,13 +1,14 @@
 {
-  "versao": "voiceos-v1",
-  "travado_em": "2026-10-21T22:41:42-0300",
+  "versao": "voiceos-v2",
+  "travado_em": "2026-10-30T04:19:27-0300",
   "impressao_digital": {
     "hyperframes.json": "9d8022339f0f5d9b325f5408a9d5ef5a63dfae4a3bf68abfaa243d718e54a4e9",
-    "index.html": "2d41b12d41d05f8160fb9a0244aacad52cf2006aa96e8b2a753483c79521e8da",
+    "index.html": "ed2b5a296d9c23b3000fddd87481a01fe0d6af0d8fa9bd75275d35ed98d82fba",
     "mb.js": "a1ba40e2de19406d59c2d9cba5835e7ce9b69a95ea14e63108fe45c7e9b5d5ae",
     "meta.json": "9edbe211fef0959178f56ea6ccd87d18a75187bf8cb271847341cb840cfc39b8",
     "package.json": "8b53073c890d199585d772e8342989c7e15549554f290536d93a4b9f97fdbac3",
     "plates.js": "651f35487c5222ba60c119c01594e593f7077cb30856548285d5e8ca59bebeef",
+    "sons.json": "2f169ea481f6addaf1a8e81270b1d250352ddd18b2f5a2962158eeada4d9cb59",
     "tracks.js": "6add7bca668869bdc78486b0b4089777203bc4e510184e17091eb28cbfc14369",
     "tracks3.js": "c80294ffaae110d05a7e231c52751958bed313e4615df5bc3b65dcb9d6352170",
     "assets/silencio.m4a": "6f724b913a5c8e58de004df038d7be0ebd91672c38f2704367089b1d6845cb2d",
@@ -24,6 +25,5 @@
     "assets/img/sky1.jpg": "8c82aa0f2e635188534958d428e8d18615528f8a69907524a24ff4c36a668428",
     "assets/img/sky2.jpg": "eba4dda83d11f76090960ebb3ecfbbea1a322b56469400ba98b316206b6fff2e",
     "assets/img/vine.jpg": "3d3ecba4ce2119387ea577679e6335d601e16e7a10497f24c0fb22e0d8561f8f"
-  },
-  "nota": "impressão digital refeita na montagem do repositório (30/10/2026): sem SF Pro, sem áudio e sem recortes do original"
+  }
 }

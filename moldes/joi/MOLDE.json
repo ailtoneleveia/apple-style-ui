@@ -1,11 +1,13 @@
 {
-  "versao": "joi-v1",
+  "versao": "joi-v2",
+  "travado_em": "2026-10-30T04:19:27-0300",
   "impressao_digital": {
     "hyperframes.json": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
-    "index.html": "6ec7e4f0c2e72b96ff09ff6e92b180e25808ba25784f9eac7d10593d7663cd5f",
+    "index.html": "2d558c592e6faae6dfe9dc5f4c100e14a3d8b91ac69505b55bf67d73b0032383",
     "mb.js": "a1ba40e2de19406d59c2d9cba5835e7ce9b69a95ea14e63108fe45c7e9b5d5ae",
     "meta.json": "052beff24e75c74febfc39d6e9df1f7a4cf20f486cb9a21b50f79245bed0df70",
     "package.json": "7fe7bb46a9e73c98b45d67be2e1138d3cc61a879157764ab1c0df386df7f353a",
+    "sons.json": "5f6620d33ce104b5a46d8e10ee520cca84314e2f3ddfb544c9004ad2ed59dbe0",
     "tracks.js": "f43e6b2c929243ad758bb1175919477dd3d3925208fcd583e4c3209a372d9e88",
     "assets/silencio.m4a": "a1e80ff63d019c691e0b36f6c9ba66db7edc44c845b119925ad21f6d41d62596",
     "assets/sprites/ball-a.png": "cbaaf17eb20b8e251a0c7fb3c825706adc6acb67669e22a59133d3813a325eb5",
@@ -16,6 +18,5 @@
     "assets/sprites/pad.png": "48a988b0525e8fc5b51c27aa73483fd79d730e9517ec9879c0334f365f977f0e",
     "assets/sprites/screen-a.png": "2a1ecf3825612dcf9f14c422cb28a0796d9562ebea6525eab3da87b25a67dfd6",
     "assets/sprites/screen.png": "fe638eddf31d8dec9d0e4fa56e4375cf0085ae299a1fc0f05c75218b54735f30"
-  },
-  "nota": "impressão digital refeita na montagem do repositório (30/10/2026): sem SF Pro, sem áudio e sem recortes do original"
+  }
 }

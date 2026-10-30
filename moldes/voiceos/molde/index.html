@@ -42,7 +42,11 @@
     {"id": "icone7", "type": "enum", "label": "Dock: ícone 7", "default": "cube", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
     {"id": "avatar", "type": "enum", "label": "Mensagem: avatar", "default": "recorte", "options": [{"value": "recorte", "label": "Memoji (recorte)"}, {"value": "🧑🏽", "label": "Emoji 🧑🏽"}, {"value": "👨🏻", "label": "Emoji 👨🏻"}, {"value": "👩🏽", "label": "Emoji 👩🏽"}, {"value": "🧔🏻", "label": "Emoji 🧔🏻"}, {"value": "👨🏽‍💻", "label": "Emoji 👨🏽‍💻"}, {"value": "🙂", "label": "Emoji 🙂"}, {"value": "🐶", "label": "Emoji 🐶"}, {"value": "🦊", "label": "Emoji 🦊"}]},
     {"id": "foto_ceu", "type": "image", "label": "Foto do céu (cena 1 e faixa sob o vinhedo)", "default": "assets/img/sky1.jpg"},
-    {"id": "foto_vinhedo", "type": "image", "label": "Foto do vinhedo (cena 2)", "default": "assets/img/vine.jpg"}
+    {"id": "foto_vinhedo", "type": "image", "label": "Foto do vinhedo (cena 2)", "default": "assets/img/vine.jpg"},
+    {"id": "fonte", "type": "enum", "label": "Fonte (kit de marca; SF Pro é a do original)", "default": "sf", "options": [{"value": "sf", "label": "SF Pro (original)"}, {"value": "archivo", "label": "Archivo"}, {"value": "inter", "label": "Inter"}]},
+    {"id": "logo", "type": "string", "label": "Logo no lugar do triângulo do logo final (imagem: no molde, ao lado da versão ou do kit; vazio = triângulo)", "default": ""},
+    {"id": "sons", "type": "enum", "label": "Sons por elemento (saem pelo montar.py)", "default": "nenhum", "options": [{"value": "nenhum", "label": "Nenhum (só a trilha, como o original)"}, {"value": "suave", "label": "Suave (os eventos principais, mais baixo)"}, {"value": "marcado", "label": "Marcado (todo evento tem som)"}]},
+    {"id": "musica_volume", "type": "number", "label": "Volume da trilha quando há sons (0 a 1, sai pelo montar.py)", "default": 1.0, "min": 0, "max": 1, "step": 0.05}
   ]'>
   <head>
     <meta charset="UTF-8" />
@@ -61,6 +65,9 @@
       }
       /* internal test only: system emoji (dock icons and avatar when a variable picks an emoji) */
       @font-face { font-family: "Apple Color Emoji"; src: local("Apple Color Emoji"); }
+      /* brand kit fonts (SIL OFL): the files come from the Satellite molde at render time (montar.py) */
+      @font-face { font-family: "Archivo"; src: url("assets/fonts/Archivo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html, body { width: 1920px; height: 1080px; overflow: hidden; background: #fdfdfd; }
       #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #fdfdfd;
@@ -157,7 +164,15 @@
       const HFV = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
       const V = Object.assign({}, DEF, HFV);
       V.frase_tecla = String(V.frase_tecla).replace(/[.\s]+$/, "");   // no final period: the period is the dot that becomes the logo
-      const isDef = (...ks) => ks.every((k) => V[k] === DEF[k]);
+      // brand font (kit de marca): the clone was measured in SF Pro, so the ORIGINAL texts are measured in SF Pro (SFP) and
+      // the new ones in the chosen font (FAM). Another font relays out every text ("not default"); at the defaults nothing moves
+      const FONTES = { sf: '"SF Pro"', archivo: '"Archivo"', inter: '"Inter"' }, SFP = FONTES.sf, FAM = FONTES[V.fonte] || SFP, FAMN = FAM.replace(/"/g, "");
+      if (FAM !== SFP) document.getElementById("root").style.fontFamily = `${FAM}, "Apple Color Emoji", sans-serif`;
+      // canvas text does not start an @font-face load, and fonts.check() says yes to a face that was never asked for: ask for
+      // the brand font now and lay out only once it is in (FONTE_OK; layout runs again when it arrives, see the end)
+      let FONTE_OK = FAM === SFP;
+      const FONTE = FONTE_OK ? null : document.fonts.load(`500 40px ${FAM}`).then(() => { FONTE_OK = true; });
+      const isDef = (...ks) => FAM === SFP && ks.every((k) => V[k] === DEF[k]);
       const url = (v) => (v && typeof v === "object" ? v.url : v);   // image variables: "path" or {url}
       const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
       const ident = (x) => x;
@@ -263,13 +278,13 @@
       const MC = document.createElement("canvas").getContext("2d");
       function glyph(parent, txt, px, weight, fill, css) {
         const d = div(`position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;${css || ""}`, parent);
-        d.innerHTML = `<svg width="1" height="1" style="overflow:visible;position:absolute;left:0;top:0"><text font-family="SF Pro" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></svg>`;
+        d.innerHTML = `<svg width="1" height="1" style="overflow:visible;position:absolute;left:0;top:0"><text font-family="${FAMN}" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></svg>`;
         const t = d.querySelector("text"); t.textContent = txt;
         return { d, t, txt, px, weight };
       }
       // place so the INK box starts at x0 and the baseline sits at y (measured reference ink boxes)
       function inkPlace(g, x0, base) {
-        MC.font = `${g.weight} ${g.px}px "SF Pro"`;
+        MC.font = `${g.weight} ${g.px}px ${FAM}`;
         const m = MC.measureText(g.txt);
         g.ox = x0 + m.actualBoundingBoxLeft; g.base = base; g.w = m.actualBoundingBoxLeft + m.actualBoundingBoxRight;
         g.t.setAttribute("x", g.ox); g.t.setAttribute("y", base);
@@ -331,9 +346,9 @@
       const slackPill = isCrop(V.icone1) ? img(`assets/img/ic_${V.icone1}.png`, pill, "position:absolute;left:-32.5px;top:-32.5px;width:65px;height:65px;border-radius:15px;opacity:0")
         : mojiTile(pill, V.icone1, "position:absolute;left:-32.5px;top:-32.5px;width:65px;height:65px;opacity:0", 65, 15);
       // ---- molde text measures (canvas, SF Pro): always "new minus original", so the original never moves
-      const fm = (t, px, w) => { MC.font = `${w} ${px}px "SF Pro"`; return MC.measureText(t); };
-      const inkW = (t, px, w) => { const m = fm(t, px, w); return m.actualBoundingBoxLeft + m.actualBoundingBoxRight; };
-      const adv = (t, px, w) => fm(t, px, w).width;
+      const fm = (t, px, w, fam = FAM) => { MC.font = `${w} ${px}px ${fam}`; return MC.measureText(t); };
+      const inkW = (t, px, w, fam = FAM) => { const m = fm(t, px, w, fam); return m.actualBoundingBoxLeft + m.actualBoundingBoxRight; };
+      const adv = (t, px, w, fam = FAM) => fm(t, px, w, fam).width;
       const fitPx = (px, w, max) => (w > max ? (px * max) / w : px);   // shrink the font only when the text does not fit
       const setPx = (g, px) => { g.px = px; g.t.setAttribute("font-size", px); };
       const lin1 = (x0, k) => (k === 1 ? ident : (x) => x0 + (x - x0) * k);
@@ -347,27 +362,27 @@
       function layout() {
         if (T1D) T1.forEach(([c, x], i) => inkPlace(t1g[i], x, 91));
         else { // ink centre of the measured "ohhhh man"; 2400 world px fit the screen through f3-74
-          const cx = (759.5 + 1584.5 + inkW("n", 192, 500)) / 2, px = fitPx(192, inkW(T1TXT, 192, 500), 2400);
+          const cx = (759.5 + 1584.5 + inkW("n", 192, 500, SFP)) / 2, px = fitPx(192, inkW(T1TXT, 192, 500), 2400);
           const ws = T1TXT.split(" "), P = lineAt(null, ws, cx, 91, px, 500);
           t1L.forEach((q, i) => { const o = P[0].o + adv(T1TXT.slice(0, q.at), px, 500), g = t1g[i]; setPx(g, px); g.t.setAttribute("x", o); g.t.setAttribute("y", 91); g.ox = o; q.cc = [(P[q.k].l + P[q.k].r) / 2, UI.t1rec.c58[q.w][1]]; });
         }
         if (T2D) T2.forEach(([w, x], i) => inkPlace(t2g[i], x, -86));
         else { // ink centre of the measured line; 1800 world px stay on screen while the words are visible (f80-176)
-          const cx = (860.5 + 1486 + inkW("do", 86, 500)) / 2, px = fitPx(86, inkW(T2W.join(" "), 86, 500), 1800);
+          const cx = (860.5 + 1486 + inkW("do", 86, 500, SFP)) / 2, px = fitPx(86, inkW(T2W.join(" "), 86, 500), 1800);
           lineAt(t2g, T2W, cx, -86, px, 500).forEach((p, i) => (t2W[i].x = p.l));
         }
         inkPlace(nameG, 947 - WIN.x, 59 - WIN.y);
         // the time keeps its gap after a new name (advance end of the name, new minus original)
-        const dn = isDef("msg_nome") ? 0 : adv(V.msg_nome, 29, 500) + fm(V.msg_nome, 29, 500).actualBoundingBoxLeft - adv(DEF.msg_nome, 29, 500) - fm(DEF.msg_nome, 29, 500).actualBoundingBoxLeft;
+        const dn = isDef("msg_nome") ? 0 : adv(V.msg_nome, 29, 500) + fm(V.msg_nome, 29, 500).actualBoundingBoxLeft - adv(DEF.msg_nome, 29, 500, SFP) - fm(DEF.msg_nome, 29, 500, SFP).actualBoundingBoxLeft;
         inkPlace(timeG, 999 - WIN.x + dn, 59 - WIN.y);
         if (!isDef("msg_texto")) { // one line inside the window (ink 950..1620); the dictation keys stretch with the ink width
           const px = fitPx(31.7, inkW(V.msg_texto, 31.7, 500), 670);
           setPx(msgW, px); setPx(msgP, px);
-          mapMsg = lin1(950, inkW(V.msg_texto, px, 500) / inkW(DEF.msg_texto, 31.7, 500));
+          mapMsg = lin1(950, inkW(V.msg_texto, px, 500) / inkW(DEF.msg_texto, 31.7, 500, SFP));
         }
         inkPlace(msgW, 950 - WIN.x, 106 - WIN.y); inkPlace(msgP, 950 - WIN.x, 106 - WIN.y);
         if (!isDef("msg_texto", "botao_enviar")) { // the caret leaves from the new text end; a longer label widens the button to the left
-          const grow = Math.max(0, adv(V.botao_enviar, 30, 500) - adv(DEF.botao_enviar, 30, 500));
+          const grow = Math.max(0, adv(V.botao_enviar, 30, 500) - adv(DEF.botao_enviar, 30, 500, SFP));
           HAND_DX = -grow / 2;
           SENDK2 = SENDK.map((k) => { const u = clamp((k[0] - 208) / 4); return [k[0], (1 - u) * mapMsg(k[1]) + u * (k[1] - grow / 2), k[2], k[3], k[4] + u * grow, k[5], k[6]]; });
         }
@@ -397,7 +412,7 @@
       // text in a big box so masks work in world units (the div spans bx..bx+bw)
       function glyphBox(parent, txt, px, weight, fill, bx, by, bw, bh) {
         const d = div(`position:absolute;left:${bx}px;top:${by}px;width:${bw}px;height:${bh}px`, parent);
-        d.innerHTML = `<svg width="${bw}" height="${bh}" style="overflow:visible;position:absolute;left:0;top:0"><g transform="translate(${-bx},${-by})"><text font-family="SF Pro" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></g></svg>`;
+        d.innerHTML = `<svg width="${bw}" height="${bh}" style="overflow:visible;position:absolute;left:0;top:0"><g transform="translate(${-bx},${-by})"><text font-family="${FAMN}" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></g></svg>`;
         const t = d.querySelector("text"); t.textContent = txt;
         return { d, t, txt, px, weight, bx, by };
       }
@@ -460,6 +475,11 @@
       const TRI = '<svg viewBox="-24 -22 48 44" width="48" height="44" style="overflow:visible"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#090909"/><stop offset="1" stop-color="#6e6e6e"/></linearGradient></defs><path d="M-19.5 -13.8 Q-22.5 -13.8 -21 -11.2 L-2.6 18.6 Q0 22.4 2.6 18.6 L21 -11.2 Q22.5 -13.8 19.5 -13.8 Z" fill="url(#tg)"/></svg>';
       const tri = div("position:absolute;left:-24px;top:-22px;width:48px;height:44px;transform-origin:24px 22px", S4, TRI);
       const capG = div("position:absolute;left:766.5px;top:584px;width:380px;text-align:center;color:#9b9b9e;font:500 12.5px 'SF Pro';white-space:nowrap", S4, esc(V.legenda_logo));
+      if (FAM !== SFP) [sendT, doneD, capG].forEach((e) => (e.style.fontFamily = FAM));
+      if (V.logo) { // brand logo (kit de marca) in the triangle's place: same flight next to the dot
+        tri.innerHTML = "";
+        img(V.logo, tri, "position:absolute;left:0;top:-2px;width:48px;height:48px;object-fit:cover;border-radius:50%");
+      }
 
       function layout345() {
         inkPlace(privG, 342, 259);
@@ -467,13 +487,13 @@
         if (!isDef("pagina_titulo")) {
           const px = fitPx(58.9, inkW(V.pagina_titulo, 58.9, 600), 1350);
           setPx(titleK, px); setPx(titleP, px);
-          mapTitle = lin1(321, inkW(V.pagina_titulo, px, 600) / inkW(DEF.pagina_titulo, 58.9, 600));
+          mapTitle = lin1(321, inkW(V.pagina_titulo, px, 600) / inkW(DEF.pagina_titulo, 58.9, 600, SFP));
         }
         if (!isDef("pagina_vazia")) setPx(titlePH, fitPx(58.9, inkW(V.pagina_vazia, 58.9, 600), 1350));
         [titlePH, titleK, titleP].forEach((g) => inkPlace(g, 321, 325.2));
         if (!isDef("pagina_dica")) { // the grey box grows with the hint
           const px = fitPx(29.3, inkW(V.pagina_dica, 29.3, 500), 1330);
-          setPx(phG, px); phBox.style.width = 532 + Math.max(0, inkW(V.pagina_dica, px, 500) - inkW(DEF.pagina_dica, 29.3, 500)) + "px";
+          setPx(phG, px); phBox.style.width = 532 + Math.max(0, inkW(V.pagina_dica, px, 500) - inkW(DEF.pagina_dica, 29.3, 500, SFP)) + "px";
         }
         inkPlace(phG, 334, 404);
         // body: one size for every line; all shrink together only if the longest line does not fit
@@ -482,7 +502,7 @@
         if (pxB !== 29.5) [...lineG, stopG, typG, yourG].forEach((g) => setPx(g, pxB));
         lineG.forEach((g, i) => {
           inkPlace(g, 315, BASE(i + 1));   // each line's measured typing head stretches with its ink width
-          if (!isDef(LK[i]) || pxB !== 29.5) mapLine[i] = lin1(315, inkW(LINES[i], pxB, 500) / inkW(DEF[LK[i]], 29.5, 500));
+          if (!isDef(LK[i]) || pxB !== 29.5) mapLine[i] = lin1(315, inkW(LINES[i], pxB, 500) / inkW(DEF[LK[i]], 29.5, 500, SFP));
         });
         inkPlace(stopG, 315, BASE(14));
         if (D14 && pxB === 29.5) {
@@ -492,11 +512,11 @@
           inkPlace(yourG, 474, BASE(14));
         } else { // line 14 = start + boxed word + end, real spaces. The measured box, erase keys, glow and zoom follow the boxed word
           const [ao, bo, co] = [DEF.linha14_inicio, DEF.linha14_destaque, DEF.linha14_fim], [a, b, c] = L14;
-          const So = 315 + fm(ao, 29.5, 500).actualBoundingBoxLeft, To = So + adv(ao + " ", 29.5, 500), Yo = 474 + fm(co, 29.5, 500).actualBoundingBoxLeft;
-          const Tn = stopG.ox + adv(a + " ", pxB, 500), Yn = Yo + Tn + adv(b + " ", pxB, 500) - To - adv(bo + " ", 29.5, 500);
+          const So = 315 + fm(ao, 29.5, 500, SFP).actualBoundingBoxLeft, To = So + adv(ao + " ", 29.5, 500, SFP), Yo = 474 + fm(co, 29.5, 500, SFP).actualBoundingBoxLeft;
+          const Tn = stopG.ox + adv(a + " ", pxB, 500), Yn = Yo + Tn + adv(b + " ", pxB, 500) - To - adv(bo + " ", 29.5, 500, SFP);
           typG.t.setAttribute("x", Tn); typG.t.setAttribute("y", BASE(14)); yourG.t.setAttribute("x", Yn); yourG.t.setAttribute("y", BASE(14)); yourG.ox = Yn;
-          const geo = (S, T, Y, A, B, C, px) => ({ sR: S + fm(A, px, 500).actualBoundingBoxRight, tL: T - fm(B, px, 500).actualBoundingBoxLeft, tR: T + fm(B, px, 500).actualBoundingBoxRight, yR: Y + fm(C, px, 500).actualBoundingBoxRight });
-          const o = geo(So, To, Yo, ao, bo, co, 29.5), n = geo(stopG.ox, Tn, Yn, a, b, c, pxB);
+          const geo = (S, T, Y, A, B, C, px, f) => ({ sR: S + fm(A, px, 500, f).actualBoundingBoxRight, tL: T - fm(B, px, 500, f).actualBoundingBoxLeft, tR: T + fm(B, px, 500, f).actualBoundingBoxRight, yR: Y + fm(C, px, 500, f).actualBoundingBoxRight });
+          const o = geo(So, To, Yo, ao, bo, co, 29.5, SFP), n = geo(stopG.ox, Tn, Yn, a, b, c, pxB, FAM);
           X395 = 395 + n.sR - o.sR; X470 = 470 + n.tR - o.tR; BOX_DC = (n.tL + n.tR - o.tL - o.tR) / 2; X422 = 422 + BOX_DC;
           mapBox = (x) => n.tL + ((x - o.tL) * (n.tR - n.tL)) / (o.tR - o.tL);
           // typing head: piecewise linear through the end of the boxed word (where the erase stops) and the end of the line
@@ -504,20 +524,20 @@
         }
         if (isDef("tecla")) inkPlace(fnG, -268.7, 572.7);
         else { // same ink centre as "fn" in the key; at most 210 px wide
-          const mo = fm(DEF.tecla, 156, 700), cx = -268.7 + (mo.actualBoundingBoxLeft + mo.actualBoundingBoxRight) / 2, cy = 572.7 - (mo.actualBoundingBoxAscent - mo.actualBoundingBoxDescent) / 2;
+          const mo = fm(DEF.tecla, 156, 700, SFP), cx = -268.7 + (mo.actualBoundingBoxLeft + mo.actualBoundingBoxRight) / 2, cy = 572.7 - (mo.actualBoundingBoxAscent - mo.actualBoundingBoxDescent) / 2;
           const px = fitPx(156, inkW(V.tecla, 156, 700), 210), m = fm(V.tecla, px, 700);
           setPx(fnG, px); inkPlace(fnG, cx - (m.actualBoundingBoxLeft + m.actualBoundingBoxRight) / 2, cy + (m.actualBoundingBoxAscent - m.actualBoundingBoxDescent) / 2);
         }
         if (!isDef("frase_tecla")) { // left edge stays at 44 (the key sits left of it); at most 1830 px so it fits the f551 frame
-          const px = fitPx(183, inkW(V.frase_tecla, 183, 500), 1830), wn = inkW(V.frase_tecla, px, 500), wo = inkW(DEF.frase_tecla, 183, 500);
+          const px = fitPx(183, inkW(V.frase_tecla, 183, 500), 1830), wn = inkW(V.frase_tecla, px, 500), wo = inkW(DEF.frase_tecla, 183, 500, SFP);
           setPx(sayK, px); setPx(sayB, px);
           mapSay = lin1(44, wn / wo); DOT_DX = wn - wo;   // the period (dot) leaves from the new end of the line
         }
         inkPlace(sayK, 44, 596); inkPlace(sayB, 44, 596);
         // centred labels: a longer text widens its box around the same centre
         const widen = (e, cx, w0, font) => { MC.font = font; const w = MC.measureText(e.textContent).width + 12; if (w > w0) { e.style.left = cx - w / 2 + "px"; e.style.width = w + "px"; } };
-        if (!isDef("pilula_pronto")) widen(doneD, 960, 200, `500 27px "SF Pro"`);
-        if (!isDef("legenda_logo")) widen(capG, 956.5, 380, `500 12.5px "SF Pro"`);
+        if (!isDef("pilula_pronto")) widen(doneD, 960, 200, `500 27px ${FAM}`);
+        if (!isDef("legenda_logo")) widen(capG, 956.5, 380, `500 12.5px ${FAM}`);
       }
 
       function drawS3(F, Fi) {
@@ -827,7 +847,7 @@
         const Fi = Math.min(NF - 1, Math.floor(t * FPS + 1e-4));
         const frac = t * FPS - Fi, shift = (window.MB_SHIFT || 0) * FPS;
         const F = Fi + (frac - shift) * SHUTTER;
-        if (!layoutDone && document.fonts.check('500 40px "SF Pro"')) layout();
+        if (!layoutDone && FONTE_OK && document.fonts.check(`500 40px ${SFP}`)) layout();
         const s12 = Fi <= 262, s3 = Fi >= 263 && Fi <= 486, s4 = Fi >= 487;
         show(S12, s12); show(S3, s3); show(S4, s4);
         if (s12) drawS12(F, Fi);
@@ -838,7 +858,8 @@
       const tl = gsap.timeline({ paused: true });
       tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
       window.addEventListener("hf-seek", (e) => draw(e.detail.time));
-      document.fonts.ready.then(() => { layout(); draw(P.t); });
+      document.fonts.ready.then(() => { if (FONTE_OK) { layout(); draw(P.t); } });
+      if (FONTE) FONTE.then(() => { layout(); draw(P.t); });
       draw(0);
       window.__timelines["main"] = tl;
     </script>

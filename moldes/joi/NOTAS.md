@@ -10,10 +10,13 @@ Uso interno de estudo: SF Pro, emojis da Apple e o áudio do original não podem
 ```
 joi/
   molde/          o projeto HyperFrames (as variáveis estão no <html> do index.html)
-  MOLDE.json      versão travada do molde: versão (joi-v1) e impressão digital (sha256 de cada arquivo)
+  MOLDE.json      a versão em vigor (joi-v2: kit de marca completo e sons) e a impressão digital (sha256 de cada arquivo)
+  versoes-travadas/   uma pasta por versão travada (joi-v1, joi-v2), cópia do molde só leitura
+  molde/sons.json o mapa evento -> som (ver ../../sons/SONS.md)
   versoes/        uma versão = um JSON só com o que muda
     original.json   {} = o clone
     junior.json     a versão de teste (português, laranja #E54A26)
+    padaria-marca.json  o kit da padaria inteiro (cor, nome, Archivo e logo) com sons suaves
   montar.py       renderiza uma versão
   saidas/         vídeos, lado a lado e folhas de quadros
 ```
@@ -44,10 +47,11 @@ com `--workers 1`, trabalha no rascunho da sessão e para se o disco tiver menos
 apagado logo depois do tmix. Encode H.264 `veryslow`, `-tune animation`, crf 12, `-refs 4 -level:v 5.1` (sem isso o
 x264 sobe para o nível 6.0 nessa resolução e o QuickTime embaralha os blocos).
 
-**Versão travada.** `MOLDE.json` guarda a versão do molde e o sha256 de cada arquivo de `molde/` (sem pastas ocultas de cache).
+**Versão travada.** `MOLDE.json` guarda a versão em vigor e o sha256 de cada arquivo de `molde/` (sem pastas ocultas de
+cache), e `versoes-travadas/joi-vN/` guarda a cópia congelada de cada versão (arquivos só leitura, nunca reescrita).
 Se alguém editar o molde sem travar uma versão nova, o `resumo` avisa quais arquivos mudaram e o `proximo` passa a ser o
-comando de travar. Para travar: `python3 montar.py --travar joi-v2`. Travar de novo com o mesmo nome e arquivos diferentes é
-recusado (`VERSAO_REPETIDA`).
+comando de travar. Para travar: `python3 montar.py --travar` (o próximo número). Nome repetido, no registro ou numa pasta
+que já existe, é recusado (`VERSAO_DO_MOLDE_REPETIDA`). Uma versão com `"molde": "joi-v1"` sai com a pasta congelada da v1.
 
 **No Studio do HyperFrames.** As mesmas variáveis aparecem como campos (`npx hyperframes preview` dentro de `molde/`):
 textos viram caixas, ícones e objetos viram listas e as cores têm seletor.
@@ -68,6 +72,10 @@ textos viram caixas, ícones e objetos viram listas e as cores têm seletor.
 | `cor_principal` | gira **todo o azul**: gradiente, vidro e aro do cartão, estrela (marinho e clara), seta do botão, subtítulo e o fundo azulado de f324-336 | #4282f5 |
 | `cor_vermelho` | gira o vermelho e os rosas: texto do ícone, disco rosa, fundo rosa de f79-95, botão Remove (fundo, rótulo, ícone e brilho) e a frase vermelha que escurece | #ee4f40 |
 | `cor_icone` | cor dos ícones desenhados da lista (a lua roxa) | #5b35ef |
+| `fonte` | `sf` (SF Pro, a do original), `archivo` ou `inter` (SIL OFL; os arquivos vêm do molde do Satellite na hora do render). Os textos originais continuam medidos em SF Pro e os novos na fonte escolhida, então o layout acompanha a largura real. Com kit de marca, vem do `fonte` do `marca.json` | sf |
+| `logo` | imagem redonda no lugar da estrela do cartão (o mesmo voo). Caminho no molde, ao lado da versão, absoluto ou o `logo` do kit (`marcas/<cliente>/logo.png`): vai para `assets/var/` da cópia de render | vazio (estrela) |
+| `sons` | som por elemento: `nenhum`, `suave` ou `marcado` (ver `sons/SONS.md`) | nenhum |
+| `musica_volume` | volume da trilha quando há sons, de 0 a 1 | 0,7 |
 | `fundo_claro`, `fundo_escuro` | os fundos lisos. Cada canal de cada fundo medido guarda o seu lugar entre o escuro e o claro, então o cinza do começo, as rampas e o cinza do botão "+" acompanham | #fdfdfd, #0d0d0d |
 
 O "Get" do pedido é a primeira palavra da `frase`: no clone ele não é um elemento separado.
@@ -96,14 +104,16 @@ mexe (cada diferença é exatamente 0 nos padrões).
 - **Sequência e tempos.** São curvas medidas quadro a quadro da referência (`tracks.js`). Uma sequência nova é um clone novo.
 - **Quantidade de peças.** Sempre 4 itens na lista, 3 botões no menu e 4 objetos: cada um tem a sua trilha de entrada
   e saída. O número de palavras é livre.
-- **Áudio.** Fixo, a trilha do original (só para teste interno).
+- **Áudio.** A trilha é o `assets/silencio.m4a` (a do original não vai no repositório); não há campo `musica`. Os sons
+  por elemento entram por cima pelo montador (`sons`).
 - **Desenhos fixos:** a forma do ícone de calendário, a pílula "+" e o glifo que gira, o cursor, os ícones dos botões
   do menu (check, lápis, apagar), a estrela de 4 pontas, o ícone do botão do cartão e os pontinhos. O cartão escuro do
   menu e os botões cinza também ficam: só o botão vermelho segue `cor_vermelho`.
 - **Objetos 3D.** Os recortes e os emojis entram parados, como no clone; nenhum gira em 3D (a referência gira um pouco).
 - **Dígitos.** Exatamente 5, um por casa: o ícone tem a largura de um dígito.
 - **Formato.** Só 9:16 (1080x1920).
-- **Fonte e emojis.** SF Pro e Apple Color Emoji do sistema, licença Apple: só estudo, neste Mac.
+- **Fonte e emojis.** SF Pro e Apple Color Emoji do sistema, licença Apple: só estudo, neste Mac. Para publicar, `fonte`
+  `archivo` ou `inter` (ou `ASUI_FONTE_LIVRE=1`). Os dígitos do calendário e o glifo do "+" seguem a fonte do `#root`.
 - **A frase original no fim.** "Get your subscription" fica cortada pela borda da tela no quadro parado do fim, como no
   clone e na referência. Ficou assim para o padrão sair igual; frase nova é ajustada para não cortar.
 - **Textos muito longos.** Nada corta, mas a letra diminui. Com o teste extremo (item de 36 letras, botões de 21, frase
@@ -128,3 +138,15 @@ mexe (cada diferença é exatamente 0 nos padrões).
 
 - Prévia: 25 a 35 s de render, 65 a 85 s no total com lado a lado e folha.
 - Final com motion blur (junior): 82 s de render a 240 fps (1804 subquadros), 2 min 7 s no total (o encode veryslow do lado a lado 2160x1920 pesa).
+
+## Kit de marca e sons (30/10, joi-v2)
+
+- **Kit:** `cor_principal` -> `cor_principal`, `nome` -> `icone_texto`, `fonte` -> `fonte`, `logo` -> `logo`. Prova:
+  `versoes/padaria-marca.json` (kit `marcas/padaria-exemplo/`: #D4860B, Archivo, "padaria.exemplo" no ícone e o logo
+  no lugar da estrela). A Archivo é pedida com `document.fonts.load` logo no começo e o layout só confia na medida
+  dela depois que ela chega (o `fonts.check` responde "sim" para uma fonte que ninguém pediu ainda, e a medida saía com
+  a fonte reserva).
+- **Sons:** 18 eventos em `molde/sons.json` (13 no suave, 1,7 por segundo; 18 no marcado, 2,4 por segundo), cada um
+  no quadro do pico do movimento a 60 qps. Ver a tabela em `sons/SONS.md`.
+- **Padrão intacto:** com os padrões (fonte `sf`, sem logo, `sons: nenhum`) a régua do portão continua passando
+  ("iguais dentro da tolerância"), e nenhuma linha nova de som roda.

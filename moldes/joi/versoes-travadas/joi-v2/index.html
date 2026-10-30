@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait"
+  data-composition-variables='[
+    {"id": "icone_texto", "type": "string", "label": "Texto vermelho do ícone", "default": "Joi"},
+    {"id": "digitos", "type": "string", "label": "Dígitos do calendário (5, da esquerda para a direita; o 4º abre no centro e o 5º entra por último)", "default": "56789"},
+    {"id": "item1", "type": "string", "label": "Item 1 da lista (vira o título do menu)", "default": "Plan a day"},
+    {"id": "item2", "type": "string", "label": "Item 2 da lista", "default": "Drink water"},
+    {"id": "item3", "type": "string", "label": "Item 3 da lista", "default": "Get Sunlight"},
+    {"id": "item4", "type": "string", "label": "Item 4 da lista (entra por último, do cinza ao preto)", "default": "Wind Down"},
+    {"id": "icone1", "type": "enum", "label": "Ícone do item 1", "default": "caixa", "options": [{"value": "caixa", "label": "Caixa tracejada (original dos itens 1 a 3)"}, {"value": "lua", "label": "Lua (original do item 4)"}, {"value": "sol", "label": "Sol"}, {"value": "gota", "label": "Gota"}, {"value": "coracao", "label": "Coração"}, {"value": "estrela", "label": "Estrela de 4 pontas"}, {"value": "raio", "label": "Raio"}, {"value": "feito", "label": "Círculo com check"}, {"value": "🌙", "label": "Emoji 🌙"}, {"value": "☀️", "label": "Emoji ☀️"}, {"value": "💧", "label": "Emoji 💧"}, {"value": "🧘", "label": "Emoji 🧘"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏃", "label": "Emoji 🏃"}, {"value": "✅", "label": "Emoji ✅"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "💤", "label": "Emoji 💤"}]},
+    {"id": "icone2", "type": "enum", "label": "Ícone do item 2", "default": "caixa", "options": [{"value": "caixa", "label": "Caixa tracejada (original dos itens 1 a 3)"}, {"value": "lua", "label": "Lua (original do item 4)"}, {"value": "sol", "label": "Sol"}, {"value": "gota", "label": "Gota"}, {"value": "coracao", "label": "Coração"}, {"value": "estrela", "label": "Estrela de 4 pontas"}, {"value": "raio", "label": "Raio"}, {"value": "feito", "label": "Círculo com check"}, {"value": "🌙", "label": "Emoji 🌙"}, {"value": "☀️", "label": "Emoji ☀️"}, {"value": "💧", "label": "Emoji 💧"}, {"value": "🧘", "label": "Emoji 🧘"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏃", "label": "Emoji 🏃"}, {"value": "✅", "label": "Emoji ✅"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "💤", "label": "Emoji 💤"}]},
+    {"id": "icone3", "type": "enum", "label": "Ícone do item 3", "default": "caixa", "options": [{"value": "caixa", "label": "Caixa tracejada (original dos itens 1 a 3)"}, {"value": "lua", "label": "Lua (original do item 4)"}, {"value": "sol", "label": "Sol"}, {"value": "gota", "label": "Gota"}, {"value": "coracao", "label": "Coração"}, {"value": "estrela", "label": "Estrela de 4 pontas"}, {"value": "raio", "label": "Raio"}, {"value": "feito", "label": "Círculo com check"}, {"value": "🌙", "label": "Emoji 🌙"}, {"value": "☀️", "label": "Emoji ☀️"}, {"value": "💧", "label": "Emoji 💧"}, {"value": "🧘", "label": "Emoji 🧘"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏃", "label": "Emoji 🏃"}, {"value": "✅", "label": "Emoji ✅"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "💤", "label": "Emoji 💤"}]},
+    {"id": "icone4", "type": "enum", "label": "Ícone do item 4", "default": "lua", "options": [{"value": "caixa", "label": "Caixa tracejada (original dos itens 1 a 3)"}, {"value": "lua", "label": "Lua (original do item 4)"}, {"value": "sol", "label": "Sol"}, {"value": "gota", "label": "Gota"}, {"value": "coracao", "label": "Coração"}, {"value": "estrela", "label": "Estrela de 4 pontas"}, {"value": "raio", "label": "Raio"}, {"value": "feito", "label": "Círculo com check"}, {"value": "🌙", "label": "Emoji 🌙"}, {"value": "☀️", "label": "Emoji ☀️"}, {"value": "💧", "label": "Emoji 💧"}, {"value": "🧘", "label": "Emoji 🧘"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏃", "label": "Emoji 🏃"}, {"value": "✅", "label": "Emoji ✅"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "💤", "label": "Emoji 💤"}]},
+    {"id": "botao1", "type": "string", "label": "Botão 1 do menu", "default": "Complete"},
+    {"id": "botao2", "type": "string", "label": "Botão 2 do menu", "default": "Edit"},
+    {"id": "botao3", "type": "string", "label": "Botão 3 do menu (vermelho)", "default": "Remove"},
+    {"id": "objeto1", "type": "enum", "label": "Objeto 3D 1 (da esquerda para a direita)", "default": "xicara", "options": [{"value": "xicara", "label": "Xícara (recorte do original)"}, {"value": "controle", "label": "Controle (recorte do original)"}, {"value": "bola", "label": "Bola (recorte do original)"}, {"value": "monitor", "label": "Monitor (recorte do original)"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "🎮", "label": "Emoji 🎮"}, {"value": "⚽", "label": "Emoji ⚽"}, {"value": "🖥️", "label": "Emoji 🖥️"}, {"value": "💻", "label": "Emoji 💻"}, {"value": "📱", "label": "Emoji 📱"}, {"value": "🎧", "label": "Emoji 🎧"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏀", "label": "Emoji 🏀"}, {"value": "🪴", "label": "Emoji 🪴"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "⏰", "label": "Emoji ⏰"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "📷", "label": "Emoji 📷"}]},
+    {"id": "objeto2", "type": "enum", "label": "Objeto 3D 2 (da esquerda para a direita)", "default": "controle", "options": [{"value": "xicara", "label": "Xícara (recorte do original)"}, {"value": "controle", "label": "Controle (recorte do original)"}, {"value": "bola", "label": "Bola (recorte do original)"}, {"value": "monitor", "label": "Monitor (recorte do original)"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "🎮", "label": "Emoji 🎮"}, {"value": "⚽", "label": "Emoji ⚽"}, {"value": "🖥️", "label": "Emoji 🖥️"}, {"value": "💻", "label": "Emoji 💻"}, {"value": "📱", "label": "Emoji 📱"}, {"value": "🎧", "label": "Emoji 🎧"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏀", "label": "Emoji 🏀"}, {"value": "🪴", "label": "Emoji 🪴"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "⏰", "label": "Emoji ⏰"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "📷", "label": "Emoji 📷"}]},
+    {"id": "objeto3", "type": "enum", "label": "Objeto 3D 3 (da esquerda para a direita)", "default": "bola", "options": [{"value": "xicara", "label": "Xícara (recorte do original)"}, {"value": "controle", "label": "Controle (recorte do original)"}, {"value": "bola", "label": "Bola (recorte do original)"}, {"value": "monitor", "label": "Monitor (recorte do original)"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "🎮", "label": "Emoji 🎮"}, {"value": "⚽", "label": "Emoji ⚽"}, {"value": "🖥️", "label": "Emoji 🖥️"}, {"value": "💻", "label": "Emoji 💻"}, {"value": "📱", "label": "Emoji 📱"}, {"value": "🎧", "label": "Emoji 🎧"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏀", "label": "Emoji 🏀"}, {"value": "🪴", "label": "Emoji 🪴"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "⏰", "label": "Emoji ⏰"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "📷", "label": "Emoji 📷"}]},
+    {"id": "objeto4", "type": "enum", "label": "Objeto 3D 4 (da esquerda para a direita)", "default": "monitor", "options": [{"value": "xicara", "label": "Xícara (recorte do original)"}, {"value": "controle", "label": "Controle (recorte do original)"}, {"value": "bola", "label": "Bola (recorte do original)"}, {"value": "monitor", "label": "Monitor (recorte do original)"}, {"value": "☕", "label": "Emoji ☕"}, {"value": "🎮", "label": "Emoji 🎮"}, {"value": "⚽", "label": "Emoji ⚽"}, {"value": "🖥️", "label": "Emoji 🖥️"}, {"value": "💻", "label": "Emoji 💻"}, {"value": "📱", "label": "Emoji 📱"}, {"value": "🎧", "label": "Emoji 🎧"}, {"value": "📚", "label": "Emoji 📚"}, {"value": "🏀", "label": "Emoji 🏀"}, {"value": "🪴", "label": "Emoji 🪴"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "⏰", "label": "Emoji ⏰"}, {"value": "🍎", "label": "Emoji 🍎"}, {"value": "📷", "label": "Emoji 📷"}]},
+    {"id": "frase", "type": "string", "label": "Frase que cai palavra a palavra e vira o subtítulo do cartão", "default": "Get your subscription"},
+    {"id": "cartao_titulo", "type": "string", "label": "Título do cartão azul", "default": "Joi Pro"},
+    {"id": "cartao_botao", "type": "string", "label": "Botão do cartão azul", "default": "Upgrade"},
+    {"id": "cor_principal", "type": "color", "label": "Cor principal (gira todo o azul do cartão, da estrela e do fundo azulado)", "default": "#4282f5"},
+    {"id": "cor_vermelho", "type": "color", "label": "Vermelho (texto do ícone, disco e fundo rosa, botão Remove, frase)", "default": "#ee4f40"},
+    {"id": "cor_icone", "type": "color", "label": "Cor dos ícones desenhados da lista (a lua)", "default": "#5b35ef"},
+    {"id": "fundo_claro", "type": "color", "label": "Fundo claro", "default": "#fdfdfd"},
+    {"id": "fundo_escuro", "type": "color", "label": "Fundo escuro (cena do menu)", "default": "#0d0d0d"},
+    {"id": "fonte", "type": "enum", "label": "Fonte (kit de marca; SF Pro é a do original)", "default": "sf", "options": [{"value": "sf", "label": "SF Pro (original)"}, {"value": "archivo", "label": "Archivo"}, {"value": "inter", "label": "Inter"}]},
+    {"id": "logo", "type": "string", "label": "Logo no lugar da estrela do cartão (imagem: no molde, ao lado da versão ou do kit; vazio = estrela)", "default": ""},
+    {"id": "sons", "type": "enum", "label": "Sons por elemento (saem pelo montar.py)", "default": "nenhum", "options": [{"value": "nenhum", "label": "Nenhum (só a trilha, como o original)"}, {"value": "suave", "label": "Suave (os eventos principais, mais baixo)"}, {"value": "marcado", "label": "Marcado (todo evento tem som)"}]},
+    {"id": "musica_volume", "type": "number", "label": "Volume da trilha quando há sons (0 a 1, sai pelo montar.py)", "default": 0.7, "min": 0, "max": 1, "step": 0.05}
+  ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="tracks.js"></script>
+    <style>
+      /* internal calibration only: Apple system font, not for publishing */
+      @font-face {
+        font-family: "SF Pro";
+        src: url("assets/fonts/SFNS.ttf") format("truetype");
+        font-weight: 1 1000;
+        font-display: block;
+      }
+      /* brand kit fonts (SIL OFL): the files come from the Satellite molde at render time (montar.py) */
+      @font-face { font-family: "Archivo"; src: url("assets/fonts/Archivo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      /* internal test only: system emoji (list icons and 3D objects) */
+      @font-face { font-family: "Apple Color Emoji"; src: local("Apple Color Emoji"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #f3f3f3; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #f3f3f3;
+        font-family: "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+      .full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+      .abs { position: absolute; left: 0; top: 0; }
+      .txt { position: absolute; left: 0; top: 0; white-space: nowrap; line-height: 1; transform-origin: 0 0; }
+      svg { display: block; overflow: visible; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-tatw" id="root" data-composition-id="main" data-start="0" data-duration="7.5167" data-width="1080" data-height="1920">
+      <div data-hf-id="hf-700t" id="stage" class="full"></div>
+      <audio data-hf-id="hf-5zqq" id="refaudio" src="assets/silencio.m4a" data-start="0" data-duration="7.5167" data-track-index="1" data-volume="1"></audio>
+    </div>
+    <script>
+      // ======================================================================================
+      // "Joi" (@creatoroly) clone. Every value is a pure function of the frame (60 fps).
+      // Integer output frame Fi decides what exists; continuous F drives motion, so the
+      // round_mb subframes (mb.js) blur only motion. SHUTTER measured on the card pan:
+      // 24 px edge ramp at 62 px/f against 4 px static -> ~0.4 frame.
+      // Poses come from tracks.js (tools/mktracks.py, measured per frame on the reference).
+      // ======================================================================================
+      const FPS = 60, NF = 451, DUR = NF / FPS, SHUTTER = 0.4;
+      const $ = (id) => document.getElementById(id);
+      const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+      const lerp = (a, b, t) => a + (b - a) * t;
+      const E = {
+        lin: (t) => t,
+        out: (t) => 1 - Math.pow(1 - t, 3),
+        out2: (t) => 1 - (1 - t) * (1 - t),
+        out4: (t) => 1 - Math.pow(1 - t, 4),
+        in2: (t) => t * t,
+        in3: (t) => t * t * t,
+        sine: (t) => 0.5 - 0.5 * Math.cos(Math.PI * t),
+      };
+      const prog = (F, a, b, e = E.lin) => e(clamp((F - a) / (b - a)));
+      function kf(F, keys, ease = E.sine) {
+        if (F <= keys[0][0]) return keys[0][1];
+        for (let i = 1; i < keys.length; i++) if (F <= keys[i][0]) {
+          const [f0, v0] = keys[i - 1], [f1, v1, e] = keys[i];
+          return lerp(v0, v1, (e || ease)((F - f0) / (f1 - f0)));
+        }
+        return keys[keys.length - 1][1];
+      }
+      // Catmull-Rom through keys: no velocity stop at inner keys (motion-feel rule 1)
+      function cr(F, keys) {
+        const n = keys.length;
+        if (F <= keys[0][0]) return keys[0][1];
+        if (F >= keys[n - 1][0]) return keys[n - 1][1];
+        let i = 0; while (keys[i + 1][0] < F) i++;
+        const p0 = keys[Math.max(i - 1, 0)], p1 = keys[i], p2 = keys[i + 1], p3 = keys[Math.min(i + 2, n - 1)];
+        const t = (F - p1[0]) / (p2[0] - p1[0]);
+        const m1 = ((p2[1] - p0[1]) / (p2[0] - p0[0] || 1)) * (p2[0] - p1[0]);
+        const m2 = ((p3[1] - p1[1]) / (p3[0] - p1[0] || 1)) * (p2[0] - p1[0]);
+        const t2 = t * t, t3 = t2 * t;
+        return (2 * t3 - 3 * t2 + 1) * p1[1] + (t3 - 2 * t2 + t) * m1 + (-2 * t3 + 3 * t2) * p2[1] + (t3 - t2) * m2;
+      }
+      // ---- measured tracks: fill gaps (nearest), sample with linear interpolation
+      const TRK = window.TR;
+      function fillv(v) {
+        let last = null; for (let i = 0; i < v.length; i++) { if (v[i] == null) v[i] = last; else last = v[i]; }
+        last = null; for (let i = v.length - 1; i >= 0; i--) { if (v[i] == null) v[i] = last; else last = v[i]; }
+      }
+      for (const k in TRK) fillv(TRK[k].v);
+      // objects: a faded object has no measurement; carry its last position forward on its own drift
+      { const v = TRK.objects.v; for (let i = 0; i < 4; i++) { let last = null, vel = [0, 0];
+          for (let j = 0; j < v.length; j++) { v[j] = v[j].slice();
+            if (v[j][i]) { if (last) vel = [v[j][i][0] - last[0], v[j][i][1] - last[1]]; last = v[j][i]; }
+            else if (last) { last = [last[0] + vel[0], last[1] + vel[1], last[2]]; v[j][i] = last; } } } }
+      function tr(name, F, i) {
+        const t = TRK[name], n = t.v.length, x = clamp(F - t.a, 0, n - 1), j = Math.floor(x), k = x - j;
+        const A = t.v[j], B = t.v[Math.min(j + 1, n - 1)];
+        if (i == null && Array.isArray(A)) return A.map((v, q) => v + (B[q] - v) * k);
+        const a = i == null ? A : A[i], b = i == null ? B : B[i];
+        if (a == null || b == null) return a == null ? b : a;
+        return a + (b - a) * k;
+      }
+      const trIn = (name, F) => F >= TRK[name].a && F <= TRK[name].a + TRK[name].v.length - 1;
+      const mixc = (a, b, t) => a.map((v, i) => Math.round(lerp(v, b[i], t)));
+      const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
+      const hex = (h) => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+      function el(tag, css, parent, html) { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; }
+      const div = (css, p, html) => el("div", css, p, html);
+      const show = (e, on) => { e.style.display = on ? "block" : "none"; };
+      const blurf = (b) => (b > 0.05 ? `blur(${b.toFixed(2)}px)` : "none");
+      const stage = $("stage");
+
+      // ======================================================================================
+      // MOLDE: swappable assets (data-composition-variables on <html>), read once.
+      // Defaults are the clone, and every swap is the identity at its default (deltas are always
+      // "new minus original", grouped so they are exactly 0), so the defaults render the clone frame for frame.
+      // ======================================================================================
+      const DECL = JSON.parse(document.documentElement.getAttribute("data-composition-variables"));
+      const DEF = Object.fromEntries(DECL.map((d) => [d.id, d.default]));
+      const HFV = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
+      const V = Object.assign({}, DEF, HFV);
+      // -- colour: hue rotation in OKLCH towards the new colour (same method as the Satellite molde). The reference
+      //    colour lands exactly on the new one; the rest keep their lightness and chroma relative to it
+      const lin = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+      const gam = (c) => (c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055);
+      function toLch(c) {
+        const [r, g, b] = c.map((v) => lin(v / 255));
+        const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b), m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b), s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+        const A = 1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s, B = 0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s;
+        return [0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s, Math.hypot(A, B), (Math.atan2(B, A) * 180) / Math.PI];
+      }
+      function fromLch(L, C, h) { // linear sRGB, may be out of gamut
+        const A = C * Math.cos((h * Math.PI) / 180), B = C * Math.sin((h * Math.PI) / 180);
+        const l = (L + 0.3963377774 * A + 0.2158037573 * B) ** 3, m = (L - 0.1055613458 * A - 0.0638541728 * B) ** 3, s = (L - 0.0894841775 * A - 1.291485548 * B) ** 3;
+        return [4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s];
+      }
+      const outG = (x) => x.some((v) => v < -1e-4 || v > 1 + 1e-4);
+      function lchRgb(L, C, h) { // out of sRGB: lower the chroma until it fits (keeps lightness and hue)
+        let x = fromLch(L, C, h);
+        if (outG(x)) { let lo = 0, hi = C; for (let i = 0; i < 16; i++) { const md = (lo + hi) / 2; if (outG(fromLch(L, md, h))) hi = md; else lo = md; } x = fromLch(L, lo, h); }
+        return x.map((v) => Math.round(clamp(gam(clamp(v))) * 255));
+      }
+      function recolor(ref, to, band) {
+        const id = (c) => c; id.s = (s) => s;
+        if (ref.toLowerCase() === to.toLowerCase()) return id;
+        const A = toLch(hex(ref)), B = toLch(hex(to));
+        const dh = ((B[2] - A[2] + 540) % 360) - 180, kc = B[1] / A[1], dl = B[0] - A[0], memo = new Map();
+        const f = (c) => {
+          const key = c.join(","); if (memo.has(key)) return memo.get(key);
+          const [L, C, h] = toLch(c);
+          const w = (band ? band((h + 360) % 360) : 1) * clamp((C - 0.005) / 0.015); // greys have no hue to turn
+          const o = w <= 0 ? c : lchRgb(L + w * Math.min(1, C / A[1]) * dl, C * (1 + w * (kc - 1)), h + w * dh);
+          memo.set(key, o); return o;
+        };
+        const h2 = (c) => "#" + c.map((v) => v.toString(16).padStart(2, "0")).join("");
+        f.s = (s) => s.replace(/#([0-9a-fA-F]{6})\b/g, (q, x) => h2(f(hex("#" + x)))).replace(/rgb(a?)\((\d+),\s*(\d+),\s*(\d+)/g, (q, a, r, g, b) => `rgb${a}(${f([+r, +g, +b]).join(",")}`);
+        return f;
+      }
+      // measured OKLCH hues: reds and pinks 12-32 deg (Joi, pink disc and flash, Remove, "Get"), blues 239-268 (card, star,
+      // bluish background f324-336). The bands keep the two apart and leave the purple moon (282) alone
+      const REDS = (h) => { const x = ((h + 180) % 360) - 180; return clamp(Math.min((x + 25) / 10, (55 - x) / 10)); };
+      const BLUES = (h) => clamp(Math.min((h - 215) / 10, (300 - h) / 10));
+      const RC = recolor(DEF.cor_vermelho, V.cor_vermelho, REDS), BC = recolor(DEF.cor_principal, V.cor_principal, BLUES);
+      // backgrounds: each channel keeps its place between the measured dark (#0d0d0d) and light (#fdfdfd) backgrounds
+      const FD0 = hex(DEF.fundo_escuro), FL0 = hex(DEF.fundo_claro), FD1 = hex(V.fundo_escuro), FL1 = hex(V.fundo_claro);
+      const BGN = DEF.fundo_escuro === V.fundo_escuro.toLowerCase() && DEF.fundo_claro === V.fundo_claro.toLowerCase() ? (c) => c
+        : (c) => c.map((v, i) => Math.round(clamp(FD1[i] + ((v - FD0[i]) / (FL0[i] - FD0[i])) * (FL1[i] - FD1[i]), 0, 255)));
+      // a background colour is either red-family or blue-family: never chain the two turns (a pink turned purple would
+      // fall in the blue band and turn again)
+      const BGC = (c) => { const r = RC(c); return BGN(r !== c ? r : BC(c)); };
+      // -- list icons (56 px box; the dashed box is the clone's own). Drawn ones take cor_icone, emojis are Apple Color Emoji
+      const LIC = {
+        lua: `<svg viewBox="0 0 56 56" width="56" height="56"><path d="M30 3 A26 26 0 1 0 54 37 A21 21 0 0 1 30 3 Z" fill="#5b35ef"/></svg>`,
+        sol: `<svg viewBox="0 0 56 56" width="56" height="56"><circle cx="28" cy="28" r="11" fill="#5b35ef"/><g stroke="#5b35ef" stroke-width="4.6" stroke-linecap="round"><line x1="28" y1="10.5" x2="28" y2="3.5"/><line x1="40.4" y1="15.6" x2="45.3" y2="10.7"/><line x1="45.5" y1="28" x2="52.5" y2="28"/><line x1="40.4" y1="40.4" x2="45.3" y2="45.3"/><line x1="28" y1="45.5" x2="28" y2="52.5"/><line x1="15.6" y1="40.4" x2="10.7" y2="45.3"/><line x1="10.5" y1="28" x2="3.5" y2="28"/><line x1="15.6" y1="15.6" x2="10.7" y2="10.7"/></g></svg>`,
+        gota: `<svg viewBox="0 0 56 56" width="56" height="56"><path d="M28 3 C28 3 9.5 24.5 9.5 35.5 A18.5 18.5 0 0 0 46.5 35.5 C46.5 24.5 28 3 28 3 Z" fill="#5b35ef"/></svg>`,
+        coracao: `<svg viewBox="0 0 256 256" width="56" height="56"><path fill="#5b35ef" d="M240,94c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,220.66,16,164,16,94A62.07,62.07,0,0,1,78,32c20.65,0,38.73,8.88,50,23.89C139.27,40.88,157.35,32,178,32A62.07,62.07,0,0,1,240,94Z"/></svg>`,
+        estrela: `<svg viewBox="-70 -70 140 140" width="56" height="56"><path d="M0,-68 C7,-20 20,-7 68,0 C20,7 7,20 0,68 C-7,20 -20,7 -68,0 C-20,-7 -7,-20 0,-68 Z" fill="#5b35ef"/></svg>`,
+        raio: `<svg viewBox="0 0 256 256" width="56" height="56"><path fill="#5b35ef" d="M215.79,118.17l-112,120a8,8,0,0,1-13.61-7.12l14.66-73.33L47.19,135.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.61,7.12L155.18,82.94l57.63,21.61a8,8,0,0,1,3,13.62Z"/></svg>`,
+        feito: `<svg viewBox="0 0 56 56" width="56" height="56"><circle cx="28" cy="28" r="25" fill="#5b35ef"/><path d="M17 28.5 L24.5 36 L39 21" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+      };
+      const rowIcon = (ic, box) => (ic === "caixa" ? box : LIC[ic] ? LIC[ic].replace(/#5b35ef/g, V.cor_icone)
+        : `<div style="width:56px;height:56px;line-height:56px;text-align:center;font-size:46px;font-family:'Apple Color Emoji'">${ic}</div>`);
+      // -- brand font (kit de marca): the clone's boxes were measured in SF Pro, so the ORIGINAL texts are always measured
+      // in SF Pro (SFP) and the new ones in the chosen font (FAM): at the defaults both are SF Pro and every delta stays 0
+      const FONTES = { sf: '"SF Pro"', archivo: '"Archivo"', inter: '"Inter"' }, SFP = FONTES.sf, FAM = FONTES[V.fonte] || SFP;
+      // baseline in a line-height-1 box (hhea ascent and descent, as in the Satellite) and cap height (SF Pro 0.7046;
+      // another font: measured on "H" once it is in, in fitAll)
+      const BL = 0.855 + ({ sf: 0, archivo: (0.878 - 0.21 - 0.9668 + 0.2109) / 2, inter: (0.96875 - 0.2412 - 0.9668 + 0.2109) / 2 }[V.fonte] || 0);
+      let CAP = 0.7046;
+      if (FAM !== SFP) $("root").style.fontFamily = `${FAM}, "Apple Color Emoji", sans-serif`;
+      // canvas text does not start an @font-face load, and fonts.check() says yes to a face that was never asked for: ask for
+      // the brand font now and trust its metrics only once it is in (FONTE_OK; the layout runs again when it arrives)
+      let FONTE_OK = FAM === SFP;
+      const FONTE = FONTE_OK ? null : document.fonts.load(`500 40px ${FAM}`).then(() => { FONTE_OK = true; });
+      // -- text layout helpers (font metrics from the canvas)
+      const inkW = (t, size, weight, fam = FAM) => { const m = ink(t, size, weight, fam); return m.r - m.l; };
+      const adv = (t, size, weight, fam = FAM) => { MC.font = `${weight} ${size}px ${fam}`; return MC.measureText(t).width; };
+      // ink-left of word i relative to the ink-left of word 0 when the words sit on one line
+      const off = (ws, i, size, weight, fam = FAM) => (i === 0 ? 0 : adv(ws.slice(0, i).join(" ") + " ", size, weight, fam) + ink(ws[i], size, weight, fam).l - ink(ws[0], size, weight, fam).l);
+      const words = (s) => s.trim().split(/\s+/);
+
+      // ---- ink metrics of a string (canvas), so text is placed by its measured INK box, not by guessed line boxes
+      const MC = document.createElement("canvas").getContext("2d");
+      const inkCache = {};
+      function ink(text, size, weight, fam = FAM) {
+        const key = text + "|" + size + "|" + weight + "|" + fam;
+        if (inkCache[key]) return inkCache[key];
+        MC.font = `${weight} ${size}px ${fam}`;
+        const m = MC.measureText(text);
+        const r = { l: -m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, d: m.actualBoundingBoxDescent, w: m.width };
+        if ((fam === SFP || FONTE_OK) && document.fonts.check(`${weight} ${size}px ${fam}`)) inkCache[key] = r;
+        return r;
+      }
+      // a text node whose ink-box top-left lands at (x, y) with scale s; line-height 1 -> baseline at BL em
+      function txt(parent, text, size, weight, color, extra) {
+        const e = div(`font-size:${size}px;font-weight:${weight};color:${color};${extra || ""}`, parent, text);
+        e.className = "txt"; e._t = text; e._s = size; e._w = weight; return e;
+      }
+      function placeInk(e, x, y, s = 1, extra = "") {
+        const m = ink(e._t, e._s, e._w);
+        // baseline sits BL em below the line box top (SF Pro hhea, line-height 1)
+        const ox = m.l, oy = BL * e._s - m.a;
+        e.style.transform = `translate(${x}px,${y}px) scale(${s}) translate(${-ox}px,${-oy}px) ${extra}`;
+      }
+      // ink-left at x, CAP top at capTop (SF Pro cap height CAP em): words of one line share a baseline
+      function placeCap(e, x, capTop, s = 1) {
+        const m = ink(e._t, e._s, e._w);
+        const lineTop = capTop + CAP * e._s * s - BL * e._s * s;
+        e.style.transform = `translate(${x - m.l * s}px,${lineTop}px) scale(${s})`;
+      }
+      // per-row, per-word measured ink-left x (TR.listwords), linearly interpolated across merged (blurred) frames
+      const LWX = [[], [], [], []];
+      function buildLW() {
+        const t = TRK.listwords; const NWD = [3, 2, 2, 2];
+        for (let r = 0; r < 4; r++) for (let w = 0; w < NWD[r]; w++) {
+          const pts = [];
+          t.v.forEach((row, j) => { if (row && row[r]) pts.push([t.a + j, row[r][w]]); });
+          LWX[r][w] = pts;
+        }
+      }
+      function lwx(r, w, F) {
+        const pts = LWX[r][w]; if (!pts || !pts.length) return null;
+        if (F <= pts[0][0]) return null; if (F >= pts[pts.length - 1][0]) return pts[pts.length - 1][1];
+        let i = 0; while (pts[i + 1][0] < F) i++;
+        return lerp(pts[i][1], pts[i + 1][1], (F - pts[i][0]) / (pts[i + 1][0] - pts[i][0]));
+      }
+      buildLW();
+
+      // ======================================================================================
+      // LAYERS
+      // ======================================================================================
+      const bgEl = div("position:absolute;left:0;top:0;width:1080px;height:1920px", stage);
+
+      // ---------- Scene A: pink disc + calendar icon that flips into the "+" pill
+      const disc = div(RC.s("position:absolute;left:0;top:0;border-radius:50%;background:#f4e1de"), stage);
+      const iconWrap = div("position:absolute;left:0;top:0;width:0;height:0;perspective:1200px", stage);
+      const icon3d = div("position:absolute;left:-140px;top:-140px;width:280px;height:280px;transform-style:preserve-3d", iconWrap);
+      const front = div("position:absolute;left:0;top:0;width:280px;height:280px;border-radius:75px;background:#ffffff;overflow:hidden;backface-visibility:hidden", icon3d);
+      const joi = txt(front, V.icone_texto, 58, 600, RC.s("#ee4f40"));
+      const strip = div("position:absolute;left:0;top:0;width:280px;height:280px", front);
+      const DIG = Array.from(V.digitos).map((d) => txt(strip, d, 265, 900, "#0b0b0b"));
+      const back = div("position:absolute;left:-17.5px;top:49.5px;width:315px;height:181px;border-radius:88px;background:#ffffff;backface-visibility:hidden;transform:rotateX(180deg)", icon3d);
+      const PLUS = (c) => `<svg viewBox="-50 -50 100 100" width="100" height="100"><g stroke="${c}" stroke-width="9.5" stroke-linecap="round"><line x1="-41.8" y1="0" x2="41.8" y2="0"/><line x1="0" y1="-41.8" x2="0" y2="41.8"/></g></svg>`;
+      const backGlyph = div("position:absolute;left:107.5px;top:40.5px;width:100px;height:100px", back, PLUS("#8c8a8b"));
+
+      // ---------- Scene B/C: flat pill (white -> grey) under the list
+      const pillW = div("position:absolute;left:0;top:0;width:315px;height:181px;border-radius:90.5px;background:#ffffff", stage);
+      const pillG = div("position:absolute;left:0;top:0;width:315px;height:181px;border-radius:90.5px", stage);
+      const pillGlyph = div("position:absolute;left:0;top:0;width:100px;height:100px", stage, PLUS("#8c8a8b"));
+
+      // ---------- Scene C: task list
+      const listL = div("position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0", stage);
+      // w0/start0: the clone's words and their measured entry frames; a new item rides them word by word
+      // (word i follows original word min(i, last), extra words enter 2.5 frames apart)
+      const ROWS = [
+        { w0: ["Plan", "a", "day"], start0: [132, 134, 137], cb: 128.5, sep: 133 },
+        { w0: ["Drink", "water"], start0: [134.5, 137.5], cb: 130.5, sep: 141 },
+        { w0: ["Get", "Sunlight"], start0: [140, 142.5], cb: 132.5, sep: 147 },
+        { w0: ["Wind", "Down"], start0: [157, 157.5], cb: 157, sep: 158, moon: true },
+      ];
+      const LFS = 58, LW = 620;
+      const CHECK = `<svg viewBox="0 0 58 58" width="58" height="58"><rect x="2.5" y="2.5" width="53" height="53" rx="15" fill="none" stroke="#adadad" stroke-width="4.2" stroke-dasharray="9 6.4"/></svg>`;
+      ROWS.forEach((r, n) => {
+        const n0 = r.w0.length;
+        r.words = words(V["item" + (n + 1)]); r.ic = V["icone" + (n + 1)]; r.isBox = r.ic === "caixa";
+        r.jm = r.words.map((w, i) => Math.min(i, n0 - 1));
+        r.start = r.words.map((w, i) => (i < n0 ? r.start0[i] : r.start0[n0 - 1] + 2.5 * (i - n0 + 1)));
+        r.fs = 1; r.dx = r.words.map(() => 0);
+      });
+      for (const r of ROWS) {
+        r.box = div("position:absolute;left:0;top:0;width:1080px;height:200px", listL);
+        r.cbEl = div("position:absolute;left:243px;top:0;width:58px;height:58px", r.box, rowIcon(r.ic, CHECK));
+        r.wEl = r.words.map((w) => txt(r.box, w, LFS, LW, "#0a0a0a"));
+        r.sepEl = div("position:absolute;left:204px;top:0;width:715px;height:4px;background:repeating-linear-gradient(90deg,#cbcbcb 0 7px,transparent 7px 12px)", r.box);
+      }
+      const ROW_OFF = [0, 160, 310, 462]; // settled cap-top offsets (f166, measured)
+
+      // ---------- Scene D: dark context menu
+      const objWrap = div("position:absolute;left:0;top:0;width:1080px;height:1920px", stage);
+      // molde: each slot takes one of the four cut-outs or an Apple emoji drawn in the slot's own box
+      const SPR = {
+        xicara: { src: "assets/sprites/cup.png", w: 130, h: 120 }, controle: { src: "assets/sprites/pad.png", w: 140, h: 130 },
+        bola: { src: "assets/sprites/ball.png", w: 130, h: 130 }, monitor: { src: "assets/sprites/screen.png", w: 140, h: 150 },
+      };
+      const OBJ = ["xicara", "controle", "bola", "monitor"].map((slot, i) => {
+        const v = V["objeto" + (i + 1)];
+        return SPR[v] ? Object.assign({}, SPR[v]) : { emoji: v, w: SPR[slot].w, h: SPR[slot].h };
+      }).map((o) => {
+        // soft white glow under each object (ref: +10..20 levels next to it, +3 at 120 px), drawn apart from the cut-out
+        o.g = div("position:absolute;left:0;top:0;width:340px;height:340px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,0.09),rgba(255,255,255,0.04) 45%,rgba(255,255,255,0.012) 75%,rgba(255,255,255,0))", objWrap);
+        if (o.emoji) {
+          const fsz = Math.round(0.78 * Math.min(o.w, o.h));
+          o.e = div(`position:absolute;left:0;top:0;width:${o.w}px;height:${o.h}px;line-height:${o.h}px;text-align:center;font-size:${fsz}px;font-family:'Apple Color Emoji'`, objWrap);
+          o.e.textContent = o.emoji; return o;
+        }
+        o.e = el("img", `position:absolute;left:0;top:0;width:${o.w}px;height:${o.h}px;`, objWrap); o.e.src = o.src.replace(".png", "-a.png"); return o;
+      });
+      const objField = div("position:absolute;left:65px;top:1160px;width:900px;height:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,0.016),rgba(255,255,255,0))", objWrap);
+      objWrap.insertBefore(objField, objWrap.firstChild);
+      const menuWrap = div("position:absolute;left:0;top:0;width:0;height:0;perspective:1200px", stage);
+      const menu = div("position:absolute;left:-377.5px;top:-264px;width:755px;height:528px;border-radius:130px;transform-origin:50% 50%", menuWrap);
+      const menuFill = div("position:absolute;inset:0;border-radius:130px;background:#111113", menu);
+      const menuBorder = div("position:absolute;inset:0;border-radius:130px;box-shadow:inset 0 0 0 2px #2c2c2f", menu);
+      const remGlow = div(RC.s("position:absolute;left:470px;top:250px;width:330px;height:300px;border-radius:50%;background:radial-gradient(closest-side,rgba(205,75,60,0.22),rgba(205,75,60,0))"), menu);
+      // title, its checkbox and the strike live in screen space: the title has its own measured track
+      // (it moves against the card: 128 px under the card top at f210, 93 px at f240)
+      const titleL = div("position:absolute;left:0;top:0;width:1080px;height:1920px", stage);
+      const mCheck = div("position:absolute;left:0;top:0;width:58px;height:58px;transform-origin:0 0", titleL, rowIcon(V.icone1, CHECK.replace(/#adadad/, "#77777c")));
+      const mTitle = txt(titleL, V.item1, 62, 620, "#f2f2f4");
+      const strike = div("position:absolute;left:0;top:0;height:4px;width:100px;background:#9a9a9f;border-radius:2px;transform-origin:0 50%", titleL);
+      // icon and label sizes measured on f250 (card scale 1): check 49x51 ink, pencil 45x44 (body + separate cap),
+      // delete key 42x38; labels 29 px / 590 (cap 20 px), icon centre 51 px and label ink top 88 px from the button top
+      const BTN = [
+        { x: 52, w: 184, label: "Complete", fill: "#252527", lc: "#dcdcdf", icon: `<svg viewBox="0 0 40 40" width="57" height="57"><rect x="3" y="3" width="34" height="34" rx="9" fill="#e8e8ea"/><path d="M12 20.5 L17.5 26 L28.5 14.5" fill="none" stroke="#252527" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`, iw: 57, t: 209 },
+        { x: 279, w: 200, label: "Edit", fill: "#252527", lc: "#dcdcdf", icon: `<svg viewBox="0 0 48 48" width="51" height="51"><path d="M3 45 L6 34 L29 11 L37 19 L14 42 Z" fill="#e8e8ea" stroke="#e8e8ea" stroke-width="1.5" stroke-linejoin="round"/><path d="M32 8 L36.5 3.5 Q38 2 39.5 3.5 L44.5 8.5 Q46 10 44.5 11.5 L40 16 Z" fill="#e8e8ea"/></svg>`, iw: 51, t: 211 },
+        { x: 523, w: 188, label: "Remove", fill: RC.s("#574340"), lc: RC.s("#e39a8c"), icon: RC.s(`<svg viewBox="0 0 44 40" width="48" height="44"><path d="M14 2 H37 a4 4 0 0 1 4 4 V34 a4 4 0 0 1 -4 4 H14 L3 20 Z" fill="#e8907f"/><path d="M20.5 14 L31.5 26 M31.5 14 L20.5 26" stroke="#574340" stroke-width="3.6" stroke-linecap="round"/></svg>`), iw: 48, t: 213 },
+      ];
+      BTN.forEach((b, i) => { b.x0 = b.x; b.w0 = b.w; b.label0 = b.label; b.label = V["botao" + (i + 1)]; b.lf = 1; });
+      for (const b of BTN) {
+        b.e = div(`position:absolute;left:${b.x}px;top:321px;width:${b.w}px;height:142px;border-radius:30px;background:${b.fill};transform-origin:50% 50%`, menu);
+        b.ic = div(`position:absolute;left:${b.w / 2 - b.iw / 2}px;top:${53 - b.iw / 2}px;width:${b.iw}px;height:${b.iw}px`, b.e, b.icon);
+        b.lb = txt(b.e, b.label, 29, 590, b.lc);
+      }
+      stage.appendChild(titleL);
+      const cursor = div("position:absolute;left:0;top:0;width:60px;height:92px;transform-origin:0 0", stage,
+        `<svg viewBox="0 0 24 37" width="60" height="92"><path id="curp" d="M2 1.5 L2 29 L8.6 22.8 L13 33.6 L17.6 31.6 L13.2 21 L22 21 Z" fill="#ffffff" stroke="#111" stroke-width="1.7" stroke-linejoin="round"/></svg>`);
+      const curPath = cursor.querySelector("path");
+
+      // ---------- Scene E: "Get your subscription"
+      const subWrap = div("position:absolute;left:0;top:0;width:1080px;height:1920px", stage);
+      // the clone's three words carry the measured tracks; word i of a new phrase rides original word min(i, 2)
+      const SUBW0 = words(DEF.frase), SUBW = words(V.frase);
+      const SUB = SUBW.map((w) => txt(subWrap, w, 82, 450, "#171617"));
+      const SUBJ = SUBW.map((w, i) => Math.min(i, SUBW0.length - 1));
+      const SUBRED = RC([240, 84, 90]);
+      const SUBST = SUBW.map((w, i) => [281, 283, 285.5][SUBJ[i]] + 2.5 * (i - SUBJ[i])); // entry frames (extra words 2.5 f apart)
+
+      // ---------- Scene F/G: blue card world + camera
+      const cardWrap = div("position:absolute;left:0;top:0;width:1831px;height:523px;transform-origin:0 0", stage);
+      const card = div(BC.s("position:absolute;left:0;top:0;width:1831px;height:523px;border-radius:150px;overflow:hidden;background:linear-gradient(180deg,#2571f2 0%,#4282f5 50%,#5d91fb 100%)"), cardWrap);
+      const cardGlass = div(BC.s("position:absolute;inset:0;border-radius:150px;background:#cfdcfd"), cardWrap);
+      const cardRim = div(BC.s("position:absolute;inset:0;border-radius:150px;background:linear-gradient(90deg,#3f7ef7 0%,#5a91f9 2.5%,rgba(90,145,249,0) 5.5%,rgba(90,145,249,0) 89.5%,#5a92fb 94.5%,#3f7ef7 100%)"), cardWrap);
+      const RIMC = BC.s("rgba(66,128,249,0.85)");
+      // white specks (seeded, fixed in card space)
+      let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+      const SPECK = [];
+      for (let i = 0; i < 26; i++) SPECK.push(div(`position:absolute;left:${(rnd() * 1800).toFixed(0)}px;top:${(rnd() * 500 + 10).toFixed(0)}px;width:${(3 + rnd() * 5).toFixed(1)}px;height:${(3 + rnd() * 5).toFixed(1)}px;border-radius:50%;background:#fff;opacity:${(0.35 + rnd() * 0.6).toFixed(2)}`, card));
+      const cTitle = txt(cardWrap, V.cartao_titulo, 104, 500, "#ffffff");
+      const cSub = txt(cardWrap, V.frase, 76.6, 450, BC.s("#d4dae6"));
+      const upg = div("position:absolute;left:1118px;top:175px;width:517px;height:167px;border-radius:83px;background:rgba(255,255,255,0.13);box-shadow:inset 0 0 0 3px rgba(255,255,255,0.22)", cardWrap); // measured f362 (k 0.987)
+      const upgIc = div("position:absolute;left:62px;top:55px;width:60px;height:60px", upg, BC.s(`<svg viewBox="0 0 30 30" width="60" height="60"><rect x="2" y="2" width="26" height="26" rx="7" fill="#fff"/><path d="M15 21 V10 M10 14.5 L15 9.5 L20 14.5" stroke="#2f72ee" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`));
+      const upgT = txt(upg, V.cartao_botao, 72, 500, "#ffffff");
+      const STAR = (c) => `<svg viewBox="-70 -70 140 140" width="140" height="140"><path d="M0,-68 C7,-20 20,-7 68,0 C20,7 7,20 0,68 C-7,20 -20,7 -68,0 C-20,-7 -7,-20 0,-68 Z" fill="${c}"/></svg>`;
+      stage.insertBefore(subWrap, cardWrap.nextSibling); // the words stay on top of the forming card (ref f318-330)
+      const star = div("position:absolute;left:0;top:0;width:140px;height:140px;transform-origin:70px 70px", stage, STAR(BC.s("#c9e5f9")));
+      const starPath = star.querySelector("path");
+      if (V.logo) { // brand logo (kit de marca) in the star's place: same flight, round like the Satellite's balloon logo
+        starPath.style.display = "none";
+        el("img", "position:absolute;left:14px;top:14px;width:112px;height:112px;object-fit:cover;border-radius:50%", star).src = V.logo;
+      }
+
+      // ======================================================================================
+      // MOLDE layout from the text (re-run once the font is ready). Every delta is "new minus original",
+      // so at the defaults all of them are exactly 0 and every scale exactly 1.
+      // ======================================================================================
+      const LAY = { jf: 1, tfs: 1, MW: 755, pf: 1, cfs: 1, ctf: 1, uf: 1, uW: 517 };
+      function fitAll() {
+        LAY.font = FONTE_OK && document.fonts.check(`620 58px ${SFP}`); // until the fonts are in, draw() re-fits (fonts.ready can come early)
+        if (FAM !== SFP) CAP = ink("H", 100, 600).a / 100;
+        // "Joi" on the icon: shrinks past 220 px (the icon is 280 wide with 75 px corners)
+        LAY.jf = Math.min(1, 220 / inkW(V.icone_texto, 58, 600));
+        // list rows: left-aligned after the box; the line may run to the separator's end (918) less a margin
+        for (const r of ROWS) {
+          r.fs = Math.min(1, 540 / inkW(r.words.join(" "), LFS, LW));
+          r.dx = r.words.map((w, i) => off(r.words, i, LFS, LW) * r.fs - off(r.w0, r.jm[i], LFS, LW, SFP));
+        }
+        // menu buttons grow with their label (never below the clone, same minimum padding as the tightest button);
+        // the card grows by the extra width, up to 245 px (then the labels shrink)
+        const PAD = Math.min(...BTN.map((b) => (b.w0 - inkW(b.label0, 29, 590, SFP)) / 2));
+        // growth = label delta beyond the button's spare room (spare = 0 on the tightest one): exactly 0 at the defaults
+        const grow = (b, lf) => Math.max(0, inkW(b.label, 29, 590) * lf - inkW(b.label0, 29, 590, SFP) - (b.w0 - inkW(b.label0, 29, 590, SFP) - 2 * PAD));
+        let lf = 1, E = 0;
+        for (; lf > 0.3; lf -= 0.01) {
+          E = BTN.reduce((q, b) => q + grow(b, lf), 0);
+          if (E <= 245) break;
+        }
+        let acc = 0;
+        for (const b of BTN) {
+          b.lf = lf; b.w = b.w0 + grow(b, lf); b.x = b.x0 + acc; acc += b.w - b.w0;
+          b.e.style.left = b.x + "px"; b.e.style.width = b.w + "px"; b.ic.style.left = b.w / 2 - b.iw / 2 + "px";
+        }
+        LAY.MW = 755 + E;
+        menu.style.left = -LAY.MW / 2 + "px"; menu.style.width = LAY.MW + "px";
+        const R3 = BTN[2]; remGlow.style.left = 470 + (R3.x + R3.w / 2 - (R3.x0 + R3.w0 / 2)) + "px";
+        // menu title (row 1 at 62 px): keeps the row's shrink and fits the card (narrowest at f222: right edge ~880)
+        LAY.tfs = Math.min(ROWS[0].fs, (460 + E / 2) / inkW(V.item1, 62, 620));
+        // falling phrase: centred like the clone, at most 960 px wide; card subtitle at most 700 (Upgrade sits at 1118)
+        LAY.pf = Math.min(1, 960 / inkW(V.frase, 82, 450));
+        // the camera rests from f437 on world x -143..947 (k 0.99, card left at 142): a new title or subtitle must end
+        // before ~860 there (screen ~995). The clone's own subtitle is wider and cut by that framing; the defaults keep it as it is
+        const fitNew = (k, size, weight, max) => (V[k] === DEF[k] ? 1 : Math.min(1, max / inkW(V[k], size, weight)));
+        LAY.cfs = fitNew("frase", 76.6, 450, 860 - 331);
+        LAY.ctf = fitNew("cartao_titulo", 104, 500, 860 - 340);
+        // Upgrade button follows its label both ways (left edge fixed); past the card's end less 80 the label shrinks
+        const u0 = inkW(DEF.cartao_botao, 72, 500, SFP), u1 = inkW(V.cartao_botao, 72, 500);
+        LAY.uf = Math.min(1, (1831 - 80 - 1118 - (517 - u0)) / u1);
+        LAY.uW = 517 + (u1 * LAY.uf - u0);
+        upg.style.width = LAY.uW + "px";
+      }
+
+      // ======================================================================================
+      // DRAW
+      // ======================================================================================
+      function drawBackground(F, Fi) {
+        bgEl.style.background = rgb(BGC(tr("bg", Fi).map(Math.round)));
+      }
+
+      function drawIcon(F, Fi) {
+        const on = Fi >= 1 && Fi <= 93;
+        show(iconWrap, on); show(disc, Fi >= 19 && Fi <= 56);
+        // pink disc: radius r = 392 - 251 e^-(F-19)/11.5 (fit to 30 frames of edge scans), opacity from the G channel
+        if (Fi >= 19 && Fi <= 56) {
+          const r = 392 - 251 * Math.exp(-(F - 19) / 11.5);
+          disc.style.width = disc.style.height = 2 * r + "px";
+          disc.style.transform = `translate(${540 - r}px,${960 - r}px)`;
+          disc.style.opacity = kf(F, [[19, 0], [19.8, 1, E.lin], [33, 1], [34, 0.83, E.lin], [36, 0.78, E.lin], [38, 0.72, E.lin], [40, 0.61, E.lin], [42, 0.56, E.lin], [44, 0.44, E.lin], [47, 0.33, E.lin], [48, 0.28, E.lin], [50, 0.22, E.lin], [52, 0.06, E.lin], [56, 0, E.lin]]);
+        }
+        if (!on) return;
+        const cx = tr("icon", F, 0), cy = tr("icon", F, 1), s = tr("icon", F, 2), ax = tr("icon", F, 3), az = tr("icon", F, 4);
+        iconWrap.style.transform = `translate(${cx}px,${cy}px)`;
+        icon3d.style.transform = `rotateZ(${az}deg) rotateX(${-ax}deg) scale(${s})`; // posefit: ax>0 = top toward the viewer
+        iconWrap.style.opacity = kf(F, [[1, 0], [4, 1, E.lin]]);
+        // the flip is smeared far more than a 0.4-frame shutter gives (edge-on f83 is almost invisible in the ref): measured softness
+        iconWrap.style.filter = blurf(kf(F, [[77, 0], [79, 2.5, E.lin], [81, 6, E.lin], [83, 10, E.lin], [85, 8, E.lin], [87, 4, E.lin], [89, 1, E.lin], [90, 0, E.lin]]));
+        // icon->pill shape morph happens edge-on (f82-85): the back face grows from the icon's footprint
+        // "Joi": appears small at f24 and grows to full size by f36 (measured ink box 20x8 -> 80x44)
+        const js = kf(F, [[23.5, 0.2], [27, 0.5, E.lin], [30, 0.74, E.lin], [33, 0.94, E.out2], [37, 1, E.out2]]);
+        joi.style.opacity = kf(F, [[23.5, 0], [24.5, 1, E.lin]]);
+        const jm = ink(joi._t, 58, 600), jf = LAY.jf;
+        // a new label keeps the clone's baseline and centre; past 220 px it shrinks (jf)
+        placeInk(joi, 140 - (jm.r - jm.l) * js * jf / 2, 42 + (1 - js) * 18 + (ink(DEF.icone_texto, 58, 600, SFP).a - jm.a * jf) * js, js * jf);
+        // digit strip: digits 5..9, pitch P, measured chained scroll (icon units)
+        // digit strip (tools/stripfit.py): pitch 278 icon units (one digit per icon width), centre of the "8"
+        // per frame; the strip also zooms in early (digits ~0.4x at f12 -> 1x by f22) about (140, 158)
+        const P = 278;
+        const pos8 = cr(F, [[5, 470], [9, 455], [12, 430], [15, 360], [17, 300], [19, 232], [21, 165], [23, 112], [25, 80], [27, 48], [29, 16],
+          [31, -12], [33, -32], [35, -54], [37, -72], [39, -90], [41, -106], [43, -122], [45, -138], [47, -150], [49, -156], [51, -166],
+          [53, -174], [55, -184], [57, -192], [59, -200], [61, -206], [63, -214], [65, -222], [67, -226], [69, -230], [71, -234], [80, -258], [92, -285]]);
+        const z = cr(F, [[4, 0.35], [9, 0.36], [12, 0.4], [14, 0.55], [16, 0.72], [18, 0.86], [20, 0.94], [22, 1.0], [30, 1.0]]);
+        strip.style.transformOrigin = "140px 200px";
+        strip.style.transform = `scale(${z})`;
+        DIG.forEach((d, i) => {
+          const k = i + 5; // digits 5..9
+          const m = ink(d._t, 265, 900);
+          const xc = 140 + pos8 + (k - 8) * P;
+          placeInk(d, xc - (m.r - m.l) / 2, 133);
+        });
+      }
+
+      function drawPill(F, Fi) {
+        // flat pill from f93 (back face is flat by then): white body shrinks while a grey pill grows inside it,
+        // the white rim fades; then the grey "+" button rides under the list
+        const on = Fi >= 93 && Fi <= 205;
+        show(pillW, on && Fi <= 114); show(pillG, on && Fi >= 100); show(pillGlyph, on);
+        if (!on) return;
+        let cx = 539.5, cy, gs, ang;
+        if (F <= 100) { cx = tr("icon", F, 0); cy = tr("icon", F, 1); }
+        if (F < 146) {
+          ang = tr("glyph", F, 0); if (F > 100) cy = tr("glyph", F, 2); gs = tr("glyph", F, 3) / 41.8;
+        } else {
+          const k = listK(F), y1 = listRowTop(0, F);
+          const off = kf(F, [[146, 757], [155, 733, E.lin], [160, 724, E.lin], [167, 720, E.lin], [172, 717, E.out2]]);
+          cy = y1 + off * k; gs = 0.627 * k / 1.003; ang = 270;
+        }
+        if (F <= 100) cy = tr("icon", F, 1);
+        if (F > 100 && F < 146) cx = tr("glyph", F, 1);
+        const bgc = BGC(tr("bg", Fi).map(Math.round));
+        const ws = kf(F, [[93, 1.0], [96, 0.975, E.lin], [98, 0.93, E.lin], [100, 0.88, E.lin], [102, 0.85, E.lin], [104, 0.83, E.lin], [108, 0.9, E.sine], [113, 0.97, E.out2]]);
+        pillW.style.transform = `translate(${cx - 157.5}px,${cy - 90.5}px) scale(${ws})`;
+        pillW.style.opacity = kf(F, [[104, 1], [113, 0, E.lin]]);
+        const gsP = F < 115 ? kf(F, [[100, 0.25], [104, 0.68, E.out2], [108, 0.86, E.out2], [113, 0.88, E.lin], [115, gs * 0.96, E.lin]]) : gs * 0.96;
+        pillG.style.transform = `translate(${cx - 157.5}px,${cy - 90.5}px) scale(${gsP})`;
+        pillG.style.background = rgb(bgc.map((v) => v - 6));
+        pillG.style.opacity = kf(F, [[100, 0], [102, 1, E.lin], [187, 1], [200, 0, E.lin]]);
+        pillGlyph.style.transform = `translate(${cx - 50}px,${cy - 50}px) rotate(${ang}deg) scale(${gs})`;
+        pillGlyph.style.opacity = kf(F, [[187, 1], [200, 0, E.lin]]);
+        const pb = kf(F, [[186, 0], [196, 9, E.in2]]);
+        pillG.style.filter = pillGlyph.style.filter = blurf(pb);
+      }
+
+      // ---- list camera: scale from the dashed separator span (714 px = 1), rows from measured cap tops
+      function listK(F) {
+        if (F < 145) return kf(F, [[128, 1.12], [145, 1.05, E.out2]]);
+        return (tr("list", F, 1) || 707) / 714;
+      }
+      function listRowTop(r, F) {
+        const k = listK(F);
+        if (F >= 137 && F <= 208) {
+          if (r === 0) return interpRow(0, F);
+          const m = interpRow(r, F);
+          if (m != null) return m;
+          if (F > 186) { // blurred out of the scan: ride row 1 at the offset of the last measured frame (ref f197)
+            const L = LROWS[r].last;
+            return interpRow(0, F) + (LROWS[r].v[L] - LROWS[0].v[L]);
+          }
+          return interpRow(0, F) + ROW_OFF[r] * k * spreadFrac(r, F);
+        }
+        if (F < 137) { // before the first measurement: extrapolate row 1 (24 px/f entering from above)
+          const y0 = 497 - (137 - F) * 15 - Math.pow(Math.max(0, 137 - F), 1.6) * 1.2;
+          return y0 + ROW_OFF[r] * k * spreadFrac(r, F);
+        }
+        return interpRow(0, 200) + (F - 200) * 42 + ROW_OFF[r] * k * (1 + (F - 200) * 0.02);
+      }
+      // per-row cap tops with interior gaps filled linearly (a null between two measured frames made subframes on
+      // either side of an integer pick different branches: doubled rows in v2 at f146)
+      const LROWS = [0, 1, 2, 3].map((r) => {
+        const v = TRK.list.v.map((x) => x[0][r]);
+        const idx = v.map((y, j) => (y == null ? -1 : j)).filter((j) => j >= 0);
+        for (let q = 0; q + 1 < idx.length; q++) for (let j = idx[q] + 1; j < idx[q + 1]; j++)
+          v[j] = v[idx[q]] + (v[idx[q + 1]] - v[idx[q]]) * (j - idx[q]) / (idx[q + 1] - idx[q]);
+        return { v, first: idx[0], last: idx[idx.length - 1] };
+      });
+      function interpRow(r, F) {
+        const a = 137, R = LROWS[r], x = F - a;
+        if (r === 0 && x > R.last) return R.v[R.last] + (R.v[R.last] - R.v[R.last - 1]) * (x - R.last); // row 1 keeps falling
+        if (x < R.first || x > R.last) return null;
+        const j = Math.min(Math.floor(x), R.last - 1), t = x - j;
+        return R.v[j] + (R.v[j + 1] - R.v[j]) * t;
+      }
+      function spreadFrac(r, F) {
+        // rows start bunched under row 1 and spread out (row2-row1: 85 px f140 -> 160 px f165)
+        return kf(F, [[132, 0.45], [140, 0.53, E.lin], [146, 0.82, E.out2], [155, 0.97, E.out2], [165, 1, E.out2]]);
+      }
+
+      // settled ink-left x per word at f166 (k 1.003): rows 1-4
+      const LX = [[362, 486, 528], [361, 508], [357, 460], [364, 514]];
+      let LSUB = 0;
+      function drawList(F, Fi) {
+        // the list's exit is smeared like a full-frame shutter (ref f190-199: dotted separators turn into vertical dashes)
+        const FL = Fi >= 184 && Fi <= 200 ? Fi + LSUB * kf(Fi, [[184, 0.4], [188, 1.0, E.lin]]) : F;
+        const on = Fi >= 128 && Fi <= 207;
+        show(listL, on); if (!on) return;
+        const k = listK(F);
+        ROWS.forEach((row, r) => {
+          const top = listRowTop(r, FL);
+          // exit (f186+): rows 2-4 defocus (measured min-ink 0 -> 100 by f193) and fade while the bg darkens;
+          // text turns grey as the background goes dark (still readable on #1e1e1e at f203)
+          const exBlur = r === 0 ? kf(F, [[186, 0], [190, 1.5, E.sine], [196, 3, E.lin]]) : kf(F, [[184, 0], [188, 1.5, E.sine], [192, 2.5, E.lin], [196, 3.5, E.lin], [199, 5, E.lin], [205, 8, E.lin]]);
+          const dk = prog(F, 199, 204, E.lin);
+          row.wEl.forEach((w, i) => {
+            const st = row.start[i];
+            const op = row.moon ? kf(F, [[st, 0], [st + 8, 1, E.lin]]) : kf(F, [[st, 0], [st + 4, 1, E.lin]]);
+            const bl = row.moon ? kf(F, [[st, 8], [st + 6, 0, E.out2]]) : kf(F, [[st, 12], [st + 7, 0, E.out2]]);
+            w.style.opacity = op;
+            w.style.filter = blurf(bl + exBlur);
+            const base = row.moon ? mixc([200, 200, 206], [10, 10, 10], prog(F, st + 1, st + 9, E.out2)) : [10, 10, 10];
+            w.style.color = rgb(mixc(base, [120, 120, 126], dk));
+            // measured ink-left (listwords), else slide in from the right before the first measurement, else settled*k
+            // (molde: track of the original word j, plus this word's layout delta; shrunk rows keep the baseline)
+            const j = row.jm[i];
+            let x = lwx(r, j, F);
+            const settled = 561 + (LX[r][j] - 561) * k / 1.003;
+            if (x == null) {
+              const first = LWX[r][j] && LWX[r][j].length ? LWX[r][j][0] : null;
+              x = first && F < first[0] ? first[1] + (first[0] - F) * 11 : settled;
+            }
+            if (F > 169) x = settled;
+            placeCap(w, x + row.dx[i] * k, top + CAP * LFS * k * (1 - row.fs), k * row.fs);
+          });
+          const cbOp = kf(F, [[row.cb, 0], [row.cb + 4, 1, E.lin]]);
+          row.cbEl.style.opacity = cbOp;
+          const x0 = lwx(r, 0, F), dxRow = x0 == null || F > 169 ? 0 : x0 - (561 + (LX[r][0] - 561) * k / 1.003);
+          const cbX = 561 + ((row.isBox ? 243 : 246) - 561) * k + dxRow;
+          row.cbEl.style.transform = `translate(${cbX - 243}px,${top - 11 * k}px) scale(${k})`;
+          row.cbEl.style.transformOrigin = "0 0";
+          row.cbEl.style.filter = blurf(kf(F, [[row.cb, 6], [row.cb + 6, 0, E.out2]]) + exBlur);
+          row.sepEl.style.opacity = kf(F, [[row.sep, 0], [row.sep + 6, 1, E.lin]]);
+          row.sepEl.style.transform = `translate(${561 + (204 - 561) * k - 204}px,${top + 99 * k}px) scale(${k},1)`;
+          row.sepEl.style.transformOrigin = "204px 0";
+          row.sepEl.style.filter = blurf(exBlur);
+          row.box.style.opacity = r === 0 ? (Fi >= 196 ? 0 : 1) : kf(F, [[199, 1], [203, 0.45, E.lin], [207, 0, E.lin]]); // row 1 hands over to the menu title at f196
+        });
+      }
+
+      // ---- dark menu card: border-ridge measurements (top, left, right) f206-270; formation keys f196-205; exit f270-286
+      function menuPose(F) {
+        // rotateX: posefit reads the card tilted top-away ~6 deg the whole time (-12 at f204), CSS = -posefit
+        const tilt = kf(F, [[200, 0], [203, 14, E.out2], [207, 7, E.sine], [212, 6], [250, 7], [262, 4], [268, 3]]);
+        if (F < 206) {
+          return {
+            cx: kf(F, [[196, 520], [198, 536, E.lin], [200, 539, E.lin], [206, 539.5, E.lin]]),
+            cy: cr(F, [[196, 640], [198, 695], [199, 749], [200, 805], [201, 858], [202, 894], [203, 925], [204, 952], [205, 972], [206, 988]]),
+            w: cr(F, [[196, 380], [198, 482], [199, 549], [200, 598], [201, 659], [202, 705], [203, 722], [204, 735], [205, 740], [206, 733]]),
+            h: cr(F, [[196, 200], [198, 300], [199, 340], [200, 380], [201, 410], [202, 430], [203, 455], [204, 480], [205, 500], [206, 509]]),
+            ax: tilt,
+          };
+        }
+        if (F <= 270) {
+          const top = tr("menu", F, 0), l = tr("menu", F, 1), r = tr("menu", F, 2), w = (r - l) * 755 / 745;
+          const s = w / 755; return { cx: (l + r) / 2, cy: top + 264 * s, w, h: 528 * s, ax: tilt };
+        }
+        // exit (ref f270-284, title and button row centres + card edges): the card stretches past the frame width while
+        // its height holds (~680), drops, and only folds back late (tilt 8 -> 74 deg over f278-284)
+        return {
+          cx: 539.5,
+          w: cr(F, [[268, 930], [270, 955], [272, 1025], [274, 1095], [276, 1160], [278, 1220], [280, 1290], [282, 1370], [284, 1450], [286, 1520], [288, 1580]]),
+          h: cr(F, [[268, 655], [270, 668], [272, 686], [274, 699], [276, 686], [278, 679], [280, 681], [284, 681], [288, 681]]),
+          cy: cr(F, [[268, 1005], [270, 1025], [272, 1053], [274, 1086], [276, 1130], [278, 1221], [280, 1325], [282, 1535], [284, 1840], [286, 2050], [288, 2200]]),
+          ax: cr(F, [[268, 3], [270, 3], [272, 3], [274, 3], [276, 4], [278, 8], [280, 28], [282, 54], [284, 74], [286, 82], [288, 86]]),
+        };
+      }
+      // a point in card units (relative to the card centre) through the card's scale + rotateX + perspective 1200
+      function projMenu(p, lx, ly) {
+        const sx = p.w / 755, sy = p.h / 528, r = p.ax * Math.PI / 180, y = ly * sy;
+        const k = 1200 / (1200 - y * Math.sin(r));
+        return { x: p.cx + lx * sx * k, y: p.cy + y * Math.cos(r) * k, k: sx * k };
+      }
+      // title and cursor ride the card once it starts to leave: anchored to the card at f266, then projected
+      const EXIT0 = 266;
+      function rideMenu(F, x0, y0) {
+        const p0 = menuPose(EXIT0), s0 = p0.w / 755;
+        const q = projMenu(menuPose(F), (x0 - p0.cx) / s0, (y0 - p0.cy) / (p0.h / 528));
+        return { x: q.x, y: q.y, k: q.k / s0 };
+      }
+      function titlePose(F) {
+        // measured cap top / ink left / ink width (tools: data/raw/title.txt); scale from the width
+        if (F > EXIT0) {
+          const a = titlePose(EXIT0), q = rideMenu(F, a.left, a.top);
+          return { top: q.y, left: q.x, s: a.s * q.k };
+        }
+        const top = tr("title", F, 0), left = tr("title", F, 1);
+        let w = tr("title", F, 2);
+        const m = ink(DEF.item1, 62, 620, SFP), iw = m.r - m.l; // the clone's scale (a new title keeps it, LAY.tfs aside)
+        if (F > 258 || w == null) w = 301 * kf(F, [[258, 1.0], [270, 1.17, E.in2]]);
+        if (F < 201) w = 259 * listK(F) * 62 / 58;
+        return { top, left, s: w / iw };
+      }
+      function drawMenu(F, Fi) {
+        const on = Fi >= 196 && Fi <= 288;
+        show(menuWrap, on); show(titleL, Fi >= 196 && Fi <= 286); show(cursor, Fi >= 193 && Fi <= 286); show(objWrap, Fi >= 209 && Fi <= 256);
+        if (!on) { if (Fi >= 193 && Fi <= 286) drawCursor(F, Fi); return; }
+        const p = menuPose(F), s = p.w / 755;
+        menuWrap.style.transform = `translate(${p.cx}px,${p.cy}px)`;
+        menu.style.transform = `rotateX(${p.ax}deg) scale(${s},${p.h / 528})`;
+        // colour: mix toward #111113 at the measured fraction (shadow-like darkening, not a crossfade)
+        const t = kf(F, [[196.5, 0], [198, 0.1, E.lin], [199, 0.21, E.lin], [200, 0.34, E.lin], [201, 0.5, E.lin], [202, 0.65, E.lin], [203, 0.77, E.lin], [204, 1, E.lin]]);
+        menuFill.style.opacity = t;
+        menuBorder.style.opacity = kf(F, [[202, 0], [205, 1, E.lin], [272, 1], [278, 0.3, E.lin]]);
+        const mb = kf(F, [[196, 16], [200, 12, E.lin], [203, 3, E.out2], [205, 0, E.lin], [270, 0], [273, 5, E.in2], [277, 11, E.lin], [282, 16, E.lin], [286, 20, E.lin]]);
+        menu.style.filter = blurf(mb);
+        // measured card-vs-bg darkness after f271: 1 -> 0.59 (f276) -> 0.28 (f280) -> 0.08 (f284)
+        menu.style.opacity = kf(F, [[271, 1], [276, 0.59, E.lin], [280, 0.28, E.lin], [284, 0.08, E.lin], [287, 0, E.lin]]);
+        // title (screen space): dark list text -> white card title while the card darkens (f199-203)
+        const tp = titlePose(F);
+        mTitle.style.opacity = kf(F, [[271, 1], [276, 0.6, E.lin], [282, 0.2, E.lin], [286, 0, E.lin]]);
+        const tl = Math.min(1, Math.max(0, (F - 199.5) / 3));
+        // white title (ref p97 254) greys out while the strike draws: 254 (f258) -> 207 (f262) -> 145 (f266) -> 114 (f268)
+        const tcol = mixc(mixc([10, 10, 10], [255, 255, 255], tl), [100, 100, 104], prog(F, 259.5, 269, E.lin));
+        mTitle.style.color = rgb(tcol);
+        strike.style.background = rgb(mixc([200, 200, 204], tcol, prog(F, 262, 266, E.lin)));
+        mTitle.style.filter = blurf(kf(F, [[196, 2], [199, 5, E.lin], [201, 3, E.lin], [203, 0, E.out2], [270, 0], [274, 5, E.in2], [280, 12, E.lin]]));
+        const TB = CAP * 62 * tp.s * (1 - LAY.tfs); // a shrunk title keeps the baseline
+        placeCap(mTitle, tp.left, tp.top + TB, tp.s * LAY.tfs);
+        mCheck.style.opacity = kf(F, [[196, 0.8], [199, 0.5, E.lin], [203, 1, E.lin], [271, 1], [280, 0.2, E.lin]]);
+        mCheck.style.transform = `translate(${tp.left - 122 * tp.s}px,${tp.top - 7 * tp.s}px) scale(${tp.s * 0.95})`;
+        mCheck.style.filter = mTitle.style.filter;
+        // strike: draws left -> right f259-264, from 10 px before the text to 10 px after it
+        const sw = (ink(V.item1, 62, 620).r - ink(V.item1, 62, 620).l) * tp.s * LAY.tfs + 20;
+        strike.style.transform = `translate(${tp.left - 10}px,${tp.top + TB + 16 * tp.s * LAY.tfs}px) scale(${kf(F, [[259, 0], [264, 1, E.out]]) * sw / 100},${tp.s * LAY.tfs})`;
+        strike.style.opacity = F >= 259 ? kf(F, [[271, 1], [282, 0.2, E.lin]]) : 0;
+        strike.style.filter = mTitle.style.filter;
+        remGlow.style.opacity = kf(F, [[213, 0], [218, 1, E.lin]]);
+        for (const b of BTN) {
+          const pr = prog(F, b.t, b.t + 5, E.out2);
+          b.e.style.opacity = kf(F, [[b.t - 0.5, 0], [b.t + 2.5, 1, E.lin]]);
+          b.e.style.transform = `scale(${0.7 + 0.3 * pr})`;
+          b.e.style.filter = blurf(8 * (1 - pr));
+          const m = ink(b.label, 29, 590); // a new label is centred on the clone's baseline (lf < 1 only when the row is full)
+          placeInk(b.lb, b.w / 2 - (m.r - m.l) * b.lf / 2, 91 + (ink(b.label0, 29, 590).a - m.a * b.lf), b.lf);
+        }
+        drawCursor(F, Fi);
+        drawObjects(F, Fi);
+      }
+      function drawCursor(F, Fi) {
+        if (!(Fi >= 193 && Fi <= 286)) return;
+        let x, y;
+        if (F < 194) { x = 945 + (194 - F) * 70; y = 1040; }
+        else if (F > EXIT0) { const q = rideMenu(F, tr("cursor", EXIT0, 0), tr("cursor", EXIT0, 1)); x = q.x; y = q.y; }
+        else { x = tr("cursor", F, 0); y = tr("cursor", F, 1); }
+        // arrow lies on its side while it flies in (bbox 69x50 at f201), uprights by f222
+        const rot = kf(F, [[193, -62], [201, -50, E.lin], [212, -12, E.out2], [222, 0, E.out2], [262, 0], [274, -8, E.sine]]);
+        const sc = kf(F, [[193, 1.25], [200, 1.1, E.lin], [204, 0.95, E.out2], [262, 0.95], [276, 0.95]]);
+        const rad = rot * Math.PI / 180;
+        // the tip is the svg origin (2,1.5)*2.5; for a rotated arrow the bbox top-left is below-left of the tip
+        const dy = rot < 0 ? -Math.sin(rad) * 0 : 0;
+        cursor.style.transform = `translate(${x - 5}px,${y - 4 + (rot < 0 ? 60 * Math.sin(-rad) * 0.55 : 0)}px) rotate(${rot}deg) scale(${sc})`;
+        const dark = 1; // standard white arrow with a dark outline throughout (on the white list it reads as a dark smear)
+        curPath.setAttribute("fill", rgb(mixc([20, 20, 20], [255, 255, 255], dark)));
+        curPath.setAttribute("stroke", rgb(mixc([255, 255, 255], [17, 17, 17], dark)));
+        cursor.style.filter = blurf(kf(F, [[262, 0], [272, 3, E.in2], [286, 12, E.lin]]));
+        cursor.style.opacity = kf(F, [[193, 0], [194.5, 1, E.lin], [280, 1], [288, 0, E.lin]]);
+      }
+      function drawObjects(F, Fi) {
+        const OP = [[[209, 0], [213, 1, E.lin], [238, 0.81], [245, 0.56, E.lin], [249, 0.35, E.lin], [251, 0.2, E.lin], [255, 0, E.lin]],
+                    [[209, 0], [213, 1, E.lin], [232, 1], [234, 0.81, E.lin], [236, 0.7, E.lin], [238, 0.55, E.lin], [240, 0.3, E.lin], [242, 0, E.lin]],
+                    [[209, 0], [213, 1, E.lin], [238, 0.85], [245, 0.53, E.lin], [249, 0.36, E.lin], [251, 0.27, E.lin], [254, 0, E.lin]],
+                    [[209, 0], [213, 1, E.lin], [238, 0.88], [245, 0.65, E.lin], [249, 0.47, E.lin], [251, 0.3, E.lin], [255, 0, E.lin]]];
+        objField.style.opacity = kf(F, [[209, 0], [214, 1, E.lin], [238, 1], [252, 0, E.lin]]);
+        OBJ.forEach((o, i) => {
+          let cx, cy;
+          if (F < 215) { const k = (215 - F); cx = tr("objects", 215, i) ? TRK.objects.v[0][i][0] : 0; cy = TRK.objects.v[0][i][1] - k * k * 1.6; }
+          else if (F > 246) { const v = TRK.objects.v[TRK.objects.v.length - 1][i] || [0, 0]; const d = F - 246; cx = v[0] + (i === 0 ? -1.2 : i === 3 ? 2.5 : 0) * d; cy = v[1] + 3.2 * d; }
+          else { const j = Math.floor(F - 215), t = F - 215 - j; const A = TRK.objects.v[j][i], B = TRK.objects.v[Math.min(j + 1, TRK.objects.v.length - 1)][i] || A; cx = lerp(A[0], B[0], t); cy = lerp(A[1], B[1], t); }
+          o.e.style.transform = `translate(${cx - o.w / 2}px,${cy - o.h / 2}px)`;
+          o.e.style.opacity = kf(F, OP[i]);
+          o.g.style.transform = `translate(${cx - 170}px,${cy - 170}px)`;
+          o.g.style.opacity = o.e.style.opacity;
+          o.e.style.filter = blurf(kf(F, [[209, 10], [215, 2, E.out2], [218, 0, E.lin], [238, 0], [252, 9, E.in2]]));
+        });
+      }
+
+      // where each subscription word sits inside the card subtitle (world units, cap top 265.7, ink-left 331)
+      function subTarget(i, F, Fi) {
+        const G = Math.max(F, 330), c = cardCam(G, Math.floor(G));
+        MC.font = `450 76.6px ${FAM}`;
+        const pre = i ? SUBW.slice(0, i).join(" ") + " " : "";
+        const off = pre ? MC.measureText(pre).width : 0;
+        const mW = ink(SUB[i]._t, 82, 450), mS = ink(SUBW[0], 76.6, 450), cf = LAY.cfs;
+        const sc = (76.6 / 82) * c.k * cf;
+        // ink-left of word i = string ink-left + advance of the preceding text + this word's own ink offset
+        const x = c.xL + (331 - mS.l * cf + off * cf) * c.k + mW.l * sc;
+        return { x, capTop: c.cy + (265.7 - 261.3 + CAP * 76.6 * (1 - cf)) * c.k, sc };
+      }
+      function drawSub(F, Fi) {
+        const on = Fi >= 281 && Fi <= 336;
+        show(subWrap, on); if (!on) return;
+        const ST = [281, 283, 285.5];
+        // molde: the phrase stays centred like the clone's line; LAY.pf shrinks it past 960 px
+        const pf = LAY.pf, dW = (inkW(V.frase, 82, 450) * pf - inkW(DEF.frase, 82, 450, SFP)) / 2;
+        SUB.forEach((w, i) => {
+          let x0, x1, y0, sc;
+          const j = SUBJ[i], st = SUBST[i], dd = st - ST[j];
+          const m = ink(w._t, 82, 450), m0 = ink(SUBW0[j], 82, 450, SFP);
+          // this word's offset from the original word j (scaled by the measured word scale): 0 at the defaults
+          const PX = off(SUBW, i, 82, 450) * pf - off(SUBW0, j, 82, 450, SFP) - dW, PY = m0.a - m.a * pf;
+          const fi = clamp(F, 281, 314);
+          if (F >= st + 1) {
+            const a = Math.floor(fi), t = fi - a;
+            const A = TRK.subwords.v[a - 281], B = TRK.subwords.v[Math.min(a + 1 - 281, TRK.subwords.v.length - 1)];
+            const words = (row) => row && row.filter((b) => b[6] - b[4] < 30); // drop the blue star box (B-R ~63; ink is grey)
+            const pick = (row) => { const w3 = words(row); return w3 && w3.length === 3 ? w3[j] : null; };
+            let pa = pick(A), pb = pick(B) || pa;
+            if (!pa) pa = pb;
+            if (pa) { x0 = lerp(pa[0], pb[0], t); x1 = lerp(pa[1], pb[1], t); y0 = lerp(pa[2], pb[2], t); }
+          }
+          if (x0 == null) {
+            // before its first full measurement: drops in from above (measured ink tops f281-286)
+            const dt = F - st;
+            const yy = [940, 956, 941][j] - Math.max(0, 6 - dt) * 22;
+            const xs = [[212, 321], [338, 469], [488, 881]][j];
+            x0 = xs[0]; x1 = xs[1]; y0 = yy;
+          }
+          sc = (x1 - x0 + 1) / (m0.r - m0.l);
+          if (F < 314) placeInk(w, x0 + PX * sc, y0 + PY * sc, sc * pf);
+          else {
+            // from f314 the whole line shrinks about x 317 (the start of "your"; ref word boxes f314-318 and line extents
+            // f322-330: 667 px -> 471 -> 430 -> 397 -> 366 -> 353), sinks ~20 px into the card, then settles exactly on
+            // the card subtitle (f326-331). The measured boxes after f314 are useless: the star and the blob merge in.
+            const B = TRK.subwords.v[314 - 281][j], s0 = (B[1] - B[0] + 1) / (m0.r - m0.l);
+            const S = kf(F, [[314, 1], [316, 0.965, E.lin], [318, 0.9, E.lin], [320, 0.8, E.lin], [322, 0.706, E.lin], [324, 0.645, E.lin], [326, 0.595, E.lin], [328, 0.549, E.lin], [330, 0.53, E.lin], [334, 0.516, E.lin]]);
+            const xs = 317 + S * (B[0] + PX * s0 - 317), ys = 959 + S * (B[2] + PY * s0 - 959) + 20 * prog(F, 314, 330, E.sine);
+            const cap = ys + (m.a - CAP * 82) * s0 * pf * S; // ink top -> cap top for this word
+            const tg = subTarget(i, F, Fi), v = prog(F, 326, 331, E.sine);
+            placeCap(w, lerp(xs, tg.x, v), lerp(cap, tg.capTop, v), lerp(s0 * pf * S, tg.sc, v));
+          }
+          // ink fades into the card one word after another (measured ink level 30 -> 175: Get f319-325, your f321-326,
+          // subscription f325-333); the light subtitle of the card takes over from f333
+          const FO = [[[319, 1], [322, 0.6, E.lin], [325, 0.35, E.lin], [328, 0.12, E.lin], [331, 0, E.lin]],
+                      [[321, 1], [324, 0.55, E.lin], [327, 0.3, E.lin], [330, 0.08, E.lin], [332, 0, E.lin]],
+                      [[325, 1], [328, 0.55, E.lin], [331, 0.2, E.lin], [334, 0, E.lin]]][j];
+          w.style.opacity = Math.min(kf(F, [[st, 0], [st + 2.5, 1, E.lin]]), kf(F, FO));
+          const dk = [[286, 292], [288, 294], [290, 297]][j];
+          w.style.color = rgb(mixc(SUBRED, [23, 22, 23], prog(F, dk[0] + dd, dk[1] + dd, E.sine)));
+          w.style.filter = blurf(kf(F, [[st, 10], [st + 6, 3, E.out2], [st + 10, 0, E.lin], [318, 0], [322, 1.2, E.lin], [328, 1.5, E.lin]]));
+        });
+      }
+
+      // ---- blue card camera: k from card height (522.6 = 1), xL = card left on screen. The punch-in at f354 is a
+      // hard cut: the INTEGER frame picks the shot so subframes never blend the two framings
+      function cardCam(F, Fi) {
+        if (Fi >= 354) {
+          const G = Math.max(F, 354);
+          const h = tr("blue", G, 3) - tr("blue", G, 2) + 1;
+          const k = clamp(h / 522.6, 0.9, 1.05);
+          const xL = G >= 395 ? tr("blue", G, 0) : -1155.2 + tr("pan", G);
+          return { k, xL, cy: 940.6 };
+        }
+        const G = Math.min(Math.max(F, 316), 353), G2 = Fi === 353 && F > 353 ? F : G;
+        let x0 = tr("blue", G, 0), x1 = tr("blue", G, 1), y0 = tr("blue", G, 2), y1 = tr("blue", G, 3);
+        if (G2 > 353) { const d = G2 - 353; x0 += d * 17; x1 += d * 17; } // keep panning through the last subframes
+        const h = y1 - y0 + 1, k = h / 522.6;
+        return { k, xL: x0, cy: (y0 + y1) / 2, w: x1 - x0 + 1, h };
+      }
+      function drawCard(F, Fi) {
+        const on = Fi >= 316;
+        show(cardWrap, on); show(star, Fi >= 314 && Fi <= 450);
+        if (Fi >= 314) drawStar(F, Fi);
+        if (!on) return;
+        const c = cardCam(F, Fi);
+        let W, H = 522.6, R;
+        if (Fi < 329) { W = c.w / c.k; R = H / 2; } else { W = 1831; R = 150; }
+        cardWrap.style.width = card.style.width = W + "px";
+        cardWrap.style.transform = `translate(${c.xL}px,${c.cy - H / 2 * c.k}px) scale(${c.k})`;
+        const rr = Fi < 322 ? H / 2 : kf(F, [[322, H / 2], [330, R, E.sine]]);
+        for (const e of [card, cardGlass, cardRim]) e.style.borderRadius = rr + "px";
+        // glass: light blue mixed over the final gradient at the measured fraction (body #cbdbfe f324 -> #6496fa f340)
+        // glass over the saturated gradient: the small blob is still fairly blue (body #9ebbf9 f318 -> #b9d1fc f322),
+        // lightest while it stretches (f324-328), then the gradient shows through again (#6496fa f340)
+        cardGlass.style.opacity = kf(F, [[316, 0.6], [318, 0.65, E.lin], [320, 0.77, E.lin], [322, 0.84, E.lin], [326, 0.88, E.lin], [328, 0.88], [332, 0.59, E.lin], [336, 0.32, E.lin], [340, 0.06, E.lin], [342, 0, E.lin]]);
+        // saturated rim ~14 px on screen whatever the scale (ref f322: #8baffe a few px inside the blob edge)
+        const rimB = clamp(14 / c.k, 8, 160);
+        cardRim.style.boxShadow = `inset 0 0 ${rimB.toFixed(1)}px ${(rimB * 0.35).toFixed(1)}px ${RIMC}`;
+        cardRim.style.opacity = kf(F, [[316, 1], [327, 1], [330, 0.25, E.lin], [332, 0, E.lin]]);
+        cardWrap.style.filter = blurf(kf(F, [[316, 6], [320, 3, E.lin], [326, 1.5, E.lin], [332, 0.6, E.lin], [338, 0, E.lin]]));
+        // content: title slides in from the lower right (measured white-ink box f342-346), Upgrade rises and grows
+        // from the bottom right with a small overshoot (icon box f338-352)
+        const tOp = kf(F, [[335, 0], [338, 0.5, E.lin], [341, 1, E.lin]]);
+        cTitle.style.opacity = tOp;
+        const tdx = cr(F, [[334, 66], [336, 60], [338, 52], [342, 44], [346, 27], [350, 15], [356, 5], [362, 0], [380, 0]]);
+        const tdy = cr(F, [[334, 30], [336, 26], [338, 22], [342, 17], [346, 8], [350, 4], [356, 1], [362, 0], [380, 0]]);
+        placeCap(cTitle, 340 + tdx, 147.7 + tdy + 4 + CAP * 104 * (1 - LAY.ctf), LAY.ctf);
+        cSub.style.opacity = kf(F, [[334, 0], [337, 0.3, E.lin], [341, 1, E.lin]]);
+        placeCap(cSub, 331, 265.7 + CAP * 76.6 * (1 - LAY.cfs), LAY.cfs);
+        upg.style.opacity = kf(F, [[334, 0], [336, 0.6, E.lin], [338, 1, E.lin]]);
+        const udy = cr(F, [[334, 320], [336, 250], [338, 215], [340, 171], [342, 106], [344, 70], [346, 47], [348, 33], [350, 21], [352, 14], [356, 5], [362, 0], [380, 0]]);
+        const usc = cr(F, [[334, 0.45], [336, 0.55], [338, 0.7], [340, 0.85], [342, 0.97], [344, 1.04], [346, 1.05], [348, 1.04], [350, 1.02], [352, 0.99], [356, 1.0], [380, 1.0]]);
+        upg.style.transformOrigin = "50% 50%";
+        upg.style.transform = `translate(0px,${udy}px) scale(${usc})`;
+        placeCap(upgT, 152, 58 + CAP * 72 * (1 - LAY.uf), LAY.uf);
+      }
+      function drawStar(F, Fi) {
+        // dark navy star flies in from the right (measured centres f315-330), then rides the card and turns pale
+        let x, y, sz, rot, col, bl;
+        if (F < 331) {
+          x = cr(F, [[313, 1150], [315, 1052], [316, 1018], [317, 972], [318, 918], [319, 862], [320, 790], [321, 712], [322, 640], [323, 580], [324, 530], [325, 490], [326, 455], [327, 425], [328, 400], [329, 382], [330, 366], [331, 352]]);
+          y = kf(F, [[314, 963], [322, 971, E.lin], [330, 966, E.lin]]);
+          sz = kf(F, [[314, 1.0], [320, 0.85, E.lin], [330, 0.6, E.lin]]);
+          rot = kf(F, [[313, -60], [324, 20, E.out2], [331, 0, E.out2]]);
+          col = BC([44, 74, 102]); bl = kf(F, [[314, 10], [322, 7, E.lin], [330, 4, E.lin]]);
+        } else {
+          const c = cardCam(F, Fi);
+          const wx = cr(F, [[331, 505], [338, 378], [346, 270], [356, 200], [370, 191]]);
+          x = c.xL + wx * c.k; y = c.cy + (263 - 261.3) * c.k;
+          sz = c.k * kf(F, [[331, 0.6], [344, 1.0, E.out2]]);
+          rot = 0; col = mixc(BC([44, 74, 102]), BC([201, 229, 249]), prog(F, 332, 344, E.sine));
+          bl = kf(F, [[331, 4], [346, 0, E.out2]]);
+        }
+        star.style.transform = `translate(${x - 70}px,${y - 70}px) rotate(${rot}deg) scale(${sz})`;
+        starPath.setAttribute("fill", rgb(col));
+        star.style.filter = blurf(bl);
+        star.style.opacity = kf(F, [[313.5, 0], [315, 1, E.lin]]);
+      }
+
+      // ======================================================================================
+      function draw(t) {
+        if (!LAY.font) fitAll();
+        const Fi = Math.min(NF - 1, Math.floor(t * FPS + 1e-4));
+        const frac = t * FPS - Fi, shift = (window.MB_SHIFT || 0) * FPS;
+        const F = Fi >= 437 ? 437 : Fi + (frac - shift) * SHUTTER; // the reference holds a still from f437
+        LSUB = frac - shift;
+        drawBackground(F, Fi);
+        drawIcon(F, Fi);
+        drawPill(F, Fi);
+        drawList(F, Fi);
+        drawMenu(F, Fi);
+        drawSub(F, Fi);
+        drawCard(F, Fi);
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      document.fonts.ready.then(() => { for (const k in inkCache) delete inkCache[k]; fitAll(); draw(P.t); });
+      if (FONTE) FONTE.then(() => { for (const k in inkCache) delete inkCache[k]; fitAll(); draw(P.t); });
+      fitAll();
+      draw(0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

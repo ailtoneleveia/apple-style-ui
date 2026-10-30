@@ -25,7 +25,11 @@
     {"id": "cor_vermelho", "type": "color", "label": "Vermelho (texto do ícone, disco e fundo rosa, botão Remove, frase)", "default": "#ee4f40"},
     {"id": "cor_icone", "type": "color", "label": "Cor dos ícones desenhados da lista (a lua)", "default": "#5b35ef"},
     {"id": "fundo_claro", "type": "color", "label": "Fundo claro", "default": "#fdfdfd"},
-    {"id": "fundo_escuro", "type": "color", "label": "Fundo escuro (cena do menu)", "default": "#0d0d0d"}
+    {"id": "fundo_escuro", "type": "color", "label": "Fundo escuro (cena do menu)", "default": "#0d0d0d"},
+    {"id": "fonte", "type": "enum", "label": "Fonte (kit de marca; SF Pro é a do original)", "default": "sf", "options": [{"value": "sf", "label": "SF Pro (original)"}, {"value": "archivo", "label": "Archivo"}, {"value": "inter", "label": "Inter"}]},
+    {"id": "logo", "type": "string", "label": "Logo no lugar da estrela do cartão (imagem: no molde, ao lado da versão ou do kit; vazio = estrela)", "default": ""},
+    {"id": "sons", "type": "enum", "label": "Sons por elemento (saem pelo montar.py)", "default": "nenhum", "options": [{"value": "nenhum", "label": "Nenhum (só a trilha, como o original)"}, {"value": "suave", "label": "Suave (os eventos principais, mais baixo)"}, {"value": "marcado", "label": "Marcado (todo evento tem som)"}]},
+    {"id": "musica_volume", "type": "number", "label": "Volume da trilha quando há sons (0 a 1, sai pelo montar.py)", "default": 0.7, "min": 0, "max": 1, "step": 0.05}
   ]'>
   <head>
     <meta charset="UTF-8" />
@@ -41,6 +45,9 @@
         font-weight: 1 1000;
         font-display: block;
       }
+      /* brand kit fonts (SIL OFL): the files come from the Satellite molde at render time (montar.py) */
+      @font-face { font-family: "Archivo"; src: url("assets/fonts/Archivo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
       /* internal test only: system emoji (list icons and 3D objects) */
       @font-face { font-family: "Apple Color Emoji"; src: local("Apple Color Emoji"); }
       * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -201,40 +208,52 @@
       };
       const rowIcon = (ic, box) => (ic === "caixa" ? box : LIC[ic] ? LIC[ic].replace(/#5b35ef/g, V.cor_icone)
         : `<div style="width:56px;height:56px;line-height:56px;text-align:center;font-size:46px;font-family:'Apple Color Emoji'">${ic}</div>`);
+      // -- brand font (kit de marca): the clone's boxes were measured in SF Pro, so the ORIGINAL texts are always measured
+      // in SF Pro (SFP) and the new ones in the chosen font (FAM): at the defaults both are SF Pro and every delta stays 0
+      const FONTES = { sf: '"SF Pro"', archivo: '"Archivo"', inter: '"Inter"' }, SFP = FONTES.sf, FAM = FONTES[V.fonte] || SFP;
+      // baseline in a line-height-1 box (hhea ascent and descent, as in the Satellite) and cap height (SF Pro 0.7046;
+      // another font: measured on "H" once it is in, in fitAll)
+      const BL = 0.855 + ({ sf: 0, archivo: (0.878 - 0.21 - 0.9668 + 0.2109) / 2, inter: (0.96875 - 0.2412 - 0.9668 + 0.2109) / 2 }[V.fonte] || 0);
+      let CAP = 0.7046;
+      if (FAM !== SFP) $("root").style.fontFamily = `${FAM}, "Apple Color Emoji", sans-serif`;
+      // canvas text does not start an @font-face load, and fonts.check() says yes to a face that was never asked for: ask for
+      // the brand font now and trust its metrics only once it is in (FONTE_OK; the layout runs again when it arrives)
+      let FONTE_OK = FAM === SFP;
+      const FONTE = FONTE_OK ? null : document.fonts.load(`500 40px ${FAM}`).then(() => { FONTE_OK = true; });
       // -- text layout helpers (font metrics from the canvas)
-      const inkW = (t, size, weight) => { const m = ink(t, size, weight); return m.r - m.l; };
-      const adv = (t, size, weight) => { MC.font = `${weight} ${size}px "SF Pro"`; return MC.measureText(t).width; };
+      const inkW = (t, size, weight, fam = FAM) => { const m = ink(t, size, weight, fam); return m.r - m.l; };
+      const adv = (t, size, weight, fam = FAM) => { MC.font = `${weight} ${size}px ${fam}`; return MC.measureText(t).width; };
       // ink-left of word i relative to the ink-left of word 0 when the words sit on one line
-      const off = (ws, i, size, weight) => (i === 0 ? 0 : adv(ws.slice(0, i).join(" ") + " ", size, weight) + ink(ws[i], size, weight).l - ink(ws[0], size, weight).l);
+      const off = (ws, i, size, weight, fam = FAM) => (i === 0 ? 0 : adv(ws.slice(0, i).join(" ") + " ", size, weight, fam) + ink(ws[i], size, weight, fam).l - ink(ws[0], size, weight, fam).l);
       const words = (s) => s.trim().split(/\s+/);
 
       // ---- ink metrics of a string (canvas), so text is placed by its measured INK box, not by guessed line boxes
       const MC = document.createElement("canvas").getContext("2d");
       const inkCache = {};
-      function ink(text, size, weight) {
-        const key = text + "|" + size + "|" + weight;
+      function ink(text, size, weight, fam = FAM) {
+        const key = text + "|" + size + "|" + weight + "|" + fam;
         if (inkCache[key]) return inkCache[key];
-        MC.font = `${weight} ${size}px "SF Pro"`;
+        MC.font = `${weight} ${size}px ${fam}`;
         const m = MC.measureText(text);
         const r = { l: -m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, a: m.actualBoundingBoxAscent, d: m.actualBoundingBoxDescent, w: m.width };
-        if (document.fonts.check(`${weight} ${size}px "SF Pro"`)) inkCache[key] = r;
+        if ((fam === SFP || FONTE_OK) && document.fonts.check(`${weight} ${size}px ${fam}`)) inkCache[key] = r;
         return r;
       }
-      // a text node whose ink-box top-left lands at (x, y) with scale s; line-height 1 -> baseline at 0.855 em
+      // a text node whose ink-box top-left lands at (x, y) with scale s; line-height 1 -> baseline at BL em
       function txt(parent, text, size, weight, color, extra) {
         const e = div(`font-size:${size}px;font-weight:${weight};color:${color};${extra || ""}`, parent, text);
         e.className = "txt"; e._t = text; e._s = size; e._w = weight; return e;
       }
       function placeInk(e, x, y, s = 1, extra = "") {
         const m = ink(e._t, e._s, e._w);
-        // baseline sits 0.855 em below the line box top (SF Pro hhea, line-height 1)
-        const ox = m.l, oy = 0.855 * e._s - m.a;
+        // baseline sits BL em below the line box top (SF Pro hhea, line-height 1)
+        const ox = m.l, oy = BL * e._s - m.a;
         e.style.transform = `translate(${x}px,${y}px) scale(${s}) translate(${-ox}px,${-oy}px) ${extra}`;
       }
-      // ink-left at x, CAP top at capTop (SF Pro cap height 0.7046 em): words of one line share a baseline
+      // ink-left at x, CAP top at capTop (SF Pro cap height CAP em): words of one line share a baseline
       function placeCap(e, x, capTop, s = 1) {
         const m = ink(e._t, e._s, e._w);
-        const lineTop = capTop + 0.7046 * e._s * s - 0.855 * e._s * s;
+        const lineTop = capTop + CAP * e._s * s - BL * e._s * s;
         e.style.transform = `translate(${x - m.l * s}px,${lineTop}px) scale(${s})`;
       }
       // per-row, per-word measured ink-left x (TR.listwords), linearly interpolated across merged (blurred) frames
@@ -383,6 +402,10 @@
       stage.insertBefore(subWrap, cardWrap.nextSibling); // the words stay on top of the forming card (ref f318-330)
       const star = div("position:absolute;left:0;top:0;width:140px;height:140px;transform-origin:70px 70px", stage, STAR(BC.s("#c9e5f9")));
       const starPath = star.querySelector("path");
+      if (V.logo) { // brand logo (kit de marca) in the star's place: same flight, round like the Satellite's balloon logo
+        starPath.style.display = "none";
+        el("img", "position:absolute;left:14px;top:14px;width:112px;height:112px;object-fit:cover;border-radius:50%", star).src = V.logo;
+      }
 
       // ======================================================================================
       // MOLDE layout from the text (re-run once the font is ready). Every delta is "new minus original",
@@ -390,19 +413,20 @@
       // ======================================================================================
       const LAY = { jf: 1, tfs: 1, MW: 755, pf: 1, cfs: 1, ctf: 1, uf: 1, uW: 517 };
       function fitAll() {
-        LAY.font = document.fonts.check('620 58px "SF Pro"'); // until SF Pro is in, draw() re-fits (fonts.ready can come early)
+        LAY.font = FONTE_OK && document.fonts.check(`620 58px ${SFP}`); // until the fonts are in, draw() re-fits (fonts.ready can come early)
+        if (FAM !== SFP) CAP = ink("H", 100, 600).a / 100;
         // "Joi" on the icon: shrinks past 220 px (the icon is 280 wide with 75 px corners)
         LAY.jf = Math.min(1, 220 / inkW(V.icone_texto, 58, 600));
         // list rows: left-aligned after the box; the line may run to the separator's end (918) less a margin
         for (const r of ROWS) {
           r.fs = Math.min(1, 540 / inkW(r.words.join(" "), LFS, LW));
-          r.dx = r.words.map((w, i) => off(r.words, i, LFS, LW) * r.fs - off(r.w0, r.jm[i], LFS, LW));
+          r.dx = r.words.map((w, i) => off(r.words, i, LFS, LW) * r.fs - off(r.w0, r.jm[i], LFS, LW, SFP));
         }
         // menu buttons grow with their label (never below the clone, same minimum padding as the tightest button);
         // the card grows by the extra width, up to 245 px (then the labels shrink)
-        const PAD = Math.min(...BTN.map((b) => (b.w0 - inkW(b.label0, 29, 590)) / 2));
+        const PAD = Math.min(...BTN.map((b) => (b.w0 - inkW(b.label0, 29, 590, SFP)) / 2));
         // growth = label delta beyond the button's spare room (spare = 0 on the tightest one): exactly 0 at the defaults
-        const grow = (b, lf) => Math.max(0, inkW(b.label, 29, 590) * lf - inkW(b.label0, 29, 590) - (b.w0 - inkW(b.label0, 29, 590) - 2 * PAD));
+        const grow = (b, lf) => Math.max(0, inkW(b.label, 29, 590) * lf - inkW(b.label0, 29, 590, SFP) - (b.w0 - inkW(b.label0, 29, 590, SFP) - 2 * PAD));
         let lf = 1, E = 0;
         for (; lf > 0.3; lf -= 0.01) {
           E = BTN.reduce((q, b) => q + grow(b, lf), 0);
@@ -426,7 +450,7 @@
         LAY.cfs = fitNew("frase", 76.6, 450, 860 - 331);
         LAY.ctf = fitNew("cartao_titulo", 104, 500, 860 - 340);
         // Upgrade button follows its label both ways (left edge fixed); past the card's end less 80 the label shrinks
-        const u0 = inkW(DEF.cartao_botao, 72, 500), u1 = inkW(V.cartao_botao, 72, 500);
+        const u0 = inkW(DEF.cartao_botao, 72, 500, SFP), u1 = inkW(V.cartao_botao, 72, 500);
         LAY.uf = Math.min(1, (1831 - 80 - 1118 - (517 - u0)) / u1);
         LAY.uW = 517 + (u1 * LAY.uf - u0);
         upg.style.width = LAY.uW + "px";
@@ -462,7 +486,7 @@
         joi.style.opacity = kf(F, [[23.5, 0], [24.5, 1, E.lin]]);
         const jm = ink(joi._t, 58, 600), jf = LAY.jf;
         // a new label keeps the clone's baseline and centre; past 220 px it shrinks (jf)
-        placeInk(joi, 140 - (jm.r - jm.l) * js * jf / 2, 42 + (1 - js) * 18 + (ink(DEF.icone_texto, 58, 600).a - jm.a * jf) * js, js * jf);
+        placeInk(joi, 140 - (jm.r - jm.l) * js * jf / 2, 42 + (1 - js) * 18 + (ink(DEF.icone_texto, 58, 600, SFP).a - jm.a * jf) * js, js * jf);
         // digit strip: digits 5..9, pitch P, measured chained scroll (icon units)
         // digit strip (tools/stripfit.py): pitch 278 icon units (one digit per icon width), centre of the "8"
         // per frame; the strip also zooms in early (digits ~0.4x at f12 -> 1x by f22) about (140, 158)
@@ -589,7 +613,7 @@
               x = first && F < first[0] ? first[1] + (first[0] - F) * 11 : settled;
             }
             if (F > 169) x = settled;
-            placeCap(w, x + row.dx[i] * k, top + 0.7046 * LFS * k * (1 - row.fs), k * row.fs);
+            placeCap(w, x + row.dx[i] * k, top + CAP * LFS * k * (1 - row.fs), k * row.fs);
           });
           const cbOp = kf(F, [[row.cb, 0], [row.cb + 4, 1, E.lin]]);
           row.cbEl.style.opacity = cbOp;
@@ -654,7 +678,7 @@
         }
         const top = tr("title", F, 0), left = tr("title", F, 1);
         let w = tr("title", F, 2);
-        const m = ink(DEF.item1, 62, 620), iw = m.r - m.l; // the clone's scale (a new title keeps it, LAY.tfs aside)
+        const m = ink(DEF.item1, 62, 620, SFP), iw = m.r - m.l; // the clone's scale (a new title keeps it, LAY.tfs aside)
         if (F > 258 || w == null) w = 301 * kf(F, [[258, 1.0], [270, 1.17, E.in2]]);
         if (F < 201) w = 259 * listK(F) * 62 / 58;
         return { top, left, s: w / iw };
@@ -683,7 +707,7 @@
         mTitle.style.color = rgb(tcol);
         strike.style.background = rgb(mixc([200, 200, 204], tcol, prog(F, 262, 266, E.lin)));
         mTitle.style.filter = blurf(kf(F, [[196, 2], [199, 5, E.lin], [201, 3, E.lin], [203, 0, E.out2], [270, 0], [274, 5, E.in2], [280, 12, E.lin]]));
-        const TB = 0.7046 * 62 * tp.s * (1 - LAY.tfs); // a shrunk title keeps the baseline
+        const TB = CAP * 62 * tp.s * (1 - LAY.tfs); // a shrunk title keeps the baseline
         placeCap(mTitle, tp.left, tp.top + TB, tp.s * LAY.tfs);
         mCheck.style.opacity = kf(F, [[196, 0.8], [199, 0.5, E.lin], [203, 1, E.lin], [271, 1], [280, 0.2, E.lin]]);
         mCheck.style.transform = `translate(${tp.left - 122 * tp.s}px,${tp.top - 7 * tp.s}px) scale(${tp.s * 0.95})`;
@@ -746,27 +770,27 @@
       // where each subscription word sits inside the card subtitle (world units, cap top 265.7, ink-left 331)
       function subTarget(i, F, Fi) {
         const G = Math.max(F, 330), c = cardCam(G, Math.floor(G));
-        MC.font = `450 76.6px "SF Pro"`;
+        MC.font = `450 76.6px ${FAM}`;
         const pre = i ? SUBW.slice(0, i).join(" ") + " " : "";
         const off = pre ? MC.measureText(pre).width : 0;
         const mW = ink(SUB[i]._t, 82, 450), mS = ink(SUBW[0], 76.6, 450), cf = LAY.cfs;
         const sc = (76.6 / 82) * c.k * cf;
         // ink-left of word i = string ink-left + advance of the preceding text + this word's own ink offset
         const x = c.xL + (331 - mS.l * cf + off * cf) * c.k + mW.l * sc;
-        return { x, capTop: c.cy + (265.7 - 261.3 + 0.7046 * 76.6 * (1 - cf)) * c.k, sc };
+        return { x, capTop: c.cy + (265.7 - 261.3 + CAP * 76.6 * (1 - cf)) * c.k, sc };
       }
       function drawSub(F, Fi) {
         const on = Fi >= 281 && Fi <= 336;
         show(subWrap, on); if (!on) return;
         const ST = [281, 283, 285.5];
         // molde: the phrase stays centred like the clone's line; LAY.pf shrinks it past 960 px
-        const pf = LAY.pf, dW = (inkW(V.frase, 82, 450) * pf - inkW(DEF.frase, 82, 450)) / 2;
+        const pf = LAY.pf, dW = (inkW(V.frase, 82, 450) * pf - inkW(DEF.frase, 82, 450, SFP)) / 2;
         SUB.forEach((w, i) => {
           let x0, x1, y0, sc;
           const j = SUBJ[i], st = SUBST[i], dd = st - ST[j];
-          const m = ink(w._t, 82, 450), m0 = ink(SUBW0[j], 82, 450);
+          const m = ink(w._t, 82, 450), m0 = ink(SUBW0[j], 82, 450, SFP);
           // this word's offset from the original word j (scaled by the measured word scale): 0 at the defaults
-          const PX = off(SUBW, i, 82, 450) * pf - off(SUBW0, j, 82, 450) - dW, PY = m0.a - m.a * pf;
+          const PX = off(SUBW, i, 82, 450) * pf - off(SUBW0, j, 82, 450, SFP) - dW, PY = m0.a - m.a * pf;
           const fi = clamp(F, 281, 314);
           if (F >= st + 1) {
             const a = Math.floor(fi), t = fi - a;
@@ -793,7 +817,7 @@
             const B = TRK.subwords.v[314 - 281][j], s0 = (B[1] - B[0] + 1) / (m0.r - m0.l);
             const S = kf(F, [[314, 1], [316, 0.965, E.lin], [318, 0.9, E.lin], [320, 0.8, E.lin], [322, 0.706, E.lin], [324, 0.645, E.lin], [326, 0.595, E.lin], [328, 0.549, E.lin], [330, 0.53, E.lin], [334, 0.516, E.lin]]);
             const xs = 317 + S * (B[0] + PX * s0 - 317), ys = 959 + S * (B[2] + PY * s0 - 959) + 20 * prog(F, 314, 330, E.sine);
-            const cap = ys + (m.a - 0.7046 * 82) * s0 * pf * S; // ink top -> cap top for this word
+            const cap = ys + (m.a - CAP * 82) * s0 * pf * S; // ink top -> cap top for this word
             const tg = subTarget(i, F, Fi), v = prog(F, 326, 331, E.sine);
             placeCap(w, lerp(xs, tg.x, v), lerp(cap, tg.capTop, v), lerp(s0 * pf * S, tg.sc, v));
           }
@@ -852,15 +876,15 @@
         cTitle.style.opacity = tOp;
         const tdx = cr(F, [[334, 66], [336, 60], [338, 52], [342, 44], [346, 27], [350, 15], [356, 5], [362, 0], [380, 0]]);
         const tdy = cr(F, [[334, 30], [336, 26], [338, 22], [342, 17], [346, 8], [350, 4], [356, 1], [362, 0], [380, 0]]);
-        placeCap(cTitle, 340 + tdx, 147.7 + tdy + 4 + 0.7046 * 104 * (1 - LAY.ctf), LAY.ctf);
+        placeCap(cTitle, 340 + tdx, 147.7 + tdy + 4 + CAP * 104 * (1 - LAY.ctf), LAY.ctf);
         cSub.style.opacity = kf(F, [[334, 0], [337, 0.3, E.lin], [341, 1, E.lin]]);
-        placeCap(cSub, 331, 265.7 + 0.7046 * 76.6 * (1 - LAY.cfs), LAY.cfs);
+        placeCap(cSub, 331, 265.7 + CAP * 76.6 * (1 - LAY.cfs), LAY.cfs);
         upg.style.opacity = kf(F, [[334, 0], [336, 0.6, E.lin], [338, 1, E.lin]]);
         const udy = cr(F, [[334, 320], [336, 250], [338, 215], [340, 171], [342, 106], [344, 70], [346, 47], [348, 33], [350, 21], [352, 14], [356, 5], [362, 0], [380, 0]]);
         const usc = cr(F, [[334, 0.45], [336, 0.55], [338, 0.7], [340, 0.85], [342, 0.97], [344, 1.04], [346, 1.05], [348, 1.04], [350, 1.02], [352, 0.99], [356, 1.0], [380, 1.0]]);
         upg.style.transformOrigin = "50% 50%";
         upg.style.transform = `translate(0px,${udy}px) scale(${usc})`;
-        placeCap(upgT, 152, 58 + 0.7046 * 72 * (1 - LAY.uf), LAY.uf);
+        placeCap(upgT, 152, 58 + CAP * 72 * (1 - LAY.uf), LAY.uf);
       }
       function drawStar(F, Fi) {
         // dark navy star flies in from the right (measured centres f315-330), then rides the card and turns pale
@@ -905,6 +929,7 @@
       tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
       window.addEventListener("hf-seek", (e) => draw(e.detail.time));
       document.fonts.ready.then(() => { for (const k in inkCache) delete inkCache[k]; fitAll(); draw(P.t); });
+      if (FONTE) FONTE.then(() => { for (const k in inkCache) delete inkCache[k]; fitAll(); draw(P.t); });
       fitAll();
       draw(0);
       window.__timelines["main"] = tl;

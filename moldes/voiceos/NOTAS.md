@@ -10,11 +10,14 @@ os ícones do dock, o avatar, a cor de destaque, a cor do anel da tecla e as dua
 ```
 voiceos/
   molde/          o projeto HyperFrames; as variáveis estão no <html> do index.html
-  MOLDE.json      versão travada: versão (voiceos-v1) e impressão digital (sha256 de cada arquivo do molde)
+  MOLDE.json      a versão em vigor (voiceos-v2: kit de marca completo e sons) e a impressão digital (sha256 de cada arquivo)
+  versoes-travadas/   uma pasta por versão travada (voiceos-v1, voiceos-v2), cópia do molde só leitura
+  molde/sons.json o mapa evento -> som (ver ../../sons/SONS.md)
   versoes/        uma versão = um JSON com os valores trocados
     original.json   {} = o clone, sem troca
     junior.json     a versão de teste (português, #E54A26)
     teste-campos.json + ceu-liso.png   prova dos campos de imagem e de emoji (céu liso amarelo, ícones e avatar emoji)
+    padaria-marca.json  o kit da padaria inteiro (cor, nome, Archivo e logo) com sons suaves
   montar.py       renderiza uma versão, trava e prova o molde
   saidas/         os vídeos prontos
 ```
@@ -45,7 +48,8 @@ para se o disco tiver menos de 2 GB livres; o bruto de 240 fps é apagado logo d
 O progresso vai para o stderr. Em erro, a última linha do stderr é `{"ok": false, "erro": "...", "codigo": "NOME_DO_ERRO"}`.
 Códigos de saída: 0 ok, 1 erro, 2 uso errado.
 
-**Versão travada.** `python3 montar.py --travar` grava o `MOLDE.json`. Se alguém editar o molde sem travar de novo, toda execução
+**Versão travada.** `python3 montar.py --travar` grava o `MOLDE.json` e congela a cópia do molde em
+`versoes-travadas/voiceos-vN/` (só leitura; uma pasta que já existe nunca é reescrita). Se alguém editar o molde sem travar de novo, toda execução
 avisa (campo `aviso` no JSON e linha no stderr) dizendo quais arquivos mudaram. Travar de novo depois de uma edição
 sobe a versão (voiceos-v2, v3...). Antes de travar uma edição, rode `--provar`.
 
@@ -101,6 +105,21 @@ da linha 14, o vermelho final da caixa, o arco-íris da tecla e o azul de "and s
   mesmo escurecimento. A foto do céu cobre também a faixa de céu embaixo do vinhedo. Use foto 16:9 grande (as placas
   têm 4435 e 3696 px de largura, porque a câmera aproxima até 1,1x).
 
+### Kit de marca, fonte, logo e sons (30/10, voiceos-v2)
+
+| variável | o que é | original |
+|---|---|---|
+| `fonte` | `sf` (SF Pro), `archivo` ou `inter` (SIL OFL; os arquivos vêm do molde do Satellite na hora do render). Com outra fonte, todo texto passa pelo caminho de "texto novo": o original é medido em SF Pro e o novo na fonte escolhida | sf |
+| `logo` | imagem redonda no lugar do triângulo do logo final (o mesmo voo, ao lado do ponto). Caminho no molde, ao lado da versão, absoluto ou o `logo` do kit: vai para `assets/var/` | vazio (triângulo) |
+| `sons` | som por elemento: `nenhum`, `suave` ou `marcado` (ver `sons/SONS.md`). Sem `digitar` nem `numero`, que ficariam em cima da locução da trilha original | nenhum |
+| `musica_volume` | volume da trilha quando há sons. O padrão é 1: a voz da trilha não pode baixar | 1 |
+
+O kit de marca leva `cor_principal` -> `cor_destaque`, `nome` -> `legenda_logo`, `fonte` -> `fonte` e `logo` -> `logo`.
+Prova: `versoes/padaria-marca.json` (#D4860B, Archivo, "padaria.exemplo" na legenda e o logo no lugar do triângulo).
+A fonte do kit é pedida com `document.fonts.load` logo no começo, e o layout só roda depois que ela chega: antes disso
+o `fonts.check` respondia "sim" para a Archivo ainda não carregada, a medida saía com a fonte reserva e o ponto final
+de "e começa a falar" ficava 100 px longe do "r" (quadro 556, medido no vídeo; depois do conserto, encostado).
+
 ## Como o layout acompanha o texto
 
 Tudo é medido pela fonte, sempre "novo menos original", e cada troca só roda quando o valor é diferente do padrão, por
@@ -136,7 +155,8 @@ isso o original nunca se mexe.
 - **Recorte de nuvem na transição.** Do céu para o vinhedo, o vinhedo aparece primeiro de dentro das nuvens, por uma
   máscara cortada da foto original do céu. Com outra foto de céu a máscara não serve, então a transição vira um
   crossfade simples (com a câmera e os tempos iguais).
-- **Áudio.** Fixo, a trilha do original.
+- **Áudio.** A trilha é o `assets/silencio.m4a` (a do original, com locução, não vai no repositório); não há campo
+  `musica`. Os sons por elemento entram por cima pelo montador (`sons`).
 - **Formato.** Só 16:9 (1920x1080).
 - **Corte da câmera na cena 4.** Entre os quadros 556 e 576 a câmera anda para a direita e a primeira letra da frase sai
   pela borda esquerda. É o movimento medido do original (o "a" de "and" sai do mesmo jeito), não um texto cortado pelo

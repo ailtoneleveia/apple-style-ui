@@ -1,7 +1,7 @@
 # Sons por elemento
 
-"O mais pika desse estilo é o som: cada elemento que aparece tem som." Esta pasta é o pacote de sons do motor, e o
-molde do Satellite já sabe usar.
+"O mais pika desse estilo é o som: cada elemento que aparece tem som." Esta pasta é o pacote de sons do motor, e os
+três moldes de interface (Satellite, Joi e VoiceOS) sabem usar.
 
 ## Como funciona
 
@@ -9,22 +9,34 @@ molde do Satellite já sabe usar.
   sem silêncio na frente e atrás, todos com a mesma loudness (-18 LUFS na janela de 100 ms, teto de -1 dBFS).
   `sons.json` guarda de cada som o tipo, a duração e o **ataque** (o instante do pico de energia dentro do arquivo).
   `fazer_pacote.py` refaz o pacote igual, byte a byte.
-- **Mapa** (`satellite/sons.json`): a lista de eventos do molde, cada um com o quadro do pico do movimento no clone,
-  o tipo de som, o nível (`suave` ou `marcado`) e a entrada com mola que ele segue.
+- **Mapa** (`moldes/<molde>/molde/sons.json`): a lista de eventos do molde, cada um com o quadro do pico do movimento
+  no clone (no fps do molde: Satellite a 30, Joi e VoiceOS a 60), o tipo de som, o nível (`suave` ou `marcado`) e a
+  entrada com mola que ele segue (só o Satellite tem mola firme).
 - **Duas variáveis** no `index.html` do molde:
   - `sons`: `nenhum` (padrão), `suave` (só os eventos principais, 4 dB mais baixo) ou `marcado` (todo evento);
-  - `musica_volume`: de 0 a 1, o volume da música quando há sons (padrão 0,7, uns 3 dB abaixo). Com `nenhum` ela não
-    é usada.
+  - `musica_volume`: de 0 a 1, o volume da música quando há sons (padrão 0,7, uns 3 dB abaixo; no VoiceOS, 1, porque a
+    trilha original tem locução). Com `nenhum` ela não é usada.
 - **O montar.py** lê o mapa, põe o **ataque** de cada som em cima do quadro do evento (com precisão de amostra,
   inclusive em quadro fracionado), soma tudo à música com o volume pedido e passa num limitador em -1 dBFS (com
   compensação de atraso, para nada sair do lugar). Ele acompanha as outras variáveis:
   - `mola: firme` adianta o evento que está dentro de uma entrada (`b + 0,6 (f - b)`), como o `index.html`;
   - `ritmo: batidas` leva o evento para o quadro novo da saída (a mesma tabela do ritmo);
-  - `ilha_texto` com mais palavras dá mais toques de tecla (um por palavra).
+  - `ilha_texto` com mais palavras dá mais toques de tecla (um por palavra, com o passo desigual do `ritmo` do mapa).
+- **Três cuidados ouvidos no Satellite (30/10), em todo molde:**
+  - **teclas:** cada `digitar` muda um pouco de ganho e de altura (`TECLAS` no montar.py: 0, -2, -1, -3 e -1,5 dB, com
+    velocidade 1, 1,06, 0,94, 1,03 e 0,97), além do rodízio entre os dois arquivos;
+  - **golpes:** o montador acha os golpes da música (fluxo espectral menos a média local, corte em 3 vezes o percentil
+    90) e o efeito que cai a até 40 ms de um golpe desce 6 dB (`BATIDA_DB`), para não somar com ele;
+  - **volume:** com música de verdade, o final vai para -14,1 LUFS (`LUFS_ALVO`, a loudness integrada dos três
+    originais, medida com o ebur128), em até 3 voltas de medir e corrigir depois do limitador. Com o silêncio do molde
+    (o padrão no repositório), os efeitos ficam no nível deles: normalizar efeito sozinho a -14 LUFS deixaria cada pop
+    alto como uma música inteira.
 - **Sem repetir:** cada tipo roda entre as suas versões (aparecer 1, 2, 3, 1, ...), então o mesmo arquivo nunca toca
   em dois eventos seguidos. O autoteste do `montar.py` confere isso.
 - **Padrão intacto:** com `sons: nenhum` nenhuma linha nova roda e a música segue copiada. A prévia de
-  `versoes/original.json` continua com o mesmo md5 (`877170713ecc12ba4889e671dc0250f5`, antes e depois).
+  `versoes/original.json` do Satellite continua com o mesmo md5 (`61e3157750b0c70b88d0154dd33eabdf` com o silêncio do
+  repositório; era `877170713ecc12ba4889e671dc0250f5` com o áudio do original), e o Joi e o VoiceOS com os padrões
+  continuam passando na régua do portão (`aprendizado/testes/testes.sh`, caso 1).
 - **No Studio** os dois campos aparecem, mas o som só entra pelo `montar.py` (como a música trocada e o ritmo).
 
 ```
@@ -70,9 +82,7 @@ Quadro do clone a 30 fps (S = toca no suave e no marcado; M = só no marcado).
 
 | quadro | som | nível | evento |
 |---|---|---|---|
-| 4 | entrar | M | faixas de luz cruzam a tela |
 | 7 | aparecer | S | ícone entra |
-| 10 | brilho | M | ponto azul acende no ícone |
 | 13,5 | tocar | M | rótulo do ícone aparece |
 | 33 | morph | S | ícone vira o cartão |
 | 39,5 | digitar | M | texto do cartão aparece |
@@ -88,8 +98,7 @@ Quadro do clone a 30 fps (S = toca no suave e no marcado; M = só no marcado).
 | 199 | entrar | S | câmera corre e a rota começa |
 | 206 | entrar | M | ponto azul voa para a ilha |
 | 216,5 | ilha | S | ilha abre |
-| 217,8 + 1,6 por palavra | digitar | M | texto da ilha, palavra a palavra |
-| 225 | numero | M | relógio entra |
+| 217,8 + 2,6 por palavra (vezes 1; 1,3; 0,8; 1,15) | digitar | M | texto da ilha, palavra a palavra |
 | 241,75 e 258,75 | numero | S | relógio vira (meio do rolamento) |
 | 274,5 | sair | S | cena sobe e sai |
 | 278,5 | aparecer | S | balão entra |
@@ -98,7 +107,11 @@ Quadro do clone a 30 fps (S = toca no suave e no marcado; M = só no marcado).
 O título não ganha um toque por palavra: no clone as palavras pousam todas em 53 ms (atraso de 0 a 1,6 quadro), e
 toques tão juntos viram um só. Ele ganha um whoosh no pouso.
 
-## Medidas (versão junior, finais com motion blur)
+Saíram em 30/10 (satellite-v3, ouvido pelo Júnior): o whoosh do quadro 4 e o brilho do quadro 10 (a abertura do
+marcado tinha 4 efeitos em 0,33 s, agora tem 2 no primeiro meio segundo) e o "relógio entra" do quadro 225 (embolava
+com a última tecla).
+
+## Medidas (versão junior, finais com motion blur, satellite-v2: antes dos ajustes de 30/10)
 
 | | suave | marcado | creatoroly (medido no PLANO, seção 7) |
 |---|---|---|---|
@@ -115,33 +128,82 @@ toques tão juntos viram um só. Ele ganha um whoosh no pouso.
 - A medida de onsets é uma heurística: com o detector daqui a música sozinha já dá 4,7 por segundo, então o número
   de efeitos que conta é o do mapa.
 
-## Como aplicar no Joi e no VoiceOS (não aplicado ainda)
+## Os eventos do Joi (joi-v2, 60 qps)
 
-Cada um tem o próprio `montar.py` e a própria trilha copiada (`audio = .../ref-audio.m4a`, depois `-c:a copy`).
+Tirados das trilhas medidas (`tracks.js`: ícone, faixa dos dígitos, palavras da lista, cursor, objetos, frase) e das
+chaves do `index.html`, conferidos numa folha de quadros. Sem mola firme no Joi.
 
-1. **Declarar** `sons` e `musica_volume` no `data-composition-variables` do `index.html` do molde, com os mesmos
-   valores e padrões daqui (`nenhum` e 0,7). Isso não muda o render.
-2. **Escrever o mapa** `molde/sons.json` no mesmo formato. O quadro é no fps do molde (Joi e VoiceOS a 60 fps).
-   Tirar os quadros das keyframes do `index.html` (o pico do movimento: maior velocidade, ou o quadro em que o
-   elemento fica visível) e conferir numa folha com o quadro de cada som. Quem segue uma entrada com mola leva
-   `"mola": [início, quadros]` só se o molde tiver a mola firme.
-3. **No montar.py do molde**, logo depois de definir `audio` e antes do mux: se `V["sons"] != "nenhum"`, carregar
-   `eventos_de_som` e `mixar_sons` do `montar.py` da raiz (por `importlib`, porque os dois arquivos se chamam
-   `montar.py`) e chamar `mixar_sons(V, audio, <pasta>/musica-sons.m4a, eventos, pacote, fps=60, nf=<quadros>)`.
-   O padrão continua idêntico porque nada roda com `nenhum`; refazer a prova de md5 da prévia.
-4. **Cuidados por molde:**
-   - **Joi:** os eventos grandes já caem nas colcheias da trilha (136,9 por minuto). Som em cima de nota soma com a
-     nota: começar pelo `suave` e baixar o `aparecer` (uns -3 dB) para não dobrar o golpe.
-   - **VoiceOS:** a trilha tem locução. Os sons têm de ficar abaixo da voz: `musica_volume` 1 (a voz não pode
-     baixar) e o nível `suave`, e evitar `digitar` e `numero` em cima de palavra falada.
+| quadro | som | nível | evento |
+|---|---|---|---|
+| 8 | aparecer | S | ícone entra |
+| 22 | numero | M | dígitos rolam no ícone |
+| 82 | morph | S | ícone gira de lado e vira a pílula |
+| 100 | tocar | M | o + gira e vira x |
+| 141 | aparecer | S | item 1 entra |
+| 147 | aparecer | M | itens 2 e 3 entram |
+| 160 | aparecer | S | item 4 entra (do cinza ao preto) |
+| 198 | entrar | S | a lista sai e o menu escuro se forma |
+| 216 | aparecer | S | botões e objetos do menu aparecem |
+| 247 | sair | M | objetos do menu somem |
+| 260 | clicar | S | cursor clica no item (o risco começa) |
+| 276 | sair | S | menu sai |
+| 285 | aparecer | S | frase cai palavra a palavra (um som só: as palavras pousam a 2,5 quadros uma da outra) |
+| 318 | brilho | M | estrela voa para o cartão |
+| 326 | morph | S | frase vira o cartão |
+| 346 | aparecer | S | título e botão do cartão entram |
+| 354 | entrar | S | corte para perto do cartão |
+| 380 | sucesso | S | cartão assenta |
 
-## O que ainda soa mal (medido, não ouvido)
+Suave: 13 efeitos em 7,52 s (1,7 por segundo); marcado: 18 (2,4 por segundo).
 
-- **Abertura do marcado:** quatro efeitos em 0,33 s (whoosh, pop, brilho, toque) com a música quase muda (ela entra
-  em ~0,4 s). Ficam no nível da música, mas sozinhos: é o trecho mais exposto.
-- **Ilha:** cinco teclas em 210 ms alternando só dois arquivos, e a catraca do relógio começa 50 ms antes da última
-  tecla. Pode soar mecânico e embolado. Um terceiro `digitar` ou tirar o "relógio entra" resolve.
-- **Pílulas:** os cinco pops caem em cima dos golpes da trilha original; somam com eles.
-- **Catraca do relógio:** é o pico mais alto da onda (tiques curtos e secos), mesmo ficando abaixo da música na
-  loudness. No `suave`, o primeiro "relógio vira" fica 7 dB abaixo da música naquele instante e pode sumir.
-- **Volume geral:** com `musica_volume` 0,7 as versões saem 2 a 3 LUFS abaixo do original.
+## Os eventos do VoiceOS (voiceos-v2, 60 qps)
+
+A trilha original tem locução: nada de `digitar` nem `numero` (ficariam em cima da fala) e `musica_volume` 1.
+
+| quadro | som | nível | evento |
+|---|---|---|---|
+| 16 | aparecer | S | frase do céu começa a aparecer |
+| 26 | aparecer | M | dock aparece embaixo |
+| 70 | entrar | S | céu vira o vinhedo |
+| 100 | entrar | M | dock cresce |
+| 118 | clicar | S | cursor clica no ícone do dock |
+| 141 | morph | S | janela da mensagem abre |
+| 165 | brilho | M | ditado rosa corre |
+| 212 | aparecer | S | botão Enviar nasce do cursor |
+| 226 | clicar | S | mão clica em Enviar |
+| 263 | entrar | S | corte para a página |
+| 312 | tocar | M | título começa a ser digitado |
+| 412 | entrar | M | o texto da página rola |
+| 452 | aparecer | S | a caixa cobre a palavra destaque |
+| 478 | morph | S | caixa cresce e vira a tecla |
+| 494 | brilho | S | tecla acende |
+| 578 | entrar | M | triângulo (ou o logo do kit) voa para o logo |
+| 598 | sucesso | S | o logo se forma |
+
+Suave: 11 efeitos em 11,67 s (0,9 por segundo); marcado: 17 (1,5 por segundo).
+
+## Medidas depois dos ajustes (30/10)
+
+Com a trilha original por baixo (fora do repositório, só para ouvir: `fase2-provas/ouvir/` no rascunho), loudness
+integrada pelo ebur128 do ffmpeg. As três trilhas originais medem -14,1 LUFS.
+
+| | efeitos | em cima de golpe (-6 dB) | ganho para o alvo | final |
+|---|---|---|---|---|
+| Satellite suave (junior) | 17 | 9 (as pílulas 132,5 a 150,5 entre eles) | +3,3 dB | -14,1 LUFS |
+| Satellite marcado (junior) | 32 | 18 | +2,8 dB | -14,2 LUFS |
+| Joi suave (padaria) | 13 | 8 | +3,0 dB | -14,1 LUFS |
+| Joi marcado (padaria) | 18 | 11 | +2,6 dB | -14,1 LUFS |
+| VoiceOS suave (padaria) | 11 | 5 | 0 | -14,1 LUFS |
+| VoiceOS marcado (padaria) | 17 | 7 | 0 | -14,0 LUFS |
+
+Antes dos ajustes, o Satellite saía 2 a 3 LUFS abaixo do original (-17,3 no suave, -16,4 no marcado). Com o silêncio do
+repositório (sem normalizar), os efeitos sozinhos medem -22,1 LUFS no Satellite marcado, -26,5 no Joi suave e -27,2 no
+VoiceOS suave.
+
+## O que ainda soa mal (medido, não ouvido depois dos ajustes)
+
+- O corte de golpe pega muito evento nas trilhas cheias (9 de 17 no Satellite suave): 6 dB é um meio-termo, ainda não
+  ouvido. Se os efeitos sumirem, baixar `BATIDA_DB` para -3.
+- A catraca do relógio do Satellite continua sendo o pico mais alto da onda (tiques curtos e secos).
+- Joi e VoiceOS não têm o campo `musica`: no repositório a trilha deles é o silêncio, então a loudness alvo só vale
+  para quem trocar o `assets/silencio.m4a` da cópia (ou levar o `musica` do Satellite para eles).

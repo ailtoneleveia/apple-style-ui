@@ -11,7 +11,6 @@ a fonte, o formato (1:1 ou 9:16) e a marca inteira de um cliente. Sem nada troca
 ```
 moldes/satellite/
   molde/              o molde (projeto HyperFrames; as variáveis estão no <html> do index.html)
-    MOLDE.json        versão do molde (satellite-v2, com a camada de som) e a impressão digital (sha256) de cada arquivo
     ritmo.js          vazio no molde; o montador preenche na cópia de render quando o ritmo é "batidas"
     sons.json         o mapa de eventos de som do molde (ver sons/SONS.md)
     assets/fonts/     Archivo e Inter (a SF Pro vem do sistema na hora do render)
@@ -23,7 +22,8 @@ moldes/satellite/
     irmao-vertical.json   o irmão em 9:16, com a Inter (para o ritmo nas batidas, ponha a tua música em molde/assets/)
     junior-marca.json     a junior usando o kit marcas/junior/ (portanto com a Archivo)
     junior-suave.json, junior-marcado.json   a junior com sons por elemento
-  MOLDE.json          versão do molde e impressão digital
+  MOLDE.json          a versão em vigor (satellite-v3) e a impressão digital
+  versoes-travadas/   uma pasta por versão travada (satellite-v2, satellite-v3), cópia do molde só leitura
   montar.py           invólucro de 3 linhas: chama o montador único (montar.py da raiz) com --molde satellite
   NOTAS.md            este arquivo
 ```
@@ -125,14 +125,14 @@ batidas são calculadas pelo montador) e a **música** no vídeo final (o montad
 | `ilha_texto` | texto da Dynamic Island | Help is on the way |
 | `relogio` | relógio inicial da ilha, `M:SS` (conta 2 segundos para baixo, como no original) | 1:40 |
 | `balao_nome`, `balao_emoji`, `balao_fones` | nome e emoji do balão final; fones desenhados por cima do emoji | creatoroly, 🧑🏽, sim |
-| `logo` | imagem redonda no lugar do emoji do balão (some com os fones). Caminho dentro de `satellite/` | vazio (emoji) |
+| `logo` | imagem redonda no lugar do emoji do balão (some com os fones). Caminho no molde, ao lado da versão, absoluto ou o `logo` do kit (`marcas/<cliente>/logo.png`): vai para `assets/var/` da cópia de render | vazio (emoji) |
 | `cor_principal` | troca **todo o verde**: ícone, tile, pílulas, título chegando, rótulos, fundos medidos (field.js), Terra, halos e o começo da rota | #0cbc25 |
 | `cor_ponto` | o ponto azul do ícone e do cartão, o ponto que voa e a ilha (abertura, timer, texto e relógio) | #0284f6 |
 | `cor_rota` | a rota depois do começo (turquesa e azul) | #0067fc |
 | `cor_botao` | o botão do canto | #f80207 |
 | `fonte` | `sf` (SF Pro), `archivo` ou `inter` | sf |
 | `formato` | `1:1` (1080x1080) ou `9:16` (1080x1920, Reels) | 1:1 |
-| `musica` | arquivo de áudio dentro de `satellite/` (ex.: `assets/musica-teste.m4a`) | assets/ref-audio.m4a |
+| `musica` | arquivo de áudio dentro de `satellite/` (ex.: `assets/musica-teste.m4a`) | assets/silencio.m4a |
 | `ritmo` | `original` (tempos medidos) ou `batidas` (cada momento começa numa batida da música) | original |
 | `sons` | som por elemento: `nenhum` (só a música, como o original), `suave` (os eventos principais, 4 dB mais baixo) ou `marcado` (todo evento tem som). Ver `sons/SONS.md` | nenhum |
 | `musica_volume` | volume da música quando há sons, de 0 a 1 (0,7 fica uns 3 dB abaixo). Com `sons: nenhum` não é usado | 0,7 |
@@ -268,13 +268,15 @@ continuam no azul do Satellite, como na `versoes/junior.json`.
 
 ## Versão do molde
 
-`satellite/MOLDE.json` guarda `"versao": "satellite-v2"` (a v2 entrou com a camada de som) e a `"impressao_digital"`
-(sha256 de cada arquivo do molde). A cada render o montador confere: se algum arquivo do molde mudou sem virar versão
+`satellite/MOLDE.json` guarda `"versao": "satellite-v3"` (a v2 entrou com a camada de som; a v3, em 30/10, com os
+ajustes de som ouvidos pelo Júnior e o logo de fora do molde) e a `"impressao_digital"` (sha256 de cada arquivo do
+molde). Cada versão travada também fica congelada em `versoes-travadas/satellite-vN/` (só leitura, nunca reescrita), e
+uma versão com `"molde": "satellite-v2"` sai com a pasta congelada da v2. A cada render o montador confere: se algum arquivo do molde mudou sem virar versão
 nova, ele **avisa** no log e no resumo (não bloqueia) e diz quais arquivos mudaram. Quando a mudança é para ficar:
 
 ```
-python3 montar.py --molde satellite --travar satellite-v3   # ou sem o nome: o próximo número
-python3 montar.py --registrar-molde satellite-v3                    # o mesmo, pelo caminho antigo
+python3 montar.py --molde satellite --travar satellite-v4   # ou sem o nome: o próximo número
+python3 montar.py --registrar-molde satellite-v4                    # o mesmo, pelo caminho antigo
 ```
 
 Ele recusa registrar um conteúdo novo com o mesmo nome de versão. Joi e VoiceOS usam o mesmo comando

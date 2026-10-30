@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape"
+  data-composition-variables='[
+    {"id": "frase_ceu", "type": "string", "label": "Cena 1: texto no céu", "default": "ohhhh man"},
+    {"id": "frase_vinhedo", "type": "string", "label": "Cena 2: frase no vinhedo", "default": "I got a lot work to do"},
+    {"id": "msg_nome", "type": "string", "label": "Mensagem: nome", "default": "Oly"},
+    {"id": "msg_hora", "type": "string", "label": "Mensagem: horário", "default": "00:02"},
+    {"id": "msg_texto", "type": "string", "label": "Mensagem: frase ditada", "default": "I need to send a new scirpt to client.."},
+    {"id": "botao_enviar", "type": "string", "label": "Mensagem: botão", "default": "Send"},
+    {"id": "pagina_vazia", "type": "string", "label": "Página: título vazio (cinza)", "default": "New page"},
+    {"id": "pagina_privado", "type": "string", "label": "Página: rótulo do cadeado", "default": "Private"},
+    {"id": "pagina_titulo", "type": "string", "label": "Página: título digitado", "default": "Script for new vid.."},
+    {"id": "pagina_dica", "type": "string", "label": "Página: dica da linha vazia", "default": "Press “space” for AI or “/” for commands."},
+    {"id": "linha1", "type": "string", "label": "Página: linha 1", "default": "A blank page."},
+    {"id": "linha2", "type": "string", "label": "Página: linha 2", "default": "A cursor blinking."},
+    {"id": "linha3", "type": "string", "label": "Página: linha 3", "default": "This is where most scripts die."},
+    {"id": "linha4", "type": "string", "label": "Página: linha 4", "default": "You know what to say. Typing kills the rhythm."},
+    {"id": "linha5", "type": "string", "label": "Página: linha 5", "default": "Now watch this."},
+    {"id": "linha6", "type": "string", "label": "Página: linha 6", "default": "No keyboard."},
+    {"id": "linha7", "type": "string", "label": "Página: linha 7", "default": "Just talk."},
+    {"id": "linha8", "type": "string", "label": "Página: linha 8", "default": "The app listens. The app writes."},
+    {"id": "linha9", "type": "string", "label": "Página: linha 9", "default": "Every word becomes text, in real time."},
+    {"id": "linha10", "type": "string", "label": "Página: linha 10", "default": "Ten minutes of typing gets a paragraph."},
+    {"id": "linha11", "type": "string", "label": "Página: linha 11", "default": "Ten minutes of talking gets a full script."},
+    {"id": "linha12", "type": "string", "label": "Página: linha 12", "default": "Writing was never the hard part."},
+    {"id": "linha13", "type": "string", "label": "Página: linha 13", "default": "Typing was."},
+    {"id": "linha14_inicio", "type": "string", "label": "Página: linha 14, antes da caixa", "default": "Stop"},
+    {"id": "linha14_destaque", "type": "string", "label": "Página: linha 14, palavra da caixa", "default": "typing"},
+    {"id": "linha14_fim", "type": "string", "label": "Página: linha 14, depois da caixa", "default": "your scripts."},
+    {"id": "pilula_pronto", "type": "string", "label": "Página: texto da pílula preta", "default": "Done!"},
+    {"id": "tecla", "type": "string", "label": "Cena 4: tecla", "default": "fn"},
+    {"id": "frase_tecla", "type": "string", "label": "Cena 4: frase (sem ponto final, o ponto vira o logo)", "default": "and start speaking"},
+    {"id": "legenda_logo", "type": "string", "label": "Logo: legenda", "default": "this is concept by creatoroly"},
+    {"id": "cor_destaque", "type": "color", "label": "Cor de destaque (gira todo o rosa: ditado, Send, página)", "default": "#d41ea2"},
+    {"id": "cor_anel", "type": "color", "label": "Cor do anel da tecla", "default": "#c0e3fb"},
+    {"id": "icone1", "type": "enum", "label": "Dock: ícone 1 (o que o cursor clica)", "default": "slack", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone2", "type": "enum", "label": "Dock: ícone 2 (pílula preta da página)", "default": "notion", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone3", "type": "enum", "label": "Dock: ícone 3", "default": "messages", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone4", "type": "enum", "label": "Dock: ícone 4", "default": "docs", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone5", "type": "enum", "label": "Dock: ícone 5", "default": "gmail", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone6", "type": "enum", "label": "Dock: ícone 6", "default": "figma", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "icone7", "type": "enum", "label": "Dock: ícone 7", "default": "cube", "options": [{"value": "slack", "label": "Slack (recorte)"}, {"value": "notion", "label": "Notion (recorte)"}, {"value": "messages", "label": "Mensagens (recorte)"}, {"value": "docs", "label": "Docs (recorte)"}, {"value": "gmail", "label": "Gmail (recorte)"}, {"value": "figma", "label": "Figma (recorte)"}, {"value": "cube", "label": "Cubo (recorte)"}, {"value": "💬", "label": "Emoji 💬"}, {"value": "📝", "label": "Emoji 📝"}, {"value": "📧", "label": "Emoji 📧"}, {"value": "📅", "label": "Emoji 📅"}, {"value": "🎵", "label": "Emoji 🎵"}, {"value": "📷", "label": "Emoji 📷"}, {"value": "🎨", "label": "Emoji 🎨"}, {"value": "📁", "label": "Emoji 📁"}, {"value": "📊", "label": "Emoji 📊"}, {"value": "🎬", "label": "Emoji 🎬"}, {"value": "💡", "label": "Emoji 💡"}, {"value": "🚀", "label": "Emoji 🚀"}, {"value": "⚙️", "label": "Emoji ⚙️"}, {"value": "🧠", "label": "Emoji 🧠"}, {"value": "🎙️", "label": "Emoji 🎙️"}, {"value": "✏️", "label": "Emoji ✏️"}]},
+    {"id": "avatar", "type": "enum", "label": "Mensagem: avatar", "default": "recorte", "options": [{"value": "recorte", "label": "Memoji (recorte)"}, {"value": "🧑🏽", "label": "Emoji 🧑🏽"}, {"value": "👨🏻", "label": "Emoji 👨🏻"}, {"value": "👩🏽", "label": "Emoji 👩🏽"}, {"value": "🧔🏻", "label": "Emoji 🧔🏻"}, {"value": "👨🏽‍💻", "label": "Emoji 👨🏽‍💻"}, {"value": "🙂", "label": "Emoji 🙂"}, {"value": "🐶", "label": "Emoji 🐶"}, {"value": "🦊", "label": "Emoji 🦊"}]},
+    {"id": "foto_ceu", "type": "image", "label": "Foto do céu (cena 1 e faixa sob o vinhedo)", "default": "assets/img/sky1.jpg"},
+    {"id": "foto_vinhedo", "type": "image", "label": "Foto do vinhedo (cena 2)", "default": "assets/img/vine.jpg"},
+    {"id": "fonte", "type": "enum", "label": "Fonte (kit de marca; SF Pro é a do original)", "default": "sf", "options": [{"value": "sf", "label": "SF Pro (original)"}, {"value": "archivo", "label": "Archivo"}, {"value": "inter", "label": "Inter"}]},
+    {"id": "logo", "type": "string", "label": "Logo no lugar do triângulo do logo final (imagem: no molde, ao lado da versão ou do kit; vazio = triângulo)", "default": ""},
+    {"id": "sons", "type": "enum", "label": "Sons por elemento (saem pelo montar.py)", "default": "nenhum", "options": [{"value": "nenhum", "label": "Nenhum (só a trilha, como o original)"}, {"value": "suave", "label": "Suave (os eventos principais, mais baixo)"}, {"value": "marcado", "label": "Marcado (todo evento tem som)"}]},
+    {"id": "musica_volume", "type": "number", "label": "Volume da trilha quando há sons (0 a 1, sai pelo montar.py)", "default": 1.0, "min": 0, "max": 1, "step": 0.05}
+  ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="tracks.js"></script>
+    <script src="tracks3.js"></script>
+    <script src="plates.js"></script>
+    <style>
+      @font-face {
+        font-family: "SF Pro";
+        src: url("assets/fonts/SFNS.ttf") format("truetype");
+        font-weight: 1 1000;
+        font-display: block;
+      }
+      /* internal test only: system emoji (dock icons and avatar when a variable picks an emoji) */
+      @font-face { font-family: "Apple Color Emoji"; src: local("Apple Color Emoji"); }
+      /* brand kit fonts (SIL OFL): the files come from the Satellite molde at render time (montar.py) */
+      @font-face { font-family: "Archivo"; src: url("assets/fonts/Archivo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #fdfdfd; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #fdfdfd;
+        font-family: "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+      .abs { position: absolute; left: 0; top: 0; }
+      .full { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+      .world { position: absolute; left: 0; top: 0; width: 1px; height: 1px; transform-origin: 0 0; }
+      img { display: block; }
+      .glass { position: absolute; background: rgba(255,255,255,0.22); border: 2px solid rgba(255,255,255,0.5);
+        -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
+      .icon { position: absolute; overflow: hidden; border-radius: 36px; width: 157px; height: 157px; }
+      .icon img { position: absolute; left: -7.5px; top: -7.5px; width: 172px; height: 172px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="11.6667" data-width="1920" data-height="1080">
+      <div id="stage" class="full"></div>
+      <audio id="refaudio" src="assets/silencio.m4a" data-start="0" data-duration="11.6667" data-track-index="1" data-volume="1"></audio>
+    </div>
+    <script>
+      // =====================================================================================
+      // dafsq ("fastest concept for VoiceOS", @creatoroly) clone. Every value is a pure function
+      // of the frame. Integer frame Fi picks what exists (hard cuts stay hard); continuous F drives
+      // motion, so round_mb subframes blur only motion (SHUTTER measured on the vineyard pans: 0.5).
+      // Scenes 1-2 share ONE world camera (TR.cam, measured): sky and vineyard plates, docks, pill,
+      // text and the message window all live in world coordinates (anchor = reference frame 120).
+      // =====================================================================================
+      const FPS = 60, NF = 700, DUR = NF / FPS, SHUTTER = 0.5;
+      const $ = (id) => document.getElementById(id);
+      const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+      const lerp = (a, b, t) => a + (b - a) * t;
+      const E = {
+        lin: (t) => t,
+        out: (t) => 1 - Math.pow(1 - t, 3),
+        out2: (t) => 1 - (1 - t) * (1 - t),
+        in2: (t) => t * t,
+        sine: (t) => 0.5 - 0.5 * Math.cos(Math.PI * t),
+      };
+      const prog = (F, a, b, e = E.lin) => e(clamp((F - a) / (b - a)));
+      function kf(F, keys, ease = E.sine) {
+        if (F <= keys[0][0]) return keys[0][1];
+        for (let i = 1; i < keys.length; i++) if (F <= keys[i][0]) {
+          const [f0, v0] = keys[i - 1], [f1, v1, e] = keys[i];
+          return lerp(v0, v1, (e || ease)((F - f0) / (f1 - f0)));
+        }
+        return keys[keys.length - 1][1];
+      }
+      // Catmull-Rom through keys: no velocity stop at inner keys (motion-feel rule 1)
+      function cr(F, keys) {
+        const n = keys.length;
+        if (F <= keys[0][0]) return keys[0][1];
+        if (F >= keys[n - 1][0]) return keys[n - 1][1];
+        let i = 0; while (keys[i + 1][0] < F) i++;
+        const p0 = keys[Math.max(i - 1, 0)], p1 = keys[i], p2 = keys[i + 1], p3 = keys[Math.min(i + 2, n - 1)];
+        const t = (F - p1[0]) / (p2[0] - p1[0]);
+        const m1 = ((p2[1] - p0[1]) / (p2[0] - p0[0] || 1)) * (p2[0] - p1[0]);
+        const m2 = ((p3[1] - p1[1]) / (p3[0] - p1[0] || 1)) * (p2[0] - p1[0]);
+        const t2 = t * t, t3 = t2 * t;
+        return (2 * t3 - 3 * t2 + 1) * p1[1] + (t3 - 2 * t2 + t) * m1 + (-2 * t3 + 3 * t2) * p2[1] + (t3 - t2) * m2;
+      }
+      // ---- measured tracks: fill gaps once (hold neighbours), sample with linear interpolation
+      const TRK = window.TR;
+      for (const k in TRK) {
+        const v = TRK[k].v; if (!v) continue;
+        let last = null; for (let i = 0; i < v.length; i++) { if (v[i] == null) v[i] = last; else last = v[i]; }
+        last = null; for (let i = v.length - 1; i >= 0; i--) { if (v[i] == null) v[i] = last; else last = v[i]; }
+      }
+      function tr(name, F, i) {
+        const t = TRK[name], n = t.v.length, x = clamp(F - t.a, 0, n - 1), j = Math.floor(x), k = x - j;
+        const A = t.v[j], B = t.v[Math.min(j + 1, n - 1)];
+        if (i === undefined) {
+          if (Array.isArray(A)) return A.map((a, q) => a + (B[q] - a) * k);
+          return A + (B - A) * k;
+        }
+        return A[i] + (B[i] - A[i]) * k;
+      }
+      const inTr = (name, F) => F >= TRK[name].a && F <= TRK[name].a + TRK[name].v.length - 1;
+      function el(tag, css, parent, html) { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; }
+      const div = (css, p, html) => el("div", css, p, html);
+      const show = (e, on) => { e.style.display = on ? "block" : "none"; };
+      const blurf = (b) => (b > 0.05 ? `blur(${b.toFixed(2)}px)` : "none");
+      const stage = $("stage");
+      const PL = window.PLATES;
+      const img = (src, p, css) => { const e = el("img", css || "", p); e.src = src; return e; };
+      const placePlate = (e, k) => { const q = PL[k]; e.style.cssText += `;position:absolute;left:${q.x}px;top:${q.y}px;width:${q.w}px;height:${q.h}px`; };
+
+      // =====================================================================================
+      // MOLDE: swappable assets (data-composition-variables on <html>), read once.
+      // Defaults are the clone, and every swap is the identity at its default (the default
+      // takes the clone's own code path), so a render with the defaults is the clone frame for frame.
+      // =====================================================================================
+      const DECL = JSON.parse(document.documentElement.getAttribute("data-composition-variables"));
+      const DEF = Object.fromEntries(DECL.map((d) => [d.id, d.default]));
+      const HFV = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
+      const V = Object.assign({}, DEF, HFV);
+      V.frase_tecla = String(V.frase_tecla).replace(/[.\s]+$/, "");   // no final period: the period is the dot that becomes the logo
+      // brand font (kit de marca): the clone was measured in SF Pro, so the ORIGINAL texts are measured in SF Pro (SFP) and
+      // the new ones in the chosen font (FAM). Another font relays out every text ("not default"); at the defaults nothing moves
+      const FONTES = { sf: '"SF Pro"', archivo: '"Archivo"', inter: '"Inter"' }, SFP = FONTES.sf, FAM = FONTES[V.fonte] || SFP, FAMN = FAM.replace(/"/g, "");
+      if (FAM !== SFP) document.getElementById("root").style.fontFamily = `${FAM}, "Apple Color Emoji", sans-serif`;
+      // canvas text does not start an @font-face load, and fonts.check() says yes to a face that was never asked for: ask for
+      // the brand font now and lay out only once it is in (FONTE_OK; layout runs again when it arrives, see the end)
+      let FONTE_OK = FAM === SFP;
+      const FONTE = FONTE_OK ? null : document.fonts.load(`500 40px ${FAM}`).then(() => { FONTE_OK = true; });
+      const isDef = (...ks) => FAM === SFP && ks.every((k) => V[k] === DEF[k]);
+      const url = (v) => (v && typeof v === "object" ? v.url : v);   // image variables: "path" or {url}
+      const esc = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const ident = (x) => x;
+      // -- colour: hue rotation in OKLCH towards the new colour (same code as the Satellite molde). Lightness and
+      //    chroma keep their place in the measured palette; the reference colour (#d41ea2, top of the Send button)
+      //    lands exactly on the new one. Only the pinks/magentas turn (OKLCH hue 305-15 deg, full 320-5).
+      const hex = (x) => [0, 2, 4].map((i) => parseInt(x.slice(i, i + 2), 16));
+      const lin = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+      const gam = (c) => (c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055);
+      function toLch(c) {
+        const [r, g, b] = c.map((v) => lin(v / 255));
+        const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b), m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b), s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+        const A = 1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s, B = 0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s;
+        return [0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s, Math.hypot(A, B), (Math.atan2(B, A) * 180) / Math.PI];
+      }
+      function fromLch(L, C, h) { // linear sRGB, may be out of gamut
+        const A = C * Math.cos((h * Math.PI) / 180), B = C * Math.sin((h * Math.PI) / 180);
+        const l = (L + 0.3963377774 * A + 0.2158037573 * B) ** 3, m = (L - 0.1055613458 * A - 0.0638541728 * B) ** 3, s = (L - 0.0894841775 * A - 1.291485548 * B) ** 3;
+        return [4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s];
+      }
+      const outG = (x) => x.some((v) => v < -1e-4 || v > 1 + 1e-4);
+      function lchRgb(L, C, h) { // out of sRGB: lower the chroma until it fits (keeps lightness and hue)
+        let x = fromLch(L, C, h);
+        if (outG(x)) { let lo = 0, hi = C; for (let i = 0; i < 16; i++) { const md = (lo + hi) / 2; if (outG(fromLch(L, md, h))) hi = md; else lo = md; } x = fromLch(L, lo, h); }
+        return x.map((v) => Math.round(clamp(gam(clamp(v))) * 255));
+      }
+      function recolor(ref, to, band) {
+        const id = (c) => c; id.s = (s) => s;
+        if (ref.toLowerCase() === to.toLowerCase()) return id;
+        const A = toLch(hex(ref.slice(1))), B = toLch(hex(to.slice(1)));
+        const dh = ((B[2] - A[2] + 540) % 360) - 180, kc = B[1] / A[1], dl = B[0] - A[0], memo = new Map();
+        const f = (c) => {
+          const key = c.join(","); if (memo.has(key)) return memo.get(key);
+          const [L, C, h] = toLch(c);
+          const w = (band ? band((h + 360) % 360) : 1) * clamp((C - 0.005) / 0.015); // greys have no hue to turn
+          const o = w <= 0 ? c : lchRgb(L + w * Math.min(1, C / A[1]) * dl, C * (1 + w * (kc - 1)), h + w * dh);
+          memo.set(key, o); return o;
+        };
+        const h2 = (c) => "#" + c.map((v) => v.toString(16).padStart(2, "0")).join("");
+        f.s = (s) => s.replace(/#([0-9a-fA-F]{6})\b/g, (q, x) => h2(f(hex(x)))).replace(/rgb(a?)\((\d+),\s*(\d+),\s*(\d+)/g, (q, a, r, g, b) => `rgb${a}(${f([+r, +g, +b]).join(",")}`);
+        return f;
+      }
+      // measured pinks sit at OKLCH hue 331-356 deg; the blue/violet/red of the scene-3 box and text stay
+      const PINKS = (h) => { const x = (h - 300 + 360) % 360; return clamp(Math.min((x - 5) / 15, (75 - x) / 10)); };
+      const PK = recolor(DEF.cor_destaque, V.cor_destaque, PINKS);
+      // -- icons: the crops keep the clone's own markup; an emoji sits in a white app-icon tile
+      const CROPS = ["slack", "notion", "messages", "docs", "gmail", "figma", "cube"];
+      const isCrop = (v) => CROPS.includes(v);
+      function mojiTile(parent, ch, css, side, r) {
+        const t = div(`${css};border-radius:${r}px;background:linear-gradient(#ffffff,#e4e4ea);display:flex;align-items:center;justify-content:center;font:${(side * 0.62).toFixed(1)}px/1 'Apple Color Emoji';overflow:hidden`, parent);
+        t.textContent = ch; return t;
+      }
+      // -- photos: image variables; a new photo covers the measured plate rectangle (object-fit), the default is the plate itself
+      const SKY = url(V.foto_ceu), VINE = url(V.foto_vinhedo), NEWSKY = SKY !== DEF.foto_ceu, NEWVINE = VINE !== DEF.foto_vinhedo;
+
+      // =====================================================================================
+      // SCENES 1-2: world camera
+      // =====================================================================================
+      const S12 = div("", stage); S12.className = "full";
+      const bg = div("", S12); bg.className = "world";
+      const sky1 = img(SKY, bg); placePlate(sky1, "sky1");
+      // the sky strip under the vineyard is sky too: a new sky photo covers it as well
+      const sky2 = img(NEWSKY ? SKY : "assets/img/sky2.jpg", bg); placePlate(sky2, "sky2");
+      const vineWrap = div(`position:absolute;left:${PL.vine.x}px;top:${PL.vine.y}px;width:${PL.vine.w}px;overflow:hidden`, bg);
+      const vine = img(VINE, vineWrap, `position:absolute;left:0;top:0;width:${PL.vine.w}px;height:${PL.vine.h}px`);
+      if (NEWSKY) sky1.style.objectFit = sky2.style.objectFit = "cover";
+      if (NEWVINE) vine.style.objectFit = "cover";
+      // v2: f64-73 the vineyard shows through the clouds first: a second vineyard masked by the sky plate's cloudness (cloudmatte.py)
+      const cloudV = div(`position:absolute;left:${PL.sky1.x - PL.vine.x}px;top:${PL.sky1.y - PL.vine.y}px;width:${PL.sky1.w}px;height:${PL.sky1.h}px;-webkit-mask-image:url(assets/img/cloudmatte.png);mask-image:url(assets/img/cloudmatte.png);-webkit-mask-size:100% 100%;mask-size:100% 100%`, vineWrap);
+      const cloudVi = img(VINE, cloudV, `position:absolute;left:${PL.vine.x - PL.sky1.x}px;top:${PL.vine.y - PL.sky1.y}px;width:${PL.vine.w}px;height:${PL.vine.h}px`);
+      if (NEWVINE) cloudVi.style.objectFit = "cover";   // the cloud matte is cut from the default sky: a new sky skips it (plain crossfade)
+
+      // ---- dock (world units at rest, measured at f120): glass 515-1912 x 655-885, 7 slots 189.5 apart
+      const DOCK = { cx: 1217, cy: 770, gx0: 515, gx1: 1912, gy0: 655, gy1: 885, slot0: 648, step: 189.5 };
+      const ICONS = [1, 2, 3, 4, 5, 6, 7].map((i) => V["icone" + i]);   // default: slack notion messages docs gmail figma cube
+      function makeDock(parent) {
+        const d = div("position:absolute;left:0;top:0;width:1px;height:1px", parent);
+        const g = div(`left:${DOCK.gx0}px;top:${DOCK.gy0}px;width:${DOCK.gx1 - DOCK.gx0}px;height:${DOCK.gy1 - DOCK.gy0}px;border-radius:${(DOCK.gy1 - DOCK.gy0) / 2}px`, d); g.className = "glass";
+        ICONS.forEach((n, i) => {
+          const c = div(`left:${DOCK.slot0 + DOCK.step * i - 78.5}px;top:${DOCK.cy - 78.5}px`, d); c.className = "icon";
+          if (isCrop(n)) img(`assets/img/ic_${n}.png`, c);
+          else mojiTile(c, n, "position:absolute;inset:0", 157, 0);
+        });
+        return d;
+      }
+      const dock1 = makeDock(bg);
+      const dock2 = makeDock(bg);
+
+      const fog = div("", S12); fog.className = "full";
+      const dark = div("", S12); dark.className = "full";
+      const ui = div("", S12); ui.className = "world";
+
+      // ---- pill (world-fixed in scenes 1-2; geometry from f120, relative to the VO icon centre)
+      const pill = div("position:absolute;left:0;top:0;width:1px;height:1px", ui);
+      const pillGlass = div("left:-73px;top:-62.5px;width:372.5px;height:126px;border-radius:63px;background:rgba(255,255,255,0.14);border:2px solid rgba(255,255,255,0.55)", pill);
+      pillGlass.className = "glass";
+      const VO_SVG = '<svg viewBox="0 0 100 100" width="100%" height="100%"><path d="M14 33 L48 33 L31 62 Z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/><circle cx="68" cy="47" r="15" fill="#fff"/></svg>';
+      const pillIcon = div("position:absolute;left:-32.5px;top:-32.5px;width:65px;height:65px;border-radius:16px;background:linear-gradient(#2c2c2e,#060606);overflow:hidden", pill, VO_SVG);
+      const BAR_X = [93, 136, 179.5, 222.75];
+      const bars = BAR_X.map((x) => div(`position:absolute;left:${x - 17.25}px;top:0;width:34.5px;height:50px;border-radius:17.25px;background:#e9e9ea`, pill));
+
+      // ---- text: SVG <text> so x = origin and y = baseline; ink-left fitted with canvas metrics
+      const MC = document.createElement("canvas").getContext("2d");
+      function glyph(parent, txt, px, weight, fill, css) {
+        const d = div(`position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;${css || ""}`, parent);
+        d.innerHTML = `<svg width="1" height="1" style="overflow:visible;position:absolute;left:0;top:0"><text font-family="${FAMN}" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></svg>`;
+        const t = d.querySelector("text"); t.textContent = txt;
+        return { d, t, txt, px, weight };
+      }
+      // place so the INK box starts at x0 and the baseline sits at y (measured reference ink boxes)
+      function inkPlace(g, x0, base) {
+        MC.font = `${g.weight} ${g.px}px ${FAM}`;
+        const m = MC.measureText(g.txt);
+        g.ox = x0 + m.actualBoundingBoxLeft; g.base = base; g.w = m.actualBoundingBoxLeft + m.actualBoundingBoxRight;
+        g.t.setAttribute("x", g.ox); g.t.setAttribute("y", base);
+      }
+      // text 1 "ohhhh man": 192 px / 500 (h ink 134.5 world, calibrated 0.70 em), ink boxes at f58
+      const T1 = [["o", 759.5], ["h", 865.5], ["h", 967.5], ["h", 1070.5], ["h", 1173.5], ["m", 1331.5], ["a", 1483], ["n", 1584.5]];
+      const T1N = ["o", "h1", "h2", "h3", "h4", "m", "a", "n"];
+      const t1wrap = div("position:absolute;left:0;top:0;width:1px;height:1px", ui);
+      // molde: a new text keeps the letter-by-letter entry. The first half of the words borrows the measured letter
+      // tracks of "ohhhh", the rest those of "man", spread evenly over each word group (q.n = track, q.w = word recede)
+      const T1D = isDef("frase_ceu"), T1TXT = String(V.frase_ceu).trim().replace(/\s+/g, " ");
+      const t1L = [];
+      if (T1D) T1.forEach(([c], i) => t1L.push({ c, n: T1N[i], w: i < 5 ? "ohhhh" : "man" }));
+      else {
+        const words = T1TXT.split(" "), g0 = Math.ceil(words.length / 2), G = [[], []];
+        let at = 0;
+        words.forEach((wd, k) => { for (const c of wd) { G[k < g0 ? 0 : 1].push({ c, k, at }); at += c.length; } at += 1; });
+        G.forEach((L, gi) => {
+          const tn = gi ? ["m", "a", "n"] : ["o", "h1", "h2", "h3", "h4"];
+          L.forEach((q, j) => { q.n = tn[L.length > 1 ? Math.round((j * (tn.length - 1)) / (L.length - 1)) : 0]; q.w = gi ? "man" : "ohhhh"; t1L.push(q); });
+        });
+      }
+      const t1g = t1L.map((q) => glyph(t1wrap, q.c, 192, 500, "#fff"));
+      // text 2 "I got a lot work to do": 93 px / 500, ink boxes at f92, baseline -86
+      const T2 = [["I", 860.5], ["got", 894], ["a", 1032], ["lot", 1094.5], ["work", 1199], ["to", 1395.5], ["do", 1486]];
+      // molde: new words borrow the 7 measured word tracks spread evenly (first = "I", last = "do", which wipes in)
+      const T2D = isDef("frase_vinhedo"), T2W = String(V.frase_vinhedo).trim().split(/\s+/);
+      const t2W = T2D ? T2.map(([s, x]) => ({ s, n: s, x })) : T2W.map((s, j) => ({ s, n: T2[T2W.length > 1 ? Math.round((j * 6) / (T2W.length - 1)) : 0][0] }));
+      const t2g = t2W.map((q) => glyph(ui, q.s, 86, 500, "#fff"));   // 86: ink height fitted at f92 (93 was 8% big)
+      const t2ph = t2W.map((q) => (q.n === "lot" || q.n === "work" ? div("position:absolute;left:0;top:0;height:46px;border-radius:12px;background:rgba(215,215,215,0.55)", ui) : null));
+      // message window (world, rest rect measured at f234): 776..1662 x -52.4..254.5
+      const WIN = { x: 776, y: -52.4, w: 886, h: 307, r: 46 };
+      const win = div(`position:absolute;left:${WIN.x}px;top:${WIN.y}px;width:${WIN.w}px;height:${WIN.h}px`, ui);
+      const winBody = div(`position:absolute;inset:0;border-radius:${WIN.r}px;background:linear-gradient(170deg,#1d1f24,#191a1f);border:1.5px solid rgba(255,255,255,0.13);overflow:hidden`, win);
+      const winPurple = div("position:absolute;inset:0", winBody);
+      const winGlow = div(PK.s("position:absolute;left:0;top:0;height:84px;border-radius:42px;background:rgba(222,48,178,0.34);filter:blur(26px)"), winBody);
+      const WPC = PK([60, 19, 52]).join(",");   // purple tint of the unfolding window (follows cor_destaque)
+      const dotC = ["#ff5f57", "#febc2e", "#28c840"];
+      const dots = dotC.map((c, i) => div(`position:absolute;left:${817.7 - WIN.x - 11 + 31 * i}px;top:${-11.3 - WIN.y - 11}px;width:22px;height:22px;border-radius:11px;background:${c}`, win));
+      const avatar = div(`position:absolute;left:${833.6 - WIN.x}px;top:${31.2 - WIN.y}px;width:100px;height:98px;border-radius:16px;overflow:hidden;background:#e9e9ea`, win);
+      if (V.avatar === "recorte") img("assets/img/avatar.png", avatar, "position:absolute;left:-6px;top:-6px;width:122px;height:120px");
+      else { avatar.style.background = "linear-gradient(#e3e5ea,#babdc6)"; const m = div("position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:68px/1 'Apple Color Emoji'", avatar); m.textContent = V.avatar; }
+      const nameG = glyph(win, V.msg_nome, 29, 500, "#fff"); const timeG = glyph(win, V.msg_hora, 29, 400, "#8b8b90");
+      const msgW = glyph(win, V.msg_texto, 31.7, 500, "#fff");
+      const msgP = glyph(win, V.msg_texto, 31.7, 500, PK.s("#f06ad0"));
+      const caret = div(PK.s("position:absolute;left:0;top:0;width:7px;height:38px;border-radius:4px;background:#ff1fae;box-shadow:0 0 18px rgba(255,31,174,0.8)"), win);
+      const sendB = div(PK.s("position:absolute;left:0;top:0;width:133px;height:59px;border-radius:11px;background:linear-gradient(#d41ea2,#b3138a);box-shadow:0 0 26px rgba(230,30,170,0.55);transform-origin:50% 50%"), win);
+      const sendT = div("position:absolute;left:0;top:0;width:133px;height:59px;display:flex;align-items:center;justify-content:center;gap:9px;color:#fff;font:500 30px 'SF Pro'", sendB, esc(V.botao_enviar) + '<svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 3 L22 12 L3 21 L6.5 12 Z" fill="#fff"/></svg>');
+      // molde: world-x maps of the measured dictation keys and the Send morph (identity at the defaults, set in layout)
+      let mapMsg = ident, SENDK2 = null, HAND_DX = 0;
+      // cursors (world): macOS arrow (black fill, white rim) and pointing hand
+      const ARW = '<svg viewBox="0 0 24 34" width="100%" height="100%" style="overflow:visible"><path d="M2 1.5 L2 26 L8 20.5 L12 30.5 L16.2 28.7 L12.2 19 L20.5 19 Z" fill="#000" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/></svg>';
+      const arrow = div("position:absolute;left:0;top:0;width:62px;height:88px;transform-origin:5.2px 3.9px", ui, ARW);
+      const HAND = '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="#fff" d="M224,104v50.93c0,46.2-36.85,84.55-83,85.06A83.71,83.71,0,0,1,80.6,215.4C58.79,192.33,34.15,136,34.15,136a16,16,0,0,1,6.53-22.23c7.66-4,17.1-.84,21.4,6.62l21,36.44a6.09,6.09,0,0,0,6,3.09l.12,0A8.19,8.19,0,0,0,96,151.74V32a16,16,0,0,1,16.77-16c8.61.4,15.23,7.82,15.23,16.43V104a8,8,0,0,0,8.53,8,8.17,8.17,0,0,0,7.47-8.25V88a16,16,0,0,1,16.77-16c8.61.4,15.230,7.82,15.23,16.43V112a8,8,0,0,0,8.53,8,8.17,8.17,0,0,0,7.47-8.25v-7.28c0-8.61,6.62-16,15.23-16.43A16,16,0,0,1,224,104Z"/><path fill="#000" d="M196,88a27.86,27.86,0,0,0-13.35,3.39A28,28,0,0,0,144,74.7V44a28,28,0,0,0-56,0v80l-3.82-6.13A28,28,0,0,0,35.73,146l4.67,8.23C74.81,214.890,89.05,240,136,240a88.1,88.1,0,0,0,88-88V116A28,28,0,0,0,196,88Zm12,64a72.08,72.08,0,0,1-72,72c-37.63,0-47.84-18-81.68-77.68l-4.69-8.27,0-.05A12,12,0,0,1,54,121.61a11.88,11.88,0,0,1,6-1.6,12,12,0,0,1,10.410,6,1.76,1.76,0,0,0,.14.23l18.67,30A8,8,0,0,0,104,152V44a12,12,0,0,1,24,0v68a8,8,0,0,0,16,0V100a12,12,0,0,1,24,0v20a8,8,0,0,0,16,0v-4a12,12,0,0,1,24,0Z"/></svg>';
+      const hand = div("position:absolute;left:0;top:0;width:90px;height:90px;transform-origin:39.4px 5.6px", ui, HAND);   // ink ~66 world px wide (ref f222-234)
+      const pinkOv = div("position:absolute;inset:0", pillIcon);   // VO icon fills with pink from the bottom before the Slack swap
+      const PKO = PK([238, 165, 228]).join(",");
+      // the pill swaps to the app the cursor clicked: dock slot 1 (icone1)
+      const slackPill = isCrop(V.icone1) ? img(`assets/img/ic_${V.icone1}.png`, pill, "position:absolute;left:-32.5px;top:-32.5px;width:65px;height:65px;border-radius:15px;opacity:0")
+        : mojiTile(pill, V.icone1, "position:absolute;left:-32.5px;top:-32.5px;width:65px;height:65px;opacity:0", 65, 15);
+      // ---- molde text measures (canvas, SF Pro): always "new minus original", so the original never moves
+      const fm = (t, px, w, fam = FAM) => { MC.font = `${w} ${px}px ${fam}`; return MC.measureText(t); };
+      const inkW = (t, px, w, fam = FAM) => { const m = fm(t, px, w, fam); return m.actualBoundingBoxLeft + m.actualBoundingBoxRight; };
+      const adv = (t, px, w, fam = FAM) => fm(t, px, w, fam).width;
+      const fitPx = (px, w, max) => (w > max ? (px * max) / w : px);   // shrink the font only when the text does not fit
+      const setPx = (g, px) => { g.px = px; g.t.setAttribute("font-size", px); };
+      const lin1 = (x0, k) => (k === 1 ? ident : (x) => x0 + (x - x0) * k);
+      // a line of words laid out with real advances (kerning included), its ink centred on cx
+      function lineAt(gs, words, cx, base, px, w) {
+        const line = words.join(" "), m = fm(line, px, w), X = cx - (m.actualBoundingBoxRight - m.actualBoundingBoxLeft) / 2;
+        let at = 0;
+        return words.map((s, i) => { const o = X + adv(line.slice(0, at), px, w), q = fm(s, px, w); at += s.length + 1; if (gs) { setPx(gs[i], px); gs[i].t.setAttribute("x", o); gs[i].t.setAttribute("y", base); gs[i].ox = o; gs[i].w = q.actualBoundingBoxLeft + q.actualBoundingBoxRight; } return { o, l: o - q.actualBoundingBoxLeft, r: o + q.actualBoundingBoxRight }; });
+      }
+      let layoutDone = false;
+      function layout() {
+        if (T1D) T1.forEach(([c, x], i) => inkPlace(t1g[i], x, 91));
+        else { // ink centre of the measured "ohhhh man"; 2400 world px fit the screen through f3-74
+          const cx = (759.5 + 1584.5 + inkW("n", 192, 500, SFP)) / 2, px = fitPx(192, inkW(T1TXT, 192, 500), 2400);
+          const ws = T1TXT.split(" "), P = lineAt(null, ws, cx, 91, px, 500);
+          t1L.forEach((q, i) => { const o = P[0].o + adv(T1TXT.slice(0, q.at), px, 500), g = t1g[i]; setPx(g, px); g.t.setAttribute("x", o); g.t.setAttribute("y", 91); g.ox = o; q.cc = [(P[q.k].l + P[q.k].r) / 2, UI.t1rec.c58[q.w][1]]; });
+        }
+        if (T2D) T2.forEach(([w, x], i) => inkPlace(t2g[i], x, -86));
+        else { // ink centre of the measured line; 1800 world px stay on screen while the words are visible (f80-176)
+          const cx = (860.5 + 1486 + inkW("do", 86, 500, SFP)) / 2, px = fitPx(86, inkW(T2W.join(" "), 86, 500), 1800);
+          lineAt(t2g, T2W, cx, -86, px, 500).forEach((p, i) => (t2W[i].x = p.l));
+        }
+        inkPlace(nameG, 947 - WIN.x, 59 - WIN.y);
+        // the time keeps its gap after a new name (advance end of the name, new minus original)
+        const dn = isDef("msg_nome") ? 0 : adv(V.msg_nome, 29, 500) + fm(V.msg_nome, 29, 500).actualBoundingBoxLeft - adv(DEF.msg_nome, 29, 500, SFP) - fm(DEF.msg_nome, 29, 500, SFP).actualBoundingBoxLeft;
+        inkPlace(timeG, 999 - WIN.x + dn, 59 - WIN.y);
+        if (!isDef("msg_texto")) { // one line inside the window (ink 950..1620); the dictation keys stretch with the ink width
+          const px = fitPx(31.7, inkW(V.msg_texto, 31.7, 500), 670);
+          setPx(msgW, px); setPx(msgP, px);
+          mapMsg = lin1(950, inkW(V.msg_texto, px, 500) / inkW(DEF.msg_texto, 31.7, 500, SFP));
+        }
+        inkPlace(msgW, 950 - WIN.x, 106 - WIN.y); inkPlace(msgP, 950 - WIN.x, 106 - WIN.y);
+        if (!isDef("msg_texto", "botao_enviar")) { // the caret leaves from the new text end; a longer label widens the button to the left
+          const grow = Math.max(0, adv(V.botao_enviar, 30, 500) - adv(DEF.botao_enviar, 30, 500, SFP));
+          HAND_DX = -grow / 2;
+          SENDK2 = SENDK.map((k) => { const u = clamp((k[0] - 208) / 4); return [k[0], (1 - u) * mapMsg(k[1]) + u * (k[1] - grow / 2), k[2], k[3], k[4] + u * grow, k[5], k[6]]; });
+        }
+        layout345();
+        layoutDone = true;
+      }
+
+      // =====================================================================================
+      // SCENES 3-5 (tracks3.js). Scene 3 page world = reference f384 screen; scene 4 world = f551 screen;
+      // scene 5 (logo) in screen coordinates.
+      // =====================================================================================
+      const T3 = window.T3;
+      const t3 = (name, F, i) => {
+        const t = T3[name], n = t.v.length, x = clamp(F - t.a, 0, n - 1), j = Math.floor(x), k = x - j;
+        let A = t.v[j], B = t.v[Math.min(j + 1, n - 1)];
+        if (A == null) A = B; if (B == null) B = A; if (A == null) return null;
+        if (i === undefined) return Array.isArray(A) ? A.map((a, q) => a + ((B[q] == null ? a : B[q]) - a) * k) : A + (B - A) * k;
+        return A[i] + (B[i] - A[i]) * k;
+      };
+      const mixc = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+      const rgb = (c) => `rgb(${c[0]},${c[1]},${c[2]})`;
+      function ckf(F, keys) {   // colour keys [f, [r,g,b]]
+        if (F <= keys[0][0]) return keys[0][1];
+        for (let i = 1; i < keys.length; i++) if (F <= keys[i][0]) return mixc(keys[i - 1][1], keys[i][1], (F - keys[i - 1][0]) / (keys[i][0] - keys[i - 1][0]));
+        return keys[keys.length - 1][1];
+      }
+      // text in a big box so masks work in world units (the div spans bx..bx+bw)
+      function glyphBox(parent, txt, px, weight, fill, bx, by, bw, bh) {
+        const d = div(`position:absolute;left:${bx}px;top:${by}px;width:${bw}px;height:${bh}px`, parent);
+        d.innerHTML = `<svg width="${bw}" height="${bh}" style="overflow:visible;position:absolute;left:0;top:0"><g transform="translate(${-bx},${-by})"><text font-family="${FAMN}" font-size="${px}" font-weight="${weight}" fill="${fill}"></text></g></svg>`;
+        const t = d.querySelector("text"); t.textContent = txt;
+        return { d, t, txt, px, weight, bx, by };
+      }
+      // visible between world x a and b, soft edges sa / sb (typing fades the newest letters in)
+      function reveal(g, a, b, sa, sb) {
+        if (!(b > a)) { g.d.style.visibility = "hidden"; return; }
+        g.d.style.visibility = "visible";
+        const A = a - g.bx, B = b - g.bx;
+        const m = `linear-gradient(to right, transparent ${(A - sa).toFixed(1)}px, #000 ${A.toFixed(1)}px, #000 ${(B - sb).toFixed(1)}px, transparent ${B.toFixed(1)}px)`;
+        g.d.style.maskImage = m; g.d.style.webkitMaskImage = m;
+      }
+
+      // ---------------- scene 3
+      const S3 = div("background:#fff", stage); S3.className = "full";
+      const pinkC = el("canvas", "position:absolute;left:0;top:0;width:1920px;height:1080px", S3); pinkC.width = 3; pinkC.height = 24;
+      const pctx = pinkC.getContext("2d"); const pimg = pctx.createImageData(3, 24);
+      const page = div("", S3); page.className = "world";
+      const PG = (txt, px, w, fill) => glyphBox(page, txt, px, w, fill, 0, 0, 1700, 1200);
+      [329.4, 355.31, 381.22].forEach((x, i) => div(`position:absolute;left:${x - 9.25}px;top:${210.12 - 9.25}px;width:18.5px;height:18.5px;border-radius:50%;background:${dotC[i]}`, page));
+      div("position:absolute;left:322px;top:244px;width:14px;height:17px", page, '<svg viewBox="0 0 14 17" width="14" height="17"><path d="M3.5 8V5.5a3.5 3.5 0 0 1 7 0V8" fill="none" stroke="#97979b" stroke-width="2.2"/><rect x="0.5" y="7.5" width="13" height="9.5" rx="2.2" fill="#97979b"/></svg>');
+      const privG = PG(V.pagina_privado, 20.5, 500, "#97979b");
+      const titlePH = PG(V.pagina_vazia, 58.9, 600, "#c3c3c7");
+      const titleK = PG(V.pagina_titulo, 58.9, 600, "#18181a");
+      const titleP = PG(V.pagina_titulo, 58.9, 600, PK.s("rgb(90,18,70)"));
+      const tCaret = div(PK.s("position:absolute;left:0;top:0;width:3px;height:54px;border-radius:2px;background:#a3288a"), page);
+      const phBox = div("position:absolute;left:318px;top:371px;width:532px;height:49px;border-radius:8px;background:#f8f8f8", page);
+      const phCaret = div(PK.s("position:absolute;left:324px;top:382px;width:2.5px;height:29px;border-radius:1px;background:#c0389e"), page);
+      const phG = PG(V.pagina_dica, 29.3, 500, "#a0a0a4");
+      const LK = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((i) => "linha" + i), LINES = LK.map((k) => V[k]);   // the 13 body lines
+      const BASE = (k) => 544.1 + 51.1 * (k - 4);   // font sizes: ink widths fitted with the SFNS axes (fit_fonts in LOG)
+      const lineG = LINES.map((t) => PG(t, 29.5, 500, "#141416"));
+      const glow14 = div(PK.s("position:absolute;left:0;top:0;width:340px;height:200px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,70,205,0.2),rgba(255,70,205,0.06) 60%,rgba(255,70,205,0))"), page);
+      const stopG = PG(V.linha14_inicio, 29.5, 500, "#141416"), typG = PG(V.linha14_destaque, 29.5, 500, "#141416"), yourG = PG(V.linha14_fim, 29.5, 500, "#141416");
+      // molde: world-x maps of the measured page reveal keys (identity at the defaults, set in layout345)
+      let mapTitle = ident, mapLine = LK.map(() => ident), map14 = ident, mapBox = ident, X395 = 395, X470 = 470, X422 = 422, BOX_DC = 0, mapSay = ident, DOT_DX = 0;
+      const BOXA = [[476, PK([30, 30, 255])], [485, PK([255, 20, 40])]], BOXB = [[476, PK([176, 14, 255])], [485, PK([255, 6, 150])]], PKW = PK(T3.pink.P);
+      const box14 = div("position:absolute;left:0;top:0;border-radius:2px", page);
+      const hud = div("position:absolute;left:0;top:0;width:1px;height:1px", S3);
+      const hudBody = div("position:absolute;background:#0a0a0b;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.07)", hud);
+      // the black pill shows the app of dock slot 2 (icone2, Notion in the clone)
+      const hudIcon = V.icone2 === "notion" ? img("assets/img/notion_hud.png", hud, "position:absolute;width:41px;height:41px;border-radius:9px")
+        : isCrop(V.icone2) ? img(`assets/img/ic_${V.icone2}.png`, hud, "position:absolute;width:41px;height:41px;border-radius:9px") : mojiTile(hud, V.icone2, "position:absolute;width:41px;height:41px", 41, 9);
+      const hudBars = [0, 1, 2, 3].map(() => div("position:absolute;width:20px;background:#e3e3e4", hud));
+      const doneD = div("position:absolute;left:860px;top:718px;width:200px;text-align:center;color:#a2a2a5;font:500 27px 'SF Pro'", S3, esc(V.pilula_pronto));
+
+      // ---------------- scene 4 (fn key + "and start speaking.") and scene 5 (logo)
+      const S4 = div("background:#fff", stage); S4.className = "full";
+      const w4 = div("", S4); w4.className = "world";
+      const KEY = { cx: -196.4, cy: 525.2, s: 296, r: 64 };
+      const ring = div(`position:absolute;left:${KEY.cx}px;top:${KEY.cy}px;width:1px;height:1px;overflow:visible`, w4, `<svg width="1" height="1" style="overflow:visible;position:absolute;left:0;top:0"><path fill="none" stroke="${isDef("cor_anel") ? "rgb(192,227,251)" : V.cor_anel}" stroke-width="44" stroke-linejoin="round"/></svg>`);
+      const ringP = ring.querySelector("path");
+      const key = div(`position:absolute;left:${KEY.cx - KEY.s / 2}px;top:${KEY.cy - KEY.s / 2}px;width:${KEY.s}px;height:${KEY.s}px;border-radius:${KEY.r}px;overflow:hidden;background:#fff`, w4);
+      const keyCol = div("position:absolute;inset:0", key);
+      const keyWhite = div("position:absolute;background:#fff", key);
+      const keyEdge = div(`position:absolute;left:${KEY.cx - KEY.s / 2}px;top:${KEY.cy - KEY.s / 2}px;width:${KEY.s}px;height:${KEY.s}px;border-radius:${KEY.r}px;box-shadow:inset 0 0 0 2.5px rgba(206,211,220,1),0 8px 22px rgba(30,40,60,0.07)`, w4);
+      const fnG = glyphBox(w4, V.tecla, 156, 700, "#0b0b0c", -600, 200, 900, 600);
+      const sayK = glyphBox(w4, V.frase_tecla, 183, 500, "#141416", -400, 250, 2400, 500);
+      const sayB = glyphBox(w4, V.frase_tecla, 183, 500, "rgb(38,92,200)", -400, 250, 2400, 500);
+      const dot = div("position:absolute;left:0;top:0;border-radius:50%", S4);
+      const TRI = '<svg viewBox="-24 -22 48 44" width="48" height="44" style="overflow:visible"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#090909"/><stop offset="1" stop-color="#6e6e6e"/></linearGradient></defs><path d="M-19.5 -13.8 Q-22.5 -13.8 -21 -11.2 L-2.6 18.6 Q0 22.4 2.6 18.6 L21 -11.2 Q22.5 -13.8 19.5 -13.8 Z" fill="url(#tg)"/></svg>';
+      const tri = div("position:absolute;left:-24px;top:-22px;width:48px;height:44px;transform-origin:24px 22px", S4, TRI);
+      const capG = div("position:absolute;left:766.5px;top:584px;width:380px;text-align:center;color:#9b9b9e;font:500 12.5px 'SF Pro';white-space:nowrap", S4, esc(V.legenda_logo));
+      if (FAM !== SFP) [sendT, doneD, capG].forEach((e) => (e.style.fontFamily = FAM));
+      if (V.logo) { // brand logo (kit de marca) in the triangle's place: same flight next to the dot
+        tri.innerHTML = "";
+        img(V.logo, tri, "position:absolute;left:0;top:-2px;width:48px;height:48px;object-fit:cover;border-radius:50%");
+      }
+
+      function layout345() {
+        inkPlace(privG, 342, 259);
+        // page texts stay inside the page text box (glyph boxes end at world x 1700): ink at most 1350 px from x 315
+        if (!isDef("pagina_titulo")) {
+          const px = fitPx(58.9, inkW(V.pagina_titulo, 58.9, 600), 1350);
+          setPx(titleK, px); setPx(titleP, px);
+          mapTitle = lin1(321, inkW(V.pagina_titulo, px, 600) / inkW(DEF.pagina_titulo, 58.9, 600, SFP));
+        }
+        if (!isDef("pagina_vazia")) setPx(titlePH, fitPx(58.9, inkW(V.pagina_vazia, 58.9, 600), 1350));
+        [titlePH, titleK, titleP].forEach((g) => inkPlace(g, 321, 325.2));
+        if (!isDef("pagina_dica")) { // the grey box grows with the hint
+          const px = fitPx(29.3, inkW(V.pagina_dica, 29.3, 500), 1330);
+          setPx(phG, px); phBox.style.width = 532 + Math.max(0, inkW(V.pagina_dica, px, 500) - inkW(DEF.pagina_dica, 29.3, 500, SFP)) + "px";
+        }
+        inkPlace(phG, 334, 404);
+        // body: one size for every line; all shrink together only if the longest line does not fit
+        const D14 = isDef("linha14_inicio", "linha14_destaque", "linha14_fim"), L14 = [V.linha14_inicio, V.linha14_destaque, V.linha14_fim];
+        const pxB = isDef(...LK) && D14 ? 29.5 : fitPx(29.5, Math.max(...LINES.map((t) => inkW(t, 29.5, 500)), inkW(L14.join(" "), 29.5, 500)), 1350);
+        if (pxB !== 29.5) [...lineG, stopG, typG, yourG].forEach((g) => setPx(g, pxB));
+        lineG.forEach((g, i) => {
+          inkPlace(g, 315, BASE(i + 1));   // each line's measured typing head stretches with its ink width
+          if (!isDef(LK[i]) || pxB !== 29.5) mapLine[i] = lin1(315, inkW(LINES[i], pxB, 500) / inkW(DEF[LK[i]], 29.5, 500, SFP));
+        });
+        inkPlace(stopG, 315, BASE(14));
+        if (D14 && pxB === 29.5) {
+          MC.font = `500 29.5px "SF Pro"`;
+          const sp = MC.measureText("Stop ").width;
+          typG.t.setAttribute("x", stopG.ox + sp); typG.t.setAttribute("y", BASE(14));
+          inkPlace(yourG, 474, BASE(14));
+        } else { // line 14 = start + boxed word + end, real spaces. The measured box, erase keys, glow and zoom follow the boxed word
+          const [ao, bo, co] = [DEF.linha14_inicio, DEF.linha14_destaque, DEF.linha14_fim], [a, b, c] = L14;
+          const So = 315 + fm(ao, 29.5, 500, SFP).actualBoundingBoxLeft, To = So + adv(ao + " ", 29.5, 500, SFP), Yo = 474 + fm(co, 29.5, 500, SFP).actualBoundingBoxLeft;
+          const Tn = stopG.ox + adv(a + " ", pxB, 500), Yn = Yo + Tn + adv(b + " ", pxB, 500) - To - adv(bo + " ", 29.5, 500, SFP);
+          typG.t.setAttribute("x", Tn); typG.t.setAttribute("y", BASE(14)); yourG.t.setAttribute("x", Yn); yourG.t.setAttribute("y", BASE(14)); yourG.ox = Yn;
+          const geo = (S, T, Y, A, B, C, px, f) => ({ sR: S + fm(A, px, 500, f).actualBoundingBoxRight, tL: T - fm(B, px, 500, f).actualBoundingBoxLeft, tR: T + fm(B, px, 500, f).actualBoundingBoxRight, yR: Y + fm(C, px, 500, f).actualBoundingBoxRight });
+          const o = geo(So, To, Yo, ao, bo, co, 29.5, SFP), n = geo(stopG.ox, Tn, Yn, a, b, c, pxB, FAM);
+          X395 = 395 + n.sR - o.sR; X470 = 470 + n.tR - o.tR; BOX_DC = (n.tL + n.tR - o.tL - o.tR) / 2; X422 = 422 + BOX_DC;
+          mapBox = (x) => n.tL + ((x - o.tL) * (n.tR - n.tL)) / (o.tR - o.tL);
+          // typing head: piecewise linear through the end of the boxed word (where the erase stops) and the end of the line
+          map14 = (x) => (x <= 315 ? x : x <= o.tR ? 315 + ((x - 315) * (n.tR - 315)) / (o.tR - 315) : x <= o.yR ? n.tR + ((x - o.tR) * (n.yR - n.tR)) / (o.yR - o.tR) : n.yR + x - o.yR);
+        }
+        if (isDef("tecla")) inkPlace(fnG, -268.7, 572.7);
+        else { // same ink centre as "fn" in the key; at most 210 px wide
+          const mo = fm(DEF.tecla, 156, 700, SFP), cx = -268.7 + (mo.actualBoundingBoxLeft + mo.actualBoundingBoxRight) / 2, cy = 572.7 - (mo.actualBoundingBoxAscent - mo.actualBoundingBoxDescent) / 2;
+          const px = fitPx(156, inkW(V.tecla, 156, 700), 210), m = fm(V.tecla, px, 700);
+          setPx(fnG, px); inkPlace(fnG, cx - (m.actualBoundingBoxLeft + m.actualBoundingBoxRight) / 2, cy + (m.actualBoundingBoxAscent - m.actualBoundingBoxDescent) / 2);
+        }
+        if (!isDef("frase_tecla")) { // left edge stays at 44 (the key sits left of it); at most 1830 px so it fits the f551 frame
+          const px = fitPx(183, inkW(V.frase_tecla, 183, 500), 1830), wn = inkW(V.frase_tecla, px, 500), wo = inkW(DEF.frase_tecla, 183, 500, SFP);
+          setPx(sayK, px); setPx(sayB, px);
+          mapSay = lin1(44, wn / wo); DOT_DX = wn - wo;   // the period (dot) leaves from the new end of the line
+        }
+        inkPlace(sayK, 44, 596); inkPlace(sayB, 44, 596);
+        // centred labels: a longer text widens its box around the same centre
+        const widen = (e, cx, w0, font) => { MC.font = font; const w = MC.measureText(e.textContent).width + 12; if (w > w0) { e.style.left = cx - w / 2 + "px"; e.style.width = w + "px"; } };
+        if (!isDef("pilula_pronto")) widen(doneD, 960, 200, `500 27px ${FAM}`);
+        if (!isDef("legenda_logo")) widen(capG, 956.5, 380, `500 12.5px ${FAM}`);
+      }
+
+      function drawS3(F, Fi) {
+        // pink wash (measured alpha rows x 3 bands), drawn into a 3x24 canvas the browser upsamples
+        const pon = Fi <= 330; show(pinkC, pon);
+        if (pon) {
+          const P = PKW, v = t3("pink", F);
+          for (let i = 0; i < 72; i++) { const r = Math.floor(i / 3), b = i % 3, o = (r * 3 + b) * 4; pimg.data[o] = P[0]; pimg.data[o + 1] = P[1]; pimg.data[o + 2] = P[2]; pimg.data[o + 3] = Math.round(clamp(v[i]) * 255); }
+          pctx.putImageData(pimg, 0, 0);
+        }
+        const [s, tx, ty] = t3("cam3", F);
+        // a moved boxed word: the end zoom still lands its centre where the fn key appears (shift grows with the zoom)
+        const tx3 = BOX_DC ? tx - s * BOX_DC * clamp((s - 1) / 0.75) : tx;
+        page.style.transform = `matrix(${s},0,0,${s},${tx3},${ty})`;
+        page.style.opacity = kf(F, [[263, 0], [266, 0.6], [268, 1]], E.lin);
+        page.style.filter = blurf(kf(F, [[263, 14], [266, 10], [269, 6], [272, 3], [275, 1.5], [279, 0]], E.lin));
+        const R = t3("rev3", F);
+        // title: grey placeholder until typing starts; typed purple, turning black behind a wedge
+        show(titlePH.d, Fi < 305);
+        const head = mapTitle(R[0]), wedge = mapTitle(R[1]);
+        reveal(titleK, 300, Math.min(wedge, head + 2), 0, 26);
+        reveal(titleP, wedge - 26, head + 2, 26, 18);
+        const caretOn = Fi >= 305 && Fi < 372; show(tCaret, caretOn);
+        if (caretOn) tCaret.style.transform = `translate(${head + 5}px,${324 - 46}px)`;
+        // placeholder line f377-396
+        const phOn = Fi >= 377 && Fi <= 396;
+        show(phBox, phOn); show(phCaret, phOn); show(phG.d, phOn);
+        lineG.forEach((g, i) => reveal(g, 300, mapLine[i](R[2 + i]) + 1, 0, 28));
+        // line 14: "Stop typing your scripts." -> box replaces "typing", colours, erase, box grows into the fn key
+        const h14 = map14(R[15]);
+        const c14 = rgb(ckf(F, [[456, [20, 20, 22]], [461, [40, 30, 228]], [466, [100, 14, 236]], [470, [112, 8, 236]]]));
+        [stopG, typG, yourG].forEach((g) => g.t.setAttribute("fill", c14));
+        reveal(stopG, 300, Math.min(h14, kf(F, [[461, X395], [465, 314]], E.lin)) + 1, 0, 26);
+        reveal(typG, 300, Math.min(h14, X470) + 1, 0, 26);
+        reveal(yourG, X470, Fi >= 446 ? h14 + 1 : 0, 0, 26);
+        const bx = Fi >= 444 ? t3("box", F) : null; show(box14, !!bx);
+        if (bx) {
+          const b0 = mapBox(bx[0]), b2 = mapBox(bx[2]);
+          box14.style.left = b0 + "px"; box14.style.top = bx[1] + "px"; box14.style.width = b2 - b0 + "px"; box14.style.height = bx[3] - bx[1] + "px";
+          const A = rgb(ckf(F, BOXA)), B = rgb(ckf(F, BOXB));
+          box14.style.background = `linear-gradient(90deg, ${A}, ${B} 50%, ${A})`;
+        }
+        glow14.style.transform = `translate(${X422 - 170}px,${1047 - 100}px)`;
+        glow14.style.opacity = kf(F, [[450, 0], [458, 0.7], [476, 1], [486, 1]], E.lin);
+        // HUD pill (screen): measured box; contents scale with it
+        const h = Fi >= 275 && Fi <= 468 ? t3("hud", F) : null; show(hud, !!h);
+        if (h) {
+          // v2: the measured box is motion-smeared on the exit; the pill shrinks to a 74 px disc and travels
+          const [cx, cy] = h, w = Fi >= 440 ? cr(F, [[440, 197], [446, 186], [450, 112], [454, 78], [470, 74]]) : h[2], hh = Fi >= 440 ? kf(F, [[440, 71], [452, 74]], E.lin) : h[3], kx = w / 197, ky = hh / 71;
+          hudBody.style.cssText += `;left:${cx - w / 2}px;top:${cy - hh / 2}px;width:${w}px;height:${hh}px;border-radius:${Math.min(w, hh) / 2}px`;
+          const co = clamp((w - 120) / 60) * kf(F, [[448, 1], [452, 0]], E.lin);
+          hudIcon.style.left = cx - 54 * kx - 20.5 + "px"; hudIcon.style.top = cy + 2.5 * ky - 20.5 + "px"; hudIcon.style.opacity = co;
+          [-10.5, 12.5, 35.5, 58.5].forEach((x, i) => {
+            const bh = Math.max(12, h[4 + i] || 12), b = hudBars[i];
+            b.style.left = cx + x * kx - 10 + "px"; b.style.top = cy - bh / 2 + "px"; b.style.height = bh + "px"; b.style.borderRadius = Math.min(10, bh / 2) + "px"; b.style.opacity = co;
+          });
+          hud.style.filter = blurf(kf(F, [[275, 3], [278, 4], [281, 1.5], [284, 0], [446, 0], [450, 2], [456, 3]], E.lin));
+        }
+        doneD.style.opacity = kf(F, [[352, 0], [358, 1], [404, 1], [410, 0]], E.lin);
+        show(doneD, Fi >= 352 && Fi <= 410);
+      }
+
+      const KEYC = [[487, [255, 36, 150], [255, 90, 70], 0], [490, [255, 40, 110], [255, 160, 60], 0], [492, [255, 90, 46], [255, 240, 58], 0.05],
+        [494, [255, 122, 42], [245, 245, 58], 0.25], [496, [247, 168, 104], [214, 253, 63], 0.45], [498, [243, 203, 92], [174, 253, 99], 0.6],
+        [500, [246, 239, 112], [171, 253, 148], 0.72], [502, [242, 243, 155], [178, 252, 185], 0.8], [504, [230, 247, 198], [214, 253, 224], 0.88],
+        [506, [238, 248, 224], [236, 253, 243], 0.94], [508, [255, 255, 255], [255, 255, 255], 1]];
+      function ringPath(F, sc) {
+        const ph = F * 0.21, pts = [];
+        for (let i = 0; i < 64; i++) {
+          const a = (i / 64) * 2 * Math.PI, c = Math.cos(a), sn = Math.sin(a);
+          const sq = 1 / Math.pow(Math.pow(Math.abs(c), 4) + Math.pow(Math.abs(sn), 4), 0.25);
+          const r = 172 * sq * sc * (1 + 0.07 * Math.sin(3 * a + ph) + 0.05 * Math.sin(5 * a - 1.7 * ph) + 0.03 * Math.sin(8 * a + 2.3 * ph));
+          pts.push(`${(r * c).toFixed(1)},${(r * sn).toFixed(1)}`);
+        }
+        return "M" + pts.join("L") + "Z";
+      }
+      function drawS4(F, Fi) {
+        const [s, tx, ty] = t3("cam4", Math.min(F, 580));
+        w4.style.transform = `matrix(${s},0,0,${s},${tx},${ty})`;
+        show(w4, Fi <= 580);
+        // fn key: hue-rotating gradient fill that a white centre swallows, then a plain key
+        let k = KEYC.length - 1; while (k > 0 && KEYC[k - 1][0] >= F) k--;
+        const k0 = KEYC[Math.max(0, k - 1)], k1 = KEYC[k], u = k1[0] === k0[0] ? 1 : clamp((F - k0[0]) / (k1[0] - k0[0]));
+        const cA = mixc(k0[1], k1[1], u), cB = mixc(k0[2], k1[2], u), wv = k0[3] + (k1[3] - k0[3]) * u;
+        keyCol.style.background = `linear-gradient(160deg, ${rgb(cA)}, ${rgb(cB)})`;
+        const ins = Math.max(8, 148 * (1 - wv));
+        keyWhite.style.cssText += `;left:${ins}px;top:${ins}px;right:${ins}px;bottom:${ins}px;border-radius:${Math.max(20, 64 - ins * 0.3)}px;filter:blur(${(14 + 18 * (1 - wv)).toFixed(1)}px);opacity:${clamp(wv * 3)}`;
+        const kb = blurf(kf(F, [[487, 8], [490, 4], [493, 1], [495, 0]], E.lin));
+        key.style.filter = kb; fnG.d.style.filter = kb;
+        keyEdge.style.opacity = kf(F, [[500, 0], [506, 1]], E.lin);
+        const rs = kf(F, [[487, 0.95], [490, 1.3], [494, 1.75], [500, 2.25], [508, 2.65], [520, 3.0]], E.out2);
+        ringP.setAttribute("d", ringPath(F, rs)); ringP.setAttribute("stroke-width", (40 + 12 * rs).toFixed(1));
+        ring.style.opacity = kf(F, [[487, 0.35], [490, 0.8], [504, 0.7], [512, 0.35], [521, 0]], E.lin);
+        ring.style.filter = `blur(${(16 + 9 * rs).toFixed(1)}px)`;
+        show(ring, Fi <= 522);
+        // "and start speaking": streams in pale -> blue, turns black behind a wedge
+        const r4 = Fi >= 516 ? t3("rev4", Math.min(F, 576)).map(mapSay) : [0, -100];
+        const hd = r4[0], bk = r4[1];
+        // v2: blue darkens to black over ~160 px behind the wedge (navy in between), not a hard switch
+        reveal(sayB, Math.max(-200, bk - 40), hd + 4, 160, 95);
+        reveal(sayK, -200, Math.min(bk + 120, hd + 4), 0, 160);
+        const fade = kf(F, [[573, 1], [576, 0.75], [578, 0.25], [579.5, 0]], E.lin);
+        sayB.d.style.opacity = sayK.d.style.opacity = fade;
+        sayK.d.style.filter = blurf(kf(F, [[574, 0], [577, 4], [579, 10]], E.lin));
+        // period -> logo circle (screen track), triangle flies in, caption
+        const don = Fi >= 555; show(dot, don);
+        if (don) {
+          const p = t3("dot", Math.min(F, 600)), d = p[2];
+          const top = rgb(ckf(F, [[562, [38, 92, 200]], [568, [20, 20, 22]], [580, [10, 10, 10]]])), bot = rgb(ckf(F, [[566, [38, 92, 200]], [570, [20, 20, 22]], [578, [30, 30, 30]], [592, [124, 124, 124]]]));
+          const p0 = DOT_DX ? p[0] + DOT_DX * s * (1 - prog(F, 568, 600, E.sine)) : p[0];   // new line end, back on the measured flight by f600
+          dot.style.cssText += `;left:${p0 - d / 2}px;top:${p[1] - d / 2}px;width:${d}px;height:${d}px;background:linear-gradient(${top},${bot})`;
+        }
+        const ton = Fi >= 578; show(tri, ton);
+        if (ton) {
+          const q = Fi >= 600 ? [kf(F, [[600, 933.3], [606, 932.5]], E.out), kf(F, [[600, 531.9], [606, 533.8]], E.out)] : t3("tri", F);
+          const ang = cr(F, [[578, 270], [584, 180], [587, 90], [590, 0], [600, 0]]);
+          tri.style.transform = `translate(${q[0]}px,${q[1] + 1.5}px) rotate(${ang}deg)`;
+          tri.style.opacity = kf(F, [[577.5, 0], [579, 1]], E.lin);
+        }
+        capG.style.opacity = kf(F, [[588, 0], [598, 1]], E.lin);
+        capG.style.filter = blurf(kf(F, [[588, 6], [598, 0]], E.lin));
+        capG.style.transform = `translateX(${kf(F, [[588, 30], [598, 0]], E.out)}px)`;
+        show(capG, Fi >= 588);
+      }
+
+      // =====================================================================================
+      function camAt(F) { return tr("cam", clamp(F, 0, 262)); }
+
+      function drawS12(F, Fi) {
+        const [s, tx, ty, vsig] = camAt(F);
+        const M = `matrix(${s},0,0,${s},${tx},${ty})`;
+        bg.style.transform = M; ui.style.transform = M;
+        // -- sky 1: defocus pull (measured), crossfade under the vineyard f64-74
+        const xf = F < 63 ? 0 : F >= 74 ? 1 : tr("xf", F);
+        show(sky1, Fi < 75);
+        let sb = F < 61 ? tr("skyblur", clamp(F, 6, 60)) : kf(F, [[61, 1.2], [64, 2], [68, 4], [69, 12], [70, 24]], E.lin);
+        sky1.style.filter = blurf(sb / s);
+        // -- vineyard + its bottom edge (sky strip rises under it)
+        const von = Fi >= 64; show(vineWrap, von); show(sky2, Fi >= 64);
+        vine.style.opacity = xf;
+        const cm = kf(F, [[64, 0], [65, 0.07], [66, 0.15], [67, 0.2], [68, 0.24], [69, 0.3], [70, 0.39], [71, 0.59], [72.5, 0.6], [73.5, 0]], E.lin);
+        show(cloudV, !NEWSKY && Fi >= 64 && Fi <= 73); cloudV.style.opacity = cm;
+        const edge = F >= 72 ? tr("edge", F) : cr(F, [[64, 2600], [66, 2000], [68, 1500], [70, 1180], [72, 926]]);
+        vineWrap.style.height = Math.max(0, edge - PL.vine.y) + "px";
+        const vb = F < 74 ? 8 : vsig;
+        vine.style.filter = blurf(vb / s);
+        cloudVi.style.filter = vine.style.filter;
+        sky2.style.opacity = xf; sky2.style.filter = blurf((F < 74 ? 8 : vsig) / s);
+        // -- docks
+        const d1top = cr(F, [[17, 1300], [18, 1224], [20, 1168], [22, 1123], [24, 1086], [26, 1058], [28, 1037], [30, 1021], [32, 1007], [34, 995], [36, 983], [38, 976], [40, 968], [42, 963], [44, 960], [46, 956], [48, 951], [50, 949], [52, 947], [56, 945], [60, 944]]);
+        const s1 = 0.8277, c1x = 1208.5, c1y = d1top + 78.5 * s1;
+        dock1.style.transform = `translate(${c1x - DOCK.cx * s1}px,${c1y - DOCK.cy * s1}px) scale(${s1})`;
+        dock1.style.transformOrigin = "0 0";
+        dock1.style.opacity = 1 - xf; show(dock1, Fi >= 17 && Fi < 75);
+        const d2top = cr(F, [[62, 1260], [66, 1088], [70, 930], [74, 806], [76, 785], [80, 770], [84, 757], [88, 737], [92, 723], [96, 713], [100, 708], [104, 703], [110, 698.6], [114, 697.3], [120, 697]]);
+        const d2s = cr(F, [[62, 1.3], [66, 1.25], [70, 1.18], [74, 1.114], [76, 1.068], [78, 1.047], [80, 1.035], [84, 1.023], [88, 1.0115], [92, 1.0034], [96, 1.0], [120, 1.0]]);
+        const c2y = d2top + 78.5 * d2s;
+        dock2.style.transformOrigin = "0 0";
+        dock2.style.transform = `translate(${DOCK.cx - DOCK.cx * d2s}px,${c2y - DOCK.cy * d2s}px) scale(${d2s})`;
+        show(dock2, Fi >= 62);
+        dock2.style.filter = blurf((F < 74 ? 8 : vsig) / s);
+        // -- fog (scene-1 reveal): measured radial alpha profile per frame
+        show(fog, Fi <= 40);
+        if (Fi <= 40) {
+          const T = TRK.fog, j = clamp(F, 0, 40), p0 = T.v[Math.floor(j)], p1 = T.v[Math.min(40, Math.floor(j) + 1)], k = j - Math.floor(j);
+          const st = [];
+          for (let b = 0; b < T.bins.length - 1; b++) {
+            let a0 = p0[b] == null ? (b === 0 ? p0[1] : null) : p0[b], a1 = p1[b] == null ? (b === 0 ? p1[1] : null) : p1[b];
+            if (a0 == null || a1 == null) continue;
+            const a = clamp(lerp(a0, a1, k));
+            st.push(`rgba(255,255,255,${a.toFixed(3)}) ${(((T.bins[b] + T.bins[b + 1]) / 2) * 100).toFixed(1)}%`);
+          }
+          fog.style.background = `radial-gradient(ellipse ${T.rx}px ${T.ry}px at ${T.cx}px ${T.cy}px, ${st.join(",")})`;
+        }
+        // -- screen-space darkening over the scene-2 background (measured horizontal profile)
+        show(dark, Fi >= 130 && Fi <= 262);
+        if (Fi >= 130) {
+          const g = tr("dark", clamp(F, 100, 262));
+          dark.style.background = `linear-gradient(to right, ${g.map((v, i) => `rgba(0,0,0,${(1 - v).toFixed(3)}) ${(((i + 0.5) / 24) * 100).toFixed(2)}%`).join(",")})`;
+        }
+        // -- pill (world): entrance from below f13-18, then measured track
+        const pc = F >= 18 ? tr("pill", F) : [1092.4 + (F - 18) * 0.5, cr(F, [[12, 520], [13, 480], [14, 455], [15, 410], [16, 360], [17, 333], [18, 318.6]])];
+        pill.style.transform = `translate(${pc[0]}px,${pc[1]}px)`;
+        show(pill, Fi >= 13);
+        pill.style.opacity = kf(F, [[13, 0], [16, 1]], E.lin);
+        pill.style.filter = blurf(kf(F, [[13, 14], [16, 8], [18, 3], [19.5, 0]], E.lin) / s);
+        const bh = tr("bars", clamp(F, 18, 262));
+        bars.forEach((b, i) => { const h = Math.max(34.5, bh[i]); b.style.height = h + "px"; b.style.top = -h / 2 + "px"; });
+        // pill icon: VO -> Slack (the dictation target) f180-186
+        const sw = kf(F, [[184, 0], [190, 1]], E.sine);
+        const ph = kf(F, [[170, 0], [176, 25], [180, 45], [183, 85], [186, 140]], E.lin);
+        pinkOv.style.background = ph <= 0 ? "none" : `linear-gradient(to top, rgba(${PKO},0.95) 0%, rgba(${PKO},0.55) ${(ph * 0.6).toFixed(1)}%, rgba(${PKO},0) ${ph.toFixed(1)}%)`;
+        slackPill.style.opacity = sw; pillIcon.style.opacity = 1 - sw;
+        drawText1(F, Fi, s); drawText2(F, Fi, s); drawWindow(F, Fi, s); drawCursors(F, Fi, s);
+        // end of scene 2: UI defocuses with the plate
+        ui.style.filter = Fi >= 254 ? blurf(vsig) : "none";
+      }
+
+      const UI = window.UI;
+      function urow(arr, a, F) {   // sample a frame-indexed array of rows starting at frame a
+        const x = clamp(F - a, 0, arr.length - 1), j = Math.floor(x), k = x - j, A = arr[j], B = arr[Math.min(j + 1, arr.length - 1)];
+        return A.map((v, i) => v + (B[i] - v) * k);
+      }
+      function drawText1(F, Fi, s) {
+        const on = Fi >= 3 && Fi <= 74; show(t1wrap, on); if (!on) return;
+        // recede through the sky->vineyard transition: each word scales about its own centre (screen-measured)
+        t1L.forEach((q, i) => {
+          const r = urow(UI.t1[q.n], 0, F);
+          const g = t1g[i];
+          let tx = r[0], ty = r[1], sc = 1, op = r[3], bl = r[2];
+          if (F > 58) {
+            const w = q.w, R = urow(UI.t1rec.v[w], 58, F), c0 = UI.t1rec.c58[w];
+            sc = R[2]; tx = R[0] - c0[0]; ty = R[1] - c0[1];
+            const [cx, cy] = q.cc || c0;   // a new word scales about its own centre, moved like the measured word
+            g.d.style.transformOrigin = `${cx}px ${cy}px`;
+            op *= kf(F, [[71, 1], [73.3, 0.8], [74.3, 0]], E.lin); bl = kf(F, [[67, 0], [69, 3 / s], [71, 8 / s]], E.lin);
+          }
+          g.d.style.transform = `translate(${tx}px,${ty}px) scale(${sc})`;
+          g.d.style.opacity = op; g.d.style.filter = blurf(bl);
+          const c = Math.round(r[4]); g.t.setAttribute("fill", `rgb(${c},${c},${c})`);
+        });
+      }
+      function drawText2(F, Fi, s) {
+        const on = Fi >= 70 && Fi <= 176;
+        t2g.forEach((g) => show(g.d, on)); t2ph.forEach((p) => p && show(p, on && Fi <= 80)); if (!on) return;
+        t2W.forEach((q, i) => {
+          const w = q.n, x0 = q.x, r = urow(UI.t2.v[w], 70, F), g = t2g[i];
+          g.d.style.transform = `translate(${r[0]}px,${r[1]}px)`; g.d.style.opacity = r[3]; g.d.style.filter = blurf(r[2]);
+          // "do" reveals left to right (the d first)
+          g.d.style.clipPath = r[5] >= 0.999 ? "none" : `polygon(${x0 - 40}px -400px, ${(x0 + r[5] * (g.w + 4)).toFixed(1)}px -400px, ${(x0 + r[5] * (g.w + 4)).toFixed(1)}px 200px, ${x0 - 40}px 200px)`;
+          if (t2ph[i]) {
+            const p = t2ph[i];
+            p.style.left = x0 - 6 + "px"; p.style.top = -86 - 52 + "px"; p.style.width = g.w + 12 + "px";
+            p.style.opacity = r[4]; p.style.filter = blurf(kf(F, [[74, 10], [76, 3], [78, 2]], E.lin));
+          }
+        });
+      }
+      const HEAD = [[150, 934], [152, 950], [154, 955], [158, 970], [160, 988], [162, 1019], [164, 1058], [166, 1110], [168, 1161], [170, 1208], [172, 1248], [174, 1280], [176, 1308], [178, 1328], [180, 1348], [182, 1364], [184, 1378], [186, 1390], [188, 1400], [190, 1410], [192, 1418], [194, 1422], [196, 1427], [198, 1432], [200, 1435], [203, 1447]];
+      const WEDGE = [[150, 950], [168, 951], [170, 964], [172, 1008], [174, 1026], [176, 1030], [178, 1046], [180, 1060], [182, 1086], [184, 1184], [186, 1232], [188, 1298], [190, 1300], [192, 1320], [194, 1410], [198, 1440]];
+      // caret -> Send button morph (world centre x, y, w, h, angle, radius), keyed on the stabilized sheet
+      // v2: (thickness, length, clockwise tilt of the long axis from vertical), from image moments of the pink shape
+      const SENDK = [[204, 1446, 93, 7, 43, 5, 3.5], [206, 1453, 97, 8, 45, 8, 4], [208, 1463, 103, 17, 55, 15, 8], [210, 1499, 97, 29, 127, 41, 14], [212, 1527, 140, 48, 133, 65, 20], [214, 1545, 187, 55, 134, 89, 16], [216, 1546, 189, 59, 134, 90, 12], [218, 1544.5, 189, 59, 133, 90, 11]];
+      function drawWindow(F, Fi, s) {
+        const on = Fi >= 136 && Fi <= 262; show(win, on); if (!on) return;
+        // v2: the window unfolds upward from a fixed bottom edge (purple bbox f139-145), then the lights track
+        const dy = F < 141 ? kf(F, [[136, 190], [139, 129], [140, 87], [141, 68]], E.lin) : urow(UI.win.v, 135, F)[0];
+        win.style.transform = `translate(0px,${dy}px)`;
+        winBody.style.bottom = Math.max(0, dy) + "px";
+        win.style.opacity = kf(F, [[137, 0], [139, 0.75], [141, 1]], E.lin);
+        win.style.filter = blurf(kf(F, [[136, 24], [138, 12], [140, 6], [142, 4], [144, 3], [146, 2], [148, 1], [150, 0]], E.lin));
+        // purple tint (60,19,52) recedes bottom -> top, slightly left first (sampled at 7 world points f138-166)
+        const pe = kf(F, [[143, -0.1], [146, 0.2], [148.5, 0.34], [151, 0.5], [155, 0.7], [160, 0.88], [166, 1.2]], E.lin);
+        winPurple.style.background = `linear-gradient(10deg, rgba(${WPC},0) ${((pe - 0.15) * 100).toFixed(1)}%, rgb(${WPC}) ${((pe + 0.15) * 100).toFixed(1)}%)`;
+        show(winPurple, Fi < 168);
+        const cin = kf(F, [[141, 0], [144, 0.45], [148, 0.85], [151, 1]], E.lin);
+        dots.forEach((d) => (d.style.opacity = kf(F, [[137, 0], [140, 1]], E.lin))); avatar.style.opacity = cin; nameG.d.style.opacity = cin; timeG.d.style.opacity = cin;
+        avatar.style.filter = nameG.d.style.filter = timeG.d.style.filter = blurf(kf(F, [[141, 6], [146, 3], [150, 1], [152, 0]], E.lin));
+        // the content row jitters inside the window while it is dictated (measured, avtrack.py)
+        const cy = urow(UI.wcont.v, 146, F)[0], CT = `translate(0px,${cy}px)`;
+        avatar.style.transform = nameG.d.style.transform = timeG.d.style.transform = msgW.d.style.transform = msgP.d.style.transform = CT;
+        // dictation: white up to WEDGE, pink from WEDGE to HEAD, caret at HEAD
+        const head = Fi < 150 ? 0 : mapMsg(cr(F, HEAD)), wedge = mapMsg(cr(F, WEDGE));
+        const L0 = 950 - WIN.x;
+        const hx = head - WIN.x, wx = Math.min(wedge, head) - WIN.x;
+        msgW.d.style.clipPath = `polygon(${L0 - 30}px -50px, ${wx}px -50px, ${wx}px 400px, ${L0 - 30}px 400px)`;
+        msgP.d.style.clipPath = `polygon(${wx}px -50px, ${hx}px -50px, ${hx}px 400px, ${wx}px 400px)`;
+        show(msgW.d, Fi >= 152); show(msgP.d, Fi >= 152 && Fi < 200);
+        // pink haze under the pink (just dictated) segment, a little below the baseline (ref f172-194)
+        winGlow.style.transform = `translate(${wx - 14}px,${106 - WIN.y - 34 + cy}px)`; winGlow.style.width = Math.max(0, hx - wx + 28) + "px";
+        winGlow.style.opacity = Fi >= 152 ? kf(F, [[152, 0], [158, 1], [190, 1], [200, 0.3], [210, 0]], E.lin) : 0;
+        // caret then Send button
+        const caretOn = Fi >= 151 && Fi < 204;
+        show(caret, caretOn);
+        if (caretOn) { caret.style.transform = `translate(${hx + 4}px,${106 - WIN.y - 33 + cy}px)`; caret.style.opacity = kf(F, [[151, 0], [152.5, 1]], E.lin); }
+        const bon = Fi >= 204; show(sendB, bon);
+        if (bon) {
+          const v = (i) => cr(F, (SENDK2 || SENDK).map((k) => [k[0], k[i]]));
+          const cx = v(1), cy = v(2), rot = v(5), rad = v(6), lie = rot >= 80;   // lying: draw it wide so the label stays upright
+          const w = lie ? v(4) : v(3), h = lie ? v(3) : v(4), a = lie ? rot - 90 : rot;
+          sendB.style.width = w + "px"; sendB.style.height = h + "px"; sendB.style.borderRadius = rad + "px";
+          sendB.style.transform = `translate(${cx - WIN.x - w / 2}px,${cy - WIN.y - h / 2}px) rotate(${a}deg)`;
+          sendB.style.filter = blurf(kf(F, [[208, 0], [210, 2], [213, 4], [215, 2], [217, 0]], E.lin));
+          sendT.style.opacity = kf(F, [[214, 0], [217, 1]], E.lin);
+          sendT.style.width = w + "px"; sendT.style.height = h + "px";
+          // press when the hand clicks (f224-232)
+          const pr = kf(F, [[223, 1], [226, 0.93], [230, 0.97], [233, 1]], E.sine);
+          sendB.style.transform += ` scale(${pr})`;
+        }
+      }
+      function drawCursors(F, Fi, s) {
+        const aon = Fi >= 82 && Fi <= 140; show(arrow, aon);
+        if (aon) {
+          const r = urow(UI.arrow.v, 82, F);
+          const sc = r[3] * kf(F, [[114, 1], [118, 0.9], [121, 1]], E.sine);
+          arrow.style.transform = `translate(${r[0] - 5.2}px,${r[1] - 3.9}px) rotate(${r[2] - 360}deg) scale(${sc})`;
+        }
+        const hon = Fi >= 188; show(hand, hon);
+        if (hon) {
+          const r = urow(UI.hand.v, 188, F);
+          const sc = kf(F, [[223, 1], [226, 0.86], [230, 0.95], [233, 1]], E.sine);
+          hand.style.transform = `translate(${r[0] - 39.4 + HAND_DX}px,${r[1] - 5.6}px) scale(${sc})`;
+        }
+        // Slack icon in the dock squishes on the click
+      }
+
+      function draw(t) {
+        const Fi = Math.min(NF - 1, Math.floor(t * FPS + 1e-4));
+        const frac = t * FPS - Fi, shift = (window.MB_SHIFT || 0) * FPS;
+        const F = Fi + (frac - shift) * SHUTTER;
+        if (!layoutDone && FONTE_OK && document.fonts.check(`500 40px ${SFP}`)) layout();
+        const s12 = Fi <= 262, s3 = Fi >= 263 && Fi <= 486, s4 = Fi >= 487;
+        show(S12, s12); show(S3, s3); show(S4, s4);
+        if (s12) drawS12(F, Fi);
+        if (s3) drawS3(F, Fi);
+        if (s4) drawS4(F, Fi);
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      document.fonts.ready.then(() => { if (FONTE_OK) { layout(); draw(P.t); } });
+      if (FONTE) FONTE.then(() => { layout(); draw(P.t); });
+      draw(0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

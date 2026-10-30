@@ -1,0 +1,26 @@
+{
+  "versao": "satellite-v3",
+  "travado_em": "2026-10-30T04:19:26-0300",
+  "impressao_digital": {
+    "AGENTS.md": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+    "CLAUDE.md": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+    "earth.js": "2c160a2cac6db7ccd874eb52d0f684be39cea8b236baa53319d0ff8ec734dd60",
+    "field.js": "9d2100bb43772e5a1d6c366468ea09f67c3751afb0f983749b415adb96602838",
+    "hyperframes.json": "00af8bd78f339c12f3df9e7644f47cdfef6d5ff8b192d3a50b4b2558c1ac358c",
+    "hyperframes.lock.json": "6f9cbc302666a424f75be9eac0340e2f85e6608e93943be20518f738be528106",
+    "index.html": "693e6e27bd581f72cc292a9a12d4d56b68daaf8cf135f2b2b96553361748d1c2",
+    "mb.js": "a1ba40e2de19406d59c2d9cba5835e7ce9b69a95ea14e63108fe45c7e9b5d5ae",
+    "meta.json": "052beff24e75c74febfc39d6e9df1f7a4cf20f486cb9a21b50f79245bed0df70",
+    "package.json": "7fe7bb46a9e73c98b45d67be2e1138d3cc61a879157764ab1c0df386df7f353a",
+    "ritmo.js": "002de255a3deabc2c55dfef6ba82910e29f9587a22db7a93bf41e43969ba77e7",
+    "sons.json": "31779a29c16fd3aa04541deb82eb3f506d3f04c318c900fdad4d00de515f2cf7",
+    "tracks.js": "b3d24090d9959b3710abac2a483ba4757cc41e0c3e5ec7ad2f1d23bef2dcd65a",
+    "assets/logo-exemplo.png": "9fcf0cc078d958c969d9934f026df20e91f24955a5f90eadbb4221277a91013c",
+    "assets/silencio.m4a": "b8834275925eed0ec9b0b24217fba7ec547ed324031b350c7611fab21f3a8435",
+    "assets/fonts/Archivo.ttf": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "assets/fonts/Inter.ttf": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "compositions/world-map.html": "a4eb55dec5dffa20c4d172eac0824db0d7d084c6c7652634119a7f360971944e",
+    "compositions/components/number-wheel.html": "04e3b1d13a044f9e8ad88b701b27315fc69eded6e951ab99b046ab760dc91110",
+    "compositions/components/oversized-cursor.html": "1562eb4a3ce01384461feb016bd30ab7c816e17e3ebbc33da06491c628b9f4d1"
+  }
+}

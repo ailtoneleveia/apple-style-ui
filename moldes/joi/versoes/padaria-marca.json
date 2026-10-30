@@ -1,0 +1,15 @@
+{
+  "molde": "joi",
+  "marca": "padaria-exemplo",
+  "item1": "Separar a massa",
+  "item2": "Ligar o forno",
+  "item3": "Assar o pão",
+  "item4": "Abrir a loja",
+  "botao1": "Feito",
+  "botao2": "Editar",
+  "botao3": "Tirar",
+  "frase": "Peça pelo app",
+  "cartao_titulo": "Pão quente",
+  "cartao_botao": "Pedir",
+  "sons": "suave"
+}

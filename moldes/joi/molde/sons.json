@@ -1,0 +1,23 @@
+{
+ "nota": "Mapa evento -> som do Joi. quadro = pico do movimento no clone (60 fps, pode ter fração), tirado das trilhas medidas (tracks.js) e das chaves do index.html, conferido numa folha de quadros. nivel suave = toca no suave e no marcado; marcado = só no marcado. O Joi não tem mola firme, então nenhum evento leva mola. Os eventos grandes caem nas colcheias da trilha original: o montador baixa 6 dB do efeito que cai em cima de um golpe da música. O montar.py lê este arquivo; o som de cada tipo está em ../sons/sons.json.",
+ "eventos": [
+  {"quadro": 8, "tipo": "aparecer", "evento": "ícone entra", "nivel": "suave"},
+  {"quadro": 22, "tipo": "numero", "evento": "dígitos rolam no ícone", "nivel": "marcado"},
+  {"quadro": 82, "tipo": "morph", "evento": "ícone gira de lado e vira a pílula", "nivel": "suave"},
+  {"quadro": 100, "tipo": "tocar", "evento": "o + gira e vira x", "nivel": "marcado"},
+  {"quadro": 141, "tipo": "aparecer", "evento": "item 1 entra", "nivel": "suave"},
+  {"quadro": 147, "tipo": "aparecer", "evento": "itens 2 e 3 entram", "nivel": "marcado"},
+  {"quadro": 160, "tipo": "aparecer", "evento": "item 4 entra (do cinza ao preto)", "nivel": "suave"},
+  {"quadro": 198, "tipo": "entrar", "evento": "a lista sai e o menu escuro se forma", "nivel": "suave"},
+  {"quadro": 216, "tipo": "aparecer", "evento": "botões e objetos do menu aparecem", "nivel": "suave"},
+  {"quadro": 247, "tipo": "sair", "evento": "objetos do menu somem", "nivel": "marcado"},
+  {"quadro": 260, "tipo": "clicar", "evento": "cursor clica no item (o risco começa)", "nivel": "suave"},
+  {"quadro": 276, "tipo": "sair", "evento": "menu sai", "nivel": "suave"},
+  {"quadro": 285, "tipo": "aparecer", "evento": "frase cai palavra a palavra", "nivel": "suave"},
+  {"quadro": 318, "tipo": "brilho", "evento": "estrela voa para o cartão", "nivel": "marcado"},
+  {"quadro": 326, "tipo": "morph", "evento": "frase vira o cartão", "nivel": "suave"},
+  {"quadro": 346, "tipo": "aparecer", "evento": "título e botão do cartão entram", "nivel": "suave"},
+  {"quadro": 354, "tipo": "entrar", "evento": "corte para perto do cartão", "nivel": "suave"},
+  {"quadro": 380, "tipo": "sucesso", "evento": "cartão assenta", "nivel": "suave"}
+ ]
+}

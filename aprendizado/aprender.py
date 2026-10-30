@@ -6,10 +6,12 @@
     python3 aprender.py travar [--quem <nome>]   # o ok humano na REVISAO.md: vira a versão nova do perfil
     python3 aprender.py perfil                   # o perfil de estilo em vigor (só leitura: nunca aprova nada)
     python3 aprender.py lista                    # o registro: o último estado de cada vídeo
+    python3 aprender.py decisoes --projeto <pasta>   # as decisões de um vídeo, das antigas para as novas
 
 Duas memórias:
-  - no projeto, <projeto>/.apple-style-ui/decisoes.json: cada decisão sobre aquele vídeo (aprovado, pendente,
-    quarentena ou reprovado) com o motivo;
+  - no projeto, <projeto>/.apple-style-ui/decisoes.jsonl: cada decisão sobre aquele vídeo (aprovado, pendente,
+    quarentena ou reprovado) com o motivo, uma por linha; o arquivo só cresce. O decisoes.json do formato antigo (uma
+    lista reescrita a cada decisão) continua sendo lido, antes das linhas novas, e não é mais escrito;
   - na máquina, ~/.apple-style-ui/perfil/: aprovados.jsonl, as prévias de regressão e as versões travadas do
     perfil (perfil-v1, perfil-v2...), cada uma com a impressão digital (sha256) dos arquivos.
 
@@ -53,12 +55,23 @@ def curto(caminho):
 
 
 def decidir(projeto, decisao):
-    """Anexa a decisão ao decisoes.json do projeto (a memória daquele vídeo)."""
-    caminho = os.path.join(projeto, "." + portao.NOME, "decisoes.json")
+    """Acrescenta a decisão ao decisoes.jsonl do projeto (a memória daquele vídeo): uma linha, nada é reescrito."""
+    caminho = os.path.join(projeto, "." + portao.NOME, "decisoes.jsonl")
     os.makedirs(os.path.dirname(caminho), exist_ok=True)
-    lista = json.load(open(caminho, encoding="utf-8")) if os.path.exists(caminho) else []
-    json.dump(lista + [decisao], open(caminho, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    with open(caminho, "a", encoding="utf-8") as f:
+        f.write(json.dumps(decisao, ensure_ascii=False) + "\n")
     return caminho
+
+
+def decisoes(projeto):
+    """Todas as decisões do vídeo, das antigas para as novas: primeiro a lista do decisoes.json (o formato antigo), depois
+    as linhas do decisoes.jsonl."""
+    pasta = os.path.join(projeto, "." + portao.NOME)
+    antigo, novo = os.path.join(pasta, "decisoes.json"), os.path.join(pasta, "decisoes.jsonl")
+    lista = json.load(open(antigo, encoding="utf-8")) if os.path.exists(antigo) else []
+    if os.path.exists(novo):
+        lista += [json.loads(l) for l in open(novo, encoding="utf-8") if l.strip()]
+    return lista
 
 
 def regressao(itens, previa=None, digital=None):
@@ -292,8 +305,24 @@ def lista(a):
                   "quem": r["quem"], "nota": r["nota"], "motivo": r["motivo"]} for r in itens])
 
 
+def ver_decisoes(a):
+    projeto = os.path.abspath(a.projeto)
+    ds = decisoes(projeto)
+    ult = ds[-1] if ds else None
+    saida(f"{len(ds)} decisão(ões) em {curto(projeto)}" + (f"; a última: {ult.get('decisao')} em {str(ult.get('data'))[:16]}." if ult else "."),
+          "", "", False, decisoes=ds)
+
+
 def autoteste():
     portao.autoteste()
+    with tempfile.TemporaryDirectory() as tmp:  # decisões: o formato antigo é lido antes das linhas novas, e não é reescrito
+        os.makedirs(os.path.join(tmp, "." + portao.NOME))
+        antigo = os.path.join(tmp, "." + portao.NOME, "decisoes.json")
+        json.dump([{"decisao": "reprovado"}], open(antigo, "w"))
+        decidir(tmp, {"decisao": "pendente"})
+        assert decidir(tmp, {"decisao": "aprovado"}).endswith("decisoes.jsonl")
+        assert [d["decisao"] for d in decisoes(tmp)] == ["reprovado", "pendente", "aprovado"]
+        assert json.load(open(antigo)) == [{"decisao": "reprovado"}] and decisoes(os.path.join(tmp, "vazio")) == []
     with tempfile.TemporaryDirectory() as tmp:
         ok, mudou = os.path.join(tmp, "ok.txt"), os.path.join(tmp, "mudou.txt")
         open(ok, "w").write("a\nb\n")
@@ -330,14 +359,16 @@ def main():
     ap_a.add_argument("--pendente", action="store_true", help="passou no portão, mas ainda espera a aprovação humana")
     ap_a.add_argument("--versao", help="JSON da versão (padrão: versoes/<nome do mp4>.json ao lado do molde)")
     ap_a.add_argument("--molde", default=os.path.join(portao.RAIZ, "moldes", "satellite", "molde"))
-    ap_a.add_argument("--projeto", help="a pasta do vídeo ou do clone; as decisões ficam em .apple-style-ui/decisoes.json dentro dela (padrão: a pasta do clone ou do motor)")
+    ap_a.add_argument("--projeto", help="a pasta do vídeo ou do clone; as decisões ficam em .apple-style-ui/decisoes.jsonl dentro dela (padrão: a pasta do clone ou do motor)")
     ap_t = sub.add_parser("travar")
     ap_t.add_argument("--quem", default=getpass.getuser())
     sub.add_parser("perfil")
     sub.add_parser("lista")
+    ap_d = sub.add_parser("decisoes")
+    ap_d.add_argument("--projeto", required=True, help="a pasta do vídeo ou do clone")
     a = ap.parse_args()
     os.makedirs(portao.PERFIL_DIR, exist_ok=True)
-    {"aprovar": aprovar, "travar": travar, "perfil": ver_perfil, "lista": lista}[a.cmd](a)
+    {"aprovar": aprovar, "travar": travar, "perfil": ver_perfil, "lista": lista, "decisoes": ver_decisoes}[a.cmd](a)
 
 
 if __name__ == "__main__":
