@@ -152,7 +152,7 @@ function paraClaude(e) {
   if (e.nivel === 'provada')
     return `/apple-style-ui:video igual ${e.url}\nJá existe molde para esta referência${e.prova ? ` (${e.prova.clone})` : ''}: é só trocar a marca, o texto e a cor.`;
   if (e.nivel === 'clonavel')
-    return `/apple-style-ui:video clonar ${e.url}\nRoda o ciclo de clonagem com nota (distância e correlação de movimento) até o clone ficar igual à referência.`;
+    return `/apple-style-ui:video clonar ${e.url}\nRoda o ciclo de clonagem com a nota por peça (trajetória, mola, fluidez, nitidez e texto) até todas as peças passarem.`;
   return `/apple-style-ui:video Faça este vídeo usando o estilo calibrado do Apple Style UI (estilo/estilo.js: molas, obturador e motion blur), não molas inventadas.\n\n${e.prompt}`;
 }
 
