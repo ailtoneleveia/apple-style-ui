@@ -153,11 +153,13 @@ def referencia(a):
         if tj.exists():
             Wn, Hn = json.load(open(tj))["tamanho"]
             frac = Wn * Hn / max(1, pr["w"] * pr["h"])
-            demo = a.demonstrativo == "sim" or frac < 0.85
+            # abaixo de 15% do quadro é um painel da própria animação, não uma tela ou cartão com vídeo (teste cego B: 8%)
+            demo = a.demonstrativo == "sim" or 0.15 <= frac < 0.85
             if demo:
                 shutil.copy2(teste, dentro)
             else:
-                avisos.append(f"a 'tela' achada ocupa {frac:.0%} do quadro: a referência já é o vídeo final")
+                avisos.append(f"a 'tela' achada ocupa {frac:.0%} do quadro: a referência já é o vídeo final "
+                              "(se for mesmo um demonstrativo, rode com --demonstrativo sim)")
     alvo = dentro if demo else reel
     pa = probe(alvo)
     resumo = (f"referência em {ref} ({veio}); " + (f"vídeo de dentro tirado: dentro.mp4, {pa['w']}x{pa['h']}, {pa['dur']:.1f} s"
