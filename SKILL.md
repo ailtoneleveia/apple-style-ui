@@ -82,8 +82,9 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    - **Recriar, não recortar.** Texto, ícone, cartão, pílula, botão e avatar desenhado são sempre recriados em HTML,
      CSS ou SVG, com a fonte e as cores medidas. Recorte do original só para foto ou vídeo filmado de verdade, e cada
      um declarado em `hf/assets/RECORTES.md` com o motivo. Recorte não declarado reprova a rodada, mesmo com a nota boa.
-   - **Bateu o alvo, fecha.** Quando o `proximo` da rodada disser "alvo batido: rode final", rode `clonar.py final` na
-     hora e entregue. Polir depois do alvo só se a pessoa pedir.
+   - **Bateu o alvo, olha e fecha.** Quando o `proximo` disser "alvo batido", abra cada imagem de mancha da rodada
+     (Read em `.apple-style-ui/rodadas/NN/qualidade/manchas/*.jpg`), corrija o que se vê numa rodada nova ou escreva em
+     `rodadas/NN/OLHEI.md` por que aceita, e rode `clonar.py final` na hora. O `final` recusa sem o OLHEI.md. Polir depois do alvo só se a pessoa pedir.
    A entrega é o lado a lado e a nota de fidelidade (distância, correlação de movimento e a tabela por peça do
    `QUALIDADE.md`; o alvo só fecha com todas as peças aprovadas).
 4. Siga **Fechar** com `--tipo clone` (sem `--versao` e sem `--molde`).

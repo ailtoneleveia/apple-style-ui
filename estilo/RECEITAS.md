@@ -29,6 +29,9 @@ código do loop, e com razão: ela trava a velocidade em cada chave.
 | texto desalinhado, pulando ou fora do lugar | IoU, trajetória | [9](#9-texto-desalinhado-ou-pulando) |
 | o cursor está no lugar errado | IoU e SSIM do cursor, trajetória | [10](#10-o-cursor-está-no-lugar-errado) |
 | memoji, avatar ou emoji vira mancha | SSIM do avatar | [11](#11-memoji-avatar-ou-emoji-vira-mancha) |
+| o clone tem um elemento que o original não tem nesse trecho | mancha (peça a mais) | remover o elemento ou acertar o nascimento (`Fi`); se for a peça certa nascendo cedo, [17](#17-o-tempo-não-bate) |
+| pontos ou ícones repetidos alinhados onde o original anda em onda | mancha (detalhe interno) | [6](#6-a-lista-entra-junta) (atraso por item com mola) |
+| cursor ou ícone pequeno com pose, ângulo ou tamanho diferente | mancha (peça pequena que anda ou gira) | [10](#10-o-cursor-está-no-lugar-errado) (`cursor.py`) |
 | a entrada parece seca: a peça nasce nítida e inteira | nitidez no 1º quadro, escalonamento | [12](#12-a-entrada-parece-seca) |
 | a peça parada parece morta | velocidade (original anda, clone não) | [13](#13-a-peça-parada-parece-morta) |
 | a lista de baixo sai nítida demais | nitidez, SSIM das peças de baixo | [14](#14-a-parte-de-trás-sai-nítida-demais) |
@@ -266,6 +269,11 @@ LINHAS.forEach((txt, i) => {
 });
 ```
 
+Pontos que andam em onda (pílula preta do B3 e do B4, f190-205: três pontos verdes que acendem e sobem um depois do
+outro) são a mesma escada: uma mola por ponto com `ES.escalona(i, passo)`. Um transform só na fileira deixa os pontos
+alinhados e acesos juntos. IoU e SSIM da pílula inteira não veem; a mancha de detalhe interno pega quando um ponto
+acende fora da vez (B3, f195-197: 30,5), mas a onda de altura do B4 fica em 19, abaixo do limite 25: confira no olho.
+
 Nunca um transform só na lista inteira: o original reorganiza as linhas de forma desigual enquanto o cartão cresce
 (B3, P12, P15, P16, P43, P48).
 
@@ -369,6 +377,12 @@ cursor.style.transform = `translate(${x}px, ${y}px) rotate(${ANG}deg) scale(${ES
 ```
 
 Seta ou mão: a troca é seca, no quadro medido, pelo `Fi`.
+
+Pose errada com a ponta no lugar passa no IoU e no SSIM do cursor. A mancha de diferença pega quando a mão do clone
+cobre outra área (B3, f234-236: 26,2 contra o limite 25), mas não quando as duas mãos se sobrepõem quase toda (B4,
+f240: no original a mão aponta para a esquerda com rastro, no clone para cima e menor; fica em 10 a 16, no nível do
+texto ao lado). Por isso confira a pose no olho, sempre: meça escala e ângulo com o `cursor.py` (modelo da mão do
+clone, `--angulos` largo) e copie o rastro (receita 1).
 
 ## 11. Memoji, avatar ou emoji vira mancha
 

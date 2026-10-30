@@ -103,7 +103,9 @@ Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa
    que medir, a técnica com os números dos nossos clones e o código ou a ferramenta que faz (rastro de motion blur,
    deformação líquida, lista em escada, tamanho óptico do texto, ponta do cursor, avatar, profundidade). O `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`) e o `diffview.py` mostram onde
    está o erro no quadro. Detalhes na seção "O loop de qualidade".
-7. **Fechar.** Ao bater o alvo (na mesma hora, sem polir), ou na 6ª rodada: `python3 clonar.py final <pasta>` gera
+7. **Olhar e fechar.** Antes do `final`, abra cada imagem de `.apple-style-ui/rodadas/NN/qualidade/manchas/` (original |
+   clone | mapa) e escreva `rodadas/NN/OLHEI.md`, uma linha por mancha: defeito que se vê vira rodada nova, senão o
+   motivo de aceitar. Sem isso o `final` não fecha. Ao bater o alvo (na mesma hora, sem polir), ou na 6ª rodada: `python3 clonar.py final <pasta>` gera
    `saidas/final.mp4` (a melhor rodada aprovada, de preferência uma em que todas as peças passaram) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
    `saidas/so-camada.mp4`: a mesma composição sem a placa (`camada.js`), o primeiro passo para virar molde.
    Escrever `LICOES.md`.
@@ -132,10 +134,40 @@ botão dentro do cartão). Para dar nome às peças da FICHA, escreva `pecas.jso
 | forma | IoU da máscara | abaixo de 0,2 |
 | percepção | SSIM no recorte | abaixo de 0,5 |
 | texto | tesseract confiante nos dois: conteúdo, altura-x; a espessura do traço só vai no relatório | conteúdo abaixo de 0,6; altura-x fora de 0,6x a 1,4x |
+| mancha (fora das peças) | diferença de cinza, sem o fundo de baixa frequência (borrão de 40 px), de cada pixel contra o mais parecido do outro vídeo a ±4 px e ±1 quadro, nas duas direções; média no bloco de 24 px, mantida em 60 % de 0,2 s | acima de 25 (cinza, além do piso de 8). Não reprova: cada mancha vira um `Mnn` em "Para olhar", com imagem e o provável erro: peça a mais, peça que falta, peça pequena que anda ou gira (cursor, ícone) ou detalhe interno de uma peça |
 
 Depois do teste cego B3 (0 de 57 no medidor, pílula nítida e cursor fora do lugar no olho): o fundo vem só do original; cursor
 que cruza rápido vira peça com 6 quadros de trilha; o motivo de forma traz o erro do centro; a entrada usa a massa sustentada.
 Recalibrado: bons 0 reprovadas (rastro até 0,29 quadro), B2 19 de 60, B3 r09 5 de 60 (pílula sem rastro, 0,85 a 0,89; cursor).
+
+**Mancha de diferença persistente** (30/10, depois do cego B4: 0 de 60 peças reprovadas e erro no olho). As peças vêm
+só do original, então o que só existe no clone nunca era cobrado, e um detalhe pequeno dentro de uma peça grande
+(pontos dentro da pílula, pose do cursor) não mexia no IoU e no SSIM da caixa. A mancha compara o quadro inteiro e
+tolera o que já tem medida própria (4 px de lugar, 1 quadro de tempo). O passa-alta tira degradê, glow e fundo
+desfocado: sem ele as manchas fracas dos bons caíam em brilho suave que o olho não acusa. Custo: 2 a 5 s num vídeo
+de 9 s (o `comparar` inteiro leva ~65 s; B4 sozinho, máquina livre: 63,0 s antes, 64,1 s depois).
+Calibração (`qualidade-calibracao/2026-10-30-mancha/`, imagens original | clone | mapa em `imagens-b4/` e
+`imagens-bons/`):
+
+| clone | peças reprovadas antes | manchas depois (pico) | o que são |
+|---|---|---|---|
+| Joi | 0 de 58 | 4 (87 a 29) | manchas pretas dentro do ícone do Joi em outra forma e lugar (3), check do botão Complete |
+| Satellite | 0 de 57 | 24 (112 a 26) | ponta do arco na borda, ambulância, satélite girado, texto que entra atrasado, mão do cursor em outra pose |
+| VoiceOS | 0 de 60 | 10 (107 a 27) | cursor abaixo do botão Send, letras do texto digitado |
+| B2 | 19 de 60 | 16 (79 a 27) | além das 19 |
+| B3 | 5 de 60 | 26 (64 a 26) | memoji trocado (64), ponto da pílula aceso fora da onda (30,5), mão do Get Info (26,2), "AE Editzz" |
+| B4 | 0 de 60 | 16 (97 a 25) | telefone verde girado (97), memoji trocado (62), título Recent, "GB" e "calling..." cortados, telefone vermelho girado |
+
+Cada mancha dos 3 clones "bons" é defeito que se mostra no quadro (imagens), e não há limite que aprove os bons e
+reprove o B4: o pior defeito do Joi (87) é do tamanho do pior do B4 (97). Por isso **a mancha não reprova, vai para o
+olho**. Cada rodada grava uma imagem por mancha (original | clone | mapa) em `.apple-style-ui/rodadas/NN/qualidade/manchas/`
+e lista tudo em "Para olhar" no QUALIDADE.md. O `final` só fecha quando `rodadas/NN/OLHEI.md` tem uma linha por mancha
+daquela rodada: defeito que se vê vira rodada nova, senão fica escrito por que foi aceita. O limite 25
+fica logo acima das diferenças suaves sem defeito visível e abaixo dos defeitos confirmados nos cegos (a mão do B3,
+26,2, é a mais fraca: margem fina). Não pega (ver
+"O que ainda limita"): no B4, a pose da mão no f240 (as duas mãos se sobrepõem; 10 a 16, no nível do texto ao lado),
+os pontos em onda (19 no f53-55, diferença meio absorvida pela tolerância de 4 px e 1 quadro) e a pílula cinza do
+f50, que é a pílula preta nascendo 1 quadro antes do original, dentro da tolerância de tempo por desenho.
 
 Sai `rodadas/NN/qualidade/QUALIDADE.md` (no bastidor) e `qualidade.json`, com a PIOR peça primeiro e o motivo
 técnico de cada reprovação. O `proximo` da rodada lista as 3 piores com a correção. No B2: "y f146-151 (-94 px): o
@@ -189,6 +221,9 @@ O que a calibração mostrou e ainda limita:
   Os limites saíram do pior clone bom, não de uma régua de percepção: clone novo que reprove raspando merece olho.
 - Cor (ΔE), escalonamento, espessura do traço e conteúdo do texto quase não separam: em texto sobre degradê e em
   recorte com várias linhas o ruído dos bons é tão grande quanto o erro do B2. Ficaram com limite só para erro grosso.
+- A mancha não vê pose de peça pequena que se sobrepõe quase toda à do original (mão do B4) nem diferença de
+  contraste baixo: pílula cinza de contraste 43 num fundo liso dá ~26, no limite (o teste usa contraste 83). Confira
+  cursor e pontos no olho, com a folha do trecho.
 - A checagem de código também acusa os 3 clones bons (eles usam trilha medida por quadro, `tracks.js`, e chaves com
   Catmull-Rom). A regra vale para o trabalho novo. A diferença do B2 para eles não é paramétrico contra trilha: é
   trilha densa medida por ferramenta e interpolada sem quebra, contra chaves esparsas lidas à mão e ligadas por reta.
@@ -329,7 +364,8 @@ Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho
 Todas as ferramentas novas devolvem o JSON padrão `{ok, resumo, proximo}`. Autotestes: `testes/conferir_raiox.py`
 (o raio-x contra os 3 primeiros clones), `testes/conferir_pecas.py` (as peças acima num vídeo sintético, menos de
 um minuto) e `testes/conferir_qualidade.py` (o medidor por peça: mola conhecida, velocidade quebrada, peça borrada,
-rastro a menos e a mais, cursor rápido fora do lugar e a checagem de código, cerca de três minutos).
+rastro a menos e a mais, cursor rápido fora do lugar, mancha (peça a mais e pontos fora da onda viram mancha para olhar; 2 px e 1
+quadro de diferença não) e a checagem de código, cerca de três minutos).
 
 ## Regras de render e disco
 

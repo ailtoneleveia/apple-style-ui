@@ -258,7 +258,8 @@ def rodada(a):
                 fdsum=fdj["media"], fdsum_anterior=fdj["anterior"], quadros=f"{fdj['quadros']}/{fdj['quadros_original']}",
                 piores_trechos=[dict(quadros=f"f{b['a']}-f{b['b']}", dist=b["dist"], pior_quadro=b["pior_quadro"]) for b in piores],
                 alvo=ALVO, nota_global_ok=bool(global_ok), atingiu=bool(atingiu and not a.previa), aprovada=rc["aprovada"],
-                **(dict(qualidade=dict(aprovada=qd["aprovada"], resumo=qd["resumo"], piores=qd["piores"], arquivo=qd["arquivo"])) if qd else {}),
+                **(dict(qualidade=dict(aprovada=qd["aprovada"], resumo=qd["resumo"], piores=qd["piores"], arquivo=qd["arquivo"],
+                                   olhar=qd.get("olhar", []))) if qd else {}),
                 **(dict(motivo_reprovada=rc["motivo_reprovada"]) if not rc["aprovada"] else {}),
                 nitidez=rc["nitidez"], video=str(clone))
     (P / "rodadas" / NN / "nota.json").write_text(json.dumps(nota, ensure_ascii=False, indent=1))
@@ -292,7 +293,10 @@ def rodada(a):
                     precisa_de_voce=False)
     elif nota["atingiu"]:
         prox = dict(comando=f"{EU} final {shlex.quote(str(P))}",
-                    motivo="alvo batido: rode final agora e entregue. Não polir depois do alvo: só se o usuário pedir",
+                    motivo=("alvo batido. Antes do final, abra cada imagem de " + f"{BASTIDOR}/rodadas/{NN}/qualidade/manchas/ "
+                            + f"e escreva rodadas/{NN}/OLHEI.md com uma linha por mancha ({', '.join(qd.get('olhar') or []) or 'nenhuma'}): "
+                            "defeito que se vê vira rodada nova; senão, o motivo de aceitar. Depois rode final e entregue. "
+                            "Não polir depois disso: só se o usuário pedir"),
                     precisa_de_voce=False)
     elif nn >= MAX_RODADAS and not a.previa:
         prox = dict(comando=f"{EU} final {P}", motivo=f"{MAX_RODADAS} rodadas: fechar com a melhor e anotar em LICOES.md o que ainda difere",
@@ -325,6 +329,12 @@ def final(a):
     chave = (lambda n: (n["mascara"]["distancia_fina"], -n["rodada"])) if all("mascara" in n for n in notas) else (lambda n: (n["fdsum"], -n["rodada"]))
     best = min(notas, key=lambda n: (not (n.get("qualidade") or {}).get("aprovada", False), chave(n))) if not a.rodada else notas[0]
     NN = f"{best['rodada']:02d}"
+    olhar = [m.split()[0] for m in (best.get("qualidade") or {}).get("olhar", [])]
+    ol = P / "rodadas" / NN / "OLHEI.md"
+    falta = [m for m in olhar if not ol.exists() or m not in ol.read_text()]
+    if falta:  # a mancha não reprova sozinha (os clones bons também têm): o olho decide, e fica escrito
+        raise Falha(f"abra as imagens em {BASTIDOR}/rodadas/{NN}/qualidade/manchas/ e escreva em {ol.relative_to(P)} uma linha por "
+                    f"mancha (corrigida numa rodada nova, ou aceita e por quê). Faltam: {', '.join(falta)}", 1)
     S = P / "saidas"; S.mkdir(exist_ok=True)
     guarda(S / "final.mp4"); shutil.copy2(P / BASTIDOR / "rodadas" / NN / "clone.mp4", S / "final.mp4")
     guarda(S / "lado-a-lado.mp4")

@@ -28,6 +28,9 @@ Para cada peça, medido do mesmo jeito nos dois vídeos, na região da peça no 
   forma        IoU da máscara da peça (e, no relatório, o erro do centro relativo ao tamanho, no pior trecho)
   percepção    SSIM no recorte da peça
   texto        quando o tesseract lê: conteúdo igual, altura-x e espessura do traço pela tinta
+E no quadro inteiro, fora e dentro das peças:
+  mancha       diferença persistente que 4 px de lugar e 1 quadro de tempo não explicam (peça a mais, detalhe interno
+               trocado, cursor ou ícone de outra pose); cada uma vira uma "peça" Mnn reprovada
 
 Saída: <saida>/qualidade.json e QUALIDADE.md (a PIOR peça primeiro, com o motivo técnico de cada reprovação e a
 correção sugerida) e o JSON padrão {ok, resumo, proximo} no stdout, com "aprovada" e "piores".
@@ -81,6 +84,19 @@ LIM = dict(
     rastro_v=6.0,         # px/quadro (escala 1080): abaixo disso o rastro não aparece; o motion blur por peça só mede acima
     rastro=(4.0, 0.5),    # rastro a mais ou a menos que o original: 4 px (escala 1080) e meio quadro de obturador (180°)
                           # no pior trecho de 0,1 s (bons: até 0,29 quadro; B2 e B3: 0,83 a 0,90 na pílula preta)
+)
+# Mancha de diferença persistente: o que difere fora das peças do original (peça a mais) ou dentro delas, pequeno
+# demais para mexer no IoU e no SSIM da caixa (pontos, pose do cursor). px da análise (LADO 540: x2 na escala 1080).
+MANCHA = dict(
+    sigma=1.0,     # borrão gaussiano antes de comparar (2 px na escala 1080): tira serrilhado e ruído de compressão
+    passa_alta=20, # tira o borrão de 40 px (escala 1080) dos dois: degradê, glow e fundo desfocado diferentes não contam
+                   # (eram as manchas fracas dos bons); ponto, ícone, cursor e borda de peça contam, e sobem
+    desloca=2,     # tolera ±2 px (4 px na escala 1080) e ±1 quadro: o erro de lugar e de tempo já tem medida própria
+    piso=8,        # diferença de cinza (0-255) abaixo disso é ruído de encode
+    bloco=12,      # média da diferença num bloco de 12 px (24 px na escala 1080), o tamanho de um ponto ou de um cursor
+    dur_s=0.2,     # persistência: o valor se mantém em 60 % dos quadros de uma janela de 0,2 s
+    limiar=25.0,   # diferença média no bloco, acima do piso: abaixo dos defeitos que o olho confirma nos cegos (B3: ponto
+                   # aceso fora da onda 30,5, mão do Get Info 26,2) e acima das diferenças suaves sem defeito visível
 )
 
 
@@ -660,6 +676,99 @@ def escalonamento(res, cenas, fps):
                 sobreposicao_original=round(sob(e0, e1), 2), sobreposicao_clone=round(sob(c0, c1), 2))
 
 
+def cinza_mancha(q):
+    """cinza borrado menos o fundo de baixa frequência (+128); o borrão largo sai em 1/4 do tamanho (mesmo efeito, 20x mais rápido)"""
+    g = cv2.GaussianBlur(cv2.cvtColor(q, cv2.COLOR_RGB2GRAY), (0, 0), MANCHA["sigma"])
+    h, w = g.shape
+    lo = cv2.GaussianBlur(cv2.resize(g, (max(1, w // 4), max(1, h // 4)), interpolation=cv2.INTER_AREA), (0, 0), MANCHA["passa_alta"] / 4)
+    return cv2.addWeighted(g, 1.0, cv2.resize(lo, (w, h), interpolation=cv2.INTER_LINEAR), -1.0, 128)
+
+
+def manchas(QR, QC, info, F, P):
+    """mancha de diferença persistente: em cada quadro, a diferença de cinza (borrada) de cada pixel do clone contra o
+    pixel mais parecido do original a até ±desloca px e ±1 quadro, e o mesmo do original contra o clone (o que só
+    existe num dos dois aparece nas duas direções). Média por bloco, persistência no tempo, e cada mancha 3D (quadros x
+    caixa) acima do limiar vira uma reprovação. O fundo F (do original) diz se o clone tem peça onde o original não tem."""
+    from scipy import ndimage as ndi
+    M_ = MANCHA; s, B, pa = M_["desloca"], M_["bloco"], 4
+    R, C = [cinza_mancha(q) for q in QR], [cinza_mancha(q) for q in QC]
+    borda = lambda X: [cv2.copyMakeBorder(x, s, s, s, s, cv2.BORDER_REPLICATE) for x in X]
+    BR, BC = borda(R), borda(C)
+    n, (h, w) = len(R), R[0].shape
+    M = []
+    for f in range(n):
+        dc, do = np.full((h, w), 255, np.uint8), np.full((h, w), 255, np.uint8)
+        for g in range(max(0, f - 1), min(n, f + 2)):
+            for dy in range(2 * s + 1):
+                for dx in range(2 * s + 1):
+                    cv2.min(dc, cv2.absdiff(C[f], BR[g][dy:dy + h, dx:dx + w]), dc)
+                    cv2.min(do, cv2.absdiff(R[f], BC[g][dy:dy + h, dx:dx + w]), do)
+        d = cv2.subtract(cv2.max(dc, do), M_["piso"]).astype(np.float32)
+        M.append(cv2.blur(d, (B, B))[::pa, ::pa])
+    M = ndi.maximum_filter(np.stack(M), size=(1, 3, 3))  # a mancha anda uns px por quadro
+    N = max(3, int(round(M_["dur_s"] * info["fps"])))
+    Pm = ndi.percentile_filter(M, 40, size=(N, 1, 1))
+    lab, _ = ndi.label(Pm > M_["limiar"], structure=np.ones((3, 3, 3)))
+    esc = info["esc"]; out = []
+    for i, sl in enumerate(ndi.find_objects(lab)):
+        sel = lab[sl] == i + 1
+        v = np.where(sel, Pm[sl], 0)
+        k = int(np.unravel_index(int(np.argmax(v)), v.shape)[0])
+        f = sl[0].start + k
+        # caixa no quadro do pico, em px da análise (o bloco centrado em cada célula e a folga do filtro de máximo)
+        ys, xs = np.nonzero(sel[k])
+        x0, x1 = (sl[2].start + xs.min()) * pa - B // 2, (sl[2].start + xs.max()) * pa + B // 2
+        y0, y1 = (sl[1].start + ys.min()) * pa - B // 2, (sl[1].start + ys.max()) * pa + B // 2
+        x0, y0, x1, y1 = max(0, x0), max(0, y0), min(w, x1), min(h, y1)
+        fd = fundo_de(F, f)[y0:y1, x0:x1]
+        tem = lambda Q: float((np.abs(Q[f, y0:y1, x0:x1].astype(np.int16) - fd).max(-1) > LIMIAR).mean())
+        to, tc = tem(QR), tem(QC)
+        # a menor peça do original que contém o centro da mancha no quadro do pico
+        dentro = sorted((t for t in P if f in t["f"] and (lambda b: b[0] <= (x0 + x1) / 2 * esc <= b[2] and b[1] <= (y0 + y1) / 2 * esc <= b[3])(
+            caixa(t, t["f"].index(f)))), key=lambda t: t["w"][t["f"].index(f)] * t["h"][t["f"].index(f)])
+        # caminho do centro da mancha (px da análise), descontado o da peça que a contém: a que anda mais que metade do
+        # próprio tamanho é peça pequena em movimento (cursor, ícone); a que anda junto com a peça é detalhe interno
+        js = [j for j in range(sel.shape[0]) if sel[j].any()]
+        cam = (np.argwhere(sel[js[-1]]).mean(0) - np.argwhere(sel[js[0]]).mean(0)) * pa
+        fa, fb = sl[0].start + js[0], sl[0].start + js[-1]
+        if dentro and fa in dentro[0]["f"] and fb in dentro[0]["f"]:
+            t = dentro[0]; ia, ib = t["f"].index(fa), t["f"].index(fb)
+            cam = cam - np.array([t["cy"][ib] - t["cy"][ia], t["cx"][ib] - t["cx"][ia]]) / esc
+        anda = float(np.hypot(*cam)) > 0.5 * max(x1 - x0, y1 - y0)
+        dentro = [(t["nome"], t["onde"]) for t in dentro]
+        out.append(dict(quadros=[int(sl[0].start), int(sl[0].stop - 1)], pico=round(float(v.max()), 1), quadro_pico=int(f),
+                        caixa=[round(x0 * esc), round(y0 * esc), round(x1 * esc), round(y1 * esc)],
+                        tinta_original=round(to, 3), tinta_clone=round(tc, 3), anda=bool(anda), dentro=dentro[:1]))
+    return sorted(out, key=lambda m: -m["pico"])
+
+
+def julga_mancha(i, m, fps):
+    """a mancha vira uma 'peça' reprovada, com o provável erro: peça a mais, peça que falta, peça pequena que anda
+    (pose ou caminho, quase sempre cursor) ou detalhe interno de uma peça"""
+    a, b = m["quadros"]; x0, y0, x1, y1 = m["caixa"]
+    onde = f"f{a}-{b} caixa {x0},{y0}-{x1},{y1}"
+    base = (f"diferença persistente de {br(m['pico'], 1)} (cinza médio no bloco de 24 px, acima do piso) por {round((b - a + 1) / fps, 2)} s, "
+            f"pico no f{m['quadro_pico']}, que o deslocamento de 4 px e 1 quadro não explicam")
+    if m["tinta_original"] < 0.02 <= m["tinta_clone"]:
+        mot, cor = "peça a mais: o clone tem tinta onde o original só tem fundo", "remover o elemento ou conferir quando ele nasce e some (Fi): no original ele não existe nesse trecho"
+    elif m["tinta_clone"] < 0.02 <= m["tinta_original"]:
+        mot, cor = "peça que falta: o original tem tinta onde o clone só tem fundo", "desenhar o elemento que falta, com o nascimento medido no original"
+    elif m["anda"]:
+        mot, cor = "peça pequena que anda ou gira com pose, forma ou caminho diferente (cursor, ícone que gira)", \
+            ("cursor (seta ou mão): medir ponta, ângulo, escala e rastro no original com clonar/scripts/cursor.py e trocar o desenho (RECEITAS 10); "
+             "ícone que gira ou troca: redesenhar com o original ampliado ao lado (sheet.py no trecho)")
+    else:
+        pc = f" dentro de {m['dentro'][0][0]} ({m['dentro'][0][1]})" if m["dentro"] else ""
+        mot = f"detalhe interno ou forma diferente{pc}, pequeno demais para o IoU e o SSIM da peça"
+        cor = ("redesenhar o detalhe com o original ampliado ao lado (sheet.py no trecho); itens repetidos que no original "
+               "andam em onda (pontos, ícones): atraso por item com mola, estilo.escalona(i, passo) (RECEITAS 6); pose de cursor: cursor.py (RECEITAS 10)")
+    r = dict(peca=f"M{i + 1:02d}", onde=onde, nivel=0, medidas=dict(mancha=m))
+    r["reprovacoes"] = [reprova("mancha", m["pico"], MANCHA["limiar"], f"{mot}; {base}", cor, m["pico"] / MANCHA["limiar"] - 1 + 0.5)]
+    r["aprovada"] = False
+    r["peso"] = r["reprovacoes"][0]["peso"]
+    return r
+
+
 def compara(ref, cand, pecas=None, obturador=True):
     QR, info = le_video(ref); QC, ic = le_video(cand)
     n = min(info["n"], ic["n"])
@@ -690,7 +799,7 @@ def compara(ref, cand, pecas=None, obturador=True):
         m["rastro"] = rastro(t, SR, SC, QR, QC, info)
         res.append(dict(peca=t["nome"], onde=t["onde"], nivel=t["nivel"], medidas=m))
     escalonamento(res, cen, fps)
-    glob = {}
+    glob = dict(manchas=manchas(QR, QC, info, fr1, P))
     if obturador:
         o_r, o_c = obturador_de(ref, P, info, cen), obturador_de(cand, P, info, cen)
         glob["obturador"] = dict(original=o_r.get("obturador"), clone=o_c.get("obturador"), estilo=round(fps / 120, 2),
@@ -1121,6 +1230,57 @@ def saida_de(a, video):
     return str(v.with_suffix("")) + "-qualidade"
 
 
+def imagens_manchas(ref, cand, olhar, pasta):
+    """uma imagem por mancha, no quadro do pico: original | clone | mapa da diferença (a mesma conta das manchas)"""
+    if not olhar:
+        return {}
+    pasta.mkdir(parents=True, exist_ok=True)
+    QR, info = le_video(ref); QC, ic = le_video(cand)
+    if (ic["aw"], ic["ah"]) != (info["aw"], info["ah"]):
+        QC = np.stack([cv2.resize(x, (info["aw"], info["ah"]), interpolation=cv2.INTER_AREA) for x in QC])
+    esc, s, n, out = info["esc"], MANCHA["desloca"], min(len(QR), len(QC)), {}
+    for p in olhar:
+        m = p["medidas"]["mancha"]; f = min(m["quadro_pico"], n - 1)
+        R, C = cinza_mancha(QR[f]), cinza_mancha(QC[f]); h, w = R.shape
+        dc = np.full((h, w), 255, np.uint8); do = dc.copy()
+        for g in range(max(0, f - 1), min(n, f + 2)):
+            br_, bc_ = (cv2.copyMakeBorder(cinza_mancha(X[g]), s, s, s, s, cv2.BORDER_REPLICATE) for X in (QR, QC))
+            for dy in range(2 * s + 1):
+                for dx in range(2 * s + 1):
+                    cv2.min(dc, cv2.absdiff(C, br_[dy:dy + h, dx:dx + w]), dc); cv2.min(do, cv2.absdiff(R, bc_[dy:dy + h, dx:dx + w]), do)
+        x0, y0, x1, y1 = (int(v / esc) for v in m["caixa"])
+        mg = max(40, x1 - x0, y1 - y0)
+        a0, b0, a1, b1 = max(0, x0 - mg), max(0, y0 - mg), min(w, x1 + mg), min(h, y1 + mg)
+        mapa = cv2.applyColorMap(np.minimum(255, cv2.max(dc, do).astype(int) * 3).astype(np.uint8), cv2.COLORMAP_INFERNO)[..., ::-1]
+        tiles = []
+        for nm, X in (("original", QR[f]), ("clone", QC[f]), ("mapa", mapa)):
+            t = np.ascontiguousarray(X[b0:b1, a0:a1]).copy()
+            cv2.rectangle(t, (x0 - a0, y0 - b0), (x1 - a0, y1 - b0), (255, 40, 40), 1)
+            t = cv2.resize(t, None, fx=3, fy=3, interpolation=cv2.INTER_CUBIC)
+            cv2.putText(t, nm, (6, 20), 0, 0.6, (255, 0, 0), 2)
+            tiles.append(np.pad(t, ((0, 0), (0, 6), (0, 0)), constant_values=255))
+        img = np.concatenate(tiles, 1)
+        cab = np.full((30, img.shape[1], 3), 255, np.uint8)
+        cv2.putText(cab, f"{p['peca']} {p['onde']} pico f{f} = {m['pico']}", (6, 20), 0, 0.55, (0, 0, 0), 1)
+        out[p["peca"]] = pasta / f"{p['peca']}.jpg"
+        cv2.imwrite(str(out[p["peca"]]), cv2.cvtColor(np.concatenate([cab, img], 0), cv2.COLOR_RGB2BGR), [cv2.IMWRITE_JPEG_QUALITY, 88])
+    return out
+
+
+def secao_olhar(olhar, imgs):
+    if not olhar:
+        return "\n## Para olhar\n\nNenhuma mancha de diferença persistente.\n"
+    L = ["", "## Para olhar (não reprova, mas tu tem que abrir cada imagem)", "",
+         "Mancha de diferença persistente: um trecho onde o clone difere do original por vários quadros, que o deslocamento "
+         "de 4 px e 1 quadro não explicam. Os clones bons também têm algumas, então a medida não decide sozinha. Abre cada "
+         "imagem (original | clone | mapa): defeito que se vê, corrige; senão, anota em OLHEI.md por que aceita.", "",
+         "| mancha | onde | provável erro | imagem | correção |", "|---|---|---|---|---|"]
+    for p in olhar:
+        x = p["reprovacoes"][0]
+        L.append(f"| {p['peca']} | {p['onde']} | {x['motivo'].split(';')[0]} | `{imgs.get(p['peca'], '')}` | {x['correcao']} |")
+    return "\n".join(L) + "\n"
+
+
 def grava(saida, nome, dados, md):
     saida = Path(saida); saida.mkdir(parents=True, exist_ok=True)
     (saida / "qualidade.json").write_text(json.dumps(limpa_json(dados), ensure_ascii=False, indent=1, default=str))
@@ -1133,6 +1293,8 @@ def cmd_comparar(a):
     for r in res:
         julga(r, info["fps"], max(info["w"], info["h"]))
     glob = {}
+    # a mancha não reprova: os 3 clones bons também têm (calibração de 30/10, joi 87 contra B4 97), então vai para o olho
+    olhar = [julga_mancha(i, m, info["fps"]) for i, m in enumerate(g["manchas"])]
     o = g.get("obturador")
     if o:
         glob["obturador"] = dict(nome="obturador", **o)
@@ -1150,14 +1312,15 @@ def cmd_comparar(a):
     piores = tres_piores(res, glob)
     saida = saida_de(a, a.candidato)
     arq = grava(saida, "comparar", dict(modo="comparar", referencia=str(a.referencia), candidato=str(a.candidato), aprovada=aprovada,
-                                        limites=LIM, globais=glob, pecas=sorted(res, key=lambda r: -r["peso"])),
+                                        limites=LIM, globais=glob, pecas=sorted(res, key=lambda r: -r["peso"]), olhar=olhar),
                 relatorio("Qualidade por peça: clone contra o original", res, glob, f"Original `{a.referencia}`, clone `{a.candidato}`. "
-                          f"{'APROVADA' if aprovada else 'REPROVADA'}: todas as peças precisam passar."))
+                          f"{'APROVADA' if aprovada else 'REPROVADA'}: todas as peças precisam passar.")
+                + secao_olhar(olhar, imagens_manchas(a.referencia, a.candidato, olhar, Path(saida) / "manchas")))
     resumo = (f"{len(res)} peças, {len(ruins)} reprovada(s)" + "".join(f"; {x['nome']} reprova" for x in glob.values() if x.get("reprova"))
               + ("; APROVADA" if aprovada else f"; pior: {piores[0]}" if piores else ""))
     ok(resumo, None if aprovada else "corrigir as 3 piores e rodar de novo", "tudo passa: pode fechar" if aprovada else
        "atacar as 3 piores, uma hipótese por peça, com mola paramétrica (nada de pose quadro a quadro)",
-       aprovada=aprovada, piores=piores, arquivo=arq)
+       aprovada=aprovada, piores=piores, arquivo=arq, olhar=[f"{m['peca']} {m['onde']}" for m in olhar])
 
 
 def cmd_estilo(a):

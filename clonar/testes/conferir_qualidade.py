@@ -12,6 +12,8 @@ renderizado com motion blur de 8 subquadros. Roda em cerca de três minutos.
                       (falta); ao contrário, clone com rastro onde o original é nítido: reprova por rastro (sobra)
   peça pequena rápida um cursor de 36 px cruza a tela em 7 quadros (40 px/q); no clone passa 30 px abaixo: a peça é
                       detectada (trilha curta) e reprova por forma, com o erro do centro no motivo
+  mancha              pílula preta com 3 pontos em onda que anda 5 px/q: uma pílula cinza a mais no fundo liso e os pontos
+                      alinhados no lugar da onda reprovam por mancha; o vídeo deslocado 2 px ou atrasado 1 quadro não
   código              tabela de chaves com 10 poses reprova; mola do estilo.js com mapa de tempo aprova
 Sai com código 1 se algo não bater."""
 import json, os, subprocess, sys, tempfile
@@ -196,7 +198,35 @@ po = c and c["medidas"].get("posicao")
 confere(bool(c) and "forma" in {x["medida"] for x in c["reprovacoes"]} and bool(po) and 20 <= po["erro_px"] <= 40,
         "cursor 30 px abaixo: reprova por forma, com o erro do centro", f"posicao {po}; iou {c and c['medidas']['iou']}")
 
-# 7. código
+# 7. mancha de diferença persistente: pílula preta que anda 5 px/q com 3 pontos verdes em onda
+def quadros_pilula(onda=24, a_mais=False, dx=0, atraso=0):
+    out = []
+    for f in range(N):
+        g = max(0, f - atraso)
+        img = np.full((H, W, 3), 243, np.uint8)
+        x = 200 + 5 * g
+        cv2.rectangle(img, (x, 420), (x + 360, 560), (20, 20, 20), -1)
+        for i in range(3):  # o do meio no centro, os de fora a ±onda px (a onda do B4)
+            cv2.circle(img, (x + 90 + 90 * i, 490 + onda * (1 - i)), 24, (60, 180, 80), -1, cv2.LINE_AA)
+        if a_mais and 10 <= f <= 50:  # pílula cinza (contraste 83) onde o original só tem fundo
+            cv2.rectangle(img, (760, 200), (850, 236), (160, 160, 160), -1)
+        out.append(np.roll(img, (dx, dx), (0, 1)) if dx else img)
+    return out
+
+
+pil = grava("pilula.mp4", quadros_pilula())
+for nome, kw, quer in (("elemento a mais no fundo liso", dict(a_mais=True), "a mais"), ("pontos alinhados no lugar da onda", dict(onda=0), "detalhe"),
+                       ("deslocamento de 2 px", dict(dx=2), None), ("atraso de 1 quadro", dict(atraso=1), None)):
+    res, info, cen, g = q.compara(pil, grava("pilula-c.mp4", quadros_pilula(**kw)), obturador=False)
+    ms = g["manchas"]
+    mot = [q.julga_mancha(i, m, FPS)["reprovacoes"][0]["motivo"] for i, m in enumerate(ms)]
+    if quer is None:
+        confere(not ms, f"mancha: {nome} não reprova", "; ".join(f"{m['caixa']} {m['pico']}" for m in ms))
+    else:
+        ok_ = any(quer in t for t in mot) if quer == "a mais" else any("detalhe" in t and 260 <= (m["caixa"][1] + m["caixa"][3]) / 2 <= 720 for t, m in zip(mot, ms))
+        confere(ok_, f"mancha: {nome} reprova ({quer})", "; ".join(f"{m['caixa']} {m['pico']}: {t[:60]}" for m, t in zip(ms, mot)) or "nenhuma mancha")
+
+# 8. código
 hf = OUT / "hf"; hf.mkdir(exist_ok=True)
 (hf / "cena.js").write_text("const CARTAO = [[0, 70], [2, 120], [4, 200], [6, 260], [8, 300], [10, 330], [12, 350], [14, 365], [16, 375], [18, 380]];\n"
                             "function x(F) { return K(F, CARTAO); }\n")
