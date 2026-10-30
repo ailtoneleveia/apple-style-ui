@@ -12,7 +12,8 @@
     {"id": "altura", "type": "number", "label": "Altura da linha em destaque (px da linha de base, de cima; o clone usa 1108)", "default": 1108, "min": 300, "max": 1800, "step": 1},
     {"id": "sombra", "type": "enum", "label": "Sombra das letras", "default": "nenhuma",
      "options": [{"value": "nenhuma", "label": "Nenhuma (a rodada 05 do clone)"}, {"value": "medida", "label": "A medida no original (60 %, σ 4 px): mais leitura em fundo claro"}]},
-    {"id": "cenas", "type": "string", "label": "Cenas especiais: JSON {número da frase, a partir de 0: \"escura\"}. A frase escura vira caixa alta sobre o vídeo escurecido, com o destaque na serifa ao lado (a cena do neon do clone)", "default": "{\"2\": \"escura\"}"}
+    {"id": "cenas", "type": "string", "label": "Cenas especiais: JSON {número da frase, a partir de 0: \"escura\"}. A frase escura vira caixa alta sobre o vídeo escurecido, com o destaque na serifa ao lado (a cena do neon do clone)", "default": "{\"2\": \"escura\"}"},
+    {"id": "alturas", "type": "string", "label": "Altura por frase: JSON [px da linha de base do destaque, ou null]; o montar.py tira do rosto (abaixo do queixo ou acima da cabeça). Vazio ou null: vale a altura (e 714 na cena escura)", "default": "[]"}
   ]'>
   <head>
     <meta charset="UTF-8" />
@@ -55,6 +56,7 @@
       const V = Object.assign({}, DEF, HFV);
       let FR = []; try { FR = JSON.parse(V.frases); } catch (e) { FR = JSON.parse(DEF.frases); }
       let CENAS = {}; try { CENAS = JSON.parse(V.cenas || "{}") || {}; } catch (e) { CENAS = {}; }
+      let ALT = []; try { ALT = JSON.parse(V.alturas || "[]") || []; } catch (e) { ALT = []; }
 
       const MEDIDAS = {
         baseDestaque: 1108,   // linha de base da serifa (px): 1096 a 1110 nos 4 grupos do clone
@@ -133,7 +135,7 @@
         const E = MEDIDAS.escura, CAIXA = (px) => `${E.peso} ${px}px "SF Pro"`, capH = tinta("H", CAIXA(100)).h;
         const pxSE = 100 * E.serifa / tinta("works", SER.f(100), espS).h;  // o tamanho da serifa na cena escura
         // cena escura: caixa alta em cima; a última palavra antes do destaque, maior, ao lado do destaque; o resto embaixo
-        function escura(grupo) {
+        function escura(grupo, gi) {
           const i0 = grupo.findIndex((p) => p[2]), i1 = i0 < 0 ? -1 : grupo.length - 1 - [...grupo].reverse().findIndex((p) => p[2]);
           const antes = i0 < 0 ? grupo : grupo.slice(0, i0), meio = i0 < 0 ? [] : grupo.slice(i0, i1 + 1), depois = i0 < 0 ? [] : grupo.slice(i1 + 1);
           const junto = meio.length && antes.length ? antes.slice(-1) : [], cima = antes.slice(0, antes.length - junto.length);
@@ -150,23 +152,23 @@
           };
           const cx = (ps, cap) => ps.map((p) => [up(p[0]), CAIXA, 100 * cap / capH, 1, 0, "caixa", p]);
           const se = (ps) => ps.map((p) => [p[0], SER.f, pxSE, sx, espS * pxSE / 100, "serifa", p]);
-          const b1 = E.base2 - E.capa2 - E.entre;
-          if (meio.length) { linha(cx(cima, E.capa1), b1, 1); linha([...cx(junto, E.capa2), ...se(meio)], E.base2, 0); }
-          else linha(cx(cima, E.capa2), E.base2, 0);
-          linha(cx(depois, E.capa1), E.base2 + E.entre + E.capa1, 0);
+          const base2 = ALT[gi] || E.base2, b1 = base2 - E.capa2 - E.entre;
+          if (meio.length) { linha(cx(cima, E.capa1), b1, 1); linha([...cx(junto, E.capa2), ...se(meio)], base2, 0); }
+          else linha(cx(cima, E.capa2), base2, 0);
+          linha(cx(depois, E.capa1), base2 + E.entre + E.capa1, 0);
           const ini = Math.min(...grupo.map((p) => p[1])) - MEDIDAS.antecipa;
           const t2 = grupo.length > 1 ? grupo[1][1] - MEDIDAS.antecipa : ini, tD = (i0 >= 0 ? grupo[i0][1] : grupo[grupo.length - 1][1]) - MEDIDAS.antecipa;
           return { ini, itens: out, escura: true, desce: [t2, Math.max(t2 + 0.1, tD)] };
         }
         return FR.map((grupo, gi) => {
-          if (CENAS[String(gi)] === "escura") return escura(grupo);
+          if (CENAS[String(gi)] === "escura") return escura(grupo, gi);
           const i0 = grupo.findIndex((p) => p[2]), i1 = i0 < 0 ? -1 : grupo.length - 1 - [...grupo].reverse().findIndex((p) => p[2]);
           const cima = i0 < 0 ? grupo : grupo.slice(0, i0), meio = i0 < 0 ? [] : grupo.slice(i0, i1 + 1), baixo = i0 < 0 ? [] : grupo.slice(i1 + 1);
           // linha do meio: as palavras em destaque lado a lado, um espaço da fonte entre elas, centradas em x = 540
           let ws = meio.map((p) => tinta(p[0], SER.f(pxS), espS * pxS / 100)), escala = 1;
           let largura = ws.reduce((s, m) => s + m.w * sx, 0) + MEDIDAS.vao * Math.max(0, ws.length - 1);
           if (largura > MEDIDAS.largMax) { escala = MEDIDAS.largMax / largura; largura = MEDIDAS.largMax; }
-          const x0 = W / 2 - largura / 2, base = +V.altura || MEDIDAS.baseDestaque, out = [];
+          const x0 = W / 2 - largura / 2, base = ALT[gi] || +V.altura || MEDIDAS.baseDestaque, out = [];
           let x = x0;
           const topos = [];  // topo da tinta de cada palavra em destaque (haste do t, h, f...): a linha de cima não encosta
           meio.forEach((p, k) => { out.push({ p, tipo: "serifa", x: x - ws[k].l * sx * escala, base, px: pxS * escala, sx, esp: espS * pxS / 100 });

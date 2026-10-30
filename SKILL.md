@@ -104,8 +104,10 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
      Uns 3 a 5 min para 15 s de fala. Se vier `aviso: falta a GROQ_API_KEY no .env`, a transcrição saiu pelo modelo
      local (mais lenta; a 1ª vez em português baixa ~3 GB): diga isso e siga. A chave é gratuita em console.groq.com e
      quem põe no `.env` é a pessoa.
+     A altura do texto sai do rosto, frase a frase (abaixo do queixo, ou acima da cabeça quando não cabe; pelo Vision
+     do macOS, local). A regra já marca no máximo uma frase com `escura:` (a cena escura) no `destaques.txt`.
   5. Mostre o vídeo e o `<video>/destaques.txt`: "As palavras em destaque estão entre colchetes. Quer trocar alguma?"
-     Para trocar, edite os colchetes (ou `escura:` no começo da linha para a cena escura) e rode o mesmo comando; sai
+     Para trocar, edite os colchetes (ou ponha ou tire `escura:` no começo da linha) e rode o mesmo comando; sai
      um arquivo novo, nada é sobrescrito. O portão do **Fechar** ainda não conhece este molde: termine mostrando o
      vídeo e perguntando "Aprovas este vídeo?".
 - **Tem molde** (a referência é o Satellite, o Joi ou o VoiceOS do @creatoroly; veja `moldes/<molde>/NOTAS.md`):

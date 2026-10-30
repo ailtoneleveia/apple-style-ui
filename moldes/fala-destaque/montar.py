@@ -15,6 +15,7 @@
    lista) ou, sem lista, a regra do kit (`clonar/scripts/destaque.py`: a mais longa fora das palavras vazias).
 3. Monta uma cópia do molde no bastidor (<pasta da saída>/.apple-style-ui/molde-<nome>/): o vídeo da pessoa em
    1080x1920 e 30 qps (corte central) como assets/pessoa.mp4, a duração certa e os campos gravados como padrões.
+   A altura do texto de cada frase (campo `alturas`) sai do rosto (rosto.swift, Vision do macOS; ver alturas()).
    A versão resolvida fica em <nome>.versao.json ao lado da saída. O bastidor é o do projeto: se a saída está em
    <projeto>/saidas/, ele é <projeto>/.apple-style-ui/ (saidas/ pode ser apagada sem perder nada).
 4. Renderiza com o motion blur do kit (`clonar/scripts/round_mb.sh`: 240 qps, tmix, um worker, H.264 -refs 4
@@ -137,6 +138,57 @@ def escolhe_escura(grupos):
     return max(cands)[2] if cands else None
 
 
+SEGURO = (220, 1632)  # o bloco fica entre o cabeçalho do Reels (~11 % de cima) e a legenda e os botões (15 % de baixo)
+BLOCO = (180, 80)     # o bloco acima e abaixo da linha de base do destaque (a linha de cima sobe nos picos da serifa e,
+                      # na cena escura, desce 44 px; a de baixo tem descendentes)
+MARGEM = 30
+
+
+def rostos(video):
+    """os rostos do vídeo a cada 0,2 s, pelo Vision do macOS (rosto.swift, local); [] sem o swift"""
+    if not shutil.which("swift"):
+        return []
+    r = subprocess.run(["swift", str(AQUI / "rosto.swift"), str(video), "0.2"], capture_output=True, text=True)
+    try:
+        return json.loads(r.stdout)
+    except ValueError:
+        return []
+
+
+def alturas(grupos, amostras, dur):
+    """A linha de base do destaque em cada frase, pelo rosto: o bloco nunca cobre de olhos a boca. Ordem: logo abaixo do
+    queixo, acima da cabeça, abaixo da boca, acima dos olhos, o mais baixo da área segura, pelo rosto somado dos quadros
+    da frase. Uma altura por frase (o texto não pula dentro dela). Se essa altura cobre o rosto em algum quadro (um corte
+    no meio da frase), vale a altura da área segura que deixa livres mais quadros, a mais perto dela. Frase com rosto em
+    menos da metade dos quadros: None (vale a `altura`). Diferença menor que 60 px da frase anterior: fica a anterior."""
+    def regra(fs):
+        cab = min(r["caixa"][1] - 0.4 * (r["caixa"][3] - r["caixa"][1]) for r in fs)  # o cabelo passa da caixa do Vision
+        olhos, boca, queixo = min(r["olhos"] for r in fs), max(r["boca"] for r in fs), max(r["queixo"] for r in fs)
+        for y in (queixo + MARGEM + BLOCO[0], cab - MARGEM - BLOCO[1], boca + MARGEM + BLOCO[0], olhos - MARGEM - BLOCO[1]):
+            if cabe(y):
+                return round(y)
+        return SEGURO[1] - BLOCO[1]
+    cabe = lambda y: SEGURO[0] <= y - BLOCO[0] and y + BLOCO[1] <= SEGURO[1]
+    livre = lambda y, r: y + BLOCO[1] + 10 < r["olhos"] or y - BLOCO[0] - 10 > r["boca"]
+    out, ant = [], None
+    for gi, g in enumerate(grupos):
+        a = min(p[1] for p in g) - 0.08
+        b = min(p[1] for p in grupos[gi + 1]) - 0.08 if gi + 1 < len(grupos) else dur
+        # a amostra de antes do início conta (passo de 0,2 s): um corte logo antes da frase não passa sem ser visto
+        am = [s for s in amostras if a - 0.2 < s["t"] < b] or sorted(amostras, key=lambda s: abs(s["t"] - (a + b) / 2))[:1]
+        fs = [max(s["rostos"], key=lambda r: (r["caixa"][2] - r["caixa"][0]) * (r["caixa"][3] - r["caixa"][1]))
+              for s in am if s["rostos"]]
+        if not fs or len(fs) < len(am) / 2:
+            out.append(None); ant = None; continue
+        geral = regra(fs)
+        nota = lambda y: sum(livre(y, f) for f in fs)
+        y = max([geral, *range(SEGURO[0] + BLOCO[0], SEGURO[1] - BLOCO[1] + 1, 10)], key=lambda y: (nota(y), -abs(y - geral)))
+        if ant is not None and abs(y - ant) < 60 and cabe(ant) and nota(ant) >= nota(y):
+            y = ant
+        out.append(y); ant = y
+    return out
+
+
 def autoteste():
     clone = json.loads(json.loads(re.search(r'"id": "frases".*?"default": ("(?:[^"\\]|\\.)*")', (AQUI / "index.html").read_text())
                                   .group(1)).replace("&apos;", "'"))
@@ -144,6 +196,17 @@ def autoteste():
     assert escolhe_escura(clone[:2]) is None  # menos de 3 frases: sem cena escura
     sem = [[["a", 0, 0], ["b", .1, 1]], [["c", 1, 0], ["d", 1.1, 0], ["e", 1.2, 1]], [["f", 3, 0], ["g", 3.1, 0]], [["h", 4, 1]]]
     assert escolhe_escura(sem) == 1  # a frase 2 não tem destaque; a 1 tem só 1 palavra antes dele e é a primeira
+    # altura pelo rosto (rostos sintéticos nas medidas do Vision no teste cego C): close, tela dividida, rosto enorme, nenhum
+    R = lambda y0, y1, olhos, boca, queixo: dict(caixa=[300, y0, 800, y1], olhos=olhos, boca=boca, queixo=queixo)
+    close, baixo, enorme = R(470, 1000, 520, 870, 1000), R(1150, 1550, 1180, 1450, 1560), R(200, 1500, 400, 1200, 1500)
+    um = lambda rs: alturas([[["a", 0.08, 1]]], [dict(t=k / 5, rostos=rs(k)) for k in range(6)], 1.2)[0]
+    al = [um(lambda k: [r]) for r in (close, baixo, enorme)] + [um(lambda k: [])]
+    assert al == [1210, 880, 1410, None], al  # abaixo do queixo, acima da cabeça, abaixo da boca, sem rosto
+    corte = um(lambda k: [close] if k == 0 else [baixo])  # corte logo depois do início (teste cego C, f211-f213)
+    for y, rs in zip(al[:3] + [corte, corte], ([close], [baixo], [enorme], [close], [baixo])):
+        assert all(y + BLOCO[1] < r["olhos"] or y - BLOCO[0] > r["boca"] for r in rs), (y, rs)  # nunca de olhos a boca
+    gs = [[["a", 0, 1]], [["b", 1, 1]]]  # duas frases com o mesmo rosto mexendo 40 px: a altura não pula
+    assert len(set(alturas(gs, [dict(t=k / 5, rostos=[R(470 + 4 * k, 1000 + 4 * k, 520, 870, 1000 + 4 * k)]) for k in range(10)], 2))) == 1
 
 
 def main():
@@ -188,7 +251,6 @@ def main():
         if v is not None:
             valores[k] = v
     valores["video_pessoa"] = "assets/pessoa.mp4"
-    (saida.parent / f"{nome}.versao.json").write_text(json.dumps(valores, ensure_ascii=False, indent=1))
 
     # cópia do molde com a pessoa, a duração e os campos como padrões
     w = bastidor / f"molde-{nome}"; shutil.rmtree(w, ignore_errors=True)
@@ -204,6 +266,15 @@ def main():
     roda(["ffmpeg", "-v", "error", "-y", "-i", w / "assets" / "pessoa.mp4", "-i", fala, "-map", "0:v", "-map", "1:a",
           "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-t", f"{dur:.3f}", orig])
     nf = int(round(dur * 30)); d_ = f"{nf / 30:.4f}"
+    # a altura de cada frase vem do rosto, salvo `--altura` (fixa) ou `alturas` numa --versao
+    aviso = None
+    if a.altura is not None:
+        valores["alturas"] = "[]"
+    elif not (a.versao and "alturas" in vv):
+        am = rostos(w / "assets" / "pessoa.mp4")
+        valores["alturas"] = json.dumps(alturas(json.loads(valores["frases"]), am, nf / 30))
+        aviso = None if am else "sem detector de rosto (o swift do macOS): a altura ficou a fixa"
+    (saida.parent / f"{nome}.versao.json").write_text(json.dumps(valores, ensure_ascii=False, indent=1))
     html = (w / "index.html").read_text()
     html = re.sub(r'data-duration="[0-9.]+"', f'data-duration="{d_}"', html)
     for d in decl:
@@ -222,7 +293,8 @@ def main():
     if r.returncode or not saida.exists():
         falha(f"o render falhou (log em {bastidor / (nome + '-render.log')}): {(r.stderr or r.stdout).strip()[-400:]}", 2)
     fr = json.loads(valores["frases"])
-    ok(f"{saida.name}: {nf} quadros, {len(fr)} frase(s), destaques: {', '.join(p[0] for g in fr for p in g if p[2]) or 'nenhum'}",
+    ok(f"{saida.name}: {nf} quadros, {len(fr)} frase(s), destaques: {', '.join(p[0] for g in fr for p in g if p[2]) or 'nenhum'}"
+       f"; alturas pelo rosto: {valores.get('alturas', '[]')}" + (f"; aviso: {aviso}" if aviso else ""),
        saida=str(saida), versao=str(saida.parent / f"{nome}.versao.json"),
        proximo=dict(comando=f"abrir {saida}", motivo="conferir no olho; para trocar palavra, tempo ou destaque, edite a versão "
                     "e rode de novo com --versao", precisa_de_voce=True))

@@ -13,7 +13,8 @@ vem do 6º clone (FICHA.md e LICOES.md, fora do repositório); aqui não entra g
 | `cor_destaque` | color | a cor da palavra em destaque | `#fefaf7` (a medida) |
 | `fonte_destaque` | enum | `instrument` (Instrument Serif Itálico com o espaço, o negrito e a proporção medidos), `playfair`, `dmserif` | `instrument` |
 | `cor_apoio` | color | a cor das palavras pequenas | `#fffcf8` |
-| `altura` | number | a linha de base da palavra em destaque (px de cima); suba se o texto cobrir a boca | 1108 (a do clone) |
+| `altura` | number | a linha de base da palavra em destaque (px de cima) nas frases sem `alturas` (sem rosto). `--altura` no `montar.py` fixa esta para todas e desliga o rosto | 1108 (a do clone) |
+| `alturas` | string (JSON) | uma linha de base por frase (px, ou `null`), também na cena escura; o `montar.py` tira do rosto (abaixo) | `[]` (vale `altura`, e 714 na cena escura) |
 | `sombra` | enum | `nenhuma` (como a rodada final do clone) ou `medida` (60 %, σ 4 px, a do original: melhor em fundo claro) | `nenhuma` |
 | `cenas` | string (JSON) | `{"<frase, a partir de 0>": "escura"}`: a frase vira a cena escura do neon (caixa alta em SF Pro 760 sobre o vídeo escurecido a 60 %, a última palavra antes do destaque maior e ao lado dele, na serifa; ver abaixo) | `{"2": "escura"}` (a frase do clone); frases transcritas recebem a da regra (abaixo) |
 
@@ -85,6 +86,33 @@ Quem manda, nesta ordem: o campo `cenas` de uma `--versao` (inclusive `{}`, que 
 `destaques.txt` (o `caso.py` grava em `cenas`) e a regra. Versão antiga com `frases` e sem `cenas` passa pela regra
 (antes ela herdava o `{"2": "escura"}` do clone).
 
+## A altura vem do rosto (30/10)
+
+Com a gravação real em close (teste cego C), a altura do clone (1108) punha o texto na barba e na boca, e a cena
+escura (714) caía nos olhos do exemplo do Pexels. Agora o `montar.py` acha o rosto em `assets/pessoa.mp4` a cada
+0,2 s com o Vision do macOS (`rosto.swift`, rodado pelo `swift` do sistema: local, sem download, sem rede; o OpenCV
+5 do ambiente não tem mais o Haar e o modelo do YuNet não está instalado) e grava uma linha de base por frase no campo
+`alturas` (`alturas()` no `montar.py`):
+
+- o bloco ocupa da linha de base -180 a +80 px (a linha de cima sobe nos picos da serifa, a cena escura desce 44 px) e
+  fica entre y 220 e 1632 (o cabeçalho do Reels em cima e os 15 % de baixo da interface);
+- ordem: logo abaixo do queixo (+30 px), acima da cabeça (a caixa do Vision sobe 40 % para o cabelo), abaixo da boca,
+  acima dos olhos, o mais baixo da área segura, pelo rosto somado dos quadros da frase;
+- se essa altura cobre de olhos a boca em algum quadro (um corte no meio da frase), vale a da área segura que deixa
+  livres mais quadros, a mais perto dela; a amostra de logo antes do início conta, para pegar um corte em cima do
+  início (no C, a frase 6 começa em f211 e o corte para a tela dividida é em f213);
+- uma altura por frase (o texto não pula dentro dela); menos de 60 px de diferença da anterior fica a anterior; frase
+  sem rosto em metade dos quadros fica `null` (vale `altura`).
+
+`--altura` fixa uma altura para tudo e desliga o rosto; uma `--versao` com `alturas` manda. O detector soma ~5 s ao
+`aplicar` (~17 s na primeira vez, quando o swift compila). Com isso, o `caso.py` passou a gravar no `destaques.txt` a
+cena escura da regra (`escolhe_escura()`, com `escura:` na linha), que antes ficava fora do caminho do kit.
+
+Prova (fora do repositório, `teste-cego/C-rosto/`): no C, frases 1 a 5 em 1335 (abaixo da barba), 6 em 427 (o corte),
+7 a 9 em 877 (acima da cabeça na tela dividida, com a cena escura na 8); no Pexels, todas em 1274, a cena escura
+também. Nenhum quadro das folhas antes e depois tem texto de olhos a boca. O autoteste confere close, tela dividida,
+rosto enorme, sem rosto, o corte no início e a altura que não pula.
+
 ## O pingo do i encostado no "and" (resolvido em 30/10)
 
 No primeiro grupo dos padrões, o pingo do i de "reinvent" sobe até a linha de cima e ficava colado no "d" do "and"
@@ -152,4 +180,6 @@ python3 moldes/fala-destaque/montar.py --pessoa minha-fala.mp4 --saida saidas/mi
 - A cena escura não corta para outra filmagem: escurece a da pessoa. A frase sai da regra acima; a pessoa troca no
   `destaques.txt` (`escura:`) ou no campo `cenas`.
 - Não corta para outras filmagens nem borra o vídeo da pessoa na transição (só o texto).
-- A diagramação não desvia do rosto: a `altura` é fixa por vídeo.
+- A altura do rosto precisa do macOS (o Vision pelo `swift`). Em outro sistema, ou se o swift falhar, vale a `altura`
+  fixa e o resumo do `montar.py` avisa.
+- Dentro de uma frase o texto não segue o rosto: se a pessoa se mexe muito, ganha a altura que deixa livres mais quadros.

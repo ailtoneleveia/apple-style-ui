@@ -23,7 +23,8 @@ edita) e `<projeto>/.apple-style-ui/` (transcrição, versão, logs). Nada é so
 
 O destaque: a regra do kit (`scripts/destaque.py`: a palavra mais longa da frase fora das palavras vazias de português
 e inglês). O `destaques.txt` tem uma linha por frase com as palavras em destaque entre colchetes; mude os colchetes
-(ou ponha `escura:` no começo da linha para a cena escura, nos moldes que têm o campo `cenas`) e rode o mesmo comando.
+(`escura:` no começo da linha marca a cena escura, nos moldes que têm o campo `cenas`; a primeira vez, a
+`escolhe_escura()` do molde já marca uma) e rode o mesmo comando.
 Saída JSON {ok, resumo, proximo: {comando, motivo, precisa_de_voce}}; erro no stderr {ok: false, erro, codigo}.
 """
 import argparse, datetime, hashlib, importlib.util, json, os, re, shlex, shutil, subprocess, sys
@@ -207,12 +208,13 @@ def le_destaques(arq, grupos):
     return escuras
 
 
-def escreve_destaques(arq, grupos):
+def escreve_destaques(arq, grupos, escuras=()):
     txt = ["# Uma linha por frase. As palavras entre colchetes viram o destaque (pode ter mais de uma ou nenhuma).",
            "# Mude só os colchetes e rode o mesmo comando de novo. `escura:` no começo da linha põe a frase na cena escura",
            "# (caixa alta sobre o vídeo escurecido), nos moldes que têm o campo `cenas`.",
-           "# Regra que escolheu: a palavra mais longa da frase fora das palavras vazias (clonar/scripts/destaque.py)."]
-    txt += [" ".join(f"[{p[0]}]" if p[2] else p[0] for p in g) for g in grupos]
+           "# Regra que escolheu: a palavra mais longa da frase fora das palavras vazias (clonar/scripts/destaque.py);",
+           "# a cena escura, a escolhe_escura() do molde (tire o `escura:` para não ter)."]
+    txt += [("escura: " if i in escuras else "") + " ".join(f"[{p[0]}]" if p[2] else p[0] for p in g) for i, g in enumerate(grupos)]
     Path(arq).write_text("\n".join(txt) + "\n")
 
 
@@ -251,8 +253,10 @@ def aplicar(a, extras):
         escuras = le_destaques(arq, grupos); origem_dest = f"o {arq.name}"
     elif a.destaques:
         falha(f"arquivo de destaques não encontrado: {arq}", 1)
-    else:
-        escreve_destaques(arq, grupos); origem_dest = "a regra do kit"
+    else:  # a cena escura da regra do molde (a altura do texto vem do rosto, então a caixa alta não cai nos olhos)
+        i = m.escolhe_escura(grupos) if hasattr(m, "escolhe_escura") else None
+        escuras = [] if i is None else [i]
+        escreve_destaques(arq, grupos, escuras); origem_dest = "a regra do kit"
     # cenas sempre explícito: o padrão do molde marca a cena escura das frases do clone, não das da pessoa
     versao = dict(frases=json.dumps(grupos, ensure_ascii=False), cenas=json.dumps({str(i): "escura" for i in escuras}))
     vj = bast / f"{saida.stem}.caso-versao.json"
