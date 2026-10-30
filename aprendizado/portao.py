@@ -352,7 +352,10 @@ def ler_compare(txt):
 
 def portao_clone(mp4, clones):
     pasta = os.path.dirname(mp4)
-    ref = os.path.join(pasta, "reference", "analysis")
+    ref = os.path.join(pasta, "reference", "analysis")  # layout antigo (launch-video-clone)
+    nova = os.path.join(os.path.dirname(pasta), ".apple-style-ui", "medidas", "analise")  # clone novo: <clone>/saidas/final.mp4
+    if os.path.exists(os.path.join(nova, "analysis.json")):
+        ref = nova
     if not os.path.exists(os.path.join(ref, "analysis.json")):
         raise Falha(f"não achei a análise da referência em {ref}", "FALTA_ANALISE_DA_REFERENCIA",
                     comando=shlex.join(["python3", os.path.join(SCRIPTS, "burst.py"), os.path.join(pasta, "reference", "ref.mp4"), ref]),

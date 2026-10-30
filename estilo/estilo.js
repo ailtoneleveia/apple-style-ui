@@ -92,7 +92,7 @@
     rapida: { zeta: 1.0, omega: 39, u0: 0, origem: "Satellite, raio e cor no ícone→cartão f31-35" },
     deslize: { zeta: 1.94, omega: 13.7, u0: 13.5, origem: "Satellite, pílula Vehicle f150-190 (rms 0,8 %)" },
   };
-  const P = (m) => (typeof m === "string" ? MOLAS[m] : m || MOLAS.suave);
+  const P = (m) => (typeof m === "string" ? MOLAS[m] : m ? { u0: 0, ...m } : MOLAS.suave);  // mola sem u0 sai do repouso (antes dava NaN)
   // progresso 0→1 de uma mola que sai do repouso em t=0 (t em segundos)
   const mola = (t, m = "suave") => { const p = P(m); return 1 - molaErro(t, 1, -p.u0, p.zeta, p.omega)[0]; };
   const molaVel = (t, m = "suave") => { const p = P(m); return -molaErro(t, 1, -p.u0, p.zeta, p.omega)[1]; };

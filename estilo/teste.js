@@ -33,6 +33,8 @@ assert(ES.overshoot("suave") < 1e-6 && ES.overshoot("firme") < 1e-6, "suave e fi
 const ch = [[0, 0], [0.1, 100, "suave"], [0.25, 40, "elastica"]];
 const [xa, va] = ES.cadeia(0.25 - 1e-7, ch, "suave", true), [xb, vb] = ES.cadeia(0.25 + 1e-7, ch, "suave", true);
 assert(Math.abs(xa - xb) < 1e-3 && Math.abs(va - vb) < 0.5, `cadeia descontínua: ${xa}/${xb} ${va}/${vb}`);
+// mola própria sem u0 sai do repouso (o teste cego B3 tropeçou num NaN silencioso)
+assert(Number.isFinite(ES.cadeia(0.3, [[0, 0], [0.1, 1, { zeta: 0.8, omega: 20 }]])) && Number.isFinite(ES.mola(0.2, { zeta: 0.8, omega: 20 })), "mola sem u0 deu NaN");
 near(ES.cadeia(5, ch), 40, 1e-6, "cadeia assenta no último alvo");
 near(ES.cadeia(0.05, ch), 0, 1e-9, "cadeia parada antes da 1a mudança");
 
