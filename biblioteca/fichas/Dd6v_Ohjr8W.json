@@ -1,0 +1,44 @@
+{
+ "id": "Dd6v_Ohjr8W",
+ "url": "https://www.instagram.com/p/Dd6v_Ohjr8W/",
+ "autor": "charliehills",
+ "data": "2026-09-30",
+ "curtidas": 174,
+ "comentarios": 235,
+ "legenda_post": "Top is Opus 5.5. Bottom is Sonnet 5.5. Same recording, same brief.\n\nI gave both models my exact editing process (the one I use for my own reels) and let them edit the whole thing.\n\nThey each had to:\n1. Cut every pause and every mistake\n2. Build every visual from scratch\n3. Add one-line captions\n4. P",
+ "duracao_s": 29.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "EDIT",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "imessage",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 597,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

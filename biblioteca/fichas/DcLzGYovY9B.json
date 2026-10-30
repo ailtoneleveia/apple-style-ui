@@ -1,0 +1,50 @@
+{
+ "id": "DcLzGYovY9B",
+ "url": "https://www.instagram.com/p/DcLzGYovY9B/",
+ "autor": "sultanmotions",
+ "data": "2026-08-18",
+ "curtidas": 25362,
+ "comentarios": 308,
+ "legenda_post": "Every great explainer video has a structure. 🎬\nHere’s how we broke down HowDo — section by section.\nIntro → Problem → Use Case → Call to Action.\nThis is the anatomy of a 40 second SaaS video. 💜\n#motiongraphics #motion #promovideo #saasexplainer \n#explainervideo",
+ "duracao_s": 44.5,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.71,
+ "pecas": [
+  "janela",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.74
+ },
+ "qualidade": {
+  "largura": 1440,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 618,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:apple style edit",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

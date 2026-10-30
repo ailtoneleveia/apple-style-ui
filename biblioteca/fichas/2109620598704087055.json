@@ -1,0 +1,38 @@
+{
+ "id": "2109620598704087055",
+ "url": "https://x.com/i/status/2109620598704087055",
+ "autor": "aeoniumsky",
+ "data": "2026-10-12",
+ "curtidas": 37,
+ "comentarios": 4,
+ "legenda_post": "This is beyond wild 😱  I asked Claude Opus 5.5 to recreate one of my Plasma Lamp gifs as a .html file using three.js https://t.co/w7MX2l0zWy",
+ "duracao_s": 29.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.04,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 60.0,
+  "kbps": 131,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

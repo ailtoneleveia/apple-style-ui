@@ -1,0 +1,36 @@
+{
+ "id": "2103225854599807308",
+ "url": "https://x.com/i/status/2103225854599807308",
+ "autor": "andriyfernandes",
+ "data": "2026-09-24",
+ "curtidas": 4,
+ "comentarios": 0,
+ "legenda_post": "Mandei o @claudeai opus 5.5 fazer esse vídeo no @diffusionhq , o prompt foi \"faça uma animação de stickman's numa batalha naval, use meus SFX em tal pasta\"  10 minutinhos depois e olha que coisa linda, não escolhi nada a mão, foi só isso mesmo, a pasta tinha mais de 5000 sfx. https://t.co/DUzhY2c1lG",
+ "duracao_s": 12.5,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.71,
+ "pecas": [],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 29.94,
+  "kbps": 164,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

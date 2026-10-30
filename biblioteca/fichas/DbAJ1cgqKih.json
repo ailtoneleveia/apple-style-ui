@@ -1,0 +1,49 @@
+{
+ "id": "DbAJ1cgqKih",
+ "url": "https://www.instagram.com/p/DbAJ1cgqKih/",
+ "autor": "morteza_mashhoudi",
+ "data": "2026-07-20",
+ "curtidas": 44,
+ "comentarios": 2,
+ "legenda_post": "Apple Logo Motion Graphics (2D)\n-\nA short motion design where the Apple typography transforms into some of Apple’s most iconic products.\n-\nDesigned and animated in Adobe After Effects with smooth transitions and clean animation.\n-\nWhich Apple product is your favorite? 👇\n\n🎬 Created in Adobe After Eff",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": 108.2,
+  "onsets_per_s": 2.29
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 283,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple editing style",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

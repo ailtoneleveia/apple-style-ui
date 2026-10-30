@@ -1,0 +1,43 @@
+{
+ "id": "DWlwUpADUWA",
+ "url": "https://www.instagram.com/p/DWlwUpADUWA/",
+ "autor": "creatoroly",
+ "data": "2026-04-01",
+ "curtidas": 1882,
+ "comentarios": 33,
+ "legenda_post": "got into clean Roman app style 🗽\n\n#motiondesign #motion #animations",
+ "duracao_s": 13.9,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "print_site"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 154.7,
+  "onsets_per_s": 4.21
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 351,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

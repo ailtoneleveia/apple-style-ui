@@ -1,0 +1,40 @@
+{
+ "id": "2105028528198541622",
+ "url": "https://x.com/i/status/2105028528198541622",
+ "autor": "konstantinsaifo",
+ "data": "2026-09-29",
+ "curtidas": 27,
+ "comentarios": 2,
+ "legenda_post": "I asked Claude Opus 5.5 to build a game where you run a factory against an AI.  You design the production line for a drone, an electric motor or a rocket engine. A real discrete event simulation runs it: machines break down, queues fill up, the bottleneck glows red.  Then an AI https://t.co/gCMof7Hp",
+ "duracao_s": 40.0,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 55,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 243,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2108944282379796747",
+ "url": "https://x.com/i/status/2108944282379796747",
+ "autor": "borntogambles",
+ "data": "2026-10-10",
+ "curtidas": 7,
+ "comentarios": 2,
+ "legenda_post": "Claude Code running Opus 5.5 got one prompt  \"make me a quantum dog. make it go crazy fr\"  It collapsed a wavefunction and built one.  Meet the Quantum Dog.  He's a good boy and a bad boy until someone looks.  You just did.  He's in three places at once.  He fetches the ball https://t.co/jTsL5Rg975",
+ "duracao_s": 22.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.06,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 217,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

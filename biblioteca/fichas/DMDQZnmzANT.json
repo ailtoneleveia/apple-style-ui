@@ -1,0 +1,47 @@
+{
+ "id": "DMDQZnmzANT",
+ "url": "https://www.instagram.com/p/DMDQZnmzANT/",
+ "autor": "designwithdevansh",
+ "data": "2025-07-13",
+ "curtidas": 198,
+ "comentarios": 6,
+ "legenda_post": "Day 1 of Motion Design - Apple Logo Reveal animation.\n\nEffects used:\n1. Fill\n2. CC light sweep\n3. CC Radial Fast Blur\n4. Vegas\n5. Simple Choker\n6. Linear Wipe\n7. VC Color Vibrance.\n\nAfter effects animation\nMotion designers\nLogo animation",
+ "duracao_s": 7.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.95,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 70.0,
+  "onsets_per_s": 0.99
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 134,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

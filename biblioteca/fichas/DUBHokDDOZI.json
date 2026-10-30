@@ -1,0 +1,50 @@
+{
+ "id": "DUBHokDDOZI",
+ "url": "https://www.instagram.com/p/DUBHokDDOZI/",
+ "autor": "noahvsl",
+ "data": "2026-01-27",
+ "curtidas": 463,
+ "comentarios": 173,
+ "legenda_post": "Comment „3D“ and I'll send you the Iphone model for free 👀\n\nValid or nahh? \n\nIb:\n@eclpt \n@kram.visuals \n\n#aftereffects #videoediting #animation #motiongraphics",
+ "duracao_s": 13.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.99
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 507,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

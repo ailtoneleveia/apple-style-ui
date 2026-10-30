@@ -1,0 +1,36 @@
+{
+ "id": "2105100907952353560",
+ "url": "https://x.com/i/status/2105100907952353560",
+ "autor": "abhinavflac",
+ "data": "2026-09-30",
+ "curtidas": 189,
+ "comentarios": 6,
+ "legenda_post": "GPT 6.1 sol vs Opus 5.5  &gt; I asked for thin borders, translucent tones, detailed veins and beveled edges and SOL hits all four 🔥 &gt; opus looks moody but the lead is heavy and thick https://t.co/DhSm4DsJPz",
+ "duracao_s": 30.5,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.74,
+ "pecas": [],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 356,
+  "fps": 30.0,
+  "kbps": 134,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

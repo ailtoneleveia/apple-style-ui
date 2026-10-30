@@ -1,0 +1,49 @@
+{
+ "id": "Dd53XPnBVT0",
+ "url": "https://www.instagram.com/p/Dd53XPnBVT0/",
+ "autor": "flutteryourway",
+ "data": "2026-09-30",
+ "curtidas": 404,
+ "comentarios": 73,
+ "legenda_post": "Not just animation, this is actual code.\n\nComment \"code\" to get the code in your DMs.\n\n#mobileapp #animation #coding",
+ "duracao_s": 21.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "CODE",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.24
+ },
+ "qualidade": {
+  "largura": 776,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 195,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

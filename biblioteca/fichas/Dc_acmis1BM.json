@@ -1,0 +1,48 @@
+{
+ "id": "Dc_acmis1BM",
+ "url": "https://www.instagram.com/p/Dc_acmis1BM/",
+ "autor": "mythiqmotion",
+ "data": "2026-09-07",
+ "curtidas": 350,
+ "comentarios": 2,
+ "legenda_post": "Our recent SaaS Explainer video made for @rerun_ai \n.\n.\n.\n.\n.\n#saas #aftereffects #rerun",
+ "duracao_s": 48.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.32
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 29.97,
+  "kbps": 709,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple style edit",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

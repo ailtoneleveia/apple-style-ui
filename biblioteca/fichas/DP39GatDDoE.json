@@ -1,0 +1,49 @@
+{
+ "id": "DP39GatDDoE",
+ "url": "https://www.instagram.com/p/DP39GatDDoE/",
+ "autor": "creatoroly",
+ "data": "2025-10-16",
+ "curtidas": 1428,
+ "comentarios": 17,
+ "legenda_post": "@gumroad 🍏\n\n#aftereffects #edits #videoediting #motiongraphic #motion #motiondesign #fyp",
+ "duracao_s": 8.2,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.65,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.6,
+  "onsets_per_s": 4.65
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 430,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,44 @@
+{
+ "id": "2106780444163281084",
+ "url": "https://x.com/i/status/2106780444163281084",
+ "autor": "luchoalfonso_",
+ "data": "2026-10-04",
+ "curtidas": 143,
+ "comentarios": 6,
+ "legenda_post": "sacado opus 5.5 https://t.co/pfUyt3MYCf",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "imessage",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.9,
+  "onsets_per_s": 2.32
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 59,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

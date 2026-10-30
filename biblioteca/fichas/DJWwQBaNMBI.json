@@ -1,0 +1,45 @@
+{
+ "id": "DJWwQBaNMBI",
+ "url": "https://www.instagram.com/p/DJWwQBaNMBI/",
+ "autor": "creatoroly",
+ "data": "2025-05-07",
+ "curtidas": 5260,
+ "comentarios": 2423,
+ "legenda_post": "comment the word \"widget\" to get my secret gift for you ⬇️",
+ "duracao_s": 10.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "presente",
+ "palavra": "WIDGET",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 89.2,
+  "onsets_per_s": 4.66
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 59.94,
+  "kbps": 668,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

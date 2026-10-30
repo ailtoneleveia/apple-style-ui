@@ -1,0 +1,40 @@
+{
+ "id": "2103038625483272483",
+ "url": "https://x.com/i/status/2103038625483272483",
+ "autor": "CurieuxExplorer",
+ "data": "2026-09-24",
+ "curtidas": 8,
+ "comentarios": 1,
+ "legenda_post": "I asked Opus 5.5 to generate a realistic 3D model of the Taj Mahal  Dome, minarets, marble inlay, even the foundations.  One prompt ⤵️ One HTML file. https://t.co/NsCn5FjFoB",
+ "duracao_s": 50.6,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 806,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 311,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

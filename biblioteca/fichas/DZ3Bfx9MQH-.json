@@ -1,0 +1,45 @@
+{
+ "id": "DZ3Bfx9MQH-",
+ "url": "https://www.instagram.com/p/DZ3Bfx9MQH-/",
+ "autor": "decvynx",
+ "data": "2026-06-21",
+ "curtidas": 442,
+ "comentarios": 24,
+ "legenda_post": "The Art of Noting. #motiondesign #aftereffects #mgfx #applesleek #uianimation #uidesign #minimalist #productivity #videoediting #creative #motiongraphics #aesthetic",
+ "duracao_s": 6.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 128.8,
+  "onsets_per_s": 6.11
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 276,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

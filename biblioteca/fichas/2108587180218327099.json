@@ -1,0 +1,40 @@
+{
+ "id": "2108587180218327099",
+ "url": "https://x.com/i/status/2108587180218327099",
+ "autor": "Techsupersta",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Asked Claude Opus 5.5 to build a fighting game where gods and monsters take on the icons of classic literature.  50 legends. Every power comes from their original myth or book. Thor vs Dracula, Medusa vs Sherlock, Heracles vs the Big Bad Wolf.  Who wins in your matchup? https://t.co/mvPrJRB8fK",
+ "duracao_s": 30.6,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "imessage",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 18,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 404,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2103019799614034026",
+ "url": "https://x.com/i/status/2103019799614034026",
+ "autor": "x4b47x",
+ "data": "2026-09-24",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5, one shot. 15 minutes of work.   Prompt: \"Create a pure javascript animation. 30-60s, vertical 9:16, paper cut-out shadow theatre style with gentle, fitting audio (made in code) on the topic: What makes a place feel like home?\" https://t.co/9YMBpOdNRD",
+ "duracao_s": 57.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.68,
+ "pecas": [],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 161,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2108257115026649419",
+ "url": "https://x.com/i/status/2108257115026649419",
+ "autor": "sgarlen01",
+ "data": "2026-10-08",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "i gave 3 Claude models the same lazy prompt and one of them built creepers  the prompt: \"make a minecraft clone. insane quality\"  no specs. one HTML file each  what came back:  -&gt; Haiku 5.5: 5 min, 31 KB. hills, trees, caves, mining. leans on three.js and the world just ends https://t.co/eloSsPZC",
+ "duracao_s": 26.0,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.65,
+ "pecas": [
+  "mapa"
+ ],
+ "nota": 16,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 449,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

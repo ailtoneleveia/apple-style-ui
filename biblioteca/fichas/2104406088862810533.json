@@ -1,0 +1,38 @@
+{
+ "id": "2104406088862810533",
+ "url": "https://x.com/i/status/2104406088862810533",
+ "autor": "ekcheungAI",
+ "data": "2026-09-28",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "叫 Claude Opus 5.5 寫一個飛機模擬器，一個 prompt 就開一整個遊戲專案，這種事每次看到還是會停一下。飛機模擬器好玩的地方，從來都在操縱手感多過畫質。 https://t.co/QC1bueSWGQ",
+ "duracao_s": 31.7,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.54,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 20,
+ "som": null,
+ "qualidade": {
+  "largura": 690,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 403,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

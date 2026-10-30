@@ -1,0 +1,42 @@
+{
+ "id": "2102853258582880547",
+ "url": "https://x.com/i/status/2102853258582880547",
+ "autor": "Ror_Fly",
+ "data": "2026-09-23",
+ "curtidas": 1037,
+ "comentarios": 37,
+ "legenda_post": "Opus 5.5 rendered this in HTML from (1) image 🤯  Things are getting weird.  PROMPT: We're going to try a little test. Do you think you could render a recipe motion graphic animation using javascript or html (w/e you think will produce the best) to show the full recipe from start https://t.co/kz2O8qB",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 110,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2103401461837406275",
+ "url": "https://x.com/i/status/2103401461837406275",
+ "autor": "rneayan",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 Oscilloscope style motiongraphic  Prompt :  Make Motiongraphic about my studio with Oscilloscope style https://t.co/ONiN9Nlk6M",
+ "duracao_s": 39.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 281,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

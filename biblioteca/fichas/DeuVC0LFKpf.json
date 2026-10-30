@@ -1,0 +1,47 @@
+{
+ "id": "DeuVC0LFKpf",
+ "url": "https://www.instagram.com/p/DeuVC0LFKpf/",
+ "autor": "charliehills",
+ "data": "2026-10-20",
+ "curtidas": 151,
+ "comentarios": 236,
+ "legenda_post": "There's a weird prompting trick called ASD-STE100, borrowed from aircraft manuals, and once you try it, you'll never prompt AI the same way again.\n\nI made it a permanent rule for every answer Claude gives me. I use five of its rules:\n\n1. Active voice\n\n2. No sentence over 20 words\n\n3. One idea per se",
+ "duracao_s": 43.3,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLEAR",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.69
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 148,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

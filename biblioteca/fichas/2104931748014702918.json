@@ -1,0 +1,40 @@
+{
+ "id": "2104931748014702918",
+ "url": "https://x.com/i/status/2104931748014702918",
+ "autor": "loveAIwang",
+ "data": "2026-09-29",
+ "curtidas": 5,
+ "comentarios": 3,
+ "legenda_post": "没错，Opus 5.5 做动效设计本来就很强，如果再配上即梦一起用，那效果绝对更上一层楼🥳  提示词：我想让你帮我创建一个60秒的动态图形解说视频，主题是计算机的发展史，从起源到现代，所有视觉图像应由即梦处理，所有动态图形元素和动画应由你处理，艺术风格为 报纸剪贴 混合媒介美学，具有高度精致感 https://t.co/aVFLsU4yJW",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.06,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "teclado"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 303,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,55 @@
+{
+ "id": "DSCwCjGjR5R",
+ "url": "https://www.instagram.com/p/DSCwCjGjR5R/",
+ "autor": "creatoroly",
+ "data": "2025-12-09",
+ "curtidas": 3883,
+ "comentarios": 53,
+ "legenda_post": "me when @apple editing style\n\n#apple #aftereffects #motiondesign",
+ "duracao_s": 8.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 143.1,
+  "onsets_per_s": 4.44
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 333,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:creatoroly",
+  "perfil:grupo",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

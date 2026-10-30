@@ -1,0 +1,42 @@
+{
+ "id": "DeR3K9LAq97",
+ "url": "https://www.instagram.com/p/DeR3K9LAq97/",
+ "autor": "charliehills",
+ "data": "2026-10-09",
+ "curtidas": 402,
+ "comentarios": 238,
+ "legenda_post": "17 skills I'd install on a fresh Hermes setup before asking it to do anything.\n\nOut of the box it can't see the internet, watch a video or remember your own repo. These fix that.\n\n1. Agent-Reach. Reads and searches X, Reddit, YouTube and GitHub from one CLI, with no API fees.\n2. humanizer. Strips th",
+ "duracao_s": 23.2,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "HERMES",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 158,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

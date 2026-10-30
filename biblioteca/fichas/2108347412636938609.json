@@ -1,0 +1,44 @@
+{
+ "id": "2108347412636938609",
+ "url": "https://x.com/i/status/2108347412636938609",
+ "autor": "aichrislee",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 just built me a Saturn V rocket in 3D.  1 prompt in Claude Code, about 15 minutes. It stands on the launch pad cut open, so you see the fuel tanks inside, and 1 button pulls all 20 parts apart with their names on them, from the 5 F-1 engines up to the escape tower. Hover https://t.co/YTCk2o",
+ "duracao_s": 16.1,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.74,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.0,
+  "onsets_per_s": 4.23
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 218,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

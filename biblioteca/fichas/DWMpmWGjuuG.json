@@ -1,0 +1,49 @@
+{
+ "id": "DWMpmWGjuuG",
+ "url": "https://www.instagram.com/p/DWMpmWGjuuG/",
+ "autor": "isla.creator",
+ "data": "2026-03-22",
+ "curtidas": 148,
+ "comentarios": 168,
+ "legenda_post": "пиши «УРОК» и забирай урок по монтажу Apple\n\nя снял подробный обзор на монтаж Apple - и отдам его БЕСПЛАТНО!\n\nзападные креаторы уже ГОД назад начали использовать этот дизайн, а заказчики платят СОТНИ баксов за такой монтаж💸\n\nты можешь упаковать профиль, дизайнить посты и монтировать рилс ДОРОГО и ПР",
+ "duracao_s": 5.0,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.66
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 29.97,
+  "kbps": 689,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "perfil:isla.creator",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

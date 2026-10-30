@@ -1,0 +1,49 @@
+{
+ "id": "Dc1E8QrRMea",
+ "url": "https://www.instagram.com/p/Dc1E8QrRMea/",
+ "autor": "adrimotions",
+ "data": "2026-09-03",
+ "curtidas": 345,
+ "comentarios": 24,
+ "legenda_post": "Let’s build your editing setup !",
+ "duracao_s": 11.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.8,
+  "onsets_per_s": 3.55
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 404,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:appleui",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

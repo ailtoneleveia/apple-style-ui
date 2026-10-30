@@ -1,0 +1,38 @@
+{
+ "id": "2103794962257084755",
+ "url": "https://x.com/i/status/2103794962257084755",
+ "autor": "ayushunleashed",
+ "data": "2026-09-26",
+ "curtidas": 59,
+ "comentarios": 12,
+ "legenda_post": "Motion designers are about to lose their jobs!!!! Claude Opus 5.5 made this video in 1 hour. API cost: $21  Here's the input prompt:  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go https://t.co/WiToLjjeg",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 341,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

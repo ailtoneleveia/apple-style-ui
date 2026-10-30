@@ -1,0 +1,48 @@
+{
+ "id": "DYtloldRRhf",
+ "url": "https://www.instagram.com/p/DYtloldRRhf/",
+ "autor": "jeth.lmedia",
+ "data": "2026-05-24",
+ "curtidas": 839,
+ "comentarios": 425,
+ "legenda_post": "That Apple-style text animation in Premiere Pro takes 10 seconds. You’re welcome. 🎬 Comment “text” and I’ll send you the preset! \n\n#PremierePro #VideoEditing #EditingTips #TextAnimation #PremiereProTutorial VideoEditor ContentCreator EditingTutorial ReelsTips AppleTextEffect",
+ "duracao_s": 34.8,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "TEXT",
+ "acabamento_pro": 0.99,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.33
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 347,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

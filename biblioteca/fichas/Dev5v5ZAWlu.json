@@ -1,0 +1,46 @@
+{
+ "id": "Dev5v5ZAWlu",
+ "url": "https://www.instagram.com/p/Dev5v5ZAWlu/",
+ "autor": "charliehills",
+ "data": "2026-10-21",
+ "curtidas": 101,
+ "comentarios": 155,
+ "legenda_post": "20 video effects for Claude.\n\nComment EFFECT and I'll send you all 20 effects as Claude skills (free).\n\nI recorded one take. Claude built every effect on top.\n\nSo I turned each one into a skill you can run:\n\n1. Grid Dive: you're one tile in a wall of video.\n\n2. Title Orbit: your title circles your h",
+ "duracao_s": 24.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "EFFECT",
+ "acabamento_pro": 1.62,
+ "pecas": [
+  "iphone",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.3
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 197,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

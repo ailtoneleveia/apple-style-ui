@@ -1,0 +1,43 @@
+{
+ "id": "2102924409124389221",
+ "url": "https://x.com/i/status/2102924409124389221",
+ "autor": "PalashBagchi11",
+ "data": "2026-09-24",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "@claudeai Then i asked @ClaudeDevs Opus 5.5 to add some music, and make 2 versions - 1 landscape, one portrait. Here is the prompt \"Add a good fast royalty free music to this video, and make 2 versions - 1 landscape, and another portrait\" Press the heart for the versions you like more. https://t.co/",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 7.22
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 189,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

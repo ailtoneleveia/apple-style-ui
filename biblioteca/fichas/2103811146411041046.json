@@ -1,0 +1,40 @@
+{
+ "id": "2103811146411041046",
+ "url": "https://x.com/i/status/2103811146411041046",
+ "autor": "marklaunches",
+ "data": "2026-09-26",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "Getting on the opus 5.5 bandwagon.   One prompt: \"build me an incredible video for my app. make it emotional.\" https://t.co/qIy7iDhggm",
+ "duracao_s": 44.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.41,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 30.0,
+  "kbps": 108,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

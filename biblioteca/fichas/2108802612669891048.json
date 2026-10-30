@@ -1,0 +1,36 @@
+{
+ "id": "2108802612669891048",
+ "url": "https://x.com/i/status/2108802612669891048",
+ "autor": "olezhavich",
+ "data": "2026-10-10",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "I'm not a motion designer. I gave Opus 5.5 one idea: introduce yourself with a short video.  It built the 3D scene, the particles, the text animation and the final title on its own. It took 20 minutes.  A year ago this would have meant a freelancer and a few days of work. https://t.co/hXlTmrkhHA",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.01,
+ "pecas": [],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 506,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

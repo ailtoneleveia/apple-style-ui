@@ -1,0 +1,42 @@
+{
+ "id": "2103146389412917572",
+ "url": "https://x.com/i/status/2103146389412917572",
+ "autor": "mattbean",
+ "data": "2026-09-24",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 (high) one-shotted a 30s promo video for @AppSumo on a basic prompt (attached below) https://t.co/iVdysbj5Lu",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 29.93,
+  "kbps": 259,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

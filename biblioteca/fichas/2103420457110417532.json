@@ -1,0 +1,45 @@
+{
+ "id": "2103420457110417532",
+ "url": "https://x.com/i/status/2103420457110417532",
+ "autor": "mehul4795",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Used the below one line prompt &amp; asked Opus 5.5 to create a video for ocrX app. I am stunned 🤯  Prompt: Create a product launch video for ocrX Android app. https://t.co/sZRsZASWga",
+ "duracao_s": 33.5,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.84,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 6.83
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 120,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

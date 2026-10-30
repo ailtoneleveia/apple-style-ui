@@ -1,0 +1,47 @@
+{
+ "id": "DYhbT5mSLAM",
+ "url": "https://www.instagram.com/p/DYhbT5mSLAM/",
+ "autor": "wyvixoriginals",
+ "data": "2026-05-19",
+ "curtidas": 2582,
+ "comentarios": 81,
+ "legenda_post": "Smooth enough? 🤔\n\n#edit #aftereffects #editing #animation #motiondesign",
+ "duracao_s": 10.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "busca",
+  "pilha_cartoes"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.67
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 2395,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

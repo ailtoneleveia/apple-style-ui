@@ -1,0 +1,43 @@
+{
+ "id": "2103617278671818789",
+ "url": "https://x.com/i/status/2103617278671818789",
+ "autor": "KangarooHere",
+ "data": "2026-09-25",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "God damnnn   Made with claude OPUS 5.5 with medium effort  Prompt:  \"make a dynamic 20-second motion graphics video for my newsletter that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\" https://t.co/hW95xJFieK",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 353,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

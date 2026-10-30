@@ -1,0 +1,42 @@
+{
+ "id": "2103275618045686217",
+ "url": "https://x.com/i/status/2103275618045686217",
+ "autor": "davidmarcus",
+ "data": "2026-09-25",
+ "curtidas": 282,
+ "comentarios": 20,
+ "legenda_post": "Opus 5.5 got quite good at video creation. My prompt was: “make a punchy and modern short video for social that promotes @lightspark capabilities. Needs to be production grade with sound”. 5 mins later (one shot): https://t.co/3YTARKNYXD",
+ "duracao_s": 23.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.05,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.0,
+  "onsets_per_s": 3.64
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 78,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

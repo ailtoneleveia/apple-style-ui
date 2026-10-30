@@ -1,0 +1,36 @@
+{
+ "id": "2103458245213929495",
+ "url": "https://x.com/i/status/2103458245213929495",
+ "autor": "Gdgtify",
+ "data": "2026-09-25",
+ "curtidas": 10,
+ "comentarios": 5,
+ "legenda_post": "Inspired by what @techhalla posted. I used Opus 5.5 with this prompt to generate this. I want you to use this approach to visualize motivational speeches.   Create a 20.00-second kinetic spoken-word film titled “BUILD THE FLOOR.”  Treat this as an original miniature speech staged https://t.co/V0yBdN",
+ "duracao_s": 20.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.57,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 60.0,
+  "kbps": 100,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

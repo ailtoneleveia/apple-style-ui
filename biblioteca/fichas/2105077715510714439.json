@@ -1,0 +1,36 @@
+{
+ "id": "2105077715510714439",
+ "url": "https://x.com/i/status/2105077715510714439",
+ "autor": "motion_conquest",
+ "data": "2026-09-29",
+ "curtidas": 16,
+ "comentarios": 5,
+ "legenda_post": "gave Opus 5.5 my website and promted:  I want you to make a promo video for my agency. Use any software I have installed: Blender, After Effects, Premiere – and make an insane 30-second motion design video.  judge for yourself. we might have a couple years left https://t.co/YpoiDrK8x1",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.91,
+ "pecas": [],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 236,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

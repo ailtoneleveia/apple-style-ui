@@ -1,0 +1,41 @@
+{
+ "id": "2103496403544928454",
+ "url": "https://x.com/i/status/2103496403544928454",
+ "autor": "bhanujraj",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "we cooked or we about to cook? f*ckin opus 5.5  prompt in the comments. https://t.co/b802ZkB55w",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 2.12,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 53,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 460,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

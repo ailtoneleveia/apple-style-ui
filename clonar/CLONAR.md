@@ -1,0 +1,205 @@
+# Clonar um vídeo, com prova
+
+Clonar é refazer um vídeo de referência no HyperFrames até ele ficar igual quadro a quadro, com nota. O clone
+serve para aprender o estilo de quem fez (molas, tempo, blur, letra) e vira molde depois. Uso interno de estudo:
+o original e os recortes dele nunca saem daqui.
+
+O ciclo: **medir, fichar, montar, rodar, comparar, corrigir**. No máximo 6 rodadas.
+**Alvo:** distância ≤ 0,012, correlação de movimento ≥ 0,97 e pico de até 1 quadro em todas as janelas.
+
+## Instalar (uma vez)
+
+```sh
+python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt
+```
+
+Fora do pip: ffmpeg, node e o HyperFrames (roda por `npx`, versão fixa 0.8.184).
+Os brutos de render vão para `ASUI_TMP` (padrão: pasta temporária do sistema), nunca para o projeto.
+
+## A pasta de um clone
+
+```text
+clone-<nome>/
+├── referencia/          original.mp4 + ORIGEM.md (link, autor, data, sha256)
+├── RAIOX.md             as medidas em português simples
+├── FICHA.md             cena por cena: o que aparece, de que quadro a que quadro, com os números
+├── hf/                  a composição (index.html, estilo.js, assets/)
+├── rodadas/01 … 06/     nota.json de cada rodada (distância, correlação, pico, fdsum, piores trechos)
+├── saidas/              final.mp4 e lado-a-lado.mp4
+├── LICOES.md            o que aprendeu, com evidência
+└── .apple-style-ui/     bastidor: medidas, renders das rodadas, comparações, logs
+```
+
+- A pasta nasce quando precisa: `novo` cria só `referencia/` e `.apple-style-ui/`; o resto aparece no passo que usa.
+- Nunca sobrescrever: antes de trocar um arquivo, o kit guarda uma cópia com data ao lado.
+- Número de rodada não volta, nem se a pasta da rodada for apagada.
+
+## O ciclo, passo a passo
+
+Todos os comandos devolvem JSON `{ok, resumo, proximo: {comando, motivo, precisa_de_voce}}`.
+
+1. **Criar.** `python3 clonar.py novo <pasta> <original.mp4> --link <url> --autor <@perfil>`
+2. **Medir.** `python3 clonar.py medir <pasta>` roda o raio-x: duração, fps, cortes e cenas, curvas dos elementos,
+   molas comparadas com as do `estilo.js`, obturador, BPM e batida, paleta e folha de quadros. Quando o texto entra
+   palavra a palavra (legenda cinética), cada palavra vira trilha própria, com entrada e saída medidas (`--legenda
+   nao` desliga, `--legenda sim` força). Ler o `RAIOX.md`
+   inteiro e olhar `.apple-style-ui/medidas/folha.jpg` e `.apple-style-ui/medidas/analise/shots/*/burst.png`.
+3. **Fichar.** Escrever `FICHA.md` cena por cena: quadros de início e fim, cada elemento, de onde vem, como entra,
+   como sai, cor, fonte e peso. Cada número sai de uma medida (`scripts/trilha_palavra.py`, `medir.py`, `sheet.py`,
+   `inkspan.py`, `track.py`, `camtrack.py`), nunca do olho. Toda peça que mexe (palavra, emoji, caixa, cartão) entra
+   num `elementos.json` e vira trilha com `trilha_palavra.py <original> elementos.json .apple-style-ui/medidas/trilhas.js`. Os eventos grandes vão para `clonar.py medir <pasta> --eventos f1,f2,...`,
+   que refaz o teste da batida com eles.
+4. **Montar.** `python3 clonar.py montar <pasta>` cria `hf/` com o modelo, uma cópia do `estilo.js`, a SF Pro do
+   sistema, o áudio do original e as trilhas medidas (`hf/trilhas.js`). Cada cena da ficha vira uma função de
+   `draw(t)`. O modelo já traz um canvas e o encaixe na tinta: `encaixa(txt, fonte, amostra(nome, F), opções)` desenha
+   o texto ou emoji na caixa medida do original (escala, centro e ângulo), e `amostra()` prende o `F` ao trecho medido
+   (sem isso o elemento nasce meio transparente). O `Fi` decide se o elemento existe. `{largura: true}` ajusta o
+   espaço entre letras à proporção da caixa medida (a fonte do original quase nunca tem o mesmo espaçamento). Onde não há trilha, comece pelas
+   molas, entradas, saídas, passos e pesos do `estilo.js`. Placa de fundo (vídeo de pessoa, mapa) só quando
+   `!SO_CAMADA`; sem ela, fundo neutro.
+5. **Rodar.** `python3 clonar.py rodada <pasta> --o-que-mudou "..."` renderiza com motion blur de subquadros
+   (240 qps: N=8 a 30 qps, N=4 a 60 qps; um worker; ganho de luma 1,008; H.264 nível 5.1), compara com o original
+   e grava `rodadas/NN/nota.json`. `--previa` faz um render rápido sem blur para conferir a montagem.
+   **Placa de vídeo** (a pessoa filmada é o próprio original, por baixo): o quadro inteiro fica artificialmente perto
+   do original. O caminho do 5º clone: `placa_video.py` apaga a camada antiga do original na pegada dela (tinta da
+   palavra assentada, caixa inteira na entrada, caixa rosa e cartão com a sombra, inclusive a passada do ponto das
+   molas) → `hf/assets/placa/`; `aparicao.py` mede a entrada e a saída de cada peça contra essa placa; a mesma
+   pegada vira a máscara da nota. Passe `--mascara <trilhas.js|caixas.json> --placa <placa.mp4>`: a nota que decide passa a ser a da
+   camada recriada, só nos pixels da máscara de cada quadro (`compara_mascara.py`), com o movimento medido em
+   quadro − placa e o número "sem camada" (não desenhar nada) ao lado para provar que a nota não engana. A máscara
+   fica guardada em `.apple-style-ui/mascara.json` para as próximas rodadas e para o `final`.
+6. **Comparar e corrigir.** Depois que a nota global passa, quem guia é o `fdsum` por trecho (`.apple-style-ui/rodadas/NN/fdsum.txt`,
+   com a rodada anterior ao lado) e o `diffview.py` (onde está o erro). Mude uma hipótese por região em cada rodada e
+   julgue pelos blocos, não pela média.
+7. **Fechar.** Ao bater o alvo, ou na 6ª rodada: `python3 clonar.py final <pasta>` gera `saidas/final.mp4` (a melhor
+   rodada) e `saidas/lado-a-lado.mp4` (resolução cheia, original à esquerda). `--so-camada` também renderiza
+   `saidas/so-camada.mp4`: a mesma composição sem a placa (`camada.js`), o primeiro passo para virar molde.
+   Escrever `LICOES.md`.
+
+## Caminho do comando de entrada: referência demonstrativa → vídeo com a pessoa do usuário
+
+O caso mais pedido: a pessoa vê uma referência (muitas vezes um vídeo demonstrativo, com o vídeo editado dentro de um
+cartão, de uma tela ou de um celular), cola o link, entrega a própria gravação e recebe o mesmo estilo com ela.
+Provado no 6º clone (fora do repositório).
+
+Os passos 1, 2 e 5 rodam sozinhos pelo `caso.py`; 3 e 4 continuam sendo trabalho de agente, com entrada e saída fixas.
+
+1. **Baixar** e 2. **tirar o vídeo de dentro:** `python3 caso.py referencia <link ou arquivo> [--pasta caso-<nome>]`.
+   Baixa com `yt-dlp` (sem cookies do navegador); post que pede login cai na cópia da biblioteca
+   (`~/.apple-style-ui/biblioteca/videos/<código>.mp4`). Grava `referencia/reel.mp4` + `ORIGEM.md` (link, autor, de onde
+   veio, sha256). Depois roda `scripts/extrair_tela.py` e decide sozinho (`--demonstrativo auto`): se a tela achada
+   ocupa menos de 85 % do quadro, é demonstrativo e vira `referencia/dentro.mp4`; senão o reel já é o vídeo final
+   (`--demonstrativo sim|nao` força). Cartão de borda indefinida: rode o `extrair_tela.py --quad` à mão.
+   Saída: o `proximo.comando` já é o `clonar.py novo` do passo 3. No 6º clone: 41 s, dentro.mp4 de 594x1056.
+3. **Clonar o vídeo de dentro (agente).** Entrada: `referencia/dentro.mp4` (ou o reel). Escolher um trecho que comece
+   e termine num corte, ampliar para 1080x1920 se for menor (a nota do kit mede em 96 e 540 colunas, abaixo do nativo)
+   e seguir o ciclo acima, com a pessoa como placa (`placa_video.py`, `aparicao.py`, `rodada --mascara --placa`).
+   Saída: `saidas/final.mp4`, `lado-a-lado.mp4`, `so-camada.mp4` e `LICOES.md`. As ferramentas do 6º clone que juntam a
+   camada (`camada.py`, `dados.py`) ficaram fora do kit: têm as
+   palavras, os grupos e os quadros daquele trecho escritos no código e não servem para outro clone sem reescrever.
+4. **Virar molde (agente).** Entrada: o clone. Saída: uma pasta com um projeto HyperFrames com campos
+   (`data-composition-variables` + `getVariables()`: o vídeo da pessoa em `data-var-src`, as frases com o tempo de cada
+   palavra, a cor e a fonte do destaque) e um `montar.py` ao lado. A diagramação e a animação viram regras com os
+   números do clone (não as caixas medidas). Para o `caso.py aplicar` usar o molde, o montar.py segue o contrato escrito
+   no topo do `caso.py` (`--pessoa --saida --versao --voz --previa` e as funções `le_palavras`, `trechos_de_fala`,
+   `frases`). Exemplo: `moldes/fala-destaque/`.
+5. **Aplicar à pessoa do usuário:** `python3 caso.py aplicar <molde> --video <gravação> [--saida <projeto>/saidas/x.mp4]
+   [--idioma pt] [--destaques destaques.txt] [--voz fala.wav] [--previa] [-- opções do molde]`.
+   - Transcreve com `scripts/transcrever.py`: Groq (whisper-large-v3, palavra a palavra, `GROQ_API_KEY` no ambiente ou
+     no `.env`; plano gratuito); sem chave, avisa (`aviso: falta a GROQ_API_KEY no .env`) e usa o `hyperframes
+     transcribe` local (small.en para inglês, large-v3 para o resto, ~3 GB na primeira vez). A lista fica no bastidor
+     do projeto e é reaproveitada.
+   - Agrupa em frases e alinha aos trechos de fala pelo `frases()` do molde.
+   - Escolhe o destaque pela regra do kit (`scripts/destaque.py`): a palavra mais longa da frase fora das palavras
+     vazias de português e inglês, sem advérbio em -mente/-ly se houver outra; empate, a mais perto do fim. Grava a
+     escolha em `<projeto>/destaques.txt` (uma linha por frase, destaque entre colchetes). A pessoa muda os colchetes, ou
+     põe `escura:` no começo da linha para a cena escura, e roda o mesmo comando: o arquivo é lido e respeitado.
+   - Monta e renderiza pelo `montar.py` do molde (motion blur do `round_mb.sh`, um worker, para abaixo de 5 GB livres).
+     Nada é sobrescrito: a saída que já existe ganha -2, -3.
+   Prova em português (22/10), feita fora do repositório com uma fala real.
+
+## Lista de verificação (o que os 5 primeiros clones ensinaram)
+
+- [ ] **Medir cada peça quadro a quadro.** Toda peça que mexe vira trilha medida (`medir.py`, `track.py`). Ease no olho
+      não chega lá. Trilha com buraco é preenchida por interpolação antes de desenhar.
+- [ ] **Só blur de subquadro.** Motion blur vem do render a 240 qps com obturador medido (1/120 s no estilo). Nada de
+      `filter: blur()` proporcional à velocidade. Blur de CSS só para desfoque de entrada e profundidade, medido.
+- [ ] **Corte seco não mistura lados.** `Fi` decide o que existe; os subquadros de um corte nunca juntam os dois planos.
+- [ ] **Morph de cor é mistura.** A cor nova cobre a velha como opacidade (fração medida por quadro), nunca
+      `brightness()` nem esmaecimento passando por cinza. Escurecer é rápido; clarear é lento.
+- [ ] **Nada é estático.** Peça "parada" quase sempre ainda anda: brilho que varre, ponteiro que gira, conteúdo que
+      treme dentro da janela. Amostre perfis de cor ao longo do tempo antes de congelar.
+- [ ] **Peso de fonte medido.** Compare a quantidade de tinta da mesma palavra no mesmo tamanho (`inkspan.py`,
+      `inkspan_light.py` para texto claro ou colorido) e ajuste o peso; depois o espaçamento.
+- [ ] **Tamanho pela largura da frase.** Pela altura da letra erra 8 a 12 %. Use `ES.tamanhoPorLargura` (opsz = px).
+- [ ] **Calibrar a luma.** Compare um fundo liso do clone com o do original em Y cru. O ganho 1,008 já vem no render;
+      escuros e brancos de vídeo do Instagram pedem `LUMA_INSTAGRAM=1`. Nunca mexer no croma.
+- [ ] **Conferir se há batida antes de supor.** O raio-x diz se os eventos caem na colcheia; só encaixe na batida
+      quando ele (com os eventos da ficha) e o ouvido disserem que sim.
+- [ ] **Container que encolhe:** o conteúdo escala ou a caixa vira máscara? Meça uma feição interna durante o encolhimento.
+- [ ] **Geometria reconstruída é rascunho.** Ajuste de volta ao original com `maskfit.py` num quadro assentado.
+- [ ] **Saída com tombo 3D:** ajuste por pontos internos e bordas ao mesmo tempo.
+- [ ] **Recorte de objeto sobre brilho:** o alfa sai da luminância acima da borda do recorte; o brilho é camada à parte.
+- [ ] **Cor e chave de tempo só de quadros numerados** (`select=eq(n,f)`), nunca de grade com rótulo nem de snapshot.
+- [ ] **A tinta medida dirige o elemento.** Texto e emoji: `trilha_palavra.py` no original, `encaixa()` na composição.
+      Nenhum ease à mão. (4º clone: 22 elementos numa rodada, correlação 0,985 já na primeira.)
+- [ ] **Calibrar emoji e texto contra o próprio clone:** a mesma medida no original e no render, corrigir pela razão
+      (escala pela raiz da razão de tinta, ângulo pela proporção da caixa). Espelhamento a caixa não vê: olhe.
+- [ ] **Câmera encadeada acumula erro:** registre cada quadro direto contra a placa (`registra_cam.py`).
+- [ ] **Fundo que se redesenha (mapa no zoom):** placa larga mais placas curtas com alfa por cima (`placa.py --janela`).
+- [ ] **Placa de vídeo:** a nota que vale é a da máscara (`rodada --mascara --placa`), com "sem camada" ao lado.
+- [ ] **Uma hipótese por região.** Mudou três regiões e duas pioraram: a média sobe e não se sabe por quê.
+- [ ] **Placa de vídeo sem a camada antiga, e sem vazamento.** A pegada cobre a passada do ponto das molas (5º clone:
+      o "S," da caixa rosa a 1,11 vazava pela placa e baixava a nota de graça).
+- [ ] **Medir a entrada contra a placa, com as vizinhas fora da conta** (`aparicao.py`). Peça dentro de outra (texto
+      no cartão) mede-se pelo contraste contra a peça de fora, não contra a placa.
+- [ ] **"Ruído" que se repete quadro a quadro pode ser o movimento.** A borda da caixa rosa que "variava" era a mola
+      (5º clone: correlação na máscara 0,81 → 0,91).
+- [ ] **Peso por grupo.** Legenda e cartão do mesmo editor tinham pesos diferentes (720 e 590).
+- [ ] **Referência demonstrativa: tire o vídeo de dentro primeiro** (`extrair_tela.py`) e meça tudo contra ele.
+      ECC na faixa da borda deriva quando o conteúdo de dentro anda (6º clone: 24 px num cartão parado).
+- [ ] **Nascimento pela tinta baixa.** A palavra pode nascer inteira e apagada (~85 %) e clarear depois; o limiar alto
+      atrasa o nascimento em até 4 quadros.
+- [ ] **Texto "parado" que escorrega.** Meça o x0 da trilha a vida toda (6º clone: 11 a 15 px em ~20 quadros).
+- [ ] **Caixa com haste ou perna:** estenda a região só para onde a palavra tem haste (t, f, h) ou perna (g, y), sem as
+      vizinhas, senão a caixa e a placa saem cortadas.
+- [ ] **Fonte pela medida, não pelo olho:** desenhe as candidatas na caixa medida e compare na pegada.
+- [ ] **Canvas não carrega @font-face sozinho:** `document.fonts.load()` e só guarde medida com `check()` verdadeiro.
+
+## Ferramentas (`scripts/`)
+
+| ferramenta | para quê |
+|---|---|
+| `raiox.py` | a medição inteira em minutos (o `medir` usa) |
+| `burst.py` | folhas de quadros por cena, energia de movimento por quadro, análise que o `compare.py` usa |
+| `cuts.py`, `audio.py` | cortes por continuidade de câmera; BPM, golpes e classe do áudio |
+| `sheet.py` | todos os quadros de a até b numa folha (recorte opcional) |
+| `fundo.py` | campo de fundo de baixa frequência por quadro (luz, vinheta, clarão), sem as peças desenhadas por cima |
+| `trilha_palavra.py` | trilha de cada palavra, emoji ou caixa pela tinta (caixa, ângulo, cor, tinta por quadro) → `trilhas.js`; `--auto` acha as palavras sozinho |
+| `placa.py` | placa de fundo em coordenadas de mundo pela câmera medida; `--janela`: placa curta com alfa |
+| `registra_cam.py` | registro absoluto da câmera, cada quadro contra a placa (corrige o erro acumulado do `camtrack.py`) |
+| `compara_mascara.py` | nota só na máscara (camada recriada sobre placa de vídeo), com o "sem camada" ao lado; aceita pegada PNG por peça |
+| `placa_video.py` | placa de um vídeo de pessoa: o original com a camada antiga apagada (inpaint) na pegada de cada quadro |
+| `aparicao.py` | entrada e saída de cada peça (opacidade, deslocamento, escala, desfoque por quadro) medidas contra a placa |
+| `medir.py` | caixa ou momentos de uma peça por cor, quadro a quadro, direto do vídeo |
+| `corner.py`, `maskfit.py` | raio de canto; ajuste afim de uma forma do clone contra o original |
+| `inkspan.py`, `inkspan_light.py` | extensão e quantidade de tinta de um texto (escuro, claro ou colorido) |
+| `track.py`, `camtrack.py` | pose de um objeto e câmera contínua por ECC encadeado |
+| `round_mb.sh`, `round.sh` | render com motion blur de subquadros; prévia sem blur |
+| `compare.py`, `fdsum.py`, `diffview.py` | nota global; distância por trecho com a rodada anterior; mapa da diferença |
+| `sbs.py` | lado a lado em resolução cheia |
+| `saida.py` | o que as ferramentas novas têm em comum: saída JSON padrão e leitura de quadros um a um |
+| `extrair_tela.py` | o vídeo de dentro de uma referência demonstrativa (cartão, tela, celular): acha, segue por homografia, endireita no tamanho nativo, lista trechos sem a tela e trocas de conteúdo |
+| `transcrever.py` | as palavras de uma fala com início e fim (`[{text, start, end}]`, o formato dos moldes): Groq whisper-large-v3 com `GROQ_API_KEY`, ou o `hyperframes transcribe` local; `--autoteste` |
+| `destaque.py` | a regra da palavra em destaque de cada frase (palavras vazias em português e inglês); roda sozinho como autoteste |
+
+Todas as ferramentas novas devolvem o JSON padrão `{ok, resumo, proximo}`. Autotestes: `testes/conferir_raiox.py`
+(o raio-x contra os 3 primeiros clones) e `testes/conferir_pecas.py` (as peças acima num vídeo sintético, menos de
+um minuto).
+
+## Regras de render e disco
+
+- `hyperframes render` sempre com `--workers 1` (com mais, ele grava todos os quadros em disco antes de codificar).
+- O render para sozinho com menos de 2 GB livres e apaga o bruto logo depois do tmix.
+- Vídeo dentro da composição (placa de fundo): o HyperFrames extrai os quadros a 240 qps para `ASUI_TMP/hf-cache`.
+  Recorte a placa só no trecho e no tamanho que aparecem.

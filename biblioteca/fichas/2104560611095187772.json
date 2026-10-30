@@ -1,0 +1,40 @@
+{
+ "id": "2104560611095187772",
+ "url": "https://x.com/i/status/2104560611095187772",
+ "autor": "cherusi3",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "② 順次学習させていった段階。 すべて、claude opus5.5の魅力を伝える動画をつくって  ちょっとましになってきた段階 ※エフォートは常に低 https://t.co/kC7U1HsaFt",
+ "duracao_s": 60.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [],
+ "nota": 56,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.9,
+  "onsets_per_s": 5.7
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 86,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

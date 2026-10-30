@@ -1,0 +1,39 @@
+{
+ "id": "2108928100624896157",
+ "url": "https://x.com/i/status/2108928100624896157",
+ "autor": "madhugogineni97",
+ "data": "2026-10-10",
+ "curtidas": 4,
+ "comentarios": 3,
+ "legenda_post": "I asked Opus 5.5 to make a domino playground and it built this 🤯  Opus really is something! A full 3D interactive thingy. Tap any domino, watch the whole run fall, play with gravity and colours.  My first ever 3D interactable. Try it out here 👇 https://t.co/jKsDkGsfhT https://t.co/GqtU4zonUx",
+ "duracao_s": 14.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.16,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 251,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

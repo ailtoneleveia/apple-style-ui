@@ -1,0 +1,55 @@
+{
+ "id": "DUYcK3GjuoJ",
+ "url": "https://www.instagram.com/p/DUYcK3GjuoJ/",
+ "autor": "md.nasifahsan",
+ "data": "2026-02-05",
+ "curtidas": 2147,
+ "comentarios": 266,
+ "legenda_post": "Comment: “Art” or \"Edit\". Which one do you think?\n\nDay: 25 of creating apple ui style animation.",
+ "duracao_s": 11.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 156.4,
+  "onsets_per_s": 3.69
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 472,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:md.nasifahsan",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

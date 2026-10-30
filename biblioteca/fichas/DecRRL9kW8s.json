@@ -1,0 +1,56 @@
+{
+ "id": "DecRRL9kW8s",
+ "url": "https://www.instagram.com/p/DecRRL9kW8s/",
+ "autor": "charliehills",
+ "data": "2026-10-13",
+ "curtidas": 704,
+ "comentarios": 824,
+ "legenda_post": "Claude Motion makes the animation now. You bring the taste.\n\nMy 4 steps:\n1. Find a style reference (I went for Apple)\n2. Turn it into one file: your colours, fonts and how things move\n3. Attach the file and describe one moment\n4. Change words in Tweaks, colours in Style, then export\n\nIt checked its ",
+ "duracao_s": 64.3,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "APPLE",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.62
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 977,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:charliehills",
+  "busca:ui apple captions",
+  "busca:apple motion design",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

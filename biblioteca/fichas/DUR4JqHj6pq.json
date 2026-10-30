@@ -1,0 +1,45 @@
+{
+ "id": "DUR4JqHj6pq",
+ "url": "https://www.instagram.com/p/DUR4JqHj6pq/",
+ "autor": "nexzdsgn",
+ "data": "2026-02-03",
+ "curtidas": 3,
+ "comentarios": 4,
+ "legenda_post": "Apple ui animation \nPractice |\n.\n.\n.\n#apple #animation #motiongraphics #appleanimation \n.\n.\nWill drop more like ts",
+ "duracao_s": 12.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 80.7,
+  "onsets_per_s": 1.53
+ },
+ "qualidade": {
+  "largura": 960,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 323,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

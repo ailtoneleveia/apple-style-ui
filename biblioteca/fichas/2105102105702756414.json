@@ -1,0 +1,44 @@
+{
+ "id": "2105102105702756414",
+ "url": "https://x.com/i/status/2105102105702756414",
+ "autor": "Alex_theFounder",
+ "data": "2026-09-30",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "A single prompt in @claudeai Opus 5.5  Asked for a 15sec promotional video  Clarified small things  This is the outcome  All within 20 mins   Just insane https://t.co/tXOBHg0eQG",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 140.8,
+  "onsets_per_s": 2.32
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 187,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

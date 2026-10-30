@@ -1,0 +1,50 @@
+{
+ "id": "DeIAISZuf_M",
+ "url": "https://www.instagram.com/p/DeIAISZuf_M/",
+ "autor": "allen.asgari",
+ "data": "2026-10-05",
+ "curtidas": 1253,
+ "comentarios": 25,
+ "legenda_post": "How do you turn “AI that watches millions of videos” into something people understand instantly?\nA little BTS from the @plotworkspace build and how we translated the product story into motion at Novra.",
+ "duracao_s": 14.1,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.69,
+ "pecas": [
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 110.5,
+  "onsets_per_s": 3.72
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 1018,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

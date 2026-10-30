@@ -1,0 +1,50 @@
+{
+ "id": "Dbm7L0wFbm5",
+ "url": "https://www.instagram.com/p/Dbm7L0wFbm5/",
+ "autor": "dnyxstudioss",
+ "data": "2026-08-04",
+ "curtidas": 1289,
+ "comentarios": 83,
+ "legenda_post": "apple ai concept by me",
+ "duracao_s": 16.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.68,
+ "pecas": [
+  "iphone",
+  "pilha_cartoes"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.42
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 29.97,
+  "kbps": 1111,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

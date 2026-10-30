@@ -1,0 +1,45 @@
+{
+ "id": "DY8AHUst4r1",
+ "url": "https://www.instagram.com/p/DY8AHUst4r1/",
+ "autor": "creatoroly",
+ "data": "2026-05-29",
+ "curtidas": 2390,
+ "comentarios": 103,
+ "legenda_post": "try in dms... 💬\n\n#motiondesign #motion #animations",
+ "duracao_s": 9.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "presente",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 41,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 132.8,
+  "onsets_per_s": 3.77
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 443,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

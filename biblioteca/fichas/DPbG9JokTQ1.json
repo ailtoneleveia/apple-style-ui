@@ -1,0 +1,46 @@
+{
+ "id": "DPbG9JokTQ1",
+ "url": "https://www.instagram.com/p/DPbG9JokTQ1/",
+ "autor": "sanith_poojari",
+ "data": "2025-10-05",
+ "curtidas": 51,
+ "comentarios": 4,
+ "legenda_post": "A universe of ideas in the making… 🚀✨\nSneak peek at my next project—VERSE. Cooking up something cosmic, interactive, and a little bit out of this world. Stay tuned, because the adventure is just getting started!\n\n#uiux\n#figma\n#uidesign \n\n[ui design\nsplash screen\nwelcome screen\nproduct design\nnew pro",
+ "duracao_s": 11.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "iphone",
+  "botao_pilula"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 169.8,
+  "onsets_per_s": 3.19
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 352,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

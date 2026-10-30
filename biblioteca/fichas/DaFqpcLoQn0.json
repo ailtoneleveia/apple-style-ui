@@ -1,0 +1,51 @@
+{
+ "id": "DaFqpcLoQn0",
+ "url": "https://www.instagram.com/p/DaFqpcLoQn0/",
+ "autor": "bentomotion.studio",
+ "data": "2026-06-27",
+ "curtidas": 252,
+ "comentarios": 121,
+ "legenda_post": "Comment “apple” and I’ll send you the project file link!\n\nFull tutorial is available on my YouTube channel🔥\n\n#aftereffects #motiondesign #apple #uidesign #freeproject",
+ "duracao_s": 13.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "APPLE",
+ "acabamento_pro": 1.95,
+ "pecas": [
+  "icone_app",
+  "botao_pilula"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 164.1,
+  "onsets_per_s": 1.05
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 253,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:bentomotion.studio",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

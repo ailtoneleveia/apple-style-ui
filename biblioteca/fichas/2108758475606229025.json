@@ -1,0 +1,38 @@
+{
+ "id": "2108758475606229025",
+ "url": "https://x.com/i/status/2108758475606229025",
+ "autor": "KEI_Ediforce",
+ "data": "2026-10-10",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "同じプロンプト1つで、4つの AI に「花火大会」を作らせました。 Claude Opus 5.5・GPT-6.1・Gemini 3.8 Flash・Grok 4.7。コードの手直しなし。  4つとも1つの HTML で、夜空に花火が上がった。 最後に4つの録画を1つの夜空に重ねると…🎆  どの花火が好き？ 頼んだ文は返信に👇 https://t.co/p2s4ycskej",
+ "duracao_s": 29.8,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.29,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 354,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

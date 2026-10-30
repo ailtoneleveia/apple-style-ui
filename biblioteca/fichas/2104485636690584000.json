@@ -1,0 +1,40 @@
+{
+ "id": "2104485636690584000",
+ "url": "https://x.com/i/status/2104485636690584000",
+ "autor": "neco1751662",
+ "data": "2026-09-28",
+ "curtidas": 17,
+ "comentarios": 2,
+ "legenda_post": "Claude Opus 5.5 にアニメーション付きの教育webページを作ってもらいました。 最初はただの図解だったので、アニメーション追加してとお願いして。  今回は作って貰ったあとファクトチェックして貰って、微妙なニュアンスのずれを直してもらいました。 最後に理解度チェックまで作ってくれた。 https://t.co/nbZpcnFPlx",
+ "duracao_s": 54.5,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 49,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 350,
+  "fps": 52.47,
+  "kbps": 127,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

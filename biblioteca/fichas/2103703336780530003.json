@@ -1,0 +1,43 @@
+{
+ "id": "2103703336780530003",
+ "url": "https://x.com/i/status/2103703336780530003",
+ "autor": "gautam_mer1",
+ "data": "2026-09-26",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "I asked Claude Opus 5.5 for \"an Apple-style 30s video of my app\" in one prompt.  It wrote the whole film in code (Remotion + React): SF Pro type, a titanium iPhone, captions synced word-by-word to real voice, even the music. #Claude  This is Matra, Gujarati captions in one tap👇 https://t.co/ZMNUqPFc",
+ "duracao_s": 30.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.92,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 161,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

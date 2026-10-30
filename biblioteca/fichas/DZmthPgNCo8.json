@@ -1,0 +1,51 @@
+{
+ "id": "DZmthPgNCo8",
+ "url": "https://www.instagram.com/p/DZmthPgNCo8/",
+ "autor": "mr.abdulrehman101",
+ "data": "2026-06-15",
+ "curtidas": 160,
+ "comentarios": 3,
+ "legenda_post": "Client wanted an Apple-style animation.\n\nClean.\nMinimal.\nPremium.\n\nSo that's exactly what we delivered. 🚀",
+ "duracao_s": 17.6,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.0,
+ "pecas": [
+  "dynamic_island",
+  "cursor",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 85.7,
+  "onsets_per_s": 3.25
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 704,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

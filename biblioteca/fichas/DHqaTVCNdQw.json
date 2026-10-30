@@ -1,0 +1,47 @@
+{
+ "id": "DHqaTVCNdQw",
+ "url": "https://www.instagram.com/p/DHqaTVCNdQw/",
+ "autor": "creatoroly",
+ "data": "2025-03-26",
+ "curtidas": 3991,
+ "comentarios": 56,
+ "legenda_post": "qucik ad for @calai.app",
+ "duracao_s": 16.9,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.09,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 92.0,
+  "onsets_per_s": 3.1
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 659,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

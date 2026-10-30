@@ -1,0 +1,43 @@
+{
+ "id": "2110015093190570491",
+ "url": "https://x.com/i/status/2110015093190570491",
+ "autor": "semichenkko",
+ "data": "2026-10-13",
+ "curtidas": 46,
+ "comentarios": 7,
+ "legenda_post": "Opus 5.5 understands bread better than Astra  Same prompt, same squishy toast. Opus on top, ChatGPT-6 Astra below  I put both through the same moves - press, poke, stretch the crust, squash it with a palm, switch flavors, drop it on the table  Opus made memory foam. You press it, https://t.co/MUvdli",
+ "duracao_s": 16.9,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 406,
+  "fps": 29.88,
+  "kbps": 50,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

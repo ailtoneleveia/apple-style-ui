@@ -1,0 +1,45 @@
+{
+ "id": "DP6NEWvkp9J",
+ "url": "https://www.instagram.com/p/DP6NEWvkp9J/",
+ "autor": "dopemotionzone",
+ "data": "2025-10-17",
+ "curtidas": 4865,
+ "comentarios": 3511,
+ "legenda_post": "Just comment “INSPO” below ⬇️\n\nand I’ll send you my Simple Storyboard Guide — the same doc I use to plan every video scene-by-scene.\n\n⚡ Why you’ll love it:\n\nHelps you visualize every shot clearly 🎞️\n\nKeeps your edits clean & story-driven\n\nSaves hours of planning confusion 🧠\n\nWorks for any type of vi",
+ "duracao_s": 59.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "INSPO",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.84
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 945,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

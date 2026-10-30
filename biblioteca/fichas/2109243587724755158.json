@@ -1,0 +1,40 @@
+{
+ "id": "2109243587724755158",
+ "url": "https://x.com/i/status/2109243587724755158",
+ "autor": "konstantinsaifo",
+ "data": "2026-10-11",
+ "curtidas": 41,
+ "comentarios": 9,
+ "legenda_post": "This is what a robot dog sees.  I asked Claude Opus 5.5 to give my robot dog a lidar, two depth cameras and a brain that walks it in a physics sim.   It took 8h and $94.32 in API cost with Opus 5.5 on medium. https://t.co/X327qHmuvI",
+ "duracao_s": 48.7,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "mapa"
+ ],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 372,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

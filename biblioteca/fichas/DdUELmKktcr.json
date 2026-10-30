@@ -1,0 +1,42 @@
+{
+ "id": "DdUELmKktcr",
+ "url": "https://www.instagram.com/p/DdUELmKktcr/",
+ "autor": "charliehills",
+ "data": "2026-09-15",
+ "curtidas": 873,
+ "comentarios": 1117,
+ "legenda_post": "Comment TOKENS and I'll send you all 23 links.\n\n23 open-source repos that stop Claude eating your tokens, in the order you install them.\n\nGET CONTEXT IN\nOmniRoute, 9router, context7, codegraph, codebase-memory-mcp, haystack\n\nREMEMBER IT\nclaude-mem, mem0, mempalace, cognee, agentmemory, beads\n\nSEE TH",
+ "duracao_s": 23.6,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "TOKENS",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 240,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

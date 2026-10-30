@@ -1,0 +1,52 @@
+{
+ "id": "DcnW2OZzyT4",
+ "url": "https://www.instagram.com/p/DcnW2OZzyT4/",
+ "autor": "the_krishray",
+ "data": "2026-08-29",
+ "curtidas": 7404,
+ "comentarios": 255,
+ "legenda_post": "Building From Zero...The $1K Challenge.\n#aftereffects #animation\n#motiondesign\n#apple\n#saas",
+ "duracao_s": 33.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.49,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 140.1,
+  "onsets_per_s": 4.38
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 487,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "DY5DHDBzNFq",
+ "url": "https://www.instagram.com/p/DY5DHDBzNFq/",
+ "autor": "madebysheel",
+ "data": "2026-05-28",
+ "curtidas": 3,
+ "comentarios": 48,
+ "legenda_post": "Day 8 of learning After Effects \n\nCreated a clean Apple-style SaaS motion graphics animation inspired by the Spotify app experience — opening the app, scrolling through the UI, selecting a track, and playing music with smooth cinematic transitions. \n\nFocused on premium minimal design, fluid interfac",
+ "duracao_s": 6.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [],
+ "nota": 34,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.14
+ },
+ "qualidade": {
+  "largura": 716,
+  "altura": 1274,
+  "fps": 30.0,
+  "kbps": 379,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

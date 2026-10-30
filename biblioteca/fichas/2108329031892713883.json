@@ -1,0 +1,38 @@
+{
+ "id": "2108329031892713883",
+ "url": "https://x.com/i/status/2108329031892713883",
+ "autor": "keikumata",
+ "data": "2026-10-08",
+ "curtidas": 11,
+ "comentarios": 5,
+ "legenda_post": "opus 5.5 has been a godsend for video generation  i can even pass it an IG reel and ask it to outline the chords for me https://t.co/c8JHzQWtP9",
+ "duracao_s": 53.2,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 157,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

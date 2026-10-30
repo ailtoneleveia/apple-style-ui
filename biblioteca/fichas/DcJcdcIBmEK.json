@@ -1,0 +1,44 @@
+{
+ "id": "DcJcdcIBmEK",
+ "url": "https://www.instagram.com/p/DcJcdcIBmEK/",
+ "autor": "adrimotions",
+ "data": "2026-08-17",
+ "curtidas": 226,
+ "comentarios": 15,
+ "legenda_post": "Timeless edit apple x spotify",
+ "duracao_s": 10.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.87,
+ "pecas": [
+  "print_site"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.2,
+  "onsets_per_s": 5.18
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 646,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:appleui"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,49 @@
+{
+ "id": "C3r6JXwNejM",
+ "url": "https://www.instagram.com/p/C3r6JXwNejM/",
+ "autor": "skvortsov.design",
+ "data": "2024-02-23",
+ "curtidas": 40176,
+ "comentarios": 776,
+ "legenda_post": "#design #web #webdesign #website #behance #dribbble #creativity #creative #ui #ux #uiux #mobile #minimal #minimalism #inspiration #interactive #interface #motiondesign #motion #layout #app #redshift #c4d #cinema4d",
+ "duracao_s": 10.5,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 144.9,
+  "onsets_per_s": 4.73
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 392,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

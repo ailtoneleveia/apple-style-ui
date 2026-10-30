@@ -1,0 +1,38 @@
+{
+ "id": "2103395846578676116",
+ "url": "https://x.com/i/status/2103395846578676116",
+ "autor": "rendesr",
+ "data": "2026-09-25",
+ "curtidas": 9,
+ "comentarios": 2,
+ "legenda_post": "Love Claude! Opus 5.5 Max - Simple prompt: \"Make a dynamic 15 second motion graphics video that shows off what an incredible motion designer you are. Imagine it's your showreel for a resume!\" idea originally from @stephanlivera https://t.co/0PO14ITYWo",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 595,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

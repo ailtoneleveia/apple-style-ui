@@ -1,0 +1,42 @@
+{
+ "id": "2104520072014508316",
+ "url": "https://x.com/i/status/2104520072014508316",
+ "autor": "akokoi1",
+ "data": "2026-09-28",
+ "curtidas": 641,
+ "comentarios": 121,
+ "legenda_post": "再分享一个实用的场景。  Opus 5.5的3D建模能力和理解能力真的强的可怕，我花了一个小时就实现了这个小项目。  我只提供了一张户型图，让它按原始户型图的尺寸还原平面，可以在 2D 里摆放家具、测量、拆改墙体、更换地面材料，还能用流畅的过渡动画一键切换到 3D，在鸟瞰和漫游视角下查看设计方案。 https://t.co/wHkeVxpAZl",
+ "duracao_s": 32.9,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 598,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 246,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

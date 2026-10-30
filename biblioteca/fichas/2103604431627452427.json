@@ -1,0 +1,41 @@
+{
+ "id": "2103604431627452427",
+ "url": "https://x.com/i/status/2103604431627452427",
+ "autor": "jhylee95",
+ "data": "2026-09-25",
+ "curtidas": 13,
+ "comentarios": 3,
+ "legenda_post": "Opus 5.5 Max is INSANE + leaves Astra in the dust. Here's the prompt I used to one-shot this video:  \"You're a world-class motion designer building a Supademo launch video. Research and land our core value and narrative. Scenes should be dynamic and confident: hook in the first https://t.co/qT6UMYLs",
+ "duracao_s": 23.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.73,
+ "pecas": [
+  "imessage",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 56,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 29.96,
+  "kbps": 213,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

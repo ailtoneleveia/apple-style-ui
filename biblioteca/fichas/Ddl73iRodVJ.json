@@ -1,0 +1,52 @@
+{
+ "id": "Ddl73iRodVJ",
+ "url": "https://www.instagram.com/p/Ddl73iRodVJ/",
+ "autor": "vitalyframes",
+ "data": "2026-09-22",
+ "curtidas": 1587,
+ "comentarios": 247,
+ "legenda_post": "New sound design breakdown \n\n#aftereffects #videoediting #edit #motiondesign",
+ "duracao_s": 11.4,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "iphone",
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.74
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 447,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:vitalyframes",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

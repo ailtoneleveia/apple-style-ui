@@ -1,0 +1,49 @@
+{
+ "id": "DZh_xRhufhb",
+ "url": "https://www.instagram.com/p/DZh_xRhufhb/",
+ "autor": "solair.motion",
+ "data": "2026-06-13",
+ "curtidas": 941,
+ "comentarios": 37,
+ "legenda_post": "A SaaS explainer video for Ava AI, an AI-powered sales training platform. Motion graphics designed to convert viewers into customers.\n\nWant the same animation? Check out the link in bio!\n\n#saas #motiondesign #productvideo #motiongraphicsdesign #aftereffectsedit",
+ "duracao_s": 56.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.62,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.0
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 900,
+  "fps": 30.0,
+  "kbps": 269,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

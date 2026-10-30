@@ -1,0 +1,38 @@
+{
+ "id": "2103578336018505763",
+ "url": "https://x.com/i/status/2103578336018505763",
+ "autor": "kikollan",
+ "data": "2026-09-25",
+ "curtidas": 133,
+ "comentarios": 6,
+ "legenda_post": "Opus 5.5 es el salto IA más TANGIBLE en 2026.  Escribe animaciones increíbles por sí solo. Y digo escribe porque es todo código… código *inhumano*: todo dibujado con miles de ecuaciones.   ¡Probad su juego UMBRAL! 🔮👇 https://t.co/7hHsu1MDSO",
+ "duracao_s": 17.8,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.94,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 480,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 257,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

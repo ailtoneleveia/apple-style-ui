@@ -1,0 +1,44 @@
+{
+ "id": "DZ91-I9Smp7",
+ "url": "https://www.instagram.com/p/DZ91-I9Smp7/",
+ "autor": "dopemotionzone",
+ "data": "2026-06-24",
+ "curtidas": 351,
+ "comentarios": 6,
+ "legenda_post": "Recently edited this masterpiece for @well.pod 🎬\n\nA video shouldn't just look good.\n\nIt should hold attention, tell a story, and drive results.\n\nThat's exactly what we focus on.\n\nIf you want videos that perform and look premium, you're in the right place.\n\nWe recently updated our video editing servi",
+ "duracao_s": 40.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.3,
+ "pecas": [
+  "legenda_fala",
+  "vidro"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.75
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 844,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

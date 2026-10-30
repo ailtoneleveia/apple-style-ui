@@ -1,0 +1,59 @@
+{
+ "id": "DT8AH8kkwfh",
+ "url": "https://www.instagram.com/p/DT8AH8kkwfh/",
+ "autor": "madebyveduboi",
+ "data": "2026-01-25",
+ "curtidas": 1993,
+ "comentarios": 2370,
+ "legenda_post": "Comment “DROP” and get these FREE project files in your DMs 📥\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 14.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "DROP",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "iphone",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.0,
+  "onsets_per_s": 4.65
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 374,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:vedu",
+  "perfil:madebyveduboi",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

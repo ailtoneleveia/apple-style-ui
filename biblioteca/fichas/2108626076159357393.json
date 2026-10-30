@@ -1,0 +1,38 @@
+{
+ "id": "2108626076159357393",
+ "url": "https://x.com/i/status/2108626076159357393",
+ "autor": "physicsvsyou",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 2,
+ "legenda_post": "I asked Claude Opus 5.5 to simulate 3 double pendulums started 1 billionth of a radian apart.  For 12.7 seconds they move as one. Then they split.  Bug or chaos? Energy drifted 0.000000007% in 40 s, and 1000× tighter precision gave the same 12.7 s.  What should it simulate next? https://t.co/Pz49FrT",
+ "duracao_s": 30.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 179,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

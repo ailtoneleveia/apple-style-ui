@@ -1,0 +1,42 @@
+{
+ "id": "2104532802486345950",
+ "url": "https://x.com/i/status/2104532802486345950",
+ "autor": "ann_nnng",
+ "data": "2026-09-28",
+ "curtidas": 1539,
+ "comentarios": 20,
+ "legenda_post": "asked Claude Opus 5.5 to take it further and show how many layers a sticker has, here's the result https://t.co/sEFJZDVhLj",
+ "duracao_s": 26.4,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.2,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 596,
+  "altura": 360,
+  "fps": 59.96,
+  "kbps": 474,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

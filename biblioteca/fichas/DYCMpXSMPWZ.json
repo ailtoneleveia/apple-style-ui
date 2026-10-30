@@ -1,0 +1,43 @@
+{
+ "id": "DYCMpXSMPWZ",
+ "url": "https://www.instagram.com/p/DYCMpXSMPWZ/",
+ "autor": "mahdiedits_",
+ "data": "2026-05-07",
+ "curtidas": 691,
+ "comentarios": 1606,
+ "legenda_post": "Just comment “edit” 💬",
+ "duracao_s": 17.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "EDIT",
+ "acabamento_pro": 0.49,
+ "pecas": [
+  "numero_grande",
+  "emoji_3d"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.31
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1014,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

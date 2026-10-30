@@ -1,0 +1,39 @@
+{
+ "id": "2104055441517105570",
+ "url": "https://x.com/i/status/2104055441517105570",
+ "autor": "AiFreak_tool",
+ "data": "2026-09-27",
+ "curtidas": 72,
+ "comentarios": 3,
+ "legenda_post": "噂のClaude『Opus 5.5』を使ってスマブラ風ゲームを作ってみました🎮  『GPT-6 Astra』と比較して作ったんですが、ゲーム制作では「Opusの方が数段上」という印象ですね  特によかったのが =================== 🔸参照キャラの特徴をちゃんと踏まえてくれる → https://t.co/8iXHgKBKaQ",
+ "duracao_s": 54.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 244,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

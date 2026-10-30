@@ -1,0 +1,43 @@
+{
+ "id": "2107591732561097013",
+ "url": "https://x.com/i/status/2107591732561097013",
+ "autor": "IAenCrudo",
+ "data": "2026-10-06",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "¿A dónde va tu pregunta cuando le escribes a una IA? 🤔  Le pedí a Claude Opus 5.5 que convirtiera un centro de datos de IA en un videojuego… y lo manejó él solo 🎮  Mandó una pregunta y la siguió hasta las GPUs. Después subió el enfriamiento, simuló el lanzamiento de un modelo https://t.co/Ve848MB0aG",
+ "duracao_s": 56.5,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 52,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 362,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DdOWmxRysZn",
+ "url": "https://www.instagram.com/p/DdOWmxRysZn/",
+ "autor": "dopemotionzone",
+ "data": "2026-09-13",
+ "curtidas": 997,
+ "comentarios": 744,
+ "legenda_post": "Comment “BREAKDOWN” below ⬇️\nand grab this style breakdown.\n\n⚡ What you’ll get:\n\n🎬 Full style breakdown\n🎨 Visual direction & design choices\n✂️ Editing approach & pacing\n✨ Transitions, effects & details\n🧩 Key elements used to build the style\n\nEverything is organized and editor-focused, so you can und",
+ "duracao_s": 37.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "BREAKDOWN",
+ "acabamento_pro": 1.72,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.78
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 926,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

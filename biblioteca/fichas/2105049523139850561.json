@@ -1,0 +1,38 @@
+{
+ "id": "2105049523139850561",
+ "url": "https://x.com/i/status/2105049523139850561",
+ "autor": "Mochi_AGI",
+ "data": "2026-09-29",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "Opus 5.5で動画づくり 今回は画像生成なしのお試しで、NASA の測量データで火星の峡谷を飛ぶ  地形は NASA の火星の高さデータと Viking の写真から 画像生成も動画生成もなし、画はデータとコードだけ  話はフィクションで、峡谷の底にいるお母さんから地球の娘へのメッセージ https://t.co/s9aDIsKMwc",
+ "duracao_s": 40.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 60.0,
+  "kbps": 177,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

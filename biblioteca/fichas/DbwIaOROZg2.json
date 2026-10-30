@@ -1,0 +1,49 @@
+{
+ "id": "DbwIaOROZg2",
+ "url": "https://www.instagram.com/p/DbwIaOROZg2/",
+ "autor": "saasanimatorguy",
+ "data": "2026-08-07",
+ "curtidas": 46,
+ "comentarios": 6,
+ "legenda_post": "Made a complete SaaS animation for Claude — from the glowing logo mark to the typewriter UI interaction, all built in After Effects 🎬\n\nThis is what a full product animation looks like when every detail is intentional: brand color, typography, motion timing, micro-interactions — not just a logo spinn",
+ "duracao_s": 12.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.05,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.96
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 365,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

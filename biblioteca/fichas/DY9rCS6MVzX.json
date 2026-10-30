@@ -1,0 +1,48 @@
+{
+ "id": "DY9rCS6MVzX",
+ "url": "https://www.instagram.com/p/DY9rCS6MVzX/",
+ "autor": "drillup.io",
+ "data": "2026-05-30",
+ "curtidas": 871,
+ "comentarios": 16,
+ "legenda_post": "Do you like Music or SFX more?🗺️ \n\n#mograph #aftereffects #motiondesign #videoschnitt \n\nCreated by: @ptr.aep & @drillup.io",
+ "duracao_s": 10.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "busca",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 142.2,
+  "onsets_per_s": 7.38
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 526,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

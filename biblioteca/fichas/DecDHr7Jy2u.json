@@ -1,0 +1,46 @@
+{
+ "id": "DecDHr7Jy2u",
+ "url": "https://www.instagram.com/p/DecDHr7Jy2u/",
+ "autor": "edita.visuals",
+ "data": "2026-10-13",
+ "curtidas": 140,
+ "comentarios": 170,
+ "legenda_post": "Want your footage edited like this? Send me a DM! 🙂📩\n\nFollow & Comment “CLAUDE” for the full guide! 🙂💪📩",
+ "duracao_s": 10.7,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 92.4,
+  "onsets_per_s": 3.37
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 137,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

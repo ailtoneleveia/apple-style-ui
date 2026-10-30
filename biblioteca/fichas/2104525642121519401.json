@@ -1,0 +1,38 @@
+{
+ "id": "2104525642121519401",
+ "url": "https://x.com/i/status/2104525642121519401",
+ "autor": "yktgch",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5に東京駅の解剖をお願いしてみた。  雑に頼んだだけでここまで作ってくるとは。 ちゃんと作り込めば施設案内とかにも使えそう。  動きが速すぎて動体視力が追いつかないシーンもあるけどw https://t.co/v2OlAo5tI7",
+ "duracao_s": 42.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.41,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 491,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

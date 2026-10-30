@@ -1,0 +1,50 @@
+{
+ "id": "DdGduEBoN8z",
+ "url": "https://www.instagram.com/p/DdGduEBoN8z/",
+ "autor": "kniveedits",
+ "data": "2026-09-10",
+ "curtidas": 124278,
+ "comentarios": 706,
+ "legenda_post": "Designed an iPhone 18 motion concept a few months back, and Apple just dropped the actual reveal. ⚡️\n\nHuge thanks to @bart_vfx for the tutorial that helped me bring this together.\n\n#videoeditor #videoediting #beforeandafter #Iphone18 #motiondesign",
+ "duracao_s": 7.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.1,
+  "onsets_per_s": 3.82
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 60.0,
+  "kbps": 497,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple editing style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

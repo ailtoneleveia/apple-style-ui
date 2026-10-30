@@ -1,0 +1,38 @@
+{
+ "id": "2104827632538022154",
+ "url": "https://x.com/i/status/2104827632538022154",
+ "autor": "DaisyDiao2",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "claude-opus-5-5做的，提示词见评论区 https://t.co/8PYZCPQhui",
+ "duracao_s": 29.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.85,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 23,
+ "som": null,
+ "qualidade": {
+  "largura": 780,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 837,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

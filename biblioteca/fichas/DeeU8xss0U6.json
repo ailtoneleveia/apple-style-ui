@@ -1,0 +1,46 @@
+{
+ "id": "DeeU8xss0U6",
+ "url": "https://www.instagram.com/p/DeeU8xss0U6/",
+ "autor": "motionloved",
+ "data": "2026-10-14",
+ "curtidas": 20,
+ "comentarios": 3,
+ "legenda_post": "Want to do this ? 🔥\nLink in bio 🎯\n#motion #motiongraphics #claude #aftereffects",
+ "duracao_s": 14.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.68,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 129.9,
+  "onsets_per_s": 3.59
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1299,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

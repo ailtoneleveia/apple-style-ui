@@ -1,0 +1,40 @@
+{
+ "id": "2108709764817408244",
+ "url": "https://x.com/i/status/2108709764817408244",
+ "autor": "aichrislee",
+ "data": "2026-10-10",
+ "curtidas": 2,
+ "comentarios": 2,
+ "legenda_post": "Opus 5.5 just built me a camera lens in 3D.  1 prompt in Claude Code, about 15 minutes. It's cut open down the side, so you watch red, green and blue light bend through the glass and meet on the sensor while the aperture blades open and close. 1 button pulls all 15 parts apart https://t.co/XrM5ST1qG",
+ "duracao_s": 20.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.07,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 249,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

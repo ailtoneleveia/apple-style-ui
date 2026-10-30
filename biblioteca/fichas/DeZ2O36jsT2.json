@@ -1,0 +1,44 @@
+{
+ "id": "DeZ2O36jsT2",
+ "url": "https://www.instagram.com/p/DeZ2O36jsT2/",
+ "autor": "iamjeff.ia",
+ "data": "2026-10-12",
+ "curtidas": 26,
+ "comentarios": 0,
+ "legenda_post": "Video feito 100% com Claude Code usando o novo “After Effects open source” #claude #spotify #motiondesign #aftereffects",
+ "duracao_s": 21.2,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.67,
+ "pecas": [
+  "janela",
+  "numero_grande"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.89
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 470,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

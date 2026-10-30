@@ -1,0 +1,39 @@
+{
+ "id": "2108563779046813910",
+ "url": "https://x.com/i/status/2108563779046813910",
+ "autor": "xiaofengai2023",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "刚充好claude试一下opus5.5做视频威力，结尾太震撼了。 我就说想要展现ai能力主题的视频，直出，不亚于gpt2生图出来时候给我的震撼，不好意思codex，我还是渣男 https://t.co/BkH2NUr4g2",
+ "duracao_s": 28.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.31,
+ "pecas": [
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 560,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

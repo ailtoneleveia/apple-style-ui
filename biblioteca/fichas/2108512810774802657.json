@@ -1,0 +1,38 @@
+{
+ "id": "2108512810774802657",
+ "url": "https://x.com/i/status/2108512810774802657",
+ "autor": "rubenssoto_ai",
+ "data": "2026-10-09",
+ "curtidas": 43,
+ "comentarios": 22,
+ "legenda_post": "🚨Opus 5.5 + Haiku 5.5 are Amazing for 3D Design🚨  one-shot prompt: a 30s cinematic F1 pit stop in Three.js. Detailed car, 8-person crew changing all 4 tyres, synthesized audio, fully procedural.  Claude Opus 5.5 (orchestrator) + Claude Haiku 5.5  🔊 Turn up the volume! https://t.co/gLbVasAlys",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.69,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 800,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 420,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

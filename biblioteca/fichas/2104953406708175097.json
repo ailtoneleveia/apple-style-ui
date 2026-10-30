@@ -1,0 +1,40 @@
+{
+ "id": "2104953406708175097",
+ "url": "https://x.com/i/status/2104953406708175097",
+ "autor": "Kwazikot",
+ "data": "2026-09-29",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Created an arbitrary Rube Goldberg machine in Blender using this workflow:  Cursor + Opus 5.5 → Blender MCP → Blender  Really interesting to see how far agentic 3D creation has come — the model can directly build and modify the scene through MCP.  Prompt: \"Create a mechanical https://t.co/AjOhZROxkx",
+ "duracao_s": 27.3,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.97,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 135,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

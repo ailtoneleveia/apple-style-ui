@@ -1,0 +1,45 @@
+{
+ "id": "2103569170075975986",
+ "url": "https://x.com/i/status/2103569170075975986",
+ "autor": "slvDev",
+ "data": "2026-09-25",
+ "curtidas": 21,
+ "comentarios": 2,
+ "legenda_post": "opus 5.5 max, motion design, one prompt \"create 15+ sec self-promotion promo\" https://t.co/GOvgcXizT2",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 256,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

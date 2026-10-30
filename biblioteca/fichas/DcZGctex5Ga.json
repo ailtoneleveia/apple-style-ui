@@ -1,0 +1,47 @@
+{
+ "id": "DcZGctex5Ga",
+ "url": "https://www.instagram.com/p/DcZGctex5Ga/",
+ "autor": "adrimotions",
+ "data": "2026-08-23",
+ "curtidas": 309,
+ "comentarios": 19,
+ "legenda_post": "Whop ui animation",
+ "duracao_s": 12.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.29,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "botao_pilula",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.0,
+  "onsets_per_s": 4.39
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 332,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

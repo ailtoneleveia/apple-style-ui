@@ -1,0 +1,41 @@
+{
+ "id": "2104895018683044262",
+ "url": "https://x.com/i/status/2104895018683044262",
+ "autor": "konstantinsaifo",
+ "data": "2026-09-29",
+ "curtidas": 102,
+ "comentarios": 4,
+ "legenda_post": "I asked Claude Opus 5.5 to explain how an AI data center works by building one you can take apart in your browser.  Open a rack of 72 GPUs, follow the water that cools them, pull out a tray, then kill the pumps and watch the chips hit 100 °C.  https://t.co/vWb0CUPtnm https://t.co/uQmdyOv0FL",
+ "duracao_s": 43.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.78,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 316,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

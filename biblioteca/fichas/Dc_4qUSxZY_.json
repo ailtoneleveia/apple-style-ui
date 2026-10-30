@@ -1,0 +1,45 @@
+{
+ "id": "Dc_4qUSxZY_",
+ "url": "https://www.instagram.com/p/Dc_4qUSxZY_/",
+ "autor": "thejimmy.vision",
+ "data": "2026-09-07",
+ "curtidas": 3,
+ "comentarios": 9,
+ "legenda_post": "I help brands, creators, and businesses turn raw footage into high-quality, engaging videos designed to grab attention, keep viewers watching, and make your brand look more professional.\nFrom talking-head videos and Reels to SaaS animations, documentary-style content, ads, motion graphics, smooth tr",
+ "duracao_s": 15.7,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "EDIT",
+ "acabamento_pro": 0.62,
+ "pecas": [
+  "imessage",
+  "janela",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.79
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 1799,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

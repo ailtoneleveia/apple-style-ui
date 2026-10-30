@@ -1,0 +1,49 @@
+{
+ "id": "Dd2rg9QvOCs",
+ "url": "https://www.instagram.com/p/Dd2rg9QvOCs/",
+ "autor": "aneesmotion",
+ "data": "2026-09-29",
+ "curtidas": 78,
+ "comentarios": 18,
+ "legenda_post": "a simple twitter/X animation. if you want the project file, just comment \"twitter\" and I'll send it over \n.\n.\n.\n[saas animation, ui, product animation, motion design, motion graphics, after effects edit, apple style, video editor, sound effects]\n\nib: @sanzxcreates",
+ "duracao_s": 13.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "TWITTER",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "dynamic_island",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 164.6,
+  "onsets_per_s": 3.76
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 272,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:aneesmotion",
+  "busca:apple ui style",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

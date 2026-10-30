@@ -1,0 +1,48 @@
+{
+ "id": "DeZyUqnu1se",
+ "url": "https://www.instagram.com/p/DeZyUqnu1se/",
+ "autor": "linus.motion",
+ "data": "2026-10-12",
+ "curtidas": 128,
+ "comentarios": 8,
+ "legenda_post": "some motion for iCloud 🫪 dm me if you need a motion project #aftereffects #motiondesign #motiongraphics #applestyle #icloud",
+ "duracao_s": 15.7,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.62,
+ "pecas": [
+  "notificacao",
+  "emoji_3d",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 92.9,
+  "onsets_per_s": 3.47
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 530,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:linus.motion",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

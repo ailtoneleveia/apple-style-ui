@@ -1,0 +1,47 @@
+{
+ "id": "DJ1--mkti7V",
+ "url": "https://www.instagram.com/p/DJ1--mkti7V/",
+ "autor": "creatoroly",
+ "data": "2025-05-19",
+ "curtidas": 1396,
+ "comentarios": 19,
+ "legenda_post": "I can really put you on these clean edits\n\n>> check my bio.",
+ "duracao_s": 16.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.95,
+ "pecas": [
+  "imessage",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 136.1,
+  "onsets_per_s": 4.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 342,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

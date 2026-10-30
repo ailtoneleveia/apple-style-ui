@@ -1,0 +1,44 @@
+{
+ "id": "2103197522382786581",
+ "url": "https://x.com/i/status/2103197522382786581",
+ "autor": "deifosv",
+ "data": "2026-09-24",
+ "curtidas": 16,
+ "comentarios": 8,
+ "legenda_post": "I asked Opus 5.5 to create a launch video for toptennisgame and made this.  Prompt: Create a high energy launch video, showing live stats from the website, show that users can play on desktop and mobile and multiple themes, if need, give me a prompt to generate the song using https://t.co/UmTlJVHVad",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 239,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

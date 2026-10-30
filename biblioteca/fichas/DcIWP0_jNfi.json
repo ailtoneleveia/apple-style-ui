@@ -1,0 +1,56 @@
+{
+ "id": "DcIWP0_jNfi",
+ "url": "https://www.instagram.com/p/DcIWP0_jNfi/",
+ "autor": "dnyxstudioss",
+ "data": "2026-08-17",
+ "curtidas": 633,
+ "comentarios": 37,
+ "legenda_post": "apple memories concept 🍎",
+ "duracao_s": 16.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "cursor",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "mapa",
+  "emoji_3d",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 94.2,
+  "onsets_per_s": 3.37
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 29.97,
+  "kbps": 390,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

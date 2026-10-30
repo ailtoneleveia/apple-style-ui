@@ -1,0 +1,47 @@
+{
+ "id": "DZcDkRcOtep",
+ "url": "https://www.instagram.com/p/DZcDkRcOtep/",
+ "autor": "iammovo",
+ "data": "2026-06-11",
+ "curtidas": 3,
+ "comentarios": 5,
+ "legenda_post": "Need Apple-style ads, SaaS explainers, or motion graphics that actually keep people watching?\n\nI help creators and brands turn ordinary content into high-retention videos with clean animations, premium visuals, and scroll-stopping edits.\n\nIf you’re looking for an editor who understands modern conten",
+ "duracao_s": 17.6,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "busca"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.71
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 774,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

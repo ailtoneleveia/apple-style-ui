@@ -1,0 +1,43 @@
+{
+ "id": "2105190658701201725",
+ "url": "https://x.com/i/status/2105190658701201725",
+ "autor": "vib3coded",
+ "data": "2026-09-30",
+ "curtidas": 348,
+ "comentarios": 30,
+ "legenda_post": "Opus looks tastier, but that price difference bites 🦑😂  Claude Opus 5.5 vs GPT-6.1 Sol - two gummy squids  I prefer Opus’s colors, gloss, and softer movement. It looks like candy you just want to grab by a tentacle  But $14.56 vs $4.84 for Sol - almost three times the estimated https://t.co/6jIhXJ5U",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.9,
+  "onsets_per_s": 5.26
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 416,
+  "fps": 30.0,
+  "kbps": 143,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

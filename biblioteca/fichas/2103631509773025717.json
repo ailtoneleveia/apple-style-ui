@@ -1,0 +1,39 @@
+{
+ "id": "2103631509773025717",
+ "url": "https://x.com/i/status/2103631509773025717",
+ "autor": "pedrofasi",
+ "data": "2026-09-25",
+ "curtidas": 1024,
+ "comentarios": 24,
+ "legenda_post": "ok claude opus 5.5, você é bizarro.  JOGUE POKEIDLE! @pokeidleio https://t.co/6kSGuskQ8X",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.04,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 728,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

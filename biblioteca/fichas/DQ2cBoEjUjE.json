@@ -1,0 +1,49 @@
+{
+ "id": "DQ2cBoEjUjE",
+ "url": "https://www.instagram.com/p/DQ2cBoEjUjE/",
+ "autor": "eptastudios",
+ "data": "2025-11-09",
+ "curtidas": 2978,
+ "comentarios": 50,
+ "legenda_post": "SaaS/Tech explainer video? Here’s how we’d do it⬆️",
+ "duracao_s": 24.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 139.2,
+  "onsets_per_s": 6.26
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 285,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

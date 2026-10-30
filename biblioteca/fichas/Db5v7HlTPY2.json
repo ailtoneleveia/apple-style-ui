@@ -1,0 +1,46 @@
+{
+ "id": "Db5v7HlTPY2",
+ "url": "https://www.instagram.com/p/Db5v7HlTPY2/",
+ "autor": "madebyveduboi",
+ "data": "2026-08-11",
+ "curtidas": 837,
+ "comentarios": 43,
+ "legenda_post": "On loop",
+ "duracao_s": 14.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "cursor",
+  "janela",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 113.0,
+  "onsets_per_s": 2.44
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 24.0,
+  "kbps": 482,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

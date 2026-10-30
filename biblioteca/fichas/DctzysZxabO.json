@@ -1,0 +1,44 @@
+{
+ "id": "DctzysZxabO",
+ "url": "https://www.instagram.com/p/DctzysZxabO/",
+ "autor": "xzecreative",
+ "data": "2026-08-31",
+ "curtidas": 135,
+ "comentarios": 13,
+ "legenda_post": "@notionhq 👀 \n\n#aftereffects #motiondesign #motiongraphics #saas #videoediting",
+ "duracao_s": 14.9,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "busca",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 149.4,
+  "onsets_per_s": 3.98
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 1168,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:appleui"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

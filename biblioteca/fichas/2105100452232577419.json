@@ -1,0 +1,40 @@
+{
+ "id": "2105100452232577419",
+ "url": "https://x.com/i/status/2105100452232577419",
+ "autor": "csutil_com",
+ "data": "2026-09-30",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Me: make a 15-second motion graphics video of my repo. Go all out.  Opus 5.5 *writes a 3D engine from scratch* - Camera math. Perspective projection. Bloom. Motion blur. Film grain. A soundtrack  This one-shot looks better vs the https://t.co/6lfwPhlN5l page I worked on for days https://t.co/O7AP9Bd",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.1,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "mapa"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 316,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

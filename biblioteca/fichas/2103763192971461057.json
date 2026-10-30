@@ -1,0 +1,38 @@
+{
+ "id": "2103763192971461057",
+ "url": "https://x.com/i/status/2103763192971461057",
+ "autor": "aisongman",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 2,
+ "legenda_post": "THIS IS INSANE 😱 I built an entire Hearthstone-style game with Opus 5.5 in one go.  The gameplay and UX are almost identical — only the graphics are different.  And this was literally my entire prompt: “Create a 1-on-1 card game like Hearthstone. Just make it. As best you can. https://t.co/E6ljyAhPe",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 23,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 15.0,
+  "kbps": 157,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

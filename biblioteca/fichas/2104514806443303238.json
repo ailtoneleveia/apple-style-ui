@@ -1,0 +1,43 @@
+{
+ "id": "2104514806443303238",
+ "url": "https://x.com/i/status/2104514806443303238",
+ "autor": "ImaStudio_ai",
+ "data": "2026-09-28",
+ "curtidas": 23,
+ "comentarios": 3,
+ "legenda_post": "I asked Opus 5.5 to make me a strawberry cake… and why is the squishiness this good!? 🍓  The wobble, bounce, softness, and glossy creaminess are weirdly satisfying. Press it. Throw it. Slice it. Every piece stays interactive. Built in one HTML file with WebGPU + WGSL + https://t.co/O9x5ycX6TY",
+ "duracao_s": 19.2,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.39,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 76,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 125.0,
+  "onsets_per_s": 4.32
+ },
+ "qualidade": {
+  "largura": 554,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 265,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

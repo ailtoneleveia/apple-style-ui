@@ -1,0 +1,47 @@
+{
+ "id": "Db3PGYkTMQB",
+ "url": "https://www.instagram.com/p/Db3PGYkTMQB/",
+ "autor": "madebyveduboi",
+ "data": "2026-08-10",
+ "curtidas": 720,
+ "comentarios": 26,
+ "legenda_post": "Day 2 of hard trying in After Effects 🧤\nHow’s the progress lookin?\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 26.5,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "legenda_fala",
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 107.0,
+  "onsets_per_s": 4.85
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1179,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,46 @@
+{
+ "id": "DUw1qJiATTc",
+ "url": "https://www.instagram.com/p/DUw1qJiATTc/",
+ "autor": "0bow.co",
+ "data": "2026-02-15",
+ "curtidas": 3,
+ "comentarios": 5,
+ "legenda_post": "🔎 A search bar… but make it premium.\n\nThis search bar animation is built from scratch in Alight Motion with smooth entry motion, controlled easing, and clean UI-style timing. No templates. No fake overlays. Just precise motion graphics done right.\n\nSmall UI details like this are what separate averag",
+ "duracao_s": 6.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 143.5,
+  "onsets_per_s": 0.93
+ },
+ "qualidade": {
+  "largura": 1440,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 118,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

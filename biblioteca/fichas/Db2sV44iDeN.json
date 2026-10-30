@@ -1,0 +1,46 @@
+{
+ "id": "Db2sV44iDeN",
+ "url": "https://www.instagram.com/p/Db2sV44iDeN/",
+ "autor": "paniv_pm",
+ "data": "2026-08-10",
+ "curtidas": 417,
+ "comentarios": 12,
+ "legenda_post": "Made this 3d SaaS animation for @framer \n\nTook me only 5 hours,\nWhat do you think?\n\n#blender #3d #3dmotiondesign #cinema4d #cycles",
+ "duracao_s": 12.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.8,
+ "pecas": [
+  "icone_app",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 3.69
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 25.0,
+  "kbps": 419,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

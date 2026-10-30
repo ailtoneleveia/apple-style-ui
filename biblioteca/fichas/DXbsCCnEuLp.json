@@ -1,0 +1,46 @@
+{
+ "id": "DXbsCCnEuLp",
+ "url": "https://www.instagram.com/p/DXbsCCnEuLp/",
+ "autor": "dopemotionzone",
+ "data": "2026-04-22",
+ "curtidas": 508,
+ "comentarios": 9,
+ "legenda_post": "Most people think manifestation is magic.\n\nBut the way Hot High Priestess explains it feels much simpler.\n\nThe moment you decide something is yours,\nyour brain starts noticing opportunities that were already there.\n\nThe risks you avoided suddenly feel possible.\nThe paths you ignored start to appear.",
+ "duracao_s": 37.7,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.06,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.89
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 614,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

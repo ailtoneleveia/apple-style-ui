@@ -1,0 +1,36 @@
+{
+ "id": "2103124033365762215",
+ "url": "https://x.com/i/status/2103124033365762215",
+ "autor": "itsolelehmann",
+ "data": "2026-09-24",
+ "curtidas": 276,
+ "comentarios": 32,
+ "legenda_post": "Anthropic has no image or video model, yet Opus 5.5 just made me this 30 second animated film using nothing but 2,800 lines of code  (yes, this is 100% Claude Code with no other AI tools, connectors, or reference images)  i gave it one prompt: 4 seasons passing outside a train https://t.co/Ozehsf1XU",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 380,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

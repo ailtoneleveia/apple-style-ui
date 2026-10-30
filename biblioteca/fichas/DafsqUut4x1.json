@@ -1,0 +1,54 @@
+{
+ "id": "DafsqUut4x1",
+ "url": "https://www.instagram.com/p/DafsqUut4x1/",
+ "autor": "creatoroly",
+ "data": "2026-07-07",
+ "curtidas": 2359,
+ "comentarios": 35,
+ "legenda_post": "fastest concept for VoiceOS 🎙️",
+ "duracao_s": 11.8,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.71,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "imessage",
+  "cursor",
+  "janela",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 71,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 119.9,
+  "onsets_per_s": 4.46
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 1096,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "provada",
+ "prova": {
+  "clone": "VoiceOS",
+  "distancia": 0.01,
+  "correlacao": 0.999,
+  "lado_a_lado": ""
+ }
+}

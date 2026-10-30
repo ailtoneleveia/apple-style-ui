@@ -1,0 +1,38 @@
+{
+ "id": "2104159923886244176",
+ "url": "https://x.com/i/status/2104159923886244176",
+ "autor": "ann_nnng",
+ "data": "2026-09-27",
+ "curtidas": 5672,
+ "comentarios": 74,
+ "legenda_post": "asked Claude Opus 5.5 and GPT-6 Sol to create the glitter sticker effect    seems like Opus 5.5 ate this task https://t.co/2XM2aOvgiU",
+ "duracao_s": 12.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "legenda_capcut",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 424,
+  "fps": 60.0,
+  "kbps": 220,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

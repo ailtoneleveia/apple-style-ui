@@ -1,0 +1,45 @@
+{
+ "id": "CyGPwcIt4YD",
+ "url": "https://www.instagram.com/p/CyGPwcIt4YD/",
+ "autor": "mikedesignofficial",
+ "data": "2023-10-07",
+ "curtidas": 1492,
+ "comentarios": 29,
+ "legenda_post": "I created a small UI animation for the “Complete Order” button. What do you think about it? Would you enjoy such an experience on a website?\n\n#motiondesign #aftereffects #motionhatchling #graphics #typography #motionaep #motionaid #visualdesigner #aftereffects #adobeae #graphicdesign #motiongraphics",
+ "duracao_s": 11.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.09,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.19
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 249,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

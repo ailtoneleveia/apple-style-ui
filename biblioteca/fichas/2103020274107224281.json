@@ -1,0 +1,36 @@
+{
+ "id": "2103020274107224281",
+ "url": "https://x.com/i/status/2103020274107224281",
+ "autor": "StephanFerraro",
+ "data": "2026-09-24",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 on our AI coding benchmark: build a fully autonomous 3D water simulation from an empty repo - procedural mountains, rain, streams, lakes. TypeScript + Three.js, no physics engine.  One prompt, zero corrections, ~21 min. 23/23 tests green.  https://t.co/EZdESnQ2l0 https://t.co/9kJvMAh",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.88,
+ "pecas": [],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 76,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

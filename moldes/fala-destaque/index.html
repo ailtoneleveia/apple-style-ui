@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait"
+  data-composition-variables='[
+    {"id": "video_pessoa", "type": "string", "label": "Vídeo da pessoa falando (9:16; o montar.py copia para assets/pessoa.mp4 e acerta a duração)", "default": "assets/pessoa.mp4"},
+    {"id": "frases", "type": "string", "label": "Frases: JSON com um grupo por frase, cada palavra [texto, início em s, destaque 0/1]; o montar.py tira da transcrição", "default": "[[[\"and\",0.0,0],[\"go\",0.133,0],[\"and\",0.4,0],[\"reinvent\",0.433,1],[\"myself\",0.767,0]],[[\"and\",1.133,0],[\"become\",1.2,0],[\"someone\",1.433,1],[\"new\",1.667,1]],[[\"THAT&apos;S\",2.133,0],[\"NOT\",2.333,0],[\"HOW\",2.533,0],[\"SELF-DOUBT\",2.833,0],[\"works\",3.133,1]],[[\"It\",3.567,0],[\"came\",3.7,0],[\"right\",4.333,1],[\"along\",4.5,1],[\"with\",4.6,0],[\"me\",4.767,0]],[[\"and\",5.233,0],[\"in\",5.333,0],[\"fact\",5.433,0],[\"it\",5.7,0],[\"was\",5.733,0],[\"magnified\",5.8,1],[\"now\",6.1,1]]]"},
+    {"id": "cor_destaque", "type": "color", "label": "Cor da palavra em destaque", "default": "#fefaf7"},
+    {"id": "cor_apoio", "type": "color", "label": "Cor das palavras pequenas", "default": "#fffcf8"},
+    {"id": "fonte_destaque", "type": "enum", "label": "Fonte da palavra em destaque", "default": "instrument",
+     "options": [{"value": "instrument", "label": "Instrument Serif Itálico, condensada como no original (padrão)"},
+                 {"value": "playfair", "label": "Playfair Display Itálico"},
+                 {"value": "dmserif", "label": "DM Serif Display Itálico"}]},
+    {"id": "altura", "type": "number", "label": "Altura da linha em destaque (px da linha de base, de cima; o clone usa 1108)", "default": 1108, "min": 300, "max": 1800, "step": 1},
+    {"id": "sombra", "type": "enum", "label": "Sombra das letras", "default": "nenhuma",
+     "options": [{"value": "nenhuma", "label": "Nenhuma (a rodada 05 do clone)"}, {"value": "medida", "label": "A medida no original (60 %, σ 4 px): mais leitura em fundo claro"}]},
+    {"id": "cenas", "type": "string", "label": "Cenas especiais: JSON {número da frase, a partir de 0: \"escura\"}. A frase escura vira caixa alta sobre o vídeo escurecido, com o destaque na serifa ao lado (a cena do neon do clone)", "default": "{\"2\": \"escura\"}"}
+  ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="estilo.js"></script>
+    <style>
+      /* SF Pro do sistema (o montar.py copia de /System/Library/Fonts): uso interno, não redistribuir */
+      @font-face { font-family: "SF Pro"; src: url("assets/fonts/SFNS.ttf") format("truetype"); font-weight: 1 1000; font-display: block; }
+      /* serifas itálicas, SIL OFL 1.1 */
+      @font-face { font-family: "Instrument Serif"; font-style: italic; src: url("assets/fonts/InstrumentSerif-Italic.ttf") format("truetype"); font-display: block; }
+      @font-face { font-family: "Playfair Display"; font-style: italic; font-weight: 400 900; src: url("assets/fonts/PlayfairDisplay-Italic.ttf") format("truetype"); font-display: block; }
+      @font-face { font-family: "DM Serif Display"; font-style: italic; src: url("assets/fonts/DMSerifDisplay-Italic.ttf") format("truetype"); font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #111; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #111; }
+      #pessoa { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #tela { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="6.6333" data-width="1080" data-height="1920">
+      <video id="pessoa" class="clip" src="assets/pessoa.mp4" data-var-src="video_pessoa" muted playsinline
+        data-start="0" data-duration="6.6333" data-track-index="0"></video>
+      <canvas id="tela" width="1080" height="1920"></canvas>
+    </div>
+    <script>
+      // Molde "final output": a pessoa filmada por baixo e, por cima, a frase dita em três linhas, no padrão medido no
+      // clone (o 6º, fora do repositório): palavras pequenas em sem-serifa em cima, a palavra em destaque grande em
+      // serifa itálica no meio, o resto em baixo, alinhado à direita. Cada palavra nasce no tempo da fala, já a ~85 %,
+      // vindo 12 px da direita e escorregando até parar em ~20 quadros; o grupo some no corte para o próximo; o último
+      // borra em 4 quadros. Tudo é função do tempo (seek-safe). Os números estão em MEDIDAS, cada um com a origem.
+      const ES = window.ESTILO, W = 1080, H = 1920, FPS = 30;
+      const root = document.getElementById("root"), DUR = parseFloat(root.dataset.duration), NF = Math.round(DUR * FPS);
+      const cv = document.getElementById("tela"), ctx = cv.getContext("2d");
+      const DECL = JSON.parse(document.documentElement.getAttribute("data-composition-variables"));
+      const DEF = Object.fromEntries(DECL.map((d) => [d.id, d.default]));
+      const HFV = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
+      const V = Object.assign({}, DEF, HFV);
+      let FR = []; try { FR = JSON.parse(V.frases); } catch (e) { FR = JSON.parse(DEF.frases); }
+      let CENAS = {}; try { CENAS = JSON.parse(V.cenas || "{}") || {}; } catch (e) { CENAS = {}; }
+
+      const MEDIDAS = {
+        baseDestaque: 1108,   // linha de base da serifa (px): 1096 a 1110 nos 4 grupos do clone
+        xDestaque: 75,        // altura da tinta de "someone" (só altura de x) no original: 1035-1110
+        vao: 14,              // vão entre duas palavras em destaque (7 a 23 px no original)
+        razaoSomeone: 5.69,   // largura/altura de "someone" no original (427/75): dá o aperto da Instrument (só nela)
+        espSerifa: -7,        // espaço entre letras da serifa (px na fonte de 100), ajustado contra o original
+        tracoSerifa: 1.3,     // negrito falso da serifa (px na fonte de 100)
+        hasteApoio: 48,       // altura da haste do "and" pequeno (942-991)
+        razaoAnd: 2.02,       // largura/altura de "and" (99/49): dá o espaço entre letras da sem-serifa
+        pesoApoio: 470,       // peso da sem-serifa, pela tinta (rodada 03)
+        folgaCima: 11,        // da linha de base de cima até o topo do x da serifa (10 a 12 nos grupos 2 e 4)
+        folgaBaixo: 5,        // do pé da serifa até o topo da haste da linha de baixo (5 em "myself")
+        recuoEsq: 16,         // a linha de cima começa 16 px depois da serifa (14 a 17)
+        recuoDir: 8,          // e o pedaço da direita termina 8 px antes dela
+        largMax: 900,         // a serifa encolhe se a linha passar disso
+        antecipa: 0.08,       // a palavra aparece ~0,08 s antes do início que a transcrição dá (mediana no clone)
+        entrada: 14, desliza: 20, dx0: 12, a0: 0.85,  // entrada medida (aparicao.py + trilha): 85 % → 100 % em 14 q; 12 px → 0 em 20 q
+        borra: [1.5, 3.5, 7, 9],  // saída do último grupo: σ por quadro (medido em f60-f63 e f195-f198)
+        // cena escura (f64-f106 do clone, caixas assentadas em f106 do camada.json): "THAT'S NOT HOW" / "SELF-DOUBT works"
+        escura: {
+          peso: 760,          // SF Pro da caixa alta, pela tinta (700 dava 10 % a menos)
+          capa1: 46,          // altura da maiúscula na linha de cima (578-624)
+          capa2: 62,          // e na de baixo, a última palavra antes do destaque (SELF-DOUBT 652-714)
+          base2: 714,         // linha de base da linha de baixo (pé de SELF-DOUBT e de "works")
+          entre: 28,          // do pé da linha de cima ao topo da de baixo (624 → 652)
+          vao: 15,            // vão entre palavras em caixa alta (15 a 17)
+          vaoSerifa: 14,      // da caixa alta até o destaque (634 → 648)
+          serifa: 114,        // altura da tinta de "works" (600-714): dá o tamanho da serifa nesta cena
+          desce: 44,          // a linha de cima desce 44 px entre a 2ª palavra e o destaque (top 535 → 579, f70-f94)
+          borraCorte: [8, 5, 2.5],  // a 1ª palavra nasce borrada no corte (THAT'S, f64-f66); as outras nascem secas
+          escurece: 0.6,      // o vídeo da pessoa escurecido (o clone corta para uma filmagem escura; o molde não tem outra)
+        },
+      };
+      const SERIFAS = {
+        instrument: { f: (px) => `italic 400 ${px}px "Instrument Serif"`, aperta: true },
+        playfair: { f: (px) => `italic 500 ${px}px "Playfair Display"`, aperta: false },
+        dmserif: { f: (px) => `italic 400 ${px}px "DM Serif Display"`, aperta: false },
+      };
+      const SER = SERIFAS[V.fonte_destaque] || SERIFAS.instrument;
+      const APOIO = (px) => `${MEDIDAS.pesoApoio} ${px}px "SF Pro"`;
+      const SOMBRA = V.sombra === "medida" ? ["rgba(0,0,0,0.6)", 8] : null;
+      // texto em canvas não dispara o carregamento da @font-face: pede as duas fontes já (sem isso a diagramação saía com
+      // as medidas da fonte reserva e ficava guardada; na prévia 1, a serifa saiu 22 % menor)
+      const FONTES = [SER.f(100), APOIO(100), `${MEDIDAS.escura.peso} 100px "SF Pro"`];
+      FONTES.forEach((f) => document.fonts.load(f).then(() => { _tinta.clear(); LAY = null; }));
+
+      // caixa de tinta de um texto (alfa > 40), origem na linha de base (a mesma do kit); só guarda com a fonte carregada
+      const _tinta = new Map();
+      function tinta(txt, fonte, esp = 0) {
+        const k = txt + "|" + fonte + "|" + esp; if (_tinta.has(k)) return _tinta.get(k);
+        const c = document.createElement("canvas"); c.width = 2400; c.height = 700;
+        const g = c.getContext("2d"); g.font = fonte; g.letterSpacing = `${esp}px`; g.textBaseline = "alphabetic"; g.fillText(txt, 200, 450);
+        const d = g.getImageData(0, 0, c.width, c.height).data; let x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1;
+        for (let y = 0; y < c.height; y++) for (let x = 0; x < c.width; x++) if (d[(y * c.width + x) * 4 + 3] > 40) {
+          if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+        const r = x1 < 0 ? { l: 0, t: 0, w: 1, h: 1, adv: 0 } : { l: x0 - 200, t: y0 - 450, w: x1 - x0 + 1, h: y1 - y0 + 1, adv: g.measureText(txt).width };
+        if (!document.fonts || document.fonts.check(fonte)) _tinta.set(k, r);
+        return r;
+      }
+
+      // diagramação de cada grupo (depende só das fontes e das frases): posição final de cada palavra
+      let LAY = null;
+      function diagrama() {
+        // serifa: tamanho pela altura de x medida; aperto (só na Instrument) pela proporção de "someone" no original
+        const xh = tinta("someone", SER.f(100)).h, pxS = 100 * MEDIDAS.xDestaque / xh, espS = MEDIDAS.espSerifa;
+        const sm = tinta("someone", SER.f(pxS), espS * pxS / 100);
+        const sx = SER.aperta ? (MEDIDAS.razaoSomeone * sm.h) / sm.w : 1;
+        // apoio: tamanho pela haste do "d"; espaço entre letras pela proporção de "and"
+        const pxA = 100 * MEDIDAS.hasteApoio / tinta("d", APOIO(100)).h;
+        const and0 = tinta("and", APOIO(pxA)), espA = Math.max(-6, Math.min(4, (MEDIDAS.razaoAnd * and0.h - and0.w) / 2));
+        const ascA = tinta("d", APOIO(pxA), espA).h;
+        const E = MEDIDAS.escura, CAIXA = (px) => `${E.peso} ${px}px "SF Pro"`, capH = tinta("H", CAIXA(100)).h;
+        const pxSE = 100 * E.serifa / tinta("works", SER.f(100), espS).h;  // o tamanho da serifa na cena escura
+        // cena escura: caixa alta em cima; a última palavra antes do destaque, maior, ao lado do destaque; o resto embaixo
+        function escura(grupo) {
+          const i0 = grupo.findIndex((p) => p[2]), i1 = i0 < 0 ? -1 : grupo.length - 1 - [...grupo].reverse().findIndex((p) => p[2]);
+          const antes = i0 < 0 ? grupo : grupo.slice(0, i0), meio = i0 < 0 ? [] : grupo.slice(i0, i1 + 1), depois = i0 < 0 ? [] : grupo.slice(i1 + 1);
+          const junto = meio.length && antes.length ? antes.slice(-1) : [], cima = antes.slice(0, antes.length - junto.length);
+          const out = [], up = (t) => t.toLocaleUpperCase("pt-BR");
+          // uma linha centrada em x = 540 com peças [texto, fonte, px, sx, esp, tipo, palavra]; encolhe se passar de largMax
+          const linha = (pecas, base, sobe) => {
+            if (!pecas.length) return;
+            const ms = pecas.map((q) => tinta(q[0], q[1](q[2]), q[4]));
+            let w = ms.reduce((s, m, k) => s + m.w * pecas[k][3], 0) + E.vao * (pecas.length - 1), k0 = 1;
+            if (w > MEDIDAS.largMax) { k0 = MEDIDAS.largMax / w; w = MEDIDAS.largMax; }
+            let x = W / 2 - w / 2;
+            pecas.forEach((q, k) => { out.push({ p: q[6], txt: q[0], tipo: q[5], x: x - ms[k].l * q[3] * k0, base, px: q[2] * k0, sx: q[3], esp: q[4] * k0, sobe });
+              x += (ms[k].w * q[3] + (k < pecas.length - 1 ? (pecas[k + 1][5] === "serifa" ? E.vaoSerifa : E.vao) : 0)) * k0; });
+          };
+          const cx = (ps, cap) => ps.map((p) => [up(p[0]), CAIXA, 100 * cap / capH, 1, 0, "caixa", p]);
+          const se = (ps) => ps.map((p) => [p[0], SER.f, pxSE, sx, espS * pxSE / 100, "serifa", p]);
+          const b1 = E.base2 - E.capa2 - E.entre;
+          if (meio.length) { linha(cx(cima, E.capa1), b1, 1); linha([...cx(junto, E.capa2), ...se(meio)], E.base2, 0); }
+          else linha(cx(cima, E.capa2), E.base2, 0);
+          linha(cx(depois, E.capa1), E.base2 + E.entre + E.capa1, 0);
+          const ini = Math.min(...grupo.map((p) => p[1])) - MEDIDAS.antecipa;
+          const t2 = grupo.length > 1 ? grupo[1][1] - MEDIDAS.antecipa : ini, tD = (i0 >= 0 ? grupo[i0][1] : grupo[grupo.length - 1][1]) - MEDIDAS.antecipa;
+          return { ini, itens: out, escura: true, desce: [t2, Math.max(t2 + 0.1, tD)] };
+        }
+        return FR.map((grupo, gi) => {
+          if (CENAS[String(gi)] === "escura") return escura(grupo);
+          const i0 = grupo.findIndex((p) => p[2]), i1 = i0 < 0 ? -1 : grupo.length - 1 - [...grupo].reverse().findIndex((p) => p[2]);
+          const cima = i0 < 0 ? grupo : grupo.slice(0, i0), meio = i0 < 0 ? [] : grupo.slice(i0, i1 + 1), baixo = i0 < 0 ? [] : grupo.slice(i1 + 1);
+          // linha do meio: as palavras em destaque lado a lado, um espaço da fonte entre elas, centradas em x = 540
+          let ws = meio.map((p) => tinta(p[0], SER.f(pxS), espS * pxS / 100)), escala = 1;
+          let largura = ws.reduce((s, m) => s + m.w * sx, 0) + MEDIDAS.vao * Math.max(0, ws.length - 1);
+          if (largura > MEDIDAS.largMax) { escala = MEDIDAS.largMax / largura; largura = MEDIDAS.largMax; }
+          const x0 = W / 2 - largura / 2, base = +V.altura || MEDIDAS.baseDestaque, out = [];
+          let x = x0;
+          const topos = [];  // topo da tinta de cada palavra em destaque (haste do t, h, f...): a linha de cima não encosta
+          meio.forEach((p, k) => { out.push({ p, tipo: "serifa", x: x - ws[k].l * sx * escala, base, px: pxS * escala, sx, esp: espS * pxS / 100 });
+            topos.push([x, x + ws[k].w * sx * escala, base + ws[k].t * escala]); x += ws[k].w * sx * escala + MEDIDAS.vao * escala; });
+          const topoX = base - MEDIDAS.xDestaque * escala, xd = x0 + largura;
+          // linha de cima: até 2 palavras à esquerda; com 3 ou mais, as 2 últimas vão para a direita
+          const L = meio.length ? x0 : W / 2 - 300, R = meio.length ? xd : W / 2 + 300;
+          const baseC = meio.length ? topoX - MEDIDAS.folgaCima : base;
+          const linha = (ps, xi, b, alinha, cima) => {
+            const txt = ps.map((p) => p[0]).join(" "), m = tinta(txt, APOIO(pxA), espA);
+            let xx = alinha === "dir" ? xi - m.w : xi;
+            if (cima) for (const [a0, a1, tp] of topos) if (a1 > xx && a0 < xx + m.w) b = Math.min(b, tp - 6);
+            for (const p of ps) { const mm = tinta(p[0], APOIO(pxA), espA); out.push({ p, tipo: "apoio", x: xx - mm.l, base: b, px: pxA, sx: 1, esp: espA });
+              xx += tinta(p[0] + " ", APOIO(pxA), espA).adv; }
+          };
+          const larg = (ps) => tinta(ps.map((p) => p[0]).join(" "), APOIO(pxA), espA).w, vaoA = tinta("n", APOIO(pxA)).w;
+          const cabe2 = cima.length >= 3 && L + MEDIDAS.recuoEsq + larg(cima.slice(0, -2)) + 2 * vaoA < R - MEDIDAS.recuoDir - larg(cima.slice(-2));
+          if (cabe2) { linha(cima.slice(0, -2), L + MEDIDAS.recuoEsq, baseC, "esq", 1); linha(cima.slice(-2), R - MEDIDAS.recuoDir, baseC, "dir", 1); }
+          else if (cima.length) {  // não cabe em dois pedaços (destaque curto, muita palavra): uma linha só, sem passar da tela
+            const lw = larg(cima), xi = lw + MEDIDAS.recuoEsq <= R - L ? L + MEDIDAS.recuoEsq : Math.max(40, Math.min(W - 40 - lw, (L + R) / 2 - lw / 2));
+            linha(cima, xi, baseC, "esq", 1);
+          }
+          if (baixo.length) linha(baixo, R - 2, base + MEDIDAS.folgaBaixo + ascA, "dir");
+          const ini = Math.min(...grupo.map((p) => p[1])) - MEDIDAS.antecipa;
+          return { ini, itens: out };
+        });
+      }
+
+      function draw(t) {
+        const { Fi, F } = ES.quadro(t, FPS, NF);
+        ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, W, H);
+        if (!LAY || !LAY.ok) { LAY = diagrama(); LAY.ok = FONTES.every((f) => document.fonts.check(f)); }  // só guarda com as fontes carregadas
+        const tq = Fi / FPS, tc = F / FPS;
+        // o grupo vivo é o último que já começou (Fi decide: o corte nunca mistura dois grupos)
+        let gi = -1; LAY.forEach((g, i) => { if (g.ini <= tq + 1e-6) gi = i; });
+        if (gi < 0) return;
+        const ultimo = gi === LAY.length - 1, falta = NF - 1 - Fi;
+        const sigma = ultimo && falta < MEDIDAS.borra.length ? MEDIDAS.borra[MEDIDAS.borra.length - 1 - falta] : 0;
+        const G = LAY[gi], E = MEDIDAS.escura;
+        if (G.escura) { ctx.fillStyle = `rgba(0,0,0,${E.escurece})`; ctx.fillRect(0, 0, W, H); }
+        // cena escura: a linha de cima desce enquanto a frase completa (ease de saída, medido no caminho do clone)
+        const ud = G.escura ? Math.max(0, Math.min(1, (tc - G.desce[0]) / (G.desce[1] - G.desce[0]))) : 1;
+        const dyCima = -E.desce * (1 - ud) * (1 - ud);
+        for (const it of G.itens) {
+          const nasce = it.p[1] - MEDIDAS.antecipa; if (tq + 1e-6 < nasce) continue;
+          const i = Math.max(0, (tc - nasce) * FPS);
+          let a = i < MEDIDAS.entrada ? MEDIDAS.a0 + (1 - MEDIDAS.a0) * i / MEDIDAS.entrada : 1;
+          const u = Math.min(1, i / MEDIDAS.desliza);
+          let dx = MEDIDAS.dx0 * (1 - u) * (1 - u), dy = 0, s = sigma;
+          if (G.escura) {  // nasce seca, sem deslizar; só a 1ª palavra, no corte, nasce borrada
+            a = 1; dx = 0; dy = it.sobe ? dyCima : 0;
+            const k = Math.floor(i); if (nasce <= G.ini + 1e-6 && k < E.borraCorte.length) s = Math.max(s, E.borraCorte[k]);
+          }
+          const fonte = it.tipo === "serifa" ? SER.f(it.px) : it.tipo === "caixa" ? `${E.peso} ${it.px}px "SF Pro"` : APOIO(it.px);
+          ctx.save(); ctx.globalAlpha = a; if (s) ctx.filter = `blur(${s}px)`;
+          if (SOMBRA) { ctx.shadowColor = SOMBRA[0]; ctx.shadowBlur = SOMBRA[1]; }
+          ctx.translate(it.x + dx, it.base + dy); ctx.scale(it.sx, 1);
+          ctx.font = fonte; ctx.letterSpacing = `${it.esp}px`; ctx.textBaseline = "alphabetic";
+          ctx.fillStyle = it.tipo === "serifa" ? V.cor_destaque : V.cor_apoio; ctx.fillText(it.txt || it.p[0], 0, 0);
+          if (it.tipo === "serifa") { ctx.lineJoin = "round"; ctx.lineWidth = MEDIDAS.tracoSerifa * it.px / 100; ctx.strokeStyle = ctx.fillStyle; ctx.strokeText(it.txt || it.p[0], 0, 0); }
+          ctx.restore();
+        }
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      document.fonts.ready.then(() => { _tinta.clear(); LAY = null; draw(P.t); });
+      draw(0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

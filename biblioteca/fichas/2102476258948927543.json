@@ -1,0 +1,36 @@
+{
+ "id": "2102476258948927543",
+ "url": "https://x.com/i/status/2102476258948927543",
+ "autor": "majidmanzarpour",
+ "data": "2026-09-22",
+ "curtidas": 2574,
+ "comentarios": 75,
+ "legenda_post": "opus 5.5, animated pixel art wizard, pure code  prompt shared below 👇 https://t.co/OfHFZmjxtc",
+ "duracao_s": 11.3,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.26,
+ "pecas": [],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 436,
+  "altura": 360,
+  "fps": 59.94,
+  "kbps": 149,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

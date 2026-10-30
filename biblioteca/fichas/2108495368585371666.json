@@ -1,0 +1,41 @@
+{
+ "id": "2108495368585371666",
+ "url": "https://x.com/i/status/2108495368585371666",
+ "autor": "0xbobaaa",
+ "data": "2026-10-09",
+ "curtidas": 242,
+ "comentarios": 18,
+ "legenda_post": "DAY 1. I ASKED OPUS 5.5 FOR A GAME YOU CAN'T PUT DOWN  under 3 hours of opus later: skyhold. the sky islands are falling and you're the last builder  houses arrive by balloon, one at a time. no skipping  &gt; drop a tower on the east and the island leans &gt; past 15° the rim starts https://t.co/1zv",
+ "duracao_s": 45.1,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.84,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "mapa"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 30.0,
+  "kbps": 158,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

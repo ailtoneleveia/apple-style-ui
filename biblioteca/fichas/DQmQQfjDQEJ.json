@@ -1,0 +1,46 @@
+{
+ "id": "DQmQQfjDQEJ",
+ "url": "https://www.instagram.com/p/DQmQQfjDQEJ/",
+ "autor": "creatoroly",
+ "data": "2025-11-03",
+ "curtidas": 2796,
+ "comentarios": 2981,
+ "legenda_post": "Comment \"v8\" to get these free project files.",
+ "duracao_s": 13.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "V8",
+ "acabamento_pro": 1.3,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 113.4,
+  "onsets_per_s": 5.46
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 509,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

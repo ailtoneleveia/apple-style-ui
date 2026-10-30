@@ -1,0 +1,36 @@
+{
+ "id": "2104923224614326394",
+ "url": "https://x.com/i/status/2104923224614326394",
+ "autor": "NishizawaShimon",
+ "data": "2026-09-29",
+ "curtidas": 5,
+ "comentarios": 2,
+ "legenda_post": "Opus5.5で一発生成。 それもすごいが、ミソはそこではない。  この動画の構成も、入れる要素も、何も指示していない。 伝えたのは、この一文だけ。  『これまでの私の商談や会議内容から、私が特に主張、提案している内容を動画にまとめて』 https://t.co/kfl0I9pq2i",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 181,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

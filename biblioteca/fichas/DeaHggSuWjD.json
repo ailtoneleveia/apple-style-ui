@@ -1,0 +1,47 @@
+{
+ "id": "DeaHggSuWjD",
+ "url": "https://www.instagram.com/p/DeaHggSuWjD/",
+ "autor": "allen.asgari",
+ "data": "2026-10-12",
+ "curtidas": 139,
+ "comentarios": 2,
+ "legenda_post": "A lot goes into these hero animations before you see the final few seconds.\n\nFor Probook, we first had to understand the full product flow and work out what actually needed to be shown on the homepage.\n\nLead comes in, job gets booked, technician gets assigned.\n\nThen came the storyboard, all the sepa",
+ "duracao_s": 14.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.82,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.83
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 739,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

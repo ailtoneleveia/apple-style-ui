@@ -1,0 +1,46 @@
+{
+ "id": "DesQj6ro0HP",
+ "url": "https://www.instagram.com/p/DesQj6ro0HP/",
+ "autor": "iamajene",
+ "data": "2026-10-19",
+ "curtidas": 7949,
+ "comentarios": 17547,
+ "legenda_post": "Comment TEMPLATES and I’ll send you my editing template pack. \n\nClaude editing is changing the game. This pack gives you a head start instead of starting from ground zero.",
+ "duracao_s": 22.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "TEMPLATES",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "teclado",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.9,
+  "onsets_per_s": 5.2
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 959,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

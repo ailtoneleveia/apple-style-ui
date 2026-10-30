@@ -1,0 +1,44 @@
+{
+ "id": "DeFHUkqSHdz",
+ "url": "https://www.instagram.com/p/DeFHUkqSHdz/",
+ "autor": "dopemotionzone",
+ "data": "2026-10-04",
+ "curtidas": 2244,
+ "comentarios": 1043,
+ "legenda_post": "Comment “FRAME” below ⬇️\nand grab these Dope style frames.\n⚡ What you’ll get:\n🎨 Curated style frames\n🧩 Visual references & compositions\n✦ Premium design inspiration\n🖥️ Figma file with all the frames\nUse these frames to explore new layouts, compositions and visual directions for your next edit.\nDrop ",
+ "duracao_s": 34.4,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "FRAME",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "cursor",
+  "legenda_fala"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.94
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 610,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

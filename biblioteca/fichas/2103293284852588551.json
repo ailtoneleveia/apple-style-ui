@@ -1,0 +1,42 @@
+{
+ "id": "2103293284852588551",
+ "url": "https://x.com/i/status/2103293284852588551",
+ "autor": "Dontgiveup_26",
+ "data": "2026-09-25",
+ "curtidas": 240,
+ "comentarios": 14,
+ "legenda_post": "지금 글로벌 AI 빌더와 오픈소스 씬이 발칵 뒤집힌 이유.  최근 영상 제작까지 미친 성능을 보여주는 'Opus 5.5'를 활용해 고퀄리티 런칭 영상을 뽑아내는 오픈소스 'ShipVideo'가 등장함.  Sora나 Runway 같은 비디오 모델 하나 없이 오퍼스가 직접 코드를 짜서 렌더링하는 방식. 어렵게 프롬프트 https://t.co/YherpQFe1s",
+ "duracao_s": 21.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.02,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 626,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 111,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

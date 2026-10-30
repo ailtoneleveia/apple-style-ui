@@ -1,0 +1,51 @@
+{
+ "id": "DcTXR21z8pm",
+ "url": "https://www.instagram.com/p/DcTXR21z8pm/",
+ "autor": "nishvisualz",
+ "data": "2026-08-21",
+ "curtidas": 765,
+ "comentarios": 30,
+ "legenda_post": "Meet Flows\nA SaaS product, I designed + animated.\n\nNeed a product launch video? DM me.\n@nishvisualz \n\n[motion graphics, after effects, video editing, freelancer, ui animation, saas, concept, project file]",
+ "duracao_s": 32.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 109.9,
+  "onsets_per_s": 4.32
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 428,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:nishvisualz",
+  "busca:apple motion design",
+  "busca:liquid glass animation",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

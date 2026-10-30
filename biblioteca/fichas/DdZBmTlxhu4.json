@@ -1,0 +1,50 @@
+{
+ "id": "DdZBmTlxhu4",
+ "url": "https://www.instagram.com/p/DdZBmTlxhu4/",
+ "autor": "julia.vasilevskaia",
+ "data": "2026-09-17",
+ "curtidas": 609,
+ "comentarios": 199,
+ "legenda_post": "Complete tutorial list 👇\n6 tutorials - Apple style animation, shape morphing, UI, text animation, messages animation \n\nComment “APPLE” and I’ll send you the link \n\n#motiondesign #apple #saas #motiondesigner #animation",
+ "duracao_s": 13.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "APPLE",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 26,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 162.7,
+  "onsets_per_s": 3.04
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 243,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

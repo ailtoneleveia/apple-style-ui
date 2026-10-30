@@ -1,0 +1,40 @@
+{
+ "id": "2108459952683811167",
+ "url": "https://x.com/i/status/2108459952683811167",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Same prompt, 2 models ✈️  \"Build an interactive educational 3D jet engine in the browser\"  Claude Opus 5.5 · ~$1.84 · 19 min GPT-6 Astra · ~$1.14 · 10 min (~ = API-price estimate)  Which one teaches you more? 👇 https://t.co/EB4N3fksRF https://t.co/tLtyYwKHyw",
+ "duracao_s": 12.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.82,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 430,
+  "fps": 30.0,
+  "kbps": 129,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

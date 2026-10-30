@@ -1,0 +1,44 @@
+{
+ "id": "DL5Ab5RN3Oq",
+ "url": "https://www.instagram.com/p/DL5Ab5RN3Oq/",
+ "autor": "michel.creates",
+ "data": "2025-07-09",
+ "curtidas": 6437,
+ "comentarios": 102,
+ "legenda_post": "Apple UI Animations✅ #aftereffects #motiongraphics #motiondesign #cutter #aftereffectsedit #cutting #animation",
+ "duracao_s": 17.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.8,
+ "pecas": [
+  "dynamic_island",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 126.2,
+  "onsets_per_s": 5.89
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 439,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

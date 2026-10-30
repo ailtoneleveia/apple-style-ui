@@ -1,0 +1,42 @@
+{
+ "id": "2103245000989659422",
+ "url": "https://x.com/i/status/2103245000989659422",
+ "autor": "wallacex227",
+ "data": "2026-09-24",
+ "curtidas": 134,
+ "comentarios": 12,
+ "legenda_post": "Mais um video com Opus 5.5, ainda tô testando.  Só usando claude ele tira print do simulador, vasculha o app todo e faz tudo.  O som ainda não mexi kk da pra melhorar isso https://t.co/79g8ae4ena",
+ "duracao_s": 19.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.62,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 131,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

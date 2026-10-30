@@ -1,0 +1,39 @@
+{
+ "id": "2108569413746335887",
+ "url": "https://x.com/i/status/2108569413746335887",
+ "autor": "YuanXi901019",
+ "data": "2026-10-09",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5通用版快闪视频提示词 提示词：你是一位拥有顶级审美的前端设计和动效设计专家，请设计一段 20秒的极具音乐律动感的快闪视频，介绍一下**量子力学**这一概念，运用丰富的动效技巧(比如：文字排版、图形变换、3D、粒子、流体形变、色彩变换、数据图表等)。内容主用英文，专有名词带上中文译名。 https://t.co/achkXDZkNi",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 341,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

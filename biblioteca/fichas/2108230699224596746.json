@@ -1,0 +1,36 @@
+{
+ "id": "2108230699224596746",
+ "url": "https://x.com/i/status/2108230699224596746",
+ "autor": "tonysurix",
+ "data": "2026-10-08",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 and Blender MCP can make some amazing previs videos.  All I did was \"in blender make a previs of a car driving thru a mountainside with a another car chasing.  record a video and show me here when its done.\"  It started with a nice sun glare too.  I think its because of https://t.co/tnOFhdS",
+ "duracao_s": 16.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.75,
+ "pecas": [],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 858,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 315,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

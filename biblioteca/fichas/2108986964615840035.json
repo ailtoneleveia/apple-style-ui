@@ -1,0 +1,38 @@
+{
+ "id": "2108986964615840035",
+ "url": "https://x.com/i/status/2108986964615840035",
+ "autor": "Bhavani_00007",
+ "data": "2026-10-10",
+ "curtidas": 71,
+ "comentarios": 18,
+ "legenda_post": "Opus 5.5 vs GPT 6.1 Sol  I asked both to build a whale breaching at sunrise in Three.js, each capped at $2.  In my opinion, Opus 5.5 won this one, and I’m loving it.  Same budget, but Opus finished in ~7 mins and Sol took ~10 mins.  Sol’s leap is bigger and splashier, but Opus https://t.co/AlmF2UZYt",
+ "duracao_s": 17.2,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.06,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 426,
+  "fps": 25.0,
+  "kbps": 261,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

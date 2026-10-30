@@ -1,0 +1,44 @@
+{
+ "id": "Dc_IjLdIFkb",
+ "url": "https://www.instagram.com/p/Dc_IjLdIFkb/",
+ "autor": "charliehills",
+ "data": "2026-09-07",
+ "curtidas": 145,
+ "comentarios": 35,
+ "legenda_post": "ChatGPT + Figma = 🔥\n\nComment “🔥” for my Claude Code to Codex migration guide.",
+ "duracao_s": 7.1,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1005,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

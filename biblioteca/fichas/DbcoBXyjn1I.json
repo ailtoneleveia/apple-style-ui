@@ -1,0 +1,50 @@
+{
+ "id": "DbcoBXyjn1I",
+ "url": "https://www.instagram.com/p/DbcoBXyjn1I/",
+ "autor": "dnyxstudioss",
+ "data": "2026-07-31",
+ "curtidas": 344,
+ "comentarios": 23,
+ "legenda_post": "apple mail ui animation",
+ "duracao_s": 15.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 140.4,
+  "onsets_per_s": 3.05
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 596,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:ui apple captions",
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

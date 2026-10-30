@@ -1,0 +1,51 @@
+{
+ "id": "DYtPVz2zyW6",
+ "url": "https://www.instagram.com/p/DYtPVz2zyW6/",
+ "autor": "madebysheel",
+ "data": "2026-05-24",
+ "curtidas": 3,
+ "comentarios": 3,
+ "legenda_post": "Day 6 of learning After Effects \n\nCreated a clean Apple-style SaaS motion graphics animation inspired by the ChatGPT search UI experience.\nFocused on premium minimal design, smooth transitions, modern typography, and cinematic interface animation to achieve a sleek tech-commercial aesthetic. \nExplor",
+ "duracao_s": 14.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 84.2,
+  "onsets_per_s": 4.41
+ },
+ "qualidade": {
+  "largura": 1268,
+  "altura": 718,
+  "fps": 29.97,
+  "kbps": 166,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

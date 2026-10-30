@@ -1,0 +1,44 @@
+{
+ "id": "DWtxvOGCT5j",
+ "url": "https://www.instagram.com/p/DWtxvOGCT5j/",
+ "autor": "ediitsujal",
+ "data": "2026-04-04",
+ "curtidas": 3,
+ "comentarios": 14,
+ "legenda_post": "New ui animation ( after motion z) \n.\n.If you want a tutorial on this animation, please comment as much as possible. \n.\n.\n.DM FOR PAID EDIT and \n. follow for more contant \n.\n.#fyp #explorepage #uianimation #alightmotion #foryou \n\n Do you need a tutorial on this animation?",
+ "duracao_s": 6.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "AS",
+ "acabamento_pro": 0.52,
+ "pecas": [
+  "grafico",
+  "emoji_3d",
+  "pilha_cartoes"
+ ],
+ "nota": 28,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 143.4,
+  "onsets_per_s": 3.2
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1107,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

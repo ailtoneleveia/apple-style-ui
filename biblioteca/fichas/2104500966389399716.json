@@ -1,0 +1,36 @@
+{
+ "id": "2104500966389399716",
+ "url": "https://x.com/i/status/2104500966389399716",
+ "autor": "charliejhills",
+ "data": "2026-09-28",
+ "curtidas": 42,
+ "comentarios": 22,
+ "legenda_post": "Gave Opus 5.5, Astra and Fable the exact same prompt: \"go all out\".  First try, no fixes.  Honestly they're all seriously good now but opus 5.5 still ate and left no crumbs for me  who's winning for you? drop it below 👇  The prompt and my full test are here: https://t.co/nFhn2xZfKB",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.98,
+ "pecas": [],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 794,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 664,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

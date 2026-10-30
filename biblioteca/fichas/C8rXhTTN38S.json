@@ -1,0 +1,44 @@
+{
+ "id": "C8rXhTTN38S",
+ "url": "https://www.instagram.com/p/C8rXhTTN38S/",
+ "autor": "creatoroly",
+ "data": "2024-06-26",
+ "curtidas": 306,
+ "comentarios": 9,
+ "legenda_post": "the more you look at the clock, the faster time passes.\n\n#motivation #inspiration #animations",
+ "duracao_s": 7.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.75,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "vidro"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 153.3,
+  "onsets_per_s": 4.19
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 239,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

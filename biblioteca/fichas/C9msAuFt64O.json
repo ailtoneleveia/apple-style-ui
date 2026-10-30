@@ -1,0 +1,42 @@
+{
+ "id": "C9msAuFt64O",
+ "url": "https://www.instagram.com/p/C9msAuFt64O/",
+ "autor": "creatoroly",
+ "data": "2024-07-19",
+ "curtidas": 296,
+ "comentarios": 7,
+ "legenda_post": "will you make it to Dubai? 🇦🇪\n\n#inspiration #motivation #dubai #animation #motiondesign",
+ "duracao_s": 6.8,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.0,
+  "onsets_per_s": 4.35
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 106,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

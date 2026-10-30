@@ -1,0 +1,43 @@
+{
+ "id": "C8m4WyYNIB-",
+ "url": "https://www.instagram.com/p/C8m4WyYNIB-/",
+ "autor": "creatoroly",
+ "data": "2024-06-24",
+ "curtidas": 348,
+ "comentarios": 5,
+ "legenda_post": "You are wasting your time! Start today, not tomorrow.\n\n#editing #motivation #inspiration #failure #animations #visuals",
+ "duracao_s": 14.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.45,
+ "pecas": [
+  "icone_app",
+  "vidro"
+ ],
+ "nota": 24,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.01
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 275,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

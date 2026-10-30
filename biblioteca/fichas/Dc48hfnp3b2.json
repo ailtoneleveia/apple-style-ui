@@ -1,0 +1,42 @@
+{
+ "id": "Dc48hfnp3b2",
+ "url": "https://www.instagram.com/p/Dc48hfnp3b2/",
+ "autor": "abits.me",
+ "data": "2026-09-05",
+ "curtidas": 30,
+ "comentarios": 178,
+ "legenda_post": "ada puluhan preset lainnya, kalo mau preset text animation capcut ala Apple, komen ajah \"Text Hook\" nanti gua kirim link di dm lu",
+ "duracao_s": 3.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "legenda_capcut",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 861,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

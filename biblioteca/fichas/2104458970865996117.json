@@ -1,0 +1,39 @@
+{
+ "id": "2104458970865996117",
+ "url": "https://x.com/i/status/2104458970865996117",
+ "autor": "threediveai",
+ "data": "2026-09-28",
+ "curtidas": 7,
+ "comentarios": 2,
+ "legenda_post": "Claude Opus 5.5 + Unity CLI + Unity 公式 Skills の実験中。 雨の表現を依頼したら、ええ感じの雷光効果まで付いて、突然緊張感ありすぎるエディット画面に⚡  #claude #unity https://t.co/B7oB0J1xcg",
+ "duracao_s": 6.8,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.58,
+ "pecas": [
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 582,
+  "altura": 360,
+  "fps": 56.7,
+  "kbps": 193,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

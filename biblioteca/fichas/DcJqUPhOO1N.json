@@ -1,0 +1,46 @@
+{
+ "id": "DcJqUPhOO1N",
+ "url": "https://www.instagram.com/p/DcJqUPhOO1N/",
+ "autor": "stepan.straufvfx",
+ "data": "2026-08-17",
+ "curtidas": 1339,
+ "comentarios": 29,
+ "legenda_post": "PayPal motion concept👀\n#aftereffects #animation #motiondesign #apple #paypal",
+ "duracao_s": 12.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.44,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "mapa"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 138.1,
+  "onsets_per_s": 4.36
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 428,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

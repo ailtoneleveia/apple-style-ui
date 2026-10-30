@@ -1,0 +1,39 @@
+{
+ "id": "2110014984549986485",
+ "url": "https://x.com/i/status/2110014984549986485",
+ "autor": "aiquantum3",
+ "data": "2026-10-13",
+ "curtidas": 9,
+ "comentarios": 3,
+ "legenda_post": "Is Muse Wonder full better than opus 5.5?  I gave them the same prompt   goal is to build me a triple aaa level lawn mower simulator i can drink beer and smoke a cigar.  Api equivalent cost :  muse - $4.11 opus - $99.43  It is very clear that muse is not anywhere near close to https://t.co/KfFaWUYN5",
+ "duracao_s": 34.0,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 20,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 561,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

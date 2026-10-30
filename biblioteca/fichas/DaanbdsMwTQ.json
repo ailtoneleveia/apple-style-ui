@@ -1,0 +1,52 @@
+{
+ "id": "DaanbdsMwTQ",
+ "url": "https://www.instagram.com/p/DaanbdsMwTQ/",
+ "autor": "olafmotion",
+ "data": "2026-07-05",
+ "curtidas": 565,
+ "comentarios": 27,
+ "legenda_post": "finder ui animation",
+ "duracao_s": 14.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.05,
+ "pecas": [
+  "janela",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 112.1,
+  "onsets_per_s": 4.08
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 484,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple editing style",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

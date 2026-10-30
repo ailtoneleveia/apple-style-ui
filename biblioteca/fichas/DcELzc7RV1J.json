@@ -1,0 +1,54 @@
+{
+ "id": "DcELzc7RV1J",
+ "url": "https://www.instagram.com/p/DcELzc7RV1J/",
+ "autor": "adrimotions",
+ "data": "2026-08-15",
+ "curtidas": 137,
+ "comentarios": 16,
+ "legenda_post": "Pinterest ui animation",
+ "duracao_s": 13.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.76,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 152.7,
+  "onsets_per_s": 6.69
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 444,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

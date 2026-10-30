@@ -1,0 +1,53 @@
+{
+ "id": "DaMzYTMDYMp",
+ "url": "https://www.instagram.com/p/DaMzYTMDYMp/",
+ "autor": "dnyxstudioss",
+ "data": "2026-06-30",
+ "curtidas": 258,
+ "comentarios": 14,
+ "legenda_post": "discord ui animation",
+ "duracao_s": 10.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.82,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "emoji_3d",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.7,
+  "onsets_per_s": 4.59
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 348,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

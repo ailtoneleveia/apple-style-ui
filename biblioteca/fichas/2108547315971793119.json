@@ -1,0 +1,36 @@
+{
+ "id": "2108547315971793119",
+ "url": "https://x.com/i/status/2108547315971793119",
+ "autor": "narukijima",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "なにか作って — made with Claude Opus 5.5 × Three.js https://t.co/bGuTaKJr6F",
+ "duracao_s": 45.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.81,
+ "pecas": [],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 381,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

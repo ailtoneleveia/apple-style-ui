@@ -1,0 +1,39 @@
+{
+ "id": "2103737604277780553",
+ "url": "https://x.com/i/status/2103737604277780553",
+ "autor": "AmitSingha89",
+ "data": "2026-09-26",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 made this video for Anuprerna in one shot. One prompt. Zero editing.  I thought the one-shot videos going around X this week were staged. So I tried it on my own business.  Prompt:Make a professional explainer video for https://t.co/3miEfqahu1 for a first-time visitor. https://t.co/H343OYQ2",
+ "duracao_s": 54.0,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "pessoa_no_cartao",
+  "numero_grande"
+ ],
+ "nota": 54,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 170,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

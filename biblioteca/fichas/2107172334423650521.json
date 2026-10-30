@@ -1,0 +1,41 @@
+{
+ "id": "2107172334423650521",
+ "url": "https://x.com/i/status/2107172334423650521",
+ "autor": "fipiaggio",
+ "data": "2026-10-05",
+ "curtidas": 1086,
+ "comentarios": 36,
+ "legenda_post": "Los Sims 1, porteado con @threejs  corriendo en el navegador.  Estaba medio escéptico con eso de “one shotear” ports de juegos, asi que para probar le dejé una ISO que tenía a Opus 5.5 con un “/goal portealo completo a la web” y me fui a pasear a la perra. Cuando volví, ya tenía https://t.co/NAHXlzE",
+ "duracao_s": 57.6,
+ "tipo": "tutorial_tela",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.91,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 562,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 210,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

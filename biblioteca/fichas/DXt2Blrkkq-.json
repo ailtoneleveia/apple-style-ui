@@ -1,0 +1,45 @@
+{
+ "id": "DXt2Blrkkq-",
+ "url": "https://www.instagram.com/p/DXt2Blrkkq-/",
+ "autor": "dopemotionzone",
+ "data": "2026-04-29",
+ "curtidas": 303,
+ "comentarios": 2,
+ "legenda_post": "Most people believe the “starving artist” is real.\n\nBut the way Nailea Devora explains it makes you question that idea completely.\n\nThe starving artist isn’t truth.\nIt’s a narrative used to devalue creativity.\n\nBecause artists make people think.\nThey challenge power.\nThey force people to see beyond ",
+ "duracao_s": 32.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "ON",
+ "acabamento_pro": 0.25,
+ "pecas": [
+  "notificacao",
+  "janela",
+  "legenda_fala"
+ ],
+ "nota": 21,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.38
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1187,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

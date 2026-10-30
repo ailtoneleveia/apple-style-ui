@@ -1,0 +1,51 @@
+{
+ "id": "DehQ9_rJ_Ar",
+ "url": "https://www.instagram.com/p/DehQ9_rJ_Ar/",
+ "autor": "dailyflutterui_2001",
+ "data": "2026-10-15",
+ "curtidas": 2991,
+ "comentarios": 40,
+ "legenda_post": "This Fintech App UI is SO CLEAN 🤯 #flutterdeveloper #flutter #programming #coding",
+ "duracao_s": 21.5,
+ "tipo": "tutorial_tela",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.68,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 159.2,
+  "onsets_per_s": 1.78
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1360,
+  "fps": 60.0,
+  "kbps": 712,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

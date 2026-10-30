@@ -1,0 +1,47 @@
+{
+ "id": "DbszEmpIfK8",
+ "url": "https://www.instagram.com/p/DbszEmpIfK8/",
+ "autor": "ah.saadfx",
+ "data": "2026-08-06",
+ "curtidas": 1590,
+ "comentarios": 48,
+ "legenda_post": "recent saas animation I made inspired from @yassercontent was a really good idea liked it 🔥❤️",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 143.0,
+  "onsets_per_s": 2.2
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 891,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

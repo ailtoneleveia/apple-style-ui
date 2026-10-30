@@ -1,0 +1,49 @@
+{
+ "id": "DehO5gjSPgM",
+ "url": "https://www.instagram.com/p/DehO5gjSPgM/",
+ "autor": "kenyset",
+ "data": "2026-10-15",
+ "curtidas": 3794,
+ "comentarios": 7095,
+ "legenda_post": "FOLLOW & Comment \"SFX\" to get the pack for free! \n\n#mixedmediaart #aftereffects #SFX #edit #mograph #motiongraphics #animation #motiondesign #motion #ty #typography #kenyset #apple #applestyle #ui #saasanimation #vídeo",
+ "duracao_s": 9.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "sons_musica",
+ "palavra": "SFX",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 123.8,
+  "onsets_per_s": 6.21
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 394,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

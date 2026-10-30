@@ -1,0 +1,46 @@
+{
+ "id": "Dd9s_b_RW5g",
+ "url": "https://www.instagram.com/p/Dd9s_b_RW5g/",
+ "autor": "edita.visuals",
+ "data": "2026-10-01",
+ "curtidas": 33,
+ "comentarios": 38,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩🙂\n.\n.\nWant to practice this style? - Comment “SPLIT”\n.\n.",
+ "duracao_s": 19.3,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "SPLIT",
+ "acabamento_pro": 1.62,
+ "pecas": [
+  "dynamic_island",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 125.7,
+  "onsets_per_s": 3.05
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 122,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,42 @@
+{
+ "id": "Dc6ZB72ot24",
+ "url": "https://www.instagram.com/p/Dc6ZB72ot24/",
+ "autor": "charliehills",
+ "data": "2026-09-05",
+ "curtidas": 183,
+ "comentarios": 6,
+ "legenda_post": "All the Jarvis bros are cooked.\n\nFor six months your feed has told you to build your own Jarvis. Build a second brain in Obsidian. And OpenAI just shipped both of them in one product.\n\nIt’s called Astra. It’s GPT-6 and it landed this week.\n\nThe thing they led with isn’t a smarter chatbot. It’s compu",
+ "duracao_s": 58.3,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 256,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

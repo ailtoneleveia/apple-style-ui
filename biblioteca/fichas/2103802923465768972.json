@@ -1,0 +1,39 @@
+{
+ "id": "2103802923465768972",
+ "url": "https://x.com/i/status/2103802923465768972",
+ "autor": "MandelDuck",
+ "data": "2026-09-26",
+ "curtidas": 74,
+ "comentarios": 11,
+ "legenda_post": "Single prompt with opus 5.5 \"can you make a 3d game where you walk around and spot cats inside of a van gogh painting? we can start with stary night and its town\"  https://t.co/gU2F6xjxYw https://t.co/jtsjD3ICD1",
+ "duracao_s": 33.6,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.76,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 21,
+ "som": null,
+ "qualidade": {
+  "largura": 650,
+  "altura": 360,
+  "fps": 59.73,
+  "kbps": 394,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

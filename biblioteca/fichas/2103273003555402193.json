@@ -1,0 +1,46 @@
+{
+ "id": "2103273003555402193",
+ "url": "https://x.com/i/status/2103273003555402193",
+ "autor": "twoclipping",
+ "data": "2026-09-24",
+ "curtidas": 12684,
+ "comentarios": 270,
+ "legenda_post": "opus 5.5 is f*cking cracked at motion design  this entire video is code, 0 after effects  im open sourcing the prompt template for these motion designs  steal it to recreate these ↓  &lt;inputs&gt; Ask me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, https://t.co/pQ",
+ "duracao_s": 14.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 74,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.0,
+  "onsets_per_s": 5.69
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 60.0,
+  "kbps": 303,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

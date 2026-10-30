@@ -1,0 +1,41 @@
+{
+ "id": "2103614667038052364",
+ "url": "https://x.com/i/status/2103614667038052364",
+ "autor": "manuelogomigo",
+ "data": "2026-09-25",
+ "curtidas": 6,
+ "comentarios": 2,
+ "legenda_post": "I gave Claude Opus 5.5 one prompt:  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a flowdrive. go all out.\"  it went all out. (sound on) https://t.co/uBMxR6EdvC",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.73,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "mapa"
+ ],
+ "nota": 56,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 387,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

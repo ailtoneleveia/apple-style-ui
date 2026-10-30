@@ -1,0 +1,39 @@
+{
+ "id": "2103656229717328129",
+ "url": "https://x.com/i/status/2103656229717328129",
+ "autor": "codeSTACKr",
+ "data": "2026-09-26",
+ "curtidas": 29,
+ "comentarios": 6,
+ "legenda_post": "i keep seeing all of these amazing hype reels that people are saying opus 5.5 created with a single prompt.  one shot, yeah right.. liars!! so i tried it.   prompt: \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's https://t.co/YPaxDsDc2",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.59,
+ "pecas": [
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 513,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

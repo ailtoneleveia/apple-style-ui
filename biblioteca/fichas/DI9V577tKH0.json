@@ -1,0 +1,51 @@
+{
+ "id": "DI9V577tKH0",
+ "url": "https://www.instagram.com/p/DI9V577tKH0/",
+ "autor": "creatoroly",
+ "data": "2025-04-27",
+ "curtidas": 4578,
+ "comentarios": 73,
+ "legenda_post": "I fell in love with @apple style.... ❤️‍🩹",
+ "duracao_s": 11.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 97.5,
+  "onsets_per_s": 3.12
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 652,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:ui apple captions",
+  "busca:apple editing style",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

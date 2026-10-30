@@ -1,0 +1,38 @@
+{
+ "id": "2102894936316420109",
+ "url": "https://x.com/i/status/2102894936316420109",
+ "autor": "holytrinity",
+ "data": "2026-09-23",
+ "curtidas": 965,
+ "comentarios": 28,
+ "legenda_post": "I asked Claude Opus 5.5 to make me a pro-AI accelerationist edit that goes hard. Does it go hard?  Made using only code. https://t.co/KALuTYxW61",
+ "duracao_s": 32.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.77,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 532,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

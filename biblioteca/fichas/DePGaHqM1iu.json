@@ -1,0 +1,46 @@
+{
+ "id": "DePGaHqM1iu",
+ "url": "https://www.instagram.com/p/DePGaHqM1iu/",
+ "autor": "edita.visuals",
+ "data": "2026-10-08",
+ "curtidas": 10,
+ "comentarios": 8,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩🙂\n\nCan you believe Opus 5.5 made this video? 🤯\n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!",
+ "duracao_s": 25.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.63,
+ "pecas": [
+  "imessage",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.32
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 42,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

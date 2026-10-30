@@ -1,0 +1,43 @@
+{
+ "id": "DcYu_ANSkD7",
+ "url": "https://www.instagram.com/p/DcYu_ANSkD7/",
+ "autor": "dopemotionzone",
+ "data": "2026-08-23",
+ "curtidas": 2600,
+ "comentarios": 43,
+ "legenda_post": "The best podcast clips don’t just make a conversation look good, they make the idea impossible to ignore.\n\nCatherine Goetze talks about one of the biggest advantages an entrepreneur can have:\n\nbeing willing to create what you don’t already know how to do.\n\n$120K in pre-sales in three days.\nTaking th",
+ "duracao_s": 34.5,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.33
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 872,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

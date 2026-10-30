@@ -1,0 +1,36 @@
+{
+ "id": "2103824976713306214",
+ "url": "https://x.com/i/status/2103824976713306214",
+ "autor": "daniel_mac8",
+ "data": "2026-09-26",
+ "curtidas": 168,
+ "comentarios": 20,
+ "legenda_post": "Opus 5.5 solves animation. Watch this. Sound on. 🤯  The prompt was essentially:   \"Use Dynamic Workflows and create an animation depicting a movie shoot about Opus 5.5's efficiency in Claude Code\"  Full prompt is below. Borrow it.  How Claude worked:  1. Ultracode turned Claude",
+ "duracao_s": 29.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.99,
+ "pecas": [],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 163,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

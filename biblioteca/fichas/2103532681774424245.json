@@ -1,0 +1,45 @@
+{
+ "id": "2103532681774424245",
+ "url": "https://x.com/i/status/2103532681774424245",
+ "autor": "cansincengiz_me",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "bu videoyu sadece Claude Code kullanarak yaptım, prompt:  \"merak ediyorum ne kadar iyi bir hareketli grafik tasarımcısısın. Bunu bana kanıtlamak için 15 saniye sürecek bir hareketli grafik videosu istiyorum senden. Bu video https://t.co/TdKZEIYaxO 'i tanıtacak ve x üzerinde https://t.co/G81BKfzip4",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "notificacao",
+  "janela",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 114.3,
+  "onsets_per_s": 4.25
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 60.0,
+  "kbps": 106,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

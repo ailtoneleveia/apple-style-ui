@@ -1,0 +1,48 @@
+{
+ "id": "DHeUO_Itp1F",
+ "url": "https://www.instagram.com/p/DHeUO_Itp1F/",
+ "autor": "creatoroly",
+ "data": "2025-03-21",
+ "curtidas": 989,
+ "comentarios": 20,
+ "legenda_post": "hope you get inspiration from this. 🧘🏽‍♂️",
+ "duracao_s": 11.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.37,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 31,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 90.7,
+  "onsets_per_s": 3.94
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 799,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

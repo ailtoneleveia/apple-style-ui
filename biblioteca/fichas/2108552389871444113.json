@@ -1,0 +1,36 @@
+{
+ "id": "2108552389871444113",
+ "url": "https://x.com/i/status/2108552389871444113",
+ "autor": "sebmoska",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Same task, two models: \"animate an airplane landing.\"  Top: Opus 5.5 (medium) Bottom: Sol 6.1 (medium)  Which one would you chose? https://t.co/6hfUE50SQn",
+ "duracao_s": 10.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.54,
+ "pecas": [],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 382,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

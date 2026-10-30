@@ -1,0 +1,44 @@
+{
+ "id": "DSSW1NVDXdR",
+ "url": "https://www.instagram.com/p/DSSW1NVDXdR/",
+ "autor": "iner.fly",
+ "data": "2025-12-15",
+ "curtidas": 13797,
+ "comentarios": 22462,
+ "legenda_post": "Comment “GLASS” and FOLLOW to get the tutorial\n#edits #aftereffects #aftereffectsedit #aftereffectstutorial #edit #motiongraphics #editingvideo #motiondesign #motiondesigner #editing #editor #aftereffectstutorials #explorepage #aftereffectsanimation #vfxartist #photoshop #vfxchallenge #editaudio #ed",
+ "duracao_s": 6.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "GLASS",
+ "acabamento_pro": 0.6,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.16
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 682,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:liquid glass animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

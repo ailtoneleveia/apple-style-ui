@@ -1,0 +1,39 @@
+{
+ "id": "2107594959666728991",
+ "url": "https://x.com/i/status/2107594959666728991",
+ "autor": "condzxyz",
+ "data": "2026-10-06",
+ "curtidas": 299,
+ "comentarios": 17,
+ "legenda_post": "Lula proibiu o Polymarket no Brasil, porque será?   Vídeo INTEIRO feito com 1 prompt no Claude Opus 5.5 Max Effort  - Roteiro - Imagens - Narração  - Edição  Prompt nos comentários 👇 https://t.co/TW8AeRR224",
+ "duracao_s": 29.8,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 167,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2103574041781322168",
+ "url": "https://x.com/i/status/2103574041781322168",
+ "autor": "SagarmohanSingh",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 made this under 30 min  prompt below https://t.co/2bxzYflLat",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.95,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 192,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

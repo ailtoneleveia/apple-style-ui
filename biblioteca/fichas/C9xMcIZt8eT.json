@@ -1,0 +1,42 @@
+{
+ "id": "C9xMcIZt8eT",
+ "url": "https://www.instagram.com/p/C9xMcIZt8eT/",
+ "autor": "creatoroly",
+ "data": "2024-07-23",
+ "curtidas": 403,
+ "comentarios": 5,
+ "legenda_post": "Plan it to go viral. 💣\n\n#inspiration #motivation #viral #visuals #motiondesign",
+ "duracao_s": 9.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 179.2,
+  "onsets_per_s": 2.67
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 233,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

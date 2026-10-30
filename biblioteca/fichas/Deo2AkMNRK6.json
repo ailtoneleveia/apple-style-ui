@@ -1,0 +1,48 @@
+{
+ "id": "Deo2AkMNRK6",
+ "url": "https://www.instagram.com/p/Deo2AkMNRK6/",
+ "autor": "edita.visuals",
+ "data": "2026-10-18",
+ "curtidas": 59,
+ "comentarios": 141,
+ "legenda_post": "Want your footage edited like this? Send me a DM! 🙂\n\nI didn’t touch a single keyframe.\nEvery movement, every transition, every sound - Claude Opus 5.5.\n\nFollow and Comment “CLAUDE” for the full guide!",
+ "duracao_s": 37.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.64,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.75
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 96,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

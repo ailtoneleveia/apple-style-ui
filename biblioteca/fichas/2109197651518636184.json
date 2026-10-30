@@ -1,0 +1,43 @@
+{
+ "id": "2109197651518636184",
+ "url": "https://x.com/i/status/2109197651518636184",
+ "autor": "SadAlbert10",
+ "data": "2026-10-11",
+ "curtidas": 12,
+ "comentarios": 1,
+ "legenda_post": "yesterday I randomly prompted Opus 5.5: \"i love you, can we build a cool cake\"  then closed Claude.    Now I am hungry wtf. https://t.co/iUQ16wnTwV",
+ "duracao_s": 55.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.57,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 684,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 175,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

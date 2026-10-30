@@ -1,0 +1,50 @@
+{
+ "id": "DTihcLUCZZ8",
+ "url": "https://www.instagram.com/p/DTihcLUCZZ8/",
+ "autor": "motionbyemile",
+ "data": "2026-01-15",
+ "curtidas": 77870,
+ "comentarios": 1823,
+ "legenda_post": "@duolingo Concept Ad \n\n_______________________________\n\nsong : Calvin Harris - Feels (Official Video) ft. Pharrell Williams, Katy Perry, Big Sean\n\n________________________________\n\n#motiondesign #ui #animation #aftereffects",
+ "duracao_s": 11.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "iphone",
+  "botao_pilula",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 110.9,
+  "onsets_per_s": 4.77
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 574,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:dynamic island animation",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DLQHr3Yt2tS",
+ "url": "https://www.instagram.com/p/DLQHr3Yt2tS/",
+ "autor": "creatoroly",
+ "data": "2025-06-23",
+ "curtidas": 3619,
+ "comentarios": 48,
+ "legenda_post": "took some clean design and animated it, I think its clean? 🧼\n\ncredits to @dwi__jay",
+ "duracao_s": 7.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "emoji_3d",
+  "vidro"
+ ],
+ "nota": 70,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.8,
+  "onsets_per_s": 5.34
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 222,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

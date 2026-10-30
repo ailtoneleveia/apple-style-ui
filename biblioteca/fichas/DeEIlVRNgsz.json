@@ -1,0 +1,44 @@
+{
+ "id": "DeEIlVRNgsz",
+ "url": "https://www.instagram.com/p/DeEIlVRNgsz/",
+ "autor": "aiwithsanskar",
+ "data": "2026-10-04",
+ "curtidas": 3502,
+ "comentarios": 2703,
+ "legenda_post": "Claude made this whole video. Not one frame in After Effects was done 💀\n\nEvery animation, every number, every sound you hear came from prompts. No editor, no motion designer, no templates.\n\nWant one like this for your own product?\n\nComment “DEETS” and I’ll send you the file: the full guide on how to",
+ "duracao_s": 14.8,
+ "tipo": "bastidor_editor",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "DEETS",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "cursor",
+  "janela",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.1,
+  "onsets_per_s": 2.93
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1137,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

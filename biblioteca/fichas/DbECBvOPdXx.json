@@ -1,0 +1,43 @@
+{
+ "id": "DbECBvOPdXx",
+ "url": "https://www.instagram.com/p/DbECBvOPdXx/",
+ "autor": "neoeditfx",
+ "data": "2026-07-21",
+ "curtidas": 185,
+ "comentarios": 346,
+ "legenda_post": "Comment \"text\" and I'll send it to you.\n\nThis plugin makes Apple-style text animations take no time. Before, you had to animate your text manually, and it could take minutes, even hours. Now you just drag and drop TextMotion into DaVinci Resolve, change the text, and it's already animating. You can ",
+ "duracao_s": 18.4,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "TEXT",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "cursor",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 97.4,
+  "onsets_per_s": 4.86
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1063,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

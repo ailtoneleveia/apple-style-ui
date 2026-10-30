@@ -1,0 +1,60 @@
+{
+ "id": "DWWQEOmDfsf",
+ "url": "https://www.instagram.com/p/DWWQEOmDfsf/",
+ "autor": "creatoroly",
+ "data": "2026-03-26",
+ "curtidas": 8120,
+ "comentarios": 66,
+ "legenda_post": "ok @apple its time to hire me now fr",
+ "duracao_s": 10.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "grafico",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 155.5,
+  "onsets_per_s": 4.3
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 359,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:creatoroly",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "provada",
+ "prova": {
+  "clone": "Satellite",
+  "distancia": 0.01,
+  "correlacao": 0.981,
+  "lado_a_lado": ""
+ }
+}

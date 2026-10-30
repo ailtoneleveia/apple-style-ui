@@ -1,0 +1,43 @@
+{
+ "id": "C-ae58-NNXq",
+ "url": "https://www.instagram.com/p/C-ae58-NNXq/",
+ "autor": "creatoroly",
+ "data": "2024-08-08",
+ "curtidas": 426,
+ "comentarios": 5,
+ "legenda_post": "Which tool do you use the most?\n\n#aftereffects #inspiration #visuals #animation",
+ "duracao_s": 6.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "cursor",
+  "icone_app"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 102.0,
+  "onsets_per_s": 3.97
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 837,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2103603025579331584",
+ "url": "https://x.com/i/status/2103603025579331584",
+ "autor": "0xValure",
+ "data": "2026-09-25",
+ "curtidas": 36,
+ "comentarios": 16,
+ "legenda_post": "Okay, this time motion designers might actually be fully cooked.  Saw people saying Opus 5.5 can do real motion design and I did not buy it. Looked like another AI demo that falls apart after 3 seconds.  So I tested it on a @PayBox logo. One prompt. Ten seconds. It spat this back https://t.co/f4nU2F",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 644,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 386,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

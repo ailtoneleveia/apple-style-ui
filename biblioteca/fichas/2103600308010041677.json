@@ -1,0 +1,38 @@
+{
+ "id": "2103600308010041677",
+ "url": "https://x.com/i/status/2103600308010041677",
+ "autor": "johnsavage_ai",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "🤯 Opus 5.5  prompt:   \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a resume. go all out. use only code\" https://t.co/e161zBnLmi",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 550,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

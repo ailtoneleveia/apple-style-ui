@@ -1,0 +1,41 @@
+{
+ "id": "2103744870041170220",
+ "url": "https://x.com/i/status/2103744870041170220",
+ "autor": "blushpetal795",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "WTF? 😭 Made this with Claude Opus 5.5. The prompt was literally: “Make a dynamic 15-second motion graphics video of me introducing myself to a recruiter. Use all the motion design skills you have, like it's your showreel for a resume. Go all out.” That’s it. AI is getting insane https://t.co/FGaw41T",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "mapa"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 277,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

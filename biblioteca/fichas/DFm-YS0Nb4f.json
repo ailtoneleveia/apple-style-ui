@@ -1,0 +1,48 @@
+{
+ "id": "DFm-YS0Nb4f",
+ "url": "https://www.instagram.com/p/DFm-YS0Nb4f/",
+ "autor": "creatoroly",
+ "data": "2025-02-03",
+ "curtidas": 3264,
+ "comentarios": 42,
+ "legenda_post": "is it really trash?💀\n\nthank you @editucation",
+ "duracao_s": 21.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.3,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 25,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.53
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 191,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

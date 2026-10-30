@@ -1,0 +1,45 @@
+{
+ "id": "2103831140033241156",
+ "url": "https://x.com/i/status/2103831140033241156",
+ "autor": "hqmank",
+ "data": "2026-09-26",
+ "curtidas": 28,
+ "comentarios": 5,
+ "legenda_post": "wtf, Opus 5.5 is insane at making videos.  Tried it for my open-source project, jev-browser-skill. The visuals blew me away. Even the background music is good.  The prompt: \"Make a dynamic 20-second motion graphics launch video for my open-source project jev-browser-skill ('Give https://t.co/dZfLWsC",
+ "duracao_s": 23.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.01,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 70,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.87
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 129,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

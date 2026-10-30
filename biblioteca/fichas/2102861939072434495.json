@@ -1,0 +1,38 @@
+{
+ "id": "2102861939072434495",
+ "url": "https://x.com/i/status/2102861939072434495",
+ "autor": "Viggle_PINOC",
+ "data": "2026-09-23",
+ "curtidas": 16,
+ "comentarios": 8,
+ "legenda_post": "Claude Opus 5.5 with PINOC MCP one shotted this:   A playable Minecraft recreation   Link, prompt and more examples below 🧵 https://t.co/eSvJki9FDj",
+ "duracao_s": 54.8,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 659,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,44 @@
+{
+ "id": "DQja5UAErlS",
+ "url": "https://www.instagram.com/p/DQja5UAErlS/",
+ "autor": "dopemotionzone",
+ "data": "2025-11-02",
+ "curtidas": 1339,
+ "comentarios": 1071,
+ "legenda_post": "Just comment “DOPE” below ⬇️\nand I’ll send you my Simple Dope Edit Style Guide — the exact doc I use to craft my edits scene-by-scene.\n\n⚡ Why you’ll love it:\n\nVisualize every edit style clearly 🎞️\n\nKeep your projects clean, sharp & story-driven\n\nSave hours of guesswork in your editing process 🧠\n\nPer",
+ "duracao_s": 49.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "DOPE",
+ "acabamento_pro": 1.14,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.76
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 80,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

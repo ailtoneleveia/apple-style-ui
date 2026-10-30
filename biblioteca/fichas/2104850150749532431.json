@@ -1,0 +1,38 @@
+{
+ "id": "2104850150749532431",
+ "url": "https://x.com/i/status/2104850150749532431",
+ "autor": "AndyL5cc",
+ "data": "2026-09-29",
+ "curtidas": 124,
+ "comentarios": 42,
+ "legenda_post": "73 分钟，Opus 5.5 做出一支 40 秒纯代码动画。  墨水、布料、分形、玻璃…… 没有一帧素材，全是实时算出来的。  只能说 强得有点离谱。 https://t.co/YzWIbk2X1P",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.39,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 448,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

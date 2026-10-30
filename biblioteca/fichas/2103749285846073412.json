@@ -1,0 +1,38 @@
+{
+ "id": "2103749285846073412",
+ "url": "https://x.com/i/status/2103749285846073412",
+ "autor": "RoxsaV2",
+ "data": "2026-09-26",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "Opus 5.5 is insane at motion design. Blew my mind  This was one shotted - prompt below. https://t.co/IHC3xr0xTL",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 481,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

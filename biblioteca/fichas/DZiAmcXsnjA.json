@@ -1,0 +1,48 @@
+{
+ "id": "DZiAmcXsnjA",
+ "url": "https://www.instagram.com/p/DZiAmcXsnjA/",
+ "autor": "8bit.brainn",
+ "data": "2026-06-13",
+ "curtidas": 4983,
+ "comentarios": 7906,
+ "legenda_post": "motion designers really don’t want you finding this one.\n\nyou know that clean apple look every client begs for? turns out it’s not talent, it’s a tool. there’s a plugin that does apple-style motion right inside after effects, and once you see it you can’t unsee how much time it saves.\n\nthe moves edi",
+ "duracao_s": 18.1,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "SECRET",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "cursor",
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.45
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1199,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

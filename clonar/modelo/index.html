@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={{W}}, height={{H}}" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="estilo.js"></script>
+    <script src="trilhas.js"></script>
+    <script src="camada.js"></script>
+    <style>
+      /* SF Pro do sistema, uso interno de estudo: não redistribuir */
+      @font-face { font-family: "SF Pro"; src: url("assets/fonts/SFNS.ttf") format("truetype"); font-weight: 1 1000; font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: {{W}}px; height: {{H}}px; overflow: hidden; background: {{FUNDO}}; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: {{FUNDO}};
+        font-family: "SF Pro", -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+      .abs { position: absolute; left: 0; top: 0; will-change: transform, opacity, filter; }
+      #tela { position: absolute; left: 0; top: 0; width: {{W}}px; height: {{H}}px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{{DUR}}" data-width="{{W}}" data-height="{{H}}">
+      <audio id="audio-original" src="assets/audio.m4a" data-start="0" data-duration="{{DUR}}" data-track-index="1" data-volume="1"></audio>
+      <canvas id="tela" width="{{W}}" height="{{H}}"></canvas>
+      <div id="palco" class="abs" style="width:{{W}}px;height:{{H}}px"></div>
+    </div>
+    <script>
+      // Ponto de partida do clone. Regras (CLONAR.md):
+      //  - tudo é função do tempo: draw(t) desenha o quadro inteiro, sem estado entre quadros;
+      //  - Fi (quadro inteiro) decide o que existe e os cortes; F (contínuo, com obturador) move as coisas;
+      //  - molas, entradas, saídas, passos e pesos vêm do estilo.js, trocados pelos números medidos na FICHA;
+      //  - trilha medida com buraco: preencher por interpolação antes de desenhar (subquadro nunca troca de ramo);
+      //  - elemento com trilha medida (trilha_palavra.py → trilhas.js): desenhe com encaixa(txt, fonte, amostra(nome, F)).
+      //  - placa de fundo (vídeo de pessoa, mapa): desenhe só se !SO_CAMADA; sem ela, um fundo neutro (o molde troca a placa).
+      const ES = window.ESTILO, T = window.TRILHAS || {}, SO_CAMADA = !!window.SO_CAMADA;
+      const W = {{W}}, H = {{H}}, FPS = {{FPS}}, NF = {{NF}}, DUR = NF / FPS;
+      const palco = document.getElementById("palco");
+      const cv = document.getElementById("tela"), ctx = cv.getContext("2d");
+      const el = (html, css = "") => { const d = document.createElement("div"); d.className = "abs"; d.style.cssText = css; d.innerHTML = html; palco.appendChild(d); return d; };
+      const SF = (peso, px) => `${peso} ${px}px "SF Pro"`, EMO = (px) => `${px}px "Apple Color Emoji"`;
+
+      // <encaixe> (o testes/conferir_pecas.py roda este trecho no node)
+      // caixa de tinta de um texto (ou emoji) numa fonte, medida num canvas à parte (alfa > 40), origem na linha de base;
+      // esp = espaço entre letras (px no tamanho da fonte). O cache só guarda medida feita com a fonte já carregada
+      // (a primeira chamada de draw roda antes da @font-face: mediria a fonte reserva).
+      const _tinta = new Map();
+      function tinta(txt, fonte, esp = 0) {
+        const k = txt + "|" + fonte + "|" + esp;
+        if (_tinta.has(k)) return _tinta.get(k);
+        const c = document.createElement("canvas"); c.width = 2400; c.height = 700;
+        const g = c.getContext("2d"); g.font = fonte; g.letterSpacing = `${esp}px`; g.textBaseline = "alphabetic"; g.fillStyle = "#000";
+        g.fillText(txt, 200, 450);
+        const d = g.getImageData(0, 0, c.width, c.height).data;
+        let x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1;
+        for (let y = 0; y < c.height; y++) for (let x = 0; x < c.width; x++) if (d[(y * c.width + x) * 4 + 3] > 40) {
+          if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+        }
+        const r = x1 < 0 ? { l: 0, t: 0, w: 1, h: 1 } : { l: x0 - 200, t: y0 - 450, w: x1 - x0 + 1, h: y1 - y0 + 1 };
+        if (!document.fonts || document.fonts.check(fonte)) _tinta.set(k, r);
+        return r;
+      }
+
+      // amostra da trilha no quadro contínuo F: [x0, y0, x1, y1, ângulo, R, G, B, tinta], interpolada entre os vizinhos
+      // medidos; segura o último bom até `segura` quadros; `minimo` descarta medida com pouca tinta.
+      // Quem decide se o elemento existe é o Fi de quem chama. Aqui o F é preso ao trecho medido: sem isso, metade dos
+      // subquadros do 1º quadro cai antes da trilha e o elemento nasce meio transparente (4º clone, f120: 0,0392 → 0,0170).
+      function amostra(nome, F, minimo = 0, segura = 3) {
+        const tr = T[nome]; if (!tr) return null;
+        const pega = (f) => { const q = tr.q[f - tr.de]; return q && q[8] >= minimo ? q : null; };
+        F = Math.min(tr.ate, Math.max(tr.de, F));
+        const Fi = Math.floor(F);
+        let a = pega(Fi);
+        for (let k = 1; k <= segura && !a; k++) a = pega(Fi - k) || pega(Fi + k);
+        if (!a) return null;
+        const b = Fi + 1 <= tr.ate ? pega(Fi + 1) : null, u = F - Fi;
+        return b ? a.map((v, i) => v + (b[i] - v) * u) : a;
+      }
+
+      // desenha texto/emoji encaixado na caixa medida q (escala, centro e, com gira, o ângulo dos momentos).
+      // o: {gira, escala, porAltura, porLargura, mult, ancora: "esq", dx, dy, corte (x máx), cor, sombra: [cor, raio], alfa, blur,
+      //     esp (espaço entre letras, px no tamanho da fonte), largura: true (acha o esp que dá à tinta a proporção da caixa:
+      //     a fonte do original quase nunca tem o mesmo espaçamento; sem isso a palavra sai estreita ou larga)}
+      // Sem cor, usa a cor medida do miolo da tinta. Devolve a escala usada.
+      function encaixa(txt, fonte, q, o = {}, g = ctx) {
+        if (!q) return;
+        let esp = o.esp || 0;
+        if (o.largura && txt.length > 1) {
+          const m0 = tinta(txt, fonte), alvo = (q[2] - q[0] + 1) / (q[3] - q[1] + 1);
+          esp = Math.max(-12, Math.min(12, Math.round(((alvo * m0.h - m0.w) / (txt.length - 1)) * 4) / 4));
+        }
+        const m = tinta(txt, fonte, esp);
+        const th = o.gira ? q[4] * Math.PI / 180 : 0, c = Math.abs(Math.cos(th)), s = Math.abs(Math.sin(th));
+        const Wm = q[2] - q[0] + 1, Hm = q[3] - q[1] + 1;
+        const sw = Wm / (m.w * c + m.h * s), sh = Hm / (m.w * s + m.h * c);
+        const k = (o.escala || (o.porAltura ? sh : o.porLargura ? sw : Math.sqrt(sw * sh))) * (o.mult || 1);
+        const cx = (o.ancora === "esq" ? q[0] + (m.w * k) / 2 : (q[0] + q[2]) / 2) + (o.dx || 0), cy = (q[1] + q[3]) / 2 + (o.dy || 0);
+        g.save();
+        if (o.corte != null) { g.beginPath(); g.rect(0, 0, o.corte, H); g.clip(); }
+        g.globalAlpha = o.alfa == null ? 1 : o.alfa;
+        if (o.blur) g.filter = `blur(${o.blur}px)`;
+        if (o.sombra) { g.shadowColor = o.sombra[0]; g.shadowBlur = o.sombra[1]; }
+        g.translate(cx, cy); g.rotate(th); g.scale(k, k);
+        g.font = fonte; g.letterSpacing = `${esp}px`; g.textBaseline = "alphabetic";
+        g.fillStyle = o.cor || `rgb(${q[5] | 0},${q[6] | 0},${q[7] | 0})`;
+        g.fillText(txt, -m.l - m.w / 2, -m.t - m.h / 2);
+        g.restore();
+        return k;
+      }
+      // </encaixe>
+
+      // ---- cenas (uma função por cena da FICHA; recebe o tempo contínuo em segundos e o quadro inteiro)
+      const cenas = [
+        // { de: 0, ate: 30, desenha(tc, Fi, F) { encaixa("palavra", SF(700, 100), amostra("palavra", F)); } },
+      ];
+
+      function draw(t) {
+        const { Fi, F } = ES.quadro(t, FPS, NF);
+        const tc = F / FPS;
+        ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, W, H);
+        for (const c of cenas) {
+          const viva = Fi >= c.de && Fi < c.ate;
+          if (c.raiz) c.raiz.style.display = viva ? "" : "none";
+          if (viva) c.desenha(tc, Fi, F);
+        }
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      document.fonts.ready.then(() => { _tinta.clear(); draw(P.t); });
+      draw(0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

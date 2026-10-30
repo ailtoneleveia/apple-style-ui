@@ -1,0 +1,49 @@
+{
+ "id": "DZEKaExTDyl",
+ "url": "https://www.instagram.com/p/DZEKaExTDyl/",
+ "autor": "madebysheel",
+ "data": "2026-06-02",
+ "curtidas": 3,
+ "comentarios": 15,
+ "legenda_post": "Day 10 of learning After Effects \n\nCreated a clean Apple-style SaaS motion graphics animation inspired by the X (Twitter) app experience  from opening the app to writing and publishing a tweet with smooth UI interactions and premium transitions. \n\nFocused on minimalist design, fluid motion, modern t",
+ "duracao_s": 7.4,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "emoji_3d",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 153.4,
+  "onsets_per_s": 4.94
+ },
+ "qualidade": {
+  "largura": 1268,
+  "altura": 718,
+  "fps": 29.97,
+  "kbps": 402,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

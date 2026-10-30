@@ -1,0 +1,49 @@
+{
+ "id": "DT5tvsqE5Tm",
+ "url": "https://www.instagram.com/p/DT5tvsqE5Tm/",
+ "autor": "madebyveduboi",
+ "data": "2026-01-24",
+ "curtidas": 2601,
+ "comentarios": 2804,
+ "legenda_post": "Comment “TUTORIAL” to see how I made these from scratch ⚒️\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 8.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "TUTORIAL",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 126.8,
+  "onsets_per_s": 7.71
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 573,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

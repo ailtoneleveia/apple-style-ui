@@ -1,0 +1,49 @@
+{
+ "id": "DeWvHlDxz1W",
+ "url": "https://www.instagram.com/p/DeWvHlDxz1W/",
+ "autor": "dopemotionzone",
+ "data": "2026-10-11",
+ "curtidas": 761,
+ "comentarios": 1089,
+ "legenda_post": "Comment “STYLE” below ⬇️\nand grab these long-form video styles.\n\n⚡ What you’ll get:\n\n🎬 Launch video references\n🎙️ Podcast video references\n▶️ Curated YouTube videos for creative inspiration\n🎨 Different editing styles, visual directions & storytelling approaches\n\nEverything in one doc making it easie",
+ "duracao_s": 8.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "STYLE",
+ "acabamento_pro": 0.99,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 115.0,
+  "onsets_per_s": 3.88
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1234,
+  "fps": 30.0,
+  "kbps": 1073,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

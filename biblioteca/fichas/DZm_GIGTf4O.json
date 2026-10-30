@@ -1,0 +1,49 @@
+{
+ "id": "DZm_GIGTf4O",
+ "url": "https://www.instagram.com/p/DZm_GIGTf4O/",
+ "autor": "madebyveduboi",
+ "data": "2026-06-15",
+ "curtidas": 705,
+ "comentarios": 719,
+ "legenda_post": "Comment “BLAST” for the project files 📁\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 20.6,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "BLAST",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 93.5,
+  "onsets_per_s": 3.72
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 937,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

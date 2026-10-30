@@ -1,0 +1,38 @@
+{
+ "id": "2103638831669076027",
+ "url": "https://x.com/i/status/2103638831669076027",
+ "autor": "Sudiyasa_",
+ "data": "2026-09-26",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "Celerating 100 @eyezonbot users 🎉  (Opus 5.5 bringing us to the next phase of marketing)  Prompt: \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out  do this to thank the first https://t.co/eA3xoYOWw",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.77,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 255,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

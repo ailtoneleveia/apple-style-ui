@@ -1,0 +1,36 @@
+{
+ "id": "2103232192847524106",
+ "url": "https://x.com/i/status/2103232192847524106",
+ "autor": "chrisjdimarco",
+ "data": "2026-09-24",
+ "curtidas": 6,
+ "comentarios": 0,
+ "legenda_post": "another Opus 5.5 test, again mind &gt; blown  prompt: \"make a samurai dude in only javascript and have him doing a routine in a single spot going through various seriously impressive poses and motions and positions in a fiery awesome display\" https://t.co/H4QE3r3cNY",
+ "duracao_s": 18.6,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.91,
+ "pecas": [],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 534,
+  "altura": 360,
+  "fps": 53.67,
+  "kbps": 554,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

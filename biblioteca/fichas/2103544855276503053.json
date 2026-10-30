@@ -1,0 +1,39 @@
+{
+ "id": "2103544855276503053",
+ "url": "https://x.com/i/status/2103544855276503053",
+ "autor": "samuel_spitz",
+ "data": "2026-09-25",
+ "curtidas": 22,
+ "comentarios": 1,
+ "legenda_post": "I asked Opus 5.5 to make a highlight reel for itself  Prompt: \"Create a motion graphics video that feels like the centerpiece of a world-class designer’s showreel. Treat it as your résumé: showcase your full range, push the craft as far as possible. Go all out.\" https://t.co/JJH4Hc3tuP",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 333,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

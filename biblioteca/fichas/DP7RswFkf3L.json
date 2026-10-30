@@ -1,0 +1,45 @@
+{
+ "id": "DP7RswFkf3L",
+ "url": "https://www.instagram.com/p/DP7RswFkf3L/",
+ "autor": "schurhauz",
+ "data": "2025-10-17",
+ "curtidas": 2104,
+ "comentarios": 45,
+ "legenda_post": "Apple style edit for @intelligentchange 🖥️\n\n#edits #edicaodevideo #motion #aftereffects #motiondesigner",
+ "duracao_s": 21.9,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.67,
+ "pecas": [
+  "imessage",
+  "janela",
+  "legenda_fala"
+ ],
+ "nota": 70,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.7,
+  "onsets_per_s": 4.13
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 581,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2103132260589338762",
+ "url": "https://x.com/i/status/2103132260589338762",
+ "autor": "jackfriks",
+ "data": "2026-09-24",
+ "curtidas": 164,
+ "comentarios": 31,
+ "legenda_post": "okay this is WILD... opus 5.5 is an insanely good animator  it made this short film of my app using new assets i have for redesign in ONE SHOT. no edits, all sound made by claude too, fully made in claude then exported in mp4 all by itself  prompt below :) https://t.co/tgycbxfCCt",
+ "duracao_s": 19.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.52,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 299,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "DWRr4WTIKY4",
+ "url": "https://www.instagram.com/p/DWRr4WTIKY4/",
+ "autor": "schurhauz",
+ "data": "2026-03-24",
+ "curtidas": 3754,
+ "comentarios": 60,
+ "legenda_post": "Motion graphics for @notionhq \n\nInspired by @mocca.fx and @richprjcts \n\nThis animation is not affiliated with Notion\n\n#motion #notion #motiondesigner #storytelling",
+ "duracao_s": 11.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "janela",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 111.9,
+  "onsets_per_s": 5.57
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 720,
+  "fps": 24.0,
+  "kbps": 267,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

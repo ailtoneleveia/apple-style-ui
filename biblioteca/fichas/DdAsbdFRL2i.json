@@ -1,0 +1,47 @@
+{
+ "id": "DdAsbdFRL2i",
+ "url": "https://www.instagram.com/p/DdAsbdFRL2i/",
+ "autor": "adrimotions",
+ "data": "2026-09-08",
+ "curtidas": 102,
+ "comentarios": 9,
+ "legenda_post": "POV: You accidentally cooked",
+ "duracao_s": 10.5,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.9,
+  "onsets_per_s": 3.27
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 645,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:appleui"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

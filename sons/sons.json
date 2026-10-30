@@ -1,0 +1,305 @@
+{
+ "versao": "sons-v1",
+ "taxa": 48000,
+ "alvo_lufs_100ms": -18.0,
+ "teto_db": -1.0,
+ "tipos": {
+  "aparecer": {
+   "ganho_db": -3,
+   "versoes": [
+    "aparecer-1",
+    "aparecer-2",
+    "aparecer-3"
+   ]
+  },
+  "clicar": {
+   "ganho_db": 0,
+   "versoes": [
+    "clicar-1"
+   ]
+  },
+  "tocar": {
+   "ganho_db": -3,
+   "versoes": [
+    "tocar-1",
+    "tocar-2"
+   ]
+  },
+  "digitar": {
+   "ganho_db": -5,
+   "versoes": [
+    "digitar-1",
+    "digitar-2"
+   ]
+  },
+  "numero": {
+   "ganho_db": 2,
+   "versoes": [
+    "numero-1",
+    "numero-2"
+   ]
+  },
+  "brilho": {
+   "ganho_db": -3,
+   "versoes": [
+    "brilho-1",
+    "brilho-2"
+   ]
+  },
+  "entrar": {
+   "ganho_db": -2,
+   "versoes": [
+    "entrar-1",
+    "entrar-2"
+   ]
+  },
+  "sair": {
+   "ganho_db": -3,
+   "versoes": [
+    "sair-1",
+    "sair-2"
+   ]
+  },
+  "morph": {
+   "ganho_db": -2,
+   "versoes": [
+    "morph-1",
+    "morph-2"
+   ]
+  },
+  "ilha": {
+   "ganho_db": -2,
+   "versoes": [
+    "ilha-1"
+   ]
+  },
+  "sucesso": {
+   "ganho_db": -2,
+   "versoes": [
+    "sucesso-1"
+   ]
+  }
+ },
+ "sons": {
+  "aparecer-1": {
+   "arquivo": "aparecer-1.wav",
+   "tipo": "aparecer",
+   "descricao": "pop suave, gota que sobe",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo drop_002.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.1882,
+   "ataque": 0.0051,
+   "lufs_100ms": -18.0,
+   "pico_db": -3.1
+  },
+  "aparecer-2": {
+   "arquivo": "aparecer-2.wav",
+   "tipo": "aparecer",
+   "descricao": "pop suave, gota mais grave",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo drop_003.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.1882,
+   "ataque": 0.0053,
+   "lufs_100ms": -18.0,
+   "pico_db": -3.1
+  },
+  "aparecer-3": {
+   "arquivo": "aparecer-3.wav",
+   "tipo": "aparecer",
+   "descricao": "pop com cauda que sobe",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo drop_004.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.2241,
+   "ataque": 0.0055,
+   "lufs_100ms": -18.0,
+   "pico_db": -4.3
+  },
+  "clicar-1": {
+   "arquivo": "clicar-1.wav",
+   "tipo": "clicar",
+   "descricao": "clique do cursor, com corpo curto",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo click_001, mais um corpo gerado de 12 ms.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.0937,
+   "ataque": 0.0056,
+   "lufs_100ms": -21.2,
+   "pico_db": -1.0
+  },
+  "tocar-1": {
+   "arquivo": "tocar-1.wav",
+   "tipo": "tocar",
+   "descricao": "toque curto e seco",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo tick_002.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.0203,
+   "ataque": 0.0052,
+   "lufs_100ms": -21.2,
+   "pico_db": -1.0
+  },
+  "tocar-2": {
+   "arquivo": "tocar-2.wav",
+   "tipo": "tocar",
+   "descricao": "toque de seleção",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo select_001.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.0404,
+   "ataque": 0.0052,
+   "lufs_100ms": -19.0,
+   "pico_db": -1.0
+  },
+  "digitar-1": {
+   "arquivo": "digitar-1.wav",
+   "tipo": "digitar",
+   "descricao": "tecla, grave",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo click_002.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.0116,
+   "ataque": 0.005,
+   "lufs_100ms": -22.3,
+   "pico_db": -1.0
+  },
+  "digitar-2": {
+   "arquivo": "digitar-2.wav",
+   "tipo": "digitar",
+   "descricao": "tecla, aguda",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo click_003.ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.0071,
+   "ataque": 0.0035,
+   "lufs_100ms": -21.2,
+   "pico_db": -1.0
+  },
+  "numero-1": {
+   "arquivo": "numero-1.wav",
+   "tipo": "numero",
+   "descricao": "catraca de número rolando, 200 ms",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo scroll_002 (200 ms com envelope).ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.2,
+   "ataque": 0.1004,
+   "lufs_100ms": -23.4,
+   "pico_db": -1.0
+  },
+  "numero-2": {
+   "arquivo": "numero-2.wav",
+   "tipo": "numero",
+   "descricao": "catraca dupla de número rolando, 200 ms",
+   "origem": "Kenney Interface Sounds 1.0 (kenney.nl), via soundcn (github.com/kapishdima/soundcn), arquivo scroll_003 (200 ms com envelope).ogg",
+   "licenca": "CC0 1.0",
+   "duracao": 0.2,
+   "ataque": 0.1025,
+   "lufs_100ms": -21.7,
+   "pico_db": -1.0
+  },
+  "brilho-1": {
+   "arquivo": "brilho-1.wav",
+   "tipo": "brilho",
+   "descricao": "seis toques agudos espalhados",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.5975,
+   "ataque": 0.0076,
+   "lufs_100ms": -18.0,
+   "pico_db": -12.6
+  },
+  "brilho-2": {
+   "arquivo": "brilho-2.wav",
+   "tipo": "brilho",
+   "descricao": "cinco toques agudos, mais graves",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.5468,
+   "ataque": 0.0077,
+   "lufs_100ms": -18.0,
+   "pico_db": -13.0
+  },
+  "entrar-1": {
+   "arquivo": "entrar-1.wav",
+   "tipo": "entrar",
+   "descricao": "whoosh que sobe e corta no pico",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.3255,
+   "ataque": 0.228,
+   "lufs_100ms": -18.0,
+   "pico_db": -8.6
+  },
+  "entrar-2": {
+   "arquivo": "entrar-2.wav",
+   "tipo": "entrar",
+   "descricao": "whoosh que sobe, mais curto e grave",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.2722,
+   "ataque": 0.1757,
+   "lufs_100ms": -18.0,
+   "pico_db": -8.0
+  },
+  "sair-1": {
+   "arquivo": "sair-1.wav",
+   "tipo": "sair",
+   "descricao": "whoosh que desce",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.3095,
+   "ataque": 0.0425,
+   "lufs_100ms": -18.0,
+   "pico_db": -8.3
+  },
+  "sair-2": {
+   "arquivo": "sair-2.wav",
+   "tipo": "sair",
+   "descricao": "whoosh que desce, mais curto",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.2472,
+   "ataque": 0.0329,
+   "lufs_100ms": -18.0,
+   "pico_db": -7.6
+  },
+  "morph-1": {
+   "arquivo": "morph-1.wav",
+   "tipo": "morph",
+   "descricao": "ar que cresce e assenta num baque grave",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.3775,
+   "ataque": 0.1871,
+   "lufs_100ms": -18.0,
+   "pico_db": -5.3
+  },
+  "morph-2": {
+   "arquivo": "morph-2.wav",
+   "tipo": "morph",
+   "descricao": "ar que cresce, mais curto e claro",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.3245,
+   "ataque": 0.1534,
+   "lufs_100ms": -18.0,
+   "pico_db": -7.0
+  },
+  "ilha-1": {
+   "arquivo": "ilha-1.wav",
+   "tipo": "ilha",
+   "descricao": "bloop grave que abre, com sopro",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 0.7,
+   "ataque": 0.0086,
+   "lufs_100ms": -18.0,
+   "pico_db": -10.8
+  },
+  "sucesso-1": {
+   "arquivo": "sucesso-1.wav",
+   "tipo": "sucesso",
+   "descricao": "duas notas que sobem (dó, sol)",
+   "origem": "gerado aqui (fazer_pacote.py, síntese com semente fixa)",
+   "licenca": "CC0 (som nosso)",
+   "duracao": 1.2,
+   "ataque": 0.0077,
+   "lufs_100ms": -18.0,
+   "pico_db": -11.2
+  }
+ }
+}

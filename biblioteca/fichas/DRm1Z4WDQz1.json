@@ -1,0 +1,45 @@
+{
+ "id": "DRm1Z4WDQz1",
+ "url": "https://www.instagram.com/p/DRm1Z4WDQz1/",
+ "autor": "creatoroly",
+ "data": "2025-11-28",
+ "curtidas": 7175,
+ "comentarios": 80,
+ "legenda_post": "did Portal app, whats next? #aftereffects #videoediting #motiondesign",
+ "duracao_s": 9.1,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "cursor",
+  "janela",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 100.0,
+  "onsets_per_s": 4.59
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 545,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

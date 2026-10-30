@@ -1,0 +1,38 @@
+{
+ "id": "2103779700954779830",
+ "url": "https://x.com/i/status/2103779700954779830",
+ "autor": "0xScoffie",
+ "data": "2026-09-26",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "One shotted this motion graphic using Claude Opus 5.5 . Crazy what you can achieve with a prompt. The Prompt ⬇️ https://t.co/XM4dQeUkYV",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 359,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "2108890995459047654",
+ "url": "https://x.com/i/status/2108890995459047654",
+ "autor": "kepochnik",
+ "data": "2026-10-10",
+ "curtidas": 90,
+ "comentarios": 35,
+ "legenda_post": "Opus 5.5 vs Sonnet 5.5  just gave Opus 5.5 and Sonnet 5.5 the same promt  so they put together an interactive 3D \"Dino Jelly\" website with a jelly cube  where there is an island with a volcano and dinosaurs inside, and showed both versions side by side  which models looks better? https://t.co/AmzTHa",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.56,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 444,
+  "fps": 30.0,
+  "kbps": 140,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

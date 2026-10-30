@@ -1,0 +1,36 @@
+{
+ "id": "2102466456491536674",
+ "url": "https://x.com/i/status/2102466456491536674",
+ "autor": "aollivier82",
+ "data": "2026-09-22",
+ "curtidas": 245,
+ "comentarios": 10,
+ "legenda_post": "I asked Claude Opus 5.5 Ultracode to make a video to express it's identity. https://t.co/VIzzP0RmSk",
+ "duracao_s": 32.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.41,
+ "pecas": [],
+ "nota": 54,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 24.0,
+  "kbps": 157,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

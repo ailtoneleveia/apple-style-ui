@@ -1,0 +1,42 @@
+{
+ "id": "2108486895344767283",
+ "url": "https://x.com/i/status/2108486895344767283",
+ "autor": "vib3coded",
+ "data": "2026-10-09",
+ "curtidas": 288,
+ "comentarios": 22,
+ "legenda_post": "Astra, how did you turn ANOTHER shark into a meme?! 😂🦈  Claude Opus 5.5 vs GPT-6 Astra - same prompt, two very different hammerheads  Opus made a shark. Astra made a character  Those giant eyes and that ridiculous grin are something else. It looks completely unhinged, but https://t.co/eIoyRaMGPW",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 190,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

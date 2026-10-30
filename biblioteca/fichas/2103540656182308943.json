@@ -1,0 +1,36 @@
+{
+ "id": "2103540656182308943",
+ "url": "https://x.com/i/status/2103540656182308943",
+ "autor": "ghinaiya_nirmal",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "motion designers are cooked. opus 5.5 is cooking  prompt: \"make your own 15-second motion reel. go all out\"  designed, animated, and scored it. No After Effects. No human touched a keyframe.  opus 5.5 &gt; astra. change my mind. https://t.co/6nO0YdZJAX",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 464,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,54 @@
+{
+ "id": "DXKYd_yMkOO",
+ "url": "https://www.instagram.com/p/DXKYd_yMkOO/",
+ "autor": "prime_animator",
+ "data": "2026-04-15",
+ "curtidas": 313,
+ "comentarios": 153,
+ "legenda_post": "Comment “TUTORIAL” and I’ll send it to you 📩\nIf this post hits 500 comments 💯\nI’ll drop the full tutorial 🎬🔥\nApple-style UI animation — smooth, clean & satisfying ✨\nInspiration @sahib.aep\n#aftereffects #motiongraphics #videoediting #videoeditor #saasanimation",
+ "duracao_s": 13.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "TUTORIAL",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 125.1,
+  "onsets_per_s": 6.11
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 193,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:prime_animator",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

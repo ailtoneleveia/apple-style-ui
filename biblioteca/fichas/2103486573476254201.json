@@ -1,0 +1,42 @@
+{
+ "id": "2103486573476254201",
+ "url": "https://x.com/i/status/2103486573476254201",
+ "autor": "sudo_kiran",
+ "data": "2026-09-25",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "I have asked opus 5.5 to product explainer It made it like pro😎  prompt: make a dynamic 30-seconds motion graphic video about the distilbook like a product explainer the video has to be very incredible (product url) https://t.co/iduNSFVLpM",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.97,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 274,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

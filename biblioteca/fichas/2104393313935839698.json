@@ -1,0 +1,42 @@
+{
+ "id": "2104393313935839698",
+ "url": "https://x.com/i/status/2104393313935839698",
+ "autor": "yanliudesign",
+ "data": "2026-09-28",
+ "curtidas": 25,
+ "comentarios": 5,
+ "legenda_post": "Asked Claude Opus 5.5 to create a 15-second motion graphics video about Seattle ( sound on 🔊)   Everything from the visuals and animation to the music and final video was created directly by Claude. Every frame and every sound was created by code, from scratch.  No screen https://t.co/3L8LDEjMyX",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "teclado"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 7.31
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 4598,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

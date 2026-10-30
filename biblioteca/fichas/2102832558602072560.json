@@ -1,0 +1,40 @@
+{
+ "id": "2102832558602072560",
+ "url": "https://x.com/i/status/2102832558602072560",
+ "autor": "hyuki",
+ "data": "2026-09-23",
+ "curtidas": 73,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5に「30秒くらいのピタゴラスの定理の解説動画をJavaScriptで作って」と指示してできたもの https://t.co/uoRmNisbMe",
+ "duracao_s": 36.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [],
+ "nota": 48,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 396,
+  "fps": 60.01,
+  "kbps": 75,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

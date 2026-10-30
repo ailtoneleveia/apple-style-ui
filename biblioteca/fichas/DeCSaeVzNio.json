@@ -1,0 +1,43 @@
+{
+ "id": "DeCSaeVzNio",
+ "url": "https://www.instagram.com/p/DeCSaeVzNio/",
+ "autor": "ashokreddyai",
+ "data": "2026-10-03",
+ "curtidas": 4140,
+ "comentarios": 4936,
+ "legenda_post": "Claude opus 5.5 absolutely game changer for motion design go and give it a try\n\nComment “motion” for workflow",
+ "duracao_s": 57.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "MOTION",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "iphone",
+  "janela"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.06
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1240,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

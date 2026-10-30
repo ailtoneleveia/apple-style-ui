@@ -1,0 +1,36 @@
+{
+ "id": "2103867115044237752",
+ "url": "https://x.com/i/status/2103867115044237752",
+ "autor": "kepochnik",
+ "data": "2026-09-26",
+ "curtidas": 54,
+ "comentarios": 24,
+ "legenda_post": "I built Minecraft thanks to Opus 5.5 ( part 2 )  today I added more mobs and here I will show their characteristics as a video  the process took probably : 2-3 hours  next week I'm going to publish this game for everyone  turn notifications https://t.co/bsIHRpuIsq",
+ "duracao_s": 17.0,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.69,
+ "pecas": [],
+ "nota": 19,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 424,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

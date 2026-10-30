@@ -1,0 +1,50 @@
+{
+ "id": "DY92JPhIS5x",
+ "url": "https://www.instagram.com/p/DY92JPhIS5x/",
+ "autor": "bentomotion.studio",
+ "data": "2026-05-30",
+ "curtidas": 358,
+ "comentarios": 17,
+ "legenda_post": "Apple-style icon morphing in After Effects. Should I drop the AE project file? \n\n#aftereffects #motiondesign #videoediting #animation #applestyle",
+ "duracao_s": 6.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 2.09,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.66
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 954,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:bentomotion.studio",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

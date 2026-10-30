@@ -1,0 +1,43 @@
+{
+ "id": "Dd1KBf0CN25",
+ "url": "https://www.instagram.com/p/Dd1KBf0CN25/",
+ "autor": "charliehills",
+ "data": "2026-09-28",
+ "curtidas": 219,
+ "comentarios": 371,
+ "legenda_post": "Comment CUT and I'll send you the repo.\n\nGPT-6 Astra just edited a video inside DaVinci Resolve. One prompt, and it cut a three minute highlight, graded it and rendered it out.\n\nThe version going round says this is all free. Half true.\n\n- Blackmagic built a native MCP server into DaVinci Resolve 21.",
+ "duracao_s": 23.7,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "CUT",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "grafico",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 225,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

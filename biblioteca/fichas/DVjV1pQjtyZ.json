@@ -1,0 +1,50 @@
+{
+ "id": "DVjV1pQjtyZ",
+ "url": "https://www.instagram.com/p/DVjV1pQjtyZ/",
+ "autor": "md.nasifahsan",
+ "data": "2026-03-06",
+ "curtidas": 953,
+ "comentarios": 32,
+ "legenda_post": "Day: 28 of creating apple ui style animation.",
+ "duracao_s": 15.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.09,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "pilha_cartoes"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.13
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 403,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "perfil:md.nasifahsan",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

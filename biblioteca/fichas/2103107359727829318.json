@@ -1,0 +1,44 @@
+{
+ "id": "2103107359727829318",
+ "url": "https://x.com/i/status/2103107359727829318",
+ "autor": "thallisribeiro",
+ "data": "2026-09-24",
+ "curtidas": 134,
+ "comentarios": 23,
+ "legenda_post": "TÁ BIZARRO ESSE OPUS 5.5 😲  Eu nem acreditei no resultado. Foi feito com one prompt shot, usando apenas remotion...   Agora é só jogar uma narraçãozinha e subir pros ADS kkk https://t.co/btIviwPDVp",
+ "duracao_s": 20.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.13,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 153,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

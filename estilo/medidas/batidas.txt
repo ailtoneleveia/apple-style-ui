@@ -1,0 +1,110 @@
+  grade: colcheia 292.5 ms, fase -22.7 ms, coerencia dos onsets 0.18
+  ACERTOS <=33ms colcheia    : 2/27  acaso 6.1  p=0.960
+  ACERTOS <=33ms onset       : 11/27  acaso 7.4  p=0.171
+  ACERTOS <=33ms onset forte : 8/27  acaso 4.4  p=0.147
+== sat (fim)  102.6 BPM  semínima 17.5 q  colcheia 8.8 q  onsets 46 (fortes 23)
+  f  10  0.333s burst vira icone       batida  -6.9q  colcheia  +1.9q  onset -34.9q
+  f  24  0.800s disco cresce           batida  +7.1q  colcheia  -1.6q  onset -20.9q
+  f  31  1.033s icone->cartao          batida  -3.4q  colcheia  -3.4q  onset -13.9q
+  f  55  1.833s zoom-out/terra         batida  +3.0q  colcheia  +3.0q  onset  -1.4q
+  f  68  2.267s satelite no arco       batida  -1.5q  colcheia  -1.5q  onset  +0.1q
+  f  88  2.933s cartao->tile           batida  +0.9q  colcheia  +0.9q  onset  +2.3q
+  f 112  3.733s tile sai               batida  +7.4q  colcheia  -1.4q  onset  -2.6q
+  f 123  4.100s tile->pilula (corte)   batida  +0.8q  colcheia  +0.8q  onset  +2.5q
+  f 127  4.233s pilula Fire            batida  +4.8q  colcheia  -3.9q  onset  +0.9q
+  f 132  4.400s Lost                   batida  -7.7q  colcheia  +1.1q  onset  -0.0q
+  f 138  4.600s Crime                  batida  -1.7q  colcheia  -1.7q  onset  +0.1q
+  f 144  4.800s Sickness               batida  +4.3q  colcheia  +4.3q  onset  +0.5q
+  f 150  5.000s Vehicle                batida  -7.3q  colcheia  +1.5q  onset  +0.6q
+  f 155  5.167s titulo pousa           batida  -2.3q  colcheia  -2.3q  onset  +5.6q
+  f 156  5.200s botao End              batida  -1.3q  colcheia  -1.3q  onset  -4.9q
+  f 161  5.367s emojis                 batida  +3.7q  colcheia  +3.7q  onset  +0.1q
+  f 173  5.767s mao do cursor          batida  -1.8q  colcheia  -1.8q  onset +12.1q
+  f 181  6.033s clique/whip            batida  +6.2q  colcheia  -2.6q  onset +20.1q
+  f 199  6.633s rota desenha           batida  +6.6q  colcheia  -2.1q  onset -18.3q
+  f 206  6.867s pico do whip           batida  -3.9q  colcheia  -3.9q  onset -11.3q
+  f 213  7.100s ilha abre              batida  +3.1q  colcheia  +3.1q  onset  -4.3q
+  f 229  7.633s pico da ilha           batida  +1.5q  colcheia  +1.5q  onset  -7.5q
+  f 241  8.033s relogio rola           batida  -4.0q  colcheia  -4.0q  onset  -1.4q
+  f 242  8.067s ambulancia             batida  -3.0q  colcheia  -3.0q  onset  -0.4q
+  f 256  8.533s relogio rola 2         batida  -6.6q  colcheia  +2.2q  onset  +2.1q
+  f 260  8.667s saida                  batida  -2.6q  colcheia  -2.6q  onset  -5.4q
+  f 278  9.267s balao                  batida  -2.1q  colcheia  -2.1q  onset -10.7q
+  resumo {'bpm_detector': np.float64(102.6), 'n_onsets': 46, 'n_fortes': 23, 'media_ms_colcheia': np.float64(78.3), 'nulo_ms_colcheia': np.float64(73.1), 'p_colcheia': 0.63, 'media_ms_onset': np.float64(228.5), 'nulo_ms_onset': np.float64(207.8), 'p_onset': 0.955, 'dentro_1q_colcheia': 2, 'n': 27}
+  grade: colcheia 219.1 ms, fase 23.5 ms, coerencia dos onsets 1.00
+  ACERTOS <=33ms colcheia    : 4/11  acaso 3.3  p=0.393
+  ACERTOS <=33ms onset       : 4/11  acaso 3.6  p=0.477
+  ACERTOS <=33ms onset forte : 3/11  acaso 1.7  p=0.237
+== joi (fim)  136.9 BPM  semínima 26.3 q  colcheia 13.1 q  onsets 39 (fortes 19)
+  f   5  0.083s icone entra            batida  +3.6q  colcheia  +3.6q  onset  -9.6q
+  f  60  1.000s flip comeca            batida  +6.0q  colcheia  +6.0q  onset -20.1q
+  f  80  1.333s flip (1a nota)         batida  -0.3q  colcheia  -0.3q  onset  -0.1q
+  f 132  2.200s palavras da lista      batida  -0.9q  colcheia  -0.9q  onset  -1.1q
+  f 199  3.317s menu escurece          batida -12.8q  colcheia  +0.4q  onset -12.8q
+  f 209  3.483s botoes                 batida  -2.8q  colcheia  -2.8q  onset  -2.8q
+  f 259  4.317s risco                  batida  -5.4q  colcheia  -5.4q  onset -18.2q
+  f 281  4.683s Get                    batida  -9.6q  colcheia  +3.5q  onset  +3.8q
+  f 314  5.233s linha encolhe          batida  -2.9q  colcheia  -2.9q  onset  -3.0q
+  f 329  5.483s cartao formado         batida +12.1q  colcheia  -1.1q  onset  -1.2q
+  f 354  5.900s punch-in               batida +10.8q  colcheia  -2.4q  onset +10.6q
+  resumo {'bpm_detector': np.float64(136.9), 'n_onsets': 39, 'n_fortes': 19, 'media_ms_colcheia': np.float64(44.2), 'nulo_ms_colcheia': np.float64(54.7), 'p_colcheia': 0.215, 'media_ms_onset': np.float64(126.0), 'nulo_ms_onset': np.float64(115.6), 'p_onset': 0.791, 'dentro_1q_colcheia': 3, 'n': 11}
+  grade: colcheia 219.1 ms, fase 23.5 ms, coerencia dos onsets 1.00
+  ACERTOS <=33ms colcheia    : 4/6  acaso 1.8  p=0.241
+  ACERTOS <=33ms onset       : 4/6  acaso 2.2  p=0.217
+  ACERTOS <=33ms onset forte : 3/6  acaso 1.0  p=0.118
+== joi6 (fim)  136.9 BPM  semínima 26.3 q  colcheia 13.1 q  onsets 39 (fortes 19)
+  f  80  1.333s flip                   batida  -0.3q  colcheia  -0.3q  onset  -0.1q
+  f 132  2.200s lista                  batida  -0.9q  colcheia  -0.9q  onset  -1.1q
+  f 199  3.317s menu escurece          batida -12.8q  colcheia  +0.4q  onset -12.8q
+  f 281  4.683s Get                    batida  -9.6q  colcheia  +3.5q  onset  +3.8q
+  f 329  5.483s cartao                 batida +12.1q  colcheia  -1.1q  onset  -1.2q
+  f 354  5.900s punch-in               batida +10.8q  colcheia  -2.4q  onset +10.6q
+  resumo {'bpm_detector': np.float64(136.9), 'n_onsets': 39, 'n_fortes': 19, 'media_ms_colcheia': np.float64(23.7), 'nulo_ms_colcheia': np.float64(54.6), 'p_colcheia': 0.085, 'media_ms_onset': np.float64(81.8), 'nulo_ms_onset': np.float64(137.1), 'p_onset': 0.046, 'dentro_1q_colcheia': 3, 'n': 6}
+  grade: colcheia 292.5 ms, fase -22.7 ms, coerencia dos onsets 0.18
+  ACERTOS <=33ms colcheia    : 2/10  acaso 2.2  p=0.698
+  ACERTOS <=33ms onset       : 3/10  acaso 2.7  p=0.575
+  ACERTOS <=33ms onset forte : 1/10  acaso 1.5  p=0.798
+== sat_grandes (fim)  102.6 BPM  semínima 17.5 q  colcheia 8.8 q  onsets 46 (fortes 23)
+  f  10  0.333s burst                  batida  -6.9q  colcheia  +1.9q  onset -34.9q
+  f  31  1.033s icone->cartao          batida  -3.4q  colcheia  -3.4q  onset -13.9q
+  f  88  2.933s cartao->tile           batida  +0.9q  colcheia  +0.9q  onset  +2.3q
+  f 123  4.100s tile->pilula           batida  +0.8q  colcheia  +0.8q  onset  +2.5q
+  f 127  4.233s Fire                   batida  +4.8q  colcheia  -3.9q  onset  +0.9q
+  f 155  5.167s titulo                 batida  -2.3q  colcheia  -2.3q  onset  +5.6q
+  f 181  6.033s clique/whip            batida  +6.2q  colcheia  -2.6q  onset +20.1q
+  f 213  7.100s ilha                   batida  +3.1q  colcheia  +3.1q  onset  -4.3q
+  f 260  8.667s saida                  batida  -2.6q  colcheia  -2.6q  onset  -5.4q
+  f 278  9.267s balao                  batida  -2.1q  colcheia  -2.1q  onset -10.7q
+  resumo {'bpm_detector': np.float64(102.6), 'n_onsets': 46, 'n_fortes': 23, 'media_ms_colcheia': np.float64(78.8), 'nulo_ms_colcheia': np.float64(73.2), 'p_colcheia': 0.676, 'media_ms_onset': np.float64(335.8), 'nulo_ms_onset': np.float64(265.8), 'p_onset': 1.0, 'dentro_1q_colcheia': 2, 'n': 10}
+  grade: colcheia 250.3 ms, fase 1.8 ms, coerencia dos onsets 0.41
+  ACERTOS <=33ms colcheia    : 4/26  acaso 7.0  p=0.936
+  ACERTOS <=33ms onset       : 8/26  acaso 9.9  p=0.876
+  ACERTOS <=33ms onset forte : 4/26  acaso 5.0  p=0.791
+== vos (fim)  119.9 BPM  semínima 30.0 q  colcheia 15.0 q  onsets 65 (fortes 32)
+  f   3  0.050s letras                 batida  +2.9q  colcheia  +2.9q  onset -102.9q
+  f  13  0.217s pilula sobe            batida +12.9q  colcheia  -2.1q  onset -92.9q
+  f  63  1.050s crossfade              batida  +2.8q  colcheia  +2.8q  onset -42.9q
+  f  70  1.167s palavras               batida  +9.8q  colcheia  -5.2q  onset -35.9q
+  f 114  1.900s clique                 batida  -6.3q  colcheia  -6.3q  onset  -3.7q
+  f 136  2.267s janela                 batida -14.3q  colcheia  +0.7q  onset  +0.2q
+  f 150  2.500s ditado                 batida  -0.3q  colcheia  -0.3q  onset +14.2q
+  f 170  2.833s icone rosa             batida -10.3q  colcheia  +4.7q  onset  +4.2q
+  f 184  3.067s Slack                  batida  +3.7q  colcheia  +3.7q  onset +18.2q
+  f 204  3.400s caret->Send            batida  -6.4q  colcheia  -6.4q  onset  -6.4q
+  f 223  3.717s clique Send            batida +12.6q  colcheia  -2.4q  onset  -2.7q
+  f 263  4.383s corte                  batida  -7.4q  colcheia  -7.4q  onset  +6.7q
+  f 275  4.583s HUD                    batida  +4.6q  colcheia  +4.6q  onset  -2.2q
+  f 306  5.100s titulo digita          batida  +5.5q  colcheia  +5.5q  onset  -3.3q
+  f 352  5.867s Done!                  batida  -8.6q  colcheia  +6.5q  onset  +5.8q
+  f 377  6.283s placeholder            batida -13.6q  colcheia  +1.4q  onset  +2.9q
+  f 396  6.600s scroll                 batida  +5.4q  colcheia  +5.4q  onset  -2.5q
+  f 437  7.283s zoom                   batida -13.7q  colcheia  +1.3q  onset  +0.9q
+  f 444  7.400s caixa                  batida  -6.7q  colcheia  -6.7q  onset  +7.9q
+  f 462  7.700s apaga                  batida +11.3q  colcheia  -3.7q  onset  +3.6q
+  f 487  8.117s corte fn               batida  +6.3q  colcheia  +6.3q  onset +21.0q
+  f 514  8.567s pan                    batida  +3.3q  colcheia  +3.3q  onset  +2.7q
+  f 520  8.667s texto                  batida  +9.3q  colcheia  -5.8q  onset  +1.7q
+  f 566  9.433s ponto solta            batida  -4.8q  colcheia  -4.8q  onset  -4.5q
+  f 578  9.633s triangulo              batida  +7.2q  colcheia  +7.2q  onset  +7.5q
+  f 588  9.800s legenda                batida -12.9q  colcheia  +2.2q  onset  +1.5q
+  resumo {'bpm_detector': np.float64(119.9), 'n_onsets': 65, 'n_fortes': 32, 'media_ms_colcheia': np.float64(70.1), 'nulo_ms_colcheia': np.float64(62.6), 'p_colcheia': 0.728, 'media_ms_onset': np.float64(255.6), 'nulo_ms_onset': np.float64(223.9), 'p_onset': 0.956, 'dentro_1q_colcheia': 2, 'n': 26}

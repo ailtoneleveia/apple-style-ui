@@ -1,0 +1,47 @@
+{
+ "id": "2103066071838466494",
+ "url": "https://x.com/i/status/2103066071838466494",
+ "autor": "moritzkremb",
+ "data": "2026-09-24",
+ "curtidas": 440,
+ "comentarios": 27,
+ "legenda_post": "omg i had to test it myself and am stunned how good this is  this product launch video was fully created by opus 5.5 with just one prompt  i just told opus to go pick a SaaS and create a professional product launch video  prompt below: https://t.co/dKMga9OYvu",
+ "duracao_s": 46.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.62
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 171,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

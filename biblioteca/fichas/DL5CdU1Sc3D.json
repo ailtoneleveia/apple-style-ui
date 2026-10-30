@@ -1,0 +1,54 @@
+{
+ "id": "DL5CdU1Sc3D",
+ "url": "https://www.instagram.com/p/DL5CdU1Sc3D/",
+ "autor": "varculin",
+ "data": "2025-07-09",
+ "curtidas": 325,
+ "comentarios": 26,
+ "legenda_post": "✨ Apple-Style Liquid Glass Animation ✨\nCreated in Adobe After Effects using smooth transitions and glassmorphism-inspired visuals.\n\nExploring the balance between motion design and UI elegance — minimal, fluid, and clean.\nLet me know what you think 👇\n\n🎥 Tool: After Effects\n🎨 Style: Glassmorphism | Li",
+ "duracao_s": 10.6,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.01
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 305,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:liquid glass animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

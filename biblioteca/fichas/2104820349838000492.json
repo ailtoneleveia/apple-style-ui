@@ -1,0 +1,44 @@
+{
+ "id": "2104820349838000492",
+ "url": "https://x.com/i/status/2104820349838000492",
+ "autor": "yeiken_app",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5に頼んだらプロモーション動画ができた。AIが「コードで書く」動画とは？ https://t.co/19Vj1H7kQP https://t.co/LfCF0Pk9SY",
+ "duracao_s": 12.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 220,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

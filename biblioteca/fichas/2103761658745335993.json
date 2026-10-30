@@ -1,0 +1,42 @@
+{
+ "id": "2103761658745335993",
+ "url": "https://x.com/i/status/2103761658745335993",
+ "autor": "sudo_kiran",
+ "data": "2026-09-26",
+ "curtidas": 13,
+ "comentarios": 0,
+ "legenda_post": "Built a product demo with Claude Opus 5.5. The level of output is honestly insane. 🚀  prompt: create best motion graphics explainer of the (your product) with very good script and good design colors and good music make sure the video should be incredible and people should feels https://t.co/ZsCvqwGz",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.55
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 292,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

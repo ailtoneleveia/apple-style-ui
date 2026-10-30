@@ -1,0 +1,45 @@
+{
+ "id": "C-npp-FthDl",
+ "url": "https://www.instagram.com/p/C-npp-FthDl/",
+ "autor": "creatoroly",
+ "data": "2024-08-13",
+ "curtidas": 374,
+ "comentarios": 94,
+ "legenda_post": "Are you ready? @editucation \n\nIf you are ready for a hard work, send me \"Editucation\" and I will send you invite link. 🖇️\n\n#editucation #course #videoediting #motiondesign #visuals",
+ "duracao_s": 57.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 0.71,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 125.1,
+  "onsets_per_s": 4.8
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 307,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

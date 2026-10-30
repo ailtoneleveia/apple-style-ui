@@ -1,0 +1,22 @@
+{
+  "marca": "junior",
+  "rotulo_icone": "Satélite",
+  "cartao_titulo": "Passagem da ISS",
+  "cartao_tempo": "em 14 min",
+  "tile_rotulo": "Conectado",
+  "titulo": "Qual é a emergência?",
+  "item1": "Problema no carro",
+  "icone1": "car",
+  "item2": "Doença ou ferimento",
+  "icone2": "plus",
+  "item3": "Crime",
+  "icone3": "shield",
+  "item4": "Perdido ou preso",
+  "icone4": "star",
+  "item5": "Incêndio",
+  "icone5": "flame",
+  "botao": "Encerrar",
+  "ilha_texto": "A ajuda está a caminho",
+  "relogio": "1:40",
+  "balao_emoji": "🧑🏽"
+}

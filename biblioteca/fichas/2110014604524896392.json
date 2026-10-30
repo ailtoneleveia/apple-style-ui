@@ -1,0 +1,45 @@
+{
+ "id": "2110014604524896392",
+ "url": "https://x.com/i/status/2110014604524896392",
+ "autor": "vib3coded",
+ "data": "2026-10-13",
+ "curtidas": 209,
+ "comentarios": 21,
+ "legenda_post": "You’ve seen the jelly tests. Now for something a little calmer 🌸  Claude Opus 5.5 vs ChatGPT-6 Astra - same prompt, two takes on a Japanese shrine  Opus wins this one for me. The water looks beautiful, and changing the color palette completely transforms it and the mood of the https://t.co/1jLBPkqlT",
+ "duracao_s": 17.0,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 130.2,
+  "onsets_per_s": 3.75
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 231,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

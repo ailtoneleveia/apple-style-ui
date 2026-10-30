@@ -1,0 +1,36 @@
+{
+ "id": "2104448788790477239",
+ "url": "https://x.com/i/status/2104448788790477239",
+ "autor": "esrhengwu",
+ "data": "2026-09-28",
+ "curtidas": 89,
+ "comentarios": 12,
+ "legenda_post": "让Claude Opus5.5把\"瘫坐长椅原子弹爆炸”做成了动画跑了小16个小时，他竟然给每个图写了个着色器..离谱.....  声音、画面全部代码生成..Opus 5.5要开启mv、动画、 像素游戏、3d游戏各种新玩法了.... https://t.co/teQzW2Jh7N",
+ "duracao_s": 32.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.63,
+ "pecas": [],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 426,
+  "fps": 30.0,
+  "kbps": 320,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

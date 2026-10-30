@@ -1,0 +1,43 @@
+{
+ "id": "2103499977632997524",
+ "url": "https://x.com/i/status/2103499977632997524",
+ "autor": "alex_prompter",
+ "data": "2026-09-25",
+ "curtidas": 371,
+ "comentarios": 14,
+ "legenda_post": "Claude Opus 5.5 can make an explainer video for your business.  No camera or editor needed.  I went to film school, and the trick is to direct it. Give it the scenes, the length and the pace.  Here's the prompt:  \"Adopt the role of an expert motion designer. Build a 30-second https://t.co/MRSCtVfvoW",
+ "duracao_s": 34.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.75,
+ "pecas": [
+  "icone_app",
+  "botao_pilula"
+ ],
+ "nota": 71,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 96,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

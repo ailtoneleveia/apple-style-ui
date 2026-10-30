@@ -1,0 +1,44 @@
+{
+ "id": "2108531279473910161",
+ "url": "https://x.com/i/status/2108531279473910161",
+ "autor": "N1njaCodex",
+ "data": "2026-10-09",
+ "curtidas": 31,
+ "comentarios": 5,
+ "legenda_post": "Opus, why are this goat’s legs growing straight out of its udder?! 😭🐐  Asked Claude Opus 5.5 to make a plush goat. It decided four legs were a waste of resources when there’s already an udder  Now it walks on it. And jumps. Completely convinced this is how goats work  You can https://t.co/JSOdJvZhL5",
+ "duracao_s": 17.0,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 5.05
+ },
+ "qualidade": {
+  "largura": 568,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 186,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

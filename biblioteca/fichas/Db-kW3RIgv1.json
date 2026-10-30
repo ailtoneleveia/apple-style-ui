@@ -1,0 +1,50 @@
+{
+ "id": "Db-kW3RIgv1",
+ "url": "https://www.instagram.com/p/Db-kW3RIgv1/",
+ "autor": "earnedits.motion",
+ "data": "2026-08-13",
+ "curtidas": 302,
+ "comentarios": 8,
+ "legenda_post": "🎧 Spotify turned it into an experience ⚡\n\nThis After Effects project turns Spotify’s platform into a premium SaaS-style product animation. Animated playlists, album artwork, waveform visualizations, search interfaces, personalized recommendations ✨\n\nEvery interaction feels intentional. Every transit",
+ "duracao_s": 18.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.45
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 617,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

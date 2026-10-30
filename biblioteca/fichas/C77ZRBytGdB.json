@@ -1,0 +1,43 @@
+{
+ "id": "C77ZRBytGdB",
+ "url": "https://www.instagram.com/p/C77ZRBytGdB/",
+ "autor": "creatoroly",
+ "data": "2024-06-07",
+ "curtidas": 319,
+ "comentarios": 12,
+ "legenda_post": "Did you know that After Effects is that powerful? 🔥\n\nFollow @editucation to learn soonly!\n\n#aftereffects #editing #videoediting #viral #fyp #powerful #tips",
+ "duracao_s": 26.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.26,
+ "pecas": [
+  "cursor",
+  "icone_app"
+ ],
+ "nota": 21,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 152.0,
+  "onsets_per_s": 5.79
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 524,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2104560073217597459",
+ "url": "https://x.com/i/status/2104560073217597459",
+ "autor": "ito1217yo",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 × MiniMax H3で、架空ブランドの広告動画を作ってみました👜  モデルと商品の画像2枚から15秒の広告に。  使った画像とプロンプトはリプ欄に👇  #MiniMaxH3 #ClaudeAI #AI動画 https://t.co/Gf6vY41NwC",
+ "duracao_s": 15.2,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.91,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 275,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

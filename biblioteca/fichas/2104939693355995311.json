@@ -1,0 +1,40 @@
+{
+ "id": "2104939693355995311",
+ "url": "https://x.com/i/status/2104939693355995311",
+ "autor": "zhishiai6",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "看着看着大家都说，OPus 5.5做的视频有多么的牛，一句话就可以做出很棒的一些视频。 我想说手头刚好有一包烟，那我就让他做一段关于中国烟草发展史的纪录风格的短片，结果他就给我出来个这? 我说的一句话提示词：做一段关于中国烟草发展史的纪录风格短片 https://t.co/6HZDvb0q2c",
+ "duracao_s": 49.2,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.52,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 638,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 78,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

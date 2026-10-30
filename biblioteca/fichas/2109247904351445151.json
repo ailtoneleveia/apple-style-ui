@@ -1,0 +1,38 @@
+{
+ "id": "2109247904351445151",
+ "url": "https://x.com/i/status/2109247904351445151",
+ "autor": "Charlotteqozf",
+ "data": "2026-10-11",
+ "curtidas": 29,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5に「自分が登場する映像を作って」って言ったら優しい世界だった🫶  タイトルは「Claudeのちいさな分身と、たんぽぽの綿毛」だって https://t.co/L150xqeToE",
+ "duracao_s": 15.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "emoji_3d"
+ ],
+ "nota": 62,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 207,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

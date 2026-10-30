@@ -1,0 +1,36 @@
+{
+ "id": "2109373583445156338",
+ "url": "https://x.com/i/status/2109373583445156338",
+ "autor": "pipeline_os",
+ "data": "2026-10-11",
+ "curtidas": 11,
+ "comentarios": 3,
+ "legenda_post": "🚨Game studios spend months building an ocean you can swim in.  I gave Claude Opus 5.5 one prompt.  &gt; A fish you can control &gt; A camera you can orbit &gt; Light that moves across the seabed  Which part surprised you most? https://t.co/d4eWuROsn7",
+ "duracao_s": 57.3,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 234,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

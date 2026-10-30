@@ -1,0 +1,36 @@
+{
+ "id": "2104665953883615408",
+ "url": "https://x.com/i/status/2104665953883615408",
+ "autor": "guguimuzzio",
+ "data": "2026-09-28",
+ "curtidas": 84,
+ "comentarios": 13,
+ "legenda_post": "Le hice esto GRATIS a un cliente con Claude Opus 5.5 + el MCP de @magnific . Cuánto debería haberselo cobrado? https://t.co/nEp8W8iw32",
+ "duracao_s": 43.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 248,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

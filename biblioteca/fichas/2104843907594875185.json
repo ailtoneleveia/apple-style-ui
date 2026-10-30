@@ -1,0 +1,39 @@
+{
+ "id": "2104843907594875185",
+ "url": "https://x.com/i/status/2104843907594875185",
+ "autor": "kokaneka",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5 one-shotted this!  I asked it to create an animated explainer about the OG Postgres and this is what it came up with.   Even used the logo elephant as a cute cartoon.   So are YouTubers cooked or there's still hope? https://t.co/U1qnPl2diO",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 376,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

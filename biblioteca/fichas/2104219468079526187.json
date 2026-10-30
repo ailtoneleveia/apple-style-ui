@@ -1,0 +1,39 @@
+{
+ "id": "2104219468079526187",
+ "url": "https://x.com/i/status/2104219468079526187",
+ "autor": "AlvaroFelipeCh",
+ "data": "2026-09-27",
+ "curtidas": 23,
+ "comentarios": 11,
+ "legenda_post": "¿Has visto la moda de crear videos con Opus 5.5? Pues esos videos son slop (basura).  Pasamos de \"Claude ha resuelto los motion graphics con un solo prompt 🤯\" o  \"Jamás volvería a pagar por un video 🤩\" a \"Otro video con Claude igualito a los cientos que ya vi 😴\"  Porque cuando https://t.co/00CmpZOw0",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 218,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

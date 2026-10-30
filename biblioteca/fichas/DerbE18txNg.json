@@ -1,0 +1,48 @@
+{
+ "id": "DerbE18txNg",
+ "url": "https://www.instagram.com/p/DerbE18txNg/",
+ "autor": "edita.visuals",
+ "data": "2026-10-19",
+ "curtidas": 1450,
+ "comentarios": 4175,
+ "legenda_post": "Follow & Comment “CLAUDE” for the full guide! 💪🤝\n\nI didn’t touch a single keyframe.\nEvery movement, every transition, every sound - Claude Opus 5.5.🙂🤯",
+ "duracao_s": 36.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.71
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 150,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

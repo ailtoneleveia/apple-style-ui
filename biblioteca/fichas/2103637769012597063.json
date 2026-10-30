@@ -1,0 +1,38 @@
+{
+ "id": "2103637769012597063",
+ "url": "https://x.com/i/status/2103637769012597063",
+ "autor": "Xanderwow_A",
+ "data": "2026-09-26",
+ "curtidas": 20,
+ "comentarios": 2,
+ "legenda_post": "由Claude Opus 5.5制作的Dario大战Altman   Prompt：制作一段1分钟长度的视频，内容是Dario和Sam的打斗，要求有剧情、有爆点、够搞笑且足够抽象，类型和画风不限，做你最擅长的。必须在两人之间分出胜负。   没想到Claude竟会为了避嫌让Sam赢，真是令人意外。 内容大家自行食用！ https://t.co/KJyfufcNBD",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.72,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 306,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

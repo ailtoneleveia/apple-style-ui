@@ -1,0 +1,38 @@
+{
+ "id": "2103776779064471834",
+ "url": "https://x.com/i/status/2103776779064471834",
+ "autor": "theattnlayer",
+ "data": "2026-09-26",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "Motion designers, I'm sorry.  I asked Claude Opus 5.5 for a showreel as if it were applying for a motion design job, and it made this from one prompt without After Effects or stock music, writing every frame in code and the soundtrack in Python.  Would you hire it? https://t.co/reu4cJmc9W",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.63,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 200,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

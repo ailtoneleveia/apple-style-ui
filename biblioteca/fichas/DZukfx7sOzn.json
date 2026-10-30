@@ -1,0 +1,51 @@
+{
+ "id": "DZukfx7sOzn",
+ "url": "https://www.instagram.com/p/DZukfx7sOzn/",
+ "autor": "kniveedits",
+ "data": "2026-06-18",
+ "curtidas": 1147,
+ "comentarios": 20,
+ "legenda_post": "Stepping stone toward mastering that clean, Apple style motion design. 🍏\n\nHuge shoutout to @mhdlabss for the breakdown tutorial and @creatoroly for the original masterpiece. 🔥\n\n#videoeditor #videoediting #motiongraphics #applestyle",
+ "duracao_s": 7.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "iphone",
+  "numero_grande",
+  "emoji_3d",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 144.9,
+  "onsets_per_s": 3.49
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 443,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui style",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

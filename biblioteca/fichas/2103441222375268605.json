@@ -1,0 +1,41 @@
+{
+ "id": "2103441222375268605",
+ "url": "https://x.com/i/status/2103441222375268605",
+ "autor": "tcballard",
+ "data": "2026-09-25",
+ "curtidas": 185,
+ "comentarios": 19,
+ "legenda_post": "Had some time whilst agents were running on something, so thought I’d test out Opus 5.5 some more   Prompt below 👇 https://t.co/LPnljaia0j",
+ "duracao_s": 15.0,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "busca",
+  "mapa"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 29.87,
+  "kbps": 340,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

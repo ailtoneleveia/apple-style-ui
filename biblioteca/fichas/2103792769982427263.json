@@ -1,0 +1,39 @@
+{
+ "id": "2103792769982427263",
+ "url": "https://x.com/i/status/2103792769982427263",
+ "autor": "johnsavage_ai",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "🤯 Opus 5.5 is INSANE!  1 prompt + 1 refference image  (full prompt below 👇) https://t.co/Q8LP6iexU2",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 359,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

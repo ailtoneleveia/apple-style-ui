@@ -1,0 +1,51 @@
+{
+ "id": "DVi4xZ3hO8v",
+ "url": "https://www.instagram.com/p/DVi4xZ3hO8v/",
+ "autor": "mspheremedia",
+ "data": "2026-03-06",
+ "curtidas": 132,
+ "comentarios": 404,
+ "legenda_post": "Comment \"SAAS\" to get the project file!! (Paid now)\n\nIf you’re building in SaaS and need high-converting motion design, DM now.\n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 19.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "SAAS",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.07
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1278,
+  "fps": 30.0,
+  "kbps": 324,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

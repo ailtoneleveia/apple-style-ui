@@ -1,0 +1,45 @@
+{
+ "id": "2102847039415476517",
+ "url": "https://x.com/i/status/2102847039415476517",
+ "autor": "charlesmendez",
+ "data": "2026-09-23",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Holly Cow. Just asked Opus 5.5 to do an explainer video of @DataGran .   Prompt: I Want you to make a modern slick and punchy video for https://t.co/a3zrq7DV3N with an example of a user creating a chatgpt ads campaign, then connecting their metrics, understanding attribution, https://t.co/UnW7f8Yj3g",
+ "duracao_s": 57.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.92,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 184,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

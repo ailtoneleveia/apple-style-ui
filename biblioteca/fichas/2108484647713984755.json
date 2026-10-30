@@ -1,0 +1,36 @@
+{
+ "id": "2108484647713984755",
+ "url": "https://x.com/i/status/2108484647713984755",
+ "autor": "AI__TSUBAKI",
+ "data": "2026-10-09",
+ "curtidas": 24,
+ "comentarios": 4,
+ "legenda_post": "Tried a @higgsfield Katana preset right away. One thing I can say: AI video and Opus 5.5 work really well together.  Credits used: 210 (Seedance 2.5, 720p, 10s × 3) https://t.co/kklKtpaHrQ",
+ "duracao_s": 12.4,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.7,
+ "pecas": [],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 480,
+  "altura": 360,
+  "fps": 23.98,
+  "kbps": 383,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

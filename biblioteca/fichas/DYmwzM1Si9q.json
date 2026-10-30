@@ -1,0 +1,43 @@
+{
+ "id": "DYmwzM1Si9q",
+ "url": "https://www.instagram.com/p/DYmwzM1Si9q/",
+ "autor": "dopemotionzone",
+ "data": "2026-05-21",
+ "curtidas": 246,
+ "comentarios": 18,
+ "legenda_post": "Most creators lose their audience before they even start their message.\nThe first 3 seconds decide everything.\nIn this clip from Katie Stevens on the How Do I Podcast, she breaks down something most creators ignore:\nStart with the hook.\n Talk like you're speaking to one person, not the internet.\n Be",
+ "duracao_s": 48.3,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.9
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 838,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

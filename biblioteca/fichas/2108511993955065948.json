@@ -1,0 +1,41 @@
+{
+ "id": "2108511993955065948",
+ "url": "https://x.com/i/status/2108511993955065948",
+ "autor": "am56ay",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Good morning builders ☕  Yesterday was my Claude weekly reset.  Opus 5.5 is surprisingly cheap compared to 5 when you scope things properly.  Still had 40% of my weekly usage left.  So naturally, I went:  \"Build me a massive new feature for Loudship.\"  \"And while you're at it, https://t.co/y517PezEp",
+ "duracao_s": 30.1,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.05,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 275,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

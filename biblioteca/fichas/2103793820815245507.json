@@ -1,0 +1,38 @@
+{
+ "id": "2103793820815245507",
+ "url": "https://x.com/i/status/2103793820815245507",
+ "autor": "liefmusk",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "我让 @claudeai Opus 5.5 制讲一只机械寄居蟹在深海追一束光，追到最后发现，发现那束光其实一直在自己手里的动画视频。      没用任何视频生成AI，纯靠写代码画出来的—— 角色、镜头、转场、音乐全是程序渲染的。  看完了。感觉能做到这个程度还是很可以的！ https://t.co/DSrpVi5eNJ",
+ "duracao_s": 50.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.0,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 267,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

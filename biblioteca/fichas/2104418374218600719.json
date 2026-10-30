@@ -1,0 +1,39 @@
+{
+ "id": "2104418374218600719",
+ "url": "https://x.com/i/status/2104418374218600719",
+ "autor": "bangbuilds",
+ "data": "2026-09-28",
+ "curtidas": 7,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 出来好几天，我一直在拿它做一件事：做英语学习视频，准出做成一个系列（因为我英语太差，想学）。  不是用 AI 视频模型生成，是让它写代码：人物用代码画，动作/标签/镜头/口型，都由他写的程序自动安排。  所以人物每一集都长一个样，不会每集换一张脸。 https://t.co/iMB8v1Voeh",
+ "duracao_s": 33.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "legenda_fala",
+  "vidro"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 181,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

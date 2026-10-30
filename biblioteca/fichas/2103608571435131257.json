@@ -1,0 +1,43 @@
+{
+ "id": "2103608571435131257",
+ "url": "https://x.com/i/status/2103608571435131257",
+ "autor": "marouanegazouzi",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 2,
+ "legenda_post": "OMG, the 15-second motion designing video from Claude Opus 5.5 on MAX is something (sound ON)  Prompt  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\" https://t.co/NQL8OV1A4Q",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.81,
+ "pecas": [
+  "imessage",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 231,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

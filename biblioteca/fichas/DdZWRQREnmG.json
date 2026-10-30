@@ -1,0 +1,40 @@
+{
+ "id": "DdZWRQREnmG",
+ "url": "https://www.instagram.com/p/DdZWRQREnmG/",
+ "autor": "charliehills",
+ "data": "2026-09-17",
+ "curtidas": 155,
+ "comentarios": 112,
+ "legenda_post": "Comment MAP and I'll send you the game.\n\nYou can now drive to your own house in a video game.\n\nIt's called Hop Earth. Free, runs in the browser, no download.\n\n- Every road on Earth is in it, pulled from OpenStreetMap\n- Terrain comes from satellite elevation data, so hills are real hills\n- Nothing is",
+ "duracao_s": 43.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "presente",
+ "palavra": "MAP",
+ "acabamento_pro": 0.69,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 309,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

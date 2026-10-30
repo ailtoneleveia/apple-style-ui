@@ -1,0 +1,49 @@
+{
+ "id": "DE8FIAstYaM",
+ "url": "https://www.instagram.com/p/DE8FIAstYaM/",
+ "autor": "creatoroly",
+ "data": "2025-01-17",
+ "curtidas": 825,
+ "comentarios": 216,
+ "legenda_post": "you can learn how to edit like this, comment “apple” and I’m sending you the invite 👀\n\n@myketowers (banger song)\n\n#motiondesign #apple #aftereffects",
+ "duracao_s": 22.5,
+ "tipo": "bastidor_editor",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "APPLE",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "imessage",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 96.0,
+  "onsets_per_s": 3.62
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 775,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

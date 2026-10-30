@@ -1,0 +1,52 @@
+{
+ "id": "DTQvBqCiA8E",
+ "url": "https://www.instagram.com/p/DTQvBqCiA8E/",
+ "autor": "vitalyframes",
+ "data": "2026-01-08",
+ "curtidas": 6027,
+ "comentarios": 184,
+ "legenda_post": "How smooth is it?\n\n#aftereffects #motiongraphic #edit #appleui",
+ "duracao_s": 12.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "icone_app",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 103.1,
+  "onsets_per_s": 6.49
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 170,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:vitalyframes",
+  "busca:appleui",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

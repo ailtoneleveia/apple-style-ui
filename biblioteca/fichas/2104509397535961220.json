@@ -1,0 +1,38 @@
+{
+ "id": "2104509397535961220",
+ "url": "https://x.com/i/status/2104509397535961220",
+ "autor": "itnavi2022",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "📹Opus 5.5による動画生成のテスト２  プロンプト「日本のアニメスタイルで、メイドがダンスしながらショゴスと戦う15秒MVを作成して」  所要時間　20分 https://t.co/NHNO1tLJ6T",
+ "duracao_s": 15.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.51,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 13,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 448,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

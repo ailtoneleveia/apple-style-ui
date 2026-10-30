@@ -1,0 +1,42 @@
+{
+ "id": "2104939145252749710",
+ "url": "https://x.com/i/status/2104939145252749710",
+ "autor": "rehanxahmed",
+ "data": "2026-09-29",
+ "curtidas": 103,
+ "comentarios": 9,
+ "legenda_post": "Opus 5.5 is crazy at designing apps. Here’s my full process on how i make iOS apps right now:  - Create a moodboard of designs you like (Doesn't have to be same niche - GPT 5 for creating a 1st draft mockup, Ask it to generate a proper ios styled app with no realistic visuals - https://t.co/azRj9bl5",
+ "duracao_s": 13.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.63,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 105,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

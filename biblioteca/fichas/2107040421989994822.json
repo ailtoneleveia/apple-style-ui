@@ -1,0 +1,42 @@
+{
+ "id": "2107040421989994822",
+ "url": "https://x.com/i/status/2107040421989994822",
+ "autor": "robj3d3",
+ "data": "2026-10-05",
+ "curtidas": 290,
+ "comentarios": 48,
+ "legenda_post": "Opus 5.5 max effort:  \"look at my product roadmap and make a dynamic 15-second motion graphics video that teases the next feature release. go all out and hold nothing back\" https://t.co/41Xi5GIUFk",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.55,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "janela",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 132,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

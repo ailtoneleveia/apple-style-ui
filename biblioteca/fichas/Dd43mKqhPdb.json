@@ -1,0 +1,51 @@
+{
+ "id": "Dd43mKqhPdb",
+ "url": "https://www.instagram.com/p/Dd43mKqhPdb/",
+ "autor": "levii.motion",
+ "data": "2026-09-29",
+ "curtidas": 158,
+ "comentarios": 21,
+ "legenda_post": "Finance app Motion Design\n\nDay (2/30) for daily edit challenge\n\nThis one took almost 2 days to make 🫪",
+ "duracao_s": 14.5,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.81
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 504,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple editing style",
+  "busca:appleui",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

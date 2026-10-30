@@ -1,0 +1,48 @@
+{
+ "id": "DdwTANxOVBU",
+ "url": "https://www.instagram.com/p/DdwTANxOVBU/",
+ "autor": "zohaibappdeveloper",
+ "data": "2026-09-26",
+ "curtidas": 14324,
+ "comentarios": 168,
+ "legenda_post": "The smoothest receipt printing animation you’ll see today! 🧾💳✨\n\nBuilding this sleek Fintech checkout & card selection flow in Flutter. That receipt transition at the end is so satisfying! 🤤\n\nGold, Silver, or Platinum which card are you choosing? Drop a comment below! 👇\n\n#FlutterDev #MobileDev #UIUX ",
+ "duracao_s": 18.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "BELOW",
+ "acabamento_pro": 1.78,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 70,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 161.5,
+  "onsets_per_s": 2.55
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 546,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

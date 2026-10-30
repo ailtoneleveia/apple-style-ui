@@ -1,0 +1,36 @@
+{
+ "id": "2103112385380667455",
+ "url": "https://x.com/i/status/2103112385380667455",
+ "autor": "eric_khun",
+ "data": "2026-09-24",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "Mid-autumn festival is about to start in Taiwan and all around Asia. Asked Opus 5.5 to make a video about it. bbq, mooncakes, pomelos. Took 1 prompt an 40 minutes on high. Prompt in comments https://t.co/kBNIg2Igrq",
+ "duracao_s": 30.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 0.91,
+ "pecas": [],
+ "nota": 15,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 332,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

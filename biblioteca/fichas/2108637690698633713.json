@@ -1,0 +1,36 @@
+{
+ "id": "2108637690698633713",
+ "url": "https://x.com/i/status/2108637690698633713",
+ "autor": "maxt3chno",
+ "data": "2026-10-09",
+ "curtidas": 75,
+ "comentarios": 24,
+ "legenda_post": "Is that even mathematically possible to make solid 3D hands with AI right now?  - you can make models with Meshy or Tripo - you can rig your model with AI - you can even generate decent animations for previews now with Opus 5.5 or Astra  BUT getting non-cursed hands... Just how? https://t.co/MVy3msL",
+ "duracao_s": 26.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.74,
+ "pecas": [],
+ "nota": 21,
+ "som": null,
+ "qualidade": {
+  "largura": 650,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 395,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2104198927549604161",
+ "url": "https://x.com/i/status/2104198927549604161",
+ "autor": "arthurkatcher",
+ "data": "2026-09-27",
+ "curtidas": 4,
+ "comentarios": 3,
+ "legenda_post": "I asked Opus 5.5 to explain how a coding agent works in 40 seconds.  never been this shocked. It animated the whole thing, wrote the music, and landed every cut on the beat.  one message in Claude Code, 14 minutes. Workflow is in the comments 👇 https://t.co/BjtAFcGtWN",
+ "duracao_s": 40.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 2.1,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 184,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

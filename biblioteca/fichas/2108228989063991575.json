@@ -1,0 +1,44 @@
+{
+ "id": "2108228989063991575",
+ "url": "https://x.com/i/status/2108228989063991575",
+ "autor": "itsnotryan",
+ "data": "2026-10-08",
+ "curtidas": 1116,
+ "comentarios": 30,
+ "legenda_post": "one shot again by opus 5.5, this skill is too goated at isometric object design  for @Simulithic’s landing page https://t.co/lc6xTEeJwA",
+ "duracao_s": 5.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "janela"
+ ],
+ "nota": 72,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1132,
+  "altura": 966,
+  "fps": 60.0,
+  "kbps": 716,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

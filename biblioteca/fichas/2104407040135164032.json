@@ -1,0 +1,41 @@
+{
+ "id": "2104407040135164032",
+ "url": "https://x.com/i/status/2104407040135164032",
+ "autor": "tiagochilanti",
+ "data": "2026-09-28",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "Criei um jogo com o Opus 5.5 todo feito em massinha de modelar, que se passa numa escola onde os professores viraram zumbies. Link pra jogar no primeiro comentário!  Inspirador no Rabisco do @oalanicolas https://t.co/a62DcSgNBU",
+ "duracao_s": 32.1,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.37,
+ "pecas": [
+  "imessage",
+  "legenda_fala",
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 13,
+ "som": null,
+ "qualidade": {
+  "largura": 720,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 660,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2103499771206156628",
+ "url": "https://x.com/i/status/2103499771206156628",
+ "autor": "NicolaManzini",
+ "data": "2026-09-25",
+ "curtidas": 102,
+ "comentarios": 7,
+ "legenda_post": "Opus 5.5 does a great job in eval of GLSL (OpenGL Shading Language) in threejs. The prompt here is roughly. A fishbowl with reflection, refraction and water caustics.  Check it out yourself! And compare it to other models https://t.co/4jx8jqbemA https://t.co/91NQf90yoE",
+ "duracao_s": 34.7,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 398,
+  "altura": 360,
+  "fps": 58.04,
+  "kbps": 384,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

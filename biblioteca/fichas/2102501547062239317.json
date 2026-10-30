@@ -1,0 +1,38 @@
+{
+ "id": "2102501547062239317",
+ "url": "https://x.com/i/status/2102501547062239317",
+ "autor": "lucian__03",
+ "data": "2026-09-22",
+ "curtidas": 33,
+ "comentarios": 5,
+ "legenda_post": "Opus 5.5 vs Grok 4.7  --&gt; \"대관람차와 회전목마가 움직이는 바닷가 놀이공원\"을 만들어보라고 했습니다.  (둘 다 xhigh)  왼쪽 Opus 5.5를 보시면… 대관람차의 촘촘한 구조에 조명, 난간, 물 위로 일렁이는 반사광까지 넣었습니다.  그런데 오른쪽 Grok 4.7은 화면 구성은 더 단순한데... https://t.co/lUlMvHSBkN",
+ "duracao_s": 7.3,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "janela"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 357,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

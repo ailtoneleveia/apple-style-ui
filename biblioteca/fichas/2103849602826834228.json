@@ -1,0 +1,42 @@
+{
+ "id": "2103849602826834228",
+ "url": "https://x.com/i/status/2103849602826834228",
+ "autor": "MajorBaguette",
+ "data": "2026-09-26",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 is pretty good as remotion too.  Most basic prompt ever (make a presentation video for Brieform, 30 seconds long)  The result : https://t.co/e8FzoaeSgd",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "imessage",
+  "janela",
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 114,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

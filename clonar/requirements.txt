@@ -1,0 +1,8 @@
+# Kit de clonagem do Apple Style UI. Python 3.11 ou mais novo.
+#   python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r requirements.txt
+# Fora do pip (instale pelo sistema): ffmpeg e ffprobe 6 ou mais novo, node 20 ou mais novo
+# e o HyperFrames, que roda por npx na versão fixa 0.8.184 (HF_VERSAO muda).
+numpy>=1.26
+opencv-python-headless>=4.9
+pillow>=10.0
+scipy>=1.11

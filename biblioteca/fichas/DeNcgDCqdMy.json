@@ -1,0 +1,45 @@
+{
+ "id": "DeNcgDCqdMy",
+ "url": "https://www.instagram.com/p/DeNcgDCqdMy/",
+ "autor": "zaki.xae",
+ "data": "2026-10-07",
+ "curtidas": 5,
+ "comentarios": 0,
+ "legenda_post": "Notes , Apple style Animation 🚀\n\n#motiongraphics #mixedmediaart #typography #lyrics #explorepage",
+ "duracao_s": 11.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.94,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.55
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 358,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

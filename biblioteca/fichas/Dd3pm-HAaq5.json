@@ -1,0 +1,42 @@
+{
+ "id": "Dd3pm-HAaq5",
+ "url": "https://www.instagram.com/p/Dd3pm-HAaq5/",
+ "autor": "charliehills",
+ "data": "2026-09-29",
+ "curtidas": 118,
+ "comentarios": 148,
+ "legenda_post": "The repo that writes in your own sentences, plus the script that scores how much of it is really you. Comment MARK and I'll send you both 👇\n\nClaude started watermarking everything it writes on 2 August.\n\nIt is not hidden characters. It survives copy and paste as plain text.\n\nIt lives in the word cho",
+ "duracao_s": 59.7,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "MARK",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 176,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2108438685184401904",
+ "url": "https://x.com/i/status/2108438685184401904",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 4 models 🎬  \"12s cinematic 3D product reveal film for a smartwatch called ORBIT\"  Claude Opus 5.5 · $2.16 · 21 min GPT-6 Astra · $0.91 · 4 min Grok 4.7 · $3.98 · 74 min DeepSeek V4.1 Flash · $0.33 · 61 min https://t.co/xDSUyKbzrw",
+ "duracao_s": 16.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 544,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 219,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

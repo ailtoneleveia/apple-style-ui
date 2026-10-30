@@ -1,0 +1,44 @@
+{
+ "id": "2104557402154549263",
+ "url": "https://x.com/i/status/2104557402154549263",
+ "autor": "karthikships",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Asked Claude Opus 5.5  to   \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are. Go all out.\"  This is what it made for https://t.co/BdT3APsdZz. 🤯  Kinetic type, 3D cards, beat-synced cuts, even the soundtrack. All code.  Opus https://t.co/TIl9s8mCX9",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 192,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

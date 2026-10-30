@@ -1,0 +1,45 @@
+{
+ "id": "2109782159250608604",
+ "url": "https://x.com/i/status/2109782159250608604",
+ "autor": "konstantinsaifo",
+ "data": "2026-10-12",
+ "curtidas": 79,
+ "comentarios": 5,
+ "legenda_post": "Name a machine. Claude builds the real thing.  We open sourced the skill behind our lab: 50+ machines built with Claude Opus 5.5.  One line in. The machine comes out at real size, in real materials, running on real physics: a turbofan making 340 kN from a computed Brayton cycle https://t.co/95w2H080",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 2.26,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 0.85
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 146,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

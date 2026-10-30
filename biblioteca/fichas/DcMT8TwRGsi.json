@@ -1,0 +1,49 @@
+{
+ "id": "DcMT8TwRGsi",
+ "url": "https://www.instagram.com/p/DcMT8TwRGsi/",
+ "autor": "adrimotions",
+ "data": "2026-08-18",
+ "curtidas": 92,
+ "comentarios": 5,
+ "legenda_post": "pinterest ui breakdown",
+ "duracao_s": 12.1,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 152.8,
+  "onsets_per_s": 7.11
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 892,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:apple ui style",
+  "busca:appleui"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

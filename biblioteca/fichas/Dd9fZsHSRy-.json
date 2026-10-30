@@ -1,0 +1,54 @@
+{
+ "id": "Dd9fZsHSRy-",
+ "url": "https://www.instagram.com/p/Dd9fZsHSRy-/",
+ "autor": "damianodesu",
+ "data": "2026-10-01",
+ "curtidas": 68581,
+ "comentarios": 26361,
+ "legenda_post": "Claude made this whole video. Not one frame in After Effects.\n\nEvery animation, every number, every sound you hear came from prompts. No editor, no motion designer, no templates.\n\nWant one like this for your own product? Comment “PROMPTS” and I’ll send you the file: the full guide on how to recreate",
+ "duracao_s": 53.2,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "PROMPTS",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.26
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 24.0,
+  "kbps": 825,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,51 @@
+{
+ "id": "DaYB2r2Tu2p",
+ "url": "https://www.instagram.com/p/DaYB2r2Tu2p/",
+ "autor": "scalenexmedia",
+ "data": "2026-07-04",
+ "curtidas": 74,
+ "comentarios": 9,
+ "legenda_post": "Recreated an Apple-style UI animation using only Alight Motion! 🍏📱 What do you guys think of this edit? Give me your honest feedback below!! 👇\n.\n.\n.\n.\n#alightmotion #uianimation #scalenex #motiongraphics #scalenexmedia",
+ "duracao_s": 11.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.52,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 110.3,
+  "onsets_per_s": 5.69
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 478,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:ui apple captions",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2104189915693269112",
+ "url": "https://x.com/i/status/2104189915693269112",
+ "autor": "d_llm_kr",
+ "data": "2026-09-27",
+ "curtidas": 21,
+ "comentarios": 3,
+ "legenda_post": "今日あまりにも疲れ 静かに癒されるものが欲しく Opus5.5に「雨音聴きながら遊ぶもよし眺めるも良しな何か作って」とお願いしてみた  https://t.co/cH02wE34iq https://t.co/J5ZfsAJooG",
+ "duracao_s": 8.7,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "icone_app",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 612,
+  "fps": 59.79,
+  "kbps": 60,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

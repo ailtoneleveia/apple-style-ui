@@ -1,0 +1,47 @@
+{
+ "id": "DPo7YCBjSmr",
+ "url": "https://www.instagram.com/p/DPo7YCBjSmr/",
+ "autor": "creatoroly",
+ "data": "2025-10-10",
+ "curtidas": 1002,
+ "comentarios": 105,
+ "legenda_post": "comment \"ADBRAND\" to learn how to edit for brands \n\n#aftereffects #editz #motiondesign #motion #fyppage #brands",
+ "duracao_s": 12.2,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "ADBRAND",
+ "acabamento_pro": 0.32,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 4.7
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1014,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

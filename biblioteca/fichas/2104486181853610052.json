@@ -1,0 +1,38 @@
+{
+ "id": "2104486181853610052",
+ "url": "https://x.com/i/status/2104486181853610052",
+ "autor": "Math_files",
+ "data": "2026-09-28",
+ "curtidas": 52,
+ "comentarios": 2,
+ "legenda_post": "I made this using Opus 5.5  Prompt: 'make a dynamic 20-second motion graphics video related to mathematics that shows what an incredible motion designer with mathematics skills you are, like it's your showreel for a résumé. go all out' https://t.co/3gTaJK5iN5",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.59,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 391,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

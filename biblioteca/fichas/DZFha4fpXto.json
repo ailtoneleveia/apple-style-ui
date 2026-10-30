@@ -1,0 +1,46 @@
+{
+ "id": "DZFha4fpXto",
+ "url": "https://www.instagram.com/p/DZFha4fpXto/",
+ "autor": "haxmotionco",
+ "data": "2026-06-02",
+ "curtidas": 49,
+ "comentarios": 14,
+ "legenda_post": "Apple stocks ui animation 🍎\nThoughts? 🤔",
+ "duracao_s": 12.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.9,
+  "onsets_per_s": 4.67
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 414,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:appleui"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

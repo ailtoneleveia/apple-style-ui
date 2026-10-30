@@ -1,0 +1,45 @@
+{
+ "id": "DRrdR_XklBn",
+ "url": "https://www.instagram.com/p/DRrdR_XklBn/",
+ "autor": "dopemotionzone",
+ "data": "2025-11-30",
+ "curtidas": 664,
+ "comentarios": 630,
+ "legenda_post": "Just comment “CREATIVE” below ⬇️\nand I’ll send you my Creative Idea Pack — a small but powerful bundle to spark your next edit.\n\n⚡ What’s inside:\n\n📌 Pinterest Creative Board\nA curated board full of animations, layouts, styles & visual ideas to boost your creativity instantly.\n\n🎥 1 Raw Video File\nA c",
+ "duracao_s": 47.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CREATIVE",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.87
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 70,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

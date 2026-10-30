@@ -1,0 +1,42 @@
+{
+ "id": "2104212398303543512",
+ "url": "https://x.com/i/status/2104212398303543512",
+ "autor": "excel_niisan",
+ "data": "2026-09-27",
+ "curtidas": 21,
+ "comentarios": 1,
+ "legenda_post": "【Claudeからのカット提案を「承認」するだけの動画編集UIを作ってみた】  正直、めちゃくちゃ快適です。  Claude Opus 5.5 は、カット編集の指示も的確に出してくれるのですが、チャット上のテキストだけで「◯分◯秒〜◯秒をカット」と確認するのはかなり面倒でした。 https://t.co/QzypbPW6MW",
+ "duracao_s": 55.7,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "busca",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 120,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

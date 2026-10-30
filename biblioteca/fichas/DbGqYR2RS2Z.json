@@ -1,0 +1,52 @@
+{
+ "id": "DbGqYR2RS2Z",
+ "url": "https://www.instagram.com/p/DbGqYR2RS2Z/",
+ "autor": "mvxmotion",
+ "data": "2026-07-22",
+ "curtidas": 74,
+ "comentarios": 4,
+ "legenda_post": "Inspiration @creatoroly \n\n#motiondesign #aftereffects #animation #apple #uidesign",
+ "duracao_s": 11.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "imessage",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 5.32
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 331,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

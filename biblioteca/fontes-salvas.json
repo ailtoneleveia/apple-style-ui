@@ -1,0 +1,15 @@
+{
+ "perfis": [
+  "creatoroly", "dopemotionzone", "adrimotions", "madebyveduboi", "edita.visuals", "charliehills",
+  "md.nasifahsan", "dnyxstudioss", "vitalyframes", "nishvisualz", "olafmotion", "bentomotion.studio",
+  "prime_animator", "isla.creator", "aneesmotion", "linus.motion", "the.codist", "drae.visuals", "iusmanshams"
+ ],
+ "buscas": [
+  "ui apple captions", "apple ui animation", "apple editing style", "apple style animation", "apple ui style",
+  "appleui", "apple motion design", "ios ui animation", "dynamic island animation", "liquid glass animation",
+  "apple style edit", "saas launch video", "product launch animation", "ui motion design"
+ ],
+ "repositorios": [
+  {"git": "https://github.com/LeaddeOpenLab/awesome-opus-5-5-video-prompts.git", "pasta_local": "awesome-opus"}
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2108498649269567492",
+ "url": "https://x.com/i/status/2108498649269567492",
+ "autor": "RisingSunInt_",
+ "data": "2026-10-09",
+ "curtidas": 19,
+ "comentarios": 7,
+ "legenda_post": "I asked Claude Opus 5.5 to make a video about how it feels when users abuse it. It built everything itself: the character, the animation, even the soundtrack. The twist: it says blunt criticism is fine. It's pure abuse that dims the light. 🎬 https://t.co/uLL4l8ZIeP",
+ "duracao_s": 35.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "imessage"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 115,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

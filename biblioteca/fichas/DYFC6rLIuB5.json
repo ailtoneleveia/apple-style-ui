@@ -1,0 +1,51 @@
+{
+ "id": "DYFC6rLIuB5",
+ "url": "https://www.instagram.com/p/DYFC6rLIuB5/",
+ "autor": "earnedits.motion",
+ "data": "2026-05-08",
+ "curtidas": 360,
+ "comentarios": 8,
+ "legenda_post": "Scheduling a meeting used to take 6 emails 📅😤\n\nCalendly killed the back-and-forth — and this After Effects project file shows exactly how to animate that story 💻✨\n\nClean SaaS UI motion, smooth interface transitions, product demo sequencing — built for tech and startup content creators 🎬🔥\n\nThe kind o",
+ "duracao_s": 32.3,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.94
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 489,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "2103619221296955831",
+ "url": "https://x.com/i/status/2103619221296955831",
+ "autor": "iamMXFSCHR",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "a little spoiler because people talk about opus 5.5 and videos. my prompt was :  \"\"\" nice. wir brauchen ein launch video für den release. kannst du das machen? so a la anthropic like? hab da was gelesen und der prompt war \"\"make a modern slick and punchy video for a modern https://t.co/azDrc00jxi",
+ "duracao_s": 32.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 136.0,
+  "onsets_per_s": 6.54
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 126,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

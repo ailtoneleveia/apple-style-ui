@@ -1,0 +1,55 @@
+{
+ "id": "DNGBx7usLxz",
+ "url": "https://www.instagram.com/p/DNGBx7usLxz/",
+ "autor": "editucation",
+ "data": "2025-08-08",
+ "curtidas": 1675,
+ "comentarios": 11,
+ "legenda_post": "Ready? Get inside 🚪 #aftereffect #motiondesign #editz #apple #editingtutorial",
+ "duracao_s": 7.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.73,
+ "pecas": [
+  "notificacao",
+  "icone_app",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 126.9,
+  "onsets_per_s": 3.95
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 432,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

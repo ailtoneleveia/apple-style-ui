@@ -1,0 +1,44 @@
+{
+ "id": "2104481235028283883",
+ "url": "https://x.com/i/status/2104481235028283883",
+ "autor": "paulo_kombucha",
+ "data": "2026-09-28",
+ "curtidas": 15,
+ "comentarios": 1,
+ "legenda_post": "I played with the new Claude models Opus 5.5 to see what they can do for Masko.  make a dynamic 15-second motion graphics video to talk about our referral program https://t.co/xtUcFKJ1PC",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.57,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 55,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 204,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

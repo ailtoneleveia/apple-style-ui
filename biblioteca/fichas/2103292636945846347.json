@@ -1,0 +1,46 @@
+{
+ "id": "2103292636945846347",
+ "url": "https://x.com/i/status/2103292636945846347",
+ "autor": "andre_lucaxxs",
+ "data": "2026-09-25",
+ "curtidas": 8,
+ "comentarios": 1,
+ "legenda_post": "Mandei o Opus 5.5 fazer um video do Flora passando só uns videos e umas fotos que deixei em uma pasta pra ele acessar e esse foi o resultado.  Vou deixar o prompt no comentário. https://t.co/Mfzx9R2P9U",
+ "duracao_s": 26.5,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 2.8
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 123,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

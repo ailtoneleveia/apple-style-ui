@@ -1,0 +1,43 @@
+{
+ "id": "DeO4mzYiOj-",
+ "url": "https://www.instagram.com/p/DeO4mzYiOj-/",
+ "autor": "charliehills",
+ "data": "2026-10-08",
+ "curtidas": 101,
+ "comentarios": 16,
+ "legenda_post": "WTF are these AI agents (actually) doing?\n\nOut of the box, most are a black box.\n\n1. Can you see what it actually did?\n2. Can you tell which agent did it?\n3. Did a human check it first?\n\n@atlassian announced the answer at Team EU:\n\nThe Agentic Multiplayer Protocol (AMP).\n\nAnd it's live today.\n\nWith ",
+ "duracao_s": 56.7,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 257,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

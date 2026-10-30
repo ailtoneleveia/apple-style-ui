@@ -1,0 +1,36 @@
+{
+ "id": "2103517910274818523",
+ "url": "https://x.com/i/status/2103517910274818523",
+ "autor": "DemitiyaGeekzen",
+ "data": "2026-09-25",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "opus5.5有点强，我让它自由选题做交互页面和视频， 提示词：用你最强的思维和能力，根据对我的了解，自行寻找我可能喜欢的主题，制作一个30s的视频还有互动html，尽可能的展示你的前端能力！ 它的选题思路：滕王阁·中秋夜。 https://t.co/bkEKpBXdow",
+ "duracao_s": 30.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 351,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

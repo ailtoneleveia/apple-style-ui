@@ -1,0 +1,40 @@
+{
+ "id": "2108184711206257149",
+ "url": "https://x.com/i/status/2108184711206257149",
+ "autor": "papaneco_life",
+ "data": "2026-10-08",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus5.5（MAX）で作ったことなかったけど、凄いな…  埼玉県がめちゃカッコ良い🤣 ◯◯県民の皆様、チャレンジしてみて♪  プロンプトは県名変えるだけ👇 #Claude #モーショングラフィック https://t.co/1RAL5JtvnV",
+ "duracao_s": 39.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "mapa"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.01,
+  "kbps": 345,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

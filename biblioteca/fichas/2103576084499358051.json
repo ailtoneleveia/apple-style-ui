@@ -1,0 +1,36 @@
+{
+ "id": "2103576084499358051",
+ "url": "https://x.com/i/status/2103576084499358051",
+ "autor": "leonabboud",
+ "data": "2026-09-25",
+ "curtidas": 911,
+ "comentarios": 113,
+ "legenda_post": "Okay, motion designers are 100% cooked.  Saw on x that Opus 5.5 could do advanced animations and I was skeptical at first.   So I gave it a one sentence prompt, and it one shot this in 15 minutes.  Will add the prompt below, but this is genuinely mind blowing.  This level of work https://t.co/GZZBsv",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.73,
+ "pecas": [],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 444,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

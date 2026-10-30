@@ -1,0 +1,42 @@
+{
+ "id": "2103418429248069973",
+ "url": "https://x.com/i/status/2103418429248069973",
+ "autor": "Sarut0biSasuke",
+ "data": "2026-09-25",
+ "curtidas": 22,
+ "comentarios": 11,
+ "legenda_post": "Opus 5.5 is cracked at making animation.  I gave it a hand-drawn reference image and this prompt:  \"Render a recipe motion graphic animation using JavaScript or HTML (whatever you think will produce the best result) to show the full recipe for a White Russian from start to https://t.co/n95s2KHgGX",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 106,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

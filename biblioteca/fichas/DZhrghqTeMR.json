@@ -1,0 +1,47 @@
+{
+ "id": "DZhrghqTeMR",
+ "url": "https://www.instagram.com/p/DZhrghqTeMR/",
+ "autor": "arpit_clipsyk",
+ "data": "2026-06-13",
+ "curtidas": 498,
+ "comentarios": 11,
+ "legenda_post": "Upskilling day by day!!!\nOne percent at a time.\n.\n.\n[Motion graphics , me ,gradient , edit , saas ,apple ui, sfx ,after effects, stress]",
+ "duracao_s": 19.5,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.79,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 5.76
+ },
+ "qualidade": {
+  "largura": 1268,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 528,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2103502614134718609",
+ "url": "https://x.com/i/status/2103502614134718609",
+ "autor": "pankajkumar_dev",
+ "data": "2026-09-25",
+ "curtidas": 38,
+ "comentarios": 5,
+ "legenda_post": "Opus 5.5 is insanely good at motion design.  I gave it one prompt: \"create a motion design video of a poster breaking out of its own frame.\"  The animation, the camera moves, the sound design, even the music. It composed the whole soundtrack itself and synced every hit to the https://t.co/DV8kMSrEyH",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.83,
+ "pecas": [],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 297,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

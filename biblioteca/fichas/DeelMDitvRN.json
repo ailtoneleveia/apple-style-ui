@@ -1,0 +1,47 @@
+{
+ "id": "DeelMDitvRN",
+ "url": "https://www.instagram.com/p/DeelMDitvRN/",
+ "autor": "edita.visuals",
+ "data": "2026-10-14",
+ "curtidas": 68,
+ "comentarios": 107,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩\n\nFollow & Comment “CLAUDE” for the full guide! 🙂",
+ "duracao_s": 17.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.51
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 128,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

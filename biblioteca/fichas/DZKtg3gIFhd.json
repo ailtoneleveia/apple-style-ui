@@ -1,0 +1,45 @@
+{
+ "id": "DZKtg3gIFhd",
+ "url": "https://www.instagram.com/p/DZKtg3gIFhd/",
+ "autor": "javiiarchive",
+ "data": "2026-06-04",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "how to create this viral ios mockup for free!! 🤠\n\n- go to javii.tools\n- insert your text👨‍💻\n- chose a style\n- and download for free! 🫨\n\n#ios #tutorial #design",
+ "duracao_s": 6.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.78,
+ "pecas": [
+  "imessage",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.8
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 379,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

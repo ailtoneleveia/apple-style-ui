@@ -1,0 +1,47 @@
+{
+ "id": "2108333562462408823",
+ "url": "https://x.com/i/status/2108333562462408823",
+ "autor": "Screeendev",
+ "data": "2026-10-08",
+ "curtidas": 8,
+ "comentarios": 3,
+ "legenda_post": "I could not post anything for the @DevinAI 20x plan I had gotten from @jorybraun properly because of GitHub messing everything up but here it is!!!  The entire video was made on Devin Opus 5.5 High, Prompt attached below.  I had to do iterations on some animations &amp; transitions* https://t.co/t1k",
+ "duracao_s": 52.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 105.1,
+  "onsets_per_s": 5.65
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 208,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

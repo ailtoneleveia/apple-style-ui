@@ -1,0 +1,43 @@
+{
+ "id": "C9rt4YUNAgj",
+ "url": "https://www.instagram.com/p/C9rt4YUNAgj/",
+ "autor": "creatoroly",
+ "data": "2024-07-21",
+ "curtidas": 406,
+ "comentarios": 56,
+ "legenda_post": "Send me \"BOTTLE\" in DM to get this project file. 👇🏼🔗\n\nInspo: Karan\n\n#inspiration #motivation #motiondesgin #grind",
+ "duracao_s": 6.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.8,
+  "onsets_per_s": 1.42
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 232,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

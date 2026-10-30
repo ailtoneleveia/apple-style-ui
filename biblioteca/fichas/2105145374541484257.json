@@ -1,0 +1,38 @@
+{
+ "id": "2105145374541484257",
+ "url": "https://x.com/i/status/2105145374541484257",
+ "autor": "kray_ai",
+ "data": "2026-09-30",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "클로드 Opus 5.5로 영상편집.  “골든링 액션 영상만 골라서 비트에 맞춰 편집해줘.” 이 한 줄만 입력해봤습니다.  영상 폴더랑 음원만 던져줬는데,  알아서 액션씬을 골라내고  타격 타이밍에 박자까지 맞춰서 편집해주네요.  직접 하면 컷 고르고, 비트 잡고 꽤 귀찮은 작업인데   생각보다 https://t.co/LtseO4VXhB",
+ "duracao_s": 40.3,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.82,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 654,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

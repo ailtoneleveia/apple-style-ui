@@ -1,0 +1,46 @@
+{
+ "id": "DemWl0OtTd8",
+ "url": "https://www.instagram.com/p/DemWl0OtTd8/",
+ "autor": "edita.visuals",
+ "data": "2026-10-17",
+ "curtidas": 1692,
+ "comentarios": 3523,
+ "legenda_post": "Want your footage edited like this? Send me a DM! 🙂\n\nI didn’t touch a single keyframe.\nEvery movement, every transition, every sound - Claude Opus 5.5.",
+ "duracao_s": 51.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "dynamic_island",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.47
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 136,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

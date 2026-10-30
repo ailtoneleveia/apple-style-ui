@@ -1,0 +1,54 @@
+{
+ "id": "DUNe2dNEkRe",
+ "url": "https://www.instagram.com/p/DUNe2dNEkRe/",
+ "autor": "zenoxx.aeee",
+ "data": "2026-02-01",
+ "curtidas": 7232,
+ "comentarios": 7485,
+ "legenda_post": "Follow me and comment “Apple” for the free project file.\n.\n.\n.\n.\n.\n.\n.\n.\n#aftereffects #motiondesign #saas #apple #projectfile \n.\n.\n.\n.\n.\n[Apple,Aftereffects,Projectfile,MotionDesign,Art,Creativity]",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "APPLE",
+ "acabamento_pro": 0.73,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 144.7,
+  "onsets_per_s": 5.4
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 482,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

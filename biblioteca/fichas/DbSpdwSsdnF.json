@@ -1,0 +1,51 @@
+{
+ "id": "DbSpdwSsdnF",
+ "url": "https://www.instagram.com/p/DbSpdwSsdnF/",
+ "autor": "olafmotion",
+ "data": "2026-07-27",
+ "curtidas": 1356,
+ "comentarios": 41,
+ "legenda_post": "where are we going?",
+ "duracao_s": 11.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.62,
+ "pecas": [
+  "icone_app",
+  "botao_pilula",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 86.3,
+  "onsets_per_s": 3.75
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 933,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

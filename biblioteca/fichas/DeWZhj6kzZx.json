@@ -1,0 +1,41 @@
+{
+ "id": "DeWZhj6kzZx",
+ "url": "https://www.instagram.com/p/DeWZhj6kzZx/",
+ "autor": "charliehills",
+ "data": "2026-10-11",
+ "curtidas": 202,
+ "comentarios": 243,
+ "legenda_post": "Claude Motion turns any announcement into a finished video. No editor.\n\n1. Just ask in a normal chat. There's no slash command.\n\n2. Give it the format, the length and the exact words.\n\n3. Paste one paragraph of style direction at the end. That's what makes it look expensive instead of flat.\n\n4. Save",
+ "duracao_s": 52.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "MOTION",
+ "acabamento_pro": 1.64,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 109,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

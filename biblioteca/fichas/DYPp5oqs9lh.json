@@ -1,0 +1,49 @@
+{
+ "id": "DYPp5oqs9lh",
+ "url": "https://www.instagram.com/p/DYPp5oqs9lh/",
+ "autor": "madebyveduboi",
+ "data": "2026-05-12",
+ "curtidas": 878,
+ "comentarios": 56,
+ "legenda_post": "Day 1 of signing a SaaS client \n\nCooked ?\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 22.1,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 93.5,
+  "onsets_per_s": 3.45
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 994,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

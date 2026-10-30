@@ -1,0 +1,45 @@
+{
+ "id": "DLTxPpcIQkm",
+ "url": "https://www.instagram.com/p/DLTxPpcIQkm/",
+ "autor": "motion_lenser",
+ "data": "2025-06-25",
+ "curtidas": 3,
+ "comentarios": 49,
+ "legenda_post": "📩DM for your Motion Graphics Edit.\nApple UI ( Liquid Glass ) animation entirely done in After Effects from scratch without using any third party plugin.\n.\n.\nSpecial thanks to @vanemotion_channel for Tutorial 🫶.\n.\n.\nSoftware used : Adobe After Effects.\nHandles of Adobe : @adobecreativecloud @adobe \n.",
+ "duracao_s": 11.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.4,
+  "onsets_per_s": 4.62
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 353,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:appleui",
+  "busca:liquid glass animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

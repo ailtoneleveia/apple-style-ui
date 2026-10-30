@@ -1,0 +1,50 @@
+{
+ "id": "C2R0JL-t84X",
+ "url": "https://www.instagram.com/p/C2R0JL-t84X/",
+ "autor": "who.ishossein",
+ "data": "2024-01-19",
+ "curtidas": 274,
+ "comentarios": 91,
+ "legenda_post": "Financial application💸\n•\nUi Design by : @Who.ishossein\nUi Motion by : @a.kermanshahyan\n•\n•\n•\n#ui #ux #Design #uidesign #uiux #ui_motion #motion_design #Bank #finance #app #ui_mobile",
+ "duracao_s": 14.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 92.0,
+  "onsets_per_s": 5.04
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 497,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

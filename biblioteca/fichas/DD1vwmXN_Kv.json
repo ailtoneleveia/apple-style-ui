@@ -1,0 +1,47 @@
+{
+ "id": "DD1vwmXN_Kv",
+ "url": "https://www.instagram.com/p/DD1vwmXN_Kv/",
+ "autor": "creatoroly",
+ "data": "2024-12-21",
+ "curtidas": 1807,
+ "comentarios": 19,
+ "legenda_post": "short showreel before you join @editucation 💫",
+ "duracao_s": 12.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.53,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 76.6,
+  "onsets_per_s": 4.01
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 672,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

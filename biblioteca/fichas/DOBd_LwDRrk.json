@@ -1,0 +1,48 @@
+{
+ "id": "DOBd_LwDRrk",
+ "url": "https://www.instagram.com/p/DOBd_LwDRrk/",
+ "autor": "creatoroly",
+ "data": "2025-08-31",
+ "curtidas": 1031,
+ "comentarios": 23,
+ "legenda_post": "power of ae 🫣",
+ "duracao_s": 13.5,
+ "tipo": "outro",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.81,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.6,
+  "onsets_per_s": 3.05
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 749,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

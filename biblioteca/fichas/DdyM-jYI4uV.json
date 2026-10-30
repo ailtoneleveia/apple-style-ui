@@ -1,0 +1,46 @@
+{
+ "id": "DdyM-jYI4uV",
+ "url": "https://www.instagram.com/p/DdyM-jYI4uV/",
+ "autor": "yahistudios",
+ "data": "2026-09-27",
+ "curtidas": 2209,
+ "comentarios": 1595,
+ "legenda_post": "I didn't touch a single keyframe. 👀\nEvery movement, every transition, every sound — Claude Opus 5.5.\n\nStill think AI can't design? 👇\n\nConcept by @creatoroly\n\n#claudeai #AI #animation #motiondesign #futureofdesign",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.08
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 422,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:liquid glass animation",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

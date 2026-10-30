@@ -1,0 +1,39 @@
+{
+ "id": "2103237989065277590",
+ "url": "https://x.com/i/status/2103237989065277590",
+ "autor": "RetropunkAI",
+ "data": "2026-09-24",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 Medium 25 minutes: - Prompt in comments, I let Claude just rip in one go. - No questions asked. - HTML animation file and exported an MP4 - Artifact page is live with a countdown to the show.  Thanks for inspiration @Ror_Fly https://t.co/bCLggkspv8",
+ "duracao_s": 60.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "S",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "numero_grande",
+  "pilha_cartoes"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 291,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

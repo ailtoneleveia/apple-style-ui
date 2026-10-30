@@ -1,0 +1,45 @@
+{
+ "id": "DeuBZjNIk3J",
+ "url": "https://www.instagram.com/p/DeuBZjNIk3J/",
+ "autor": "mahmood_editorr",
+ "data": "2026-10-20",
+ "curtidas": 33,
+ "comentarios": 2,
+ "legenda_post": "UI Animations",
+ "duracao_s": 9.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.04,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 166.6,
+  "onsets_per_s": 3.51
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 23.98,
+  "kbps": 305,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

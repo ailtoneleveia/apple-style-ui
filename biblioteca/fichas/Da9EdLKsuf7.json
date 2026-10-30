@@ -1,0 +1,47 @@
+{
+ "id": "Da9EdLKsuf7",
+ "url": "https://www.instagram.com/p/Da9EdLKsuf7/",
+ "autor": "hinedfx",
+ "data": "2026-07-19",
+ "curtidas": 146,
+ "comentarios": 13,
+ "legenda_post": "Apple ui animation for Dropbox #applestyle #animation #motiondesign",
+ "duracao_s": 13.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.68,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "botao_pilula",
+  "emoji_3d"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 139.9,
+  "onsets_per_s": 5.1
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 182,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

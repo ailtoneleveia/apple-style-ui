@@ -1,0 +1,46 @@
+{
+ "id": "DdgwI8SCEuc",
+ "url": "https://www.instagram.com/p/DdgwI8SCEuc/",
+ "autor": "edita.visuals",
+ "data": "2026-09-20",
+ "curtidas": 15,
+ "comentarios": 3,
+ "legenda_post": "Looking to boost your brand’s video engagement? ⚡\nDM me — I help brands turn simple clips into scroll-stopping edits that connect and convert.\n.\n.\n.\n🚀 Want to practice this style? - Comment “RAW”\n.\n.\n.\nAnd I’ll share the raw clip so you can create your own version and level up your motion graphic sk",
+ "duracao_s": 16.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "RAW",
+ "acabamento_pro": 1.08,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.89
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 138,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

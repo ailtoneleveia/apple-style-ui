@@ -1,0 +1,53 @@
+{
+ "id": "DLI5gJxvUWM",
+ "url": "https://www.instagram.com/p/DLI5gJxvUWM/",
+ "autor": "dawoo.e",
+ "data": "2025-06-20",
+ "curtidas": 3287,
+ "comentarios": 48,
+ "legenda_post": "POV: you can recreate any apple edit \n#aftereffectsedit #aftereffect #motiondesign #animation",
+ "duracao_s": 9.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.68
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 603,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:dynamic island animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

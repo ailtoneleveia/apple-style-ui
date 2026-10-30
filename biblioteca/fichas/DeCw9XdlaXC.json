@@ -1,0 +1,40 @@
+{
+ "id": "DeCw9XdlaXC",
+ "url": "https://www.instagram.com/p/DeCw9XdlaXC/",
+ "autor": "charliehills",
+ "data": "2026-10-03",
+ "curtidas": 151,
+ "comentarios": 79,
+ "legenda_post": "11 free tools that let your Claude see, hear and watch.\n\nOut of the box, your Claude reads and writes. That's it. You give it the rest with these 11:\n\n1. Puppeteer gives it eyes\n\n2. yt-dlp gives it any video\n\n3. ffmpeg gives it a video editor\n\n4. mlx-whisper gives it ears\n\n5. sharp gives it a darkro",
+ "duracao_s": 25.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "SENSES",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 253,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

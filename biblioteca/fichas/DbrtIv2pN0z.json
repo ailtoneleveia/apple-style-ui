@@ -1,0 +1,46 @@
+{
+ "id": "DbrtIv2pN0z",
+ "url": "https://www.instagram.com/p/DbrtIv2pN0z/",
+ "autor": "abits.me",
+ "data": "2026-08-06",
+ "curtidas": 459,
+ "comentarios": 152,
+ "legenda_post": "Ngedit video udah keren, tapi teks masih kaku pake animasi bawaan? Sayang banget.\n​Selama 5 tahun lebih ngerjain 500+ video, gua sadar banget kalau efisiensi waktu itu kunci. Biar hasil editan lu sekelas pro tanpa harus buang waktu, lu butuh 40+ Presets Teks Apple Style ini. Tinggal drag & drop, tek",
+ "duracao_s": 46.3,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 0.97,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "busca",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.42
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 738,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

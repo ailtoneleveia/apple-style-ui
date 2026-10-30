@@ -1,0 +1,53 @@
+{
+ "id": "DUiY8_pE9c9",
+ "url": "https://www.instagram.com/p/DUiY8_pE9c9/",
+ "autor": "madebyveduboi",
+ "data": "2026-02-09",
+ "curtidas": 727,
+ "comentarios": 1136,
+ "legenda_post": "Comment “VIRAL” and get your hands on one of my viral SaaS edits 🔓\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 16.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "VIRAL",
+ "acabamento_pro": 1.05,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "emoji_3d",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 118.7,
+  "onsets_per_s": 5.75
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 423,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

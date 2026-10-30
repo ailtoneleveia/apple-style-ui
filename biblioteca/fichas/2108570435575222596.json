@@ -1,0 +1,38 @@
+{
+ "id": "2108570435575222596",
+ "url": "https://x.com/i/status/2108570435575222596",
+ "autor": "YuanXi901019",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5宣告视频即代码的时代到来 自从它来了之后，以前积累的视觉规范、积累的动效词典，现在看起来像小儿科似的    提示词：你是一位拥有顶级审美的前端设计和动效设计专家，围绕“Video as Code”这一理念，设计一段 15秒的快闪视频，视频内容用英文。 https://t.co/g2IJTrdHxX",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.3,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 134,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

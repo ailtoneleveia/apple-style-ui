@@ -1,0 +1,40 @@
+{
+ "id": "DcRD9-3DpIw",
+ "url": "https://www.instagram.com/p/DcRD9-3DpIw/",
+ "autor": "charliehills",
+ "data": "2026-08-20",
+ "curtidas": 162,
+ "comentarios": 295,
+ "legenda_post": "You can now turn Claude into your personal social media manager using three files, and never run a complicated agent pipeline again.\n\nI run 30 agents across 5 teams on X, LinkedIn and Instagram. None of that is what writes the posts.\n\n1. Your rules, and this is your CLAUDE.md. It's where you set how",
+ "duracao_s": 54.7,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "FILES",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 197,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

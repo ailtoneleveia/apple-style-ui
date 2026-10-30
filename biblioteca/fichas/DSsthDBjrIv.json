@@ -1,0 +1,56 @@
+{
+ "id": "DSsthDBjrIv",
+ "url": "https://www.instagram.com/p/DSsthDBjrIv/",
+ "autor": "md.nasifahsan",
+ "data": "2025-12-25",
+ "curtidas": 7122,
+ "comentarios": 1030,
+ "legenda_post": "Comment: “Art” or \"Edit\". Which one do you think?\n\nDay: 21 of creating apple ui style animation.",
+ "duracao_s": 17.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "imessage",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "busca",
+  "teclado",
+  "pilha_cartoes"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.45
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 563,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:md.nasifahsan",
+  "busca:apple ui style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "2108478302625071205",
+ "url": "https://x.com/i/status/2108478302625071205",
+ "autor": "UtsavChopra30",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "tried the opus 5.5 hype for @braglyio.   Just a simple prompt, a little knowledge about the product and rest all scraped by claude.   #motiondesign #claude #motionvideo #testimonialtool https://t.co/qo1MpRQ8D0",
+ "duracao_s": 48.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.3,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 3.71
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 236,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

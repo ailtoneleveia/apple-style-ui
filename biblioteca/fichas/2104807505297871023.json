@@ -1,0 +1,42 @@
+{
+ "id": "2104807505297871023",
+ "url": "https://x.com/i/status/2104807505297871023",
+ "autor": "ayumi_t820",
+ "data": "2026-09-29",
+ "curtidas": 11,
+ "comentarios": 3,
+ "legenda_post": "自分驚き屋やれます！Claude Opus 5.5にショート動画を作ってもらいました。Remotionを使用。キャライラストはmidjourneyで以前作ったものです。 ElevenLabsにつないでいたら「ナレーション作るオパスね」「SEも作っていいオパスか？」と自動で生成していれくれました。 https://t.co/XMkeJ7i1I2",
+ "duracao_s": 11.7,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 531,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

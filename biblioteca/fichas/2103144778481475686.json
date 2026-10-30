@@ -1,0 +1,40 @@
+{
+ "id": "2103144778481475686",
+ "url": "https://x.com/i/status/2103144778481475686",
+ "autor": "sab8a",
+ "data": "2026-09-24",
+ "curtidas": 303,
+ "comentarios": 27,
+ "legenda_post": "Opus 5.5 + OpenEdit  Prompt:   \"Cut a raw talking-head clip into a punchy, fun edit with subtitles, graphics and music”  ~ 1h 51 min ~ token usage $23 ~ fal usage $49  What do you think? https://t.co/vDe5whSYc2",
+ "duracao_s": 37.3,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "imessage",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 23,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 23.98,
+  "kbps": 483,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

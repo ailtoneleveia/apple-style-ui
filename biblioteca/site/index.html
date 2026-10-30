@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biblioteca do Estilo Apple</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: biblioteca de referências: cabeçalho com números, barra de filtros fixa, grade de fichas, glossário no fim */
+:root {
+  --bg: #f2f2f4; --card: #ffffff; --fg: #1b1b1f; --muted: #6b6b75; --line: #e1e1e6;
+  --accent: #0a6cdc; --accent-soft: #e5f0fd; --ok: #1f8a4c; --ok-soft: #e3f4ea; --chip: #ececf0;
+  --display: "Geist", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+  --body: "Geist", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e0e10; --card: #1a1a1e; --fg: #f1f1f4; --muted: #9a9aa6; --line: #2c2c33;
+  --accent: #4c9dff; --accent-soft: #14263d; --ok: #4cc27f; --ok-soft: #13291d; --chip: #26262c; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e0e10; --card: #1a1a1e; --fg: #f1f1f4; --muted: #9a9aa6; --line: #2c2c33;
+  --accent: #4c9dff; --accent-soft: #14263d; --ok: #4cc27f; --ok-soft: #13291d; --chip: #26262c; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 1240px; margin: 0 auto; }
+header { padding-block: 40px 20px; display: grid; gap: 12px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 48px); letter-spacing: -0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+h1 em { font-style: normal; color: var(--accent); }
+.lead { color: var(--muted); max-width: 68ch; margin: 0; }
+.nums { display: flex; flex-wrap: wrap; gap: 8px 24px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.nums b { color: var(--fg); font-weight: 500; font-variant-numeric: tabular-nums; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.row > span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-right: 4px; }
+button.chip { font: inherit; font-size: 13px; border: 1px solid transparent; background: var(--chip); color: var(--fg); border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+button.chip[aria-pressed="true"] { background: var(--accent); color: #fff; }
+button.chip:focus-visible, a:focus-visible, button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+select { font: inherit; font-size: 13px; background: var(--card); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 4px 8px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; padding-block: 18px; }
+.card { background: var(--card); border-radius: 14px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 8px 24px -16px rgba(0,0,0,.25); min-width: 0; }
+.thumb { background: #000; aspect-ratio: 360 / 160; width: 100%; max-width: 100%; display: block; object-fit: cover; }
+.thumb.sem { display: grid; place-items: center; color: #fff; font-family: var(--mono); font-size: 13px; text-decoration: none; }
+.info { padding: 12px 14px 14px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.top { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.autor { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.nota { font-family: var(--mono); font-size: 13px; font-variant-numeric: tabular-nums; color: var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 1px 7px; flex: none; }
+.meta { font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { font-size: 12px; background: var(--chip); border-radius: 6px; padding: 1px 7px; }
+.tag.tipo { background: transparent; border: 1px solid var(--line); }
+.acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.acoes a, .acoes button { font: inherit; font-size: 13px; font-weight: 500; text-decoration: none; border-radius: 8px; padding: 5px 10px; cursor: pointer; border: 1px solid var(--line); background: transparent; color: var(--fg); }
+.acoes button.primario { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+pre { font-family: var(--mono); font-size: 12px; white-space: pre-wrap; word-break: break-word; background: var(--bg); border-radius: 8px; padding: 10px; margin: 0; max-height: 320px; overflow: auto; }
+.vazio { color: var(--muted); padding: 40px 0; }
+section.glos { padding-block: 32px; border-top: 1px solid var(--line); display: grid; gap: 14px; }
+h2 { font-family: var(--display); font-size: 24px; letter-spacing: -0.02em; margin: 0; }
+.tabela { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-weight: 500; }
+td code { font-family: var(--mono); font-size: 12px; background: var(--chip); border-radius: 4px; padding: 0 4px; white-space: nowrap; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.barra { height: 6px; background: var(--accent); border-radius: 3px; opacity: .8; }
+.tag.nivel { font-weight: 500; border: 1px solid var(--line); background: transparent; }
+.tag.nivel.clonavel { color: var(--accent); border-color: var(--accent); }
+.prova { display: grid; gap: 2px; background: var(--ok-soft); border-radius: 8px; padding: 7px 10px; font-size: 13px; }
+.prova b { color: var(--ok); }
+.prova span { font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; }
+.prova a { color: var(--ok); font-weight: 500; }
+.contagem { font-size: 13px; color: var(--muted); }
+footer { color: var(--muted); font-size: 13px; max-width: 75ch; }
+@media (prefers-reduced-motion: no-preference) { .card { transition: transform .2s ease; } .card:hover { transform: translateY(-2px); } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Biblioteca do <em>Estilo Apple</em></h1>
+    <p class="lead">Vídeos de animação de interface e de edição no estilo Apple, achados no Instagram e no X e classificados pelo Jev. Só entra o que passou no filtro de estilo Apple. Provadas são as que já clonamos e medimos; clonáveis têm fonte em 1080, até 15 s, e são filme ou peça. Cada ficha diz quais peças o vídeo usa e como soa. Escolhe uma, clica em “Copiar para o Claude” e cola no Claude Code com o plugin Apple Style UI.</p>
+    <div class="nums" id="nums"></div>
+  </header>
+
+  <div class="bar">
+    <div class="row" id="f-nivel"><span>Nível</span></div>
+    <div class="row" id="f-unidade"><span>O que é</span></div>
+    <div class="row" id="f-tipo"><span>Tipo</span></div>
+    <div class="row" id="f-peca"><span>Peça</span></div>
+    <div class="row"><span>Ordem</span>
+      <select id="ordem" aria-label="Ordem das fichas">
+        <option value="nota">Fica melhor</option>
+        <option value="curtidas">Mais curtidas</option>
+        <option value="data">Mais recentes</option>
+      </select>
+      <button class="chip" id="so-isca" aria-pressed="false">Só os que dão material</button>
+      <span class="contagem" id="contagem" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <p class="vazio" id="vazio" hidden>Nenhuma ficha com esses filtros. Tire um filtro para ver mais.</p>
+
+  <section class="glos">
+    <h2>Glossário de peças</h2>
+    <p class="lead">O nome que se usa com o Claude, o que é, quantos vídeos da biblioteca usam e quais itens do catálogo do HyperFrames fazem isso (<code>npx hyperframes add &lt;nome&gt;</code>).</p>
+    <div class="tabela"><table><thead><tr><th>Peça</th><th>Termo para o Claude</th><th>Vídeos</th><th></th><th>No HyperFrames</th></tr></thead><tbody id="glos"></tbody></table></div>
+  </section>
+
+  <footer id="rodape"></footer>
+</div>
+
+<script src="dados.js"></script>
+<script>
+const D = window.BIBLIOTECA, E = D.entradas, G = D.glossario;
+const TIPOS = { ui_animacao: 'Animação de interface', pessoa_estilo_apple: 'Pessoa no estilo Apple', pessoa_legenda_comum: 'Pessoa com legenda comum', bastidor_editor: 'Bastidor no editor', tutorial_tela: 'Tutorial de tela', outro: 'Outro' };
+const ENTREGA = { arquivo_projeto: 'dá arquivo de projeto', sons_musica: 'dá sons/música', guia_prompt: 'dá guia/prompt', curso_servico: 'vende curso/serviço', presente: 'dá um presente' };
+const UNIDADE = { filme: 'Filme: copiar a edição', peca: 'Peça: copiar o componente', processo: 'Processo: bastidor ou tutorial' };
+const NIVEL = { provada: 'Provada', clonavel: 'Clonável', referencia: 'Referência' };
+const st = { nivel: new Set(), unidade: new Set(), tipo: new Set(), peca: new Set(), ordem: 'nota', isca: false };
+const virg = (x, c = 3) => x.toFixed(c).replace('.', ',');
+const fmt = n => n == null ? '–' : n >= 1e6 ? (n / 1e6).toFixed(1).replace('.', ',') + ' mi' : n >= 1e3 ? Math.round(n / 1e3) + ' mil' : String(n);
+const el = (t, a = {}, ...k) => { const e = document.createElement(t); for (const [x, v] of Object.entries(a)) x === 'text' ? e.textContent = v : e.setAttribute(x, v); e.append(...k); return e; };
+
+document.getElementById('nums').append(
+  el('span', {}, el('b', { text: String(E.length) }), ' referências de ', el('b', { text: String(D.total) }), ' classificados'),
+  ...Object.entries({ provada: 'provadas', clonavel: 'clonáveis', referencia: 'de referência' }).map(([k, n]) => el('span', {}, el('b', { text: String(E.filter(e => e.nivel === k).length) }), ' ' + n)),
+  el('span', {}, el('b', { text: String(new Set(E.map(e => e.autor)).size) }), ' perfis'),
+  el('span', {}, el('b', { text: String(E.filter(e => e.tipo === 'ui_animacao').length) }), ' de interface'),
+  el('span', {}, el('b', { text: String(E.filter(e => e.tipo === 'pessoa_estilo_apple').length) }), ' com pessoa no estilo'),
+  el('span', {}, 'classificado em ', el('b', { text: D.gerado })));
+
+function chips(id, mapa, chave) {
+  const box = document.getElementById(id);
+  for (const [k, nome] of mapa) {
+    const b = el('button', { class: 'chip', 'aria-pressed': 'false', text: nome });
+    b.onclick = () => { st[chave].has(k) ? st[chave].delete(k) : st[chave].add(k); b.setAttribute('aria-pressed', st[chave].has(k)); render(); };
+    box.append(b);
+  }
+}
+chips('f-nivel', Object.entries(NIVEL).filter(([k]) => E.some(e => e.nivel === k)), 'nivel');
+chips('f-unidade', Object.entries(UNIDADE).filter(([k]) => E.some(e => e.unidade === k)), 'unidade');
+chips('f-tipo', Object.entries(TIPOS).filter(([k]) => E.some(e => e.tipo === k)), 'tipo');
+chips('f-peca', G.filter(g => g.n > 0).map(g => [g.id, g.pt_curto]), 'peca');
+document.getElementById('ordem').onchange = e => { st.ordem = e.target.value; render(); };
+const bIsca = document.getElementById('so-isca');
+bIsca.onclick = () => { st.isca = !st.isca; bIsca.setAttribute('aria-pressed', st.isca); render(); };
+
+const ROTULO = 'Copiar para o Claude';
+// o texto que vai para o Claude Code com o plugin: muda com o nível da ficha (provada, clonável ou referência)
+function paraClaude(e) {
+  if (e.nivel === 'provada')
+    return `/apple-style-ui:video igual ${e.url}\nJá existe molde para esta referência${e.prova ? ` (${e.prova.clone})` : ''}: é só trocar a marca, o texto e a cor.`;
+  if (e.nivel === 'clonavel')
+    return `/apple-style-ui:video clonar ${e.url}\nRoda o ciclo de clonagem com nota (distância e correlação de movimento) até o clone ficar igual à referência.`;
+  return `/apple-style-ui:video Faça este vídeo usando o estilo calibrado do Apple Style UI (estilo/estilo.js: molas, obturador e motion blur), não molas inventadas.\n\n${e.prompt}`;
+}
+
+function copiar(txt, botao) {
+  const ok = () => { botao.textContent = 'Copiado'; setTimeout(() => botao.textContent = ROTULO, 1500); };
+  navigator.clipboard?.writeText(txt).then(ok, () => { const pre = botao.closest('.info').querySelector('pre'); pre.hidden = false; const r = document.createRange(); r.selectNodeContents(pre); getSelection().removeAllRanges(); getSelection().addRange(r); });
+}
+
+function ficha(e) {
+  const nomes = Object.fromEntries(G.map(g => [g.id, g.pt_curto]));
+  const txt = paraClaude(e);
+  const pre = el('pre', { hidden: '' }, txt);
+  const bCopiar = el('button', { class: 'primario', text: ROTULO });
+  const bComo = el('button', { text: 'Ver o texto', 'aria-expanded': 'false' });
+  bComo.onclick = () => { const ab = pre.hidden; pre.hidden = !ab; bComo.setAttribute('aria-expanded', ab); bComo.textContent = ab ? 'Fechar' : 'Ver o texto'; };
+  bCopiar.onclick = () => copiar(txt, bCopiar);
+  const meta = [e.data, `${e.duracao_s.toFixed(0)} s`, e.fonte, `♥ ${fmt(e.curtidas)}`, e.x ? 'X' : ''];
+  if (e.som && e.som.tempo_bpm) meta.push(`${Math.round(e.som.tempo_bpm)} BPM`);
+  if (e.som && e.som.onsets_per_s) meta.push(`${e.som.onsets_per_s.toFixed(1)} sons/s`);
+  return el('article', { class: 'card' },
+    e.thumb ? el('img', { class: 'thumb', src: e.thumb, alt: `Quatro quadros do reel de ${e.autor}`, loading: 'lazy' })
+      : el('a', { class: 'thumb sem', href: e.url, target: '_blank', rel: 'noopener', text: `@${e.autor}` }),
+    el('div', { class: 'info' },
+      el('div', { class: 'top' }, el('span', { class: 'autor', text: '@' + e.autor }), el('span', { class: 'nota', title: 'Nota de 0 a 100: acabamento, cara de Apple e curtidas', text: String(e.nota) })),
+      el('div', { class: 'meta' }, ...meta.filter(Boolean).map(t => el('span', { text: t }))),
+      ...(e.prova ? [el('div', { class: 'prova' }, el('b', { text: `Provada: clone do ${e.prova.clone}` }),
+        el('span', { text: `distância ${virg(e.prova.distancia)} · correlação ${virg(e.prova.correlacao)}` }),
+        ...(e.prova.lado_a_lado ? [el('a', { href: e.prova.lado_a_lado, target: '_blank', rel: 'noopener', text: 'Ver o lado a lado' })] : []))] : []),
+      el('div', { class: 'tags' }, ...(e.nivel !== 'provada' ? [el('span', { class: 'tag nivel ' + e.nivel, text: NIVEL[e.nivel] })] : []),
+        el('span', { class: 'tag tipo', text: (UNIDADE[e.unidade] || '').split(':')[0] || TIPOS[e.tipo] }),
+        el('span', { class: 'tag tipo', text: TIPOS[e.tipo] || e.tipo }),
+        ...(ENTREGA[e.entrega] ? [el('span', { class: 'tag tipo', text: ENTREGA[e.entrega] + (e.palavra ? ` (comenta ${e.palavra})` : '') })] : []),
+        ...e.pecas.map(p => el('span', { class: 'tag', text: nomes[p] || p }))),
+      el('div', { class: 'acoes' }, bCopiar, el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'Ver original' }), bComo),
+      pre));
+}
+
+function render() {
+  let v = E.filter(e => (!st.nivel.size || st.nivel.has(e.nivel)) && (!st.unidade.size || st.unidade.has(e.unidade)) && (!st.tipo.size || st.tipo.has(e.tipo)) && [...st.peca].every(p => e.pecas.includes(p)) && (!st.isca || ENTREGA[e.entrega]));
+  if (st.ordem === 'curtidas') v = [...v].sort((a, b) => (b.curtidas || 0) - (a.curtidas || 0));
+  if (st.ordem === 'data') v = [...v].sort((a, b) => (b.data || '').localeCompare(a.data || ''));
+  const g = document.getElementById('grid');
+  g.replaceChildren(...v.map(ficha));
+  document.getElementById('vazio').hidden = v.length > 0;
+  document.getElementById('contagem').textContent = `${v.length} de ${E.length} fichas`;
+}
+render();
+
+const max = Math.max(...G.map(g => g.n));
+document.getElementById('glos').append(...G.map(g => el('tr', {},
+  el('td', { text: g.pt }), el('td', {}, el('code', { text: g.en })), el('td', { class: 'n', text: String(g.n) }),
+  el('td', { style: 'width:120px' }, el('div', { class: 'barra', style: `width:${Math.round(100 * g.n / max)}%` })),
+  el('td', {}, ...g.hf.flatMap((n, i) => [i ? ' ' : '', el('code', { text: n })])))));
+
+document.getElementById('rodape').textContent = D.rodape;
+</script>

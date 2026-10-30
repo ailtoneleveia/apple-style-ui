@@ -1,0 +1,44 @@
+{
+ "id": "2108505251036774875",
+ "url": "https://x.com/i/status/2108505251036774875",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 2 models 🎲  \"Create an interactive 3D gummy dice experience in the browser\"  Claude Opus 5.5 · ~$1.71 · 16 min GPT-6 Astra · ~$1.65 · 9 min (~ = API-price estimate)  Which one would you roll? 👇 https://t.co/2X09Jnmf6b https://t.co/OOLjjXuZsB",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1456,
+  "fps": 30.0,
+  "kbps": 873,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

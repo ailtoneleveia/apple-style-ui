@@ -1,0 +1,41 @@
+{
+ "id": "2109310203631906912",
+ "url": "https://x.com/i/status/2109310203631906912",
+ "autor": "dinocorreia09",
+ "data": "2026-10-11",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "I had to take advantage of Opus 5.5 and try motion animation for the side menu.  Prompt used: \"Add hover animations to the side navigation icons, on both active and inactive items. Each icon should get its own short animation that fits its meaning, plays once, and ends in the https://t.co/URb6TWE1xE",
+ "duracao_s": 13.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.76,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 390,
+  "fps": 40.1,
+  "kbps": 49,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

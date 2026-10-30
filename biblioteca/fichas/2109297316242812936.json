@@ -1,0 +1,36 @@
+{
+ "id": "2109297316242812936",
+ "url": "https://x.com/i/status/2109297316242812936",
+ "autor": "MyWestLord",
+ "data": "2026-10-11",
+ "curtidas": 11,
+ "comentarios": 2,
+ "legenda_post": "Claude made itself a new mascot out of spite.  It named him Gregg.  Opus 5.5 couldn't install a 3D engine. No video model. No assets. No downloads. Just a 15-minute deadline.  So it wrote its own renderer from scratch and drew all 1,320 frames in code.  Then composed the music https://t.co/kLOSkL552",
+ "duracao_s": 19.4,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "sons_musica",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 59.9,
+  "kbps": 412,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

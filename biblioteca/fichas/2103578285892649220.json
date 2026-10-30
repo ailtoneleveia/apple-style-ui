@@ -1,0 +1,42 @@
+{
+ "id": "2103578285892649220",
+ "url": "https://x.com/i/status/2103578285892649220",
+ "autor": "madebyjmayala",
+ "data": "2026-09-25",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 is actually goated at motion graphics.  This is one prompt on extra 'make a dynamic 15-second motion graphics video promo about gene spectra, use assets from the current live site where relevant. go all out.'  Mind you it couldn't pull any of the assets but it's https://t.co/rRVtOGGCTU",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [
+  "dynamic_island",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 175,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

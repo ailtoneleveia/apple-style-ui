@@ -1,0 +1,43 @@
+{
+ "id": "DZH0vmWvzYw",
+ "url": "https://www.instagram.com/p/DZH0vmWvzYw/",
+ "autor": "dopemotionzone",
+ "data": "2026-06-03",
+ "curtidas": 426,
+ "comentarios": 17,
+ "legenda_post": "Storytelling edit on a conversation about identity, career changes, and finding the courage to start over.\nOne idea that stood out: you're not stuck doing something forever just because you chose it at 18. The skills that make you successful in one area can often be applied somewhere completely diff",
+ "duracao_s": 40.3,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.66
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 790,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "2103774864742154698",
+ "url": "https://x.com/i/status/2103774864742154698",
+ "autor": "RatheeJaisal",
+ "data": "2026-09-26",
+ "curtidas": 29,
+ "comentarios": 9,
+ "legenda_post": "BRO I just one shotted this for https://t.co/P5I718Mixc with Opus 5.5 WTF 😳😳😳   my exact prompt: \"build me a beautiful launch video 20 seconds or under that shows all our key features, make it fast paced and fit our brand\" https://t.co/G3mcVGzVUs",
+ "duracao_s": 20.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.67,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 284,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

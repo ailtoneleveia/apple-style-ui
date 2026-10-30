@@ -1,0 +1,46 @@
+{
+ "id": "DZ48uhit6l6",
+ "url": "https://www.instagram.com/p/DZ48uhit6l6/",
+ "autor": "madebyadito",
+ "data": "2026-06-22",
+ "curtidas": 53,
+ "comentarios": 156,
+ "legenda_post": "Follow and Comment \"Ai\" for the project file 🔥\n\nDM @madebyadito for work\n\n[SaaS explainer, motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 13.5,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "AI",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "imessage",
+  "busca",
+  "print_site"
+ ],
+ "nota": 27,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 82.1,
+  "onsets_per_s": 4.25
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 541,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

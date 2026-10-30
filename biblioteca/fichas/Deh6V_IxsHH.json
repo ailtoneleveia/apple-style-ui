@@ -1,0 +1,45 @@
+{
+ "id": "Deh6V_IxsHH",
+ "url": "https://www.instagram.com/p/Deh6V_IxsHH/",
+ "autor": "viashaan",
+ "data": "2026-10-15",
+ "curtidas": 45,
+ "comentarios": 39,
+ "legenda_post": "comment ANIMATE and I’ll send it to you\n\n10 animation styles you can build with Claude. Each one comes with the colours, fonts, how it moves and the exact prompt to paste in.\n\n1. Glowing 2D motion\n2. Glassmorphism\n3. Apple style\n4. CRT / retro-futurism\n5. Oscilloscope art\n6. Editorial layout\n7. Edit",
+ "duracao_s": 21.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "ANIMATE",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.39
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 361,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

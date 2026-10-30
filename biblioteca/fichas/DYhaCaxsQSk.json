@@ -1,0 +1,43 @@
+{
+ "id": "DYhaCaxsQSk",
+ "url": "https://www.instagram.com/p/DYhaCaxsQSk/",
+ "autor": "mahdiedits_",
+ "data": "2026-05-19",
+ "curtidas": 816,
+ "comentarios": 2032,
+ "legenda_post": "Comment “Sound” and I’ll send you the sound effects",
+ "duracao_s": 15.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "sons_musica",
+ "palavra": "SOUND",
+ "acabamento_pro": 1.05,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": 132.8,
+  "onsets_per_s": 2.3
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 907,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

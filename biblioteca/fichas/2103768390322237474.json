@@ -1,0 +1,38 @@
+{
+ "id": "2103768390322237474",
+ "url": "https://x.com/i/status/2103768390322237474",
+ "autor": "robvjourney",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "OPUS 5.5 IS COOKING MOTION GRAPHICS.  This was the prompt:  \"Can you make a 15-second motion graphic video of https://t.co/4AZZ7AlJvi? Go ALL OUT and make the most badass video you possibly can use everything you've got.\"  @nohandslabs https://t.co/i8yRcrcsKe",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 345,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,42 @@
+{
+ "id": "2108625335122026542",
+ "url": "https://x.com/i/status/2108625335122026542",
+ "autor": "ivanainai",
+ "data": "2026-10-09",
+ "curtidas": 164,
+ "comentarios": 20,
+ "legenda_post": "Sorry but Opus 5.5 sucks here.  Both got the exact same prompt to build Newton’s cradle.  Opus did a better job advertising Astra 6 here than building the cradle 🤷‍♀️ https://t.co/V8yOyYfyC4",
+ "duracao_s": 24.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.29,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 131,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

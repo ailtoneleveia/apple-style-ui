@@ -1,0 +1,42 @@
+{
+ "id": "DZIt-wNhHvL",
+ "url": "https://www.instagram.com/p/DZIt-wNhHvL/",
+ "autor": "sharvarion",
+ "data": "2026-06-03",
+ "curtidas": 1428,
+ "comentarios": 50,
+ "legenda_post": "Щоб стати кращим, треба вчитись у кращих. Тому сьогоді я спробував відтворити анімацію неймовірного @creatoroly за допомогою DaVinci Resolve.\n\nЧекаю ваші думки в коментарях👇\n***\nIf you want to improve, learn from those who inspire you.\n\nToday, I challenged myself to recreate an animation by the amaz",
+ "duracao_s": 13.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "S",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "busca"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.3,
+  "onsets_per_s": 5.4
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 375,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2108300297487413491",
+ "url": "https://x.com/i/status/2108300297487413491",
+ "autor": "pascal_gha83332",
+ "data": "2026-10-08",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "I recreated this motion graphic using Opus 5.5 together with DuskCut to show that connecting Opus to a real video editor can be beneficial. This was the prompt:  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your https://t.co/kkDZ5j1",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.71,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 518,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2103742861971726495",
+ "url": "https://x.com/i/status/2103742861971726495",
+ "autor": "lukasersil",
+ "data": "2026-09-26",
+ "curtidas": 73,
+ "comentarios": 7,
+ "legenda_post": "Ten @claudeai mě nepřestává udivovat.🤯  Nebyl použit žádný generátor obrázků/videí/zvuků nebo hudby.  Celé toto je kód vytvořený v Opus 5.5 (max effort)! 😍  Prompt:  \"Create a bold, dynamic 15-second motion graphics showreel that feels like the ultimate portfolio piece of an https://t.co/SHz62NPcYK",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 575,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

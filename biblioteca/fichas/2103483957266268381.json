@@ -1,0 +1,47 @@
+{
+ "id": "2103483957266268381",
+ "url": "https://x.com/i/status/2103483957266268381",
+ "autor": "verbove",
+ "data": "2026-09-25",
+ "curtidas": 239,
+ "comentarios": 9,
+ "legenda_post": "Opus 5.5 is absolutely cracked at motion design  this entire video is code  0 After Effects 0 manual animation  I showed it one viral motion post and said:  “explain MakerMap, but make it insane”  it came back with 20 seconds of one shape morphing through the entire product: https://t.co/i9Plc1yXnp",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.0,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 119.8,
+  "onsets_per_s": 6.93
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 60.0,
+  "kbps": 103,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

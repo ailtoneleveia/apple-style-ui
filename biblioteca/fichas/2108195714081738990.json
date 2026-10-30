@@ -1,0 +1,40 @@
+{
+ "id": "2108195714081738990",
+ "url": "https://x.com/i/status/2108195714081738990",
+ "autor": "buzzybats",
+ "data": "2026-10-08",
+ "curtidas": 18,
+ "comentarios": 4,
+ "legenda_post": "One prompt to Claude Opus 5.5. This is what came out.  Night city, rain, neon, drifting at 200+ km/h — all @threejs, running in a browser tab. https://t.co/hEK3VxoAax",
+ "duracao_s": 39.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 796,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

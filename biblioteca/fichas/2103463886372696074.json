@@ -1,0 +1,36 @@
+{
+ "id": "2103463886372696074",
+ "url": "https://x.com/i/status/2103463886372696074",
+ "autor": "sudo_kiran",
+ "data": "2026-09-25",
+ "curtidas": 82,
+ "comentarios": 2,
+ "legenda_post": "No storyboard. No detailed instructions. Just one prompt to Claude Opus 5.5: “Go all out.” The result is a 15-second motion design showreel. 🔥 https://t.co/9Bk9igvn6S",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 447,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

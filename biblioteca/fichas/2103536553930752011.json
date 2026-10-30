@@ -1,0 +1,44 @@
+{
+ "id": "2103536553930752011",
+ "url": "https://x.com/i/status/2103536553930752011",
+ "autor": "l3d1c",
+ "data": "2026-09-25",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 made this ad for @pictwinai from 2 prompts.  It dug through the codebase, recreated the actual app UI, animated it and rendered the video. Zero edits from me.  Prompt 1: \"create a motion design prompt for an ad for our site\" Prompt 2: \"now apply it\" https://t.co/ogC1K3ORs5",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.88,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 169,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

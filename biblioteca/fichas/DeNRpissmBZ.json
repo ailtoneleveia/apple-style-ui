@@ -1,0 +1,50 @@
+{
+ "id": "DeNRpissmBZ",
+ "url": "https://www.instagram.com/p/DeNRpissmBZ/",
+ "autor": "motionloved",
+ "data": "2026-10-07",
+ "curtidas": 74,
+ "comentarios": 74,
+ "legenda_post": "Want a tutorial? 🫂 Coment 🎯 and I will post a video about your company . \n#motiongraphics #motion #motiondesign #claude #aftereffects",
+ "duracao_s": 11.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 135.8,
+  "onsets_per_s": 3.1
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 622,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

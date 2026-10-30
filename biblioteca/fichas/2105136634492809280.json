@@ -1,0 +1,39 @@
+{
+ "id": "2105136634492809280",
+ "url": "https://x.com/i/status/2105136634492809280",
+ "autor": "ryoheiikeda",
+ "data": "2026-09-30",
+ "curtidas": 9,
+ "comentarios": 0,
+ "legenda_post": "（すでにブームから乗り遅れてしまった感もありますが、）claude Opus5.5の動画作成能力が桁違いに進化しててすごい…！入れたのは、以下の超シンプルプロンプト。 https://t.co/MGqHtwMsQC",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.82,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 206,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

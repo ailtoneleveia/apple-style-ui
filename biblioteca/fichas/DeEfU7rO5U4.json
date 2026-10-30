@@ -1,0 +1,51 @@
+{
+ "id": "DeEfU7rO5U4",
+ "url": "https://www.instagram.com/p/DeEfU7rO5U4/",
+ "autor": "hybridplugins",
+ "data": "2026-10-04",
+ "curtidas": 941,
+ "comentarios": 3878,
+ "legenda_post": "Comment “+” Apple style plugin for AE\nUi\nSaas\nLiquid glass\nAi\n#aftereffects #motiondesign #plugin",
+ "duracao_s": 20.9,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.32
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1136,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:liquid glass animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

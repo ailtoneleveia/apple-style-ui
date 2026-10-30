@@ -1,0 +1,40 @@
+{
+ "id": "2103514073476334026",
+ "url": "https://x.com/i/status/2103514073476334026",
+ "autor": "charliie",
+ "data": "2026-09-25",
+ "curtidas": 40,
+ "comentarios": 12,
+ "legenda_post": "Opus 5.5 is crazy good at motion design  it cooked up this lil reel for https://t.co/uiSRef0kBg with basically zero direction  prompt was something like \"make a cool instagram ad for liinks\" https://t.co/WcSjKWFykd",
+ "duracao_s": 17.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.87,
+ "pecas": [
+  "iphone",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": null,
+ "qualidade": {
+  "largura": 540,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 105,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

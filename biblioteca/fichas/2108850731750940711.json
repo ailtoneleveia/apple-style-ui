@@ -1,0 +1,42 @@
+{
+ "id": "2108850731750940711",
+ "url": "https://x.com/i/status/2108850731750940711",
+ "autor": "vib3coded",
+ "data": "2026-10-10",
+ "curtidas": 123,
+ "comentarios": 19,
+ "legenda_post": "Astra, what did you do to this marlin? 😭🐟  ChatGPT-6 Astra vs Claude Opus 5.5 - same prompt, two very different marlins  Astra is back with its signature style: absolutely unhinged, instantly recognizable. Opus made a plush marlin. Astra glued two eyeballs to a torpedo and gave https://t.co/BmxjOxYq",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 218,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

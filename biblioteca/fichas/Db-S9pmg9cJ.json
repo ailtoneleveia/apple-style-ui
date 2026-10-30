@@ -1,0 +1,47 @@
+{
+ "id": "Db-S9pmg9cJ",
+ "url": "https://www.instagram.com/p/Db-S9pmg9cJ/",
+ "autor": "ahmed_fx3000",
+ "data": "2026-08-13",
+ "curtidas": 3,
+ "comentarios": 1230,
+ "legenda_post": "Comment ‘ SOUND ‘ and ill send you the sound effects pack - a small investment to make your projects harder 🙌 \n#motiondesign #saas #animation",
+ "duracao_s": 22.8,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "sons_musica",
+ "palavra": "",
+ "acabamento_pro": 1.13,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.04
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 741,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

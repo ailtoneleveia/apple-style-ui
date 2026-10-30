@@ -1,0 +1,36 @@
+{
+ "id": "2104474025674326065",
+ "url": "https://x.com/i/status/2104474025674326065",
+ "autor": "SundryMill",
+ "data": "2026-09-28",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Testing the capabilities of Opus 5.5 and just one-shotted this animation.  Prompt below https://t.co/1MhpKiOGsl",
+ "duracao_s": 12.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 29.83,
+  "kbps": 118,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

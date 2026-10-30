@@ -1,0 +1,45 @@
+{
+ "id": "2103816261339910269",
+ "url": "https://x.com/i/status/2103816261339910269",
+ "autor": "gouthamjay8",
+ "data": "2026-09-26",
+ "curtidas": 85,
+ "comentarios": 15,
+ "legenda_post": "WTF! omg i had to test it myself  i never knew opus 5.5 was this good with video  it saw my website's mascot &amp; brought it in. i didn't even ask.  the prompt below: https://t.co/o8Asx48oWc",
+ "duracao_s": 55.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.96,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.64
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 283,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

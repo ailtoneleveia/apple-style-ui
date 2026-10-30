@@ -1,0 +1,40 @@
+{
+ "id": "2108511286795640926",
+ "url": "https://x.com/i/status/2108511286795640926",
+ "autor": "Thusatharan",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 2,
+ "legenda_post": "Same prompt, 4 Claude models: build a 3D elephant in one HTML file with Three.js. Fully procedural, no assets.  Build time · tokens Fable 5.1: 21m 21s · 61.9k Opus 5.5: 6m 38s · 72.7k Haiku 5.5: 1m 59s · 57.4k Sonnet 5.5: 29s · 35.6k  Which elephant wins? 👇 https://t.co/iHeCSrGtZl",
+ "duracao_s": 43.9,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.48,
+ "pecas": [
+  "cursor",
+  "janela",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 682,
+  "altura": 360,
+  "fps": 55.75,
+  "kbps": 221,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

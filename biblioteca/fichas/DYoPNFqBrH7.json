@@ -1,0 +1,47 @@
+{
+ "id": "DYoPNFqBrH7",
+ "url": "https://www.instagram.com/p/DYoPNFqBrH7/",
+ "autor": "mp4.academy",
+ "data": "2026-05-22",
+ "curtidas": 1834,
+ "comentarios": 18,
+ "legenda_post": "Most people think editing is just cutting clips.\nBut the best editors? They build emotion.\n\nApple launch videos aren’t made by one person dragging clips on a timeline.\nEvery animation, VFX shot, sound layer, and visual is crafted separately then assembled into one seamless experience.\n\nThat’s why gr",
+ "duracao_s": 41.1,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.01,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 114.9,
+  "onsets_per_s": 5.0
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1137,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

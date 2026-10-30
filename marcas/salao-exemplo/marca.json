@@ -1,0 +1,9 @@
+{
+  "cor_principal": "#E0457B",
+  "cor_destaque": "#9B51E0",
+  "fonte": "inter",
+  "nome": "salao.exemplo",
+  "creditos": {
+    "fonte Inter": "Copyright 2016 The Inter Project Authors (github.com/rsms/inter), SIL Open Font License 1.1. Arquivo no molde: moldes/satellite/molde/assets/fonts/Inter.ttf"
+  }
+}

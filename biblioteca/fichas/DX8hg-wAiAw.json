@@ -1,0 +1,46 @@
+{
+ "id": "DX8hg-wAiAw",
+ "url": "https://www.instagram.com/p/DX8hg-wAiAw/",
+ "autor": "dragerstudio",
+ "data": "2026-05-05",
+ "curtidas": 3,
+ "comentarios": 412,
+ "legenda_post": "Comment 'Prjct' to get the project file for free. \n. \n. \n@hrwl.studio",
+ "duracao_s": 6.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "PRJCT",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "imessage",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.4
+ },
+ "qualidade": {
+  "largura": 1904,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 128,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

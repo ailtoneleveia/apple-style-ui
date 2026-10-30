@@ -1,0 +1,43 @@
+{
+ "id": "2104204905523126560",
+ "url": "https://x.com/i/status/2104204905523126560",
+ "autor": "nansdeyz_",
+ "data": "2026-09-27",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude casse la baraque... Je lui ai demandé de presenter opus 5.5 en motion design de 15 sec https://t.co/dWnBYkM4FJ",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.42,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.8,
+  "onsets_per_s": 2.78
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 216,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

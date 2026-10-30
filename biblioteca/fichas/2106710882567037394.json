@@ -1,0 +1,36 @@
+{
+ "id": "2106710882567037394",
+ "url": "https://x.com/i/status/2106710882567037394",
+ "autor": "HeyAbhishek",
+ "data": "2026-10-04",
+ "curtidas": 296,
+ "comentarios": 24,
+ "legenda_post": "AI video is getting ridiculously cinematic.  I made this insane train journey with just Opus 5.5 and Seedance 2.5.  Full prompt below 👇 https://t.co/hOmNvf7VEi",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 513,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

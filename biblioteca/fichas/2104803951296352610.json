@@ -1,0 +1,38 @@
+{
+ "id": "2104803951296352610",
+ "url": "https://x.com/i/status/2104803951296352610",
+ "autor": "fabinrasheed",
+ "data": "2026-09-29",
+ "curtidas": 30,
+ "comentarios": 8,
+ "legenda_post": "Oh Wow! I asked Claude Opus 5.5 to create a simulation of the evolution of human psychology over a lifetime with the resolution of human trauma and desires until full resolution (ego-death) based on my wave-model of psyche-environment interaction paper. And without explicitly https://t.co/W0OW9DkBiZ",
+ "duracao_s": 19.9,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 414,
+  "altura": 360,
+  "fps": 47.58,
+  "kbps": 54,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2104524606841217044",
+ "url": "https://x.com/i/status/2104524606841217044",
+ "autor": "s7trimm",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "I gave Claude Opus 5.5 one prompt and got back a 30-second motion graphics film for Industrial Hub 🫪 https://t.co/WUNnzKEl7d",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 225,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

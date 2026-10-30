@@ -1,0 +1,46 @@
+{
+ "id": "DXfR_HNkVAz",
+ "url": "https://www.instagram.com/p/DXfR_HNkVAz/",
+ "autor": "adrimotions",
+ "data": "2026-04-23",
+ "curtidas": 3,
+ "comentarios": 8,
+ "legenda_post": "making cool stuff and clean visuals for @keanu.visuals and the team⚡️\n\n#videoediting #motiondesign #videoeditor",
+ "duracao_s": 18.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.83,
+ "pecas": [
+  "pessoa_no_cartao",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 5.4
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 1483,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

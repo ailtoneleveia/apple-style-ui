@@ -1,0 +1,52 @@
+{
+ "id": "DbaPCYAKXBI",
+ "url": "https://www.instagram.com/p/DbaPCYAKXBI/",
+ "autor": "smn.render",
+ "data": "2026-07-30",
+ "curtidas": 55,
+ "comentarios": 0,
+ "legenda_post": "A personal Apple-inspired animation concept exploring morph transitions and minimal motion design.\n\nConcept only.\n\n#motiondesign #aftereffects #ui #concept #animation",
+ "duracao_s": 5.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "icone_app",
+  "botao_pilula"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.21
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 197,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

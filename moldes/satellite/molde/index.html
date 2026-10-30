@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="en" data-resolution="square"
+  data-composition-variables='[
+    {"id": "rotulo_icone", "type": "string", "label": "Rótulo do ícone", "default": "Satellite"},
+    {"id": "cartao_titulo", "type": "string", "label": "Título do cartão", "default": "ISS Flyover"},
+    {"id": "cartao_tempo", "type": "string", "label": "Tempo do cartão", "default": "in 14 min"},
+    {"id": "tile_rotulo", "type": "string", "label": "Rótulo do tile", "default": "Connected"},
+    {"id": "titulo", "type": "string", "label": "Título da lista", "default": "What’s the emergency?"},
+    {"id": "item1", "type": "string", "label": "Item 1 (topo, o que o cursor clica)", "default": "Vehicle Issue"},
+    {"id": "icone1", "type": "enum", "label": "Ícone do item 1", "default": "car", "options": [{"value": "car", "label": "Carro"}, {"value": "plus", "label": "Cruz"}, {"value": "shield", "label": "Escudo"}, {"value": "star", "label": "Asterisco"}, {"value": "flame", "label": "Chama"}, {"value": "heart", "label": "Coração"}, {"value": "warning", "label": "Alerta"}, {"value": "lightning", "label": "Raio"}, {"value": "house", "label": "Casa"}, {"value": "phone", "label": "Telefone"}, {"value": "chat", "label": "Balão de conversa"}, {"value": "user", "label": "Pessoa"}, {"value": "🔥", "label": "Emoji 🔥"}, {"value": "🚗", "label": "Emoji 🚗"}, {"value": "🚑", "label": "Emoji 🚑"}, {"value": "🩹", "label": "Emoji 🩹"}, {"value": "🆘", "label": "Emoji 🆘"}, {"value": "📍", "label": "Emoji 📍"}, {"value": "⚠️", "label": "Emoji ⚠️"}, {"value": "💬", "label": "Emoji 💬"}]},
+    {"id": "item2", "type": "string", "label": "Item 2", "default": "Sickness or Indjury"},
+    {"id": "icone2", "type": "enum", "label": "Ícone do item 2", "default": "plus", "options": [{"value": "car", "label": "Carro"}, {"value": "plus", "label": "Cruz"}, {"value": "shield", "label": "Escudo"}, {"value": "star", "label": "Asterisco"}, {"value": "flame", "label": "Chama"}, {"value": "heart", "label": "Coração"}, {"value": "warning", "label": "Alerta"}, {"value": "lightning", "label": "Raio"}, {"value": "house", "label": "Casa"}, {"value": "phone", "label": "Telefone"}, {"value": "chat", "label": "Balão de conversa"}, {"value": "user", "label": "Pessoa"}, {"value": "🔥", "label": "Emoji 🔥"}, {"value": "🚗", "label": "Emoji 🚗"}, {"value": "🚑", "label": "Emoji 🚑"}, {"value": "🩹", "label": "Emoji 🩹"}, {"value": "🆘", "label": "Emoji 🆘"}, {"value": "📍", "label": "Emoji 📍"}, {"value": "⚠️", "label": "Emoji ⚠️"}, {"value": "💬", "label": "Emoji 💬"}]},
+    {"id": "item3", "type": "string", "label": "Item 3", "default": "Crime"},
+    {"id": "icone3", "type": "enum", "label": "Ícone do item 3", "default": "shield", "options": [{"value": "car", "label": "Carro"}, {"value": "plus", "label": "Cruz"}, {"value": "shield", "label": "Escudo"}, {"value": "star", "label": "Asterisco"}, {"value": "flame", "label": "Chama"}, {"value": "heart", "label": "Coração"}, {"value": "warning", "label": "Alerta"}, {"value": "lightning", "label": "Raio"}, {"value": "house", "label": "Casa"}, {"value": "phone", "label": "Telefone"}, {"value": "chat", "label": "Balão de conversa"}, {"value": "user", "label": "Pessoa"}, {"value": "🔥", "label": "Emoji 🔥"}, {"value": "🚗", "label": "Emoji 🚗"}, {"value": "🚑", "label": "Emoji 🚑"}, {"value": "🩹", "label": "Emoji 🩹"}, {"value": "🆘", "label": "Emoji 🆘"}, {"value": "📍", "label": "Emoji 📍"}, {"value": "⚠️", "label": "Emoji ⚠️"}, {"value": "💬", "label": "Emoji 💬"}]},
+    {"id": "item4", "type": "string", "label": "Item 4", "default": "Lost or Trapped"},
+    {"id": "icone4", "type": "enum", "label": "Ícone do item 4", "default": "star", "options": [{"value": "car", "label": "Carro"}, {"value": "plus", "label": "Cruz"}, {"value": "shield", "label": "Escudo"}, {"value": "star", "label": "Asterisco"}, {"value": "flame", "label": "Chama"}, {"value": "heart", "label": "Coração"}, {"value": "warning", "label": "Alerta"}, {"value": "lightning", "label": "Raio"}, {"value": "house", "label": "Casa"}, {"value": "phone", "label": "Telefone"}, {"value": "chat", "label": "Balão de conversa"}, {"value": "user", "label": "Pessoa"}, {"value": "🔥", "label": "Emoji 🔥"}, {"value": "🚗", "label": "Emoji 🚗"}, {"value": "🚑", "label": "Emoji 🚑"}, {"value": "🩹", "label": "Emoji 🩹"}, {"value": "🆘", "label": "Emoji 🆘"}, {"value": "📍", "label": "Emoji 📍"}, {"value": "⚠️", "label": "Emoji ⚠️"}, {"value": "💬", "label": "Emoji 💬"}]},
+    {"id": "item5", "type": "string", "label": "Item 5 (base, o primeiro a chegar)", "default": "Fire"},
+    {"id": "icone5", "type": "enum", "label": "Ícone do item 5", "default": "flame", "options": [{"value": "car", "label": "Carro"}, {"value": "plus", "label": "Cruz"}, {"value": "shield", "label": "Escudo"}, {"value": "star", "label": "Asterisco"}, {"value": "flame", "label": "Chama"}, {"value": "heart", "label": "Coração"}, {"value": "warning", "label": "Alerta"}, {"value": "lightning", "label": "Raio"}, {"value": "house", "label": "Casa"}, {"value": "phone", "label": "Telefone"}, {"value": "chat", "label": "Balão de conversa"}, {"value": "user", "label": "Pessoa"}, {"value": "🔥", "label": "Emoji 🔥"}, {"value": "🚗", "label": "Emoji 🚗"}, {"value": "🚑", "label": "Emoji 🚑"}, {"value": "🩹", "label": "Emoji 🩹"}, {"value": "🆘", "label": "Emoji 🆘"}, {"value": "📍", "label": "Emoji 📍"}, {"value": "⚠️", "label": "Emoji ⚠️"}, {"value": "💬", "label": "Emoji 💬"}]},
+    {"id": "botao", "type": "string", "label": "Botão do canto", "default": "End"},
+    {"id": "ilha_texto", "type": "string", "label": "Texto da ilha", "default": "Help is on the way"},
+    {"id": "relogio", "type": "string", "label": "Relógio inicial (M:SS)", "default": "1:40"},
+    {"id": "balao_nome", "type": "string", "label": "Nome no balão", "default": "creatoroly"},
+    {"id": "balao_emoji", "type": "string", "label": "Emoji do balão", "default": "🧑🏽"},
+    {"id": "balao_fones", "type": "boolean", "label": "Fones desenhados no emoji", "default": true},
+    {"id": "peca_cartao", "type": "enum", "label": "Peça do cartão", "default": "arco", "options": [{"value": "arco", "label": "Arco (original)"}, {"value": "anel", "label": "Anel de progresso"}]},
+    {"id": "peca_mapa", "type": "enum", "label": "Peça atrás do cartão", "default": "globo", "options": [{"value": "globo", "label": "Globo (original)"}, {"value": "radar", "label": "Radar (Buscar)"}]},
+    {"id": "entrada_lista", "type": "enum", "label": "Entrada da lista", "default": "cima", "options": [{"value": "cima", "label": "De cima (original)"}, {"value": "baixo", "label": "De baixo"}]},
+    {"id": "entrada_titulo", "type": "enum", "label": "Entrada do título", "default": "pouso", "options": [{"value": "pouso", "label": "Pouso (original)"}, {"value": "desfoque", "label": "Desfoque no lugar"}]},
+    {"id": "mola", "type": "enum", "label": "Mola das entradas", "default": "suave", "options": [{"value": "suave", "label": "Suave (original, medida)"}, {"value": "firme", "label": "Firme (assenta em 60% do tempo)"}]},
+    {"id": "fonte", "type": "enum", "label": "Fonte", "default": "sf", "options": [{"value": "sf", "label": "SF Pro (original)"}, {"value": "archivo", "label": "Archivo"}, {"value": "inter", "label": "Inter"}]},
+    {"id": "formato", "type": "enum", "label": "Formato (o 9:16 sai pelo montar.py)", "default": "1:1", "options": [{"value": "1:1", "label": "1:1 (original)"}, {"value": "9:16", "label": "9:16 (Reels, 1080x1920)"}]},
+    {"id": "ritmo", "type": "enum", "label": "Ritmo (as batidas saem pelo montar.py)", "default": "original", "options": [{"value": "original", "label": "Original (tempos medidos)"}, {"value": "batidas", "label": "Nas batidas da música"}]},
+    {"id": "musica", "type": "string", "label": "Música (arquivo dentro do molde)", "default": "assets/silencio.m4a"},
+    {"id": "logo", "type": "string", "label": "Logo no balão (imagem dentro do molde; vazio = emoji)", "default": ""},
+    {"id": "cor_principal", "type": "color", "label": "Cor principal (troca todo o verde)", "default": "#0cbc25"},
+    {"id": "cor_ponto", "type": "color", "label": "Cor do ponto azul e da ilha", "default": "#0284f6"},
+    {"id": "cor_rota", "type": "color", "label": "Cor da rota", "default": "#0067fc"},
+    {"id": "cor_botao", "type": "color", "label": "Cor do botão", "default": "#f80207"},
+    {"id": "sons", "type": "enum", "label": "Sons por elemento (saem pelo montar.py)", "default": "nenhum", "options": [{"value": "nenhum", "label": "Nenhum (só a música, como o original)"}, {"value": "suave", "label": "Suave (os eventos principais, mais baixo)"}, {"value": "marcado", "label": "Marcado (todo evento tem som)"}]},
+    {"id": "musica_volume", "type": "number", "label": "Volume da música quando há sons (0 a 1, sai pelo montar.py)", "default": 0.7, "min": 0, "max": 1, "step": 0.05}
+  ]'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="ritmo.js"></script>
+    <script src="tracks.js"></script>
+    <script src="field.js"></script>
+    <script src="earth.js"></script>
+    <style>
+      @font-face {
+        font-family: "SF Pro";
+        src: url("assets/fonts/SFNS.ttf") format("truetype");
+        font-weight: 1 1000;
+        font-display: block;
+      }
+      /* molde: brand fonts (variable, OFL), picked by the "fonte" variable */
+      @font-face { font-family: "Archivo"; src: url("assets/fonts/Archivo.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("assets/fonts/Inter.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+      /* internal test only: system emoji (ambulance, warning, person) */
+      @font-face { font-family: "Apple Color Emoji"; src: local("Apple Color Emoji"); }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1080px; overflow: hidden; background: #fdfdfd; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #fdfdfd;
+        font-family: "SF Pro", "Apple Color Emoji", sans-serif; -webkit-font-smoothing: antialiased; }
+      .full { position: absolute; left: 0; top: 0; width: 1080px; height: 1080px; }
+      svg { display: block; overflow: visible; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="10.9333" data-width="1080" data-height="1080">
+      <div id="stage" class="full"></div>
+      <audio id="refaudio" src="assets/silencio.m4a" data-start="0" data-duration="10.9333" data-track-index="1" data-volume="1"></audio>
+    </div>
+    <script>
+      // ======================================================================================
+      // Satellite (@creatoroly) clone. Every value is a pure function of the frame.
+      // Integer output frame Fi picks what exists (hard switches); continuous F drives motion,
+      // so round_mb.sh subframes blur only the motion (shutter = SHUTTER of a frame, measured).
+      // ======================================================================================
+      const FPS = 30, NF = 328, DUR = NF / FPS, SHUTTER = 0.3;
+      const $ = (id) => document.getElementById(id);
+      const clamp = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
+      const lerp = (a, b, t) => a + (b - a) * t;
+      const E = {
+        lin: (t) => t,
+        out: (t) => 1 - Math.pow(1 - t, 3),
+        out2: (t) => 1 - (1 - t) * (1 - t),
+        in2: (t) => t * t,
+        sine: (t) => 0.5 - 0.5 * Math.cos(Math.PI * t),
+      };
+      const prog = (F, a, b, e = E.lin) => e(clamp((F - a) / (b - a)));
+      function kf(F, keys, ease = E.sine) {
+        if (F <= keys[0][0]) return keys[0][1];
+        for (let i = 1; i < keys.length; i++) if (F <= keys[i][0]) {
+          const [f0, v0] = keys[i - 1], [f1, v1, e] = keys[i];
+          return lerp(v0, v1, (e || ease)((F - f0) / (f1 - f0)));
+        }
+        return keys[keys.length - 1][1];
+      }
+      // Catmull-Rom through keys: no velocity stop at inner keys (motion-feel rule 1)
+      function cr(F, keys) {
+        const n = keys.length;
+        if (F <= keys[0][0]) return keys[0][1];
+        if (F >= keys[n - 1][0]) return keys[n - 1][1];
+        let i = 0; while (keys[i + 1][0] < F) i++;
+        const p0 = keys[Math.max(i - 1, 0)], p1 = keys[i], p2 = keys[i + 1], p3 = keys[Math.min(i + 2, n - 1)];
+        const t = (F - p1[0]) / (p2[0] - p1[0]);
+        const m1 = ((p2[1] - p0[1]) / (p2[0] - p0[0] || 1)) * (p2[0] - p1[0]);
+        const m2 = ((p3[1] - p1[1]) / (p3[0] - p1[0] || 1)) * (p2[0] - p1[0]);
+        const t2 = t * t, t3 = t2 * t;
+        return (2 * t3 - 3 * t2 + 1) * p1[1] + (t3 - 2 * t2 + t) * m1 + (-2 * t3 + 3 * t2) * p2[1] + (t3 - t2) * m2;
+      }
+      // ---- measured tracks (tools/mktracks.py): fill gaps once, then sample with linear interpolation
+      const TRK = window.TR;
+      for (const k in TRK) {
+        const v = TRK[k].v; if (!v) continue;
+        let last = null; for (let i = 0; i < v.length; i++) { if (v[i] == null) v[i] = last; else last = v[i]; }
+        last = null; for (let i = v.length - 1; i >= 0; i--) { if (v[i] == null) v[i] = last; else last = v[i]; }
+      }
+      function tr(name, F, i) {
+        const t = TRK[name], n = t.v.length, x = clamp(F - t.a, 0, n - 1), j = Math.floor(x), k = x - j;
+        const A = t.v[j], B = t.v[Math.min(j + 1, n - 1)];
+        const a = i == null ? A : A[i], b = i == null ? B : B[i];
+        return a + (b - a) * k;
+      }
+      const hex = (h) => [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+      const mixc = (a, b, t) => a.map((v, i) => Math.round(lerp(v, b[i], t)));
+      const rgb = (c, a = 1) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
+      function el(tag, css, parent, html) { const e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; parent.appendChild(e); return e; }
+      const div = (css, p, html) => el("div", css, p, html);
+      const show = (e, on) => { e.style.display = on ? "block" : "none"; };
+      const blurf = (b) => (b > 0.05 ? `blur(${b.toFixed(2)}px)` : "none");
+      const stage = $("stage");
+
+      // ======================================================================================
+      // MOLDE: swappable assets (data-composition-variables on <html>), read once.
+      // Defaults are the clone, and every swap below is the identity at its default,
+      // so a render with the defaults is the clone frame for frame.
+      // ======================================================================================
+      const DECL = JSON.parse(document.documentElement.getAttribute("data-composition-variables"));
+      const DEF = Object.fromEntries(DECL.map((d) => [d.id, d.default]));
+      const HFV = window.__hyperframes && window.__hyperframes.getVariables ? window.__hyperframes.getVariables() : {};
+      const V = Object.assign({}, DEF, HFV);
+      // -- colour: hue rotation in OKLCH towards the new colour. Lightness and chroma keep their place
+      //    in the measured palette (pale washes stay pale, the reference colour lands exactly on the new one)
+      const lin = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+      const gam = (c) => (c <= 0.0031308 ? 12.92 * c : 1.055 * c ** (1 / 2.4) - 0.055);
+      function toLch(c) {
+        const [r, g, b] = c.map((v) => lin(v / 255));
+        const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b), m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b), s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b);
+        const A = 1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s, B = 0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s;
+        return [0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s, Math.hypot(A, B), (Math.atan2(B, A) * 180) / Math.PI];
+      }
+      function fromLch(L, C, h) { // linear sRGB, may be out of gamut
+        const A = C * Math.cos((h * Math.PI) / 180), B = C * Math.sin((h * Math.PI) / 180);
+        const l = (L + 0.3963377774 * A + 0.2158037573 * B) ** 3, m = (L - 0.1055613458 * A - 0.0638541728 * B) ** 3, s = (L - 0.0894841775 * A - 1.291485548 * B) ** 3;
+        return [4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s, -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s, -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s];
+      }
+      const outG = (x) => x.some((v) => v < -1e-4 || v > 1 + 1e-4);
+      function lchRgb(L, C, h) { // out of sRGB: lower the chroma until it fits (keeps lightness and hue)
+        let x = fromLch(L, C, h);
+        if (outG(x)) { let lo = 0, hi = C; for (let i = 0; i < 16; i++) { const md = (lo + hi) / 2; if (outG(fromLch(L, md, h))) hi = md; else lo = md; } x = fromLch(L, lo, h); }
+        return x.map((v) => Math.round(clamp(gam(clamp(v))) * 255));
+      }
+      function recolor(ref, to, band) {
+        const id = (c) => c; id.s = (s) => s;
+        if (ref.toLowerCase() === to.toLowerCase()) return id;
+        const A = toLch(hex(ref.slice(1))), B = toLch(hex(to.slice(1)));
+        const dh = ((B[2] - A[2] + 540) % 360) - 180, kc = B[1] / A[1], dl = B[0] - A[0], memo = new Map();
+        const f = (c) => {
+          const key = c.join(","); if (memo.has(key)) return memo.get(key);
+          const [L, C, h] = toLch(c);
+          const w = (band ? band((h + 360) % 360) : 1) * clamp((C - 0.005) / 0.015); // greys have no hue to turn
+          const o = w <= 0 ? c : lchRgb(L + w * Math.min(1, C / A[1]) * dl, C * (1 + w * (kc - 1)), h + w * dh);
+          memo.set(key, o); return o;
+        };
+        const h2 = (c) => "#" + c.map((v) => v.toString(16).padStart(2, "0")).join("");
+        f.s = (s) => s.replace(/#([0-9a-fA-F]{6})\b/g, (q, x) => h2(f(hex(x)))).replace(/rgb(a?)\((\d+),\s*(\d+),\s*(\d+)/g, (q, a, r, g, b) => `rgb${a}(${f([+r, +g, +b]).join(",")}`);
+        f.on = true;
+        return f;
+      }
+      const GREENS = (h) => clamp(Math.min((h - 115) / 10, (185 - h) / 13)); // the measured greens sit at OKLCH hue 133-175; teal/cyan/blue stay
+      const G = recolor(DEF.cor_principal, V.cor_principal, GREENS), PT = recolor(DEF.cor_ponto, V.cor_ponto);
+      const RR = recolor(DEF.cor_rota, V.cor_rota), RB = recolor(DEF.cor_botao, V.cor_botao);
+      const GK = (keys) => keys.map((k) => [k[0], G(k[1])]);
+      // -- pieces and motion (the defaults take the clone's own code path)
+      const ANEL = V.peca_cartao === "anel", RADAR = V.peca_mapa === "radar", BAIXO = V.entrada_lista === "baixo", DESF = V.entrada_titulo === "desfoque";
+      const KM = V.mola === "firme" ? 0.6 : 1;
+      // firm spring = time reparametrisation of one entry: from its beat b it runs 1/0.6 faster and is settled at
+      // b + 0.6 L, then holds its settled value until b + L, where it rejoins the clock (the beat start never moves)
+      const mola = (F, b, L) => (KM === 1 || F <= b || F >= b + L ? F : b + Math.min(L, (F - b) / KM));
+      // -- fonte: every measured weight stays (title 550, pill 500, button 590, island 500/400); layout is redone from the text
+      const FAM = { sf: '"SF Pro"', archivo: '"Archivo"', inter: '"Inter"' }[V.fonte];
+      const SFF = (font) => font.replace(FAM, '"SF Pro"'); // the same text in SF Pro: what the clone's boxes were sized for
+      // a line-height:1 box puts the baseline at (1 + ascent - descent) / 2 em (hhea). 0.855 is the clone's SF Pro value;
+      // the brand fonts keep the same baseline, so they shift by their own metric difference (Archivo .878/.21, Inter .969/.241, SF .967/.211)
+      const BL = 0.855 + { sf: 0, archivo: (0.878 - 0.21 - 0.9668 + 0.2109) / 2, inter: (0.96875 - 0.2412 - 0.9668 + 0.2109) / 2 }[V.fonte];
+      if (V.fonte !== "sf") $("root").style.fontFamily = `${FAM}, "Apple Color Emoji", sans-serif`;
+      // -- formato 9:16: the square scene sits in the Reels safe band (top 220 px and bottom third free), centred on y 750;
+      //    the measured background fields stretch to fill the whole 1080x1920 screen
+      const VERT = V.formato === "9:16", OY = VERT ? 210 : 0, HH = VERT ? 1920 : 1080;
+      if (VERT) stage.style.top = OY + "px";
+      // -- ritmo "batidas": montar.py writes window.RITMO = [[output frame, clone frame], ...]: each moment starts on a
+      //    beat, its entry keeps slope 1 (springs untouched) and only the middle of the moment stretches or shrinks
+      const RK = V.ritmo === "batidas" ? window.RITMO : null;
+      const WARP = RK ? (g) => { let i = 1; while (i < RK.length - 1 && RK[i][0] < g) i++; const [g0, f0] = RK[i - 1], [g1, f1] = RK[i]; return f0 + ((g - g0) * (f1 - f0)) / (g1 - g0); } : null;
+      if (V.musica !== DEF.musica) $("refaudio").setAttribute("src", V.musica); // Studio preview; montar.py muxes the music itself
+      if (G.on) for (const k in window.FIELD) window.FIELD[k].k = window.FIELD[k].k.map((g) => g.map((x) => G.s("#" + x).slice(1)));
+      // -- text: widths from the font (canvas), always new minus default, so the default layout never moves
+      const mctx = document.createElement("canvas").getContext("2d");
+      const tw = (t, font, ls = 0) => { mctx.font = font; return mctx.measureText(t).width + ls * [...t].length; };
+      const grow = (font, ls, k) => Math.max(0, tw(V[k], font, ls) - tw(DEF[k], SFF(font), ls));
+      const fitPx = (px, font, ls, k, max) => { const w = tw(V[k], font, ls); return w > max ? (px * max) / w : null; }; // null = original size
+
+      // ======================================================================================
+      // ICONS (Phosphor, MIT, fill weight; plus/shield/asterisk/satellite/timer drawn here)
+      // each entry: svg markup + ink box (viewBox units) so the glyph lands at the measured size
+      // ======================================================================================
+      const IC = {
+        car: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M240,104H229.2L201.42,41.5A16,16,0,0,0,186.8,32H69.2a16,16,0,0,0-14.62,9.5L26.8,104H16a8,8,0,0,0,0,16h8v80a16,16,0,0,0,16,16H64a16,16,0,0,0,16-16v-8h96v8a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16V120h8a8,8,0,0,0,0-16ZM80,152H56a8,8,0,0,1,0-16H80a8,8,0,0,1,0,16Zm120,0H176a8,8,0,0,1,0-16h24a8,8,0,0,1,0,16ZM44.31,104,69.2,48H186.8l24.89,56Z"/></svg>',
+        plus: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M128,22a20,20,0,0,1,20,20V108h66a20,20,0,0,1,0,40H148v66a20,20,0,0,1-40,0V148H42a20,20,0,0,1,0-40h66V42A20,20,0,0,1,128,22Z"/></svg>',
+        shield: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round" d="M128,24 L212,56 V120 C212,176 176,212 128,232 C80,212 44,176 44,120 V56 Z"/><path fill="currentColor" d="M128,24 L44,56 V120 C44,176 80,212 128,232 Z"/></svg>',
+        star: '<svg viewBox="0 0 256 256" width="100%" height="100%"><g stroke="currentColor" stroke-width="40" stroke-linecap="round"><line x1="128" y1="30" x2="128" y2="226"/><line x1="43" y1="79" x2="213" y2="177"/><line x1="43" y1="177" x2="213" y2="79"/></g></svg>',
+        flame: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M173.79,51.48a221.25,221.25,0,0,0-41.67-34.34,8,8,0,0,0-8.24,0A221.25,221.25,0,0,0,82.21,51.48C54.59,80.48,40,112.47,40,144a88,88,0,0,0,176,0C216,112.47,201.41,80.48,173.79,51.48ZM96,184c0-27.67,22.53-47.28,32-54.3,9.48,7,32,26.63,32,54.3a32,32,0,0,1-64,0Z"/></svg>',
+        // tile satellite, traced from the reference at 4x (f110): 72.5 x 41 px ink
+        sat: '<svg viewBox="0 0 72.5 41" width="100%" height="100%"><g fill="currentColor"><circle cx="36.2" cy="2.2" r="2.2"/><rect x="35" y="3" width="2.5" height="4"/><path d="M25.5,5.5 Q36.2,3 47,5.5 L44.5,13 Q36.2,16 28,13 Z"/><path d="M29,16.5 Q36.2,14 43.5,16.5 L45.5,27 Q44,33 36.2,41 Q28.5,33 27,27 Z"/><rect x="0" y="18" width="25.5" height="13" rx="1.5"/><rect x="47" y="18" width="25.5" height="13" rx="1.5"/><rect x="24" y="22" width="25" height="4.5"/></g></svg>',
+        // ISS glyph riding the arc (f80 at 4x): circle + two bar pairs, axis along the arc tangent; card units
+        iss: '<svg viewBox="-28 -16 56 32" width="56" height="32" style="overflow:visible"><g fill="currentColor"><circle r="7.2"/><rect x="-26.5" y="-13.85" width="4.6" height="27.7" rx="2.3"/><rect x="-18" y="-13.85" width="4.6" height="27.7" rx="2.3"/><rect x="13.4" y="-13.85" width="4.6" height="27.7" rx="2.3"/><rect x="21.9" y="-13.85" width="4.6" height="27.7" rx="2.3"/></g></svg>',
+        arrow: '<svg viewBox="0 0 24 34" width="100%" height="100%"><path d="M2 1.5 L2 26 L8 20.5 L12 30.5 L16.2 28.7 L12.2 19 L20.5 19 Z" fill="#000" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>',
+        // molde: more Phosphor fill icons for the list
+        heart: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M240,94c0,70-103.79,126.66-108.21,129a8,8,0,0,1-7.58,0C119.79,220.66,16,164,16,94A62.07,62.07,0,0,1,78,32c20.65,0,38.73,8.88,50,23.89C139.27,40.88,157.35,32,178,32A62.07,62.07,0,0,1,240,94Z"/></svg>',
+        warning: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M236.8,188.09,149.35,36.22h0a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM120,104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,128,192Z"/></svg>',
+        lightning: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M215.79,118.17l-112,120a8,8,0,0,1-13.61-7.12l14.66-73.33L47.19,135.49a8,8,0,0,1-3-13l112-120a8,8,0,0,1,13.61,7.12L155.18,82.94l57.63,21.61a8,8,0,0,1,3,13.62Z"/></svg>',
+        house: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"/></svg>',
+        phone: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M231.88,175.08A56.26,56.26,0,0,1,176,224C96.6,224,32,159.4,32,80A56.26,56.26,0,0,1,80.92,24.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,117.39,96c-.18.27-.37.52-.57.77L96,121.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47,21.06A16,16,0,0,1,231.88,175.08Z"/></svg>',
+        chat: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Z"/></svg>',
+        user: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="currentColor" d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"/></svg>',
+        hand: '<svg viewBox="0 0 256 256" width="100%" height="100%"><path fill="#fff" d="M224,104v50.93c0,46.2-36.85,84.55-83,85.06A83.71,83.71,0,0,1,80.6,215.4C58.79,192.33,34.15,136,34.15,136a16,16,0,0,1,6.53-22.23c7.66-4,17.1-.84,21.4,6.62l21,36.44a6.09,6.09,0,0,0,6,3.09l.12,0A8.19,8.19,0,0,0,96,151.74V32a16,16,0,0,1,16.77-16c8.61.4,15.23,7.82,15.23,16.43V104a8,8,0,0,0,8.53,8,8.17,8.17,0,0,0,7.47-8.25V88a16,16,0,0,1,16.77-16c8.61.4,15.23,7.82,15.23,16.43V112a8,8,0,0,0,8.53,8,8.17,8.17,0,0,0,7.47-8.25v-7.28c0-8.61,6.62-16,15.23-16.43A16,16,0,0,1,224,104Z"/><path fill="#000" d="M196,88a27.86,27.86,0,0,0-13.35,3.39A28,28,0,0,0,144,74.7V44a28,28,0,0,0-56,0v80l-3.82-6.13A28,28,0,0,0,35.73,146l4.67,8.23C74.81,214.89,89.05,240,136,240a88.1,88.1,0,0,0,88-88V116A28,28,0,0,0,196,88Zm12,64a72.08,72.08,0,0,1-72,72c-37.63,0-47.84-18-81.68-77.68l-4.69-8.27,0-.05A12,12,0,0,1,54,121.61a11.88,11.88,0,0,1,6-1.6,12,12,0,0,1,10.41,6,1.76,1.76,0,0,0,.14.23l18.67,30A8,8,0,0,0,104,152V44a12,12,0,0,1,24,0v68a8,8,0,0,0,16,0V100a12,12,0,0,1,24,0v20a8,8,0,0,0,16,0v-4a12,12,0,0,1,24,0Z"/></svg>',
+      };
+
+      // ======================================================================================
+      // LAYERS
+      // ======================================================================================
+      // -- background field (measured low-frequency colour grid, tools/fieldfit.py)
+      const fieldWrap = div("position:absolute;left:0;top:0;width:1080px;height:1080px;overflow:hidden", stage);
+      const fcv = el("canvas", "position:absolute;image-rendering:auto;filter:blur(14px)", fieldWrap);
+      const fctx = fcv.getContext("2d");
+      function paintField(F, name) {
+        const B = window.FIELD[name], n = B.n, m = n + 2, c = 1080 / n, my = VERT ? Math.ceil(HH / c) + 2 : m;
+        if (fcv.width !== m || fcv.height !== my) { fcv.width = m; fcv.height = my; Object.assign(fcv.style, { left: -c + "px", top: -c + "px", width: c * m + "px", height: c * my + "px" }); }
+        const x = clamp(F - B.a, 0, B.k.length - 1), i = Math.floor(x), t = x - i;
+        const A = B.k[i], C = B.k[Math.min(i + 1, B.k.length - 1)];
+        const im = fctx.createImageData(m, my), d = im.data;
+        for (let yy = 0; yy < my; yy++) {
+          let sy = clamp(yy - 1, 0, n - 1), s2 = sy, ky = 0;
+          if (VERT) { // 9:16: screen y -> square y, stretched about the scene centre (square 540 = screen 540 + OY), rows blended
+            const ys = (yy - 0.5) * c, sq = ys <= 540 + OY ? (ys * 540) / (540 + OY) : 540 + ((ys - 540 - OY) * 540) / (HH - 540 - OY);
+            const u = clamp(sq / c - 0.5, 0, n - 1); sy = Math.floor(u); s2 = Math.min(sy + 1, n - 1); ky = u - sy;
+          }
+          for (let xx = 0; xx < m; xx++) {
+            const sx = clamp(xx - 1, 0, n - 1), q = sy * n + sx, o = (yy * m + xx) * 4;
+            const a = hex(A[q]), b = hex(C[q]);
+            let r = lerp(a[0], b[0], t), g = lerp(a[1], b[1], t), bl = lerp(a[2], b[2], t);
+            if (ky) { const a2 = hex(A[s2 * n + sx]), b2 = hex(C[s2 * n + sx]); r = lerp(r, lerp(a2[0], b2[0], t), ky); g = lerp(g, lerp(a2[1], b2[1], t), ky); bl = lerp(bl, lerp(a2[2], b2[2], t), ky); }
+            d[o] = r; d[o + 1] = g; d[o + 2] = bl; d[o + 3] = 255;
+          }
+        }
+        fctx.putImageData(im, 0, 0);
+      }
+      if (VERT) Object.assign(fieldWrap.style, { top: -OY + "px", height: HH + "px" });
+      const washFlat = div("position:absolute;left:0;top:0;width:1080px;height:1080px", stage);
+      if (VERT) Object.assign(washFlat.style, { top: -OY + "px", height: HH + "px" });
+      const streaks = [0, 1].map(() => div(G.s("position:absolute;left:0;top:0;width:150px;height:30px;border-radius:15px;background:rgb(48,212,80)"), stage));
+
+      // -- earth (orthographic Americas, tools/earthfit.py), screen space of f88
+      const earth = div("position:absolute;left:0;top:0;width:1080px;height:1080px", stage);
+      earth.innerHTML = G.s(`<svg width="1080" height="1080" viewBox="0 0 1080 1080">
+        <defs>
+          <radialGradient id="eMask" cx="531" cy="536" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(531 536) scale(440 325) translate(-531 -536)">
+            <stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="0.86" stop-color="#fff" stop-opacity="1"/>
+            <stop offset="0.97" stop-color="#fff" stop-opacity="0.45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+          <mask id="eM" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1080"><rect width="1080" height="1080" fill="url(#eMask)"/></mask>
+          <radialGradient id="eOcean" cx="531" cy="536" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(531 536) scale(440 325) translate(-531 -536)">
+            <stop offset="0" stop-color="#7aa2ea"/><stop offset="0.6" stop-color="#8eb3ec"/><stop offset="0.68" stop-color="#9ec0eb"/><stop offset="0.72" stop-color="#b0c8f0"/>
+            <stop offset="0.76" stop-color="#c2d5f4"/><stop offset="0.8" stop-color="#d5e2f8"/><stop offset="0.85" stop-color="#e3ebf9"/><stop offset="0.9" stop-color="#edf2fa"/><stop offset="0.95" stop-color="#f4f6fb"/><stop offset="1" stop-color="#fafafc"/>
+          </radialGradient>
+          <radialGradient id="eLandFade" cx="531" cy="536" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(531 536) scale(440 325) translate(-531 -536)">
+            <stop offset="0" stop-color="#b6d99e"/><stop offset="0.6" stop-color="#bfe0ae"/><stop offset="0.65" stop-color="#c5e2b8"/><stop offset="0.7" stop-color="#d5ecc3"/><stop offset="0.8" stop-color="#e6f1de"/><stop offset="0.88" stop-color="#f1f5ee"/><stop offset="1" stop-color="#fbfbfb"/>
+          </radialGradient>
+          <radialGradient id="eGreen" cx="531" cy="536" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(531 536) scale(420 300) translate(-531 -536)">
+            <stop offset="0" stop-color="#8fe9c8"/><stop offset="0.62" stop-color="#a6eccf"/><stop offset="0.8" stop-color="#c6f0de" stop-opacity="0.9"/><stop offset="1" stop-color="#e8f8ef" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="eLime" cx="531" cy="536" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(531 536) scale(400 285) translate(-531 -536)">
+            <stop offset="0" stop-color="#7ef06a"/><stop offset="0.6" stop-color="#9df48c"/><stop offset="0.82" stop-color="#c4f7b8" stop-opacity="0.8"/><stop offset="1" stop-color="#e6fbe0" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <g id="eAll" mask="url(#eM)">
+          <g id="eGeo">
+            <ellipse cx="531" cy="536" rx="440" ry="325" fill="url(#eOcean)"/>
+            <path id="eLandP" d="${window.EARTH.d}" fill="url(#eLandFade)" fill-rule="evenodd"/>
+          </g>
+          <ellipse id="eGreenE" cx="531" cy="536" rx="440" ry="325" fill="url(#eGreen)" opacity="0"/>
+          <ellipse id="eLimeE" cx="531" cy="536" rx="440" ry="325" fill="url(#eLime)" opacity="0"/>
+        </g></svg>`);
+      earth.style.transformOrigin = "540px 540px";
+      const eGeo = earth.querySelector("#eGeo"), eGreen = earth.querySelector("#eGreenE"), eLime = earth.querySelector("#eLimeE");
+      // -- peca_mapa "radar" (Find My): rings + rotating sweep in the globe's place, under the same mask, glows and card light.
+      //    The disc is squashed to the globe's 440x325 ellipse, so it reads as a radar plane seen at an angle
+      let radar = null, rSweep = null, rBlips = [];
+      const BLIPS = [[330, 15], [400, 70], [300, 160], [360, 200], [420, 255]]; // [radius, angle] outside the card, disc space
+      if (RADAR) {
+        eGeo.setAttribute("display", "none");
+        radar = div("position:absolute;left:0;top:0;width:1080px;height:1080px;-webkit-mask-image:radial-gradient(440px 325px at 531px 536px, #000 86%, rgba(0,0,0,0.45) 97%, transparent 100%)", earth);
+        earth.insertBefore(radar, earth.firstChild);
+        earth.querySelector("svg").style.position = "relative"; // positioned too, so the glows still paint over the radar
+        const rs = div("position:absolute;left:0;top:0;width:1080px;height:1080px;transform-origin:540px 540px", radar);
+        const disc = div("position:absolute;left:91px;top:96px;width:880px;height:880px;border-radius:50%;overflow:hidden;transform:scaleY(0.7386);background:radial-gradient(circle, #8fb2ec 0%, #a2c0ef 45%, #b9d0f3 62%, #d3e1f8 76%, #e9f0fa 88%, #f7f8fc 100%)", rs);
+        for (const r of [120, 200, 280, 360, 440]) div(`position:absolute;left:${440 - r}px;top:${440 - r}px;width:${2 * r}px;height:${2 * r}px;border-radius:50%;box-sizing:border-box;border:2.5px solid rgba(255,255,255,0.8)`, disc);
+        div("position:absolute;left:438px;top:0;width:4px;height:880px;background:rgba(255,255,255,0.35)", disc);
+        div("position:absolute;left:0;top:438px;width:880px;height:4px;background:rgba(255,255,255,0.35)", disc);
+        // sweep: green tail (the globe's land colour family, so cor_principal turns it) with a bright leading edge
+        rSweep = div(G.s("position:absolute;left:0;top:0;width:880px;height:880px;border-radius:50%;background:conic-gradient(from -84deg, rgba(110,214,96,0) 0deg, rgba(110,214,96,0.16) 50deg, rgba(110,214,96,0.5) 82deg, rgba(255,255,255,0.9) 83.5deg, rgba(110,214,96,0) 84.5deg)"), disc);
+        rBlips = BLIPS.map(([r, a]) => div(G.s(`position:absolute;left:${440 + r * Math.sin((a * Math.PI) / 180) - 9}px;top:${440 - r * Math.cos((a * Math.PI) / 180) - 9}px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle, #ffffff 0%, #ffffff 30%, #2fe876 55%, rgba(47,232,118,0) 100%)`), disc));
+        radar.rs = rs;
+      }
+
+      // -- ZOOMER: the island + route scene zooms out ~7.5 % about the frame centre (f236-256, ECC on the route)
+      const zoomer = div("position:absolute;left:0;top:0;width:1080px;height:1080px;transform-origin:540px 540px", stage);
+      // -- WORLD (list scene, route, ambulance, cursor): translated by the measured camera
+      const world = div("position:absolute;left:0;top:0;width:1px;height:1px", zoomer);
+      const R = TRK.route, RP = R.pts; R.step = 4;
+      const routeD = "M" + RP.map((p) => p[0] + "," + p[1]).join("L");
+      const routeSvg = div("position:absolute;left:0;top:0;width:2400px;height:1080px", world);
+      routeSvg.innerHTML = G.s(`<svg width="2400" height="1080" viewBox="0 0 2400 1080" style="position:absolute;left:0;top:0">
+        <defs>
+          <linearGradient id="dofG" x1="1640" y1="0" x2="1960" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+          <linearGradient id="dofB" x1="1640" y1="0" x2="1960" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>
+          <mask id="mSharp" maskUnits="userSpaceOnUse" x="0" y="0" width="2400" height="1080"><rect width="2400" height="1080" fill="url(#dofG)"/></mask>
+          <mask id="mSoft" maskUnits="userSpaceOnUse" x="0" y="0" width="2400" height="1080"><rect width="2400" height="1080" fill="url(#dofB)"/></mask>
+          <filter id="fSoft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3.2"/></filter>
+          <radialGradient id="headG"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle id="rHead" r="105" fill="#6fe9a2" opacity="0"/>
+        <path id="rRedGlow" d="${routeD}" fill="none" stroke="#ff3030" stroke-width="150" stroke-linecap="round" stroke-linejoin="round" opacity="0.3" style="filter:blur(34px)"/>
+        <path id="rGlow" d="${routeD}" fill="none" stroke-width="64" stroke-linecap="round" stroke-linejoin="round" opacity="0.16" style="filter:blur(16px)"/>
+        <g mask="url(#mSharp)"><path id="rMain" d="${routeD}" fill="none" stroke-width="31.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g mask="url(#mSoft)" filter="url(#fSoft)"><path id="rMain2" d="${routeD}" fill="none" stroke-width="32.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <path id="rRed" d="${routeD}" fill="none" stroke="#ff1a1a" stroke-width="31.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`);
+      const rq = (id) => routeSvg.querySelector("#" + id);
+      const rMain = rq("rMain"), rMain2 = rq("rMain2"), rGlow = rq("rGlow"), rRed = rq("rRed"), rRedGlow = rq("rRedGlow"), rHead = rq("rHead");
+      rHead.setAttribute("style", "filter:blur(40px)");
+      function routePoint(s) { // world point + tangent angle at arc length s (route.json resampled every 4 px)
+        const x = clamp(s / R.step, 0, RP.length - 1), i = Math.floor(x), k = x - i;
+        const A = RP[i], B = RP[Math.min(i + 1, RP.length - 1)], C = RP[Math.min(i + 3, RP.length - 1)], A0 = RP[Math.max(i - 2, 0)];
+        return { x: lerp(A[0], B[0], k), y: lerp(A[1], B[1], k), a: Math.atan2(C[1] - A0[1], C[0] - A0[0]) };
+      }
+
+      // pills: icon ink sizes measured on the reference (w x h px) -> element size from each path's ink box
+      // pills: icon ink sizes measured on the reference (w x h px) -> element size from each path's ink box
+      const ICINK = { flame: [[34, 44], [176, 215]], star: [[42, 46], [205, 236]], shield: [[40, 48], [190, 230]], plus: [[44, 46], [212, 212]], car: [[54, 42], [240, 184]] };
+      // n = item number in the template (1 = top of the list, the one the cursor clicks; 5 = bottom, first to arrive)
+      const PILLS = [{ k: "fire", s: 127, n: 5 }, { k: "lost", s: 132, n: 4 }, { k: "crime", s: 138, n: 3 }, { k: "sick", s: 144, n: 2 }, { k: "veh", s: 150, n: 1 }];
+      const SLOTK = { fire: "veh", lost: "sick", crime: "crime", sick: "lost", veh: "fire" }; // "baixo": whose resting slot each track takes
+      const GREEN = G([47, 232, 118]), INK = [31, 33, 32];
+      for (const p of PILLS) {
+        p.item = BAIXO ? 6 - p.n : p.n; // "baixo": the first to arrive is item 1, on top
+        p.txt = V["item" + p.item]; p.ic = V["icone" + p.item]; p.W = 586;
+        p.el = div("position:absolute;left:250px;top:0;width:586px;height:116px", world);
+        p.fill = div("position:absolute;inset:0;border-radius:40px;background:linear-gradient(90deg,#fbfbfb 0px,#f6f6f6 130px);box-shadow:0 2.5px 0 0 #e3e3e3, 0 1px 3px rgba(0,0,0,0.03)", p.el);
+        p.tint = div(G.s("position:absolute;inset:0;border-radius:40px;background:#dcf7e3;opacity:0"), p.el);
+        if (IC[p.ic]) {
+          p.icon = div(`position:absolute;left:0;top:0;width:256px;height:256px;color:rgb(${GREEN})`, p.el, IC[p.ic]);
+          let [ink, vb] = ICINK[p.ic] || [[46, 46], null]; // added icons: ink box read from the path, drawn at the list's typical 46 px
+          if (!vb) { const bb = p.icon.firstChild.getBBox(); vb = [bb.width, bb.height]; }
+          const sc = Math.min(ink[0] / vb[0], ink[1] / vb[1]), bs = 256 * sc;
+          Object.assign(p.icon.style, { left: 56 - bs / 2 + "px", top: 58 - bs / 2 + "px", width: bs + "px", height: bs + "px" });
+          p.bs = bs;
+        } else { // emoji
+          p.icon = div("position:absolute;left:6px;top:8px;width:100px;height:100px;line-height:100px;text-align:center;font-size:48px;font-family:'Apple Color Emoji'", p.el);
+          p.icon.textContent = p.ic; p.bs = 100;
+        }
+        p.text = div("position:absolute;left:113px;top:0;font-size:41.5px;font-weight:500;letter-spacing:-0.2px;white-space:pre;line-height:1", p.el);
+        p.text.textContent = p.txt;
+      }
+      // title words (layout measured once at final size, then each word follows the landing track with its own delay)
+      const TSIZE = 71, TFONT = `550 ${TSIZE}px ${FAM}`;
+      const WORDS = V.titulo.trim().split(/\s+/).map((t) => ({ t }));
+      for (const w of WORDS) { w.el = div(`position:absolute;left:0;top:0;font-size:${TSIZE}px;font-weight:550;letter-spacing:-1.5px;line-height:1;white-space:pre;transform-origin:0 ${BL * TSIZE}px`, world); w.el.textContent = w.t; }
+      // balanced lines, like the clone's "What's the / emergency?": two lines, three when one would pass 900 px
+      function splitLines(ws, font = TFONT) {
+        const W = ws.map((t) => tw(t, font, -1.5)), sp = 0.26 * TSIZE, n = ws.length;
+        const widest = (e) => Math.max(...e.slice(1).map((b, i) => W.slice(e[i], b).reduce((q, v) => q + v, 0) + sp * (b - e[i] - 1)));
+        const pick = (c) => c.reduce((a, e) => (widest(e) < widest(a) ? e : a));
+        if (n === 1) return [0, 1];
+        const two = [], three = [];
+        for (let i = 1; i < n; i++) { two.push([0, i, n]); for (let j = i + 1; j < n; j++) three.push([0, i, j, n]); }
+        const b2 = pick(two);
+        return widest(b2) > 900 && three.length ? pick(three) : b2;
+      }
+      const lineEdges = (txt, font = TFONT) => { // canvas edges of each line, to move the warning emojis with the text
+        const ws = txt.trim().split(/\s+/), e = splitLines(ws, font), sp = 0.26 * TSIZE;
+        return e.slice(1).map((b, i) => { const L = ws.slice(e[i], b).reduce((q, t) => q + tw(t, font, -1.5), 0) + sp * (b - e[i] - 1); return [540 - L / 2, 540 + L / 2]; });
+      };
+      let layoutDone = false, EMODX = [0, 0, 0];
+      function layoutTitle() {
+        const sp = 0.26 * TSIZE, e = splitLines(WORDS.map((w) => w.t));
+        for (let L = 0; L + 1 < e.length; L++) {
+          const ws = WORDS.slice(e[L], e[L + 1]), n = ws.length;
+          let len = ws[0].el.offsetWidth; for (let i = 1; i < n; i++) len = len + sp + ws[i].el.offsetWidth;
+          let x = 540 - len / 2;
+          ws.forEach((w, i) => { w.line = L; w.d = 0.6 * L + (n > 1 ? i / (n - 1) : 0); w.x = x; x = x + w.el.offsetWidth + sp; }); // clone: 0, 1.0 / 0.6
+        }
+        const a = lineEdges(V.titulo), b = lineEdges(DEF.titulo, SFF(TFONT)), a1 = a[1] || a[0];
+        EMODX = [a[0][0] - b[0][0], a[0][1] - b[0][1], a1[0] - b[1][0]];
+        layoutDone = WORDS[0].el.offsetWidth > 0;
+      }
+      const endB = div("position:absolute;left:0;top:0;width:116px;height:54px;border-radius:15px;background:#f80207", world);
+      if (RB.on) endB.style.background = rgb(RB([248, 2, 7]));
+      const endT = div("position:absolute;left:0;top:0;width:116px;height:54px;line-height:54px;text-align:center;color:#fff;font-size:27px;font-weight:590", endB);
+      endT.textContent = V.botao;
+      let BW = 116; // button width: grows with its text
+      const warns = [0, 1, 2].map(() => div("position:absolute;left:0;top:0;font-size:40px;line-height:1;font-family:'Apple Color Emoji'", world, "⚠️"));
+      const amb = div("position:absolute;left:0;top:0;font-size:84px;line-height:1;font-family:'Apple Color Emoji';transform-origin:50px 66px", world, "🚑");
+      const cursor = div("position:absolute;left:0;top:0;width:1px;height:1px", world);
+      const curArrow = div("position:absolute;left:-10px;top:-13px;width:92.4px;height:130.7px", cursor, IC.arrow); // ref arrow ink 56x100 (x1.32), tip 8 px higher
+      const curHand = div("position:absolute;left:-17px;top:-8px;width:128px;height:128px", cursor, IC.hand);
+
+      // -- MORPH BOX: icon disc -> ISS card -> Connected tile -> grey pill
+      // blue light the card throws on the ocean while it shrinks into the tile (ref f88-97, deep blue ring ~60 px out)
+      const cHalo = div("position:absolute;left:0;top:0;filter:blur(50px)", stage);
+      const box = div("position:absolute;left:0;top:0;overflow:hidden", stage);
+      const bxGreen = div(G.s("position:absolute;inset:0;background:linear-gradient(180deg,#14de25 0%,#0cbc25 48%,#0bb423 100%)"), box);
+      const bxCard = div("position:absolute;inset:0;background:#101010", box);
+      const bxCardGlow = div("position:absolute;inset:0", box);
+      const bxTile = div(G.s("position:absolute;inset:0;background:radial-gradient(38% 45% at 50% 46%, rgb(18,62,12) 0%, rgb(17,57,12) 40%, rgb(16,30,14) 75%, rgba(16,22,16,0) 100%), #101610"), box);
+      const bxGrey = div("position:absolute;inset:0;background:#626562", box);
+      const iconArt = div("position:absolute;left:0;top:0;width:208px;height:208px;transform-origin:0 0", box);
+      iconArt.innerHTML = G.s(`<svg width="208" height="208" viewBox="0 0 208 208">
+        <defs>
+          <linearGradient id="wedgeG" x1="0" y1="104" x2="0" y2="208" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0482e8"/><stop offset="0.55" stop-color="#01a5ad"/><stop offset="1" stop-color="#08b46f"/></linearGradient>
+          <clipPath id="discClip"><circle cx="104" cy="104" r="104"/></clipPath>
+        </defs>
+        <circle cx="104" cy="104" r="65" fill="#00df00" stroke="#62ff70" stroke-width="2.5"/>
+        <g clip-path="url(#discClip)"><g id="wedge"><path d="M104,104 L52,215 L156,215 Z" fill="url(#wedgeG)" stroke="#16e6b4" stroke-width="2.2" stroke-linejoin="round"/></g></g>
+        <circle cx="104" cy="104" r="30" fill="#eef9f4"/>
+      </svg>`);
+      const wedge = iconArt.querySelector("#wedge");
+      const iconWash = div("position:absolute;inset:0;background:#fdfdfd;opacity:0", box);
+      const cardArt = div("position:absolute;left:0;top:0;width:768px;height:388px;transform-origin:0 0", box);
+      const cTitle = div("position:absolute;left:62px;top:0;font-size:32px;font-weight:500;color:#f2f4f5;letter-spacing:-0.2px;white-space:pre;line-height:1", cardArt);
+      cTitle.textContent = V.cartao_titulo;
+      const cMin = div("position:absolute;right:76px;top:0;font-size:32px;font-weight:500;color:#2f6ed8;letter-spacing:-0.2px;white-space:pre;line-height:1", cardArt);
+      cMin.textContent = V.cartao_tempo;
+      const ARC = { cx: 384, cy: 539, r: 365 };
+      const arcPt = (th) => [ARC.cx + ARC.r * Math.sin(th), ARC.cy - ARC.r * Math.cos(th)];
+      const arcPath = (t0, t1) => { const a = arcPt(t0), b = arcPt(t1); return `M${a[0].toFixed(1)},${a[1].toFixed(1)} A${ARC.r},${ARC.r} 0 0 1 ${b[0].toFixed(1)},${b[1].toFixed(1)}`; };
+      const TH = Math.asin(282 / 365);
+      cardArt.insertAdjacentHTML("beforeend", `<svg width="768" height="388" viewBox="0 0 768 388" style="position:absolute;left:0;top:0">
+        <path id="beam" fill="rgba(150,185,205,0.12)"/>
+        <path id="arcBase" d="${arcPath(-TH, TH)}" fill="none" stroke="#2b5c9e" stroke-width="26" stroke-linecap="round"/>
+        <path id="arcGlow" fill="none" stroke="#52d9f2" stroke-width="54" stroke-linecap="round" opacity="0.5" style="filter:blur(16px)"/>
+        <path id="arcHi" fill="none" stroke="#a3eff8" stroke-width="26" stroke-linecap="round"/>
+        <circle id="satDot" r="13.5" fill="#f7f8f9"/>
+      </svg>`);
+      const beam = cardArt.querySelector("#beam"), arcHi = cardArt.querySelector("#arcHi"), arcGlow = cardArt.querySelector("#arcGlow"), arcBase = cardArt.querySelector("#arcBase"), satDot = cardArt.querySelector("#satDot");
+      // -- peca_cartao "anel": progress ring in the same card, with the arc's strokes, colour ramps, glow and dot.
+      //    Its fill follows the arc highlight's measured travel (f36-88), so it speeds up and pauses where the highlight did
+      const RING = { cx: 384, cy: 220, r: 86 };
+      const ringPt = (th, c) => [c.cx + c.r * Math.sin(th), c.cy - c.r * Math.cos(th)];
+      const ringPath = (c, a1) => { const p0 = ringPt(0, c), p1 = ringPt(a1, c); return `M${p0[0].toFixed(2)},${p0[1].toFixed(2)} A${c.r.toFixed(2)},${c.r.toFixed(2)} 0 ${a1 > Math.PI ? 1 : 0} 1 ${p1[0].toFixed(2)},${p1[1].toFixed(2)}`; };
+      const hlc = (f) => (f < 36 ? 9 : f <= 72 ? (tr("hl", f, 0) + tr("hl", f, 1)) / 2 : (tr("hl", 72, 0) + tr("hl", 72, 1)) / 2 + kf(f, [[72, 0], [80, 22], [88, 30]]));
+      const CUM = [0]; for (let f = 36; f < 88; f++) CUM.push(CUM[CUM.length - 1] + Math.abs(hlc(f + 1) - hlc(f)));
+      const ringP = (f) => { const x = clamp(f - 36, 0, 52), i = Math.min(51, Math.floor(x)); return 0.04 + (0.8 * lerp(CUM[i], CUM[i + 1], x - i)) / CUM[52]; };
+      let ringBase, ringGlow, ringHi, cPct;
+      if (ANEL) {
+        for (const e of [beam, arcBase, arcGlow, arcHi]) e.setAttribute("display", "none");
+        satDot.insertAdjacentHTML("beforebegin", `<circle id="ringBase" fill="none" stroke="#2b5c9e" stroke-width="24"/><path id="ringGlow" fill="none" stroke="#52d9f2" stroke-width="50" stroke-linecap="round" opacity="0.5" style="filter:blur(16px)"/><path id="ringHi" fill="none" stroke="#a3eff8" stroke-width="24" stroke-linecap="round"/>`);
+        [ringBase, ringGlow, ringHi] = ["ringBase", "ringGlow", "ringHi"].map((id) => cardArt.querySelector("#" + id));
+        cPct = div("position:absolute;left:0;top:0;width:768px;text-align:center;font-size:64px;font-weight:600;color:#f2f4f5;letter-spacing:-1px;white-space:pre;line-height:1", cardArt);
+        cPct.style.top = RING.cy + 23 - BL * 64 + "px";
+      }
+      const tileArt = div("position:absolute;left:0;top:0;width:270px;height:270px;transform-origin:0 0", box);
+      const tBar = div("position:absolute;left:0;top:0;height:28px;border-radius:14px;background:#a6f1fb;box-shadow:0 0 14px rgba(82,217,242,0.8)", tileArt);
+      const tCon = div(G.s("position:absolute;left:0;top:0;width:270px;text-align:center;font-size:35px;font-weight:500;color:#42f530;line-height:1;white-space:pre;text-shadow:0 0 6px rgba(50,240,20,0.3)"), tileArt);
+      tCon.textContent = V.tile_rotulo;
+      // satellite glyph: rides the arc as the ISS (card), then flies up and becomes the tile icon (ref f88-96)
+      const issG = div("position:absolute;left:0;top:0;width:56px;height:32px;color:#f4f6f8;transform-origin:28px 16px", stage, IC.iss);
+      const tileG = div("position:absolute;left:0;top:0;width:72.5px;height:41px;transform-origin:36.25px 20.5px", stage, IC.sat);
+      const knob = div("position:absolute;left:0;top:0;border-radius:50%", stage);
+      const knobDot = div("position:absolute;border-radius:50%;background:radial-gradient(circle at 50% 42%, #0284f6 0%, #0089ee 58%, #05a4ea 84%, #3cc6ff 100%)", knob);
+      const label = div(G.s("position:absolute;left:0;top:0;width:1080px;text-align:center;font-size:39px;font-weight:600;color:#6b8f72;white-space:pre;line-height:1;letter-spacing:-0.1px"), stage);
+      label.textContent = V.rotulo_icone;
+
+      // -- HUD inside the zoomer: flying dot + Dynamic Island
+      const dot = div("position:absolute;left:0;top:0;border-radius:50%;background:#0a63f6", stage);
+      const island = div("position:absolute;left:0;top:0;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,0.16)", zoomer);
+      const iTimer = div("position:absolute;left:0;top:0;width:80px;height:80px", island, PT.s(`<svg viewBox="0 0 80 80" width="80" height="80"><circle cx="40" cy="40" r="36.3" fill="none" stroke="#1a6cf7" stroke-width="5.6"/><line id="hand" x1="41" y1="40" x2="58" y2="40" stroke="#1a6cf7" stroke-width="5" stroke-linecap="round"/></svg>`));
+      const iHand = iTimer.querySelector("#hand");
+      const HELP = V.ilha_texto.trim().split(/\s+/), HFONT = `500 24px ${FAM}`;
+      const iHelp = div(PT.s("position:absolute;left:0;top:0;font-size:24px;font-weight:500;color:#1f6ff7;white-space:pre;line-height:1"), island);
+      const helpW = HELP.map((w, i) => el("span", "display:inline-block", iHelp, null));
+      helpW.forEach((e, i) => { e.textContent = HELP[i] + (i < HELP.length - 1 ? " " : ""); });
+      const iClock = div("position:absolute;left:0;top:0;height:90px;width:150px;overflow:hidden", island);
+      // the clock counts down from relogio: T0 -> T1 -> T2 (the clone: 1:40 -> 1:39 -> 1:38)
+      const secs = (t) => { const [m, q] = t.split(":"); return +m * 60 + +q; };
+      const fmt = (v, t) => String(Math.floor(v / 60)).padStart(t.indexOf(":"), "0") + ":" + String(v % 60).padStart(2, "0");
+      const T0 = V.relogio.trim(), T1 = fmt(Math.max(0, secs(T0) - 1), T0), T2 = fmt(Math.max(0, secs(T0) - 2), T0);
+      const digCss = PT.s("position:absolute;left:0;top:0;font-size:68px;font-weight:400;color:#1f6ff7;line-height:1;white-space:pre");
+      const DO = [...T0].map(() => div(digCss, iClock)), DN = [...T0].map(() => div(digCss, iClock)); // glyph now / glyph rolling in, per slot
+      let CLK = null, ISX = 0; // glyph x positions + total width (canvas advances, -1.5 px tracking); island extra width
+      function clockLayout() {
+        const lay = (t, f = `400 68px ${FAM}`) => { const a = (ch) => tw(ch, f), ls = -1.5, x = [0]; for (let i = 1; i < t.length; i++) x.push(x[i - 1] + a(t[i - 1]) + ls); return { x, w: x[x.length - 1] + a(t[t.length - 1]) }; };
+        CLK = lay(T0);
+        // longer text or clock: the island grows by the difference (against the clone in SF Pro), never shrinks below the clone
+        ISX = Math.max(0, tw(V.ilha_texto.trim(), HFONT) - tw(DEF.ilha_texto, SFF(HFONT)) + CLK.w - lay(DEF.relogio, '400 68px "SF Pro"').w);
+        if (CLK.w > 140) iClock.style.width = CLK.w + 10 + "px";
+      }
+      // -- bubble end card (width grows with the name; tail stays centred)
+      const bubble = div("position:absolute;left:0;top:0;width:368px;height:146px;transform-origin:184px 84px", stage);
+      const bubbleSvg = (dx) => {
+        const W = 368 + dx, c = dx / 2;
+        const d = `M57.5,29 H${162 + c} C${170 + c},29 ${174 + c},22 ${178 + c},12 C${180 + c},4 ${184 + c},-1 ${187 + c},6 C${191 + c},17 ${196 + c},29 ${208 + c},29 H${310.5 + dx} A57.5,57.5 0 0 1 ${310.5 + dx},144 H57.5 A57.5,57.5 0 0 1 57.5,29 Z`;
+        return `<svg width="${W}" height="146" viewBox="0 0 ${W} 146" style="position:absolute;left:0;top:0">
+          <defs><linearGradient id="sheen" x1="0" y1="0" x2="${W}" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop id="sh1" offset="0.3" stop-color="#bfe3ff" stop-opacity="0"/><stop id="sh2" offset="0.5" stop-color="#d8f0ff" stop-opacity="0"/><stop id="sh3" offset="0.7" stop-color="#bfe3ff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+          <path d="${d}" fill="#0060fb"/>
+          <path d="${d}" fill="url(#sheen)"/>
+        </svg>`;
+      };
+      bubble.innerHTML = bubbleSvg(0);
+      let sh = [1, 2, 3].map((i) => bubble.querySelector("#sh" + i)), BDX = 0;
+      const bText = div("position:absolute;left:51px;top:0;font-size:47.5px;font-weight:500;color:#fff;white-space:pre;line-height:1;letter-spacing:-0.3px", bubble);
+      bText.textContent = V.balao_nome;
+      const bMoji = div("position:absolute;left:268px;top:69px;width:50px;height:50px;font-size:44px;line-height:50px;text-align:center;font-family:'Apple Color Emoji'", bubble);
+      bMoji.textContent = V.balao_emoji;
+      const bFones = div("position:absolute;left:269px;top:68px;width:48px;height:27px;border:4.5px solid #262626;border-bottom:none;border-radius:23px 23px 0 0", bubble);
+      if (!V.balao_fones) bFones.style.display = "none";
+      if (V.logo) { // brand logo in the emoji's place, round like the avatar
+        bMoji.textContent = ""; bFones.style.display = "none";
+        el("img", "display:block;width:100%;height:100%;object-fit:cover;border-radius:50%", bMoji).src = V.logo;
+      }
+
+      // -- MOLDE layout from the text (re-run once the font is ready): grow or shrink to fit, never past the clone at defaults
+      let fitDone = false;
+      function fitAll() {
+        const f = fitPx(39, `600 39px ${FAM}`, -0.1, "rotulo_icone", 1000); label.style.fontSize = (f || 39) + "px";
+        const cf = `500 32px ${FAM}`, room = 768 - 62 - 76 - 28, cw = tw(V.cartao_titulo, cf, -0.2) + tw(V.cartao_tempo, cf, -0.2);
+        cTitle.style.fontSize = cMin.style.fontSize = (cw > room ? (32 * room) / cw : 32) + "px";
+        tCon.style.fontSize = (fitPx(35, `500 35px ${FAM}`, 0, "tile_rotulo", 250) || 35) + "px";
+        for (const p of PILLS) { // pill grows with its text; past 1040 px the text shrinks instead
+          const w = tw(p.txt, `500 41.5px ${FAM}`, -0.2), need = 113 + w + 44;
+          p.W = Math.min(1040, Math.max(586, need));
+          p.text.style.fontSize = (need > 1040 ? (41.5 * (1040 - 157)) / w : 41.5) + "px";
+        }
+        BW = 116 + grow(`590 27px ${FAM}`, 0, "botao");
+        endB.style.width = endT.style.width = BW + "px";
+        const dx = grow(`500 47.5px ${FAM}`, -0.3, "balao_nome");
+        if (dx !== BDX) {
+          BDX = dx; bubble.querySelector("svg").outerHTML = bubbleSvg(dx);
+          sh = [1, 2, 3].map((i) => bubble.querySelector("#sh" + i));
+          Object.assign(bubble.style, { width: 368 + dx + "px", transformOrigin: `${184 + dx / 2}px 84px` });
+          bMoji.style.left = 268 + dx + "px"; bFones.style.left = 269 + dx + "px";
+        }
+        fitDone = true;
+      }
+
+      // ======================================================================================
+      // SCENE FUNCTIONS (F continuous frame, Fi integer output frame)
+      // ======================================================================================
+      function iconScale(F) {
+        return F >= 24 ? tr("box", F, 0) / 208
+          : cr(F, [[5, 0.5], [6, 0.62], [7, 0.8], [8, 0.865], [9, 0.88], [10, 0.9], [11, 0.93], [12, 0.96], [13, 0.98], [14, 0.995], [16, 0.99], [19, 0.975], [22, 0.985], [24, 1.0]]);
+      }
+      function boxGeom(F) {
+        if (F < 24) { const s = iconScale(F); return [208 * s, 208 * s, 539.5, 538.5]; }
+        return [tr("box", F, 0), tr("box", F, 1), tr("box", F, 2), tr("box", F, 3)];
+      }
+      function boxRadius(F, w, h) {
+        if (F <= 31) return Math.min(w, h) / 2;
+        if (F <= 35) return kf(F, [[31, 159], [32, 128], [33, 106], [34, 95], [35, 0.229 * h]], E.lin);
+        if (F <= 86) return 0.229 * h;
+        if (F <= 112) return lerp(0.229, 0.235, prog(F, 86, 100)) * h;
+        return kf(F, [[112, 0.235], [122, 0.25], [128, 0.34]], E.lin) * h;
+      }
+
+      function drawBackground(F, Fi) {
+        if (Fi <= 26) { show(fieldWrap, true); paintField(F, "intro"); }
+        else if (Fi >= 276 && Fi <= 300) { show(fieldWrap, true); paintField(F, "bluewash"); }
+        else show(fieldWrap, false);
+        if (Fi >= 112 && Fi <= 140) {
+          const B = window.FIELD.greenwash, x = clamp(F - B.a, 0, B.k.length - 1), i = Math.floor(x), t = x - i;
+          washFlat.style.background = rgb(mixc(hex(B.k[i][0]), hex(B.k[Math.min(i + 1, B.k.length - 1)][0]), t)); show(washFlat, true);
+        } else show(washFlat, false);
+        const on = Fi >= 1 && Fi <= 6;
+        streaks.forEach((s, j) => {
+          show(s, on); if (!on) return;
+          const sgn = j ? -1 : 1; // 0: TR corner, 1: BL corner
+          const d = cr(F, [[1, -46], [2, -38], [3, -12], [4, 46], [5, 150], [6, 260]]);
+          const cx = 540 + sgn * (735 - d) * Math.SQRT1_2, cy = 540 - sgn * (735 - d) * Math.SQRT1_2;
+          const len = kf(F, [[1, 90], [3, 140], [5, 230]]), op = kf(F, [[1.2, 0], [2, 0.85], [3.5, 0.95], [4.5, 0.6], [5.5, 0]]);
+          s.style.width = len + "px";
+          s.style.transform = `translate(${cx - len / 2}px,${cy - 15}px) rotate(-45deg)`;
+          s.style.opacity = op; s.style.filter = blurf(kf(F, [[2, 4], [4, 7], [5, 16]]));
+        });
+      }
+
+      function drawEarth(F, Fi, Fr = F) {
+        const on = Fi >= 54 && Fi <= 108; show(earth, on); if (!on) return;
+        const w = tr("box", Math.min(F, 88), 0);
+        const s = (F <= 88 ? w / 614 : 1) * kf(F, [[88, 1], [100, 1.08], [108, 1.1]]);
+        eGeo.setAttribute("transform", `translate(540 540) scale(${s}) translate(-540 -540)`);
+        if (RADAR) { // sweep turns ~1 rev / 2.4 s; each blip flares as the sweep passes it, then cools
+          const th = Fr * 5;
+          radar.rs.style.transform = `scale(${s})`;
+          rSweep.style.transform = `rotate(${th}deg)`;
+          rBlips.forEach((b, i) => {
+            const since = (((th - BLIPS[i][1]) % 360) + 360) % 360, k = Math.exp(-since / 45) * clamp(Fr - 58 - i * 4, 0, 1);
+            b.style.opacity = 0.2 + 0.8 * k; b.style.transform = `scale(${1 + 0.9 * k})`;
+          });
+        }
+        earth.style.opacity = kf(F, [[55, 0], [60, 0.12], [64, 0.3], [68, 0.5], [72, 0.68], [76, 0.83], [80, 0.93], [84, 1], [99, 1], [100, 0.81], [102, 0.62], [104, 0.45], [106, 0.2], [108, 0]]); // lime fades out faster (ref f100-104 mix)
+        eGreen.setAttribute("opacity", kf(F, [[92, 0], [94.5, 0.55], [96.5, 0.9], [98, 0.6], [100, 0]], E.lin));
+        eLime.setAttribute("opacity", kf(F, [[96, 0], [98, 0.8], [99.5, 1]], E.lin));
+        // the halo tightens around the shrinking tile
+        const m = kf(F, [[88, 1], [94, 0.93], [102, 0.92], [104, 0.86], [107, 0.72]]);
+        earth.style.transform = `scale(${m})`;
+        earth.style.filter = blurf(kf(F, [[88, 1], [92, 2.5], [96, 5], [100, 8]]));
+      }
+
+      const colk = (F, keys) => {
+        if (F <= keys[0][0]) return keys[0][1];
+        for (let i = 1; i < keys.length; i++) if (F <= keys[i][0]) return mixc(keys[i - 1][1], keys[i][1], (F - keys[i - 1][0]) / (keys[i][0] - keys[i - 1][0]));
+        return keys[keys.length - 1][1];
+      };
+      // tile -> grey pill -> Fire pill: one neutral ramp (ref f118-133)
+      const GREYK = GK([[119, [20, 32, 19]], [120, [31, 37, 31]], [121, [43, 48, 43]], [122, [59, 61, 59]], [123, [80, 80, 80]], [124, [101, 101, 101]], [125, [123, 123, 123]], [126, [148, 148, 150]], [127, [174, 174, 175]], [128, [194, 194, 195]], [129, [211, 212, 214]], [130, [225, 225, 227]], [131, [234, 234, 235]], [132, [242, 242, 242]], [133, [246, 246, 246]]]);
+      // card content scale follows the box until f88, then holds while the box shrinks around it (ref f88-97)
+      const cardS = (F) => { const g = boxGeom(Math.min(F, 88)); return Math.min(g[0] / 768, F < 40 ? 9 : g[1] / 388); };
+      // ISS dot on the arc, angle from the measured dot centre (ref f73-87)
+      const SATTH = [[70, -0.77], [73, -0.734], [74, -0.721], [75, -0.709], [76, -0.699], [77, -0.689], [78, -0.682], [80, -0.664], [82, -0.647], [83, -0.637], [84, -0.626], [85, -0.612], [86, -0.596], [87, -0.575], [88, -0.55], [89, -0.52]];
+      function drawSat(F, w, h, cx, cy) {
+        // ISS glyph: sits off the dot along the arc normal, axis on the tangent (ref f73-89)
+        const iv = F >= 70 && F < 90.5; show(issG, iv);
+        if (iv) {
+          const s = cardS(F), C = (q) => [cx + (q[0] - 384) * s, cy + (q[1] - 194) * s];
+          const at = (f) => {
+            let th = cr(f, SATTH), p = arcPt(th), T = kf(f, [[70, 6], [73, 8], [77, 14.7], [80, 18.7], [84, 21], [88, 21.6]]), N = kf(f, [[70, 40], [73, 45], [75, 58], [77, 69], [80, 76], [84, 78], [88, 75]]);
+            if (ANEL) { th = 2 * Math.PI * ringP(f); p = ringPt(th, RING); T *= 0.6; N *= 0.6; } // rides just outside the ring head
+            return [C([p[0] + T * Math.cos(th) + N * Math.sin(th), p[1] + T * Math.sin(th) - N * Math.cos(th)]), th * 180 / Math.PI];
+          };
+          let [[X, Y], rot] = at(Math.min(F, 88));
+          let sy = 1;
+          if (F > 88) { // lifts off towards the tile icon slot, turning edge-on (ref f89-90)
+            X = kf(F, [[88, X], [89, 390], [90, 424], [91, 455]], E.lin); Y = kf(F, [[88, Y], [89, 505], [90, 498], [91, 489]], E.lin);
+            rot = lerp(rot, -8, prog(F, 88, 90)); sy = kf(F, [[88, 1], [89, 0.75], [90, 0.2]], E.lin);
+          }
+          issG.style.transform = `translate(${X - 28}px,${Y - 16}px) rotate(${rot}deg) scale(${s},${s * sy})`;
+          issG.style.opacity = kf(F, [[70, 0], [71, 0.5], [72, 0.85], [73, 1], [89.5, 1], [90.5, 0]], E.lin);
+          issG.style.filter = blurf(kf(F, [[70, 7], [71, 5], [72, 2.5], [73, 0.8], [74, 0], [87.5, 0], [89, 2.5], [90, 3]], E.lin));
+        }
+        // tile icon: grows out of the flying glyph and eases into the tile's top slot (ref f90-122)
+        const tv = F >= 89.7 && F < 123; show(tileG, tv);
+        if (tv) {
+          const X = cr(F, [[90, 424], [91, 455], [92, 477], [93, 491], [94, 502], [95, 510], [96, 517], [98, 526], [100, 532], [102, 535.5], [104, 537.5], [106, 538.5], [108, 539], [122, 539]]);
+          const Y = cr(F, [[90, 498], [91, 489], [92, 478], [93, 470], [94, 465], [95, 464], [96, 462], [98, 463], [100, 465.5], [102, 467.5], [104, 468.5], [106, 469.5], [108, 471.5], [110, 475.5], [112, 480.5], [114, 488.5], [116, 500.5], [118, 517.5], [120, 540.5], [122, 562]]);
+          const sx = kf(F, [[90, 0.36], [91, 0.68], [92, 0.9], [93, 1]], E.lin), sy = kf(F, [[90, 0.12], [91, 0.6], [92, 0.85], [93, 1], [118, 1], [120, 0.8], [122, 0.6]], E.lin);
+          tileG.style.transform = `translate(${X - 36.25}px,${Y - 20.5}px) scale(${sx},${sy})`;
+          const c = colk(F, GK([[90, [128, 200, 210]], [91, [110, 225, 235]], [93, [110, 225, 235]], [94, [90, 225, 160]], [95, [65, 235, 95]], [96, [52, 245, 35]], [98, [52, 255, 13]]]));
+          tileG.style.color = rgb(c);
+          tileG.style.opacity = kf(F, [[89.7, 0], [90.3, 0.8], [91, 1], [121, 1], [123, 0]], E.lin);
+          const b = kf(F, [[90, 3], [93, 3.5], [94, 3], [95, 2.2], [96, 1.5], [98, 0.6], [100, 0], [119, 0], [121, 2], [122, 4]], E.lin);
+          tileG.style.filter = `${b > 0.05 ? `blur(${b.toFixed(2)}px) ` : ""}drop-shadow(0 0 4px ${rgb(c, 0.35)})`;
+        }
+      }
+      // peca_cartao "anel": fill, head dot, card light and the collapse into the tile dot (same measured widths as the arc)
+      function drawRing(F, Fi, Fr, s, ox, oy, tx) {
+        const a1 = 2 * Math.PI * Math.min(ringP(Math.min(Fr, 88)), 0.995);
+        const k = kf(F, [[86, 89], [87, 87.5], [88, 86], [89, 83.5], [90, 81], [91, 77.5], [92, 72.5], [93, 66], [94, 55], [95, 38], [96, 13], [97, 1]], E.lin) / 89;
+        const c = { cx: 384, cy: lerp(RING.cy, 194, prog(F, 86, 97)), r: RING.r * k }, sw = kf(F, [[93, 24], [97, 30]]);
+        ringBase.setAttribute("cx", c.cx); ringBase.setAttribute("cy", c.cy); ringBase.setAttribute("r", c.r);
+        const d = ringPath(c, a1);
+        ringHi.setAttribute("d", d); ringGlow.setAttribute("d", d);
+        ringHi.setAttribute("stroke-width", sw); ringGlow.setAttribute("stroke-width", sw * 2.08);
+        ringHi.setAttribute("stroke", rgb(colk(F, [[33, [30, 150, 245]], [34, [45, 190, 252]], [35, [61, 217, 254]], [36, [84, 215, 255]], [37, [104, 220, 252]], [38, [132, 226, 247]], [39, [144, 231, 247]], [40, [153, 233, 247]], [41, [161, 235, 250]], [42, [163, 239, 248]]])));
+        ringBase.setAttribute("stroke", rgb(colk(F, [[33, [8, 125, 255]], [35, [9, 111, 231]], [36, [16, 106, 208]], [38, [27, 96, 175]], [40, [38, 84, 143]], [43, [42, 76, 126]]])));
+        const sq = prog(F, 87, 93, E.in2);
+        ringBase.setAttribute("opacity", 1 - sq);
+        ringGlow.setAttribute("opacity", 0.5 * (1 - prog(F, 94, 97)));
+        const hp = ringPt(a1, c);
+        satDot.setAttribute("cx", hp[0]); satDot.setAttribute("cy", hp[1]); satDot.setAttribute("r", 13.5 * Math.min(1, k * 1.6));
+        satDot.setAttribute("opacity", kf(F, [[33, 0], [36, 1], [87, 1], [88.5, 0.4], [89.5, 0]], E.lin));
+        const gx = ox + hp[0] * s, gy = oy + (hp[1] + 40) * s; // the card's inner light follows the ring head
+        bxCardGlow.style.background = `radial-gradient(${450 * s}px ${340 * s}px at ${gx}px ${gy}px, rgba(50,110,130,0.64) 0%, rgba(36,78,94,0.45) 35%, rgba(24,42,48,0.2) 62%, rgba(16,16,16,0) 85%), linear-gradient(90deg, rgba(30,58,66,0.36) 0%, rgba(24,40,46,0.16) 30%, rgba(16,16,16,0) 62%)`;
+        bxCardGlow.style.opacity = kf(F, [[33.5, 0], [35, 0.5], [37, 0.8], [40, 1], [90, 1], [94, 0]]);
+        // the number counts by whole output frames (a subframe never mixes two numbers)
+        const n = String(Math.round(ringP(Math.min(Fi, 88)) * 100));
+        if (cPct.dataset.n !== n) { cPct.dataset.n = n; cPct.innerHTML = `${n}<span style="font-size:34px;color:#a3eff8;margin-left:3px">%</span>`; }
+        cPct.style.opacity = tx;
+        cPct.style.filter = blurf(kf(F, [[38, 4], [40.5, 0], [87, 0], [90, 3]]));
+      }
+      function drawBox(F, Fi, Fr = F) {
+        const on = Fi >= 5 && Fi <= 128; show(box, on); show(knob, Fi >= 8 && Fi <= 93);
+        show(issG, false); show(tileG, false); show(cHalo, false);
+        if (!on) return;
+        const [w, h, cx, cy] = boxGeom(F), r = boxRadius(F, w, h);
+        Object.assign(box.style, { left: cx - w / 2 + "px", top: cy - h / 2 + "px", width: w + "px", height: h + "px", borderRadius: r + "px" });
+        const blur = kf(F, [[5, 16], [6, 13], [7, 8], [8, 5], [9, 4.5], [10, 4.5], [11, 3.2], [12, 2], [13, 1], [14, 0], [30.5, 0], [31, 1.5], [32, 4.5], [33, 7.5], [34, 6.5], [35, 4.5], [36, 2.6], [37, 1.2], [38, 0.3], [39, 0], [89, 0], [90, 1.5], [91, 2.5], [92, 3], [93, 3], [94, 2.5], [95, 1.8], [96, 1], [97, 0.4], [98, 0], [121, 0], [122, 2.6], [123, 3.8], [125, 5.5], [127, 6], [128, 5]], E.lin);
+        box.style.filter = blurf(blur);
+        box.style.opacity = kf(F, [[5, 0], [6, 0.5], [7, 0.95], [8, 1], [126, 1], [128, 0.55]], E.lin);
+        iconWash.style.opacity = kf(F, [[8.5, 0], [9.5, 0.12], [10, 0.3], [11, 0.42], [12, 0.4], [13, 0.22], [14, 0.12], [15, 0.05], [16, 0]], E.lin);
+        // the green disc flares (f28-31) and then darkens in place to the card black (ref f32-37), no crossfade to grey
+        const gb = kf(F, [[27, 1], [28, 1.04], [29, 1.09], [30, 1.19], [31, 1.23], [32, 1.15], [33, 1]], E.lin);
+        bxGreen.style.opacity = kf(F, [[37, 1], [38, 0]], E.lin);
+        bxGreen.style.filter = F > 27 ? `brightness(${gb.toFixed(3)})` : "none";
+        const card = kf(F, [[32, 0], [33, 0.4], [34, 0.73], [35, 0.866], [36, 0.94], [37, 0.975], [38, 1], [100, 1], [101, 0]], E.lin); // green mixes into #101010 (ref f33-37 R/G/B)
+        bxCard.style.opacity = card;
+        bxTile.style.opacity = kf(F, [[91, 0], [97, 1], [121.5, 1], [124, 0]], E.lin);
+        bxGrey.style.opacity = kf(F, [[118.5, 0], [119.5, 1]], E.lin);
+        bxGrey.style.background = rgb(colk(F, GREYK));
+        // icon art
+        const ia = kf(F, [[8.5, 0], [10.5, 0.9], [12, 1], [30, 1], [31.5, 0.6], [33, 0]], E.lin);
+        show(iconArt, ia > 0); if (ia > 0) {
+          const s = w / 208; iconArt.style.transform = `translate(${(w - 208 * s) / 2}px,${(h - 208 * s) / 2}px) scale(${s})`;
+          iconArt.style.opacity = ia; iconArt.style.filter = F > 27 ? `brightness(${gb.toFixed(3)})` : "none";
+          wedge.setAttribute("transform", `rotate(${cr(F, [[24, 0], [25, -4], [26, -11], [27, -20], [28, -32], [29, -46], [30, -62], [31, -78]])} 104 104)`);
+        }
+        // card art
+        const ca = kf(F, [[32.5, 0], [33, 0.55], [34, 0.85], [35, 0.95], [36, 1], [96, 1], [97.5, 0]], E.lin);
+        show(cardArt, ca > 0); show(bxCardGlow, ca > 0); if (ca > 0) {
+          const s = cardS(F);
+          // the arc arrives high in the growing box and settles (ref apex f33-35)
+          const ox = (w - 768 * s) / 2, oy = (h - 388 * s) / 2 + kf(F, [[33, -30], [34, -16], [35, -4], [36, 0]], E.lin);
+          cardArt.style.transform = `translate(${ox}px,${oy}px) scale(${s})`;
+          cardArt.style.opacity = ca;
+          const tx = kf(F, [[38, 0], [40.5, 1], [87, 1], [90, 0]], E.lin);
+          cTitle.style.opacity = tx; cMin.style.opacity = tx;
+          cTitle.style.top = cMin.style.top = 82 - BL * 32 + "px";
+          cTitle.style.filter = cMin.style.filter = blurf(kf(F, [[38, 4], [40.5, 0], [87, 0], [90, 3]]));
+          if (ANEL) drawRing(F, Fi, Fr, s, ox, oy, tx); else {
+          const hx0 = Fr < 36 ? -103 : tr("hl", Fr, 0), hx1 = Fr < 36 ? 122 : tr("hl", Fr, 1);
+          let x0 = hx0 + 13, x1 = hx1 - 13;
+          if (Fr > 72) { const d = kf(Fr, [[72, 0], [80, 22], [88, 30]]); x0 = tr("hl", 72, 0) + 13 + d; x1 = tr("hl", 72, 1) - 13 + d; }
+          if (F > 86) { // highlight recentres on the apex and collapses into the tile dot (ref widths f86-97)
+            const hw = kf(F, [[86, 89], [87, 87.5], [88, 86], [89, 83.5], [90, 81], [91, 77.5], [92, 72.5], [93, 66], [94, 55], [95, 38], [96, 13], [97, 1]], E.lin) / s;
+            const b = prog(F, 86, 89); x0 = lerp(x0, -hw, b); x1 = lerp(x1, hw, b);
+          }
+          const t0 = Math.asin(clamp(x0 / ARC.r, -0.99, 0.99)), t1 = Math.asin(clamp(x1 / ARC.r, -0.99, 0.99));
+          arcHi.setAttribute("d", arcPath(t0, t1)); arcGlow.setAttribute("d", arcPath(t0, t1));
+          const sw = kf(F, [[93, 26], [97, 33]]);
+          arcHi.setAttribute("stroke-width", sw); arcGlow.setAttribute("stroke-width", sw * 2.08);
+          arcHi.setAttribute("stroke", rgb(colk(F, [[33, [30, 150, 245]], [34, [45, 190, 252]], [35, [61, 217, 254]], [36, [84, 215, 255]], [37, [104, 220, 252]], [38, [132, 226, 247]], [39, [144, 231, 247]], [40, [153, 233, 247]], [41, [161, 235, 250]], [42, [163, 239, 248]]])));
+          arcBase.setAttribute("stroke", rgb(colk(F, [[33, [8, 125, 255]], [35, [9, 111, 231]], [36, [16, 106, 208]], [38, [27, 96, 175]], [40, [38, 84, 143]], [43, [42, 76, 126]]])));
+          const a = arcPt(t0), b = arcPt(t1);
+          beam.setAttribute("d", `M${a[0]},${a[1] + 6} L${b[0]},${b[1] + 6} L384,382 Z`);
+          // the card's inner light follows the highlight (ref: left half lit while the highlight sits left)
+          const hm = arcPt((t0 + t1) / 2), gx = ox + hm[0] * s, gy = oy + (hm[1] + 40) * s;
+          bxCardGlow.style.background = `radial-gradient(${450 * s}px ${340 * s}px at ${gx}px ${gy}px, rgba(50,110,130,0.64) 0%, rgba(36,78,94,0.45) 35%, rgba(24,42,48,0.2) 62%, rgba(16,16,16,0) 85%), linear-gradient(90deg, rgba(30,58,66,0.36) 0%, rgba(24,40,46,0.16) 30%, rgba(16,16,16,0) 62%)`;
+          bxCardGlow.style.opacity = kf(F, [[33.5, 0], [35, 0.5], [37, 0.8], [40, 1], [90, 1], [94, 0]]);
+          const so = kf(F, [[70, 0], [72, 0.5], [73, 1], [87, 1], [88.5, 0.4], [89.5, 0]], E.lin);
+          const p = arcPt(cr(F, SATTH));
+          satDot.setAttribute("cx", p[0]); satDot.setAttribute("cy", p[1]); satDot.setAttribute("opacity", so);
+          const sq = prog(F, 87, 93, E.in2);
+          arcBase.setAttribute("opacity", 1 - sq); beam.setAttribute("opacity", 1 - sq);
+          arcGlow.setAttribute("opacity", 0.5 * (1 - prog(F, 94, 97)));
+          }
+        } else show(bxCardGlow, false);
+        // tile art (the icon itself flies in from the arc: drawSat)
+        const ta = kf(F, [[88.5, 0], [89.5, 1], [126, 1]], E.lin);
+        show(tileArt, ta > 0); if (ta > 0) {
+          const s = h / 270; tileArt.style.transform = `translate(${(w - 270 * s) / 2}px,0px) scale(${s})`;
+          tileArt.style.opacity = ta;
+          tCon.style.opacity = kf(F, [[88.5, 0], [89.5, 0.45], [90.5, 0.8], [92, 1], [116, 1], [119, 0]], E.lin);
+          tCon.style.filter = blurf(kf(F, [[89.5, 8], [91, 5], [93, 3], [95, 1.5], [97, 0], [116, 0], [119, 2]], E.lin));
+          tCon.style.color = rgb(colk(F, GK([[91, [40, 215, 175]], [96, [50, 225, 90]], [101, [66, 245, 48]]])));
+          tCon.style.top = 218 - BL * 35 + "px";
+          const yo = kf(F, [[97, -12], [98, -7], [100, 0]], E.lin) / s, bc = prog(F, 97, 101);
+          Object.assign(tBar.style, { width: "28px", left: 135 - 14 + "px", top: 135 - 14 + yo + "px" });
+          tBar.style.background = rgb(mixc(G([163, 239, 248]), G([52, 255, 8]), bc));
+          tBar.style.boxShadow = `0 0 14px ${rgb(mixc(G([82, 217, 242]), G([52, 255, 8]), bc), 0.6)}`;
+          tBar.style.opacity = kf(F, [[96.8, 0], [97.5, 1], [124, 1], [126, 0]], E.lin);
+        }
+        drawSat(F, w, h, cx, cy);
+        const ho = kf(F, [[86, 0], [88, 0.2], [90, 0.33], [92, 0.75], [94, 0.67], [96, 0.4], [98, 0]], E.lin);
+        show(cHalo, ho > 0); if (ho > 0) {
+          Object.assign(cHalo.style, { left: cx - w / 2 - 60 + "px", top: cy - h / 2 - 60 + "px", width: w + 120 + "px", height: h + 120 + "px", borderRadius: r + 60 + "px", opacity: ho });
+          cHalo.style.background = rgb(colk(F, GK([[88, [60, 95, 205]], [92, [60, 95, 205]], [94, [60, 120, 200]], [96, [60, 150, 160]]])));
+        }
+        // knob (icon dot -> card knob)
+        if (Fi >= 8 && Fi <= 93) {
+          let ky, kd, ring;
+          if (F < 24) { const s = iconScale(F); ky = 538.5; kd = 40 * s; ring = 60 * s; }
+          else if (F < 42) {
+            ky = cr(F, [[24, 542.5], [25, 545], [26, 547.5], [27, 550], [28, 554], [29, 565], [30, 578], [31, 604], [32, 652], [33, 683.5], [34, 698.5], [35, 707.5], [36, 714.5], [37, 718.5], [38, 721.5], [39, 723.5], [40, 725.5], [41, 727.5], [42, 727.5]]);
+            kd = cr(F, [[24, 40], [29, 40], [30, 42], [31, 43], [32, 52], [33, 60], [34, 68], [35, 75], [37, 82], [39, 84], [42, 84]]);
+            ring = kd * (F < 34 ? lerp(1.5, 1.82, prog(F, 29, 31)) : lerp(1.82, 1.405, prog(F, 34, 37))); // ref ring/dot 1.8 in the morph, 1.4 on the card
+          } else { const s = w / 768; ky = cy + (h / 2 - 5.5 * (h / 388)); kd = 84 * Math.min(s, h / 388); ring = kd * 1.405; }
+          Object.assign(knob.style, { left: 539.5 - ring / 2 + "px", top: ky - ring / 2 + "px", width: ring + "px", height: ring + "px" });
+          const mint = prog(F, 31, 36);
+          const kc = colk(F, [[28, PT([2, 132, 246])], [30, PT([0, 165, 250])], [34, PT([1, 166, 252])], [37, PT([0, 139, 234])]]);
+          knobDot.style.background = `radial-gradient(circle at 50% 42%, ${rgb(kc)} 0%, ${rgb(kc)} 58%, ${PT.s("#05a4ea 84%, #3cc6ff 100%")})`;
+          knob.style.background = rgb(mixc(G([238, 249, 244]), G([214, 244, 233]), mint));
+          knob.style.boxShadow = `0 0 ${16 * mint}px ${rgb(G([130, 235, 175]), 0.55 * mint)}`;
+          Object.assign(knobDot.style, { left: (ring - kd) / 2 + "px", top: (ring - kd) / 2 + "px", width: kd + "px", height: kd + "px" });
+          const wash = parseFloat(iconWash.style.opacity) || 0;
+          knob.style.opacity = kf(F, [[8, 0], [9, 0.8], [10, 1], [90, 1], [93, 0]], E.lin) * (F < 24 ? parseFloat(box.style.opacity) : 1) * (1 - wash);
+          knob.style.filter = blurf(F < 24 ? kf(F, [[8, 4], [10, 3], [12, 1.5], [14, 0]]) : kf(F, [[30, 0], [32, 2], [34, 2.5], [36, 1], [38, 0], [88, 0], [92, 3]]));
+        }
+      }
+
+      function drawLabel(F, Fi) {
+        const on = Fi >= 11 && Fi <= 30; show(label, on); if (!on) return;
+        const base = cr(F, [[12, 724], [14, 722], [16, 718], [17, 714], [18, 712], [19, 710], [20, 709], [22, 709], [23, 711], [24, 714], [25, 719], [26, 724], [27, 729], [29, 736]]);
+        label.style.top = base - BL * 39 + "px";
+        label.style.opacity = kf(F, [[11.5, 0], [13, 0.45], [15, 0.9], [16, 1], [26, 1], [28, 0.55], [29.5, 0]], E.lin);
+        label.style.filter = blurf(kf(F, [[11.5, 4], [14, 1.5], [16, 0], [26, 0], [28, 2], [30, 4]], E.lin));
+      }
+
+      const camX = (F) => (F < 176 ? 0 : F > 236 ? tr("cam", 236) : tr("cam", F));
+      const camY = (F) => (F < 259 ? 0 : F <= 273 ? tr("camy", F) : kf(F, [[273, -134], [276, -260]], E.in2));
+      const zoomZ = (F) => cr(F, [[236, 1], [238, 0.9968], [240, 0.9927], [242, 0.986], [244, 0.975], [246, 0.958], [248, 0.945], [250, 0.938], [252, 0.933], [254, 0.931], [256, 0.929], [258, 0.9245], [266, 0.924]]);
+      const TTOP = [[155, 70], [156, 89], [157, 104], [158, 117], [159, 131], [160, 147], [161, 162], [162, 175], [163, 185], [164, 194], [165, 202], [166, 209], [167, 215], [168, 220], [169, 224], [170, 228], [171, 232], [174, 240], [178, 246], [182, 251], [186, 254], [190, 255], [196, 255]];
+      const TSC = [[155, 0.74], [158, 0.77], [161, 0.82], [163, 0.88], [165, 0.94], [167, 0.96], [170, 0.99], [174, 1]];
+      const EMO = [
+        [[162, 353, 264, 46, 0.6], [163, 351, 251, 56, 1], [164, 351, 243, 59, 1], [166, 351, 233, 57, 1], [168, 351, 228, 52, 1], [170, 351, 224, 47, 1], [172, 352, 223, 45, 1], [174, 352, 222, 43, 0.9], [176, 352, 221, 40, 0.45], [178, 352, 220, 37, 0]],
+        [[168, 731, 340, 20, 0], [169, 731, 335, 45, 1], [170, 732, 327, 56, 1], [171, 735, 317, 52, 1], [172, 734, 309, 51, 1], [173, 731, 305, 52, 1], [174, 729, 302, 55, 1], [176, 728, 296, 50, 1], [178, 728, 292, 47, 1], [180, 726, 290, 44, 0.85], [182, 726, 289, 41, 0.4], [184, 726, 288, 38, 0]],
+        [[170, 328, 392, 18, 0], [171, 328, 386, 40, 1], [172, 327, 377, 46, 1], [174, 327, 365, 46, 1], [176, 327, 357, 42, 1], [178, 327, 352, 38, 1], [180, 327, 349, 35, 1], [182, 327, 347, 34, 1], [184, 328, 347, 35, 0.85], [186, 326, 348, 30, 0.4], [188, 324, 349, 26, 0]],
+      ];
+
+      function drawList(F, Fi) {
+        const on = Fi >= 124 && Fi <= 212;
+        world.style.transform = `translate(${camX(F)}px,0px)`;
+        const Z = F < 236 ? 1 : zoomZ(F);
+        zoomer.style.transform = `translate(0px,${camY(F)}px) scale(${Z})`;
+        const whip = kf(F, [[194, 0], [198, 1], [201, 3], [204, 5], [207, 7]], E.lin);
+        const FL = mola(F, 127, 63), FLi = mola(Fi, 127, 63); // firm spring: the stack keeps its order and stagger, only faster
+        for (const p of PILLS) {
+          const vis = on && FLi >= (p.k === "fire" ? 128 : p.s - 6);
+          show(p.el, vis); if (!vis) continue;
+          const yAt = (f) => (f >= p.s ? tr("pill_" + p.k, f) : tr("pill_" + p.k, p.s) - (p.s - f) * (tr("pill_" + p.k, p.s + 1) - tr("pill_" + p.k, p.s)));
+          let y = yAt(FL);
+          if (BAIXO) { // rises into the mirrored slot on its own measured curve; the first arrival (out of the grey box) ends on top
+            const y0 = tr("pill_" + p.k, p.s), y1 = tr("pill_" + p.k, 190), slot = tr("pill_" + SLOTK[p.k], 190);
+            y = slot + (p.k === "fire" ? y0 - slot : y1 - y0) * (1 - (y - y0) / (y1 - y0));
+          }
+          let yc = y + 1, x = 543 - p.W / 2, ww = p.W, hh = 116;
+          if (p.k === "fire" && FL < 137) { // grey pill box handing over to the Fire pill
+            const t = prog(FL, 128, 136, E.out);
+            const [bw, bh, bcx, bcy] = boxGeom(Math.min(FL, 128));
+            ww = lerp(bw, p.W, t); hh = lerp(bh, 116, t); x = lerp(bcx - bw / 2, 543 - p.W / 2, t); yc = lerp(bcy, y + 1, t);
+          }
+          p.el.style.transform = `translate(${x - 250}px,${yc - 58}px)`;
+          p.el.style.width = ww + "px"; p.el.style.height = hh + "px";
+          // depth of field below the list: blur grows and the content fogs out (ref ink/edge per pill, f140-190)
+          const dof = kf(yc, [[770, 0], [800, 0.5], [837, 0.8], [900, 2.2], [975, 4], [1100, 7]], E.lin) + Math.max(0, (450 - yc) / 22);
+          const fog = kf(yc, [[795, 1], [830, 0.74], [1100, 0.7]], E.lin);
+          const ent = p.k === "fire" ? kf(FL, [[128, 4], [133, 0]]) : kf(FL, [[p.s - 6, 10], [p.s, 4], [p.s + 3, 0]], E.lin);
+          p.el.style.filter = blurf(Math.min(dof, 8) + ent + whip); // motion blur comes from the subframe render, not CSS
+          if (p.k === "fire") {
+            p.fill.style.opacity = kf(FL, [[127.5, 0], [129, 1]]);
+            p.fill.style.background = FL < 133 ? rgb(colk(FL, GREYK)) : "linear-gradient(90deg,#fbfbfb 0px,#f6f6f6 130px)";
+          } else {
+            p.fill.style.opacity = kf(FL, [[p.s - 6, 0], [p.s - 3, 0.75], [p.s, 1]], E.lin);
+            p.fill.style.background = FL < p.s + 4 ? rgb(mixc([255, 255, 255], [246, 246, 246], prog(FL, p.s, p.s + 4))) : "linear-gradient(90deg,#fbfbfb 0px,#f6f6f6 130px)";
+          }
+          let io, to, tc, tb;
+          if (p.k === "fire") {
+            io = 1; to = kf(FL, [[129, 0], [131, 1]]); tc = prog(FL, 133, 137); tb = kf(FL, [[129, 4], [134, 0]]);
+            const ix = tr("pillx_fire", FL) - x, iy = y - (yc - 58);
+            p.icon.style.left = (FL < 137 ? ix : 56) - p.bs / 2 + "px"; p.icon.style.top = (FL < 137 ? iy : 58) - p.bs / 2 + "px";
+          } else { io = kf(FL, [[p.s - 0.5, 0], [p.s + 1, 1]], E.lin); to = kf(FL, [[p.s, 0], [p.s + 2, 1]], E.lin); tc = prog(FL, p.s + 3, p.s + 6); tb = kf(FL, [[p.s, 5], [p.s + 4, 0]], E.lin); }
+          p.icon.style.opacity = io * fog; p.text.style.opacity = to * fog; p.text.style.filter = blurf(tb);
+          p.text.style.color = rgb(mixc(GREEN, INK, tc));
+          p.text.style.top = 58 + 14.5 - 3 - BL * 41.5 + "px";
+          p.text.style.left = (p.k === "fire" && FL < 137 ? 113 * (ww / p.W) : 113) + "px";
+          p.tint.style.opacity = p.item === 1 ? kf(F, [[181, 0], [183, 1], [188, 1], [191, 0]], E.lin) : 0;
+        }
+        // title: each word follows the measured landing (ink top track) with its own delay
+        const tOn = on && Fi >= 155 && Fi <= 212;
+        const FT = mola(F, 155, 35);
+        WORDS.forEach((w) => show(w.el, tOn));
+        if (tOn) {
+          if (!layoutDone) layoutTitle();
+          for (const w of WORDS) {
+            const Fw = FT - w.d;
+            let top = cr(Fw, TTOP), s = cr(Fw, TSC);
+            if (BAIXO) top = 510 - top; // rises from below: the landing mirrored about its rest (top 255)
+            const base1 = top + 49;
+            let base = base1 + w.line * 77 * s, x = 540 + (w.x - 540) * s;
+            if (DESF) { // in place: each word from blurred and 12 % larger to sharp, on the same scale curve and word rhythm
+              s = 1.12 - (0.12 * (s - 0.74)) / 0.26;
+              const ww = w.el.offsetWidth, rb = 304 + w.line * 77, cyw = rb - 0.35 * TSIZE;
+              x = w.x + (ww / 2) * (1 - s); base = cyw + (rb - cyw) * s;
+            }
+            w.el.style.transform = `translate(${x}px,${base - BL * TSIZE}px) scale(${s})`;
+            w.el.style.opacity = kf(Fw, [[155.2, 0], [157, 1]], E.lin);
+            w.el.style.filter = blurf(kf(Fw, [[155, 10], [157, 6], [159, 3], [161, 1.2], [163, 0.3], [164, 0]], E.lin) * (DESF ? 1.5 : 1) + whip); // ref title ink ~93 % by f164
+            w.el.style.color = rgb(mixc(G([50, 140, 85]), INK, prog(Fw, 159, 163.5)));
+          }
+        }
+        const eOn = on && Fi >= 155 && Fi <= 212; show(endB, eOn);
+        if (eOn) {
+          const ex = tr("end", Math.max(FT, 157), 0);
+          let ey = FT < 157 ? tr("end", 157, 1) - (157 - FT) * 22 : tr("end", FT, 1);
+          if (BAIXO) ey = 237 - ey; // from below, mirrored about its rest (y 118.5), turning the other way
+          endB.style.transform = `translate(${ex - BW / 2}px,${ey - 27}px) rotate(${kf(FT, [[155, -24], [157, -14], [158.5, -3], [160, 0]]) * (BAIXO ? -1 : 1)}deg)`;
+          endB.style.opacity = kf(FT, [[155, 0], [156.5, 1]]);
+          endB.style.filter = blurf(kf(FT, [[155, 7], [157, 4], [159, 1], [160, 0]]) + whip);
+        }
+        warns.forEach((wEl, j) => {
+          const K = EMO[j], o = on && F >= K[0][0] && F <= K[K.length - 1][0]; show(wEl, o); if (!o) return;
+          const v = (c) => kf(F, K.map((k) => [k[0], k[c]]), E.lin);
+          const s = v(3) / 0.92;
+          wEl.style.fontSize = s + "px";
+          wEl.style.transform = `translate(${v(1) - s / 2 + EMODX[j]}px,${v(2) - s * 0.52}px)`;
+          wEl.style.opacity = v(4);
+        });
+        const cOn = Fi >= 156 && Fi <= 203; show(cursor, cOn);
+        if (cOn) {
+          const handOn = F >= 172.5;
+          let tx, ty;
+          if (!handOn) { tx = tr("cursor", Math.max(F, 157), 0); ty = F < 157 ? tr("cursor", 157, 1) + (157 - F) * 40 : tr("cursor", F, 1); }
+          else if (F < 180) { tx = lerp(tr("cursor", 172, 0), tr("cursor", 180, 0), prog(F, 172, 180, E.sine)); ty = lerp(tr("cursor", 172, 1), tr("cursor", 180, 1), prog(F, 172, 180, E.sine)); }
+          else { tx = tr("cursor", F, 0); ty = tr("cursor", F, 1); }
+          const press = kf(F, [[180, 1], [182, 0.86], [184, 0.76], [186, 0.74], [188, 0.8], [190, 0.93], [192, 1]], E.lin);
+          cursor.style.transform = `translate(${tx}px,${ty}px) scale(${handOn ? press : 1})`;
+          show(curArrow, !handOn); show(curHand, handOn);
+          cursor.style.opacity = kf(F, [[156, 0], [157.5, 1]]);
+          cursor.style.filter = blurf(kf(F, [[156, 5], [158, 2], [160, 0]]) + whip);
+        }
+      }
+
+      function drawRoute(F, Fi) {
+        const on = Fi >= 197 && Fi <= 277; show(routeSvg, on); show(amb, false); if (!on) return;
+        const L = R.len, p = F < 194 ? 0 : tr("route", F);
+        const da = `${Math.max(0.1, p)} ${L + 100}`;
+        for (const e of [rMain, rMain2, rGlow]) e.setAttribute("stroke-dasharray", da);
+        const c = F < 206 ? mixc(G([93, 238, 152]), RR([69, 207, 195]), prog(F, 198, 208)) : F < 216 ? mixc(RR([69, 207, 195]), RR([12, 134, 218]), prog(F, 206, 216)) : mixc(RR([12, 134, 218]), RR([0, 103, 252]), prog(F, 216, 226));
+        for (const e of [rMain, rMain2, rGlow]) e.setAttribute("stroke", rgb(c));
+        // glow around the drawing head while it is green (f197-214)
+        const hp = routePoint(Math.max(0, p));
+        rHead.setAttribute("cx", hp.x); rHead.setAttribute("cy", hp.y);
+        rHead.setAttribute("fill", rgb(mixc(G([111, 233, 162]), RR([80, 200, 220]), prog(F, 204, 212))));
+        rHead.setAttribute("opacity", kf(F, [[197, 0], [198.5, 0.3], [201, 0.2], [204, 0]], E.lin));
+        const ax = Fi >= 241 ? tr("amb", F, 0) : 0;
+        let sAmb = 0; if (Fi >= 241) { for (let i = 0; i < RP.length; i++) if (RP[i][0] <= ax) sAmb = i * 4; else break; }
+        const db = `${Math.max(0.1, sAmb)} ${L + 100}`;
+        rRed.setAttribute("stroke-dasharray", db); rRedGlow.setAttribute("stroke-dasharray", db);
+        show(rRed, Fi >= 241); show(rRedGlow, Fi >= 241);
+        rRedGlow.setAttribute("opacity", 0.3 * kf(F, [[241, 0], [247, 1]]));
+        // exit: the route lifts (zoomer camY) and dissolves from the bottom up, softening
+        const T = kf(F, [[265, 1200], [268, 920], [271, 760], [274, 600], [276, 420], [278, 250]], E.lin);
+        routeSvg.style.webkitMaskImage = routeSvg.style.maskImage = F > 264 ? `linear-gradient(to bottom, #000 0px, #000 ${T - 260}px, transparent ${T}px)` : "none";
+        routeSvg.style.opacity = kf(F, [[272, 1], [275, 0.55], [278, 0]], E.lin);
+        routeSvg.style.filter = blurf(kf(F, [[266, 0], [270, 1.5], [274, 3.5], [278, 7]], E.lin) + kf(F, [[204, 3], [208, 3], [214, 0]], E.lin));
+        const aOn = Fi >= 241 && Fi <= 274; show(amb, aOn);
+        if (aOn) {
+          const q = routePoint(Math.max(0, sAmb - 34));
+          amb.style.transform = `translate(${q.x - 50}px,${q.y - 66}px) rotate(${((q.a * 180) / Math.PI) * 0.55}deg)`;
+          amb.style.opacity = kf(F, [[266, 1], [272, 0.4], [274, 0]]);
+          amb.style.filter = blurf(kf(F, [[266, 0], [272, 4]]));
+        }
+      }
+
+      function drawIsland(F, Fi) {
+        const dOn = Fi >= 205 && Fi <= 213; show(dot, dOn);
+        if (dOn) {
+          const K = [[205, 818, 496, 21], [206, 744, 398, 25], [207, 655, 342, 28], [208, 600, 290, 44], [209, 556, 240, 61], [210, 518, 227, 68], [211, 487, 222, 70], [212, 460, 223, 73], [213, 438, 231, 80]];
+          const v = (c) => cr(F, K.map((k) => [k[0], k[c]]));
+          const d = v(3);
+          Object.assign(dot.style, { left: v(1) - d / 2 + "px", top: v(2) - d / 2 + "px", width: d + "px", height: d + "px" });
+          dot.style.background = rgb(mixc(PT([29, 160, 210]), PT([10, 99, 246]), prog(F, 205, 210)));
+          dot.style.filter = blurf(kf(F, [[205, 2], [208, 4], [210, 2], [213, 2.5]], E.lin));
+        }
+        const on = Fi >= 213 && Fi <= 276; show(island, on); if (!on) return;
+        if (!CLK) clockLayout();
+        // measured screen box -> un-zoomed box inside the zoomer
+        const Fw = mola(F, 213, 42), Z = F < 236 ? 1 : zoomZ(F), Fc = Math.max(Fw, 213); // Fw: the opening (entry); camera, sheen, hand and ticks keep F
+        const w0 = tr("island", Fc, 0) / Z, h = tr("island", Fc, 1) / Z, w = w0 + ISX * clamp((w0 - 80) / 472); // molde: extra width only once it is wide
+        const cx = 540 + (tr("island", Fc, 2) - 540) / Z;
+        const cy = 540 + (tr("island", Math.min(Fc, 259), 3) - 540) / zoomZ(Math.min(Fc, 259));
+        Object.assign(island.style, { left: cx - w / 2 + "px", top: cy - h / 2 + "px", width: w + "px", height: h + "px", borderRadius: h / 2 + "px" });
+        const t = prog(Fw, 217.5, 223.5);
+        const base = (c) => rgb(mixc(PT(c), [8, 8, 8], t)), sp = 20 + (F - 224) * 4.5; // sheen sweeps left->right (ref f220-244)
+        island.style.background = `linear-gradient(90deg, rgba(37,37,37,0) ${sp - 22}%, rgba(37,37,37,${t.toFixed(3)}) ${sp}%, rgba(37,37,37,0) ${sp + 22}%), linear-gradient(90deg, ${base([10, 70, 200])} 0%, ${base([8, 62, 176])} 52%, ${base([6, 46, 130])} 84%, ${base([4, 30, 90])} 100%)`;
+        island.style.filter = blurf(kf(Fw, [[213, 4], [216, 2.5], [219, 0.6], [221, 0], [266, 0], [270, 2], [273, 5], [276, 9]], E.lin));
+        island.style.opacity = kf(F, [[271, 1], [274, 0.7], [276, 0]], E.lin);
+        iTimer.style.transform = `translate(${63 * (h / 119) - 40}px,${h / 2 - 39}px)`;
+        iTimer.style.opacity = kf(Fw, [[214, 0.4], [217, 1]], E.lin);
+        // the hand keeps sweeping clockwise (measured angle, ref f220-272)
+        iHand.setAttribute("transform", `rotate(${cr(F, [[216, -85], [218, -73], [220, -61], [222, -50], [224, -37], [226, -24], [228, -15], [230, -9], [232, -4], [234, 0], [238, 5], [242, 11], [246, 15.5], [250, 19.5], [254, 23.5], [258, 27.5], [262, 31.5], [266, 37], [270, 43], [274, 47]])} 40 40)`);
+        // "Help is on the way" lands word by word (f217-225), right-aligned before the clock
+        const clockL = w - 36 - CLK.w;
+        iHelp.style.transform = `translate(${clockL - 6 - iHelp.offsetWidth}px,${h / 2 + 22 - BL * 24}px)`;
+        helpW.forEach((sp, i) => {
+          const f0 = 217 + i * 1.6;
+          sp.style.opacity = kf(Fw, [[f0, 0], [f0 + 2.5, 1]], E.lin);
+          sp.style.transform = `translateY(${kf(Fw, [[f0, 8], [f0 + 3, 0]], E.out)}px)`;
+          sp.style.filter = blurf(kf(Fw, [[f0, 4], [f0 + 3, 0]], E.lin));
+        });
+        // clock "1:40" rolls in (f225-229), 1:40 -> 1:39 (f239-246), 1:39 -> 1:38 (f256-262)
+        iClock.style.transform = `translate(${clockL}px,${h / 2 + 19 - 80}px)`;
+        // per slot: tick 1 (ones f239) and tick 2 (ones f256); each place to the left starts a frame later.
+        // The clone switches the tens to tick 2 at f243, mid-roll (kept: defaults = the clone)
+        const lag = (i) => T0.length - 1 - i;
+        const tick = (A, B, f0, i) => (A[i] !== B[i] ? [A[i], B[i], f0 + lag(i), f0 + 5.5 + lag(i)] : [A[i], A[i], 0, 1]);
+        const put = (e, ch, x, dy, op, bl) => { e.textContent = ch; e.style.transform = `translate(${x}px,${80 - BL * 68 + dy}px)`; e.style.opacity = op; e.style.filter = blurf(bl); };
+        const F0 = [224, 224.8, 225.2, 225.6]; // ref digits land almost together (ink per digit, f224-228)
+        const inT = (i) => { const f0 = i < 4 ? F0[i] : 225.6 + 0.4 * (i - 3);
+           return [kf(Fw, [[f0, 0], [f0 + 2.5, 1]], E.lin), kf(Fw, [[f0, 34], [f0 + 3, 0]], E.out), kf(Fw, [[f0, 6], [f0 + 3, 0]], E.lin)]; };
+        const roll = (eOld, eNew, spec, x, din, oin, bin) => {
+          const [a, b, fa, fb] = spec, t = prog(F, fa, fb, E.sine);
+          if (a === b || t <= 0) { put(eOld, a, x, din, oin, bin); put(eNew, "", x, 0, 0, 0); return; }
+          const bl = 7 * Math.sin(Math.PI * t);
+          put(eOld, a, x, -46 * t, 1 - t, bl); put(eNew, b, x, 46 * (1 - t), t, bl);
+        };
+        for (let i = 0; i < T0.length; i++) {
+          const [o, d, bl] = inT(i), spec = F < (lag(i) === 0 ? 250 : 243) ? tick(T0, T1, 239, i) : tick(T1, T2, 256, i);
+          roll(DO[i], DN[i], spec, CLK.x[i], d, o, bl);
+        }
+      }
+
+      function drawBubble(F, Fi) {
+        const on = Fi >= 277; show(bubble, on); if (!on) return;
+        const cx = tr("bubble", F, 0), cy = tr("bubble", F, 1), ang = tr("bubble", F, 2), len = tr("bubble", F, 3);
+        const s = F < 278 ? 0.4 : clamp(len / 401, 0.3, 1.2) * (F < 281 ? kf(F, [[278, 1.2], [281, 1]]) : 1);
+        bubble.style.transform = `translate(${cx + 2.2 - 184 - BDX / 2}px,${cy - 84}px) rotate(${ang}deg) scale(${s})`;
+        bubble.style.opacity = kf(F, [[277, 0], [278.5, 1]], E.lin);
+        bubble.style.filter = blurf(kf(F, [[277, 8], [279, 6], [281, 2.5], [283, 0.8], [285, 0]], E.lin));
+        bText.style.top = 100 - BL * 47.5 + "px";
+        const shn = kf(F, [[280, 0], [282, 0.9], [287, 0.7], [290, 0]], E.lin), sx = kf(F, [[280, 0.05], [290, 0.95]], E.lin);
+        sh[0].setAttribute("offset", clamp(sx - 0.2, 0, 1)); sh[1].setAttribute("offset", clamp(sx, 0, 1)); sh[2].setAttribute("offset", clamp(sx + 0.2, 0, 1));
+        sh.forEach((e, i) => e.setAttribute("stop-opacity", shn * (i === 1 ? 0.95 : 0.55)));
+      }
+
+      // ======================================================================================
+      function draw(t) {
+        let Fi = Math.min(NF - 1, Math.floor(t * FPS + 1e-4));
+        const frac = t * FPS - Fi, shift = (window.MB_SHIFT || 0) * FPS;
+        let F = Fi + (frac - shift) * SHUTTER;
+        if (WARP) { F = WARP(F); Fi = WARP(Fi); } // ritmo "batidas": output frame -> clone frame (the shutter scales with the local speed)
+        if (!fitDone) fitAll();
+        drawBackground(F, Fi);
+        const FB = mola(mola(mola(F, 5, 19), 30, 21), 86, 22); // firm spring: icon, card and tile entries
+        drawEarth(F, Fi, F); // the globe/radar exit and its glow keep the clone's clock
+        drawBox(FB, Fi, F);
+        drawLabel(mola(F, 11, 11), Fi);
+        drawList(F, Fi);
+        drawRoute(F, Fi);
+        drawIsland(F, Fi);
+        drawBubble(mola(F, 277, 23), Fi);
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      if (V.fonte !== "sf") document.fonts.load(`500 40px ${FAM}`); // starts the brand font now, so fonts.ready waits for it
+      document.fonts.ready.then(() => { layoutDone = false; CLK = null; fitDone = false; draw(P.t); });
+      draw(0);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

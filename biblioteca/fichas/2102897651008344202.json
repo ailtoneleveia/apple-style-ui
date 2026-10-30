@@ -1,0 +1,39 @@
+{
+ "id": "2102897651008344202",
+ "url": "https://x.com/i/status/2102897651008344202",
+ "autor": "GonzaloMacagno",
+ "data": "2026-09-23",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Qué locura Opus 5.5. Con un prompt tan básico y una imagen que me llegó por mail, armó un reel en menos de 1 minuto.  El prompt: “Necesito que armes un reel con esta info en 10 segundos, bien publicitario” https://t.co/qcBrRPvZYW",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 147,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

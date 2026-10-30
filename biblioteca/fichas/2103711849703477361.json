@@ -1,0 +1,36 @@
+{
+ "id": "2103711849703477361",
+ "url": "https://x.com/i/status/2103711849703477361",
+ "autor": "souravbhar871",
+ "data": "2026-09-26",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "my first experiment with Opus 5.5 at generating motion graphics with the most deadbeat simple prompt copied from X:   \"make a dynamic 10-second motion graphics video that shows who are you as Opus 5.5 - be as creative and dynamic as possible. Avoid the frames and texts on the https://t.co/9qbIa11ylj",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.43,
+ "pecas": [],
+ "nota": 18,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 285,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

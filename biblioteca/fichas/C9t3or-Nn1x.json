@@ -1,0 +1,44 @@
+{
+ "id": "C9t3or-Nn1x",
+ "url": "https://www.instagram.com/p/C9t3or-Nn1x/",
+ "autor": "creatoroly",
+ "data": "2024-07-22",
+ "curtidas": 467,
+ "comentarios": 5,
+ "legenda_post": "Get 1 deep work done. 👨🏽‍💻\n\n#inspiration #motivation #deepwork #visuals #motiondesign",
+ "duracao_s": 9.4,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 170.4,
+  "onsets_per_s": 3.21
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 76,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

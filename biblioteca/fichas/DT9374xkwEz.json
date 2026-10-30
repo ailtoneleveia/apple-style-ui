@@ -1,0 +1,47 @@
+{
+ "id": "DT9374xkwEz",
+ "url": "https://www.instagram.com/p/DT9374xkwEz/",
+ "autor": "saifu.vx",
+ "data": "2026-01-26",
+ "curtidas": 3,
+ "comentarios": 3,
+ "legenda_post": "Smooth or too much? 👀\n@wiseaccount \n\nSaas explainer video apple ui animation \n#saasexplainer #saasexplainervideo #appleuianimation #motiongraphics",
+ "duracao_s": 9.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.93
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 800,
+  "fps": 30.0,
+  "kbps": 240,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

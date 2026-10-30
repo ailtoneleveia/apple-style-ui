@@ -1,0 +1,44 @@
+{
+ "id": "C_V9iLiMjCy",
+ "url": "https://www.instagram.com/p/C_V9iLiMjCy/",
+ "autor": "kyrieswave",
+ "data": "2024-08-31",
+ "curtidas": 3,
+ "comentarios": 10,
+ "legenda_post": "@creatoroly x @kyrieswave COLLAB! He absolutely SNAPPED! Enjoy this masterpiece! 🔥😵 #KyrieIrving\n-\nGo check @creatoroly out! 👨‍🍳",
+ "duracao_s": 19.8,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.08,
+ "pecas": [
+  "iphone",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 9,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 75.0,
+  "onsets_per_s": 4.12
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 638,
+  "fps": 30.0,
+  "kbps": 325,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

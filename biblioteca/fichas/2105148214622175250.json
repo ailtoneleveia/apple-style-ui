@@ -1,0 +1,41 @@
+{
+ "id": "2105148214622175250",
+ "url": "https://x.com/i/status/2105148214622175250",
+ "autor": "cheery9998",
+ "data": "2026-09-30",
+ "curtidas": 33,
+ "comentarios": 4,
+ "legenda_post": "我跟 Opus 5.5 说：帮我做个视频。 它回我一句：抱歉，我不能直接生成视频。 可这，就是 Opus 5.5 做出来的视频效果。 后来我才知道，怎么让 Opus 5.5 做出这种惊艳的效果，以及它背后的原理。  先说最关键的一点。 Opus 和即梦这类视频模型，干的根本不是一种活。 https://t.co/nq4TXa2kBv",
+ "duracao_s": 14.2,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "cursor",
+  "janela",
+  "busca",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 504,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 436,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

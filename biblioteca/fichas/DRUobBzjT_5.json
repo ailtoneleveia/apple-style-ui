@@ -1,0 +1,46 @@
+{
+ "id": "DRUobBzjT_5",
+ "url": "https://www.instagram.com/p/DRUobBzjT_5/",
+ "autor": "creatoroly",
+ "data": "2025-11-21",
+ "curtidas": 1559,
+ "comentarios": 28,
+ "legenda_post": "@duolingo \n\n#aftereffects #motiondesign #fyp",
+ "duracao_s": 9.3,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 122.0,
+  "onsets_per_s": 3.17
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 800,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

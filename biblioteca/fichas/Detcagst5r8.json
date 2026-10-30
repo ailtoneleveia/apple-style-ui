@@ -1,0 +1,45 @@
+{
+ "id": "Detcagst5r8",
+ "url": "https://www.instagram.com/p/Detcagst5r8/",
+ "autor": "jm.motionfx",
+ "data": "2026-10-20",
+ "curtidas": 36,
+ "comentarios": 3,
+ "legenda_post": "Apple AirPods concept animation\n\n#aftereffects #motiondesign #motion #appleui #apple",
+ "duracao_s": 10.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.59,
+ "pecas": [
+  "janela",
+  "icone_app"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.6,
+  "onsets_per_s": 4.71
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 388,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:appleui",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

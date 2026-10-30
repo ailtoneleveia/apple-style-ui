@@ -1,0 +1,48 @@
+{
+ "id": "DdnqIfTP32o",
+ "url": "https://www.instagram.com/p/DdnqIfTP32o/",
+ "autor": "qsnyx",
+ "data": "2026-09-23",
+ "curtidas": 3,
+ "comentarios": 14,
+ "legenda_post": "Bare minimum. Precision in every pixel. @apple \n\nFollow @qsnyx",
+ "duracao_s": 17.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.88,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 2232,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

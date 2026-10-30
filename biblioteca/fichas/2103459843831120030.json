@@ -1,0 +1,38 @@
+{
+ "id": "2103459843831120030",
+ "url": "https://x.com/i/status/2103459843831120030",
+ "autor": "iamtanzil_",
+ "data": "2026-09-25",
+ "curtidas": 16,
+ "comentarios": 2,
+ "legenda_post": "Opus 5.5 + 1 prompt A premium hero section  Try the prompt yourself👇 https://t.co/cnCxGDbG5I",
+ "duracao_s": 13.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.79,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 516,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 76,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

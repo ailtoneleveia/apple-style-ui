@@ -1,0 +1,43 @@
+{
+ "id": "2108596616756416945",
+ "url": "https://x.com/i/status/2108596616756416945",
+ "autor": "aiRobertDaily",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 3,
+ "legenda_post": "夯爆了！  让 Claude Opus 5.5 当我顶级动态设计师，制作了一段 38 秒的 Apple 发展史动画效果。  乔布斯时代，到如今的 AI 时代，整个动画的转场，也太丝滑到离谱了吧。  这设计水平，设计师看到得全身发抖。  参考提示词如下： Create a stunning 30-second motion graphics video showcasing https://t.co/uTe13KUfsj",
+ "duracao_s": 38.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "teclado",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 353,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

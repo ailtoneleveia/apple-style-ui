@@ -1,0 +1,54 @@
+{
+ "id": "DLBafalz0ZK",
+ "url": "https://www.instagram.com/p/DLBafalz0ZK/",
+ "autor": "itsluciedit",
+ "data": "2025-06-18",
+ "curtidas": 3,
+ "comentarios": 313,
+ "legenda_post": "COMMENT \"LUCI\" FOR PROJECT FILE | UI ANIMATION IN ALIGHT MOTION | APPLE LIKE ANIMATION | ( credit -@frame_kush ).....\n#uianimation #appleglassanimation #appleuianimation #alightmotionxmlfile",
+ "duracao_s": 9.4,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "LUCI",
+ "acabamento_pro": 1.52,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.5
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 386,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:liquid glass animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

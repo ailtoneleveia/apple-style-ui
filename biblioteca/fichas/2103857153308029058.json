@@ -1,0 +1,40 @@
+{
+ "id": "2103857153308029058",
+ "url": "https://x.com/i/status/2103857153308029058",
+ "autor": "SPEARwtf",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "So I wanted to try out opus 5.5 for Video generation.  I gave it a single sentence prompt:  „Create a 30sec pitch video for @chaindotwtf “  The only reference I gave it was website, logo and the context it had from previous chats. Nothing else.  This is what it came up with. Wow https://t.co/3QN0TQn",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.73,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 300,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

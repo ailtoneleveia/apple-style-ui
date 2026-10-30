@@ -1,0 +1,36 @@
+{
+ "id": "2104896325255037196",
+ "url": "https://x.com/i/status/2104896325255037196",
+ "autor": "TawohAwa",
+ "data": "2026-09-29",
+ "curtidas": 50,
+ "comentarios": 23,
+ "legenda_post": "🚨BREAKING: Claude Opus 5.5 created this video from one prompt in one Chat.  I gave it a website and it did the rest  Here is how👇 https://t.co/DIP3WnzQTN",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.4,
+ "pecas": [],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 271,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

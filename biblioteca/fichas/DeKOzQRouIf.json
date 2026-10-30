@@ -1,0 +1,41 @@
+{
+ "id": "DeKOzQRouIf",
+ "url": "https://www.instagram.com/p/DeKOzQRouIf/",
+ "autor": "louis_rlee",
+ "data": "2026-10-06",
+ "curtidas": 2265,
+ "comentarios": 3424,
+ "legenda_post": "I’m not a motion designer.\n\nThis entire video was made by Opus 5.5 (Claude). Visuals AND sound.\n\nI gave it one reference reel and one prompt.\n\nIt broke the reference down frame by frame, analyzed the sound design, then built its own version: new theme, new colors, new sounds.\n\nNo After Effects. No s",
+ "duracao_s": 31.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.62,
+ "pecas": [],
+ "nota": 43,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.36
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 293,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

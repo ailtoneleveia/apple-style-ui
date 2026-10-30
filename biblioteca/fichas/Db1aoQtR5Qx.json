@@ -1,0 +1,48 @@
+{
+ "id": "Db1aoQtR5Qx",
+ "url": "https://www.instagram.com/p/Db1aoQtR5Qx/",
+ "autor": "isla.creator",
+ "data": "2026-08-09",
+ "curtidas": 230,
+ "comentarios": 676,
+ "legenda_post": "Пак для монтажа Apple 🍏\n\nбольшой пак из иконок, анимаций, элементов, звуков и фонов\n\nпиши «ПАК» чтобы забрать его себе!",
+ "duracao_s": 11.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 0.73,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.34
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 487,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

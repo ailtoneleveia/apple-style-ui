@@ -1,0 +1,39 @@
+{
+ "id": "2109060292667982172",
+ "url": "https://x.com/i/status/2109060292667982172",
+ "autor": "ashebytes",
+ "data": "2026-10-10",
+ "curtidas": 316,
+ "comentarios": 17,
+ "legenda_post": "reminder: when using astra or opus 5.5 for visualizations, prompt it to use three.js / webgpu  will make a world of difference in what it 1 shots  prompt: \"can you create a really trippy visual for me using three.js and webgpu to show off your 3d capabilities? whatever https://t.co/lanWGuw8F2",
+ "duracao_s": 28.9,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.27,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 676,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 317,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

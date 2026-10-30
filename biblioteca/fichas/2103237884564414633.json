@@ -1,0 +1,45 @@
+{
+ "id": "2103237884564414633",
+ "url": "https://x.com/i/status/2103237884564414633",
+ "autor": "jake11moran",
+ "data": "2026-09-24",
+ "curtidas": 42,
+ "comentarios": 3,
+ "legenda_post": "excited to try this!  thought your teaser could use a little TLC  made this with @HyperFrames_ and opus 5.5 and one rambled prompt via whispr i'll paste below https://t.co/XVyDriG7XC",
+ "duracao_s": 27.1,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "cursor",
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 349,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

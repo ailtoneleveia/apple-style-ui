@@ -1,0 +1,41 @@
+{
+ "id": "2102493035393372363",
+ "url": "https://x.com/i/status/2102493035393372363",
+ "autor": "oviniciuslana",
+ "data": "2026-09-22",
+ "curtidas": 61,
+ "comentarios": 11,
+ "legenda_post": "Opus 5.5 no extra high fez o melhor jogo de truco mineiro da história https://t.co/hKZvVbN7We",
+ "duracao_s": 27.7,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.85,
+ "pecas": [
+  "cursor",
+  "legenda_fala",
+  "numero_grande",
+  "pilha_cartoes"
+ ],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 732,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 171,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

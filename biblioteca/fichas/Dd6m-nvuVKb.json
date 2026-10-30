@@ -1,0 +1,51 @@
+{
+ "id": "Dd6m-nvuVKb",
+ "url": "https://www.instagram.com/p/Dd6m-nvuVKb/",
+ "autor": "mcvisuals.fx",
+ "data": "2026-09-30",
+ "curtidas": 2491,
+ "comentarios": 58,
+ "legenda_post": "Concept Spec ad made for @raycastapp \n• \nHave a project in mind? Submit your project request through the link in bio! \n• \nSpec ad – not affiliated with the brand. \n•\n#aftereffects #motiongraphics #animation #specad #foryou",
+ "duracao_s": 9.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 138.0,
+  "onsets_per_s": 5.55
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 30.0,
+  "kbps": 721,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,50 @@
+{
+ "id": "DeRQf5dI_Ng",
+ "url": "https://www.instagram.com/p/DeRQf5dI_Ng/",
+ "autor": "akham_vin",
+ "data": "2026-10-09",
+ "curtidas": 7,
+ "comentarios": 0,
+ "legenda_post": "🎧 Music, motion & emotion.\n\nApple-inspired design. Smooth animations. Every detail matters. 🍎✨\n\nCreated by @akham_vin\n\n#AppleMusic #MotionDesign #AfterEffects #MotionGraphics #AkhamVin",
+ "duracao_s": 9.6,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.59
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 861,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

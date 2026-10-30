@@ -1,0 +1,48 @@
+{
+ "id": "DKaFuglN0bE",
+ "url": "https://www.instagram.com/p/DKaFuglN0bE/",
+ "autor": "creatoroly",
+ "data": "2025-06-02",
+ "curtidas": 3879,
+ "comentarios": 67,
+ "legenda_post": "🫩\n\n#motiondesign #aftereffects #animations",
+ "duracao_s": 11.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 121.2,
+  "onsets_per_s": 4.04
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 1234,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

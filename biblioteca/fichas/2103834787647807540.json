@@ -1,0 +1,38 @@
+{
+ "id": "2103834787647807540",
+ "url": "https://x.com/i/status/2103834787647807540",
+ "autor": "ChatGptAstra",
+ "data": "2026-09-26",
+ "curtidas": 61,
+ "comentarios": 22,
+ "legenda_post": "Opus 5.5太离谱了！  我只给它一句提示词 “以动态设计师的高级审美，制作一段动态的15秒动态图形视频”  它就给我出来了这个视频👇 https://t.co/6QoijrQ8Ic",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.73,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 59,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 243,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

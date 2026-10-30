@@ -1,0 +1,50 @@
+{
+ "id": "DSe546hjNDh",
+ "url": "https://www.instagram.com/p/DSe546hjNDh/",
+ "autor": "thefahadvisuals",
+ "data": "2025-12-20",
+ "curtidas": 57197,
+ "comentarios": 2200,
+ "legenda_post": "Does chef done his job well?\n\nIf you want something like this for your content, then just Dm me the word ‘scale’",
+ "duracao_s": 33.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 130.0,
+  "onsets_per_s": 3.25
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 892,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

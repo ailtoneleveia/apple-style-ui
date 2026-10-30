@@ -1,0 +1,39 @@
+{
+ "id": "2103846630088716687",
+ "url": "https://x.com/i/status/2103846630088716687",
+ "autor": "Dannnnnok",
+ "data": "2026-09-26",
+ "curtidas": 14,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 just killed AE:  It wrote all 1,200 frames of this reel in Python. The music too  - a 3D renderer from scratch, 784 cubes - a font morphing Thin → Black - every bounce is a note in key  20 seconds, 60 fps, one chat, about an hour  prompt below ↓ https://t.co/nDOiSp3s0f",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.89,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 411,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

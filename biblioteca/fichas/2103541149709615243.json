@@ -1,0 +1,36 @@
+{
+ "id": "2103541149709615243",
+ "url": "https://x.com/i/status/2103541149709615243",
+ "autor": "ajith_io",
+ "data": "2026-09-25",
+ "curtidas": 61,
+ "comentarios": 4,
+ "legenda_post": "Claude cooked really hard with opus 5.5  Made entirely with code Prompt \" Take reference from the given video (download it) and use the same visual style. and Research about Distilbook. Make a dynamic 30-second motion graphics video on Distilbook that shows what an incredible https://t.co/4gK1DQY2ls",
+ "duracao_s": 32.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.61,
+ "pecas": [],
+ "nota": 19,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 541,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

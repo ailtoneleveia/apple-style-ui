@@ -1,0 +1,44 @@
+{
+ "id": "2109198771712303213",
+ "url": "https://x.com/i/status/2109198771712303213",
+ "autor": "keydol123",
+ "data": "2026-10-11",
+ "curtidas": 46,
+ "comentarios": 9,
+ "legenda_post": "GPT-6 Astra vs Claude Opus 5.5  Same prompt: \"Build an interactive computer mouse made entirely of honey jelly.\"  Here’s what each result cost: Claude Opus 5.5: $7.18 GPT-6 Astra: $3.88  Opus is making me want to eat a computer mouse  Which one wins this round? https://t.co/wYL7IWSOtj",
+ "duracao_s": 32.4,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.63,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 112.1,
+  "onsets_per_s": 6.08
+ },
+ "qualidade": {
+  "largura": 552,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 113,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

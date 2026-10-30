@@ -1,0 +1,44 @@
+{
+ "id": "DCoqoofNDq9",
+ "url": "https://www.instagram.com/p/DCoqoofNDq9/",
+ "autor": "creatoroly",
+ "data": "2024-11-21",
+ "curtidas": 22315,
+ "comentarios": 23917,
+ "legenda_post": "Space of video editing. 💻\n\nComment \"SPACE\" to reach popular creators and edit for them.\n\n#videoediting #motiongraphics #aftereffects #fein #edit #space",
+ "duracao_s": 22.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "SPACE",
+ "acabamento_pro": 0.66,
+ "pecas": [
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 148.2,
+  "onsets_per_s": 3.45
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 403,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

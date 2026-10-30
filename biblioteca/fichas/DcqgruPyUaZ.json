@@ -1,0 +1,45 @@
+{
+ "id": "DcqgruPyUaZ",
+ "url": "https://www.instagram.com/p/DcqgruPyUaZ/",
+ "autor": "dopemotionzone",
+ "data": "2026-08-30",
+ "curtidas": 5355,
+ "comentarios": 1793,
+ "legenda_post": "Comment “Longform” below ⬇️\nand grab these long-form edit styles.\n\n⚡ What you’ll get:\n\n🎞️ Long-form reference videos\n\nA curated collection of references to help you understand:\n\n• Storytelling & pacing\n• Retention-focused editing\n• Scene transitions\n• Visual flow\n• Long-form structure\n\nEverything is",
+ "duracao_s": 34.9,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "LONGFORM",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "cursor",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.32
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 1562,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

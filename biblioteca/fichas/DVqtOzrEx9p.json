@@ -1,0 +1,47 @@
+{
+ "id": "DVqtOzrEx9p",
+ "url": "https://www.instagram.com/p/DVqtOzrEx9p/",
+ "autor": "madebyveduboi",
+ "data": "2026-03-09",
+ "curtidas": 724,
+ "comentarios": 35,
+ "legenda_post": "How my 1st week was in After Effects 🙂‍↔️\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 19.5,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.85,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.0,
+  "onsets_per_s": 4.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1225,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

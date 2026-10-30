@@ -1,0 +1,49 @@
+{
+ "id": "DXe6bxzDDFU",
+ "url": "https://www.instagram.com/p/DXe6bxzDDFU/",
+ "autor": "olafmotion",
+ "data": "2026-04-23",
+ "curtidas": 173,
+ "comentarios": 19,
+ "legenda_post": "Apple Translate just got a corporate update 🙂‍↕️",
+ "duracao_s": 6.9,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 133.5,
+  "onsets_per_s": 4.41
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 615,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:ui apple captions"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

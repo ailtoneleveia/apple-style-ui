@@ -1,0 +1,48 @@
+{
+ "id": "DesEhD1lMoP",
+ "url": "https://www.instagram.com/p/DesEhD1lMoP/",
+ "autor": "charliehills",
+ "data": "2026-10-19",
+ "curtidas": 130,
+ "comentarios": 221,
+ "legenda_post": "Comment STYLE and I'll send you my Apple style file and both prompts.\n\nClaude can now clone any website's look (in about 9 minutes).\n\nOne link in, the whole design out:\n\n1. Install REA, a free skill, with one line (no Node.js? install it free first)\n\n2. Ask Claude to write DESIGN.md from the site\n\n3",
+ "duracao_s": 52.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "STYLE",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.54
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 120,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

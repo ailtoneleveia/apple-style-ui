@@ -1,0 +1,47 @@
+{
+ "id": "DagjR4WpLJu",
+ "url": "https://www.instagram.com/p/DagjR4WpLJu/",
+ "autor": "heyfakuno",
+ "data": "2026-07-07",
+ "curtidas": 963,
+ "comentarios": 32,
+ "legenda_post": "Concept Ad for… @whatsapp \n\n#aftereffects #motiongraphics #animation #whatsapp",
+ "duracao_s": 24.2,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "busca",
+  "teclado",
+  "print_site"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 109.7,
+  "onsets_per_s": 4.73
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 23.98,
+  "kbps": 551,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

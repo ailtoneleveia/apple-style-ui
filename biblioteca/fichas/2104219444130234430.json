@@ -1,0 +1,36 @@
+{
+ "id": "2104219444130234430",
+ "url": "https://x.com/i/status/2104219444130234430",
+ "autor": "tariqkhanfmd",
+ "data": "2026-09-27",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "Für so einen Motion Graphics Clip hätte man vor ein paar Jahren noch tausende Euro bezahlt. Heute ist das mit Claude Opus 5.5 einfach ein Prompt: https://t.co/9N16frjk5B",
+ "duracao_s": 42.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.64,
+ "pecas": [],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 234,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

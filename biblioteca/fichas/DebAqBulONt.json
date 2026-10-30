@@ -1,0 +1,49 @@
+{
+ "id": "DebAqBulONt",
+ "url": "https://www.instagram.com/p/DebAqBulONt/",
+ "autor": "dnyxstudioss",
+ "data": "2026-10-13",
+ "curtidas": 1307,
+ "comentarios": 37,
+ "legenda_post": "concept animation for @customer.io",
+ "duracao_s": 17.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.4,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 94.1,
+  "onsets_per_s": 4.65
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 29.97,
+  "kbps": 424,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:dnyxstudioss"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

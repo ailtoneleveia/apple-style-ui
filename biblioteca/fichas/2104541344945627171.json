@@ -1,0 +1,38 @@
+{
+ "id": "2104541344945627171",
+ "url": "https://x.com/i/status/2104541344945627171",
+ "autor": "just_adev",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "i copied/pasted the prompt below from X into Opus 5.5.   after 10 minutes here’s the result I got  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\" https://t.co/vgBENrFPIX",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 21,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 260,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "DTVYct1kcxK",
+ "url": "https://www.instagram.com/p/DTVYct1kcxK/",
+ "autor": "dawoo.e",
+ "data": "2026-01-10",
+ "curtidas": 3980,
+ "comentarios": 52,
+ "legenda_post": "Here’s the bts of my Nike animation. No soundtrack just sound design (this is a non official ad) #aftereffect #aftereffects #aftereffectsedits",
+ "duracao_s": 10.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.95,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.9
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 184,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

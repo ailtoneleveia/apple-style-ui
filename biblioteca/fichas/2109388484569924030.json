@@ -1,0 +1,39 @@
+{
+ "id": "2109388484569924030",
+ "url": "https://x.com/i/status/2109388484569924030",
+ "autor": "emili_iv",
+ "data": "2026-10-11",
+ "curtidas": 27,
+ "comentarios": 3,
+ "legenda_post": "Some weekend fun. Experimenting with MediaPipe and 3D transforms using the Framer Agent with Opus 5.5. Controlling 3D shapes with hand gestures is insanely cool. Prompt below 👇 https://t.co/DuSoBqjN2j",
+ "duracao_s": 22.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.81,
+ "pecas": [
+  "janela",
+  "pessoa_no_cartao"
+ ],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 584,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 298,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,44 @@
+{
+ "id": "2108717646157922687",
+ "url": "https://x.com/i/status/2108717646157922687",
+ "autor": "paidafluke",
+ "data": "2026-10-10",
+ "curtidas": 13,
+ "comentarios": 2,
+ "legenda_post": "opus 5.5 fez a boa de novo kkkkk  5 minutos pra criar um vídeo pro https://t.co/SNOUVbJq9C  o prompt: \"make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, for [link for project]. go all out. https://t.co/81DNHNpQ9w",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "teclado",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 187,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

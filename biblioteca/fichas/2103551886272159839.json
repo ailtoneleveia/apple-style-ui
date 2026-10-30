@@ -1,0 +1,40 @@
+{
+ "id": "2103551886272159839",
+ "url": "https://x.com/i/status/2103551886272159839",
+ "autor": "3xtihor",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Made with Claude OPUS 5.5   Prompt: \"Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. Go all out.\" https://t.co/ddS7y7YEJN",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "cursor",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 608,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

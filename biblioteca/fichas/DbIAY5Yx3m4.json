@@ -1,0 +1,47 @@
+{
+ "id": "DbIAY5Yx3m4",
+ "url": "https://www.instagram.com/p/DbIAY5Yx3m4/",
+ "autor": "salik.motion",
+ "data": "2026-07-23",
+ "curtidas": 3,
+ "comentarios": 19,
+ "legenda_post": "Clean Motion Graphics.\n.\n.\n.\n.\n.\n.\n.\n.\n#aftereffects #motiondesign #edit #Apple #edit",
+ "duracao_s": 29.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.82,
+ "pecas": [
+  "dynamic_island",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.27
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 627,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

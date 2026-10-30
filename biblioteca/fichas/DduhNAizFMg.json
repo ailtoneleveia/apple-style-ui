@@ -1,0 +1,46 @@
+{
+ "id": "DduhNAizFMg",
+ "url": "https://www.instagram.com/p/DduhNAizFMg/",
+ "autor": "apexmotion.visuals",
+ "data": "2026-09-25",
+ "curtidas": 933,
+ "comentarios": 64,
+ "legenda_post": "Day 10! Hit my DMs to work together!\nCreated inside After Effects!\n#aftereffects #motiongraphics #uidesign #motiondesign #premierepro",
+ "duracao_s": 10.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.79,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.6
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 393,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

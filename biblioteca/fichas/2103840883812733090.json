@@ -1,0 +1,41 @@
+{
+ "id": "2103840883812733090",
+ "url": "https://x.com/i/status/2103840883812733090",
+ "autor": "HowDevelop",
+ "data": "2026-09-26",
+ "curtidas": 25,
+ "comentarios": 7,
+ "legenda_post": "Here's an video introduction to @tan_stack AI using a single prompt to generate a launch style video about Tanstack UI using @ClaudeDevs Opus 5.5 using @Remotion   Prompt shared below 👇 https://t.co/BZ32LUnh5J",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.83,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 145,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

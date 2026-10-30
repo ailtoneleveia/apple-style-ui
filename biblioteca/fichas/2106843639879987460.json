@@ -1,0 +1,42 @@
+{
+ "id": "2106843639879987460",
+ "url": "https://x.com/i/status/2106843639879987460",
+ "autor": "WillDobrev",
+ "data": "2026-10-04",
+ "curtidas": 18,
+ "comentarios": 7,
+ "legenda_post": "Dia 4 usando o Higgsfield  Testei um novo formato de video e um novo método de criação.  Sobre o formato, eu queria um video \"problem-solution explainer\" em vez de um \"pov\".  O método foi o mais interessante. Usei claude code (Opus 5.5 max) + CLI + skills do Higgsfield + Remotion https://t.co/K6w2gb",
+ "duracao_s": 20.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.8,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 131,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

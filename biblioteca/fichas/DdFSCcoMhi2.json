@@ -1,0 +1,44 @@
+{
+ "id": "DdFSCcoMhi2",
+ "url": "https://www.instagram.com/p/DdFSCcoMhi2/",
+ "autor": "rastineskandari",
+ "data": "2026-09-09",
+ "curtidas": 151,
+ "comentarios": 4,
+ "legenda_post": "Day 1⚡️",
+ "duracao_s": 31.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "imessage",
+  "pessoa_no_cartao",
+  "legenda_fala"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 151.4,
+  "onsets_per_s": 4.57
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 320,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

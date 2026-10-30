@@ -1,0 +1,42 @@
+{
+ "id": "2107730352353452332",
+ "url": "https://x.com/i/status/2107730352353452332",
+ "autor": "forevertawl",
+ "data": "2026-10-07",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "I asked claude opus 5.5 to make a creepy ass takeover video about 5 things it can do, the result legit gave me chills. https://t.co/ZlrdjHLrsu",
+ "duracao_s": 41.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.67,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 199,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

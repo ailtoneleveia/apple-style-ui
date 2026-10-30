@@ -1,0 +1,52 @@
+{
+ "id": "DW1ee0jk-JW",
+ "url": "https://www.instagram.com/p/DW1ee0jk-JW/",
+ "autor": "60fps.design",
+ "data": "2026-04-07",
+ "curtidas": 57,
+ "comentarios": 1,
+ "legenda_post": "Wabi glass onboarding sequence animation UI",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "iphone",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 528,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

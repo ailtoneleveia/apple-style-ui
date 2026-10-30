@@ -1,0 +1,45 @@
+{
+ "id": "DddQ1SsgSCv",
+ "url": "https://www.instagram.com/p/DddQ1SsgSCv/",
+ "autor": "glacialcuts",
+ "data": "2026-09-19",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "Recreated this smooth iPhone / Apple-style UI animation I came across on Pinterest — but with one challenge:\n\nEverything. Made. From Scratch. In DaVinci Resolve.\n\nOriginal vs Recreation\n\nIf you're looking for an editor who can handle UI animation + motion graphics + editing + visual storytelling, yo",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "janela"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 177.3,
+  "onsets_per_s": 2.95
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 299,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

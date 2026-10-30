@@ -1,0 +1,39 @@
+{
+ "id": "2103776623548158453",
+ "url": "https://x.com/i/status/2103776623548158453",
+ "autor": "sudeepsd_",
+ "data": "2026-09-26",
+ "curtidas": 14,
+ "comentarios": 3,
+ "legenda_post": "OPUS 5.5 is GOATED  This was literally created with the following one shot prompt.  \"make a dynamic 15-second motion graphics video of what you know about @tryflexprice that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\" https://t.co/WYgdA8fSEa",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 53,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 254,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

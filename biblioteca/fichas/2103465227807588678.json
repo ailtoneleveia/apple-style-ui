@@ -1,0 +1,42 @@
+{
+ "id": "2103465227807588678",
+ "url": "https://x.com/i/status/2103465227807588678",
+ "autor": "techyoutbe",
+ "data": "2026-09-25",
+ "curtidas": 19,
+ "comentarios": 0,
+ "legenda_post": "I used below prompt in opus 5.5 to create this video for https://t.co/bzcevUwt7a  You can create in one shot…share yours  Prompt: I want you to create a highly professional SaaS product launch video. Go and find some SaaS, preferably just one that people know, so it's easier to https://t.co/RZH9GJV2",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 182,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

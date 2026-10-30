@@ -1,0 +1,51 @@
+{
+ "id": "DYXhhxMN_0o",
+ "url": "https://www.instagram.com/p/DYXhhxMN_0o/",
+ "autor": "madebyadito",
+ "data": "2026-05-15",
+ "curtidas": 249,
+ "comentarios": 407,
+ "legenda_post": "Follow and Comment \"ALL\" for the project file 🏅\n\nDM @madebyadito for work\n\n[SaaS explainer, motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "ALL",
+ "acabamento_pro": 0.81,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 60.1,
+  "onsets_per_s": 3.7
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 817,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

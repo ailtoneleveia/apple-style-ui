@@ -1,0 +1,44 @@
+{
+ "id": "2103807094554284430",
+ "url": "https://x.com/i/status/2103807094554284430",
+ "autor": "redpersongpt",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 vs Astra (Prompt ↓) https://t.co/Vpygl4OPp3",
+ "duracao_s": 24.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "busca",
+  "teclado",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 277,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

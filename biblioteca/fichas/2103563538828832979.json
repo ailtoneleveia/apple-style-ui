@@ -1,0 +1,36 @@
+{
+ "id": "2103563538828832979",
+ "url": "https://x.com/i/status/2103563538828832979",
+ "autor": "monokern",
+ "data": "2026-09-25",
+ "curtidas": 56,
+ "comentarios": 13,
+ "legenda_post": "holy shii, gave OPUS a psychedelic prompt  one prompt to Opus 5.5 on xhigh and it did the motion design AND the sound design  an hour and a half of rendering, $14 total  prompt: \"make a dynamic 20-second motion graphics video that shows what an incredible motion designer you are, https://t.co/hEEF5a",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.83,
+ "pecas": [],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 698,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DbTXXntSb7T",
+ "url": "https://www.instagram.com/p/DbTXXntSb7T/",
+ "autor": "kenyset",
+ "data": "2026-07-27",
+ "curtidas": 50,
+ "comentarios": 4,
+ "legenda_post": "Looks like apple motion? \n\n#aftereffectsedit #edit #motiongraphics #motion #videoedit",
+ "duracao_s": 11.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.86,
+ "pecas": [
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.7,
+  "onsets_per_s": 5.87
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 572,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

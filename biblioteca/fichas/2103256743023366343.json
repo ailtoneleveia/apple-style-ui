@@ -1,0 +1,43 @@
+{
+ "id": "2103256743023366343",
+ "url": "https://x.com/i/status/2103256743023366343",
+ "autor": "wallacex227",
+ "data": "2026-09-24",
+ "curtidas": 200,
+ "comentarios": 23,
+ "legenda_post": "Na moral que foda! Ele colocou até a musica no video certinho.   Vou aproveita esse Opus 5.5 antes de nerfar kkkk https://t.co/XLOKuSXSko",
+ "duracao_s": 28.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 110,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

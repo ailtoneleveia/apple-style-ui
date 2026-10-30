@@ -1,0 +1,49 @@
+{
+ "id": "DNYxQrkzgGt",
+ "url": "https://www.instagram.com/p/DNYxQrkzgGt/",
+ "autor": "aayan_visuals",
+ "data": "2025-08-15",
+ "curtidas": 6422,
+ "comentarios": 241,
+ "legenda_post": "🎧😌\n\n#fyp #edits #editing #trendingreels #skills #motiongraphics #creativity #apple",
+ "duracao_s": 14.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 70,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.52
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 424,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

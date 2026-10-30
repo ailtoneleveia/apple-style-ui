@@ -1,0 +1,39 @@
+{
+ "id": "2103516101518987439",
+ "url": "https://x.com/i/status/2103516101518987439",
+ "autor": "garmdotcom",
+ "data": "2026-09-25",
+ "curtidas": 3,
+ "comentarios": 3,
+ "legenda_post": "Tried to jump on the explainer video \"made entirely with Opus 5.5\" bandwagon.  Accidentally didn't include an OpenRouter API key.  Opus decided to just do everything itself.   The result is insane  $0 additional cost.  Prompt in next post https://t.co/05QKWL7wJQ",
+ "duracao_s": 51.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.5,
+ "pecas": [
+  "janela",
+  "icone_app"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 286,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

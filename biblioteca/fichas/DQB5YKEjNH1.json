@@ -1,0 +1,45 @@
+{
+ "id": "DQB5YKEjNH1",
+ "url": "https://www.instagram.com/p/DQB5YKEjNH1/",
+ "autor": "theordrori",
+ "data": "2025-10-20",
+ "curtidas": 8558,
+ "comentarios": 71,
+ "legenda_post": "Just opened a tropic browser 🌴💻\n\nKicking off a new series for @island.io, where each video brings one of their taglines to life through motion.\nStarting with this one!\n\nSound design by @ilaischwebel\n\nThanks to Island’s in-house creative team:\n@tami_ozsinay | @shanivigo | @tomchen.inc\n\nMade with @mas",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.88,
+ "pecas": [
+  "janela",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 72,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 102.0,
+  "onsets_per_s": 5.0
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 836,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

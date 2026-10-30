@@ -1,0 +1,36 @@
+{
+ "id": "2103400046922543147",
+ "url": "https://x.com/i/status/2103400046922543147",
+ "autor": "hoyoyoda",
+ "data": "2026-09-25",
+ "curtidas": 9,
+ "comentarios": 4,
+ "legenda_post": "해피추석!!!!!!  opus 5.5 픽셀 애니메이션   prompt 한국의 추석에 어울리는 요소를 서치해서 픽셀 애니메이션을 구성해서 제작해줘 https://t.co/crS2l8xaAJ",
+ "duracao_s": 12.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.37,
+ "pecas": [],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 570,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

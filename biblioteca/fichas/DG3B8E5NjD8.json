@@ -1,0 +1,43 @@
+{
+ "id": "DG3B8E5NjD8",
+ "url": "https://www.instagram.com/p/DG3B8E5NjD8/",
+ "autor": "theordrori",
+ "data": "2025-03-06",
+ "curtidas": 7675,
+ "comentarios": 64,
+ "legenda_post": "❍⋆.ೃ࿔* Swipe to the end for the full video!!\nWe teamed up with @yamb0x.eth to create @fiverr Go’s Jarvis video, a dynamic piece generated from each user’s profile stats, work experience, and reviews. \n\nWith @sergeposters on visual design and @theordrori on animation and motion design, we crafted flu",
+ "duracao_s": 14.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.17,
+ "pecas": [
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 160.5,
+  "onsets_per_s": 1.44
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 25.0,
+  "kbps": 985,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

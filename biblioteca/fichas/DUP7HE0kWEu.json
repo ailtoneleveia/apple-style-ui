@@ -1,0 +1,50 @@
+{
+ "id": "DUP7HE0kWEu",
+ "url": "https://www.instagram.com/p/DUP7HE0kWEu/",
+ "autor": "madebyveduboi",
+ "data": "2026-02-02",
+ "curtidas": 2149,
+ "comentarios": 48,
+ "legenda_post": "That’s what client said 🧑🏻‍🍳\nWant yours like this ?\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 8.6,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 125.2,
+  "onsets_per_s": 6.27
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1438,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

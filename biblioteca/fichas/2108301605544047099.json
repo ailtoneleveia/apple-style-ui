@@ -1,0 +1,39 @@
+{
+ "id": "2108301605544047099",
+ "url": "https://x.com/i/status/2108301605544047099",
+ "autor": "0xDeniAi",
+ "data": "2026-10-08",
+ "curtidas": 982,
+ "comentarios": 42,
+ "legenda_post": "OPUS 5.5,WHAT THE FUCK IS THIS...  i asked it to put Attack on Titan gear into Minecraft and now i’m jumping off rooftops with two blades, hooking into pine trees and flying over a forest at sunset  no titans yet, the forest is completely empty and somehow that makes it feel even https://t.co/iEXr4V",
+ "duracao_s": 36.6,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.69,
+ "pecas": [
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 529,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

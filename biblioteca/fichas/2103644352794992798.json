@@ -1,0 +1,36 @@
+{
+ "id": "2103644352794992798",
+ "url": "https://x.com/i/status/2103644352794992798",
+ "autor": "VanshWTFFF",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "THIS IS SERIOUSLY CRAZY!!!  Opus 5.5 Max 1H 12M Prompt: make a dynamic 10 second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a resume. https://t.co/fqZVoON0Vt",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 516,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

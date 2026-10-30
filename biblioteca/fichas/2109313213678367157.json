@@ -1,0 +1,45 @@
+{
+ "id": "2109313213678367157",
+ "url": "https://x.com/i/status/2109313213678367157",
+ "autor": "Andr1ycp",
+ "data": "2026-10-11",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "I earned $1,000 using this Al, but honestly, I feel completely devastated, stressed, and exhausted right now because of all the setbacks and overwhelming pressure.   I asked Opus 5.5 and GPT-6 Astra for the exact same animation: a banana tree and a monkey shaking it.   Everything https://t.co/bVg3CQ",
+ "duracao_s": 11.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.77,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "busca"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.52
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 476,
+  "fps": 30.02,
+  "kbps": 159,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

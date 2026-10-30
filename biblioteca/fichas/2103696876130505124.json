@@ -1,0 +1,44 @@
+{
+ "id": "2103696876130505124",
+ "url": "https://x.com/i/status/2103696876130505124",
+ "autor": "bizibeast",
+ "data": "2026-09-26",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "Motion designers are cooked. :(    Made an entire product video with a single prompt using Opus 5.5.    Prompt:  “Research https://t.co/UaobudRq6g. Make a dynamic 40-second motion graphics video on https://t.co/UaobudRq6g that shows what an incredible motion designer you are. https://t.co/3nPG9ITYfJ",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 307,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

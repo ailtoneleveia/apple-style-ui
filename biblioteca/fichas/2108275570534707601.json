@@ -1,0 +1,43 @@
+{
+ "id": "2108275570534707601",
+ "url": "https://x.com/i/status/2108275570534707601",
+ "autor": "yulikay",
+ "data": "2026-10-08",
+ "curtidas": 31,
+ "comentarios": 10,
+ "legenda_post": "I asked Claude Opus 5.5 Max: \"Surprise me\"  Here's what I got 😂   Try it yourself and drop your results 👇 https://t.co/4h6Pcpg4kt",
+ "duracao_s": 38.4,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.79,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 540,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 114,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

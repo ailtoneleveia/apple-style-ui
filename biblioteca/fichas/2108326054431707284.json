@@ -1,0 +1,39 @@
+{
+ "id": "2108326054431707284",
+ "url": "https://x.com/i/status/2108326054431707284",
+ "autor": "kenchiku__girl",
+ "data": "2026-10-08",
+ "curtidas": 6,
+ "comentarios": 1,
+ "legenda_post": "今更ですが、Claude in Chromeが便利～！  自分のnote記事を開いて 「この記事を15秒のモーションビデオにして」 って送ると数分で動画ができる。（Opus5.5）  URLを貼らなくても、開いてるページを読んでくれるのが楽。 記事を書いたら、そのまま動画で告知するのが簡単な時代になった😌 https://t.co/RhrA2q0j2M",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 126,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

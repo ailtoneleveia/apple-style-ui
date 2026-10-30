@@ -1,0 +1,47 @@
+{
+ "id": "DbsyEbSR5c1",
+ "url": "https://www.instagram.com/p/DbsyEbSR5c1/",
+ "autor": "drae.visuals",
+ "data": "2026-08-06",
+ "curtidas": 5521,
+ "comentarios": 177,
+ "legenda_post": "what if apple hired a 19 year old with blender? 🎧\n\nmade an airpods pro 3 ad apple didn’t ask for. every 3d frame is blender. after effects for the composition, the motion blur, the type, the sound design and intro. \nthe hard part wasn’t the 3d. it was the restraint. apple ads work because nothing mo",
+ "duracao_s": 11.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.04,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 73,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.7,
+  "onsets_per_s": 3.79
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 490,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "perfil:drae.visuals",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:apple style edit",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,43 @@
+{
+ "id": "DQO8grlDUu1",
+ "url": "https://www.instagram.com/p/DQO8grlDUu1/",
+ "autor": "creatoroly",
+ "data": "2025-10-25",
+ "curtidas": 1794,
+ "comentarios": 18,
+ "legenda_post": "crazy collab\n\nquick ride with @lovable.dev x @shopify",
+ "duracao_s": 11.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "cursor",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 121.1,
+  "onsets_per_s": 4.92
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 262,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

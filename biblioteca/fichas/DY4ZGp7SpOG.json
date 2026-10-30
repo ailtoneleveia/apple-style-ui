@@ -1,0 +1,45 @@
+{
+ "id": "DY4ZGp7SpOG",
+ "url": "https://www.instagram.com/p/DY4ZGp7SpOG/",
+ "autor": "dopemotionzone",
+ "data": "2026-05-28",
+ "curtidas": 424,
+ "comentarios": 17,
+ "legenda_post": "Storytelling edit on a conversation about red light therapy, longevity, and the science behind Dermalux LED.\n\nTried to make a deep educational podcast feel more watchable through pacing, rhythm, and visual storytelling without losing the depth of the message.\n\nFeaturing insights from Melissa at Derm",
+ "duracao_s": 56.1,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 768,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

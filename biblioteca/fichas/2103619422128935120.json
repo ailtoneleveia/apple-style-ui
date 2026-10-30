@@ -1,0 +1,36 @@
+{
+ "id": "2103619422128935120",
+ "url": "https://x.com/i/status/2103619422128935120",
+ "autor": "tolgayhickiran",
+ "data": "2026-09-25",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "Motion graphics from a single prompt.   Opus 5.5 Medium  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\"  Original Idea: @stephanlivera https://t.co/fBlbqi1pHr",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 542,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

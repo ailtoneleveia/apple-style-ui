@@ -1,0 +1,46 @@
+{
+ "id": "2105309987983745060",
+ "url": "https://x.com/i/status/2105309987983745060",
+ "autor": "robinebers",
+ "data": "2026-09-30",
+ "curtidas": 1655,
+ "comentarios": 88,
+ "legenda_post": "had a crazy idea today  for the past two months i've been building a pretty massive app  and truth be told, i often play catch-up on architecture, because features move so damn fast  so today i asked claude (opus 5.5, high)  \"I have a weird task for you. I want you to look at the https://t.co/0RNdof",
+ "duracao_s": 11.5,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "cursor",
+  "janela",
+  "botao_pilula",
+  "busca",
+  "mapa"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 556,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 235,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

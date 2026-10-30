@@ -1,0 +1,38 @@
+{
+ "id": "2104410457263976899",
+ "url": "https://x.com/i/status/2104410457263976899",
+ "autor": "EZheng66099",
+ "data": "2026-09-28",
+ "curtidas": 12,
+ "comentarios": 4,
+ "legenda_post": "I asked Opus 5.5 to turn my work into a one minute film.  I've seen a lot of Opus 5.5 demos lately.  All very impressive.   But I kept thinking:  apart from showing off what the model can do,  what's one thing it can do for anyone that pays off right away?  Going forward, I don't https://t.co/7ok5e1",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 281,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "DaLEktKNx4r",
+ "url": "https://www.instagram.com/p/DaLEktKNx4r/",
+ "autor": "creatoroly",
+ "data": "2026-06-29",
+ "curtidas": 1584,
+ "comentarios": 19,
+ "legenda_post": "mini concept for @airbudswidget \n\n#animations #aftereffects #motiondesign",
+ "duracao_s": 10.3,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "iphone",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "emoji_3d"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.7,
+  "onsets_per_s": 5.28
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 304,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

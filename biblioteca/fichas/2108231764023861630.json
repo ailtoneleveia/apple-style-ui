@@ -1,0 +1,39 @@
+{
+ "id": "2108231764023861630",
+ "url": "https://x.com/i/status/2108231764023861630",
+ "autor": "daveeyyy_",
+ "data": "2026-10-08",
+ "curtidas": 22,
+ "comentarios": 4,
+ "legenda_post": "Opus 5.5 cooked again  Created this launch video for my coming product @usehuntt   took 5 minutes  Prompt  \"make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, for (insert project link), go all out. https://t.co/Wwx4ba1K8p",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 220,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

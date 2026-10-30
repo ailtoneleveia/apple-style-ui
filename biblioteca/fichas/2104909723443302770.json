@@ -1,0 +1,36 @@
+{
+ "id": "2104909723443302770",
+ "url": "https://x.com/i/status/2104909723443302770",
+ "autor": "Dino_Spike_web3",
+ "data": "2026-09-29",
+ "curtidas": 11,
+ "comentarios": 1,
+ "legenda_post": "鉛筆の芯から炭素原子1個まで、カットなしでズームし続ける動画をClaudeのOpus5.5に作ってもらった  画像も素材も使わず、コードだけ 鉛筆の軸も炭素の並びも六角形なのが地味に好き  プロンプトはリプに置いときます  #生成AI #Opus5.5 https://t.co/aHzqG1dB3R",
+ "duracao_s": 24.6,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.01,
+  "kbps": 234,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

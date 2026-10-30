@@ -1,0 +1,47 @@
+{
+ "id": "DXCBD1KEwGO",
+ "url": "https://www.instagram.com/p/DXCBD1KEwGO/",
+ "autor": "nishvisualz",
+ "data": "2026-04-12",
+ "curtidas": 1126,
+ "comentarios": 1449,
+ "legenda_post": "Comment “Adobe” to get free project file\n\nFollow @nishvisualz \n\n[motion graphics, after effects, adobe, ecosystem, ui animation, freelance, video editing, apple ui animation, project file]",
+ "duracao_s": 21.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "ADOBE",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.44
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 182,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:nishvisualz"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

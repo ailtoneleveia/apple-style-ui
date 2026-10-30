@@ -1,0 +1,39 @@
+{
+ "id": "2103692944771313960",
+ "url": "https://x.com/i/status/2103692944771313960",
+ "autor": "motiondsgnr",
+ "data": "2026-09-26",
+ "curtidas": 8,
+ "comentarios": 2,
+ "legenda_post": "Yo! Opus 5.5. RAW, UNFILTERED!! 🙀🙀  Been seeing this trend on X and decided to try this out.  Gave it one single prompt: \"Make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a resume. Go all out.\" https://t.co/CuULTmJX5p",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 564,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2103542756555768014",
+ "url": "https://x.com/i/status/2103542756555768014",
+ "autor": "Adamdesgns",
+ "data": "2026-09-25",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "WTF?  Made with single prompt claude OPUS 5.5  Prompt:-  “make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out. (About the pipefitters bible)”  I added that at the end to for one of https://t.co/d5Xai8B",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.99,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 390,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

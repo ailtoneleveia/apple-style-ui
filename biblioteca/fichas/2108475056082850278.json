@@ -1,0 +1,38 @@
+{
+ "id": "2108475056082850278",
+ "url": "https://x.com/i/status/2108475056082850278",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 2 models 🚁  \"Create a detailed visual 3D presentation of an AH-64E Apache Guardian\"  Claude Opus 5.5 · ~$2.42 · 27 min GPT-6 Astra · ~$5.40 · 23 min (~ = API-price estimate)  Which one looks combat-ready? 👇 https://t.co/j8Cl0dHOC3 https://t.co/bVjMJ52DGT",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 430,
+  "fps": 30.0,
+  "kbps": 156,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

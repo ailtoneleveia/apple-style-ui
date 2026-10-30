@@ -1,0 +1,38 @@
+{
+ "id": "2103802871934497266",
+ "url": "https://x.com/i/status/2103802871934497266",
+ "autor": "Mounnna",
+ "data": "2026-09-26",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "Gave Claude Opus 5.5 our logo.   It built this motion design reveal for https://t.co/zwNuXGdmEC from scratch.   Every shard, the typing animation, even the sound 🤯  Prompt in the reply 👇 https://t.co/mBsWBEvmCt",
+ "duracao_s": 16.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 320,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "Deceit1oFHx",
+ "url": "https://www.instagram.com/p/Deceit1oFHx/",
+ "autor": "timixeditor",
+ "data": "2026-10-13",
+ "curtidas": 19,
+ "comentarios": 2,
+ "legenda_post": "Cal ai ad Sfx timeline #alightmotion #motiondesign #aftereffects",
+ "duracao_s": 7.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.64
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 622,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

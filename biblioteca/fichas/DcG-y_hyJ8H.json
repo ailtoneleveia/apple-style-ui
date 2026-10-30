@@ -1,0 +1,46 @@
+{
+ "id": "DcG-y_hyJ8H",
+ "url": "https://www.instagram.com/p/DcG-y_hyJ8H/",
+ "autor": "dopemotionzone",
+ "data": "2026-08-16",
+ "curtidas": 427,
+ "comentarios": 261,
+ "legenda_post": "Comment “BRAND” below ⬇️\nand grab your brand style.\n\n⚡ What you’ll get:\n\n🎞️ Curated brand-style references\n\nA collection of videos to inspire your visual direction, editing style, pacing & overall brand aesthetic.\n\nEverything is organized and editor-focused, no clutter, no confusion.\n\nDrop “BRAND” i",
+ "duracao_s": 44.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "BRAND",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 159.8,
+  "onsets_per_s": 4.01
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 760,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

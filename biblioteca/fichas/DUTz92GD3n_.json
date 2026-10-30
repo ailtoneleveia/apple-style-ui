@@ -1,0 +1,45 @@
+{
+ "id": "DUTz92GD3n_",
+ "url": "https://www.instagram.com/p/DUTz92GD3n_/",
+ "autor": "jm.motionfx",
+ "data": "2026-02-03",
+ "curtidas": 14,
+ "comentarios": 0,
+ "legenda_post": "Simple calendar widget\n\n[motion graphics, after effects, apple ui, SaaS]",
+ "duracao_s": 5.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.03,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.02
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 213,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

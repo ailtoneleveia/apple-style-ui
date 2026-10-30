@@ -1,0 +1,46 @@
+{
+ "id": "Dc_TW38BpH-",
+ "url": "https://www.instagram.com/p/Dc_TW38BpH-/",
+ "autor": "creatoroly",
+ "data": "2026-09-07",
+ "curtidas": 1251,
+ "comentarios": 20,
+ "legenda_post": "added some motion to clean whity designs today 📃",
+ "duracao_s": 12.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.7,
+ "pecas": [
+  "cursor",
+  "janela",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 4.83
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 486,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

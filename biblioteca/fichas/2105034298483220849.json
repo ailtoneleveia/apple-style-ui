@@ -1,0 +1,43 @@
+{
+ "id": "2105034298483220849",
+ "url": "https://x.com/i/status/2105034298483220849",
+ "autor": "greco_dev",
+ "data": "2026-09-29",
+ "curtidas": 37,
+ "comentarios": 4,
+ "legenda_post": "motion designer morreu  eu to literalmente em choque com o opus 5.5  obv alguns detalhes a melhorar, mas pqp que absurdo https://t.co/tol1O3BNtW",
+ "duracao_s": 18.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.95,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 484,
+  "altura": 270,
+  "fps": 60.0,
+  "kbps": 84,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

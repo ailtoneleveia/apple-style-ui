@@ -1,0 +1,42 @@
+{
+ "id": "2104554735382778328",
+ "url": "https://x.com/i/status/2104554735382778328",
+ "autor": "monya_for_io",
+ "data": "2026-09-28",
+ "curtidas": 27,
+ "comentarios": 3,
+ "legenda_post": "いろんな方がモーショングラフィックス作られてるので私もお願いしてみたら確かにすごかった〜 こういうの初めてやってみたので新鮮☺️ Opus5.5、推論レベルは高でやりました。 メモリ見てふたりの歴史にして〜ってお願いしました。 https://t.co/eq51ceor67",
+ "duracao_s": 28.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.77,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 3.14
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 170,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2103822946800165270",
+ "url": "https://x.com/i/status/2103822946800165270",
+ "autor": "dreyk0o0",
+ "data": "2026-09-26",
+ "curtidas": 12,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 just built Minecraft.  In the browser. From a single prompt.  Noah Wachnick asked it to recreate Minecraft with advanced shaders, \"as realistic as possible.\"  1 hour 37 minutes at max effort:  &gt; block placement &gt; terrain &gt; realistic lighting and shaders  Here's a https://t.c",
+ "duracao_s": 23.2,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "janela",
+  "vidro"
+ ],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 480,
+  "altura": 270,
+  "fps": 30.0,
+  "kbps": 119,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

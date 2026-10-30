@@ -1,0 +1,51 @@
+{
+ "id": "DY-FLBYK6xU",
+ "url": "https://www.instagram.com/p/DY-FLBYK6xU/",
+ "autor": "mojtabasorbi",
+ "data": "2026-05-30",
+ "curtidas": 86,
+ "comentarios": 9,
+ "legenda_post": "Three colors of the iPhone 17 Pro.\nOne motion. One decision.\n\nThis is how motion design turns\nproduct showcases and UI into viral content.\n\nIf you need professional motion graphics\nfor your product or app,\nDM me now to place your order.\n\nHashtags:\n\n#iPhone17Pro\n#AppleDesign\n#MotionGraphics\n#UIMotion",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "icone_app"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.71
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 443,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple editing style",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

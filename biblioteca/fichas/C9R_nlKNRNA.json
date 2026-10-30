@@ -1,0 +1,42 @@
+{
+ "id": "C9R_nlKNRNA",
+ "url": "https://www.instagram.com/p/C9R_nlKNRNA/",
+ "autor": "creatoroly",
+ "data": "2024-07-11",
+ "curtidas": 461,
+ "comentarios": 9,
+ "legenda_post": "Fail contains more things.\n\n#inspiration #fail #motivation #animations",
+ "duracao_s": 8.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.66,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 27,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 140.0,
+  "onsets_per_s": 2.81
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 200,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

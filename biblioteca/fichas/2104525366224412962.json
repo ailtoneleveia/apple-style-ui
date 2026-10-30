@@ -1,0 +1,43 @@
+{
+ "id": "2104525366224412962",
+ "url": "https://x.com/i/status/2104525366224412962",
+ "autor": "sudhanshusoni__",
+ "data": "2026-09-28",
+ "curtidas": 15,
+ "comentarios": 4,
+ "legenda_post": "Opus 5.5 one shotted this motion design video in 10 minutes 🤯   This is the exact prompt I used:  \"Make a dynamic 15-second motion graphic video for Pokobot that shows what an incredible motion designer you are, like its your showreel for a resume, go all out.\" https://t.co/904dlKx0pT",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 251,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

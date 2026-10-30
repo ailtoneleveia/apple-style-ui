@@ -1,0 +1,41 @@
+{
+ "id": "2107683152865173619",
+ "url": "https://x.com/i/status/2107683152865173619",
+ "autor": "RyanSael",
+ "data": "2026-10-07",
+ "curtidas": 52,
+ "comentarios": 1,
+ "legenda_post": "analytics, but less boring: https://t.co/qK4pxJxEtN I asked Opus 5.5 to turn my live visitor count into something worth looking at https://t.co/OETi29h5tZ",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.5,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 214,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

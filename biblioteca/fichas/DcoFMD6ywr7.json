@@ -1,0 +1,43 @@
+{
+ "id": "DcoFMD6ywr7",
+ "url": "https://www.instagram.com/p/DcoFMD6ywr7/",
+ "autor": "dopemotionzone",
+ "data": "2026-08-29",
+ "curtidas": 221,
+ "comentarios": 5,
+ "legenda_post": "Is SaaS becoming harder to justify in the age of AI?\n\nThat’s the question behind this conversation with Shensi Ding and Gil Feig, co-founders of Merge.\n\nThe cost of building software in-house is dropping.\n\nAI can now write code, ask clarifying questions, build systems, and automate workflows with a ",
+ "duracao_s": 52.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.85,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 30,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.09
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1240,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

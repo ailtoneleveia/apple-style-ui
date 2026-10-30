@@ -1,0 +1,55 @@
+{
+ "id": "DcfjgxBDpF0",
+ "url": "https://www.instagram.com/p/DcfjgxBDpF0/",
+ "autor": "dnyxstudioss",
+ "data": "2026-08-26",
+ "curtidas": 353,
+ "comentarios": 20,
+ "legenda_post": "apple notes ui animation",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 190.3,
+  "onsets_per_s": 4.33
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 558,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:dnyxstudioss",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

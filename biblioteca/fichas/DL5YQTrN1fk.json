@@ -1,0 +1,50 @@
+{
+ "id": "DL5YQTrN1fk",
+ "url": "https://www.instagram.com/p/DL5YQTrN1fk/",
+ "autor": "creatoroly",
+ "data": "2025-07-09",
+ "curtidas": 1904,
+ "comentarios": 25,
+ "legenda_post": "just aura farming animations",
+ "duracao_s": 16.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 127.5,
+  "onsets_per_s": 4.33
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 95,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

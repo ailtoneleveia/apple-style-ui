@@ -1,0 +1,41 @@
+{
+ "id": "2105287909343428943",
+ "url": "https://x.com/i/status/2105287909343428943",
+ "autor": "JeanLucas",
+ "data": "2026-09-30",
+ "curtidas": 55,
+ "comentarios": 8,
+ "legenda_post": "Pedi pro Opus 5.5 gerar o vídeo de preview da App Store do novo aplicativo que eu tô criando e queria a opinião de vocês https://t.co/3Omv1kyCAO",
+ "duracao_s": 26.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.68,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 52,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 692,
+  "fps": 30.0,
+  "kbps": 220,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,51 @@
+{
+ "id": "DeKobIbxUpw",
+ "url": "https://www.instagram.com/p/DeKobIbxUpw/",
+ "autor": "edita.visuals",
+ "data": "2026-10-06",
+ "curtidas": 15,
+ "comentarios": 8,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩\n\nCan you believe Opus 5.5 made this video? 🤯\n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!",
+ "duracao_s": 26.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.06
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 155,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

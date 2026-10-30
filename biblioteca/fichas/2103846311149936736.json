@@ -1,0 +1,43 @@
+{
+ "id": "2103846311149936736",
+ "url": "https://x.com/i/status/2103846311149936736",
+ "autor": "felipemoller",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Não vou dizer que foi um prompt só, mas o Opus 5.5 realmente está insano.  Vou deixar o prompt básico aqui embaixo 👇 https://t.co/ka54O4a5r0",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.08,
+ "pecas": [
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": 164.9,
+  "onsets_per_s": 2.86
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 140,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

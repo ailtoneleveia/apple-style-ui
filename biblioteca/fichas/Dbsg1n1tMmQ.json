@@ -1,0 +1,50 @@
+{
+ "id": "Dbsg1n1tMmQ",
+ "url": "https://www.instagram.com/p/Dbsg1n1tMmQ/",
+ "autor": "creatoroly",
+ "data": "2026-08-06",
+ "curtidas": 1838,
+ "comentarios": 38,
+ "legenda_post": "just animated random design from X 🛩️",
+ "duracao_s": 15.2,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.72,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "emoji_3d",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 126.0,
+  "onsets_per_s": 4.23
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 459,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

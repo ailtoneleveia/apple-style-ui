@@ -1,0 +1,45 @@
+{
+ "id": "2103571096549433425",
+ "url": "https://x.com/i/status/2103571096549433425",
+ "autor": "AnnaCher___",
+ "data": "2026-09-25",
+ "curtidas": 12,
+ "comentarios": 3,
+ "legenda_post": "Made this promo for Sprites in one shot with Opus 5.5.  No After Effects, no Figma. One HTML file where every frame is a function of time, rendered with Playwright, with UI sounds generated in code.  Real ads from our Ads Library, real platform logos.  Prompt below ↓ https://t.co/jQ3VT3jtv9",
+ "duracao_s": 42.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": 121.7,
+  "onsets_per_s": 4.18
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 59.95,
+  "kbps": 120,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

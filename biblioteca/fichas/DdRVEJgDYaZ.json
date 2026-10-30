@@ -1,0 +1,43 @@
+{
+ "id": "DdRVEJgDYaZ",
+ "url": "https://www.instagram.com/p/DdRVEJgDYaZ/",
+ "autor": "splinetool",
+ "data": "2026-09-14",
+ "curtidas": 4219,
+ "comentarios": 25,
+ "legenda_post": "Wondering how your logo would look with the iPhone Duo Animation? ➡️👀\n\nMade in Hana, by @lepisoff \n\n#logo #apple #iphone #graphicdesign #motiondesign",
+ "duracao_s": 4.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "icone_app",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 162,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,43 @@
+{
+ "id": "2104832372164444162",
+ "url": "https://x.com/i/status/2104832372164444162",
+ "autor": "__gsk__",
+ "data": "2026-09-29",
+ "curtidas": 3336,
+ "comentarios": 47,
+ "legenda_post": "Claude Opus 5.5での制作、完全に理解した。 映像も音も完全コードベース。 https://t.co/8atBVTstSH",
+ "duracao_s": 30.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.8,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 292,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

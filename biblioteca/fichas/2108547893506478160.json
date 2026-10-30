@@ -1,0 +1,49 @@
+{
+ "id": "2108547893506478160",
+ "url": "https://x.com/i/status/2108547893506478160",
+ "autor": "skpnky",
+ "data": "2026-10-09",
+ "curtidas": 65,
+ "comentarios": 29,
+ "legenda_post": "\" if @apple shipped @claude opus 5.5 \"  launch video  video made opus 5.5 (high), only 5% limit used  this is insane..please play with sound till the end 🤯 https://t.co/inNgX3jwXQ",
+ "duracao_s": 35.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.45,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 78,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 5.39
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 103,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2105143909311803524",
+ "url": "https://x.com/i/status/2105143909311803524",
+ "autor": "akokoi1",
+ "data": "2026-09-30",
+ "curtidas": 5,
+ "comentarios": 0,
+ "legenda_post": "简单对比测试了Opus 5.5和Sol 6.1。  同样的任务，做一个电学实验台，Opus 5.5的审美和逻辑明显强于Sol 6.1，简单提示词下，考虑到的细节更多。  Sol 6.1最大的进步是消耗的额度变少了，完成这个小demo，消耗Pro 5x周额度的1%。Opus 5.5的消耗也差不多是Max 5周额度的1%。  Opus 5.5能力肯定是强于Sol https://t.co/Xydct6qC2s",
+ "duracao_s": 19.9,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.28,
+ "pecas": [
+  "cursor",
+  "grafico",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 716,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 175,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

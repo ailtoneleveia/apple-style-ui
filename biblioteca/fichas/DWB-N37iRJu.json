@@ -1,0 +1,53 @@
+{
+ "id": "DWB-N37iRJu",
+ "url": "https://www.instagram.com/p/DWB-N37iRJu/",
+ "autor": "adiiguu",
+ "data": "2026-03-18",
+ "curtidas": 225,
+ "comentarios": 16,
+ "legenda_post": "3 months at Island and I've just wrapped up my first big project! 🏝️ It was an intense two-week sprint, but I’m incredibly proud of the result. \nCan’t wait for what’s next!\n\n@life.at.island #motion #motiongraphics #animation #design #creativecollaboration #visualstorytelling #aftereffects #motiongra",
+ "duracao_s": 75.3,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.79,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 136.1,
+  "onsets_per_s": 4.66
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 25.0,
+  "kbps": 514,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:dynamic island animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

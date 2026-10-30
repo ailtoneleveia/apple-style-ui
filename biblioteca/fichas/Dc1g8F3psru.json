@@ -1,0 +1,52 @@
+{
+ "id": "Dc1g8F3psru",
+ "url": "https://www.instagram.com/p/Dc1g8F3psru/",
+ "autor": "noflexstudio",
+ "data": "2026-09-03",
+ "curtidas": 3637,
+ "comentarios": 35,
+ "legenda_post": "ChatGPT - Codex\n\nFor this project, we created a SaaS-style promotional video showcasing the Build iOS Apps plugin for Codex . We focused on presenting the workflow in a clean, engaging, and visually polished way, from viewing and testing iOS apps in the in-app browser to opening SwiftUI previews and",
+ "duracao_s": 35.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "cursor",
+  "iphone",
+  "pessoa_no_cartao",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 114.8,
+  "onsets_per_s": 3.94
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 890,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

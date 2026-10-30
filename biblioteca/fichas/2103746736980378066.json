@@ -1,0 +1,38 @@
+{
+ "id": "2103746736980378066",
+ "url": "https://x.com/i/status/2103746736980378066",
+ "autor": "1littlecoder",
+ "data": "2026-09-26",
+ "curtidas": 53,
+ "comentarios": 6,
+ "legenda_post": "This is freaking crazy! 🤯  I told Opus 5.5 to create the 1984 Apple Ad and make it for itself!   It produced this masterpiece only from code! 🔥  The amount of detail it went to make this is insane, it even checked the sound decibel levels to ensure it's exactly how it planned! https://t.co/QbnRWedhR",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.81,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 186,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

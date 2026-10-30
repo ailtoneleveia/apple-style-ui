@@ -1,0 +1,43 @@
+{
+ "id": "DcHAMh2MIip",
+ "url": "https://www.instagram.com/p/DcHAMh2MIip/",
+ "autor": "ant.lon",
+ "data": "2026-08-16",
+ "curtidas": 6356,
+ "comentarios": 1398,
+ "legenda_post": "Comment 'PRESET' to get all of my editing asset that I used to create this video & many more!\n\n#editor #videoediting #tutorial #hook",
+ "duracao_s": 55.2,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "PRESET",
+ "acabamento_pro": 1.01,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.07
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 25.0,
+  "kbps": 702,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

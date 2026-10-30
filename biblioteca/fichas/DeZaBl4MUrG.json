@@ -1,0 +1,46 @@
+{
+ "id": "DeZaBl4MUrG",
+ "url": "https://www.instagram.com/p/DeZaBl4MUrG/",
+ "autor": "flashromance_motion",
+ "data": "2026-10-12",
+ "curtidas": 26,
+ "comentarios": 0,
+ "legenda_post": "A small part of the breakdown for a new project. I really love micro-UI animations - where everything interacts with everything else.\n\n#saasmotion #motiondesign #uianimation\n\n[ after effects, video editing, saaspromo, behind the scene, breakdown, micro animation ]",
+ "duracao_s": 8.3,
+ "tipo": "bastidor_editor",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.8,
+  "onsets_per_s": 4.42
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 598,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,49 @@
+{
+ "id": "Dct7Hc1OO5V",
+ "url": "https://www.instagram.com/p/Dct7Hc1OO5V/",
+ "autor": "mr.pynk",
+ "data": "2026-08-31",
+ "curtidas": 3334,
+ "comentarios": 9279,
+ "legenda_post": "Comment “PYNK” and i send the skill🤝\n\nThis Claude skill creates entire Vox style animations.\n\nYou describe the animation you want And it uses its internal motion design rules \nTo write a full video generation prompt.\n\nThen you take that into any video model and generate it.\n\nThe result is the exact ",
+ "duracao_s": 50.3,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "PYNK",
+ "acabamento_pro": 0.78,
+ "pecas": [
+  "cursor",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.65
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1114,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

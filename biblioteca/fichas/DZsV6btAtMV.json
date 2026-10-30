@@ -1,0 +1,53 @@
+{
+ "id": "DZsV6btAtMV",
+ "url": "https://www.instagram.com/p/DZsV6btAtMV/",
+ "autor": "letskree8",
+ "data": "2026-06-17",
+ "curtidas": 234,
+ "comentarios": 6,
+ "legenda_post": "Onboarding designed for Anything 📱\n\n#uidesign #app #iphone #design",
+ "duracao_s": 13.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 115.9,
+  "onsets_per_s": 3.26
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 900,
+  "fps": 30.0,
+  "kbps": 489,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

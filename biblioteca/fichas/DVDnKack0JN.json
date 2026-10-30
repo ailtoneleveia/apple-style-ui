@@ -1,0 +1,47 @@
+{
+ "id": "DVDnKack0JN",
+ "url": "https://www.instagram.com/p/DVDnKack0JN/",
+ "autor": "madebyveduboi",
+ "data": "2026-02-22",
+ "curtidas": 1669,
+ "comentarios": 2610,
+ "legenda_post": "Comment “LIT” and get the project files in your DMs 📂📥\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 33.5,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "LIT",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 36,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.29
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1454,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

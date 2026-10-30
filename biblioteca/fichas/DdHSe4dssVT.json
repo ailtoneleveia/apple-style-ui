@@ -1,0 +1,48 @@
+{
+ "id": "DdHSe4dssVT",
+ "url": "https://www.instagram.com/p/DdHSe4dssVT/",
+ "autor": "notivvago",
+ "data": "2026-09-10",
+ "curtidas": 108,
+ "comentarios": 2,
+ "legenda_post": "a recent SaaS animation that i worked🔥\n\n#motiondesign #motiongraphics #aftereffects",
+ "duracao_s": 36.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "cursor",
+  "janela",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 119.8,
+  "onsets_per_s": 4.45
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 636,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:saas launch video"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

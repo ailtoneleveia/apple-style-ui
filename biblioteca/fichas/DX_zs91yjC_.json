@@ -1,0 +1,46 @@
+{
+ "id": "DX_zs91yjC_",
+ "url": "https://www.instagram.com/p/DX_zs91yjC_/",
+ "autor": "dopemotionzone",
+ "data": "2026-05-06",
+ "curtidas": 621,
+ "comentarios": 15,
+ "legenda_post": "Most people think being a perfectionist means you care more.\nBut the way Grace Beverley explains it flips that idea.\nPerfectionism often isn’t productivity.\nIt’s procrastination in disguise.\nTweaking the same thing again and again…\nwaiting for the perfect moment…\nthe perfect plan…\nthe perfect timing",
+ "duracao_s": 41.0,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.26
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 937,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

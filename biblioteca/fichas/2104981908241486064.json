@@ -1,0 +1,42 @@
+{
+ "id": "2104981908241486064",
+ "url": "https://x.com/i/status/2104981908241486064",
+ "autor": "motion_so",
+ "data": "2026-09-29",
+ "curtidas": 593,
+ "comentarios": 17,
+ "legenda_post": "We gave Claude Sonnet 5.5 and Opus 5.5 the same prompt:  “Create a motion design video of what you think you look like.” https://t.co/Gsw8kOrCbV",
+ "duracao_s": 24.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 69,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 150.2,
+  "onsets_per_s": 3.24
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 212,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

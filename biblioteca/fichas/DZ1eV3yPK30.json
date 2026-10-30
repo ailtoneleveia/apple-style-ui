@@ -1,0 +1,53 @@
+{
+ "id": "DZ1eV3yPK30",
+ "url": "https://www.instagram.com/p/DZ1eV3yPK30/",
+ "autor": "dnyxstudioss",
+ "data": "2026-06-21",
+ "curtidas": 226,
+ "comentarios": 19,
+ "legenda_post": "i tried copying apples shape morphing style...\nfull vid on yt: @dnyxstudios",
+ "duracao_s": 12.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "cursor",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 149.3,
+  "onsets_per_s": 3.56
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1072,
+  "fps": 29.97,
+  "kbps": 449,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

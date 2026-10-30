@@ -1,0 +1,46 @@
+{
+ "id": "DTdZBVEjZ-1",
+ "url": "https://www.instagram.com/p/DTdZBVEjZ-1/",
+ "autor": "creatoroly",
+ "data": "2026-01-13",
+ "curtidas": 3575,
+ "comentarios": 44,
+ "legenda_post": "I just added a little bit of magic to @typotab \n\n#apple #aftereffects #motiondesign",
+ "duracao_s": 15.8,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.8,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.93
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 620,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:ui apple captions"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

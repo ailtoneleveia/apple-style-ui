@@ -1,0 +1,36 @@
+{
+ "id": "2103486881136840800",
+ "url": "https://x.com/i/status/2103486881136840800",
+ "autor": "umangratani",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Claude opus can now edit videos, create motion graphics.  Made with claude OPUS 5.5  Prompt  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\"  That's it.. https://t.co/ASUq4ACDLG",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 454,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

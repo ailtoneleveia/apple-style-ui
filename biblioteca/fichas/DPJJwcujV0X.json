@@ -1,0 +1,50 @@
+{
+ "id": "DPJJwcujV0X",
+ "url": "https://www.instagram.com/p/DPJJwcujV0X/",
+ "autor": "creatoroly",
+ "data": "2025-09-28",
+ "curtidas": 8235,
+ "comentarios": 62,
+ "legenda_post": "@joiplanner is so clean 🫠",
+ "duracao_s": 7.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 136.7,
+  "onsets_per_s": 5.98
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 383,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "provada",
+ "prova": {
+  "clone": "Joi",
+  "distancia": 0.004,
+  "correlacao": 0.997,
+  "lado_a_lado": ""
+ }
+}

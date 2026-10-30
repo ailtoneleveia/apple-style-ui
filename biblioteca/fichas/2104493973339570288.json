@@ -1,0 +1,46 @@
+{
+ "id": "2104493973339570288",
+ "url": "https://x.com/i/status/2104493973339570288",
+ "autor": "pksingh1508",
+ "data": "2026-09-28",
+ "curtidas": 8,
+ "comentarios": 5,
+ "legenda_post": "Opus 5.5 make a Teaser for my Portfolio... https://t.co/llmKgG9v79",
+ "duracao_s": 21.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.53,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.8,
+  "onsets_per_s": 3.69
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 171,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "Dd9LFAHCQDU",
+ "url": "https://www.instagram.com/p/Dd9LFAHCQDU/",
+ "autor": "charliehills",
+ "data": "2026-10-01",
+ "curtidas": 3,
+ "comentarios": 9,
+ "legenda_post": "Is this my real voice? Or is this my real voice?\n\nThe second one is my AI voice clone (not me), made with ElevenLabs' new Eleven v4 model.\n\nWhat got me is that it performs rather than just reads. I gave it one ad line and got a calm read, an excited read that drops to a whisper, and the same line in",
+ "duracao_s": 42.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "presente",
+ "palavra": "ELEVEN",
+ "acabamento_pro": 1.47,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 132,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

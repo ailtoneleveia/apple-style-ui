@@ -1,0 +1,47 @@
+{
+ "id": "DdG9PMPAc-y",
+ "url": "https://www.instagram.com/p/DdG9PMPAc-y/",
+ "autor": "ahmed_fx3000",
+ "data": "2026-09-10",
+ "curtidas": 3,
+ "comentarios": 14,
+ "legenda_post": "Did i cook with this launch ad for chippi?#motiondesign #saas #animation #motiongraphics",
+ "duracao_s": 26.2,
+ "tipo": "bastidor_editor",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.58,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.34
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 2519,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

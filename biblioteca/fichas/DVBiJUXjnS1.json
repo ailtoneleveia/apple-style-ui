@@ -1,0 +1,59 @@
+{
+ "id": "DVBiJUXjnS1",
+ "url": "https://www.instagram.com/p/DVBiJUXjnS1/",
+ "autor": "md.nasifahsan",
+ "data": "2026-02-21",
+ "curtidas": 509,
+ "comentarios": 13,
+ "legenda_post": "Day: 27 of creating apple ui style animation.",
+ "duracao_s": 14.7,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "teclado",
+  "emoji_3d",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.76
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 554,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:md.nasifahsan",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:dynamic island animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,54 @@
+{
+ "id": "DWH-zb9jXoH",
+ "url": "https://www.instagram.com/p/DWH-zb9jXoH/",
+ "autor": "lipe.motion",
+ "data": "2026-03-20",
+ "curtidas": 23,
+ "comentarios": 6,
+ "legenda_post": "(EN) How about an Apple-style UI animation with a liquid glass touch? \n\n(PT-BR) Animação de UI estilo Apple explorando o efeito de Liquid Glass.\n\nPara essa animação usei o preset de Liquid Glass do querido hermano @mauritenss \n\n#uianimation #saas #apple #motiongraphics #motiondesign",
+ "duracao_s": 13.8,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.96,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 125.2,
+  "onsets_per_s": 6.58
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 329,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:liquid glass animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

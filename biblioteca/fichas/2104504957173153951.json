@@ -1,0 +1,42 @@
+{
+ "id": "2104504957173153951",
+ "url": "https://x.com/i/status/2104504957173153951",
+ "autor": "esrhengwu",
+ "data": "2026-09-28",
+ "curtidas": 3,
+ "comentarios": 3,
+ "legenda_post": "Opus5.5 和 GPT-6 Astra 分别做的Q弹果冻西瓜，太魔性太好玩了 效果还是Opus5.5领先  点击就可以试完，线上捏捏解压大法。 https://t.co/pHN1oXyWcs  API费用： Opus - $4.50   Astra - $2.05  提示词见评论区，你能做一切Q弹的可交互3D模型了现在。 https://t.co/nyF1Rc4IKc",
+ "duracao_s": 18.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.9,
+  "onsets_per_s": 5.54
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 197,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

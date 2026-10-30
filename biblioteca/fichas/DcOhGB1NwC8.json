@@ -1,0 +1,46 @@
+{
+ "id": "DcOhGB1NwC8",
+ "url": "https://www.instagram.com/p/DcOhGB1NwC8/",
+ "autor": "iusmanshams",
+ "data": "2026-08-19",
+ "curtidas": 3324,
+ "comentarios": 434,
+ "legenda_post": "#uidesign #viralvideos #webdesign",
+ "duracao_s": 15.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.71,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 73,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.1,
+  "onsets_per_s": 4.03
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 1009,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:iusmanshams",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

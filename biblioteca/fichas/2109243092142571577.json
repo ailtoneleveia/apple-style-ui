@@ -1,0 +1,36 @@
+{
+ "id": "2109243092142571577",
+ "url": "https://x.com/i/status/2109243092142571577",
+ "autor": "aiZttt__",
+ "data": "2026-10-11",
+ "curtidas": 42,
+ "comentarios": 43,
+ "legenda_post": "同一组提示词 GPT 6 Astra vs Opus 5.5  荒漠白骨 → 猛虎 → 悬崖一跃 → 鹰掠海面 → 水下鲨鱼。  五个场景,逐帧对比 👇 https://t.co/7ssXWNkoR7",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.2,
+ "pecas": [],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 296,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

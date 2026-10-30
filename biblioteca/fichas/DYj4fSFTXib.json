@@ -1,0 +1,48 @@
+{
+ "id": "DYj4fSFTXib",
+ "url": "https://www.instagram.com/p/DYj4fSFTXib/",
+ "autor": "snipzy.ae",
+ "data": "2026-05-20",
+ "curtidas": 720,
+ "comentarios": 1269,
+ "legenda_post": "Comment “Framework” For free project file\n.\n.\n🎬 Calling all video editors & creators!\nEver spent HOURS building a project from scratch... only to end up using the same transitions, effects, and layout you always do?\n\nI’ve been there.\nThat’s why I’m giving away FREE After Effects project files — stra",
+ "duracao_s": 20.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "FRAMEWORK",
+ "acabamento_pro": 1.09,
+ "pecas": [
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 88.8,
+  "onsets_per_s": 3.87
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 29.97,
+  "kbps": 717,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

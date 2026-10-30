@@ -1,0 +1,46 @@
+{
+ "id": "Dbmcud4IexE",
+ "url": "https://www.instagram.com/p/Dbmcud4IexE/",
+ "autor": "bentomotion.studio",
+ "data": "2026-08-04",
+ "curtidas": 16318,
+ "comentarios": 578,
+ "legenda_post": "I finally finished recreating Apple’s “Wonderful Tools” in After Effects🤯\n\n150+ hours, way too many shape layers, and a lot of tiny details later, here it is!\n\nThe project file for the opening scene is already available on my Patreon✌️ \n\n#aftereffects #motiondesign #videoediting #animation #applesty",
+ "duracao_s": 103.8,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.35
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 285,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:bentomotion.studio"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

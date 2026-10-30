@@ -1,0 +1,52 @@
+{
+ "id": "DcTV-IjPXg_",
+ "url": "https://www.instagram.com/p/DcTV-IjPXg_/",
+ "autor": "isla.creator",
+ "data": "2026-08-21",
+ "curtidas": 3232,
+ "comentarios": 4068,
+ "legenda_post": "монтаж Apple в 3 шага 🍎\n\nпремиальные анимации, звуки, виджеты, шрифт, баунс, жидкое стекло — все это язык дизайна Apple\n\nя собрал все материалы: \n- пак Apple\n- пак звуков UI\n- плагин жидкого стекла\n- готовые идеи \n\nв одном месте! \n\nоставь «+» в комментарии, чтобы забрать все",
+ "duracao_s": 21.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.14
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 511,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:isla.creator",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

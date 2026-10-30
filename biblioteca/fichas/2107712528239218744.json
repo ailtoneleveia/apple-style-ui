@@ -1,0 +1,36 @@
+{
+ "id": "2107712528239218744",
+ "url": "https://x.com/i/status/2107712528239218744",
+ "autor": "Octoberry",
+ "data": "2026-10-07",
+ "curtidas": 132,
+ "comentarios": 78,
+ "legenda_post": "I gave all these AI models the same prompt:  “Make a short animation featuring a paper airplane.”  Opus 5.5 is easily my favorite out of all of them. The difference is pretty obvious to me.  Which one do you think did it best? https://t.co/M4jIPt6mkW",
+ "duracao_s": 20.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.4,
+ "pecas": [],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 145,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

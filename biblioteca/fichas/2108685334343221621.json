@@ -1,0 +1,39 @@
+{
+ "id": "2108685334343221621",
+ "url": "https://x.com/i/status/2108685334343221621",
+ "autor": "redbickey",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "検証動画。Claude Opus 5.5で「題材：重力 作成できる？」と伝えただけのもの。 https://t.co/N6O2G5f0Zr",
+ "duracao_s": 55.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.93,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 53,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 180,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

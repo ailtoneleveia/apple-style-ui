@@ -1,0 +1,38 @@
+{
+ "id": "2108289170871582851",
+ "url": "https://x.com/i/status/2108289170871582851",
+ "autor": "rubenssoto_ai",
+ "data": "2026-10-08",
+ "curtidas": 33,
+ "comentarios": 23,
+ "legenda_post": "Same one-shot prompt, two AI setups: a 30s cinematic F1 pit stop in Three.js. Detailed car, 8-person crew changing all 4 tyres, synthesized audio, fully procedural.  🟠 Claude Opus 5.5 (orchestrator) + Claude Haiku 5.5 (executor) • Opus: 94.8M tokens, $34.50 • Haiku: 819.9M https://t.co/UdsU4Kw5t9",
+ "duracao_s": 30.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.77,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 400,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 250,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

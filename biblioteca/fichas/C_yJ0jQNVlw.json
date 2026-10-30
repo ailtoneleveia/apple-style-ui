@@ -1,0 +1,48 @@
+{
+ "id": "C_yJ0jQNVlw",
+ "url": "https://www.instagram.com/p/C_yJ0jQNVlw/",
+ "autor": "creatoroly",
+ "data": "2024-09-11",
+ "curtidas": 997,
+ "comentarios": 1128,
+ "legenda_post": "Comment \"READY\" if you‘re ready to start learning this style of edits. 🫨\n\n@mikethurston @anthonyjoshua \n\n#visauls #editing #learn #aftereffects #videoediting",
+ "duracao_s": 11.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "READY",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "pilha_cartoes"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 108.2,
+  "onsets_per_s": 2.29
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 742,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

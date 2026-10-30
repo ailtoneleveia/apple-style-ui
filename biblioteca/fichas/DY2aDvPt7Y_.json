@@ -1,0 +1,52 @@
+{
+ "id": "DY2aDvPt7Y_",
+ "url": "https://www.instagram.com/p/DY2aDvPt7Y_/",
+ "autor": "creatoroly",
+ "data": "2026-05-27",
+ "curtidas": 2533,
+ "comentarios": 35,
+ "legenda_post": "quick IOS 27 concept by me\n\n(next one abt to be longer)",
+ "duracao_s": 16.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 105.4,
+  "onsets_per_s": 4.74
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 670,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:creatoroly",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

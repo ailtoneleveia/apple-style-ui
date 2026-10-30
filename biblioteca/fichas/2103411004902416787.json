@@ -1,0 +1,47 @@
+{
+ "id": "2103411004902416787",
+ "url": "https://x.com/i/status/2103411004902416787",
+ "autor": "Ai_Baymax",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Tried Opus 5.5 for video. Kind of stunned.  One prompt: \"make a 1-min promo for this product from the codebase.\" It read FigPad's code, site copy and screen recordings, then cut this 55s promo: every feature, animated captions, and an original soundtrack it composed in code. https://t.co/aOtYPMUSK9",
+ "duracao_s": 55.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.81,
+ "pecas": [
+  "cursor",
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.8,
+  "onsets_per_s": 2.94
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 241,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2104522740695007363",
+ "url": "https://x.com/i/status/2104522740695007363",
+ "autor": "Oren46902",
+ "data": "2026-09-28",
+ "curtidas": 10,
+ "comentarios": 1,
+ "legenda_post": "『宣伝動画を簡単に作れる方法』  Claude Opus5.5×Gemini 3.8 Flash TTS  プロンプトこれだけ👇  【私のyoutubeチャンネルの宣伝動画をナレーションつきで作って】  私のyoutubeチャンネルと動画作成方法を全てリプ欄で明かします。 https://t.co/db3wFnyT8R",
+ "duracao_s": 45.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.58,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 16,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 24.0,
+  "kbps": 213,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

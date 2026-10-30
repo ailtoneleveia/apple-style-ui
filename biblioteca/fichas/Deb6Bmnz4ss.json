@@ -1,0 +1,49 @@
+{
+ "id": "Deb6Bmnz4ss",
+ "url": "https://www.instagram.com/p/Deb6Bmnz4ss/",
+ "autor": "sandyhaoe",
+ "data": "2026-10-13",
+ "curtidas": 196,
+ "comentarios": 16,
+ "legenda_post": "1 video, 3 style editing. Semuanya diedit Claude 🎬\n1️⃣ Apple style\n2️⃣ Vox style\n3️⃣ Claymorphism\n\nPrompt-nya aku bagi tiap hari di seri 1H1K.\nBuat yang sibuk atau belum pernah belajar AI, guidebook-nya aku jual langsung, tinggal copy paste ke ChatGPT atau Claude.\nNggak ada kelas, sampai kapanpun.\n\n",
+ "duracao_s": 85.2,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "teclado",
+  "vidro"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.16
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 713,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

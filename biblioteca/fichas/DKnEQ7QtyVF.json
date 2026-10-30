@@ -1,0 +1,50 @@
+{
+ "id": "DKnEQ7QtyVF",
+ "url": "https://www.instagram.com/p/DKnEQ7QtyVF/",
+ "autor": "creatoroly",
+ "data": "2025-06-07",
+ "curtidas": 889,
+ "comentarios": 25,
+ "legenda_post": "isn’t it a dream? 😴",
+ "duracao_s": 17.5,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 100.7,
+  "onsets_per_s": 3.68
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 934,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "DKXZbDOtZxq",
+ "url": "https://www.instagram.com/p/DKXZbDOtZxq/",
+ "autor": "creatoroly",
+ "data": "2025-06-01",
+ "curtidas": 4046,
+ "comentarios": 44,
+ "legenda_post": "imagine AI generating 🍎 editing style.",
+ "duracao_s": 13.6,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "imessage",
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 104.1,
+  "onsets_per_s": 3.65
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 673,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

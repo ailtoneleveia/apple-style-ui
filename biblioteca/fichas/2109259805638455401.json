@@ -1,0 +1,43 @@
+{
+ "id": "2109259805638455401",
+ "url": "https://x.com/i/status/2109259805638455401",
+ "autor": "N1njaCodex",
+ "data": "2026-10-11",
+ "curtidas": 14,
+ "comentarios": 9,
+ "legenda_post": "Opus made a tiny hedgehog I want on my desk 🦔  The button nose, pink cheeks and fluffy little face are so cute. Even the spines look like they belong on a plush toy  You can pick him up, squish him, brush his fur and change his colors. The pink version might be my favorite https://t.co/P3hSyQD87w",
+ "duracao_s": 16.0,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.16,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 75,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 810,
+  "fps": 60.0,
+  "kbps": 2727,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,38 @@
+{
+ "id": "2103401820261355554",
+ "url": "https://x.com/i/status/2103401820261355554",
+ "autor": "inkspiritgames",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Play INKBOUND: https://t.co/M42HghohHL  Claude Opus 5.5 built this pixel game in 30 minutes.  While the human was building the amusement park with Claude, Opus 5.5 arrived. Time to see what it could do with a pixel game.  Meet INKBOUND. One painter draws your path. Another tries https://t.co/uW3Sii5",
+ "duracao_s": 38.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "cursor"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 480,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

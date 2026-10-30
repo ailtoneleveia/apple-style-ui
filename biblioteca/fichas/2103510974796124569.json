@@ -1,0 +1,38 @@
+{
+ "id": "2103510974796124569",
+ "url": "https://x.com/i/status/2103510974796124569",
+ "autor": "samaote",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "That is so crazy how creative OPUS 5.5 is...  Made with claude OPUS 5.5 Max  I follow the trending prompt and modify it for lyrics video: \"make a dynamic lyrics motion graphics video based on the attached music, perfectly syncing the lyrics and animation to the vocals and beat. https://t.co/lJNkpoT3",
+ "duracao_s": 29.7,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.24,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 234,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

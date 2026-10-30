@@ -1,0 +1,50 @@
+{
+ "id": "DRA7xUhkuli",
+ "url": "https://www.instagram.com/p/DRA7xUhkuli/",
+ "autor": "callirwn",
+ "data": "2025-11-13",
+ "curtidas": 1942,
+ "comentarios": 34,
+ "legenda_post": "A  short motion graphics explainer for a mortgage app called Zoro.\n\nThe tools I used to create this motion design are:\n\n1.MacBook Max M2\n2.Adobe After Effects\n3.Adobe Illustrator\n\nI’ve provided a similar animation PROJECT FILE that you can use to learn from, You can check the link on my profile to a",
+ "duracao_s": 17.1,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 119.9,
+  "onsets_per_s": 3.88
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 977,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

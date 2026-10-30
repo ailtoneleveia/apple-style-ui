@@ -1,0 +1,36 @@
+{
+ "id": "2104544365901459579",
+ "url": "https://x.com/i/status/2104544365901459579",
+ "autor": "moaizo01012525",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 雑に「ヴェイパーウェイヴ」のプロンプト渡して、このクオリティが数分でできるんだから本当に面白い。  モーションをAfter Effectsでレイヤーを保持したままデータの作成できたことが一番嬉しい。 https://t.co/cwhUiC3yVK",
+ "duracao_s": 15.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.2,
+ "pecas": [],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 516,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,46 @@
+{
+ "id": "DNfvjgeNXvt",
+ "url": "https://www.instagram.com/p/DNfvjgeNXvt/",
+ "autor": "creatoroly",
+ "data": "2025-08-18",
+ "curtidas": 5952,
+ "comentarios": 74,
+ "legenda_post": "just a random folders ad\n\n#motiondesign #aftereffect #animations",
+ "duracao_s": 10.2,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.8,
+  "onsets_per_s": 4.44
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 540,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

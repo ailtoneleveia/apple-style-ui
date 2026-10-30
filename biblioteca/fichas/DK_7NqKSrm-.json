@@ -1,0 +1,47 @@
+{
+ "id": "DK_7NqKSrm-",
+ "url": "https://www.instagram.com/p/DK_7NqKSrm-/",
+ "autor": "dopemotionzone",
+ "data": "2025-06-17",
+ "curtidas": 38,
+ "comentarios": 7,
+ "legenda_post": "🔥 Quick test Liquid Glass Effect — Just like Apple!\n\nThis trend is everywhere right now 👀✨\nShould I drop a tutorial for this epic effect? Let me know in the comments!\n\n#videoediting #editors\n#motiondesign #aftereffectsedit #aftereffects #edit #motion #motiondesign #timeline #editing #cinematicanimat",
+ "duracao_s": 17.0,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "janela",
+  "botao_pilula",
+  "busca",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 126.2,
+  "onsets_per_s": 3.65
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 25.0,
+  "kbps": 87,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

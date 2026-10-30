@@ -1,0 +1,51 @@
+{
+ "id": "DcnI_lcP7UL",
+ "url": "https://www.instagram.com/p/DcnI_lcP7UL/",
+ "autor": "aneesmotion",
+ "data": "2026-08-29",
+ "curtidas": 18,
+ "comentarios": 3,
+ "legenda_post": "SaaS animation for Claude Fable 5 @claudeai \n.\n.\n.\n[saas animation, ui, product animation, motion design, motion graphics, after effects edit, apple style, video editor, sound effects, claude ai]",
+ "duracao_s": 11.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "busca"
+ ],
+ "nota": 32,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.44
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 1086,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:aneesmotion",
+  "busca:ui apple captions",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

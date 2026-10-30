@@ -1,0 +1,36 @@
+{
+ "id": "2108196827036054007",
+ "url": "https://x.com/i/status/2108196827036054007",
+ "autor": "sebmoska",
+ "data": "2026-10-08",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 3 models, 10 seconds of HyperFrames:  \"a dog running to a thrown stick in a park\"  Top: Opus 5.5 Middle: Haiku 5.5 Bottom: Sol 6.1  Which one fetches best? 🐕 https://t.co/U7459Amihk",
+ "duracao_s": 10.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.15,
+ "pecas": [],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 172,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

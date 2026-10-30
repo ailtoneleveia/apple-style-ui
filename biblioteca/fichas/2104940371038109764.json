@@ -1,0 +1,38 @@
+{
+ "id": "2104940371038109764",
+ "url": "https://x.com/i/status/2104940371038109764",
+ "autor": "mizugame_22",
+ "data": "2026-09-29",
+ "curtidas": 48,
+ "comentarios": 1,
+ "legenda_post": "Sonnet 5.5 / Opus 5.5｜同じお題 #3 同じプロンプトで「黒い漆の鉢を真上から覗く金魚」を作らせました。音も映像も、HTML 1枚のコードだけ。 Sonnet 5.5 は34分、Opus 5.5 は60分。 金魚の大きさと分かりやすさは Sonnet、ほどけた朱の渦の美しさは Opus。音ありでどうぞ。 https://t.co/k8i4M94Rs0",
+ "duracao_s": 48.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 404,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 347,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

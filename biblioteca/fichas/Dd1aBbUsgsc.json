@@ -1,0 +1,43 @@
+{
+ "id": "Dd1aBbUsgsc",
+ "url": "https://www.instagram.com/p/Dd1aBbUsgsc/",
+ "autor": "edita.visuals",
+ "data": "2026-09-28",
+ "curtidas": 19,
+ "comentarios": 17,
+ "legenda_post": "Want your video edited like this? \nSend me a DM!🙂\n.\n.\nWant to practice this style? - Comment “Project”",
+ "duracao_s": 15.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "PROJECT",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 56,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 189,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

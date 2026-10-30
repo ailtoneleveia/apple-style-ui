@@ -1,0 +1,38 @@
+{
+ "id": "2103606498928808196",
+ "url": "https://x.com/i/status/2103606498928808196",
+ "autor": "chrisjdimarco",
+ "data": "2026-09-25",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "holy shit, I just had Opus 5.5 make this motion graphics video as a test but set the theme to something I care about and wow... prompt below 👇 https://t.co/UmY7VokoOs",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.2,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 106,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

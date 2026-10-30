@@ -1,0 +1,48 @@
+{
+ "id": "DepMCxCAY_M",
+ "url": "https://www.instagram.com/p/DepMCxCAY_M/",
+ "autor": "charliehills",
+ "data": "2026-10-18",
+ "curtidas": 199,
+ "comentarios": 826,
+ "legenda_post": "Comment EDIT and I'll send you the full process I use to edit my reels with Claude.\n\nNot one cut in this video was mine. Claude transcribed the raw take, cut every pause, built every graphic in code and checked its own work every quarter of a second.\n\nStill opening CapCut for every reel? Still fixin",
+ "duracao_s": 53.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "EDIT",
+ "acabamento_pro": 1.56,
+ "pecas": [
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.69
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 215,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

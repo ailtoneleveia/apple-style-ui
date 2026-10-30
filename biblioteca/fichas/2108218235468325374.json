@@ -1,0 +1,36 @@
+{
+ "id": "2108218235468325374",
+ "url": "https://x.com/i/status/2108218235468325374",
+ "autor": "MadMax_Series",
+ "data": "2026-10-08",
+ "curtidas": 19,
+ "comentarios": 3,
+ "legenda_post": "Night Monster gm gm AI Video Creators, wish you productive day   Opus 5.5 + Seedance 2.5 Made with @higgsfield prompt given below  Having some fun with this character.   Prompt: https://t.co/GrWeBOfC3n",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.65,
+ "pecas": [],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 159,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

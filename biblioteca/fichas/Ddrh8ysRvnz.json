@@ -1,0 +1,39 @@
+{
+ "id": "Ddrh8ysRvnz",
+ "url": "https://www.instagram.com/p/Ddrh8ysRvnz/",
+ "autor": "charliehills",
+ "data": "2026-09-24",
+ "curtidas": 163,
+ "comentarios": 36,
+ "legenda_post": "ChatGPT vs Claude \n\nFor context, Claude and I broke up \n\nWhich way are you going?",
+ "duracao_s": 28.7,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.93,
+ "pecas": [
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 100,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

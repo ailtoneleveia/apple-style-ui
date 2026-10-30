@@ -1,0 +1,53 @@
+{
+ "id": "DdBDAftgYH6",
+ "url": "https://www.instagram.com/p/DdBDAftgYH6/",
+ "autor": "dnyxstudioss",
+ "data": "2026-09-08",
+ "curtidas": 494,
+ "comentarios": 20,
+ "legenda_post": "it's 8'oclock in the morning 🕗",
+ "duracao_s": 9.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 83.4,
+  "onsets_per_s": 4.46
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 263,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:dnyxstudioss",
+  "busca:appleui",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2103580532852589043",
+ "url": "https://x.com/i/status/2103580532852589043",
+ "autor": "Shinskinakamoto",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5 is insane, the motion graphics are so good! This was the prompt \"Make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, like its your showreel for a resume, go all out!\" https://t.co/2Yv1lUXxRz",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 601,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

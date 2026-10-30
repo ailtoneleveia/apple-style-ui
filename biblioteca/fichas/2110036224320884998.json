@@ -1,0 +1,38 @@
+{
+ "id": "2110036224320884998",
+ "url": "https://x.com/i/status/2110036224320884998",
+ "autor": "everestchris6",
+ "data": "2026-10-13",
+ "curtidas": 4231,
+ "comentarios": 111,
+ "legenda_post": "claude opus 5.5 completely solved three.js  it took a floor plan and turned it into a 3d house you can walk through  home builders pay $5k to $10k per floor plan for this, so buyers can tour a home before it's built and change things if needed  here's how to automate client https://t.co/6W4kWF3LGD",
+ "duracao_s": 13.9,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "mapa"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 581,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

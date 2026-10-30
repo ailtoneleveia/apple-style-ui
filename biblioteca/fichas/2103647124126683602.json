@@ -1,0 +1,39 @@
+{
+ "id": "2103647124126683602",
+ "url": "https://x.com/i/status/2103647124126683602",
+ "autor": "ceowinkz",
+ "data": "2026-09-26",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "WTF  AI just made my Amazon business a pitch video for brands...  One prompt w/ the NEW Opus 5.5  \"make a dynamic 15 second motion graphics video pitching my Amazon wholesale company, Winkz Enterprises, to a brand. show why they should let us sell their products. go all out.\" https://t.co/qiBhNxuuhP",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.64,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 210,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

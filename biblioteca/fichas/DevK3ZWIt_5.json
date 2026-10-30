@@ -1,0 +1,52 @@
+{
+ "id": "DevK3ZWIt_5",
+ "url": "https://www.instagram.com/p/DevK3ZWIt_5/",
+ "autor": "themilesholden",
+ "data": "2026-10-21",
+ "curtidas": 114,
+ "comentarios": 40,
+ "legenda_post": "Claude Turns Sketches Into an Apple Card-Style Wallet UI\n\nWatch hand-drawn wallet sketches become airy, polished UI animations in this Claude demo\n\nA floating payment card, a savings transfer, spending breakdowns and a Japan trip budget bring the Apple Card-inspired concept to life against a soft sk",
+ "duracao_s": 13.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.72,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.8
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 337,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

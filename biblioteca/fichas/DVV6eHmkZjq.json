@@ -1,0 +1,50 @@
+{
+ "id": "DVV6eHmkZjq",
+ "url": "https://www.instagram.com/p/DVV6eHmkZjq/",
+ "autor": "dawoo.e",
+ "data": "2026-03-01",
+ "curtidas": 1297,
+ "comentarios": 31,
+ "legenda_post": "Here’s my recent spec ad I created for Apple. The key elements used to achieve some of these looks is:\n\nDisplacement Maps\nDrop Shadows\nRounded Squares \nCompounded layers\nFluid Match Cut\n\n#aftereffect #aftereffects #aftereffectsedits",
+ "duracao_s": 10.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.06
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 197,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

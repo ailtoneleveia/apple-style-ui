@@ -1,0 +1,38 @@
+{
+ "id": "2107139305324122491",
+ "url": "https://x.com/i/status/2107139305324122491",
+ "autor": "HBCoop_",
+ "data": "2026-10-05",
+ "curtidas": 365,
+ "comentarios": 25,
+ "legenda_post": "I asked Claude Opus 5.5 (Max) this prompt:  \"Create me a motion video of your choice, with the sole purpose of flexing Opus 5.5 capabilities.\"  It worked on its own for 1 hour 37 minutes and gave me this:  → @claudeai https://t.co/HdwYh039In",
+ "duracao_s": 29.1,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.65,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 70,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 257,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

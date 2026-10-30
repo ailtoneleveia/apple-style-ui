@@ -1,0 +1,36 @@
+{
+ "id": "DdCszUZHfUO",
+ "url": "https://www.instagram.com/p/DdCszUZHfUO/",
+ "autor": "charliehills",
+ "data": "2026-09-08",
+ "curtidas": 180,
+ "comentarios": 4,
+ "legenda_post": "Neither model made this video. Both wrote the prompt; Seedance 2.5 rendered both. Fable 5.1 favours moonlit silhouettes, GPT-6 Astra action and changing angles. Via higgsfield_ai. Comment CODEX and I'll send you my full Claude Code to Codex migration guide on Substack.",
+ "duracao_s": 18.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "CODEX",
+ "acabamento_pro": 0.95,
+ "pecas": [],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1139,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

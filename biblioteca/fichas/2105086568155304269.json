@@ -1,0 +1,43 @@
+{
+ "id": "2105086568155304269",
+ "url": "https://x.com/i/status/2105086568155304269",
+ "autor": "viewsfrom02108",
+ "data": "2026-09-30",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "I gave Sol 6.1 and Opus 5.5 the same test/prompt. 20,000 water particles, 60 fps  Sol 6.1 took the easy way...a hybrid method, PBF with a grid doing the heavy pressure math. Fast. 27/30. 60 fps  Opus 5.5 took the hard way, a pure iSPH method... particles work out pressure with https://t.co/MFZnvKjd0",
+ "duracao_s": 34.4,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.2,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 71,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 576,
+  "altura": 360,
+  "fps": 25.0,
+  "kbps": 177,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "DcbLrE8xD1k",
+ "url": "https://www.instagram.com/p/DcbLrE8xD1k/",
+ "autor": "adrimotions",
+ "data": "2026-08-24",
+ "curtidas": 130,
+ "comentarios": 19,
+ "legenda_post": "Guess how long this took 💀",
+ "duracao_s": 21.4,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 131.0,
+  "onsets_per_s": 4.08
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 541,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

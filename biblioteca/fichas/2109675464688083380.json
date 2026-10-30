@@ -1,0 +1,43 @@
+{
+ "id": "2109675464688083380",
+ "url": "https://x.com/i/status/2109675464688083380",
+ "autor": "evgeniymikholap",
+ "data": "2026-10-12",
+ "curtidas": 10,
+ "comentarios": 1,
+ "legenda_post": "Manual motion design for Meta ads is cooked with Opus 5.5?  “Make a video for meta ads, grab all info from website, add sound effects” / “Make a new angle” https://t.co/a04cd7vQYu",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 111.4,
+  "onsets_per_s": 4.92
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 128,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,54 @@
+{
+ "id": "DZsXsZDomYM",
+ "url": "https://www.instagram.com/p/DZsXsZDomYM/",
+ "autor": "admotion.std",
+ "data": "2026-06-17",
+ "curtidas": 243,
+ "comentarios": 11,
+ "legenda_post": "Make it smooth as possible 🧈🧈 #aftereffect #motiondesign",
+ "duracao_s": 12.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "notificacao",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 103.1,
+  "onsets_per_s": 2.45
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 188,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

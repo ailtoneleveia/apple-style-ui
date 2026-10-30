@@ -1,0 +1,47 @@
+{
+ "id": "DNQgvmItbTT",
+ "url": "https://www.instagram.com/p/DNQgvmItbTT/",
+ "autor": "creatoroly",
+ "data": "2025-08-12",
+ "curtidas": 7956,
+ "comentarios": 2449,
+ "legenda_post": "just comment \"drake\" and Im sending you free PF.",
+ "duracao_s": 9.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "presente",
+ "palavra": "DRAKE",
+ "acabamento_pro": 0.43,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.7,
+  "onsets_per_s": 3.36
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 698,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "DcMkE1fymRu",
+ "url": "https://www.instagram.com/p/DcMkE1fymRu/",
+ "autor": "_danielburlini",
+ "data": "2026-08-18",
+ "curtidas": 143,
+ "comentarios": 20,
+ "legenda_post": "MotionKIT #002 - Apple Kit\n\nDessa vez reuni alguns dos meus elementos favoritos do Apple Style pra você usar nas suas edições.\n\nEmojis, fontes, cursor hands, elementos de iOS, SFX e mais.\n\nTudo gratuito.\n\n🔗 O kit completo está no link da bio.\n\nSe usar em algum projeto, me marca que quero ver o que v",
+ "duracao_s": 18.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.26,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "emoji_3d"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.72
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 378,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

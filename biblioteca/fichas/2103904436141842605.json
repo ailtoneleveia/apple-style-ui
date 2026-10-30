@@ -1,0 +1,36 @@
+{
+ "id": "2103904436141842605",
+ "url": "https://x.com/i/status/2103904436141842605",
+ "autor": "hunzai",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "//Like most of you//  I asked opus 5.5 (medium) to generate animation to explain \"Tree as an ecosystem\" with AUDIO - no fancy prompts just oneliner prompt - and it created this https://t.co/ZgLGrUDzKn",
+ "duracao_s": 31.6,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 270,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

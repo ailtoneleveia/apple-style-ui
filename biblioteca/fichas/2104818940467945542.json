@@ -1,0 +1,39 @@
+{
+ "id": "2104818940467945542",
+ "url": "https://x.com/i/status/2104818940467945542",
+ "autor": "apoorvjain25",
+ "data": "2026-09-29",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "I gave Claude Opus 5.5 one prompt: make a 20-second video about anything, your call; make it crazy. It picked a single photon.  The photon is born in the Sun's core and bounces around for up to 170,000 years before it gets out. Then it takes 8 min 19 s to reach Earth, passing https://t.co/VjdCqvJtQz",
+ "duracao_s": 20.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 620,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

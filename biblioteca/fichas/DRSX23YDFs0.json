@@ -1,0 +1,47 @@
+{
+ "id": "DRSX23YDFs0",
+ "url": "https://www.instagram.com/p/DRSX23YDFs0/",
+ "autor": "victoframe",
+ "data": "2025-11-20",
+ "curtidas": 104,
+ "comentarios": 29,
+ "legenda_post": "project crafted with excellence for my client in London 🇬🇧\n\n#motiondesign #after #aftereffects #motiongraphics #uianimation #applestyle",
+ "duracao_s": 20.9,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "dynamic_island",
+  "cursor",
+  "iphone",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 4.23
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 1644,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

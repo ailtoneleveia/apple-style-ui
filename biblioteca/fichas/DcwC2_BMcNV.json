@@ -1,0 +1,55 @@
+{
+ "id": "DcwC2_BMcNV",
+ "url": "https://www.instagram.com/p/DcwC2_BMcNV/",
+ "autor": "buksedits",
+ "data": "2026-09-01",
+ "curtidas": 506,
+ "comentarios": 25,
+ "legenda_post": "Concept ad I made for @apple widgets! 🍀\n\n#aftereffects #motiondesign #design #motiongraphics",
+ "duracao_s": 12.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.76,
+ "pecas": [
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "grafico",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 3.89
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 455,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

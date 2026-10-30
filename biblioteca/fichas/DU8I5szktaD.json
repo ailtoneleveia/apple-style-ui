@@ -1,0 +1,46 @@
+{
+ "id": "DU8I5szktaD",
+ "url": "https://www.instagram.com/p/DU8I5szktaD/",
+ "autor": "abhi.keyframes",
+ "data": "2026-02-19",
+ "curtidas": 3,
+ "comentarios": 53,
+ "legenda_post": "Before → After 🎬\n\nTook an existing reel and re-edited it with a clean Apple-style UI motion approach.\n\nFocused on pacing, clarity, and smooth micro-interactions — because good design should feel effortless.\n\nRe-edit for @officialthinkmedia\n\nUI animation • Motion design • SaaS-style visuals\nBuilt in ",
+ "duracao_s": 30.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.68,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.56
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 29.97,
+  "kbps": 660,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

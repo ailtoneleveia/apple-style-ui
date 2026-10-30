@@ -1,0 +1,36 @@
+{
+ "id": "2103416909857190360",
+ "url": "https://x.com/i/status/2103416909857190360",
+ "autor": "RaphaelAubryy",
+ "data": "2026-09-25",
+ "curtidas": 32,
+ "comentarios": 5,
+ "legenda_post": "gave Opus 5.5 a single prompt 🎬  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\"  this is what it made. kinetic type, shape morphs, 3,000 particles, a 3D cube, all cut on https://t.co/iROoy3yUsa",
+ "duracao_s": 15.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.58,
+ "pecas": [],
+ "nota": 23,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 424,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DRW4C4Bkqq0",
+ "url": "https://www.instagram.com/p/DRW4C4Bkqq0/",
+ "autor": "marksierraa",
+ "data": "2025-11-22",
+ "curtidas": 717,
+ "comentarios": 22,
+ "legenda_post": "simple ad animation for @uber\nremake credits: mocca.fx\ndm @marksierra to work together\n\n#uianimation #motiongraphics #aftereffects #applestyle",
+ "duracao_s": 22.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.8,
+  "onsets_per_s": 3.82
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 316,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

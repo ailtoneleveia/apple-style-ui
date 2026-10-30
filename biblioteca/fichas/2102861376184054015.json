@@ -1,0 +1,38 @@
+{
+ "id": "2102861376184054015",
+ "url": "https://x.com/i/status/2102861376184054015",
+ "autor": "jrayon",
+ "data": "2026-09-23",
+ "curtidas": 1,
+ "comentarios": 2,
+ "legenda_post": "a paper fractal browser with @claudeai opus 5.5...    link and prompt below https://t.co/mqMviEYi58",
+ "duracao_s": 34.9,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 468,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

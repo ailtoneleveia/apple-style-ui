@@ -1,0 +1,51 @@
+{
+ "id": "Dd3-tWLsNLR",
+ "url": "https://www.instagram.com/p/Dd3-tWLsNLR/",
+ "autor": "the.codist",
+ "data": "2026-09-29",
+ "curtidas": 1688,
+ "comentarios": 642,
+ "legenda_post": "This isn't After Effects. It's code.\n\nComment \"CODE\" if you want the process breakdown 👇\n\n#uidesign #motiondesign #microinteractions #uianimation #productdesign #interactiondesign #dribbble #figma #appdesign",
+ "duracao_s": 16.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "CODE",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "teclado",
+  "pilha_cartoes"
+ ],
+ "nota": 76,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.0,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 390,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:the.codist",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,50 @@
+{
+ "id": "DI11-7ytQyq",
+ "url": "https://www.instagram.com/p/DI11-7ytQyq/",
+ "autor": "creatoroly",
+ "data": "2025-04-24",
+ "curtidas": 1318,
+ "comentarios": 27,
+ "legenda_post": "I got something for you on my story… 🤫\n\n(if it has expired, DM me)",
+ "duracao_s": 13.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "presente",
+ "palavra": "",
+ "acabamento_pro": 0.69,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "iphone",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.7,
+  "onsets_per_s": 6.19
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 702,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,44 @@
+{
+ "id": "DeW0-OAsSv0",
+ "url": "https://www.instagram.com/p/DeW0-OAsSv0/",
+ "autor": "edita.visuals",
+ "data": "2026-10-11",
+ "curtidas": 25,
+ "comentarios": 55,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩\n\nCan you believe Opus 5.5 made this video? \n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!",
+ "duracao_s": 28.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.0,
+  "onsets_per_s": 4.89
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 105,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,50 @@
+{
+ "suave": {
+  "ícone→cartão": {
+   "erro_largura_px": 36.9,
+   "erro_largura_apos_4q_px": 21.2,
+   "erro_altura_px": 22.7,
+   "meio_caminho_sat": 34,
+   "meio_caminho_demo": 35
+  },
+  "cartão→tile": {
+   "erro_largura_px": 15.8,
+   "erro_largura_apos_4q_px": 3.5,
+   "erro_altura_px": 11.0,
+   "meio_caminho_sat": 92,
+   "meio_caminho_demo": 92
+  }
+ },
+ "firme": {
+  "ícone→cartão": {
+   "erro_largura_px": 9.9,
+   "erro_largura_apos_4q_px": 3.7,
+   "erro_altura_px": 12.4,
+   "meio_caminho_sat": 34,
+   "meio_caminho_demo": 34
+  },
+  "cartão→tile": {
+   "erro_largura_px": 28.7,
+   "erro_largura_apos_4q_px": 16.5,
+   "erro_altura_px": 11.1,
+   "meio_caminho_sat": 92,
+   "meio_caminho_demo": 91
+  }
+ },
+ "elástica": {
+  "ícone→cartão": {
+   "erro_largura_px": 34.2,
+   "erro_largura_apos_4q_px": 28.4,
+   "erro_altura_px": 18.1,
+   "meio_caminho_sat": 34,
+   "meio_caminho_demo": 34
+  },
+  "cartão→tile": {
+   "erro_largura_px": 46.4,
+   "erro_largura_apos_4q_px": 36.0,
+   "erro_altura_px": 16.8,
+   "meio_caminho_sat": 92,
+   "meio_caminho_demo": 91
+  }
+ }
+}

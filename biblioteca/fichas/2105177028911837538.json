@@ -1,0 +1,44 @@
+{
+ "id": "2105177028911837538",
+ "url": "https://x.com/i/status/2105177028911837538",
+ "autor": "josefandre_",
+ "data": "2026-09-30",
+ "curtidas": 3,
+ "comentarios": 4,
+ "legenda_post": "same prompt, same repo Opus 5.5 xhigh vs GPT-6 Astra xhigh https://t.co/q04rKESrss",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 445,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

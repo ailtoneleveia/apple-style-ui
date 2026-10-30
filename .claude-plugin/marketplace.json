@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "apple-style-ui",
+  "description": "Vídeo estilo Apple com a tua marca, a partir de moldes provados.",
+  "owner": {
+    "name": "Júnior Heusser"
+  },
+  "plugins": [
+    {
+      "name": "apple-style-ui",
+      "description": "Moldes estilo Apple, kit de marca, clonagem com prova e catraca.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

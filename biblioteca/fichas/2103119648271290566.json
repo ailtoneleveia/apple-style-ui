@@ -1,0 +1,36 @@
+{
+ "id": "2103119648271290566",
+ "url": "https://x.com/i/status/2103119648271290566",
+ "autor": "AxtonLiu",
+ "data": "2026-09-24",
+ "curtidas": 72,
+ "comentarios": 22,
+ "legenda_post": "Opus 5.5 《鹈鹕骑自行车》剧场版：  提示词一次生成： --- 每次一个新的模型出来呢，大家都让它去画 “鹈鹕骑自行车” 来判断这个模型的空间能力，基本上都是用 HTML、SVG 来画动画。当我实在看得都有审美疲劳了，我希望你能画一个最复杂、最精细、最精美的 https://t.co/JFtXerrh8n",
+ "duracao_s": 38.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.63,
+ "pecas": [],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 442,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

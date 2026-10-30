@@ -1,0 +1,43 @@
+{
+ "id": "2103437714695843891",
+ "url": "https://x.com/i/status/2103437714695843891",
+ "autor": "opener_ai",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "I tried making the classic game Romance of the Three Kingdoms using Opus 5.5 😁  People have been trying things like this for a while now, but I’d only ever watched from afar—this was my first time actually trying it myself. It whipped it up crazy fast with just a single prompt: https://t.co/7xOSgb1n",
+ "duracao_s": 32.3,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.67,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 21,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 179,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

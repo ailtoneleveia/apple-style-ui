@@ -1,0 +1,43 @@
+{
+ "id": "2104999693113766152",
+ "url": "https://x.com/i/status/2104999693113766152",
+ "autor": "cambreedesigns",
+ "data": "2026-09-29",
+ "curtidas": 6549,
+ "comentarios": 206,
+ "legenda_post": "made this sick portfolio to show off @batchmerch 's work. only 3 prompts with opus 5.5 https://t.co/Ht3qokaS3D",
+ "duracao_s": 18.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 69,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 574,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 157,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

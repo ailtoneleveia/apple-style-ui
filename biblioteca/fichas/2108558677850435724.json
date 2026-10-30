@@ -1,0 +1,40 @@
+{
+ "id": "2108558677850435724",
+ "url": "https://x.com/i/status/2108558677850435724",
+ "autor": "DLGNCE",
+ "data": "2026-10-09",
+ "curtidas": 5,
+ "comentarios": 3,
+ "legenda_post": "An experiment with @MaxonVFX new C4D MCP bridge, ClaudeCode + Opus5.5, and #threejs.  Bit about the process below. 👇 https://t.co/iFb5cnBHIl",
+ "duracao_s": 22.0,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 664,
+  "altura": 360,
+  "fps": 19.0,
+  "kbps": 475,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

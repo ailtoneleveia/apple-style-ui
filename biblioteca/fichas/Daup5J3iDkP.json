@@ -1,0 +1,54 @@
+{
+ "id": "Daup5J3iDkP",
+ "url": "https://www.instagram.com/p/Daup5J3iDkP/",
+ "autor": "__diditee__",
+ "data": "2026-07-13",
+ "curtidas": 11926,
+ "comentarios": 4210,
+ "legenda_post": "This is the UI Tracking Effect!\nAnd here’s how you do it IN 4K!!! 🫡\n\nInspired by @a_rusts \n\nComment the word “GUIDE” 📘 to get all the prompts.\n\n1️⃣ Grab a video of yourself holding and tilting a laptop.\n\n2️⃣ Take a screenshot of your iPhone Control Centre.\nCrop away all the excess so only the interf",
+ "duracao_s": 54.3,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "GUIDE",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 37,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.21
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 29.97,
+  "kbps": 1034,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

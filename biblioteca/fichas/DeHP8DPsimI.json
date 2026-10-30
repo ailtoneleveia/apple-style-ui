@@ -1,0 +1,49 @@
+{
+ "id": "DeHP8DPsimI",
+ "url": "https://www.instagram.com/p/DeHP8DPsimI/",
+ "autor": "withian.t",
+ "data": "2026-10-05",
+ "curtidas": 6519,
+ "comentarios": 5987,
+ "legenda_post": "For links and extra tips, comment \"motion\"👋",
+ "duracao_s": 35.7,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "MOTION",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "busca",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.85
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 24.0,
+  "kbps": 839,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:ui apple captions",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2104436377546818041",
+ "url": "https://x.com/i/status/2104436377546818041",
+ "autor": "rdominguezibar",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 on interactive lens lab build ▫️Asked to explain camera focus visually ▫️Built in one shot in 1 hour 26 minutes, $25.66 in API cost ▫️Lets users move the focus ring to shift the sharp plane Built in one shot, no edits https://t.co/InenfIvG7C",
+ "duracao_s": 32.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.26,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 209,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

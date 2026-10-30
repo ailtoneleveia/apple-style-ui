@@ -1,0 +1,49 @@
+{
+ "id": "DcyaQekKUYU",
+ "url": "https://www.instagram.com/p/DcyaQekKUYU/",
+ "autor": "motion.buoy",
+ "data": "2026-09-02",
+ "curtidas": 1312,
+ "comentarios": 549,
+ "legenda_post": "Comment the word “Card” and I’ll send the full After Effects project file to your DMs 🔥\n\nIn this tutorial, I’m showing you how to create this gradient UI card animation entirely in After Effects, using some simple yet effective techniques. \n\nHope you found this tutorial helpful! \n\nMake sure to follo",
+ "duracao_s": 164.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "CARD",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.98
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 29.0,
+  "kbps": 221,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:dynamic island animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

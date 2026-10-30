@@ -1,0 +1,48 @@
+{
+ "id": "DewlyZSNcme",
+ "url": "https://www.instagram.com/p/DewlyZSNcme/",
+ "autor": "edita.visuals",
+ "data": "2026-10-21",
+ "curtidas": 113,
+ "comentarios": 283,
+ "legenda_post": "Follow & Comment “CLAUDE” for the full guide! 🙂\n\nI didn’t touch a single keyframe.\nEvery movement, every transition, every sound - Claude Opus 5.5.",
+ "duracao_s": 23.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "dynamic_island",
+  "imessage",
+  "cursor",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.8
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 1230,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:grupo",
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

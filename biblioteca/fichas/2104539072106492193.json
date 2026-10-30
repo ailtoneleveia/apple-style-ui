@@ -1,0 +1,39 @@
+{
+ "id": "2104539072106492193",
+ "url": "https://x.com/i/status/2104539072106492193",
+ "autor": "carajnikant",
+ "data": "2026-09-28",
+ "curtidas": 7,
+ "comentarios": 0,
+ "legenda_post": "Motion designers will be laidoff  :(   Asked opus 5.5 to make the product demo, Made it like pro!    Propmt : “Research (your product).Make a dynamic 40-second motion graphics video on (your product) that shows what an incredible motion designer you are. like it's your showreel - https://t.co/3iGSN4",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.5,
+ "pecas": [
+  "grafico",
+  "pilha_cartoes"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 364,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2104466394859593915",
+ "url": "https://x.com/i/status/2104466394859593915",
+ "autor": "aigame_lab",
+ "data": "2026-09-28",
+ "curtidas": 7,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5 に Remotion のコードを書かせて、検索の歴史を15秒の年表ムービーにしたら、めちゃくちゃアツい🔥  ・1996から2015まで、ネオン調の年号がspringで3D回転しながら叩きつけるように出る。 ・大学の研究から持株会社への再編まで、各年の出来事を線画のSVGで描き足していく。 https://t.co/zOr7wT9do3",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 106,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

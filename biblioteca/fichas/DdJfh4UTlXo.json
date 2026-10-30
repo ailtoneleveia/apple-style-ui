@@ -1,0 +1,40 @@
+{
+ "id": "DdJfh4UTlXo",
+ "url": "https://www.instagram.com/p/DdJfh4UTlXo/",
+ "autor": "charliehills",
+ "data": "2026-09-11",
+ "curtidas": 198,
+ "comentarios": 0,
+ "legenda_post": "Which AI builds the better city?\n\nI gave Fable 5.1 and GPT-6 Astra the same brief: build a miniature city from a blank page, bring it to life, then fold it away.\n\nBoth got the same starting files and assets (and the same animation length).\n\nFable’s on top. Astra’s underneath.\n\nSo which one would you",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 138.5,
+  "onsets_per_s": 5.7
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 2595,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2106216524465729626",
+ "url": "https://x.com/i/status/2106216524465729626",
+ "autor": "twoclipping",
+ "data": "2026-10-03",
+ "curtidas": 136,
+ "comentarios": 12,
+ "legenda_post": "I asked opus 5.5: \"What do you think happens when we die? Visualize it with no words.\"  This is what it showed me 👇 https://t.co/LgIQM7Dy0a",
+ "duracao_s": 39.9,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.54,
+ "pecas": [],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 308,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

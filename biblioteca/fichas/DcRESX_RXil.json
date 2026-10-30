@@ -1,0 +1,45 @@
+{
+ "id": "DcRESX_RXil",
+ "url": "https://www.instagram.com/p/DcRESX_RXil/",
+ "autor": "adrimotions",
+ "data": "2026-08-20",
+ "curtidas": 204,
+ "comentarios": 27,
+ "legenda_post": "Uber ui animation",
+ "duracao_s": 18.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 57,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 131.2,
+  "onsets_per_s": 4.49
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 198,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:appleui"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

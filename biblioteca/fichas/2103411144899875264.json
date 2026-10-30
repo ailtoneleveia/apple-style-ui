@@ -1,0 +1,40 @@
+{
+ "id": "2103411144899875264",
+ "url": "https://x.com/i/status/2103411144899875264",
+ "autor": "TomAndrieu96707",
+ "data": "2026-09-25",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 est vraiment monstrueux en animation, je lui ai juste demander d'animer notre page 'a propos' et il a cook. Je met mon prompt niveau maternelle en commentaire https://t.co/YGLUCZlEK7",
+ "duracao_s": 51.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "AIRE",
+ "acabamento_pro": 1.96,
+ "pecas": [
+  "numero_grande",
+  "mapa",
+  "pilha_cartoes"
+ ],
+ "nota": 53,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.01,
+  "kbps": 184,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

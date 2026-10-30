@@ -1,0 +1,44 @@
+{
+ "id": "2104467016719774112",
+ "url": "https://x.com/i/status/2104467016719774112",
+ "autor": "punit_io",
+ "data": "2026-09-28",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "WTF?   Made this video one shot with claude OPUS 5.5!  Gave it mobile app screenshots  Prompt in comments! https://t.co/cQcT58ptJg",
+ "duracao_s": 22.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 1.47,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "print_site"
+ ],
+ "nota": 61,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 109.2,
+  "onsets_per_s": 3.72
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 60.0,
+  "kbps": 111,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

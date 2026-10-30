@@ -1,0 +1,39 @@
+{
+ "id": "2108541814718292438",
+ "url": "https://x.com/i/status/2108541814718292438",
+ "autor": "arixxbt",
+ "data": "2026-10-09",
+ "curtidas": 26,
+ "comentarios": 1,
+ "legenda_post": "I BUILT A ZEN GARDEN I CAN RAKE WITHOUT OWNING A RAKE  Opus 5.5 wrote it as one html file. drag across the sand and the rake cuts grooves behind the cursor. switch the time of day and the whole garden relights.  what's inside:  &gt; SAND - a 1536px heightmap on a 440×440 grid, every https://t.co/NV4",
+ "duracao_s": 14.6,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 30.0,
+  "kbps": 144,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

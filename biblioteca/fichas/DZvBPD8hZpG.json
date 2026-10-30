@@ -1,0 +1,45 @@
+{
+ "id": "DZvBPD8hZpG",
+ "url": "https://www.instagram.com/p/DZvBPD8hZpG/",
+ "autor": "lowkey.render",
+ "data": "2026-06-18",
+ "curtidas": 3,
+ "comentarios": 8,
+ "legenda_post": "Shapes don't just move—they transform\n\nA simple shape morphing animation made entirely in After Effects. Smooth transitions, satisfying motion, and a little bit of creative magic.\n\nWhich morph was your favorite?\n\n#aftereffects #motiondesign #applestyle #mograph",
+ "duracao_s": 6.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "print_site"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 98.1,
+  "onsets_per_s": 4.7
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 184,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

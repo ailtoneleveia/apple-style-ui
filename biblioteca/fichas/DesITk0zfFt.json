@@ -1,0 +1,46 @@
+{
+ "id": "DesITk0zfFt",
+ "url": "https://www.instagram.com/p/DesITk0zfFt/",
+ "autor": "aneesmotion",
+ "data": "2026-10-19",
+ "curtidas": 306,
+ "comentarios": 9,
+ "legenda_post": "Base44 edit\n.\n.\n.\n[saas animation, ui, product animation, motion design, motion graphics, after effects edit, apple style, video editor, sound effects, base44 animation]",
+ "duracao_s": 19.2,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.88
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 822,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:aneesmotion"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

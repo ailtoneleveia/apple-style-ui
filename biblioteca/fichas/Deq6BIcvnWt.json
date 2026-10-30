@@ -1,0 +1,50 @@
+{
+ "id": "Deq6BIcvnWt",
+ "url": "https://www.instagram.com/p/Deq6BIcvnWt/",
+ "autor": "creatoroly",
+ "data": "2026-10-19",
+ "curtidas": 500,
+ "comentarios": 11,
+ "legenda_post": "recently made this launch video for Maverick\n\nwhat we think so far?",
+ "duracao_s": 37.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "teclado",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.8,
+  "onsets_per_s": 5.24
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 328,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2103833991879053577",
+ "url": "https://x.com/i/status/2103833991879053577",
+ "autor": "Acoramaa",
+ "data": "2026-09-26",
+ "curtidas": 8,
+ "comentarios": 1,
+ "legenda_post": "I TRIED MAKING A 3D MOTION GRAPHIC WITH CLAUDE OPUS 5.5. THIS IS WHAT CAME OUT.  The idea was simple: start at my desk and don't stop zooming until we hit a single atom inside the CPU.  Opus 5.5 took it and just kept going.  Into the PC case. The cooler lifts off. The CPU under https://t.co/5g2DBrSi",
+ "duracao_s": 44.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.82,
+ "pecas": [],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 30.0,
+  "kbps": 337,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

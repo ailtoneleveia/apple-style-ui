@@ -1,0 +1,54 @@
+{
+ "id": "DZ9QjBiKnBI",
+ "url": "https://www.instagram.com/p/DZ9QjBiKnBI/",
+ "autor": "madebyadito",
+ "data": "2026-06-24",
+ "curtidas": 874,
+ "comentarios": 261,
+ "legenda_post": "Comment \"designer\" for project file...\n\nDm @madebyadito for work\n\n[SaaS explainer, motion graphics, apple ui style, apple animation, after effects, SaaS, freelance]",
+ "duracao_s": 10.6,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "DESIGNER",
+ "acabamento_pro": 0.3,
+ "pecas": [
+  "cursor",
+  "janela",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.35
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 205,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

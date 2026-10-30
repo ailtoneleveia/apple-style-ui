@@ -1,0 +1,36 @@
+{
+ "id": "2104093497561436573",
+ "url": "https://x.com/i/status/2104093497561436573",
+ "autor": "VectorCrossProd",
+ "data": "2026-09-27",
+ "curtidas": 367,
+ "comentarios": 15,
+ "legenda_post": "Claude Opus 5.5 continues to amaze me. Claude Opus 5.5 created a 3D printable enclosure for an existing PCB.  Then it created this promo video for it.  The PCB, the printable STLs and this animation are 100% just from prompting in Claude Code. https://t.co/RRsqqngMtL",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 268,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

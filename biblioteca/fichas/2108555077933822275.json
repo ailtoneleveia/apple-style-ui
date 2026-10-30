@@ -1,0 +1,36 @@
+{
+ "id": "2108555077933822275",
+ "url": "https://x.com/i/status/2108555077933822275",
+ "autor": "KimikoA97936",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "「自由に想像した宇宙船に、ココペリを乗せて」  と頼み、そのあと動画にしてもらった😆✨  ① Opus 5.5（最大） ② Astra（MAX）画像生成版 ③ Astra（MAX）SVG版  Opusは、民族模様のロケット。 Astraは、幻想的な帆船や、葉のような翼を持つ船。 https://t.co/7sIyA8vHVv",
+ "duracao_s": 26.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 392,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

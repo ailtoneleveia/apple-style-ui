@@ -1,0 +1,42 @@
+{
+ "id": "2104455320424915273",
+ "url": "https://x.com/i/status/2104455320424915273",
+ "autor": "thilina_a",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "I also tried it with Opus 5.5: \"make a dynamic 25-second motion graphics video that shows what an incredible motion designer you are. Highlight the recent changes [1.3, 1.4] we made with the last few updates.\" https://t.co/FhAeTyctC7",
+ "duracao_s": 25.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.64,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 215,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

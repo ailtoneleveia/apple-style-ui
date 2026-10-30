@@ -1,0 +1,36 @@
+{
+ "id": "2103565090721259981",
+ "url": "https://x.com/i/status/2103565090721259981",
+ "autor": "abhinayguptha",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "One prompt. Claude Opus 5.5.  It invented the concept, wrote the credits, animated every frame and made its own music + SFX.  No After Effects. No stock footage. No AI video model.  An Emmy-style title sequence for a show that doesn't exist. Insane.  Prompt in the replies 👇 https://t.co/cu6IwiaBqF",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.85,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 235,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

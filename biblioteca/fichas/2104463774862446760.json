@@ -1,0 +1,41 @@
+{
+ "id": "2104463774862446760",
+ "url": "https://x.com/i/status/2104463774862446760",
+ "autor": "asakarifa",
+ "data": "2026-09-28",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5でアプリ開発。 ジャンル選択の画面をシャボン玉を使って可愛いuiにしてって頼んだら一発出しで出てきたもの https://t.co/7AEpBffeHW",
+ "duracao_s": 13.7,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 654,
+  "fps": 57.93,
+  "kbps": 467,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

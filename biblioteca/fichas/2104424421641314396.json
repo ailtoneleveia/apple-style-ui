@@ -1,0 +1,36 @@
+{
+ "id": "2104424421641314396",
+ "url": "https://x.com/i/status/2104424421641314396",
+ "autor": "Sayan_shanky",
+ "data": "2026-09-28",
+ "curtidas": 5,
+ "comentarios": 0,
+ "legenda_post": "Gave claude opus 5.5 one prompt and my resume. asked for a 30s motion showreel.  i know zero motion design. never gave it a track.  it composed the audio, synced every cut to the beat, and rendered the mp4 itself.  100x better is possible. still wild.  https://t.co/A4Trj0V4s0 https://t.co/nPFyowbUiV",
+ "duracao_s": 30.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 222,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

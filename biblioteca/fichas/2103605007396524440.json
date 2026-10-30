@@ -1,0 +1,38 @@
+{
+ "id": "2103605007396524440",
+ "url": "https://x.com/i/status/2103605007396524440",
+ "autor": "Madhav_XO",
+ "data": "2026-09-25",
+ "curtidas": 8,
+ "comentarios": 0,
+ "legenda_post": "Pretty cool with just one line prompt , \"make a 10 sec video on whatever you know about me\". Opus 5.5 extra. https://t.co/9vGWOooVvg",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.63,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 481,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

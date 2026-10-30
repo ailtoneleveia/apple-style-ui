@@ -1,0 +1,41 @@
+{
+ "id": "2104516868182598079",
+ "url": "https://x.com/i/status/2104516868182598079",
+ "autor": "konstantinsaifo",
+ "data": "2026-09-28",
+ "curtidas": 75,
+ "comentarios": 1,
+ "legenda_post": "I asked Claude Opus 5.5 to explain how a fighter jet engine works by building an interactive F135 you can take apart in your browser.  Cut it open, follow the air through the fan and compressor, watch it hit 2,000 °C in the combustor, then light the afterburner and watch the https://t.co/MUoNUjEMfI",
+ "duracao_s": 43.9,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.35,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 323,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

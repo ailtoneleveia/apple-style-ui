@@ -1,0 +1,42 @@
+{
+ "id": "2104453496363999462",
+ "url": "https://x.com/i/status/2104453496363999462",
+ "autor": "VikashSparxIT",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 3,
+ "legenda_post": "Opus 5.5 making a product video from one prompt is wild.  The easy version: open your coding editor in the same project as the product. The model already knows the codebase. You don't brief the brand, the flows, or the screens.  You just point at a reference and say: make a https://t.co/14pbAg7aLO",
+ "duracao_s": 36.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 267,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

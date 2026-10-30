@@ -1,0 +1,36 @@
+{
+ "id": "2103882415299350878",
+ "url": "https://x.com/i/status/2103882415299350878",
+ "autor": "NFT_Chen",
+ "data": "2026-09-26",
+ "curtidas": 74,
+ "comentarios": 9,
+ "legenda_post": "✨审美绝了！Opus 5.5 用 Three.js 把宫崎骏《红猪》经典空战复刻出来了！  只给了这一句prompt:  「用 web3D 复刻宫崎骏《红猪》日落海面上的经典空战：白绿红涂装战斗机、紫色积云、海面反光、吉卜力运镜，画面写 just breathe.」  建模、配色、云层、尾迹和镜头全部一次对齐，审美直接封神。 https://t.co/GGadZS3Pn6",
+ "duracao_s": 14.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.96,
+ "pecas": [],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 392,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,49 @@
+{
+ "id": "DFksJvQNhhx",
+ "url": "https://www.instagram.com/p/DFksJvQNhhx/",
+ "autor": "creatoroly",
+ "data": "2025-02-02",
+ "curtidas": 3608,
+ "comentarios": 51,
+ "legenda_post": "I got some ideas in my head... 🤌🏽\n\nDM me to start learning how to get ideas just like me.\n\n@hoodstarjb",
+ "duracao_s": 11.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 0.73,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 147.6,
+  "onsets_per_s": 5.05
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 569,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

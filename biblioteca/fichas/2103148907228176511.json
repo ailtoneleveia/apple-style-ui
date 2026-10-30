@@ -1,0 +1,39 @@
+{
+ "id": "2103148907228176511",
+ "url": "https://x.com/i/status/2103148907228176511",
+ "autor": "kantamk",
+ "data": "2026-09-24",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "I gave Claude Opus 5.5 one prompt: \"make a video that could go viral.\"  It wrote a physics sim, built a synth that plays Für Elise one bounce at a time, and rendered all 1,904 frames itself.  Which ring did you think would trap it? 🔊 https://t.co/AjDDCc9NWz",
+ "duracao_s": 31.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.8,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 279,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

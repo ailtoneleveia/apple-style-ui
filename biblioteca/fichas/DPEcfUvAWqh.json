@@ -1,0 +1,54 @@
+{
+ "id": "DPEcfUvAWqh",
+ "url": "https://www.instagram.com/p/DPEcfUvAWqh/",
+ "autor": "thejisanahamed",
+ "data": "2025-09-26",
+ "curtidas": 3321,
+ "comentarios": 70,
+ "legenda_post": "POV : You Cooked An Ad For @applebooks \n\n#motiondesign #motiongraphics #saas #aftereffects #ui #uianimation #videoediting #applestyle",
+ "duracao_s": 10.2,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 105.4,
+  "onsets_per_s": 6.05
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 550,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple editing style",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

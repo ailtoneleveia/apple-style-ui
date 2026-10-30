@@ -1,0 +1,36 @@
+{
+ "id": "2103129343253778767",
+ "url": "https://x.com/i/status/2103129343253778767",
+ "autor": "koldo2k",
+ "data": "2026-09-24",
+ "curtidas": 711,
+ "comentarios": 24,
+ "legenda_post": "I need a minute to process the result of this animation made with Opus 5.5   And I asked it to explain how it pulled it off, and my mind got blown all over again.  I'll leave you the prompt too 👇 https://t.co/tFyEf30J4z",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 418,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

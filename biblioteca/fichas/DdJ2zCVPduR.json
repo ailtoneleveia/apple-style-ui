@@ -1,0 +1,55 @@
+{
+ "id": "DdJ2zCVPduR",
+ "url": "https://www.instagram.com/p/DdJ2zCVPduR/",
+ "autor": "yowerse",
+ "data": "2026-09-11",
+ "curtidas": 6751,
+ "comentarios": 50,
+ "legenda_post": "I created this unofficial animation for Claude. The goal of this study was to explore pacing, fluid transitions, and the integration of the UI with 3D elements.\n\n🎧 The sound design that brings the edit to life comes from @veinmotion pack.\n\nWhich detail of the animation did you like the most? Let me ",
+ "duracao_s": 13.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.28,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 107.7,
+  "onsets_per_s": 3.34
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 710,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:ui apple captions",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

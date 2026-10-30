@@ -1,0 +1,46 @@
+{
+ "id": "2103307592999305668",
+ "url": "https://x.com/i/status/2103307592999305668",
+ "autor": "pablovinicius1_",
+ "data": "2026-09-25",
+ "curtidas": 232,
+ "comentarios": 16,
+ "legenda_post": "Sim. O Claude Opus 5.5 fez esse vídeo pra YouDraw em 1 PROMPT.   1 prompt de 2 linhas.  Nenhuma mudança. Nenhuma otimização.  Eu realmente fiquei impressionado. https://t.co/Oa6lFZ0KdV",
+ "duracao_s": 36.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "dynamic_island",
+  "cursor",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 162,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

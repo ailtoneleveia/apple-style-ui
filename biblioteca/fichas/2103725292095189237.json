@@ -1,0 +1,36 @@
+{
+ "id": "2103725292095189237",
+ "url": "https://x.com/i/status/2103725292095189237",
+ "autor": "sahilvermaai",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 got one sentence and handed back a finished motion design piece.  Type that tears out of its own frame, camera moves, sound design, and a soundtrack it composed and synced to the hits itself.  Full prompt in the next tweet 👇  via @pankajkumar_dev https://t.co/I2PJETInpg",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 317,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

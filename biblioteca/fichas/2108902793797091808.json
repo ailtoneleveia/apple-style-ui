@@ -1,0 +1,39 @@
+{
+ "id": "2108902793797091808",
+ "url": "https://x.com/i/status/2108902793797091808",
+ "autor": "chetaslua",
+ "data": "2026-10-10",
+ "curtidas": 214,
+ "comentarios": 21,
+ "legenda_post": "I asked Claude Opus 5.5 to build a website for itself, not for me. every line starts at its piano and turns into paint, the sea, its 7 wishes and its own face https://t.co/Kxkj8N9gft",
+ "duracao_s": 53.1,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.29,
+ "pecas": [
+  "cursor",
+  "print_site"
+ ],
+ "nota": 56,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 494,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

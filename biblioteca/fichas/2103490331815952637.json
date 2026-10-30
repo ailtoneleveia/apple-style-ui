@@ -1,0 +1,39 @@
+{
+ "id": "2103490331815952637",
+ "url": "https://x.com/i/status/2103490331815952637",
+ "autor": "anas0ra",
+ "data": "2026-09-25",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Franchement Opus 5.5 c'est pas mauvais du tout.  Pour un prompt simpliste du genre : fait moi une vidéo sympa pour https://t.co/BhfkLxyUZZ\" c'est impressionant https://t.co/VETf7tWZyT",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "imessage",
+  "numero_grande"
+ ],
+ "nota": 51,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 30.0,
+  "kbps": 180,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

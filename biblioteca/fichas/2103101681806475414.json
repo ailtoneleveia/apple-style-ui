@@ -1,0 +1,46 @@
+{
+ "id": "2103101681806475414",
+ "url": "https://x.com/i/status/2103101681806475414",
+ "autor": "lepadev",
+ "data": "2026-09-24",
+ "curtidas": 6,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 one shot this whole video   Simple stupid prompt https://t.co/0vQNtN9Gfo",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.72,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.06
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 286,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

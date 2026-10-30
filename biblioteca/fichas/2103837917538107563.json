@@ -1,0 +1,44 @@
+{
+ "id": "2103837917538107563",
+ "url": "https://x.com/i/status/2103837917538107563",
+ "autor": "Ishaaqahamed",
+ "data": "2026-09-26",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "I asked Opus 5.5 why it's so good at motion design. Its answer:  \"'Best' isn't mine to claim. But I don't keyframe, I write the math. Every frame is a function of time, so loops are perfect and sound lands on the exact frame.  What I don't have is your taste.\" Master prompt 🧵 https://t.co/h5tzF6ackG",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.69,
+ "pecas": [
+  "imessage",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 60.0,
+  "kbps": 192,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

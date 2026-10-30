@@ -1,0 +1,48 @@
+{
+ "id": "DHD4yH4N1Si",
+ "url": "https://www.instagram.com/p/DHD4yH4N1Si/",
+ "autor": "creatoroly",
+ "data": "2025-03-11",
+ "curtidas": 1452,
+ "comentarios": 36,
+ "legenda_post": "is this clean or am i blind? @whop",
+ "duracao_s": 19.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.06,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 41,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 64.5,
+  "onsets_per_s": 3.16
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 387,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

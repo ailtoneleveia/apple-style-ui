@@ -1,0 +1,36 @@
+{
+ "id": "2108588869255827570",
+ "url": "https://x.com/i/status/2108588869255827570",
+ "autor": "0xRhinoX",
+ "data": "2026-10-09",
+ "curtidas": 63,
+ "comentarios": 16,
+ "legenda_post": "I asked Claude Opus 5.5 to build an Avatar-style game that runs in a browser tab. One rule: no assets.  Six riders, floating mountains, ring races, storms. All generated from one seed with three.js, 370 KB.  Play it: https://t.co/SbULoh5aNV https://t.co/HIsxCZMrbA",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.52,
+ "pecas": [],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 519,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

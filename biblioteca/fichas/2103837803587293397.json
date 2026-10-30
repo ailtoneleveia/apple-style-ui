@@ -1,0 +1,43 @@
+{
+ "id": "2103837803587293397",
+ "url": "https://x.com/i/status/2103837803587293397",
+ "autor": "heyiammallik",
+ "data": "2026-09-26",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "i asked Opus 5.5 to make a video from my portfolio  didn't expect motion and sound design to be this good though - that too with just one prompt  prompt:  you are a pro motion designer. analyze my portfolio and make a ~30 second video from it. check what are the recent trending https://t.co/67pHFzOJ",
+ "duracao_s": 34.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.87,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 318,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2103122292343730437",
+ "url": "https://x.com/i/status/2103122292343730437",
+ "autor": "SuryaRajendhran",
+ "data": "2026-09-24",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "just tried the same prompt with opus 5.5 and got something really interesting (although not quite coherent) https://t.co/BY4fNOlGwK",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.45,
+ "pecas": [
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 159,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

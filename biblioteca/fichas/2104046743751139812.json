@@ -1,0 +1,39 @@
+{
+ "id": "2104046743751139812",
+ "url": "https://x.com/i/status/2104046743751139812",
+ "autor": "lisp_mi",
+ "data": "2026-09-27",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "I asked Opus 5.5 to build a tiny underground delivery network in three.js — then turned it into a game. Lunch rush: 24 orders in 60 s, 6 express upgrades, beat the deadlines. Free in the browser, link below 👇 https://t.co/oT3jnyanoj",
+ "duracao_s": 11.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.4,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 568,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 188,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

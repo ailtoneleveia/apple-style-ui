@@ -1,0 +1,40 @@
+{
+ "id": "2102973867656614053",
+ "url": "https://x.com/i/status/2102973867656614053",
+ "autor": "NemTudo_",
+ "data": "2026-09-24",
+ "curtidas": 71,
+ "comentarios": 6,
+ "legenda_post": "Testei o humor do Claude Opus 5.5  Prompt: \"faz um vídeo engraçado. pode ser de qualquer coisa. tamanho: 10 a 30s\"  Esse foi o resultado: https://t.co/z9er7eR9sF",
+ "duracao_s": 25.9,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 63,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

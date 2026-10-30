@@ -1,0 +1,43 @@
+{
+ "id": "2107788313390416110",
+ "url": "https://x.com/i/status/2107788313390416110",
+ "autor": "KanikaBK",
+ "data": "2026-10-07",
+ "curtidas": 25,
+ "comentarios": 9,
+ "legenda_post": "1 prompt, 3 planet gears and a 5:1 gear ratio that actually works, all from Claude Opus 5.5.  I typed \"create me an interesting CAD 3D of any object\" and gave it nothing else to go on.  It picked a planetary gearbox on its own, the same mechanism you find inside electric https://t.co/zqONV5wZFa",
+ "duracao_s": 36.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 486,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 302,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

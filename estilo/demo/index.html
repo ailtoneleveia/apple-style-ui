@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="mb.js"></script>
+    <script src="estilo.js"></script>
+    <style>
+      @font-face { font-family: "SF Pro"; src: url("assets/fonts/SFNS.ttf") format("truetype"); font-weight: 1 1000; font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #fdfdfd; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #fdfdfd;
+        font-family: "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+      .rot { position: absolute; top: 64px; width: 640px; text-align: center; color: #1d1d1f; line-height: 1; }
+      .rot b { display: block; font-size: 40px; letter-spacing: -0.4px; }
+      .rot span { display: block; margin-top: 14px; font-size: 22px; color: #6e6e73; }
+      .sep { position: absolute; top: 60px; width: 1px; height: 960px; background: #ececec; }
+      #fnum { position: absolute; left: 28px; bottom: 22px; font-size: 18px; color: #75757a; font-variant-numeric: tabular-nums; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="5" data-width="1920" data-height="1080">
+      <div id="stage" style="position:absolute;inset:0"></div>
+      <div id="fnum"></div>
+    </div>
+    <script>
+      // Demonstração do estilo.js: a mesma caixa passa por ícone → cartão → tile → pílula com as 3 molas,
+      // nos mesmos instantes do Satellite (f31, f88, f119 a 30 fps). Tudo vem do estilo.js.
+      const ES = window.ESTILO;
+      const FPS = 30, NF = 150, DUR = NF / FPS, S = 0.75, Y0 = 520;
+      const stage = document.getElementById("stage"), fnum = document.getElementById("fnum");
+      const sc = (w, h, html) => `<div style="position:absolute;left:0;top:0;width:${w}px;height:${h}px;transform:scale(${S});transform-origin:0 0">${html}</div>`;
+
+      // ---- arte de cada estado (medidas do Satellite em unidades de 1080 px, reduzidas por S)
+      const ICONE = sc(208, 208, `<svg width="208" height="208" viewBox="0 0 208 208"><defs>
+          <linearGradient id="wg" x1="0" y1="104" x2="0" y2="208" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0482e8"/><stop offset="0.55" stop-color="#01a5ad"/><stop offset="1" stop-color="#08b46f"/></linearGradient>
+          <clipPath id="dc"><circle cx="104" cy="104" r="104"/></clipPath>
+          <radialGradient id="bd" cx="50%" cy="42%" r="50%"><stop offset="0" stop-color="#0397fc"/><stop offset="1" stop-color="#008bec"/></radialGradient></defs>
+        <circle cx="104" cy="104" r="65" fill="#00df00" stroke="#62ff70" stroke-width="2.5"/>
+        <g clip-path="url(#dc)"><path d="M104,104 L52,215 L156,215 Z" fill="url(#wg)" stroke="#16e6b4" stroke-width="2.2" stroke-linejoin="round"/></g>
+        <circle cx="104" cy="104" r="30" fill="#eef9f4"/><circle cx="104" cy="104" r="20" fill="url(#bd)"/></svg>`);
+      const ARC = { cx: 384, cy: 539, r: 365 }, TH = Math.asin(282 / 365);
+      const pt = (a) => [ARC.cx + ARC.r * Math.sin(a), ARC.cy - ARC.r * Math.cos(a)];
+      const arc = (a, b) => { const p = pt(a), q = pt(b); return `M${p[0].toFixed(1)},${p[1].toFixed(1)} A${ARC.r},${ARC.r} 0 0 1 ${q[0].toFixed(1)},${q[1].toFixed(1)}`; };
+      const sat = pt(-0.1);
+      const CARTAO = sc(768, 388, `
+        <div style="position:absolute;left:62px;top:55px;font-size:32px;font-weight:500;color:#f2f4f5;letter-spacing:-0.2px;line-height:1">ISS Flyover</div>
+        <div style="position:absolute;right:76px;top:55px;font-size:32px;font-weight:500;color:#2f6ed8;letter-spacing:-0.2px;line-height:1">in 14 min</div>
+        <svg width="768" height="388" viewBox="0 0 768 388" style="position:absolute;left:0;top:0;overflow:visible">
+          <path d="${arc(-TH, TH)}" fill="none" stroke="#2b5c9e" stroke-width="26" stroke-linecap="round"/>
+          <path d="${arc(-0.42, -0.1)}" fill="none" stroke="#52d9f2" stroke-width="54" stroke-linecap="round" opacity="0.5" style="filter:blur(16px)"/>
+          <path d="${arc(-0.42, -0.1)}" fill="none" stroke="#a3eff8" stroke-width="26" stroke-linecap="round"/>
+          <circle cx="${sat[0]}" cy="${sat[1]}" r="13.5" fill="#f7f8f9"/></svg>`);
+      const SATG = `<svg viewBox="0 0 72.5 41" width="72.5" height="41"><g fill="currentColor"><circle cx="36.2" cy="2.2" r="2.2"/><rect x="35" y="3" width="2.5" height="4"/><path d="M25.5,5.5 Q36.2,3 47,5.5 L44.5,13 Q36.2,16 28,13 Z"/><path d="M29,16.5 Q36.2,14 43.5,16.5 L45.5,27 Q44,33 36.2,41 Q28.5,33 27,27 Z"/><rect x="0" y="18" width="25.5" height="13" rx="1.5"/><rect x="47" y="18" width="25.5" height="13" rx="1.5"/><rect x="24" y="22" width="25" height="4.5"/></g></svg>`;
+      const TILE = sc(268, 268, `
+        <div style="position:absolute;left:97.75px;top:45.5px;width:72.5px;height:41px;color:#34ff0d;filter:drop-shadow(0 0 4px rgba(52,255,13,0.35))">${SATG}</div>
+        <div style="position:absolute;left:120px;top:120px;width:28px;height:28px;border-radius:14px;background:#34ff08;box-shadow:${ES.brilho("#34ff08", 14, 0.6)}"></div>
+        <div style="position:absolute;left:0;top:188px;width:268px;text-align:center;font-size:35px;font-weight:500;color:#42f530;line-height:1;text-shadow:0 0 6px rgba(50,240,20,0.3)">Connected</div>`);
+      const FLAME = `<svg viewBox="0 0 256 256" width="34" height="34"><path fill="currentColor" d="M173.79,51.48a221.25,221.25,0,0,0-41.67-34.34,8,8,0,0,0-8.24,0A221.25,221.25,0,0,0,82.21,51.48C54.59,80.48,40,112.47,40,144a88,88,0,0,0,176,0C216,112.47,201.41,80.48,173.79,51.48ZM96,184c0-27.67,22.53-47.28,32-54.3,9.48,7,32,26.63,32,54.3a32,32,0,0,1-64,0Z"/></svg>`;
+      const PILULA = sc(586, 116, `
+        <div style="position:absolute;left:39px;top:41px;width:34px;height:34px;color:#1d1d1f">${FLAME}</div>
+        <div style="position:absolute;left:113px;top:43px;font-size:30px;font-weight:${ES.PESOS.corpo};color:#1d1d1f;line-height:1">Fire</div>`);
+
+      const estados = (cx) => ({
+        icone: { x: cx, y: Y0, w: 208 * S, h: 208 * S, raio: "capsula", cor: "#0cbc25",
+          fundo: "linear-gradient(180deg,#14de25 0%,#0cbc25 48%,#0bb423 100%)", brilho: { cor: "#0cbc25", raio: 40, opacidade: 0.25 }, conteudo: ICONE },
+        cartao: { x: cx, y: Y0, w: 768 * S, h: 388 * S, raio: "cartao", cor: "#101010",
+          fundo: "radial-gradient(70% 80% at 38% 70%, rgba(50,110,130,0.55) 0%, rgba(24,42,48,0.25) 55%, rgba(16,16,16,0) 85%), #101010", conteudo: CARTAO },
+        tile: { x: cx, y: Y0, w: 268 * S, h: 268 * S, raio: "tile", cor: "#101610",
+          fundo: "radial-gradient(38% 45% at 50% 46%, rgb(18,62,12) 0%, rgb(17,57,12) 40%, rgb(16,30,14) 75%, rgba(16,22,16,0) 100%), #101610", conteudo: TILE, atraso: 0.03 },
+        pilula: { x: cx, y: Y0 + 198.5 * S, w: 586 * S, h: 116 * S, raio: "pilula", cor: "#f6f6f6",
+          fundo: "linear-gradient(90deg,#fbfbfb 0px,#f6f6f6 98px)", sombra: ES.SOMBRA.pilula, conteudo: PILULA },
+      });
+      const SEQ = [
+        { t: 5 / FPS, estado: "icone", entrada: "escala" },
+        { t: 31 / FPS, estado: "cartao", desfoque: 7.5 * S },
+        { t: 88 / FPS, estado: "tile", desfoque: 3 * S },
+        { t: 119 / FPS, estado: "pilula", desfoque: 6 * S },
+      ];
+      const LANES = [
+        { m: "suave", nome: "suave", fonte: "Satellite" },
+        { m: "firme", nome: "firme", fonte: "Satellite + VoiceOS" },
+        { m: "elastica", nome: "elástica", fonte: "Joi" },
+      ];
+      const caixas = LANES.map((l, i) => {
+        const cx = 320 + 640 * i;
+        const r = document.createElement("div"); r.className = "rot"; r.style.left = 640 * i + "px";
+        r.innerHTML = `<b style="font-weight:${ES.PESOS.titulo}">${l.nome}</b><span style="font-weight:${ES.PESOS.corpo}">${l.fonte} · assenta em ${String(ES.assenta(l.m).toFixed(2)).replace(".", ",")} s</span>`;
+        stage.appendChild(r);
+        if (i) { const s = document.createElement("div"); s.className = "sep"; s.style.left = 640 * i + "px"; stage.appendChild(s); }
+        return ES.caixa(stage, { estados: estados(cx), sequencia: SEQ, mola: l.m });
+      });
+
+      function draw(t) {
+        const { Fi, F } = ES.quadro(t, FPS, NF);
+        caixas.forEach((c) => c.desenha(F / FPS));
+        fnum.textContent = "f" + String(Fi).padStart(3, "0");
+      }
+      const P = { t: 0 };
+      const tl = gsap.timeline({ paused: true });
+      tl.to(P, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(P.t) }, 0);
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      document.fonts.ready.then(() => draw(P.t));
+      draw(0);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

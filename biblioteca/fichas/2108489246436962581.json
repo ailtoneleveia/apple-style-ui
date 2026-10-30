@@ -1,0 +1,43 @@
+{
+ "id": "2108489246436962581",
+ "url": "https://x.com/i/status/2108489246436962581",
+ "autor": "karanC_12",
+ "data": "2026-10-09",
+ "curtidas": 34,
+ "comentarios": 17,
+ "legenda_post": "Claude Opus 5.5 vs GPT-6 Astra 🦈  Same prompt. Two VERY different sharks.  Which one actually nailed the prompt—and which one completely missed the mark? 👀🔥 https://t.co/bDQHuqeZjJ",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.01,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 190,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,50 @@
+{
+ "id": "DUFblyFDpKk",
+ "url": "https://www.instagram.com/p/DUFblyFDpKk/",
+ "autor": "md.nasifahsan",
+ "data": "2026-01-29",
+ "curtidas": 434,
+ "comentarios": 48,
+ "legenda_post": "Comment: “Art” or \"Edit\". Which one do you think?\n\nDay: 24 of creating apple ui style animation.",
+ "duracao_s": 18.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.97
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 973,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "perfil:grupo",
+  "perfil:md.nasifahsan",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

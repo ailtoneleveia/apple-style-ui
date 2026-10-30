@@ -1,0 +1,41 @@
+{
+ "id": "2103449418460753990",
+ "url": "https://x.com/i/status/2103449418460753990",
+ "autor": "madpencil_",
+ "data": "2026-09-25",
+ "curtidas": 23,
+ "comentarios": 4,
+ "legenda_post": "My custom skill + Claude Opus 5.5 🤯  Gave it a still render, a character sheet, a 10s clip and one lazy prompt: \"fun motion graphic, comic book style, 10s\"  It read the assets, found the beats, and spat out THIS. KA-POW timing, speech bubbles, SFX, the works. https://t.co/rX4ZgGDQql",
+ "duracao_s": 15.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "legenda_fala"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 236,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

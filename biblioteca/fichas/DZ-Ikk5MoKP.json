@@ -1,0 +1,53 @@
+{
+ "id": "DZ-Ikk5MoKP",
+ "url": "https://www.instagram.com/p/DZ-Ikk5MoKP/",
+ "autor": "drillup.io",
+ "data": "2026-06-24",
+ "curtidas": 327,
+ "comentarios": 25,
+ "legenda_post": "AD for Dynamic Island @apple 🤝\n\n#motiondesign #videoediting #mograph #adobe",
+ "duracao_s": 10.8,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.82,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "iphone",
+  "botao_pilula",
+  "mapa",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.54
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 653,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

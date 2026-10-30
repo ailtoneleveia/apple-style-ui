@@ -1,0 +1,47 @@
+{
+ "id": "DejrksONBVB",
+ "url": "https://www.instagram.com/p/DejrksONBVB/",
+ "autor": "edita.visuals",
+ "data": "2026-10-16",
+ "curtidas": 69,
+ "comentarios": 157,
+ "legenda_post": "Want your vfootage edited like this? \nSend me a DM! 📩🙂\n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!🙂📩",
+ "duracao_s": 40.1,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.44
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 107,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

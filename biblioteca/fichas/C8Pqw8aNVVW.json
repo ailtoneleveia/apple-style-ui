@@ -1,0 +1,46 @@
+{
+ "id": "C8Pqw8aNVVW",
+ "url": "https://www.instagram.com/p/C8Pqw8aNVVW/",
+ "autor": "creatoroly",
+ "data": "2024-06-15",
+ "curtidas": 588,
+ "comentarios": 8,
+ "legenda_post": "Start posting today without excuses.\n\n#motivation #inspiration #videoediting #aftereffects #viral",
+ "duracao_s": 14.0,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.62,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.44
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 435,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

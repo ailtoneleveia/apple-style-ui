@@ -1,0 +1,50 @@
+{
+ "id": "DbVx9boz-PN",
+ "url": "https://www.instagram.com/p/DbVx9boz-PN/",
+ "autor": "madebyveduboi",
+ "data": "2026-07-28",
+ "curtidas": 729,
+ "comentarios": 51,
+ "legenda_post": "Had a fire one with this ASCII style launch project\nTrying out new motion graphics style is THE OG way to go ahead 🚀\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 19.4,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.09,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 126.0,
+  "onsets_per_s": 6.52
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 637,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

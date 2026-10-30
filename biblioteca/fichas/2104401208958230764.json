@@ -1,0 +1,51 @@
+{
+ "id": "2104401208958230764",
+ "url": "https://x.com/i/status/2104401208958230764",
+ "autor": "notdwd",
+ "data": "2026-09-28",
+ "curtidas": 971,
+ "comentarios": 27,
+ "legenda_post": "STOP asking Opus 5.5 to invent motion from scratch.  good motion still starts with taste + creative direction. when you give AI nothing, it falls back to the same generic shit everyone else is posting.  left is @thednyx’s original. right is opus's version rebuilt with my own https://t.co/gByXBk7qaw",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.0,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "cursor",
+  "iphone",
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.0,
+  "onsets_per_s": 6.79
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 59.94,
+  "kbps": 197,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

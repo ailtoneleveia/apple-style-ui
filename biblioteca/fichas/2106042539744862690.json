@@ -1,0 +1,36 @@
+{
+ "id": "2106042539744862690",
+ "url": "https://x.com/i/status/2106042539744862690",
+ "autor": "feigaobox",
+ "data": "2026-10-02",
+ "curtidas": 40,
+ "comentarios": 19,
+ "legenda_post": "看了一些 Opus 5.5 绘图能力的展示，突发奇想：能不能让它写一幅中文书法？没想到真的可以。以我这个外行的眼光看，写出来的字是有美感的。提示词：让Claude写一幅书法描述自己，恰当的书法风格和文字内容。  以下是 Opus 5.5 自己为这幅作品写的介绍（音乐也是它自己写的）：  直而温：一幅书法的由来 https://t.co/Cpb18uqo9s",
+ "duracao_s": 44.8,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.05,
+ "pecas": [],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 88,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,55 @@
+{
+ "id": "DbiBkmMzLjI",
+ "url": "https://www.instagram.com/p/DbiBkmMzLjI/",
+ "autor": "zelioss__",
+ "data": "2026-08-02",
+ "curtidas": 5479,
+ "comentarios": 64,
+ "legenda_post": ".\n.\n.\n#animation #motiondesign #editor #motiondesigner",
+ "duracao_s": 12.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.74,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "imessage",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "mapa",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 95.3,
+  "onsets_per_s": 3.84
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 871,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

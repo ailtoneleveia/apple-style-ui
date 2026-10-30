@@ -1,0 +1,52 @@
+{
+ "id": "DaD_n1gx5aP",
+ "url": "https://www.instagram.com/p/DaD_n1gx5aP/",
+ "autor": "8bit.brainn",
+ "data": "2026-06-26",
+ "curtidas": 39,
+ "comentarios": 96,
+ "legenda_post": "what if apple made a plugin for after effects…\n\nthe stuff brands pay a premium for when they ask to make it «more apple». it’s called AppleFX, and every one of those moves is one click inside AE\n\nbuilt it so you can hit that look on client work without keyframing all night\n\ncomment “AppleFX” 👇 and i",
+ "duracao_s": 12.9,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "APPLEFX",
+ "acabamento_pro": 0.99,
+ "pecas": [
+  "cursor",
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.1,
+  "onsets_per_s": 2.57
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1456,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

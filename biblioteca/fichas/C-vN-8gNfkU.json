@@ -1,0 +1,44 @@
+{
+ "id": "C-vN-8gNfkU",
+ "url": "https://www.instagram.com/p/C-vN-8gNfkU/",
+ "autor": "creatoroly",
+ "data": "2024-08-16",
+ "curtidas": 355,
+ "comentarios": 9,
+ "legenda_post": "Do you play Uno? 🎴\n\n#inspiration #motivation #deepwork #visuals #motiondesign #cards",
+ "duracao_s": 8.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.38,
+ "pecas": [
+  "numero_grande",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 37,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 97.7,
+  "onsets_per_s": 2.97
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 654,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

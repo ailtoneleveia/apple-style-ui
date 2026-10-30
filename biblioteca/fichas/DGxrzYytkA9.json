@@ -1,0 +1,43 @@
+{
+ "id": "DGxrzYytkA9",
+ "url": "https://www.instagram.com/p/DGxrzYytkA9/",
+ "autor": "creatoroly",
+ "data": "2025-03-04",
+ "curtidas": 1348,
+ "comentarios": 19,
+ "legenda_post": "it feels like a dream... 🌙\n\n@dreamapp.io",
+ "duracao_s": 14.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.7,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 35,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 124.0,
+  "onsets_per_s": 5.25
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 420,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

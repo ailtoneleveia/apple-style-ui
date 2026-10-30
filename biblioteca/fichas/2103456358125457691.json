@@ -1,0 +1,44 @@
+{
+ "id": "2103456358125457691",
+ "url": "https://x.com/i/status/2103456358125457691",
+ "autor": "sanjeevn72",
+ "data": "2026-09-25",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "Opus 5.5 is badass.  This is truly one shotted. Never have to hire a motion designer again…?!! Will share the actual Prompt in the first comment (I edited it to not have music in the background, also reduced the number of elements used) https://t.co/3bPt89Ykyn",
+ "duracao_s": 14.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.71,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 3.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 60.0,
+  "kbps": 255,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2105208251956830625",
+ "url": "https://x.com/i/status/2105208251956830625",
+ "autor": "_sslinNn",
+ "data": "2026-09-30",
+ "curtidas": 9,
+ "comentarios": 4,
+ "legenda_post": "Opus 5.5 High VS Sonnet 5.5 Max  Prompt: \"create a high-energy 15-second motion design  piece for Paper Planes - treat it as  the showreel  that gets you hired as a motion designer.  don't hold back\"  WAS IT WORTH WAITING 3 HOURS FOR THIS??? I don't know which one is better... https://t.co/MdivErvjY",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.7,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "mapa"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 350,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2103789415323562325",
+ "url": "https://x.com/i/status/2103789415323562325",
+ "autor": "froessell",
+ "data": "2026-09-26",
+ "curtidas": 228,
+ "comentarios": 17,
+ "legenda_post": "Opus 5.5 built this game in @unity.   Artwork made in Chatgpt.  Used Topdown engine to speed up the process.  PROMPT: PRD — Police Chase Arcade Game  Working title: Heatwave Platform: iOS + Android Engine: Unity Genre: Top-down 3D arcade chase / survival Orientation: Portrait https://t.co/mjy93gHetY",
+ "duracao_s": 59.2,
+ "tipo": "tutorial_tela",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 644,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 323,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

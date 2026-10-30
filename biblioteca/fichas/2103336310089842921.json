@@ -1,0 +1,40 @@
+{
+ "id": "2103336310089842921",
+ "url": "https://x.com/i/status/2103336310089842921",
+ "autor": "DavidShulmanFL",
+ "data": "2026-09-25",
+ "curtidas": 3,
+ "comentarios": 3,
+ "legenda_post": "Opus 5.5 prompt \"Create a 60 second music video in the style of Peter Gabriel's Sledgehammer and Big Time. But use modern references and figures. Also create the song, something sounds like it would fit on Peter Gabriel's So album.\" https://t.co/j4QpMkKfuM",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.14,
+ "pecas": [
+  "imessage",
+  "grafico",
+  "emoji_3d"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 273,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

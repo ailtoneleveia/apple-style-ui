@@ -1,0 +1,46 @@
+{
+ "id": "DeExwxqO8wO",
+ "url": "https://www.instagram.com/p/DeExwxqO8wO/",
+ "autor": "stepan.straufvfx",
+ "data": "2026-10-04",
+ "curtidas": 207,
+ "comentarios": 11,
+ "legenda_post": "find my animation📍\n#aftereffects #animation #motiondesign #saas #apple",
+ "duracao_s": 8.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "cursor",
+  "mapa",
+  "emoji_3d",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 99.4,
+  "onsets_per_s": 1.58
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 959,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,42 @@
+{
+ "id": "Dc11gxvgOFS",
+ "url": "https://www.instagram.com/p/Dc11gxvgOFS/",
+ "autor": "charliehills",
+ "data": "2026-09-03",
+ "curtidas": 141,
+ "comentarios": 241,
+ "legenda_post": "Claude Fable 5.1 launched this week. Do not make it your main model.\n\nHere is the bit nobody is reading. On a Max plan you get up to 50% of your weekly limit on Fable at no extra cost. After that you are paying credits. On Pro and standard Team seats it runs on credits from the start.\n\nSo pair it. A",
+ "duracao_s": 66.7,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "FABLE",
+ "acabamento_pro": 0.96,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande",
+  "grafico",
+  "busca",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 244,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

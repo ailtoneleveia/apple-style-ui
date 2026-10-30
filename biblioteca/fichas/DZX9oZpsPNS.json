@@ -1,0 +1,41 @@
+{
+ "id": "DZX9oZpsPNS",
+ "url": "https://www.instagram.com/p/DZX9oZpsPNS/",
+ "autor": "8bit.brainn",
+ "data": "2026-06-09",
+ "curtidas": 55,
+ "comentarios": 68,
+ "legenda_post": "this animation I made in one click, here’s how\n\nevery title in this reel is a preset from the text tab of AppleFX - the after effects plugin i built to do the “apple look” inside AE\n\ncomment “Text”👇 and check your dms - i’ll show you where to grab them\n\n#aftereffects #motiondesign #kinetictypography",
+ "duracao_s": 9.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "TEXT",
+ "acabamento_pro": 0.64,
+ "pecas": [],
+ "nota": 47,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.66
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 29.97,
+  "kbps": 144,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

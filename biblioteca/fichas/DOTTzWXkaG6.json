@@ -1,0 +1,48 @@
+{
+ "id": "DOTTzWXkaG6",
+ "url": "https://www.instagram.com/p/DOTTzWXkaG6/",
+ "autor": "md.nasifahsan",
+ "data": "2025-09-07",
+ "curtidas": 139,
+ "comentarios": 4,
+ "legenda_post": "Day: 07 of creating apple ui style animation.",
+ "duracao_s": 5.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "iphone",
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 67.7,
+  "onsets_per_s": 1.58
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 29.97,
+  "kbps": 814,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "perfil:md.nasifahsan",
+  "busca:apple ui style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

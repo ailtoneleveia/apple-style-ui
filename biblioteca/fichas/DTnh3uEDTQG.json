@@ -1,0 +1,46 @@
+{
+ "id": "DTnh3uEDTQG",
+ "url": "https://www.instagram.com/p/DTnh3uEDTQG/",
+ "autor": "creatoroly",
+ "data": "2026-01-17",
+ "curtidas": 1769,
+ "comentarios": 35,
+ "legenda_post": "motion design showreel 25.\n\n#apple #aftereffects #motiondesign #showreel",
+ "duracao_s": 44.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.66,
+ "pecas": [
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 131.7,
+  "onsets_per_s": 4.64
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 550,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

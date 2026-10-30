@@ -1,0 +1,38 @@
+{
+ "id": "2108577475752054868",
+ "url": "https://x.com/i/status/2108577475752054868",
+ "autor": "MadMax_Series",
+ "data": "2026-10-09",
+ "curtidas": 51,
+ "comentarios": 5,
+ "legenda_post": "gm gm AI Video Creators  Created this video on Seedance 2.5 using just mandarin text prompt, no attachments.  Prompt given below    Opus 5.5 is crazy polishing up the rough ideas and choreography.    Made with @Flovaai #flovaai #flovacpp  Prompt:   「身份锁定｜女人」 https://t.co/kGfyeauASN",
+ "duracao_s": 30.2,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [
+  "vidro"
+ ],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 29.95,
+  "kbps": 311,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

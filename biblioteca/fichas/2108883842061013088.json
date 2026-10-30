@@ -1,0 +1,39 @@
+{
+ "id": "2108883842061013088",
+ "url": "https://x.com/i/status/2108883842061013088",
+ "autor": "huchat_gamedev",
+ "data": "2026-10-10",
+ "curtidas": 26,
+ "comentarios": 2,
+ "legenda_post": "Opus5.5に戦闘画面のモック動画を作ってもらってみた 画像生成はcodex cli経由でGPT Imagesを使用  まだまだ試作段階だけど割といい感じ！ 最終的にはSpineとか使ってキャラ動かしたいけど、OpusってSpineも使いこなせたりするのかな...？ https://t.co/SAev0rrx50",
+ "duracao_s": 28.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.81,
+ "pecas": [
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 410,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 291,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2105064666904813711",
+ "url": "https://x.com/i/status/2105064666904813711",
+ "autor": "nicovegam",
+ "data": "2026-09-29",
+ "curtidas": 2,
+ "comentarios": 1,
+ "legenda_post": "just one prompt for Opus 5.5: \"make a 30 second motion graphics video that shows what is carvuk to customers\"   crazy!!!!!!! https://t.co/tTwW1tCuad",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "mapa"
+ ],
+ "nota": 49,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 205,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

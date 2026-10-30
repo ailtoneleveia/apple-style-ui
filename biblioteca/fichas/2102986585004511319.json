@@ -1,0 +1,39 @@
+{
+ "id": "2102986585004511319",
+ "url": "https://x.com/i/status/2102986585004511319",
+ "autor": "0xRathi",
+ "data": "2026-09-24",
+ "curtidas": 18,
+ "comentarios": 1,
+ "legenda_post": "I gave Opus 5.5 one prompt: \"make a Tron game.\"  It came back with the game, 3 rival bots with personalities, its own music, and this trailer, which it shot itself.  https://t.co/caFfyya8M9 https://t.co/JFZo5l5y7r",
+ "duracao_s": 45.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 569,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

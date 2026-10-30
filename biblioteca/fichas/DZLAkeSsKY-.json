@@ -1,0 +1,46 @@
+{
+ "id": "DZLAkeSsKY-",
+ "url": "https://www.instagram.com/p/DZLAkeSsKY-/",
+ "autor": "8bit.brainn",
+ "data": "2026-06-04",
+ "curtidas": 71,
+ "comentarios": 150,
+ "legenda_post": "The clean, expensive “Apple” motion you keep seeing everywhere? This is the tool behind it\n\nAppleFX drops Apple’s real UI easing, springs, and a custom curve editor straight into After Effects - one click and your animation moves like an actual keynote\n\nComment “Apple” and I’ll send you the link 👇\n\n",
+ "duracao_s": 17.2,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "APPLE",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "cursor",
+  "janela",
+  "grafico",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 161.5,
+  "onsets_per_s": 0.53
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1465,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

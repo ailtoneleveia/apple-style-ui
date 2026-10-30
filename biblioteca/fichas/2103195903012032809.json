@@ -1,0 +1,39 @@
+{
+ "id": "2103195903012032809",
+ "url": "https://x.com/i/status/2103195903012032809",
+ "autor": "anirockshady",
+ "data": "2026-09-24",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Ok, Anthropic Claude Opus 5.5 is actually exceptional. This is what Opus 5.5 achieved without using Blender MCP at a cost of 8% of session limit.  PROMPT: https://t.co/y9yUqEYXkj",
+ "duracao_s": 57.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.35,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 75,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

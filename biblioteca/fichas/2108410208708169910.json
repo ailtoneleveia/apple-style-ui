@@ -1,0 +1,36 @@
+{
+ "id": "2108410208708169910",
+ "url": "https://x.com/i/status/2108410208708169910",
+ "autor": "harshitsatija",
+ "data": "2026-10-09",
+ "curtidas": 451,
+ "comentarios": 11,
+ "legenda_post": "How do bike gears work?  by Opus 5.5 (~10 iterations)  https://t.co/uexYEtXVv6 https://t.co/GHJC0cxhW5",
+ "duracao_s": 10.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.96,
+ "pecas": [],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 452,
+  "altura": 360,
+  "fps": 48.6,
+  "kbps": 540,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

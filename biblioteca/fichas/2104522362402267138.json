@@ -1,0 +1,46 @@
+{
+ "id": "2104522362402267138",
+ "url": "https://x.com/i/status/2104522362402267138",
+ "autor": "buildwithgautam",
+ "data": "2026-09-28",
+ "curtidas": 8,
+ "comentarios": 2,
+ "legenda_post": "Claude Opus 5.5 is crazy.  I asked Claude to design a fitness app concept and animate it into a 17-sec presentation.  Here is what claude gave me back: https://t.co/xQ0z8ACDKb",
+ "duracao_s": 17.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.02,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 71,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 117,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

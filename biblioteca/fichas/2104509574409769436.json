@@ -1,0 +1,38 @@
+{
+ "id": "2104509574409769436",
+ "url": "https://x.com/i/status/2104509574409769436",
+ "autor": "chetanankola",
+ "data": "2026-09-28",
+ "curtidas": 121,
+ "comentarios": 13,
+ "legenda_post": "this insane rendering of the swamp experience is happening on a browser usign threejs  this was vibe coded entirely in opus 5.5 - no one shot prompt - lot of steering..  this is vastly improved from the last version of the moonlit swamp that went viral and was featured by openai https://t.co/9vwqf6e",
+ "duracao_s": 45.5,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.87,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 452,
+  "altura": 360,
+  "fps": 44.15,
+  "kbps": 212,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

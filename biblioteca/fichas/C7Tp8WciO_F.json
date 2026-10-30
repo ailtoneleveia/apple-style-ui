@@ -1,0 +1,45 @@
+{
+ "id": "C7Tp8WciO_F",
+ "url": "https://www.instagram.com/p/C7Tp8WciO_F/",
+ "autor": "creatoroly",
+ "data": "2024-05-23",
+ "curtidas": 264,
+ "comentarios": 5,
+ "legenda_post": "Part 2 of editing for big creators.\n\n#creators #sanderstage #longform #fyp #videoediting",
+ "duracao_s": 24.5,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "janela",
+  "legenda_fala",
+  "busca",
+  "print_site"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.8,
+  "onsets_per_s": 3.61
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 547,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2104471436039803295",
+ "url": "https://x.com/i/status/2104471436039803295",
+ "autor": "hiro19_k",
+ "data": "2026-09-28",
+ "curtidas": 63,
+ "comentarios": 3,
+ "legenda_post": "Claude Opus 5.5とThree.jsで3Dモーショングラフィックを作ってみた。プロンプトは簡単に 「ダイナミックな15秒の3Dモーショングラフィックス映像を作成してください。LPのheroセクション用で、近未来感のあるイメージでお願いします。さまざまな3Dエフェクトを駆使してください。 https://t.co/i840W3VGXS",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [],
+ "nota": 27,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 697,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

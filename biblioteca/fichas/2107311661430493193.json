@@ -1,0 +1,38 @@
+{
+ "id": "2107311661430493193",
+ "url": "https://x.com/i/status/2107311661430493193",
+ "autor": "venturetwins",
+ "data": "2026-10-06",
+ "curtidas": 57,
+ "comentarios": 26,
+ "legenda_post": "Gave Opus 5.5 an Airbnb listing and asked it to generate a UGC video.  I'm impressed with the result!  It pulled the photos and used them to generate video with Seedance 2.5. Voice is ElevenLabs, and the historical footage was downloaded from the Internet + upscaled with Topaz. https://t.co/4ys7iLaR",
+ "duracao_s": 31.5,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.66,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 29.94,
+  "kbps": 240,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

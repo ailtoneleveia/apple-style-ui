@@ -1,0 +1,44 @@
+{
+ "id": "DcjD3EWk72C",
+ "url": "https://www.instagram.com/p/DcjD3EWk72C/",
+ "autor": "charliehills",
+ "data": "2026-08-27",
+ "curtidas": 62,
+ "comentarios": 35,
+ "legenda_post": "Comment BRIEF and I'll send you the prompt and the full setup.\n\nClaude can now go and read the entire AI news cycle, write it as a story, and read it out loud to you. One message, no tabs.\n\nHere is the whole thing:\n\n1. Connect Fish Audio to Claude with one line: `claude mcp add --transport http fish",
+ "duracao_s": 50.4,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "legenda_capcut",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "BRIEF",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 144,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

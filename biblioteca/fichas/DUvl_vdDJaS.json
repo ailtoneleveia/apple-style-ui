@@ -1,0 +1,50 @@
+{
+ "id": "DUvl_vdDJaS",
+ "url": "https://www.instagram.com/p/DUvl_vdDJaS/",
+ "autor": "mahdiedits_",
+ "data": "2026-02-14",
+ "curtidas": 1827,
+ "comentarios": 1473,
+ "legenda_post": "Comment “Edit” to get access to 60+ text presets including those apple style bounce animation",
+ "duracao_s": 33.2,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "EDIT",
+ "acabamento_pro": 0.32,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 25,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 5.35
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 954,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

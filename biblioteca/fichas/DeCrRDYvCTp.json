@@ -1,0 +1,49 @@
+{
+ "id": "DeCrRDYvCTp",
+ "url": "https://www.instagram.com/p/DeCrRDYvCTp/",
+ "autor": "getlayers.ai",
+ "data": "2026-10-03",
+ "curtidas": 563,
+ "comentarios": 285,
+ "legenda_post": "✍🏻 Drop «Platform» in the comments and I’ll send you the link to the prompt platform\n\nA musician doesn’t compose a new scale for every song.\n\nThe scale is already known, already trusted. It becomes the ground for something new.\n\nMost designers throw away the scale and try to invent music from scratc",
+ "duracao_s": 13.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "S",
+ "acabamento_pro": 1.78,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 172.6,
+  "onsets_per_s": 3.37
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 752,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

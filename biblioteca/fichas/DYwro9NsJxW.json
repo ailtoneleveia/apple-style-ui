@@ -1,0 +1,43 @@
+{
+ "id": "DYwro9NsJxW",
+ "url": "https://www.instagram.com/p/DYwro9NsJxW/",
+ "autor": "tiagosilva.editor",
+ "data": "2026-05-25",
+ "curtidas": 365,
+ "comentarios": 12,
+ "legenda_post": "Think Different | O que achou desse motion com 3D, clean e minimalista?\n\n#motion #3d #apple #editor #viral",
+ "duracao_s": 23.4,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "janela",
+  "busca"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 123.6,
+  "onsets_per_s": 4.25
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 566,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

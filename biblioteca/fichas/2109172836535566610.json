@@ -1,0 +1,43 @@
+{
+ "id": "2109172836535566610",
+ "url": "https://x.com/i/status/2109172836535566610",
+ "autor": "Manbarco",
+ "data": "2026-10-11",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Que creen que se pueda mejorar? Es OpenSource, nada de conexiones externas! Lo hice en local con Opus 5.5 https://t.co/p5k8CnIr5X",
+ "duracao_s": 24.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "mapa",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 313,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

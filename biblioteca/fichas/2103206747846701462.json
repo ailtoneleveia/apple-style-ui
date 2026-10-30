@@ -1,0 +1,39 @@
+{
+ "id": "2103206747846701462",
+ "url": "https://x.com/i/status/2103206747846701462",
+ "autor": "ParkerRex",
+ "data": "2026-09-24",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "3/ Ole Lehmann's list of what Opus 5.5 animation is good for was bookmarked 2,100 times this week. Number 8 was animated diagrams. So I asked for one.  One prompt: explain a token bucket rate limiter, canvas only, no libraries, every frame a pure function of time so my renderer https://t.co/4Ibzmm6z",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.72,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 30.0,
+  "kbps": 54,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

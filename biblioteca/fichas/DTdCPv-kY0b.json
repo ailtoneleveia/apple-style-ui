@@ -1,0 +1,45 @@
+{
+ "id": "DTdCPv-kY0b",
+ "url": "https://www.instagram.com/p/DTdCPv-kY0b/",
+ "autor": "dawoo.e",
+ "data": "2026-01-13",
+ "curtidas": 13702,
+ "comentarios": 136,
+ "legenda_post": "Here’s the second part of my Nike animations w/ the bts, timeline & sound effects #aftereffect #aftereffects #aftereffectsedits",
+ "duracao_s": 9.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [
+  "icone_app",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.18
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 178,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

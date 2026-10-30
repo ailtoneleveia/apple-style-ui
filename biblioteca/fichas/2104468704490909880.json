@@ -1,0 +1,39 @@
+{
+ "id": "2104468704490909880",
+ "url": "https://x.com/i/status/2104468704490909880",
+ "autor": "itnavi2022",
+ "data": "2026-09-28",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5による動画生成のテスト  プロンプト「P(Doom)をテーマにした手描き風の15秒の動画を作成してください。」 所要時間　13分 https://t.co/zvjvrnVs4I",
+ "duracao_s": 15.0,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.85,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 184,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

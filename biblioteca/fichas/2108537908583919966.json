@@ -1,0 +1,38 @@
+{
+ "id": "2108537908583919966",
+ "url": "https://x.com/i/status/2108537908583919966",
+ "autor": "kinderlayer",
+ "data": "2026-10-09",
+ "curtidas": 430,
+ "comentarios": 74,
+ "legenda_post": "holy sh*t. same prompt, GPT-6 Astra vs Opus 5.5. the lighting alone ended the debate for me   Same prompts, zero edits, zero cherry-picking. GPT-6 Astra on top, Opus 5.5 on the bottom. Clip after clip.  A snake across an old rug. A swan through the forest. A dolphin in the deep. https://t.co/j1xtgYM",
+ "duracao_s": 20.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.28,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 25.0,
+  "kbps": 297,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

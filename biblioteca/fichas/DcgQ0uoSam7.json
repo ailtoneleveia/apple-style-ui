@@ -1,0 +1,45 @@
+{
+ "id": "DcgQ0uoSam7",
+ "url": "https://www.instagram.com/p/DcgQ0uoSam7/",
+ "autor": "dopemotionzone",
+ "data": "2026-08-26",
+ "curtidas": 559,
+ "comentarios": 18,
+ "legenda_post": "Some podcast conversations don’t need more effects.\n\nThey need more emotional weight.\n\nThis conversation with Lucy Hale is a perfect example.\n\nShe talks about how alcohol once felt like a solution, something that gave her the mental peace she couldn’t find anywhere else.\n\nThen came the moment she re",
+ "duracao_s": 43.9,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "pilha_cartoes"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.29
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 944,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2105086032005726712",
+ "url": "https://x.com/i/status/2105086032005726712",
+ "autor": "aichrislee",
+ "data": "2026-09-30",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 just built a 3D game like Subway Surfers from 1 prompt.  A robot runs through a neon city at night. Trains, coins, jumps, slides, a score that climbs. 1 prompt in Claude Code, about 18 minutes. No images, no 3D models, it all runs in one HTML file.  I'm giving away the https://t.co/ituqvbgh",
+ "duracao_s": 15.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 18,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 663,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DclwG64KZFL",
+ "url": "https://www.instagram.com/p/DclwG64KZFL/",
+ "autor": "aymotionstudio",
+ "data": "2026-08-28",
+ "curtidas": 156,
+ "comentarios": 3,
+ "legenda_post": "Just a quick UI animation for @instagram 👀\n\n#motiondesign  #aftereffect",
+ "duracao_s": 13.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.17,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 150.9,
+  "onsets_per_s": 4.04
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 174,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

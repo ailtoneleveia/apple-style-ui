@@ -1,0 +1,42 @@
+{
+ "id": "DeEX-JRjTz2",
+ "url": "https://www.instagram.com/p/DeEX-JRjTz2/",
+ "autor": "charliehills",
+ "data": "2026-10-04",
+ "curtidas": 105,
+ "comentarios": 106,
+ "legenda_post": "Anthropic just launched mods for Claude Code. A mod changes Claude Code itself (how it looks, how it behaves, or a feature it never had).\n\nAnd you don't write a line of code. You describe the mod in plain words and Claude builds it.\n\n1. Update Claude Code to 2.1.287 or later\n2. Describe the mod you ",
+ "duracao_s": 40.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "MODS",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 135,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

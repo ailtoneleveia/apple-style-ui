@@ -1,0 +1,53 @@
+{
+ "id": "DS0blKBiDgd",
+ "url": "https://www.instagram.com/p/DS0blKBiDgd/",
+ "autor": "vitalyframes",
+ "data": "2025-12-28",
+ "curtidas": 7983,
+ "comentarios": 151,
+ "legenda_post": "Count how many times it bounces\n\n#aftereffects #edit #motiongraphic #appleui",
+ "duracao_s": 11.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "notificacao",
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 95.2,
+  "onsets_per_s": 4.74
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 210,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "perfil:vitalyframes",
+  "busca:appleui",
+  "busca:apple motion design",
+  "busca:ios ui animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

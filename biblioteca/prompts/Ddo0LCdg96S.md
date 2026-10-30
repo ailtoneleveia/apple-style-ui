@@ -1,0 +1,13 @@
+# charliehills · Ddo0LCdg96S
+
+Referência: https://www.instagram.com/p/Ddo0LCdg96S/
+
+```text
+Faça em HyperFrames um vídeo 16:9 de 23 s no estilo Apple, tomando como referência: https://www.instagram.com/p/Ddo0LCdg96S/
+
+Visual: fundo pastel ou gradiente suave; dois ou três elementos por cena; sombras suaves e uma ou duas cores de sistema; fonte sans tipo SF Pro (Inter serve).
+
+Movimento: cada elemento entra com mola curta (0,3 a 0,5 s), saída rápida e assentamento suave, sem quique exagerado; um elemento em foco por vez; troca de cena por desfoque ou por morph do mesmo elemento, sem corte seco.
+
+Antes de renderizar, compare 4 quadros-chave com a referência e ajuste posição, tamanho e tempo até bater.
+```

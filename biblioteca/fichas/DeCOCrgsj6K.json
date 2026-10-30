@@ -1,0 +1,47 @@
+{
+ "id": "DeCOCrgsj6K",
+ "url": "https://www.instagram.com/p/DeCOCrgsj6K/",
+ "autor": "edita.visuals",
+ "data": "2026-10-03",
+ "curtidas": 30,
+ "comentarios": 35,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩\n\nCan you believe Opus 5.5 made these videos? 🤯\n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!",
+ "duracao_s": 14.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.52,
+ "pecas": [
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.36
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 815,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

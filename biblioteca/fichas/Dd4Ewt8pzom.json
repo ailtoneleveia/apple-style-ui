@@ -1,0 +1,49 @@
+{
+ "id": "Dd4Ewt8pzom",
+ "url": "https://www.instagram.com/p/Dd4Ewt8pzom/",
+ "autor": "dailyflutterui_2001",
+ "data": "2026-09-29",
+ "curtidas": 5270,
+ "comentarios": 173,
+ "legenda_post": "This Settings UI is TOO Smooth 🤯 #flutterdeveloper #flutter #programming #coding",
+ "duracao_s": 20.5,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.86,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 157.8,
+  "onsets_per_s": 1.57
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 435,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

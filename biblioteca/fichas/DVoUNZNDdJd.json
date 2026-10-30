@@ -1,0 +1,48 @@
+{
+ "id": "DVoUNZNDdJd",
+ "url": "https://www.instagram.com/p/DVoUNZNDdJd/",
+ "autor": "mattashbee",
+ "data": "2026-03-08",
+ "curtidas": 92,
+ "comentarios": 30,
+ "legenda_post": "Apple style text animation is easier than you think! #videoediting #aftereffects #motiongraphics #adobe",
+ "duracao_s": 48.9,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "busca",
+  "print_site"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.05
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 542,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

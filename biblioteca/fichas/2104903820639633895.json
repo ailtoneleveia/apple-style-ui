@@ -1,0 +1,39 @@
+{
+ "id": "2104903820639633895",
+ "url": "https://x.com/i/status/2104903820639633895",
+ "autor": "MirrortekUK",
+ "data": "2026-09-29",
+ "curtidas": 1,
+ "comentarios": 0,
+ "legenda_post": "吓哭[泪奔]，Opus 5.5 的视频动画能力太强了。这个 30s 的视频，只用了一句 Prompt：  制作一段动态的 30 秒动态图形视频，展示你是一位多么出色的动态设计师，就好像这是你简历中的作品集。全力以赴。  然后这个片子里面所有的元素、配乐、设计，都是 Opus 5.5 自己生成的。  大约花费了 25 分钟，和 https://t.co/8zdMWRC1z8",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.95,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 462,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

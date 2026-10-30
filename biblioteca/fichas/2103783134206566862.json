@@ -1,0 +1,42 @@
+{
+ "id": "2103783134206566862",
+ "url": "https://x.com/i/status/2103783134206566862",
+ "autor": "Mr_Buzzoni",
+ "data": "2026-09-26",
+ "curtidas": 61,
+ "comentarios": 20,
+ "legenda_post": "Claude Opus 5.5 is scary good at motion design  I asked for a showreel on Jev engineering and got studio-level work from one prompt  stock Claude Code, Opus 5.5 on max reasoning, memory off:  \"Make a dynamic [24]-second motion graphics video that shows what an incredible motion https://t.co/Ma8iETXI",
+ "duracao_s": 24.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.21,
+ "pecas": [
+  "imessage",
+  "janela",
+  "numero_grande",
+  "busca",
+  "pilha_cartoes"
+ ],
+ "nota": 53,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 359,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

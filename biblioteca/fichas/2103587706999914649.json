@@ -1,0 +1,38 @@
+{
+ "id": "2103587706999914649",
+ "url": "https://x.com/i/status/2103587706999914649",
+ "autor": "1littlecoder",
+ "data": "2026-09-25",
+ "curtidas": 42,
+ "comentarios": 6,
+ "legenda_post": "This is crazy, I asked Opus 5.5 to intro itself!   prompt: \"make a dynamic 10-second motion graphics video that shows who are you as Opus 5.5 - be as creative and dynamic as possible. Avoid the frames and texts on the corners which are typical ai made giveaways!\" https://t.co/ODxXPP7wJ7",
+ "duracao_s": 10.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 195,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

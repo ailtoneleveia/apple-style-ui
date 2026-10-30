@@ -1,0 +1,49 @@
+{
+ "id": "DcydztgJsVs",
+ "url": "https://www.instagram.com/p/DcydztgJsVs/",
+ "autor": "motionthekx",
+ "data": "2026-09-02",
+ "curtidas": 493,
+ "comentarios": 25,
+ "legenda_post": "apple music🎧\n\n#motiongraphics #aftereffects #sfx #sounddesign",
+ "duracao_s": 10.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.34,
+ "pecas": [
+  "notificacao",
+  "icone_app",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 6.52
+ },
+ "qualidade": {
+  "largura": 1440,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 281,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

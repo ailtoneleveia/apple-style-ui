@@ -1,0 +1,48 @@
+{
+ "id": "DOya0bWjOct",
+ "url": "https://www.instagram.com/p/DOya0bWjOct/",
+ "autor": "bjarnenicken",
+ "data": "2025-09-19",
+ "curtidas": 282,
+ "comentarios": 6,
+ "legenda_post": "Offizieller @alfima.io Trailer🌻\n\nProjekt Anfragen laufen über meine Webseite.☀️\n\n#editing #motiondesign \n\nTags:\nMotiondesigner, Apple-Style, Animation, animierte Werbung",
+ "duracao_s": 13.9,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.91,
+ "pecas": [
+  "imessage",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 98.1,
+  "onsets_per_s": 4.07
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 23.98,
+  "kbps": 853,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

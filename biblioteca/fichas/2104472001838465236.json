@@ -1,0 +1,43 @@
+{
+ "id": "2104472001838465236",
+ "url": "https://x.com/i/status/2104472001838465236",
+ "autor": "decohack",
+ "data": "2026-09-28",
+ "curtidas": 28,
+ "comentarios": 2,
+ "legenda_post": "Hi, Opus 5.5, 给我的产品做一个宣传视频，需要创意十足并且足够震撼. 👉 https://t.co/XMW1p8geoU https://t.co/4JUS4Lg2rQ",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.47,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 530,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

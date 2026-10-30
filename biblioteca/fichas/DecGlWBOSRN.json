@@ -1,0 +1,46 @@
+{
+ "id": "DecGlWBOSRN",
+ "url": "https://www.instagram.com/p/DecGlWBOSRN/",
+ "autor": "qasim.motion",
+ "data": "2026-10-13",
+ "curtidas": 91,
+ "comentarios": 9,
+ "legenda_post": "Dm me if you want one for your business 📩\n\n#motiondesign #saasfounder #videoediting #saas #saasmarketing",
+ "duracao_s": 50.6,
+ "tipo": "bastidor_editor",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "cursor",
+  "janela",
+  "busca",
+  "vidro"
+ ],
+ "nota": 45,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.16
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1073,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

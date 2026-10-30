@@ -1,0 +1,45 @@
+{
+ "id": "DWB1D0kDUR7",
+ "url": "https://www.instagram.com/p/DWB1D0kDUR7/",
+ "autor": "creatoroly",
+ "data": "2026-03-18",
+ "curtidas": 1469,
+ "comentarios": 21,
+ "legenda_post": "@mobbin_design is fire 🔥\n\nI‘m not affiliated with this company.",
+ "duracao_s": 11.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.72,
+ "pecas": [
+  "imessage",
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 110.1,
+  "onsets_per_s": 3.07
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 304,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

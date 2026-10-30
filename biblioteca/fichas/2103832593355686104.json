@@ -1,0 +1,36 @@
+{
+ "id": "2103832593355686104",
+ "url": "https://x.com/i/status/2103832593355686104",
+ "autor": "ndhabarde11",
+ "data": "2026-09-26",
+ "curtidas": 11,
+ "comentarios": 2,
+ "legenda_post": "WTF.  Claude Opus 5.5 just made this motion graphics showreel from ONE prompt.  No After Effects. No templates. No edits.  The entire prompt:  \"make a dynamic 15-second motion graphics video in portrait mode that shows what an incredible motion designer you are, like it's your https://t.co/t1najNea5",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.77,
+ "pecas": [],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 60.0,
+  "kbps": 465,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

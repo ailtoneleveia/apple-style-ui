@@ -1,0 +1,52 @@
+{
+ "id": "Db5RnJ4O-2P",
+ "url": "https://www.instagram.com/p/Db5RnJ4O-2P/",
+ "autor": "ping.motiondesign",
+ "data": "2026-08-11",
+ "curtidas": 158,
+ "comentarios": 1,
+ "legenda_post": "Cinematic SaaS product animation created by PING Studio.\n\nWe transformed a software interface into a high-end product video using UI animation, 3D motion design, and cinematic visual storytelling.\n\nWe create explainer videos, SaaS product videos, UI animations, and 3D motion design for tech companie",
+ "duracao_s": 10.7,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.65
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 921,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:saas launch video",
+  "busca:product launch animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

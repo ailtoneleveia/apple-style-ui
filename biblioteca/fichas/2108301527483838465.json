@@ -1,0 +1,38 @@
+{
+ "id": "2108301527483838465",
+ "url": "https://x.com/i/status/2108301527483838465",
+ "autor": "Solvaix",
+ "data": "2026-10-08",
+ "curtidas": 10,
+ "comentarios": 2,
+ "legenda_post": "20 RACKS. 1,440 GPUs. HOW MANY US HOMES WORTH OF POWER DOES THIS ROOM DRAW?  About 2,000.  3D build of a small liquid-cooled AI hall. Illustrative, 20 racks of NVL72-class (72 GPUs per rack).  Each rack pulls roughly 120 kW. A typical colocation rack is 8-15 kW. One of these = https://t.co/jA8WcYVGe",
+ "duracao_s": 35.1,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.77,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 509,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

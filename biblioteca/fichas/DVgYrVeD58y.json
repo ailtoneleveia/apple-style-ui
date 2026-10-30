@@ -1,0 +1,44 @@
+{
+ "id": "DVgYrVeD58y",
+ "url": "https://www.instagram.com/p/DVgYrVeD58y/",
+ "autor": "josephswork",
+ "data": "2026-03-05",
+ "curtidas": 16361,
+ "comentarios": 516,
+ "legenda_post": "This editing style is everywhere right now.\n\nClean white backgrounds.\nObject-centric scenes.\nMinimal typography.\nSubtle depth and texture.\n\nOnce you understand the structure behind it, you can recreate this style for almost any project.\n\nBackground → Object → Text → Depth.\n\nI just broke down the ent",
+ "duracao_s": 50.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "legenda_fala",
+  "numero_grande"
+ ],
+ "nota": 44,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.91
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 722,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

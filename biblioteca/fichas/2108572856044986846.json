@@ -1,0 +1,43 @@
+{
+ "id": "2108572856044986846",
+ "url": "https://x.com/i/status/2108572856044986846",
+ "autor": "vib3coded",
+ "data": "2026-10-09",
+ "curtidas": 90,
+ "comentarios": 27,
+ "legenda_post": "Opus, why is this cow running on its udder?! 😂🐄  Claude Opus 5.5 - one prompt, one very questionable cow  Asked for a plush cow. Got a milk delivery system with no need for legs  That tiny face and those bouncing udder-legs are something else. It looks completely ridiculous, https://t.co/GCK1tPowzd",
+ "duracao_s": 18.0,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 568,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 197,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

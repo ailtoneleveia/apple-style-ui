@@ -1,0 +1,38 @@
+{
+ "id": "2109146914000457838",
+ "url": "https://x.com/i/status/2109146914000457838",
+ "autor": "yolohair",
+ "data": "2026-10-11",
+ "curtidas": 2,
+ "comentarios": 2,
+ "legenda_post": "看完 Grok Bot 做的这条视频，我直接瘫在椅子上了 😱 现在默认Opus 5.5 干活，这条 AI 早报从选题、文案、配音到动画，全是它一个人做的，我只说了一句“每天给我做一期 AI 早报视频”，它就自己找新闻、写稿、配音，再写代码一帧帧画出这套剪纸动画 👇 审美各个方面这块断档领先 https://t.co/aaFBoBkcAa",
+ "duracao_s": 47.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 199,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

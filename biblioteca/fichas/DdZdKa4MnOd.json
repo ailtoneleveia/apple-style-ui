@@ -1,0 +1,52 @@
+{
+ "id": "DdZdKa4MnOd",
+ "url": "https://www.instagram.com/p/DdZdKa4MnOd/",
+ "autor": "shazyy.aep",
+ "data": "2026-09-17",
+ "curtidas": 178,
+ "comentarios": 60,
+ "legenda_post": "Comment \"APPLE \" and I’ll send you the Higgsfield link + the exact prompt I used.\n\nLess time rebuilding, more time designing. I used @higgsfield.ai’s AI Motion Designer to rework my existing After Effects project and kept the layers editable.\n\n#HiggsfieldCreator #AfterEffects #MotionDesign #MotionGr",
+ "duracao_s": 35.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "APPLE",
+ "acabamento_pro": 1.75,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.65
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 490,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:ui apple captions",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

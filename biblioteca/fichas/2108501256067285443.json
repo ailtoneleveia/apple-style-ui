@@ -1,0 +1,39 @@
+{
+ "id": "2108501256067285443",
+ "url": "https://x.com/i/status/2108501256067285443",
+ "autor": "keydol123",
+ "data": "2026-10-09",
+ "curtidas": 59,
+ "comentarios": 11,
+ "legenda_post": "GPT-6 Astra vs Claude Opus 5.5  Same prompt: \"Build an interactive keyboard made of honey.\"  GPT-6 made something that looks more like jelly   Opus actually nailed the honey look  Astra: $10.67 Opus: $12.48 Which one wins? https://t.co/vUD98S4sXT",
+ "duracao_s": 25.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [
+  "cursor",
+  "numero_grande"
+ ],
+ "nota": 45,
+ "som": null,
+ "qualidade": {
+  "largura": 424,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 133,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

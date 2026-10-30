@@ -1,0 +1,36 @@
+{
+ "id": "2103820321673675031",
+ "url": "https://x.com/i/status/2103820321673675031",
+ "autor": "iamtanzil_",
+ "data": "2026-09-26",
+ "curtidas": 7,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 + 1 prompt  try the prompt yourself👇 https://t.co/7mIybfSrqA",
+ "duracao_s": 12.2,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 556,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 406,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

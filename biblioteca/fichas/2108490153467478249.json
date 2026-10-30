@@ -1,0 +1,40 @@
+{
+ "id": "2108490153467478249",
+ "url": "https://x.com/i/status/2108490153467478249",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 2 models 🗼  \"Create the Eiffel Tower and its surroundings in Paris as a detailed interactive 3D browser scene\"  Claude Opus 5.5 · ~$4.53 · 49 min GPT-6 Astra · ~$4.10 · 22 min (~ = API-price estimate)  Which Paris would you visit? 👇 https://t.co/eYyo1VvLHj https://t.co/Bn7SMrLjcC",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.07,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 430,
+  "fps": 30.0,
+  "kbps": 218,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

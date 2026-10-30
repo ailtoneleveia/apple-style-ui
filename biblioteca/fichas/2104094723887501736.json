@@ -1,0 +1,41 @@
+{
+ "id": "2104094723887501736",
+ "url": "https://x.com/i/status/2104094723887501736",
+ "autor": "konstantinsaifo",
+ "data": "2026-09-27",
+ "curtidas": 8393,
+ "comentarios": 214,
+ "legenda_post": "I asked Claude Opus 5.5 to explain how a rocket engine works by building an interactive Raptor 3 you can take apart in your browser.  Cut it open, follow the oxygen and the methane through both turbopumps, then throttle it and watch the shock diamonds move. https://t.co/OSjvZ5KIlA",
+ "duracao_s": 34.7,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.48,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 61,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 249,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

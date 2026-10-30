@@ -1,0 +1,39 @@
+{
+ "id": "2108418928397500487",
+ "url": "https://x.com/i/status/2108418928397500487",
+ "autor": "arsbond_",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Claude Opus 5.5 cooked up this motion design🔥 https://t.co/qXSTdWjdHi",
+ "duracao_s": 17.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [
+  "iphone",
+  "numero_grande"
+ ],
+ "nota": 24,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 403,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

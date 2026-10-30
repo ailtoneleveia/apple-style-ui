@@ -1,0 +1,43 @@
+{
+ "id": "DeTiG79z7au",
+ "url": "https://www.instagram.com/p/DeTiG79z7au/",
+ "autor": "madebyveduboi",
+ "data": "2026-10-10",
+ "curtidas": 753,
+ "comentarios": 118,
+ "legenda_post": "AI will replace motion designers\nOr will it ?\n\nFollow @madebyveduboi \n\n[motion design, motion graphics, ai vs motion design, after effects , motion designer, ai, Astra, opus, Higgsfield]",
+ "duracao_s": 114.6,
+ "tipo": "pessoa_legenda_comum",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.46,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 25,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.99
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1046,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

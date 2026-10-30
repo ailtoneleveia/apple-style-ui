@@ -1,0 +1,41 @@
+{
+ "id": "2103831201114882277",
+ "url": "https://x.com/i/status/2103831201114882277",
+ "autor": "MisbahSy",
+ "data": "2026-09-26",
+ "curtidas": 9,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 is incredible at animations  tried the circulating prompt on @LiteLLM: \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\" https://t.co/VlQjWrAdrL",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [
+  "janela",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 301,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2103428454355980558",
+ "url": "https://x.com/i/status/2103428454355980558",
+ "autor": "loicRambo",
+ "data": "2026-09-25",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "just one shot the cycle of life in Opus 5.5 .   prompt 👉 \"make a dynamic 20-second motion graphics and animation video that shows what an incredible motion designer and animator you are, like it's your showreel for a résumé. make it about the cycle of life showing the same https://t.co/pIDWKk6rvz",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.9,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 427,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

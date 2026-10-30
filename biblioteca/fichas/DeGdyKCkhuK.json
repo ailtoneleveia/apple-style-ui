@@ -1,0 +1,50 @@
+{
+ "id": "DeGdyKCkhuK",
+ "url": "https://www.instagram.com/p/DeGdyKCkhuK/",
+ "autor": "dnyxstudioss",
+ "data": "2026-10-05",
+ "curtidas": 992,
+ "comentarios": 20,
+ "legenda_post": "concept reel for symphony",
+ "duracao_s": 13.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.68,
+ "pecas": [
+  "iphone",
+  "janela",
+  "icone_app",
+  "pessoa_no_cartao",
+  "mapa",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 4.94
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 29.97,
+  "kbps": 415,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:dnyxstudioss",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

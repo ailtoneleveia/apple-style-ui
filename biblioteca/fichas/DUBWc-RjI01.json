@@ -1,0 +1,49 @@
+{
+ "id": "DUBWc-RjI01",
+ "url": "https://www.instagram.com/p/DUBWc-RjI01/",
+ "autor": "dhruvinmotion",
+ "data": "2026-01-27",
+ "curtidas": 408,
+ "comentarios": 21,
+ "legenda_post": "Animations from a recent Spanish VSL ⚡️\n\n[vsl, motion graphics, video editing, motion design, apple style, saas]\n\n#motiongraphics #visualeffects #vsl #videoediting",
+ "duracao_s": 8.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "busca",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 98.4,
+  "onsets_per_s": 2.55
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 24.0,
+  "kbps": 1123,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

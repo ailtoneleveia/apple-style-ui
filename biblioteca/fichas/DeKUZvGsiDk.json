@@ -1,0 +1,47 @@
+{
+ "id": "DeKUZvGsiDk",
+ "url": "https://www.instagram.com/p/DeKUZvGsiDk/",
+ "autor": "motionloved",
+ "data": "2026-10-06",
+ "curtidas": 12791,
+ "comentarios": 2091,
+ "legenda_post": "Do you want a tutorial ? ⬇️\n\n#motiongraphics #claude #aftereffects #motiondesign",
+ "duracao_s": 14.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 2.06,
+ "pecas": [
+  "janela"
+ ],
+ "nota": 56,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 76.7,
+  "onsets_per_s": 2.91
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 29.89,
+  "kbps": 1279,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

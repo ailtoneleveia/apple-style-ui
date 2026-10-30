@@ -1,0 +1,39 @@
+{
+ "id": "2104525558050886066",
+ "url": "https://x.com/i/status/2104525558050886066",
+ "autor": "thinkszyg",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 2,
+ "legenda_post": "这支手机广告，是 Opus 5.5 写出来的。  Claude Code 在我 Mac 上当导演，带 6 个子代理：每一帧是 three.js 渲染的，配乐是 Python 合成的。没开剪辑软件，也没用生视频模型。  上一版被我吐槽像 PPT。我只拍板两次，一次说「音乐不好听」：它听不见，就写三首让我挑。  怎么做的： ① 先出 3 https://t.co/AlnLikbuGJ",
+ "duracao_s": 46.4,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.55,
+ "pecas": [
+  "iphone",
+  "numero_grande"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 136,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

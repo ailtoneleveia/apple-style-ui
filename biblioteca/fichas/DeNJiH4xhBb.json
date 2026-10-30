@@ -1,0 +1,52 @@
+{
+ "id": "DeNJiH4xhBb",
+ "url": "https://www.instagram.com/p/DeNJiH4xhBb/",
+ "autor": "edita.visuals",
+ "data": "2026-10-07",
+ "curtidas": 16,
+ "comentarios": 11,
+ "legenda_post": "Want your footage edited like this? \nSend me a DM! 📩\n\nCan you believe Opus 5.5 made these videos? 🤯\n\nComment “CLAUDE” below, and I’ll send you the full guide on how to make the same edit!",
+ "duracao_s": 14.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CLAUDE",
+ "acabamento_pro": 1.64,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.71
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 126,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

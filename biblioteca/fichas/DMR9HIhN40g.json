@@ -1,0 +1,47 @@
+{
+ "id": "DMR9HIhN40g",
+ "url": "https://www.instagram.com/p/DMR9HIhN40g/",
+ "autor": "voicu.design",
+ "data": "2025-07-19",
+ "curtidas": 463,
+ "comentarios": 14,
+ "legenda_post": "The all new @figma glass💧 #figmadesign #liquidglass #ios26 #designchef #uidesignpatterns",
+ "duracao_s": 9.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 1632,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 126,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:ios ui animation",
+  "busca:liquid glass animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,41 @@
+{
+ "id": "2104827314400026936",
+ "url": "https://x.com/i/status/2104827314400026936",
+ "autor": "influencer_seo",
+ "data": "2026-09-29",
+ "curtidas": 16,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 is insanely good at motion design!!  prompt: make a dynamic 15-second motion graphics video for @fal that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out. Use the fal API.  This is one shot, no edits https://t.co/ipXjr82YzP",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.29,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "pilha_cartoes",
+  "vidro"
+ ],
+ "nota": 19,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 378,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

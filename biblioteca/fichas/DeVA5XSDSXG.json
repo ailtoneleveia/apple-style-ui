@@ -1,0 +1,43 @@
+{
+ "id": "DeVA5XSDSXG",
+ "url": "https://www.instagram.com/p/DeVA5XSDSXG/",
+ "autor": "charliehills",
+ "data": "2026-10-10",
+ "curtidas": 159,
+ "comentarios": 326,
+ "legenda_post": "Claude just dropped mods. Here are 3 ways to use them:\n\n1. Switch on You Should Know. It's built in, but off by default. A second Claude watches the first one work and flags what it missed.\n\n2. Make Claude prove it's finished. Add a panel that only ticks a job off when Claude shows proof. I'd asked ",
+ "duracao_s": 49.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "MODS",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "imessage",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 89,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

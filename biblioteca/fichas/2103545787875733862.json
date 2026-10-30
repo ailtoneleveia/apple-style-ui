@@ -1,0 +1,47 @@
+{
+ "id": "2103545787875733862",
+ "url": "https://x.com/i/status/2103545787875733862",
+ "autor": "macrohou",
+ "data": "2026-09-25",
+ "curtidas": 7,
+ "comentarios": 1,
+ "legenda_post": "RIP motion designers. Absolutely blown away by the visual and sound design from Opus 5.5.  Experimenting with potential launch videos for @getrenapp with one-shot prompts using Opus 5.5.  Prompt:  \"[gave access to Ren repo] Make a dynamic 30-second motion graphics video for Ren https://t.co/9JxGKIDc",
+ "duracao_s": 29.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.04,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 72,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 120.1,
+  "onsets_per_s": 4.17
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 2263,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

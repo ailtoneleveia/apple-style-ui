@@ -1,0 +1,48 @@
+{
+ "id": "DMIZua2taax",
+ "url": "https://www.instagram.com/p/DMIZua2taax/",
+ "autor": "creatoroly",
+ "data": "2025-07-15",
+ "curtidas": 1790,
+ "comentarios": 24,
+ "legenda_post": "count the bounces 🪶\n\n#motiondesign #aftereffects #animations #bounce",
+ "duracao_s": 9.5,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.35,
+ "pecas": [
+  "notificacao",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 90.0,
+  "onsets_per_s": 3.61
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 145,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

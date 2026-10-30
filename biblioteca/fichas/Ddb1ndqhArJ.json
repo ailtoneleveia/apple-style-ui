@@ -1,0 +1,47 @@
+{
+ "id": "Ddb1ndqhArJ",
+ "url": "https://www.instagram.com/p/Ddb1ndqhArJ/",
+ "autor": "creatoroly",
+ "data": "2026-09-18",
+ "curtidas": 572,
+ "comentarios": 9,
+ "legenda_post": "it was fun working on @shotbaseapp 💙",
+ "duracao_s": 23.2,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.28,
+ "pecas": [
+  "cursor",
+  "janela",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 129.7,
+  "onsets_per_s": 5.71
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 834,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

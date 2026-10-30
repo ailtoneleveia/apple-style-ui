@@ -1,0 +1,43 @@
+{
+ "id": "Dc8RepUhatT",
+ "url": "https://www.instagram.com/p/Dc8RepUhatT/",
+ "autor": "charliehills",
+ "data": "2026-09-06",
+ "curtidas": 145,
+ "comentarios": 74,
+ "legenda_post": "GPT-6 Astra landed and Codex will now bring your whole Claude Code setup across for you.\n\nFour minutes. Three steps.\n\n1. Open Codex, then Settings, then Import, then Claude Code. It scans your machine and shows you what it found. Tick everything (nothing gets deleted). You get a copy, Claude Code ca",
+ "duracao_s": 63.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "CODEX",
+ "acabamento_pro": 0.93,
+ "pecas": [
+  "cursor",
+  "janela",
+  "icone_app",
+  "legenda_fala",
+  "busca",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 204,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

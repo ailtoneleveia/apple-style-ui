@@ -1,0 +1,40 @@
+{
+ "id": "C9e9UujNZdn",
+ "url": "https://www.instagram.com/p/C9e9UujNZdn/",
+ "autor": "creatoroly",
+ "data": "2024-07-16",
+ "curtidas": 235,
+ "comentarios": 68,
+ "legenda_post": "- You‘re so close to get viral.\n\nComment \"LEARN\" to start creating this type of motion desings. 📣\n\n#inspiration #motiondesign #editing #animations #motivation",
+ "duracao_s": 10.8,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "LEARN",
+ "acabamento_pro": 0.71,
+ "pecas": [],
+ "nota": 27,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 72.0,
+  "onsets_per_s": 3.38
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 244,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

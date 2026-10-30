@@ -1,0 +1,46 @@
+{
+ "id": "DEimBrrt7Bl",
+ "url": "https://www.instagram.com/p/DEimBrrt7Bl/",
+ "autor": "creatoroly",
+ "data": "2025-01-07",
+ "curtidas": 1606,
+ "comentarios": 9,
+ "legenda_post": "join @editucation",
+ "duracao_s": 12.0,
+ "tipo": "bastidor_editor",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 0.96,
+ "pecas": [
+  "imessage",
+  "janela",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 105.4,
+  "onsets_per_s": 6.37
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 713,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

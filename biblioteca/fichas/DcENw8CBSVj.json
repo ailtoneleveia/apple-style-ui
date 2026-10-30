@@ -1,0 +1,53 @@
+{
+ "id": "DcENw8CBSVj",
+ "url": "https://www.instagram.com/p/DcENw8CBSVj/",
+ "autor": "marioo__________",
+ "data": "2026-08-15",
+ "curtidas": 465,
+ "comentarios": 1000,
+ "legenda_post": "Comenta aqui \"Apple\" que eu te mando!",
+ "duracao_s": 39.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "presente",
+ "palavra": "",
+ "acabamento_pro": 0.88,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.45
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 1197,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:ui apple captions",
+  "busca:apple ui animation",
+  "busca:apple ui style",
+  "busca:apple motion design",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

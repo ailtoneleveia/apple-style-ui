@@ -1,0 +1,43 @@
+{
+ "id": "DdyxmdOsZJV",
+ "url": "https://www.instagram.com/p/DdyxmdOsZJV/",
+ "autor": "edita.visuals",
+ "data": "2026-09-27",
+ "curtidas": 14,
+ "comentarios": 4,
+ "legenda_post": "Want your video edited like this? \nSend me a DM!🙂\n.\n.\n🚀 Want to practice this style? - Comment “RAW”\n.\n.\n.\nAnd I’ll share the raw video so you can create your own version!",
+ "duracao_s": 14.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "arquivo_projeto",
+ "palavra": "RAW",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.17
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 136,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

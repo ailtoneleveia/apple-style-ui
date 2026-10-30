@@ -1,0 +1,36 @@
+{
+ "id": "2102971287224135914",
+ "url": "https://x.com/i/status/2102971287224135914",
+ "autor": "FornYapayZeka",
+ "data": "2026-09-24",
+ "curtidas": 25,
+ "comentarios": 1,
+ "legenda_post": "OPUS 5.5 BUNU sadece KOD ile yaptı.   Ormanın üstünde bir göktaşı patlıyor. Şok dalgası yayıldıkça 240 bin ağacın hangisinin devrileceği basınç modeliyle hesaplanıyor, sonra uydu görünümünde hasar haritası çıkıyor.    Prompt 👇 https://t.co/QrwOcvqWf3",
+ "duracao_s": 35.2,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.23,
+ "pecas": [],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 196,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

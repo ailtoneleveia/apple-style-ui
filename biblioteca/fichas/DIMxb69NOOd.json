@@ -1,0 +1,48 @@
+{
+ "id": "DIMxb69NOOd",
+ "url": "https://www.instagram.com/p/DIMxb69NOOd/",
+ "autor": "creatoroly",
+ "data": "2025-04-08",
+ "curtidas": 7884,
+ "comentarios": 118,
+ "legenda_post": "wallet, mail and music 💳 ✉️ 🎵",
+ "duracao_s": 11.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "imessage",
+  "icone_app",
+  "numero_grande",
+  "grafico",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 72,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.1,
+  "onsets_per_s": 4.59
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 501,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

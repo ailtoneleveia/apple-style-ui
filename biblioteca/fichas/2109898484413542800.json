@@ -1,0 +1,44 @@
+{
+ "id": "2109898484413542800",
+ "url": "https://x.com/i/status/2109898484413542800",
+ "autor": "numaausaumon",
+ "data": "2026-10-13",
+ "curtidas": 13,
+ "comentarios": 2,
+ "legenda_post": "AWS Cloudfront cache by Jig + Opus 5.5  Prompt and link below 👇 https://t.co/hSdbJNJpLx",
+ "duracao_s": 24.5,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.88,
+ "pecas": [
+  "cursor",
+  "janela",
+  "botao_pilula"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.96
+ },
+ "qualidade": {
+  "largura": 464,
+  "altura": 360,
+  "fps": 56.2,
+  "kbps": 83,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

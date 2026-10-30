@@ -1,0 +1,41 @@
+{
+ "id": "2108932593911816392",
+ "url": "https://x.com/i/status/2108932593911816392",
+ "autor": "gavinpurcell",
+ "data": "2026-10-10",
+ "curtidas": 56,
+ "comentarios": 6,
+ "legenda_post": "the new claude motion artifact + opus 5.5 is truly insane for data viz stuff  i asked it to look at the entire history of movies and show me (visually) how genres have changed over the last 100 years  worked for seven hours and returned this https://t.co/KaX99LQCOe",
+ "duracao_s": 46.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.74,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "grafico",
+  "botao_pilula"
+ ],
+ "nota": 57,
+ "som": null,
+ "qualidade": {
+  "largura": 622,
+  "altura": 360,
+  "fps": 48.26,
+  "kbps": 243,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

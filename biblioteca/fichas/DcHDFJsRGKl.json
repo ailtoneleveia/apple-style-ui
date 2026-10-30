@@ -1,0 +1,47 @@
+{
+ "id": "DcHDFJsRGKl",
+ "url": "https://www.instagram.com/p/DcHDFJsRGKl/",
+ "autor": "adrimotions",
+ "data": "2026-08-16",
+ "curtidas": 109,
+ "comentarios": 4,
+ "legenda_post": "pov: you spent 3 hours in ae 🫪",
+ "duracao_s": 16.6,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "iphone",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 38,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.2,
+  "onsets_per_s": 4.93
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 805,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

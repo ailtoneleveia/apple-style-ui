@@ -1,0 +1,46 @@
+{
+ "id": "DWyU4zyk0TQ",
+ "url": "https://www.instagram.com/p/DWyU4zyk0TQ/",
+ "autor": "nishvisualz",
+ "data": "2026-04-06",
+ "curtidas": 1109,
+ "comentarios": 30,
+ "legenda_post": "Quick one on @chatgpt \n\nHow it is? Let me know.\n\nFollow @nishvisualz \n\n[motiongraphics, ui animation, chatgpt, freelance, after effects, apple ui animation, saas, project file]",
+ "duracao_s": 15.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.13,
+ "pecas": [
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.08
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 310,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:nishvisualz",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

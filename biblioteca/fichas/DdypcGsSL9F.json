@@ -1,0 +1,47 @@
+{
+ "id": "DdypcGsSL9F",
+ "url": "https://www.instagram.com/p/DdypcGsSL9F/",
+ "autor": "dopemotionzone",
+ "data": "2026-09-27",
+ "curtidas": 800,
+ "comentarios": 664,
+ "legenda_post": "Comment “ASTRA” below ⬇️\nand grab this launch style.\n\n⚡ What you’ll get:\n\n🎵 Launch-style music\n🔊 SFX for cinematic moments\n▶️ YouTube tutorials to learn the effects used in the edit\n📌 Pinterest frames for visual inspiration\n🎬 Launch video references & creative direction\n\nEverything you need to study",
+ "duracao_s": 39.5,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "ASTRA",
+ "acabamento_pro": 1.8,
+ "pecas": [
+  "cursor",
+  "janela",
+  "legenda_fala",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.09
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 975,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:dope",
+  "perfil:dopemotionzone"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

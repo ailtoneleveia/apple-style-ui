@@ -1,0 +1,36 @@
+{
+ "id": "2104410894167916709",
+ "url": "https://x.com/i/status/2104410894167916709",
+ "autor": "abxda",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "Avance del modelado 3D de un Toyota Prius 2027 🇲🇽: se desarma en 261 piezas, se vuelve a armar y sale rodando del arcoíris al Mostaza oficial. Aún puede mejorar 😅 Hecho en Blender por 3 IAs lideradas por Claude Opus 5.5 (+ GPT-Astra y Gemini). #Prius2027 #Blender #IA https://t.co/GfQ2FBCBrq",
+ "duracao_s": 29.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.03,
+ "pecas": [],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 202,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

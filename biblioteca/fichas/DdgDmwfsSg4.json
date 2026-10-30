@@ -1,0 +1,48 @@
+{
+ "id": "DdgDmwfsSg4",
+ "url": "https://www.instagram.com/p/DdgDmwfsSg4/",
+ "autor": "motionmoly",
+ "data": "2026-09-20",
+ "curtidas": 11,
+ "comentarios": 10,
+ "legenda_post": "Comment “tut” for the complete tutorial.",
+ "duracao_s": 5.1,
+ "tipo": "ui_animacao",
+ "fundo": "wallpaper_ios_macos",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "TUT",
+ "acabamento_pro": 1.27,
+ "pecas": [
+  "janela",
+  "botao_pilula",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 46,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 150.2,
+  "onsets_per_s": 4.59
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 450,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

@@ -1,0 +1,47 @@
+{
+ "id": "Det_wSMtGUe",
+ "url": "https://www.instagram.com/p/Det_wSMtGUe/",
+ "autor": "edita.visuals",
+ "data": "2026-10-20",
+ "curtidas": 184,
+ "comentarios": 410,
+ "legenda_post": "Want your footage edited like this? Send me a DM! 📩\n\nI didn’t touch a single keyframe.🤯\nEvery movement, every transition, every sound - Claude Opus 5.5.🙂",
+ "duracao_s": 28.2,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.49,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.12
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 109,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:edita.visuals"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

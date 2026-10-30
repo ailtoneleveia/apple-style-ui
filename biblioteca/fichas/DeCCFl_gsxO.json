@@ -1,0 +1,45 @@
+{
+ "id": "DeCCFl_gsxO",
+ "url": "https://www.instagram.com/p/DeCCFl_gsxO/",
+ "autor": "vatnfx",
+ "data": "2026-10-03",
+ "curtidas": 910,
+ "comentarios": 14,
+ "legenda_post": "- puddl. concept - \n\nsound on for this one 🔊💧\n\n#animation #motiondesign #satisfying #uidesign",
+ "duracao_s": 11.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.81,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 1.54
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 321,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

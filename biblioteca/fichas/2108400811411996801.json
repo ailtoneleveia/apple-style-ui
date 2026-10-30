@@ -1,0 +1,44 @@
+{
+ "id": "2108400811411996801",
+ "url": "https://x.com/i/status/2108400811411996801",
+ "autor": "fedemas",
+ "data": "2026-10-09",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Still amazed that Opus 5.5 built this entire keyboard from a single prompt.  I asked it to build this for the Keyameleon website: → Recreate a MacBook keyboard → Add key sounds → Add a split-flap animation when the keycaps change  It got everything right on the first try. No https://t.co/9ev4iqU4ib",
+ "duracao_s": 15.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.91,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "janela",
+  "botao_pilula",
+  "busca",
+  "teclado",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 218,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2105051697525686340",
+ "url": "https://x.com/i/status/2105051697525686340",
+ "autor": "hii_studio_jp",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "「メニューをおしゃれで分かりやすく。背景はリアルでクールに」 Opus 5.5 に頼んだのはこれだけ。  白い設定画面が暗い舞台とガラスカードに。 背景としてBlenderで描かれたのは、畳の間の戦国、夕暮れの都市、ハニカム柄のミツバチ。  畳の敷き方から都市の灯りまで、この表現力はすごいですね。 https://t.co/yHivby2RuA",
+ "duracao_s": 14.5,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "mapa"
+ ],
+ "nota": 37,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 245,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

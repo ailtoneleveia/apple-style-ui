@@ -1,0 +1,43 @@
+{
+ "id": "2104872812674793697",
+ "url": "https://x.com/i/status/2104872812674793697",
+ "autor": "mira_ai_base",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5で 何が変わったか動画にして とお願いしました。 https://t.co/qUGtmccO7y",
+ "duracao_s": 47.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 62,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 143.1,
+  "onsets_per_s": 5.38
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 72,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

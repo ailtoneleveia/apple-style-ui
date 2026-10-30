@@ -1,0 +1,39 @@
+{
+ "id": "2104827072283849181",
+ "url": "https://x.com/i/status/2104827072283849181",
+ "autor": "coolbat1999",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "分别用GPT Astra,Grokbot,Claude sonnet5.5,Claude Opus5.5试了一下最近热门的一个提示词：make a dynamic 30-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all https://t.co/e17QNClwmr",
+ "duracao_s": 30.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.14,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 411,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

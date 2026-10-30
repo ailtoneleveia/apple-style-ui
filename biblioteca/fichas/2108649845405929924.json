@@ -1,0 +1,44 @@
+{
+ "id": "2108649845405929924",
+ "url": "https://x.com/i/status/2108649845405929924",
+ "autor": "vib3coded",
+ "data": "2026-10-09",
+ "curtidas": 250,
+ "comentarios": 28,
+ "legenda_post": "The jelly world just got its own kingdom 🏰🍮  Claude Opus 5.5 vs GPT-6 Astra - same prompt, two tiny jelly kingdoms  Opus wins this one for me. I prefer its water physics and waterfall - the splashes and spreading ripples make the whole scene feel more alive. A little fairytale https://t.co/aVUTvGCwX",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.33,
+ "pecas": [
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 65,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 203,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

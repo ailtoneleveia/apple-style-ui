@@ -1,0 +1,45 @@
+{
+ "id": "DcgfCt_Df9l",
+ "url": "https://www.instagram.com/p/DcgfCt_Df9l/",
+ "autor": "charliehills",
+ "data": "2026-08-26",
+ "curtidas": 272,
+ "comentarios": 684,
+ "legenda_post": "Someone has just built the most powerful Claude skill I have ever seen, and almost nobody is using it.\n\nAn engineer at Vercel built it, and it takes one command to set up.\n\nIt sits on top of a directory with over a million installs behind it. Instead of going through that whole list yourself, you ju",
+ "duracao_s": 36.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "SKILL",
+ "acabamento_pro": 1.15,
+ "pecas": [
+  "cursor",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 165,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

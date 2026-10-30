@@ -1,0 +1,36 @@
+{
+ "id": "2108788464909218140",
+ "url": "https://x.com/i/status/2108788464909218140",
+ "autor": "mikenevermiss",
+ "data": "2026-10-10",
+ "curtidas": 51,
+ "comentarios": 21,
+ "legenda_post": "“build a video representation of what your model opus 5.5 looks like” https://t.co/oMDcTO2znE",
+ "duracao_s": 16.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.65,
+ "pecas": [],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 287,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,45 @@
+{
+ "id": "Dd_TCekN4tP",
+ "url": "https://www.instagram.com/p/Dd_TCekN4tP/",
+ "autor": "flutteryourway",
+ "data": "2026-10-02",
+ "curtidas": 176,
+ "comentarios": 2,
+ "legenda_post": "Rate this one to ten, no pressure!",
+ "duracao_s": 29.5,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.76,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "mapa"
+ ],
+ "nota": 67,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.62
+ },
+ "qualidade": {
+  "largura": 1164,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 264,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

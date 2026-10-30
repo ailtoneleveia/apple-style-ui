@@ -1,0 +1,44 @@
+{
+ "id": "2108514670411907296",
+ "url": "https://x.com/i/status/2108514670411907296",
+ "autor": "zyroxxx111",
+ "data": "2026-10-09",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "I just wanted a peaceful pond. Now the fish are having an earthquake and the frog has questions for the landlord 🐸😭  Asked Claude Opus 5.5 and GPT-6 Astra to make a jelly koi pond  Opus made an entire gummy aquarium for $12.38. Thick, transparent, little pebbles inside. Give it https://t.co/s5Xu7iXG",
+ "duracao_s": 20.9,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.84,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 54,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 5.73
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 400,
+  "fps": 60.0,
+  "kbps": 170,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2104434742959755463",
+ "url": "https://x.com/i/status/2104434742959755463",
+ "autor": "RAJKATAJJ",
+ "data": "2026-09-28",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "30+ million tokens 36 hours of non stop claude opus 5.5 (still working) THIS IS THE RESULT!!  A hyperrealistic landslide escape game. https://t.co/ms3e5mN6xH",
+ "duracao_s": 19.3,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.93,
+ "pecas": [
+  "legenda_fala",
+  "vidro"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 728,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 606,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

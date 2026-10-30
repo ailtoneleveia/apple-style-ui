@@ -1,0 +1,54 @@
+{
+ "id": "DcBntIkxL0J",
+ "url": "https://www.instagram.com/p/DcBntIkxL0J/",
+ "autor": "adrimotions",
+ "data": "2026-08-14",
+ "curtidas": 1292,
+ "comentarios": 48,
+ "legenda_post": "Wise ui animation",
+ "duracao_s": 10.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.14,
+ "pecas": [
+  "cursor",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.2,
+  "onsets_per_s": 4.89
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 346,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:ui apple captions",
+  "busca:apple style animation",
+  "busca:apple ui style",
+  "busca:appleui",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

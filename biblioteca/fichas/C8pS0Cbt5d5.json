@@ -1,0 +1,40 @@
+{
+ "id": "C8pS0Cbt5d5",
+ "url": "https://www.instagram.com/p/C8pS0Cbt5d5/",
+ "autor": "creatoroly",
+ "data": "2024-06-25",
+ "curtidas": 1318,
+ "comentarios": 17,
+ "legenda_post": "believe and it will come true.\n\n#inspiration #mindset #animations #visuals",
+ "duracao_s": 6.4,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.64,
+ "pecas": [],
+ "nota": 34,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 117.5,
+  "onsets_per_s": 2.54
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 282,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

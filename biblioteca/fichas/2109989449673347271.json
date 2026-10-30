@@ -1,0 +1,38 @@
+{
+ "id": "2109989449673347271",
+ "url": "https://x.com/i/status/2109989449673347271",
+ "autor": "konstantinsaifo",
+ "data": "2026-10-13",
+ "curtidas": 95,
+ "comentarios": 8,
+ "legenda_post": "Claude Opus 5.5 manufacturing test using @threejs:   I asked it to research aircraft manufacturing, study @AirsupHQ lean production books, design a functional Texas jet plant, build a live 3D simulation, test it, and deploy it.  https://t.co/3PBf09whmu https://t.co/H8m8UtUSm5",
+ "duracao_s": 28.6,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.36,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 360,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

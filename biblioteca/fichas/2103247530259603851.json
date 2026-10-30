@@ -1,0 +1,44 @@
+{
+ "id": "2103247530259603851",
+ "url": "https://x.com/i/status/2103247530259603851",
+ "autor": "1stnoel_",
+ "data": "2026-09-24",
+ "curtidas": 5,
+ "comentarios": 3,
+ "legenda_post": "I built this language learning app a few weeks ago, Fable &amp; Astra, and this what Opus 5.5 gave me:   Prompt:  Make a 1-minute educational video about https://t.co/cgU4RNuz2s with synthesized voice narration.  Claude Opus 5.5 (Extra)  https://t.co/WOqWMnya11 https://t.co/cMhhOVMYI9",
+ "duracao_s": 60.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.65,
+ "pecas": [
+  "iphone",
+  "icone_app",
+  "print_site"
+ ],
+ "nota": 66,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.6
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 133,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

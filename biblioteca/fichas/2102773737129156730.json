@@ -1,0 +1,36 @@
+{
+ "id": "2102773737129156730",
+ "url": "https://x.com/i/status/2102773737129156730",
+ "autor": "MustaphaFenzar",
+ "data": "2026-09-23",
+ "curtidas": 3,
+ "comentarios": 2,
+ "legenda_post": "J’ai juste mis ce prompt :  « apparement tu es bon en stop Motion, prouve le moi en vidéo de 20 secondes. Tu as le champ libre »  Merci opus 5.5 https://t.co/q9NhJxC5KH",
+ "duracao_s": 20.1,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.54,
+ "pecas": [],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 209,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

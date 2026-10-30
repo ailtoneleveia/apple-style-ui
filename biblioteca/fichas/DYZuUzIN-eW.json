@@ -1,0 +1,46 @@
+{
+ "id": "DYZuUzIN-eW",
+ "url": "https://www.instagram.com/p/DYZuUzIN-eW/",
+ "autor": "creatoroly",
+ "data": "2026-05-16",
+ "curtidas": 2465,
+ "comentarios": 43,
+ "legenda_post": "Undefined AI from my head",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.45,
+ "pecas": [
+  "notificacao",
+  "busca",
+  "emoji_3d",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 48,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 151.0,
+  "onsets_per_s": 3.01
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 225,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

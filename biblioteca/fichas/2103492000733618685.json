@@ -1,0 +1,43 @@
+{
+ "id": "2103492000733618685",
+ "url": "https://x.com/i/status/2103492000733618685",
+ "autor": "andginja",
+ "data": "2026-09-25",
+ "curtidas": 5,
+ "comentarios": 1,
+ "legenda_post": "I gave Claude Opus 5.5 one prompt: make a 15-second showreel about my website. Go all out.  No templates. No stock. I didn't touch a frame.  It cut my own footage, animated everything in code, and composed the music from scratch. Is this AGI? https://t.co/eNg93Opw3T",
+ "duracao_s": 15.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.53,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "mapa",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 336,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

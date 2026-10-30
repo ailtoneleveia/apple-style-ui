@@ -1,0 +1,53 @@
+{
+ "id": "DTgSonnCErw",
+ "url": "https://www.instagram.com/p/DTgSonnCErw/",
+ "autor": "vitalyframes",
+ "data": "2026-01-14",
+ "curtidas": 248,
+ "comentarios": 9,
+ "legenda_post": "Day one of learning Apple style\n\n#aftereffects #edit #motiongraphic #appleui",
+ "duracao_s": 11.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.4,
+  "onsets_per_s": 4.77
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 293,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:ui apple captions",
+  "busca:apple ui style",
+  "busca:appleui"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

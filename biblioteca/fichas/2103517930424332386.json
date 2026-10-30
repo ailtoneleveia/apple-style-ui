@@ -1,0 +1,38 @@
+{
+ "id": "2103517930424332386",
+ "url": "https://x.com/i/status/2103517930424332386",
+ "autor": "itisRazak",
+ "data": "2026-09-25",
+ "curtidas": 159,
+ "comentarios": 6,
+ "legenda_post": "WTF?  Made with single prompt claude OPUS 5.5  Prompt:- “Research Distilbook.Make a dynamic 40-second motion graphics video on Distilbook that shows what an incredible motion designer you are. like it's your showreel - Go all out.” https://t.co/EG0xGUtbuH",
+ "duracao_s": 40.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.32,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 50,
+ "som": null,
+ "qualidade": {
+  "largura": 636,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 475,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

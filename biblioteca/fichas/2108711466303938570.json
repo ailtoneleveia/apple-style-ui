@@ -1,0 +1,39 @@
+{
+ "id": "2108711466303938570",
+ "url": "https://x.com/i/status/2108711466303938570",
+ "autor": "hunter_spatial",
+ "data": "2026-10-10",
+ "curtidas": 39,
+ "comentarios": 6,
+ "legenda_post": "Apple Vision Pro simulations are about to go next level.   Opus 5.5 was a major unlock for building realistic simulations using native Swift RealityKit.   Check out this workshop simulation - where I told Claude to build a 3d demonstration of incorrect saw usage. https://t.co/3DGHxnJG9Q",
+ "duracao_s": 31.6,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.76,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 19.98,
+  "kbps": 226,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

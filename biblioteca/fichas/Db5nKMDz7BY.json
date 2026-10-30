@@ -1,0 +1,43 @@
+{
+ "id": "Db5nKMDz7BY",
+ "url": "https://www.instagram.com/p/Db5nKMDz7BY/",
+ "autor": "mojtabas.portfolio",
+ "data": "2026-08-11",
+ "curtidas": 177,
+ "comentarios": 2,
+ "legenda_post": "Ever wondered how this interactive hover effect is made? 👀\n\nIn this tutorial, I’ll show you how to create this smooth interactive UI animation in After Effects — where the elements dynamically react to your mouse movement.\n\nPerfect for SaaS websites, UI animations & product demos.\n\n🎬 Watch the full ",
+ "duracao_s": 21.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.09,
+ "pecas": [
+  "cursor",
+  "botao_pilula"
+ ],
+ "nota": 40,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 103.5,
+  "onsets_per_s": 5.25
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 433,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

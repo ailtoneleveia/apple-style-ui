@@ -1,0 +1,36 @@
+{
+ "id": "2105086526619091374",
+ "url": "https://x.com/i/status/2105086526619091374",
+ "autor": "Lonely8patients",
+ "data": "2026-09-30",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Claude Opus 5.5生成短片：  《月光小星》 一颗流星坠入夜海，变成会发光的小星星；它沉入青绿色的海底，路过的海葵被它一朵朵点亮，最后一只海龟驮着它游回海面，它飞回月亮旁边，重新成为天上的星星。  配乐是原创的凯尔特摇篮曲风格（D 多利亚调式，结尾转 D https://t.co/k5f0eKpGvZ",
+ "duracao_s": 60.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "sons_musica",
+ "palavra": "",
+ "acabamento_pro": 1.98,
+ "pecas": [],
+ "nota": 44,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 24.0,
+  "kbps": 148,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

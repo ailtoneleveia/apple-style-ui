@@ -1,0 +1,39 @@
+{
+ "id": "2103540288136315331",
+ "url": "https://x.com/i/status/2103540288136315331",
+ "autor": "goofyninjaaa",
+ "data": "2026-09-25",
+ "curtidas": 16,
+ "comentarios": 7,
+ "legenda_post": "Esta app probó 3,932 posiciones de una cama matrimonial hasta encontrar dónde cabe.  La hizo Claude Opus 5.5 con un prompt mío: cuarto de 3.00 x 3.40 m, puerta de 80 cm, un clóset de 1.20 x 0.60 y la cama de 1.40 x 1.90.  Armó el plano a escala y el cuarto en 3D al lado, y los https://t.co/pJesc4dxQ",
+ "duracao_s": 42.0,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.98,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 140,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,46 @@
+{
+ "id": "DZslnmgMQkc",
+ "url": "https://www.instagram.com/p/DZslnmgMQkc/",
+ "autor": "1ucavfx",
+ "data": "2026-06-17",
+ "curtidas": 4800,
+ "comentarios": 87,
+ "legenda_post": "I created a concept animation for Spotify!\n\nThe goal was to to visualise how something like this could feel engaging and encourage users to come back each week!\n\n@spotify @spotify.design \n\nCurrently available for freelance animations, DM me \"MOTION\" if you want something like this!\n\n#motiondesign #u",
+ "duracao_s": 13.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "neon",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "curso_servico",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [
+  "icone_app",
+  "botao_pilula"
+ ],
+ "nota": 34,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 154.2,
+  "onsets_per_s": 5.6
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 568,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

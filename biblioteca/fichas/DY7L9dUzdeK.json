@@ -1,0 +1,47 @@
+{
+ "id": "DY7L9dUzdeK",
+ "url": "https://www.instagram.com/p/DY7L9dUzdeK/",
+ "autor": "madebyveduboi",
+ "data": "2026-05-29",
+ "curtidas": 1222,
+ "comentarios": 48,
+ "legenda_post": "Another one wrapped up recently 😪\n\nFollow @madebyveduboi \n\n[motion graphics, apple ui style, apple animation, after effects, SaaS, freelance, project files]",
+ "duracao_s": 39.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.51,
+ "pecas": [
+  "cursor",
+  "pessoa_no_cartao",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 120.0,
+  "onsets_per_s": 4.61
+ },
+ "qualidade": {
+  "largura": 1276,
+  "altura": 718,
+  "fps": 29.97,
+  "kbps": 500,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:vedu",
+  "perfil:madebyveduboi"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

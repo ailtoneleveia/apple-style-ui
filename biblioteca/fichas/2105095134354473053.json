@@ -1,0 +1,36 @@
+{
+ "id": "2105095134354473053",
+ "url": "https://x.com/i/status/2105095134354473053",
+ "autor": "grmchn4ai",
+ "data": "2026-09-30",
+ "curtidas": 63,
+ "comentarios": 2,
+ "legenda_post": "GPT-6.1 Sol vs Opus 5.5 3Dモデリング対決。ドパドリルのマスコット「ドパキチ」を3Dモデル化してもらった。首周りの形、横から見た時の丸さ、足の処理でOpusの方が良い。あと同じ「3Dモデル化して」だけの指示で、トゥーン化と瞬きまで気の利いたOpusの方が好印象。内耳の色はおかしいが。 https://t.co/vTx8LXGbJY",
+ "duracao_s": 4.0,
+ "tipo": "outro",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.09,
+ "pecas": [],
+ "nota": 54,
+ "som": null,
+ "qualidade": {
+  "largura": 496,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 247,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,48 @@
+{
+ "id": "DdEb8JiOVoi",
+ "url": "https://www.instagram.com/p/DdEb8JiOVoi/",
+ "autor": "nickmotionstudio",
+ "data": "2026-09-09",
+ "curtidas": 231,
+ "comentarios": 9,
+ "legenda_post": "Spec AD for @notionhq \ndo you like it? \n\n#motiongraphics #edit #motiondesign #aftereffects #motion",
+ "duracao_s": 17.1,
+ "tipo": "bastidor_editor",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.06,
+ "pecas": [
+  "janela",
+  "busca"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 105.1,
+  "onsets_per_s": 3.64
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 930,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:ios ui animation",
+  "busca:apple style edit",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

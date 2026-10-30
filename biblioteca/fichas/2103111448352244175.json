@@ -1,0 +1,39 @@
+{
+ "id": "2103111448352244175",
+ "url": "https://x.com/i/status/2103111448352244175",
+ "autor": "MicheleHarmonic",
+ "data": "2026-09-24",
+ "curtidas": 19,
+ "comentarios": 1,
+ "legenda_post": "I made this with one prompt using Opus 5.5  \"Make a GravityDEX x Gojo Satoru edit that goes hard\"  We're so back https://t.co/Gin78xe7p8",
+ "duracao_s": 38.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.29,
+ "pecas": [
+  "icone_app",
+  "numero_grande"
+ ],
+ "nota": 19,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 275,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

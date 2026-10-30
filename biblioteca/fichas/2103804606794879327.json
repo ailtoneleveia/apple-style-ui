@@ -1,0 +1,36 @@
+{
+ "id": "2103804606794879327",
+ "url": "https://x.com/i/status/2103804606794879327",
+ "autor": "0xChuckstock",
+ "data": "2026-09-26",
+ "curtidas": 18,
+ "comentarios": 2,
+ "legenda_post": "still can't get over this... Opus 5.5 with @threejs is so good. the game and trailer made in &lt;1 hour  prompt and game below. https://t.co/wPPJYarSt6",
+ "duracao_s": 27.6,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.97,
+ "pecas": [],
+ "nota": 28,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 488,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

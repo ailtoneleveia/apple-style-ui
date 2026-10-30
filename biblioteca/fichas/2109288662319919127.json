@@ -1,0 +1,42 @@
+{
+ "id": "2109288662319919127",
+ "url": "https://x.com/i/status/2109288662319919127",
+ "autor": "vib3coded",
+ "data": "2026-10-11",
+ "curtidas": 136,
+ "comentarios": 23,
+ "legenda_post": "It’s just code. So why do I want to hug it? 🐧  GPT-6 Astra vs Claude Opus 5.5 - same prompt, two interactive plush penguins  Astra made a special little guy: big eyes, a cream belly and a personality of his own. Opus is fluffier, but Astra’s penguin is the one I’d actually buy https://t.co/DtAeaVVg7",
+ "duracao_s": 18.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.9,
+  "onsets_per_s": 4.99
+ },
+ "qualidade": {
+  "largura": 320,
+  "altura": 404,
+  "fps": 60.0,
+  "kbps": 179,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

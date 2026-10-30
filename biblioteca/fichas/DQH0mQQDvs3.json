@@ -1,0 +1,48 @@
+{
+ "id": "DQH0mQQDvs3",
+ "url": "https://www.instagram.com/p/DQH0mQQDvs3/",
+ "autor": "torsten.roscoe",
+ "data": "2025-10-22",
+ "curtidas": 444,
+ "comentarios": 261,
+ "legenda_post": "🍎Comment “Frost” for the full YouTube video! Apple Liquid Glass Effect All In Adobe Premiere Pro (NO AFTER EFFETS NEEDED)!!!!",
+ "duracao_s": 21.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "guia_prompt",
+ "palavra": "FROST",
+ "acabamento_pro": 0.48,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "iphone",
+  "janela",
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "vidro"
+ ],
+ "nota": 31,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 97.0,
+  "onsets_per_s": 4.38
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 23.98,
+  "kbps": 735,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple editing style"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

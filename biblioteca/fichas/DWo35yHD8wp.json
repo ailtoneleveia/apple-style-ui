@@ -1,0 +1,51 @@
+{
+ "id": "DWo35yHD8wp",
+ "url": "https://www.instagram.com/p/DWo35yHD8wp/",
+ "autor": "qsnyx",
+ "data": "2026-04-02",
+ "curtidas": 9460,
+ "comentarios": 167,
+ "legenda_post": "Day 4 in After Effects 4️⃣\n\nFollow @dsnyb \n#motiondesign #motion #animation",
+ "duracao_s": 20.3,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.01,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "iphone",
+  "numero_grande",
+  "botao_pilula",
+  "busca",
+  "emoji_3d",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 58,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 185.0,
+  "onsets_per_s": 4.86
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 494,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple style animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

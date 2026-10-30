@@ -1,0 +1,48 @@
+{
+ "id": "DdoEr62M436",
+ "url": "https://www.instagram.com/p/DdoEr62M436/",
+ "autor": "paniv_pm",
+ "data": "2026-09-23",
+ "curtidas": 683,
+ "comentarios": 38,
+ "legenda_post": "New animation for @grammarly is done\n\nIt's a personal project, but I loved every step of making it\nCurious to hear what you think🙃\n\n#blender #3d #motiondesign #dropbox #sounddesign",
+ "duracao_s": 25.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "icone_app",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 139.2,
+  "onsets_per_s": 3.65
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 24.0,
+  "kbps": 822,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple motion design",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

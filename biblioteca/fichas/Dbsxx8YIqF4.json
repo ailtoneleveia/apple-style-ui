@@ -1,0 +1,48 @@
+{
+ "id": "Dbsxx8YIqF4",
+ "url": "https://www.instagram.com/p/Dbsxx8YIqF4/",
+ "autor": "mikedesignofficial",
+ "data": "2026-08-06",
+ "curtidas": 1204,
+ "comentarios": 23,
+ "legenda_post": "Great motion triggers literal dopamine...\nJust finished this animation. Spent a little too much time getting the transitions right, but honestly, that final polish is always worth it. 🤌🏻\n\n#animation #motiondesign #aftereffects #uidesign",
+ "duracao_s": 19.8,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.41,
+ "pecas": [
+  "dynamic_island",
+  "iphone",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 68,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 147.2,
+  "onsets_per_s": 3.46
+ },
+ "qualidade": {
+  "largura": 1916,
+  "altura": 1078,
+  "fps": 30.0,
+  "kbps": 559,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

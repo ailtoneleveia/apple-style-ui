@@ -1,0 +1,49 @@
+{
+ "id": "DYUsynoTi-p",
+ "url": "https://www.instagram.com/p/DYUsynoTi-p/",
+ "autor": "madebysheel",
+ "data": "2026-05-14",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "@whatsapp \n\nDay 3 of learning After Effects oii\nCreated an Apple-style SaaS motion graphics animation inspired by the WhatsApp app interface.\nFocused on smooth UI transitions, clean typography, minimal visuals, and premium tech-commercial aesthetics. \nExploring modern motion design, app promo animat",
+ "duracao_s": 8.2,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.72,
+ "pecas": [
+  "dynamic_island",
+  "notificacao",
+  "botao_pilula"
+ ],
+ "nota": 47,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 112.3,
+  "onsets_per_s": 4.47
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 221,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:dynamic island animation",
+  "busca:ui apple captions"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

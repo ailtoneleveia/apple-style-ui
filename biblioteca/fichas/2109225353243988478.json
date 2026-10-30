@@ -1,0 +1,41 @@
+{
+ "id": "2109225353243988478",
+ "url": "https://x.com/i/status/2109225353243988478",
+ "autor": "21Terrence1",
+ "data": "2026-10-11",
+ "curtidas": 4,
+ "comentarios": 5,
+ "legenda_post": "👀做了一个帮助苹果开发者挑选图标的小工具  下面是用claude opus 5.5结合源码制作的动画视频，提示词受@okooo5km 十里兄启发，提示词附在评论区 https://t.co/bfkMTRJBQy",
+ "duracao_s": 25.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "imessage",
+  "icone_app",
+  "busca",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 280,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

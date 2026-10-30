@@ -1,0 +1,49 @@
+{
+ "id": "DdjCybHMAah",
+ "url": "https://www.instagram.com/p/DdjCybHMAah/",
+ "autor": "sabir__developer",
+ "data": "2026-09-21",
+ "curtidas": 6479,
+ "comentarios": 115,
+ "legenda_post": "Doctor App In Flutter 👨‍⚕️",
+ "duracao_s": 73.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "cursor",
+  "iphone",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "vidro"
+ ],
+ "nota": 59,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 141.1,
+  "onsets_per_s": 1.87
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 407,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

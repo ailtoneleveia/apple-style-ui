@@ -1,0 +1,39 @@
+{
+ "id": "2108326197516198346",
+ "url": "https://x.com/i/status/2108326197516198346",
+ "autor": "Aryanpxcr7",
+ "data": "2026-10-08",
+ "curtidas": 3,
+ "comentarios": 0,
+ "legenda_post": "Opus 5.5 made this Cool Trailer for my Roblox game  ----------------------------  -&gt; Prompt : \"Make me a Production level good quality trailer for my Roblox Game\"  Literally for one line prompt, this output is not bad, however we can increase the quality drastically by giving it https://t.co/J5h0",
+ "duracao_s": 40.6,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.12,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 494,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

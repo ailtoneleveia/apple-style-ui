@@ -1,0 +1,38 @@
+{
+ "id": "2103495232637882858",
+ "url": "https://x.com/i/status/2103495232637882858",
+ "autor": "himanshutwtxs",
+ "data": "2026-09-25",
+ "curtidas": 1515,
+ "comentarios": 78,
+ "legenda_post": "This is INSANE!!    Opus 5.5 on MAX, motion designing in one prompt (sound ON)  prompt- 'make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out' https://t.co/RV6FjxV8qc",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "grafico"
+ ],
+ "nota": 59,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 233,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

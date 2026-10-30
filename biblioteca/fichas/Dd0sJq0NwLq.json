@@ -1,0 +1,45 @@
+{
+ "id": "Dd0sJq0NwLq",
+ "url": "https://www.instagram.com/p/Dd0sJq0NwLq/",
+ "autor": "creatoroly",
+ "data": "2026-09-28",
+ "curtidas": 898,
+ "comentarios": 18,
+ "legenda_post": "just made a killer launch vid for Clyro 👾",
+ "duracao_s": 33.4,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.83,
+ "pecas": [
+  "janela",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 99.8,
+  "onsets_per_s": 4.34
+ },
+ "qualidade": {
+  "largura": 1920,
+  "altura": 992,
+  "fps": 60.0,
+  "kbps": 1000,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

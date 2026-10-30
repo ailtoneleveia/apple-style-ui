@@ -1,0 +1,43 @@
+{
+ "id": "2103835273813496100",
+ "url": "https://x.com/i/status/2103835273813496100",
+ "autor": "twoclipping",
+ "data": "2026-09-26",
+ "curtidas": 2182,
+ "comentarios": 88,
+ "legenda_post": "OPUS 5.5 IS THE ONLY MOTION DESIGNER YOU NEED  this launch video cost $0 and is pure code  everyone else on X claims the same shit, then sends you to their website or mcp  this is completely free with 0 external tools steal the prompt and try it in your claude ↓  &lt;inputs&gt; Ask me https://t.co/U",
+ "duracao_s": 29.1,
+ "tipo": "tutorial_tela",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "dynamic_island",
+  "cursor",
+  "janela",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 46,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 320,
+  "fps": 60.0,
+  "kbps": 147,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

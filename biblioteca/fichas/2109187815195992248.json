@@ -1,0 +1,38 @@
+{
+ "id": "2109187815195992248",
+ "url": "https://x.com/i/status/2109187815195992248",
+ "autor": "adrianduta96",
+ "data": "2026-10-11",
+ "curtidas": 4,
+ "comentarios": 3,
+ "legenda_post": "One prompt. Claude Opus 5.5 made this whole clip: the animation, the typography and the music.  And it didn't stop there.  Claude also edited the final video from my raw recording: the cuts, the captions, the layout and the sound mix. All I did was record myself, give Claude the https://t.co/ARe37JL",
+ "duracao_s": 21.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.31,
+ "pecas": [
+  "legenda_fala"
+ ],
+ "nota": 41,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 207,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

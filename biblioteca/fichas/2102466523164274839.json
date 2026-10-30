@@ -1,0 +1,36 @@
+{
+ "id": "2102466523164274839",
+ "url": "https://x.com/i/status/2102466523164274839",
+ "autor": "alexalbert__",
+ "data": "2026-09-22",
+ "curtidas": 1163,
+ "comentarios": 97,
+ "legenda_post": "I've been on a Blender kick with Opus 5.5. Its better 3D modeling and vision mean you can build an entire world from a single prompt.  Historically accurate San Francisco Market street in 1906, pre-earthquake https://t.co/aisvFLFGy3",
+ "duracao_s": 8.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "sem_texto",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.79,
+ "pecas": [],
+ "nota": 36,
+ "som": null,
+ "qualidade": {
+  "largura": 508,
+  "altura": 360,
+  "fps": 16.0,
+  "kbps": 281,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

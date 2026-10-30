@@ -1,0 +1,38 @@
+{
+ "id": "2103538744695693512",
+ "url": "https://x.com/i/status/2103538744695693512",
+ "autor": "prasenx",
+ "data": "2026-09-25",
+ "curtidas": 207,
+ "comentarios": 38,
+ "legenda_post": "i know nothing about motion design  gave opus 5.5 one prompt and it made this video and synthesized music from scratch, no samples https://t.co/oCDfGKx9MX",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.21,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 545,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,36 @@
+{
+ "id": "2108937773742756207",
+ "url": "https://x.com/i/status/2108937773742756207",
+ "autor": "pipeline_os",
+ "data": "2026-10-10",
+ "curtidas": 170,
+ "comentarios": 23,
+ "legenda_post": "Animators spend weeks on a running cycle like this.  I gave three AI models one sentence: \"a hippo running through a swamp at sunset.\"  &gt; Claude Haiku 5.5 &gt; Claude Opus 5.5 &gt; GPT 6 Luna  Watch the water. Then tell me this isn't getting scary. https://t.co/IEAlJB3Rtt",
+ "duracao_s": 13.6,
+ "tipo": "outro",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.67,
+ "pecas": [],
+ "nota": 26,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 426,
+  "fps": 60.0,
+  "kbps": 413,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

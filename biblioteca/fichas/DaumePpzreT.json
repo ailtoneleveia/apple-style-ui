@@ -1,0 +1,47 @@
+{
+ "id": "DaumePpzreT",
+ "url": "https://www.instagram.com/p/DaumePpzreT/",
+ "autor": "billytheboi8",
+ "data": "2026-07-13",
+ "curtidas": 315,
+ "comentarios": 102,
+ "legenda_post": "Follow & Comment \"APPLE\" for Project files\n\n#motiongraphics #mixedmediaart #typography #lyrics #explorepage #edit #edits #animationart #collage #aftereffects #mixedmedia #mixedmediaanimation #omgpage\nEdited · 21h",
+ "duracao_s": 8.1,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "APPLE",
+ "acabamento_pro": 0.92,
+ "pecas": [
+  "notificacao",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 53,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 72.6,
+  "onsets_per_s": 5.51
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 60.0,
+  "kbps": 322,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple editing style",
+  "busca:apple style edit"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

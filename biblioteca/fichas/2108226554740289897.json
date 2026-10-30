@@ -1,0 +1,39 @@
+{
+ "id": "2108226554740289897",
+ "url": "https://x.com/i/status/2108226554740289897",
+ "autor": "olivrweb3",
+ "data": "2026-10-08",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "Hoje todo mundo tá falando de GPT-6 e Haiku 5.5.   Mandei assim pro opus 5.5: cara, faça um motion pra criptobr, nao cometa falhas  = isso aqui   ficou muito bom https://t.co/cFfZNRG7sE",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.11,
+ "pecas": [
+  "numero_grande",
+  "pilha_cartoes"
+ ],
+ "nota": 22,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 559,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

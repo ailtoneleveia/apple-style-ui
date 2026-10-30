@@ -1,0 +1,46 @@
+{
+ "id": "2103845264649761062",
+ "url": "https://x.com/i/status/2103845264649761062",
+ "autor": "HO_BA",
+ "data": "2026-09-26",
+ "curtidas": 162,
+ "comentarios": 8,
+ "legenda_post": "I made this using Claude Opus 5.5 with effort set to high  Prompt:  Make a dynamic 30-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.  Make it a video to introduce https://t.co/xdCXEdKZRq Use https://t.co/zeSqZYjwF",
+ "duracao_s": 30.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.57,
+ "pecas": [
+  "janela",
+  "icone_app",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 64,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 128.2,
+  "onsets_per_s": 5.19
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 189,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

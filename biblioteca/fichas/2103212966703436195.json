@@ -1,0 +1,38 @@
+{
+ "id": "2103212966703436195",
+ "url": "https://x.com/i/status/2103212966703436195",
+ "autor": "0xEvinho",
+ "data": "2026-09-24",
+ "curtidas": 6,
+ "comentarios": 1,
+ "legenda_post": "Opus 5.5 is REALLY GOOD at pixel animations. My only prompt was a reference video and \"make a similar version but with a crypto reference\" https://t.co/l6N1MC9RMv",
+ "duracao_s": 20.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.81,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 38,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 481,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

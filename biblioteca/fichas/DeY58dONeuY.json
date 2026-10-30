@@ -1,0 +1,46 @@
+{
+ "id": "DeY58dONeuY",
+ "url": "https://www.instagram.com/p/DeY58dONeuY/",
+ "autor": "mahadi.creative",
+ "data": "2026-10-12",
+ "curtidas": 2617,
+ "comentarios": 773,
+ "legenda_post": "Google Drive UI animation made in After Effects.\nClean motion, smooth transitions, and SFX.\n\nComment “Drive” if you want the project file 👇\n\n#motiongraphics #aftereffects #uianimation #saasvideo #ᴠɪᴅᴇᴏᴇᴅɪᴛɪɴɢ #motiondesign",
+ "duracao_s": 16.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "DRIVE",
+ "acabamento_pro": 1.22,
+ "pecas": [
+  "icone_app",
+  "botao_pilula"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.75
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 291,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

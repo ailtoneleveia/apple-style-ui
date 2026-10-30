@@ -1,0 +1,47 @@
+{
+ "id": "DSpjWr1CS79",
+ "url": "https://www.instagram.com/p/DSpjWr1CS79/",
+ "autor": "framekush",
+ "data": "2025-12-24",
+ "curtidas": 513,
+ "comentarios": 45,
+ "legenda_post": "simple ui animation \n\n#aftereffects #motiondesigner #fypp",
+ "duracao_s": 9.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.3,
+ "pecas": [
+  "notificacao",
+  "botao_pilula",
+  "busca"
+ ],
+ "nota": 42,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 142.2,
+  "onsets_per_s": 1.89
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 221,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:apple ui animation",
+  "busca:ios ui animation",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

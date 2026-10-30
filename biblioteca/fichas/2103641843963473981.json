@@ -1,0 +1,41 @@
+{
+ "id": "2103641843963473981",
+ "url": "https://x.com/i/status/2103641843963473981",
+ "autor": "goofyninjaaa",
+ "data": "2026-09-26",
+ "curtidas": 10,
+ "comentarios": 3,
+ "legenda_post": "Claude Opus 5.5 humillo al modelo nuevo de ChatGPT. Mismo prompt para los dos: hacer su showreel de motion designer.  GPT-6 Sol entregó en 8 minutos sin ver lo que hacía. Opus se tomó 55 y revisó su trabajo unas 20 veces.  Sol hizo la tarea. Opus hizo cine. https://t.co/OSgVkkBiQi",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.05,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "pilha_cartoes"
+ ],
+ "nota": 43,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 197,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

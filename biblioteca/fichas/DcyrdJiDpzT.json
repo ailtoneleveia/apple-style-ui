@@ -1,0 +1,44 @@
+{
+ "id": "DcyrdJiDpzT",
+ "url": "https://www.instagram.com/p/DcyrdJiDpzT/",
+ "autor": "charliehills",
+ "data": "2026-09-02",
+ "curtidas": 102,
+ "comentarios": 83,
+ "legenda_post": "Forty-two types of animation. One install. After Effects never opens.\n\nEight of them are in this reel: kinetic type, matrix decode, bar race, glitch, lens flare, particles, code typing itself, logo assemble.\n\nThe other thirty-four are in the free toolkit, every recipe as copy-paste CSS, a starter fi",
+ "duracao_s": 15.6,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "MOTION",
+ "acabamento_pro": 1.18,
+ "pecas": [
+  "pessoa_no_cartao",
+  "legenda_fala",
+  "grafico"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.42
+ },
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 98,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

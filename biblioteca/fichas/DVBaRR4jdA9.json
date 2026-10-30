@@ -1,0 +1,47 @@
+{
+ "id": "DVBaRR4jdA9",
+ "url": "https://www.instagram.com/p/DVBaRR4jdA9/",
+ "autor": "creatoroly",
+ "data": "2026-02-21",
+ "curtidas": 2743,
+ "comentarios": 47,
+ "legenda_post": "poor @applemusic thang 🫢\n\n#apple #aftereffects #motiondesign",
+ "duracao_s": 25.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.6,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "icone_app",
+  "pessoa_no_cartao",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 43,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 92.1,
+  "onsets_per_s": 5.79
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1080,
+  "fps": 30.0,
+  "kbps": 297,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

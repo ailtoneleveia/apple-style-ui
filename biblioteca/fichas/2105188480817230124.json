@@ -1,0 +1,40 @@
+{
+ "id": "2105188480817230124",
+ "url": "https://x.com/i/status/2105188480817230124",
+ "autor": "ElforaDev",
+ "data": "2026-09-30",
+ "curtidas": 3,
+ "comentarios": 4,
+ "legenda_post": "opus 5.5 + /brag made this launch video for sweeply from the repo alone. sweeply finds the node_modules, .next, venv and dist rotting in your old projects and deletes them, with a git light so you know what's safe.  https://t.co/A3VdZDb880 https://t.co/fynqjoTVRP https://t.co/wiXqP88GgC",
+ "duracao_s": 31.3,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.72,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 42,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 150,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

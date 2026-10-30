@@ -1,0 +1,45 @@
+{
+ "id": "DRuRsdyDcVd",
+ "url": "https://www.instagram.com/p/DRuRsdyDcVd/",
+ "autor": "creatoroly",
+ "data": "2025-12-01",
+ "curtidas": 1377,
+ "comentarios": 33,
+ "legenda_post": "how is it looking? #aftereffects #motiondesign #edits",
+ "duracao_s": 11.1,
+ "tipo": "bastidor_editor",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "after_effects",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.67,
+ "pecas": [
+  "imessage",
+  "cursor",
+  "janela",
+  "icone_app"
+ ],
+ "nota": 55,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.1
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 60.0,
+  "kbps": 1521,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

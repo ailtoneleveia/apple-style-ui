@@ -1,0 +1,49 @@
+{
+ "id": "DdK6eVBR_dp",
+ "url": "https://www.instagram.com/p/DdK6eVBR_dp/",
+ "autor": "adrimotions",
+ "data": "2026-09-12",
+ "curtidas": 176,
+ "comentarios": 5,
+ "legenda_post": "Wise ui audio workflow 😛",
+ "duracao_s": 10.4,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.39,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.2,
+  "onsets_per_s": 4.55
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 417,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:adri",
+  "perfil:adrimotions",
+  "busca:ui apple captions",
+  "busca:ios ui animation"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

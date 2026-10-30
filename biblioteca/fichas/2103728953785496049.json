@@ -1,0 +1,42 @@
+{
+ "id": "2103728953785496049",
+ "url": "https://x.com/i/status/2103728953785496049",
+ "autor": "prasad_pilla",
+ "data": "2026-09-26",
+ "curtidas": 24,
+ "comentarios": 8,
+ "legenda_post": "WTF?!!   Made entirely with Claude Opus 5.5!  Prompt  \"make a dynamic 15 second motion graphics video that shows what an incredible motion designer you are, for @tryAlanAI. go all out.\"    It went and read our site. Pulled our palette, our type stack, rebuilt our logo from the https://t.co/TSstvoZ49",
+ "duracao_s": 15.3,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.2,
+ "pecas": [
+  "icone_app"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 4.45
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 135,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

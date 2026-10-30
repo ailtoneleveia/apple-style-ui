@@ -1,0 +1,39 @@
+{
+ "id": "2103600734017392708",
+ "url": "https://x.com/i/status/2103600734017392708",
+ "autor": "Astrodevil_",
+ "data": "2026-09-25",
+ "curtidas": 7,
+ "comentarios": 5,
+ "legenda_post": "Insane   Made with Claude Opus 5.5   Prompt  \"make a dynamic 15-second motion graphics video that shows what an incredible work Studio1 is doing, you will get relevant info from case study, create like it's a good showreel for a Studio1 intro launch. go all out.\"    took only 11 https://t.co/7norLom",
+ "duracao_s": 15.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 283,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

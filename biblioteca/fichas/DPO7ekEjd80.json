@@ -1,0 +1,46 @@
+{
+ "id": "DPO7ekEjd80",
+ "url": "https://www.instagram.com/p/DPO7ekEjd80/",
+ "autor": "creatoroly",
+ "data": "2025-09-30",
+ "curtidas": 1747,
+ "comentarios": 23,
+ "legenda_post": "is this really only 7 seconds? 🛑",
+ "duracao_s": 9.0,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.33,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "botao_pilula",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 50,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 151.8,
+  "onsets_per_s": 4.04
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 228,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

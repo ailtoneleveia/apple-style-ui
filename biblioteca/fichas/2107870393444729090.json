@@ -1,0 +1,40 @@
+{
+ "id": "2107870393444729090",
+ "url": "https://x.com/i/status/2107870393444729090",
+ "autor": "HamidoFx1",
+ "data": "2026-10-07",
+ "curtidas": 104,
+ "comentarios": 9,
+ "legenda_post": "GPT-6 Astra &amp; Opus 5.5   Spaceport Project  Prompt 👇 https://t.co/Zrp2WOSWWa",
+ "duracao_s": 12.6,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.16,
+ "pecas": [
+  "numero_grande",
+  "grafico",
+  "busca"
+ ],
+ "nota": 40,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 448,
+  "fps": 30.0,
+  "kbps": 229,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

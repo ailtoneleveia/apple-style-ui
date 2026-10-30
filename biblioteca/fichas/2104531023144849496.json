@@ -1,0 +1,44 @@
+{
+ "id": "2104531023144849496",
+ "url": "https://x.com/i/status/2104531023144849496",
+ "autor": "Mishka_yan",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "Je viens de créer ma première vidéo de Motion design by Claude Opus 5.5   Une pépite, et mes prompts sont encore simplistes.   Pensez une chose, Claude vous ferra une vidéo à partir de votre code donc de TOUT votre projet que ce soir une App ou un SaaS.   Exemple 👇 https://t.co/vh6tFOU3L4",
+ "duracao_s": 41.0,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.57,
+ "pecas": [
+  "iphone",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 171,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

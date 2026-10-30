@@ -1,0 +1,41 @@
+{
+ "id": "2104403368752071059",
+ "url": "https://x.com/i/status/2104403368752071059",
+ "autor": "mi7_crypto",
+ "data": "2026-09-28",
+ "curtidas": 161,
+ "comentarios": 9,
+ "legenda_post": "⚠️防犯ダンス( ;∀;)...話題沸騰  ある銀行に注目が集まってます!!!( ﾟДﾟ)... 全国の銀行も導入検討中のようです...知らんけど..  #AZ8 でSeedance2.5Opus×Opus 5.5で制作 @AZ8official_JP https://t.co/YtooLDk5lU",
+ "duracao_s": 32.0,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "legenda_capcut",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.6,
+ "pecas": [
+  "imessage",
+  "legenda_fala",
+  "numero_grande",
+  "grafico"
+ ],
+ "nota": 34,
+ "som": null,
+ "qualidade": {
+  "largura": 482,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 461,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

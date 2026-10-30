@@ -1,0 +1,40 @@
+{
+ "id": "2108914859492483132",
+ "url": "https://x.com/i/status/2108914859492483132",
+ "autor": "0x_meden",
+ "data": "2026-10-10",
+ "curtidas": 107,
+ "comentarios": 13,
+ "legenda_post": "i don't know how to use CAD. i've never built a robot  last night opus 5.5 built me one anyway  &gt; watched the free stanford robotics guide &gt; opened claude, typed one sentence: \"design a working 6-joint robot arm i can build for $122\" &gt; went to sleep &gt; woke up to this &gt; 6 joints. https",
+ "duracao_s": 12.0,
+ "tipo": "ui_animacao",
+ "fundo": "claro_neutro",
+ "densidade": "um_heroi",
+ "acabamento": "contorno_duro",
+ "texto": "sem_texto",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.02,
+ "pecas": [],
+ "nota": 47,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 886,
+  "altura": 720,
+  "fps": 30.0,
+  "kbps": 540,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

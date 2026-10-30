@@ -1,0 +1,38 @@
+{
+ "id": "2109788665899810947",
+ "url": "https://x.com/i/status/2109788665899810947",
+ "autor": "ivanainai",
+ "data": "2026-10-12",
+ "curtidas": 39,
+ "comentarios": 7,
+ "legenda_post": "So is Muse Wonder better than Opus 5.5?  Same prompt: a stained-glass hibiscus. https://t.co/HK71ExBAi4",
+ "duracao_s": 40.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.63,
+ "pecas": [
+  "botao_pilula"
+ ],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 116,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

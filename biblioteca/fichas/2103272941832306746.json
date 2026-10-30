@@ -1,0 +1,41 @@
+{
+ "id": "2103272941832306746",
+ "url": "https://x.com/i/status/2103272941832306746",
+ "autor": "supremebeme",
+ "data": "2026-09-24",
+ "curtidas": 4,
+ "comentarios": 1,
+ "legenda_post": "fed opus 5.5 this article by @pleometric with the prompt  \"make a brainrot video about the terminal. i can't escape it. ai is so addictive.\" https://t.co/4NlZqUTeUe",
+ "duracao_s": 46.0,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.35,
+ "pecas": [
+  "janela",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "busca"
+ ],
+ "nota": 18,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 186,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

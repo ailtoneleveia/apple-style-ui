@@ -1,0 +1,40 @@
+{
+ "id": "2108301452384870600",
+ "url": "https://x.com/i/status/2108301452384870600",
+ "autor": "juancarlos17626",
+ "data": "2026-10-08",
+ "curtidas": 0,
+ "comentarios": 2,
+ "legenda_post": "Todos miran puntajes, pero a Haiku 5.5 y a Mistral Large 4 los reprobó una lámpara de lava (la prueba de BridgeBench). Yo la hice con Claude Opus 5.5: 1 prompt + 1 ajuste, un solo HTML. Pruébala con tu IA, el prompt va en el hilo. #IA #Claude #Tutorial https://t.co/N3Tr72e7aj",
+ "duracao_s": 51.2,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "numero_grande",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 129,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

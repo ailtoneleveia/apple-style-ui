@@ -1,0 +1,45 @@
+{
+ "id": "2109057244864164019",
+ "url": "https://x.com/i/status/2109057244864164019",
+ "autor": "mitsunarinoai",
+ "data": "2026-10-10",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "Claude Code（Opus 5.5）×Remotionで、ショート動画がほぼ自動で量産できるようになった。  こちらから伝えたのは「編集して」の一言だけ。  編集にかけていた時間を、そのまま企画に回せるのが一番大きい。 https://t.co/CirAnCvLEm",
+ "duracao_s": 41.5,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.1,
+ "pecas": [
+  "imessage",
+  "iphone",
+  "icone_app",
+  "pessoa_no_cartao",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site"
+ ],
+ "nota": 32,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 25.0,
+  "kbps": 158,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

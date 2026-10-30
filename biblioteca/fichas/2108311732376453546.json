@@ -1,0 +1,40 @@
+{
+ "id": "2108311732376453546",
+ "url": "https://x.com/i/status/2108311732376453546",
+ "autor": "ottollm",
+ "data": "2026-10-08",
+ "curtidas": 6,
+ "comentarios": 0,
+ "legenda_post": "HOLY F*CK OPUS 5.5 BUILT ME A LAVA RIVER THAT RUNS IN A BROWSER TAB  i asked for a river of lava coming down from an erupting volcano. and right next to it a little dome where  gnomes live. by the fire. on purpose  it’s not a video and not a prerender. this thing is running live https://t.co/c4zqZy0",
+ "duracao_s": 20.1,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 2.05,
+ "pecas": [
+  "cursor",
+  "botao_pilula",
+  "print_site"
+ ],
+ "nota": 47,
+ "som": null,
+ "qualidade": {
+  "largura": 576,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 458,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

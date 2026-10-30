@@ -1,0 +1,45 @@
+{
+ "id": "2104498456626651380",
+ "url": "https://x.com/i/status/2104498456626651380",
+ "autor": "SaulFloresJr",
+ "data": "2026-09-28",
+ "curtidas": 1,
+ "comentarios": 1,
+ "legenda_post": "I asked Claude Opus 5.5 to simulate what happens when sunlight hits a microring resonator.  The chip heats up. The resonance drifts. The controller compensates to keep it locked at 1550 nm.  I’ve been feeding Opus prompts that are basically small engineering textbooks at this https://t.co/XNY42Vbs3c",
+ "duracao_s": 28.4,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.69,
+ "pecas": [
+  "cursor",
+  "janela",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 35,
+ "som": null,
+ "qualidade": {
+  "largura": 556,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 213,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

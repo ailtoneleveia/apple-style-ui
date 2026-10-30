@@ -1,0 +1,36 @@
+{
+ "id": "2108157503209197887",
+ "url": "https://x.com/i/status/2108157503209197887",
+ "autor": "8jojima_",
+ "data": "2026-10-08",
+ "curtidas": 8,
+ "comentarios": 0,
+ "legenda_post": "AIに「八丈島のPR動画を作って」 って指示したら一発ですごいの作って来た😆これを全自動は流石に驚きました。  使ったAIはClaude opus5.5です。  文書とかカット割りとかフリー素材集めBGM選定も全部自動で勝手にやってた。  うちのAI褒めてあげてください😆 https://t.co/bYJtWFU707",
+ "duracao_s": 59.1,
+ "tipo": "outro",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.43,
+ "pecas": [],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 256,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

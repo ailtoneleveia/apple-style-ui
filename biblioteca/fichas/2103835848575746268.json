@@ -1,0 +1,38 @@
+{
+ "id": "2103835848575746268",
+ "url": "https://x.com/i/status/2103835848575746268",
+ "autor": "kgonia7",
+ "data": "2026-09-26",
+ "curtidas": 4,
+ "comentarios": 2,
+ "legenda_post": "From Cabo da Roca to observable universe.  I gave opus 5.5 old prompt I prepared for Fable but I was not satisfied with the results. I asked model to create a cinematic film that zooms out from a hillside on Earth to the full observable universe using @threejs No external assets. https://t.co/ih11e7",
+ "duracao_s": 60.0,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 1.61,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 31,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 286,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,51 @@
+{
+ "id": "DTaMV6gEcSq",
+ "url": "https://www.instagram.com/p/DTaMV6gEcSq/",
+ "autor": "marvix.motion",
+ "data": "2026-01-12",
+ "curtidas": 3,
+ "comentarios": 531,
+ "legenda_post": "Clean UI animation made in Alight Motion / After Motion ✨\nWant the project file?\nComment “File” 👇\n#uianimation #alightmotion #aftermotion #motiondesign #uiux",
+ "duracao_s": 9.2,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "peca",
+ "entrega": "arquivo_projeto",
+ "palavra": "FILE",
+ "acabamento_pro": 0.98,
+ "pecas": [
+  "notificacao",
+  "imessage",
+  "numero_grande",
+  "grafico",
+  "botao_pilula",
+  "busca",
+  "pilha_cartoes",
+  "print_site"
+ ],
+ "nota": 51,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 2.76
+ },
+ "qualidade": {
+  "largura": 1080,
+  "altura": 1920,
+  "fps": 30.0,
+  "kbps": 448,
+  "codec": "vp9"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:apple motion design",
+  "busca:ui motion design"
+ ],
+ "estilo_apple": true,
+ "nivel": "clonavel",
+ "prova": null
+}

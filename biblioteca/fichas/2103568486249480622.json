@@ -1,0 +1,36 @@
+{
+ "id": "2103568486249480622",
+ "url": "https://x.com/i/status/2103568486249480622",
+ "autor": "CrazyAlphaaa",
+ "data": "2026-09-25",
+ "curtidas": 2,
+ "comentarios": 0,
+ "legenda_post": "WTF?  Made with claude OPUS 5.5  Prompt  \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\"  That's it.. https://t.co/FruAdUxbxS",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "flat",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.9,
+ "pecas": [],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 433,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

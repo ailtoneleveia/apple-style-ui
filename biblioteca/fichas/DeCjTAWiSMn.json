@@ -1,0 +1,41 @@
+{
+ "id": "DeCjTAWiSMn",
+ "url": "https://www.instagram.com/p/DeCjTAWiSMn/",
+ "autor": "charliehills",
+ "data": "2026-10-03",
+ "curtidas": 131,
+ "comentarios": 97,
+ "legenda_post": "20 things people have already built with Jev.\n\nJev is TypeSafe's fast decision model, and every one of these is a public repo you can clone today:\n\n1. jev-ultrafast, the fastest and cheapest web agent\n\n2. fast-jev-compaction, Claude Code memory that doesn't lose anything\n\n3. json-render, interfaces ",
+ "duracao_s": 24.4,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "BUILT",
+ "acabamento_pro": 1.13,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 33,
+ "som": null,
+ "qualidade": {
+  "largura": 360,
+  "altura": 640,
+  "fps": 30.0,
+  "kbps": 262,
+  "codec": "vp9"
+ },
+ "origem": [
+  "perfil:charliehills"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

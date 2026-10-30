@@ -1,0 +1,41 @@
+{
+ "id": "2104992103428141286",
+ "url": "https://x.com/i/status/2104992103428141286",
+ "autor": "wangyaominde",
+ "data": "2026-09-29",
+ "curtidas": 0,
+ "comentarios": 1,
+ "legenda_post": "opus5.5还是太强了，我只给了他一个提示词他就做成了这个样子 https://t.co/x7RpLl3SJd",
+ "duracao_s": 30.1,
+ "tipo": "outro",
+ "fundo": "escuro_com_glow",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.63,
+ "pecas": [
+  "janela",
+  "numero_grande",
+  "busca",
+  "print_site"
+ ],
+ "nota": 39,
+ "som": null,
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 30.0,
+  "kbps": 276,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

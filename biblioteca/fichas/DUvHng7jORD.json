@@ -1,0 +1,47 @@
+{
+ "id": "DUvHng7jORD",
+ "url": "https://www.instagram.com/p/DUvHng7jORD/",
+ "autor": "fudail_shahzad",
+ "data": "2026-02-14",
+ "curtidas": 154,
+ "comentarios": 21,
+ "legenda_post": "Most product videos try to inform.\nThe strongest ones move people to act.\n\nAn unofficial launch-style film for @wiseaccount — built around speed, emotion, and everyday utility.\n\nBecause when the experience feels right,\nthe decision happens faster.\n\n[motion graphics, saas animation, saas explainer, s",
+ "duracao_s": 11.7,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "neon",
+ "texto": "frase_limpa",
+ "ferramenta": "after_effects",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.44,
+ "pecas": [
+  "icone_app",
+  "numero_grande",
+  "botao_pilula",
+  "emoji_3d"
+ ],
+ "nota": 37,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.64
+ },
+ "qualidade": {
+  "largura": 1280,
+  "altura": 720,
+  "fps": 29.97,
+  "kbps": 741,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation",
+  "busca:saas launch video",
+  "busca:product launch animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

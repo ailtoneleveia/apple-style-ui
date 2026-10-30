@@ -1,0 +1,39 @@
+{
+ "id": "2103087766662009118",
+ "url": "https://x.com/i/status/2103087766662009118",
+ "autor": "Anilraok",
+ "data": "2026-09-24",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Here's my prompt to Opus 5.5 and it's output, \"I want you to imagine a story, that subtly promotes grid genius. Or it can not even have grid genius, but something that aligns with our app and helps us get more eyeballs when posted on social media. Then using threejs/javascript I https://t.co/KDDz7Cp",
+ "duracao_s": 42.1,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_destacada",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.25,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 29,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 568,
+  "fps": 30.0,
+  "kbps": 199,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,40 @@
+{
+ "id": "2108520350908916007",
+ "url": "https://x.com/i/status/2108520350908916007",
+ "autor": "maker_evan",
+ "data": "2026-10-09",
+ "curtidas": 0,
+ "comentarios": 0,
+ "legenda_post": "Same prompt, 2 models 🍂  \"Create an interactive fall foliage simulator as a polished browser experience\"  Claude Opus 5.5 · ~$2.18 · 16 min GPT-6 Astra · ~$1.22 · 5 min (~ = API-price estimate)  Which autumn feels real? 👇 https://t.co/LedWHpKWLH https://t.co/4vR4SuFaE9",
+ "duracao_s": 12.1,
+ "tipo": "ui_animacao",
+ "fundo": "foto_video_real",
+ "densidade": "poluido",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.7,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 48,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 430,
+  "fps": 30.0,
+  "kbps": 116,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

@@ -1,0 +1,42 @@
+{
+ "id": "2104539335249088582",
+ "url": "https://x.com/i/status/2104539335249088582",
+ "autor": "mickeysmith_jp",
+ "data": "2026-09-28",
+ "curtidas": 21,
+ "comentarios": 1,
+ "legenda_post": "MONORALエンジンをゲームボーイ風の筐体モデリングして液晶部分をキャンバスとして描画。 Opus 5.5に試験のためにGB版テトリス再現してMONORALで動作させて？ってお願いしたら完成。自前のVPSでロビー機能もってるんでサクッと通信対戦できて驚き……（汗） https://t.co/x0XYfuj9TT",
+ "duracao_s": 35.6,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "nao_diz",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.42,
+ "pecas": [
+  "numero_grande"
+ ],
+ "nota": 60,
+ "som": {
+  "class": "silent",
+  "tempo_bpm": null,
+  "onsets_per_s": null
+ },
+ "qualidade": {
+  "largura": 542,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 60,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

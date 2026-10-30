@@ -1,0 +1,36 @@
+{
+ "id": "2108907357166313662",
+ "url": "https://x.com/i/status/2108907357166313662",
+ "autor": "Ponpara5",
+ "data": "2026-10-10",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "自宅の本棚をDIYで作りたくClaude(Opus5.5)に設計図とイメージ図もついでに出してって言ったら3DCGをhtmlで出力してくれたすげーーー😳✨  #Claude  #ディアウォール https://t.co/BWaaNCD3T2",
+ "duracao_s": 16.7,
+ "tipo": "tutorial_tela",
+ "fundo": "claro_neutro",
+ "densidade": "poluido",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "peca",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.68,
+ "pecas": [],
+ "nota": 30,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 714,
+  "fps": 59.69,
+  "kbps": 243,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

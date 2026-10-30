@@ -1,0 +1,39 @@
+{
+ "id": "2108249888571916688",
+ "url": "https://x.com/i/status/2108249888571916688",
+ "autor": "theparuchh",
+ "data": "2026-10-08",
+ "curtidas": 3,
+ "comentarios": 1,
+ "legenda_post": "100 tonnes on a propane tank. Then a spark  Two top models, Opus 5.5 vs GPT-6 Astra, build explosion physics from a single prompt, right in the browser  Bending steel, gas pressure, frost and fire, all computed live  &gt; Opus 5.5: 4 h 17 min · $30.80 &gt; Astra: 56 min · $1.25  Prompt https://t.co/",
+ "duracao_s": 28.4,
+ "tipo": "tutorial_tela",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "frase_limpa",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "guia_prompt",
+ "palavra": "",
+ "acabamento_pro": 0.89,
+ "pecas": [
+  "numero_grande",
+  "print_site"
+ ],
+ "nota": 25,
+ "som": null,
+ "qualidade": {
+  "largura": 320,
+  "altura": 350,
+  "fps": 60.0,
+  "kbps": 154,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

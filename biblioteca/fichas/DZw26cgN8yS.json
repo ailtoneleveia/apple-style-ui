@@ -1,0 +1,48 @@
+{
+ "id": "DZw26cgN8yS",
+ "url": "https://www.instagram.com/p/DZw26cgN8yS/",
+ "autor": "creatoroly",
+ "data": "2026-06-19",
+ "curtidas": 1286,
+ "comentarios": 24,
+ "legenda_post": "really cool concept for @_poolday_ i made today 🐬",
+ "duracao_s": 12.8,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "um_heroi",
+ "acabamento": "sombra_suave",
+ "texto": "frase_limpa",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.19,
+ "pecas": [
+  "dynamic_island",
+  "cursor",
+  "iphone",
+  "pessoa_no_cartao",
+  "numero_grande",
+  "print_site",
+  "vidro"
+ ],
+ "nota": 63,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 117.7,
+  "onsets_per_s": 4.63
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 30.0,
+  "kbps": 523,
+  "codec": "h264"
+ },
+ "origem": [
+  "perfil:creatoroly"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

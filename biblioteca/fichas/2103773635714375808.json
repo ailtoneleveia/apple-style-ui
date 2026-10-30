@@ -1,0 +1,44 @@
+{
+ "id": "2103773635714375808",
+ "url": "https://x.com/i/status/2103773635714375808",
+ "autor": "thismacapital",
+ "data": "2026-09-26",
+ "curtidas": 816,
+ "comentarios": 39,
+ "legenda_post": "La vidéo a été réalisée par Opus 5.5 et c'est bluffant : 15mn pour la réalisation avec 2-3 modifications  Le prompt : \"make a dynamic 15-second motion graphics video that shows what an incredible motion designer you are, like it's your showreel for a résumé. go all out.\"  Et ce",
+ "duracao_s": 15.1,
+ "tipo": "ui_animacao",
+ "fundo": "pastel_ou_gradiente_suave",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "filme",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 0.87,
+ "pecas": [
+  "numero_grande",
+  "botao_pilula",
+  "vidro"
+ ],
+ "nota": 52,
+ "som": {
+  "class": "music+sfx",
+  "tempo_bpm": 119.9,
+  "onsets_per_s": 4.05
+ },
+ "qualidade": {
+  "largura": 640,
+  "altura": 360,
+  "fps": 60.0,
+  "kbps": 324,
+  "codec": "h264"
+ },
+ "origem": [
+  "repo:awesome-opus"
+ ],
+ "estilo_apple": true,
+ "nivel": "referencia",
+ "prova": null
+}

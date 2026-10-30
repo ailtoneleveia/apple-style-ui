@@ -1,0 +1,46 @@
+{
+ "id": "DSmyXDikz1E",
+ "url": "https://www.instagram.com/p/DSmyXDikz1E/",
+ "autor": "abceditz",
+ "data": "2025-12-23",
+ "curtidas": 3,
+ "comentarios": 273,
+ "legenda_post": "Apple style 'UI' Animation ✨ \n.\n.\n.\n#uianimation #applestyle #applestyleanimation #alightmotiontutorial #alightmotion",
+ "duracao_s": 14.8,
+ "tipo": "ui_animacao",
+ "fundo": "escuro_com_glow",
+ "densidade": "dois_tres",
+ "acabamento": "sombra_suave",
+ "texto": "palavra_com_blur",
+ "ferramenta": "outra",
+ "unidade": "processo",
+ "entrega": "nada",
+ "palavra": "",
+ "acabamento_pro": 1.46,
+ "pecas": [
+  "cursor",
+  "icone_app",
+  "vidro"
+ ],
+ "nota": 39,
+ "som": {
+  "class": "ambient/unclear",
+  "tempo_bpm": 112.8,
+  "onsets_per_s": 3.41
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 25.0,
+  "kbps": 485,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple ui animation",
+  "busca:ui apple captions",
+  "busca:dynamic island animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}

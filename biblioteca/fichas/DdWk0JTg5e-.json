@@ -1,0 +1,43 @@
+{
+ "id": "DdWk0JTg5e-",
+ "url": "https://www.instagram.com/p/DdWk0JTg5e-/",
+ "autor": "sanji.chien",
+ "data": "2026-09-16",
+ "curtidas": 2317,
+ "comentarios": 968,
+ "legenda_post": "Comment “MOTION” below and I’ll send you the connector\n\nVox-style animation, made with AI \n\nThis video was created using OpenAI’s GPT-6 Astra and the Higgsfield connector. Start with a reference you love, add your own topic and text, then refine the pacing, transitions, and typography.\n\nTry it with ",
+ "duracao_s": 41.0,
+ "tipo": "pessoa_estilo_apple",
+ "fundo": "foto_video_real",
+ "densidade": "dois_tres",
+ "acabamento": "contorno_duro",
+ "texto": "palavra_com_blur",
+ "ferramenta": "ia_codigo",
+ "unidade": "filme",
+ "entrega": "arquivo_projeto",
+ "palavra": "MOTION",
+ "acabamento_pro": 1.48,
+ "pecas": [
+  "janela",
+  "legenda_fala"
+ ],
+ "nota": 49,
+ "som": {
+  "class": "sfx-only",
+  "tempo_bpm": null,
+  "onsets_per_s": 3.99
+ },
+ "qualidade": {
+  "largura": 720,
+  "altura": 1280,
+  "fps": 25.0,
+  "kbps": 1755,
+  "codec": "h264"
+ },
+ "origem": [
+  "busca:apple style animation"
+ ],
+ "estilo_apple": false,
+ "nivel": null,
+ "prova": null
+}
