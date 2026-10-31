@@ -41,6 +41,7 @@ select { font: inherit; font-size: 13px; background: var(--card); color: var(--f
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; padding-block: 18px; }
 .card { background: var(--card); border-radius: 14px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 8px 24px -16px rgba(0,0,0,.25); min-width: 0; }
 .thumb { background: #000; aspect-ratio: 360 / 160; width: 100%; max-width: 100%; display: block; object-fit: cover; }
+iframe.thumb { aspect-ratio: auto; height: 560px; border: 0; background: var(--card); }
 .thumb.sem { display: grid; place-items: center; color: #fff; font-family: var(--mono); font-size: 13px; text-decoration: none; }
 .info { padding: 12px 14px 14px; display: grid; gap: 8px; align-content: start; min-width: 0; }
 .top { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
@@ -171,12 +172,22 @@ function ficha(e) {
   const bComo = el('button', { text: 'Ver o texto', 'aria-expanded': 'false' });
   bComo.onclick = () => { const ab = pre.hidden; pre.hidden = !ab; bComo.setAttribute('aria-expanded', ab); bComo.textContent = ab ? 'Fechar' : 'Ver o texto'; };
   bCopiar.onclick = () => copiar(txt, bCopiar);
+  // a prévia é o player oficial do Instagram ou do X dentro da ficha: nenhum vídeo dos autores sai daqui
+  const ig = e.url.match(/instagram\.com\/(?:p|reel)\/([\w-]+)/), tw = e.url.match(/status\/(\d+)/);
+  const fonteEmbed = ig ? `https://www.instagram.com/p/${ig[1]}/embed/` : tw ? `https://platform.twitter.com/embed/Tweet.html?id=${tw[1]}&dnt=true` : '';
+  const bVer = el('button', { text: 'Ver aqui', 'aria-expanded': 'false' });
+  bVer.onclick = () => {
+    const card = bVer.closest('.card'), aberto = card.firstChild.tagName === 'IFRAME';
+    card.replaceChild(aberto ? capa() : el('iframe', { class: 'thumb', src: fonteEmbed, title: `Reel de @${e.autor}`, loading: 'lazy', allow: 'autoplay; encrypted-media' }), card.firstChild);
+    bVer.textContent = aberto ? 'Ver aqui' : 'Fechar prévia'; bVer.setAttribute('aria-expanded', !aberto);
+  };
   const meta = [e.data, `${e.duracao_s.toFixed(0)} s`, e.fonte, `♥ ${fmt(e.curtidas)}`, e.x ? 'X' : ''];
   if (e.som && e.som.tempo_bpm) meta.push(`${Math.round(e.som.tempo_bpm)} BPM`);
   if (e.som && e.som.onsets_per_s) meta.push(`${e.som.onsets_per_s.toFixed(1)} sons/s`);
+  const capa = () => e.thumb ? el('img', { class: 'thumb', src: e.thumb, alt: `Quatro quadros do reel de ${e.autor}`, loading: 'lazy' })
+      : el('a', { class: 'thumb sem', href: e.url, target: '_blank', rel: 'noopener', text: `@${e.autor}` });
   return el('article', { class: 'card' },
-    e.thumb ? el('img', { class: 'thumb', src: e.thumb, alt: `Quatro quadros do reel de ${e.autor}`, loading: 'lazy' })
-      : el('a', { class: 'thumb sem', href: e.url, target: '_blank', rel: 'noopener', text: `@${e.autor}` }),
+    capa(),
     el('div', { class: 'info' },
       el('div', { class: 'top' }, el('span', { class: 'autor', text: '@' + e.autor }), el('span', { class: 'nota', title: 'Nota de 0 a 100: acabamento, cara de Apple e curtidas', text: String(e.nota) })),
       el('div', { class: 'meta' }, ...meta.filter(Boolean).map(t => el('span', { text: t }))),
@@ -188,7 +199,7 @@ function ficha(e) {
         el('span', { class: 'tag tipo', text: TIPOS[e.tipo] || e.tipo }),
         ...(ENTREGA[e.entrega] ? [el('span', { class: 'tag tipo', text: ENTREGA[e.entrega] + (e.palavra ? ` (comenta ${e.palavra})` : '') })] : []),
         ...e.pecas.map(p => el('span', { class: 'tag', text: nomes[p] || p }))),
-      el('div', { class: 'acoes' }, bCopiar, el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'Ver original' }), bComo),
+      el('div', { class: 'acoes' }, bCopiar, ...(fonteEmbed ? [bVer] : []), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'Ver original' }), bComo),
       pre));
 }
 

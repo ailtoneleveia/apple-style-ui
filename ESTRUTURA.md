@@ -64,7 +64,7 @@ ficam na pasta de trabalho. O plugin nunca grava na própria raiz (ela muda a ca
 | áudio dos originais e a música de teste | `assets/silencio.m4a` em cada molde; o pacote de sons CC0 por cima (`"sons"`) |
 | recortes do Joi e do VoiceOS (objetos, céu, vinhedo, ícones, memoji) | peças livres de `moldes/pecas_livres.py`, com o mesmo nome e tamanho |
 | vídeos dos clones (lado a lado) | `~/.apple-style-ui/originais/<molde>.mp4`; sem ele, sai só a versão |
-| vídeos e miniaturas da biblioteca | só o link do original, com crédito (`ASUI_MINIATURAS=1` gera as miniaturas na tua máquina) |
+| vídeos e miniaturas da biblioteca | só o link do original, com crédito; o "Ver aqui" de cada ficha abre o player oficial do Instagram ou do X dentro da galeria (`ASUI_MINIATURAS=1` gera miniaturas na tua máquina) |
 | vídeo da pessoa do nº 5 e a voz sintética | o vídeo do Pexels (`moldes/fala-destaque/exemplo/`) e a tua gravação |
 | chaves e `.env` | o `.env` fica na pasta de trabalho (a `GROQ_API_KEY` da transcrição) |
 

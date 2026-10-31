@@ -72,7 +72,7 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    (o caminho volta no JSON, em `arquivos`) e nada que já existia é sobrescrito. Depois, siga **Fechar**.
 
 ## 2. Quero só clonar
-1. Peça o link ou o arquivo. Avise o custo antes: 1h30 a 2h45 e US$ 28 a 33 de API por clone. Só siga com o ok.
+1. Peça o link ou o arquivo. Avise o custo antes: 1h45 a 2h e US$ 12 a 17 de API por clone (medido nos dois últimos testes cegos). Só siga com o ok.
 2. Ambiente Python do kit, uma vez (pergunte antes, instala uns 100 MB):
    `python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt`.
    Os scripts do kit acham esse ambiente sozinhos.

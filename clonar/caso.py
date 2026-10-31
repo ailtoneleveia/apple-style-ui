@@ -170,7 +170,7 @@ def referencia(a):
     ok(resumo, comando=shlex.join(["python3", str(KIT / "clonar.py"), "novo", str(P), str(alvo)]
                                   + (["--link", a.fonte] if eh_link else []) + (["--autor", f"@{autor}"] if autor else [])),
        motivo="passos 3 e 4 são trabalho de agente (CLONAR.md, caminho demonstrativo): escolher um trecho que comece e "
-              "termine num corte, clonar e virar molde (1h30 a 2h45 e US$ 28 a 33 de API; só com o ok). "
+              "termine num corte, clonar e virar molde (1h45 a 2h e US$ 12 a 17 de API; só com o ok). "
               f"Depois: {EU} aplicar <pasta do molde> --video <gravação da pessoa>",
        precisa_de_voce=True, pasta=str(P), referencia=str(reel), video_de_dentro=str(dentro) if demo else None,
        demonstrativo=bool(demo))

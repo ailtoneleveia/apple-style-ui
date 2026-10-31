@@ -44,7 +44,7 @@ caminhos acima tu quer e termina com o próximo passo.
 - **`sons/`**: som por elemento (clique, tecla, chegada), todos CC0, encaixados no movimento.
 - **`aprendizado/`**: a catraca. Um vídeo novo não pode sair pior que o anterior em nota, tempo nem custo, e o que tu
   aprova vira o teu perfil.
-- **`biblioteca/site/index.html`**: a galeria. Filtra por nível, tipo e peça, clica em **Copiar para o Claude** e cola.
+- **`biblioteca/site/index.html`**: a galeria. Filtra por nível, tipo e peça, vê o vídeo ali mesmo (**Ver aqui**, o player oficial do Instagram ou do X), clica em **Copiar para o Claude** e cola.
   Provada vai direto para o molde; clonável vai para o ciclo de clonagem; o resto vira vídeo novo no estilo calibrado.
 
 ## O que ainda não faz
