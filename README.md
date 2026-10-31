@@ -8,13 +8,16 @@ clones virou código e receita. Tu pede em português e o vídeo sai com o movim
 
 | Tu quer | Tu manda | Sai | Tempo | Prova (teste cego*) |
 |---|---|---|---|---|
-| **Vídeo com a tua marca** num molde provado (Satellite, Joi, VoiceOS) | nome, cor, fonte, logo, textos | o vídeo com as molas, o blur e o ritmo do original | ~4 min | ok |
-| **Tua gravação editada** igual a uma referência de pessoa falando (molde fala-destaque) | o teu vídeo falando | legenda com palavra em destaque, transcrita e escolhida sozinha | ~4 min, US$ 0,62 | ok |
+| **Vídeo com a tua marca** num molde provado (Satellite, Joi, VoiceOS) | nome, cor, fonte, logo, textos | o vídeo com as molas, o blur e o ritmo do original | ~12 min, US$ 1 | ok |
+| **Tua gravação editada** igual a uma referência de pessoa falando (molde fala-destaque) | o teu vídeo falando | legenda com palavra em destaque, transcrita e escolhida sozinha, fora do rosto e legível até sobre tela gravada | ~8 min, US$ 0,90 | ok |
 | **Clonar qualquer vídeo** de interface | o link | o clone em HTML (nada recortado do original), o lado a lado e a nota por peça | ~2 h, US$ 12 a 17 | ok, com limites abaixo |
-| **Achar uma referência** | nada | a biblioteca: 1.323 vídeos classificados, com o texto pronto para colar | na hora | |
+| **O estilo de um clone no teu vídeo** | o clone e a tua marca e textos | o clone vira molde (campos, versão travada, prova de que com os padrões sai o clone) e o teu vídeo nele | ~20 min, US$ 4 | ok |
+| **Vídeo novo** a partir de uma ficha da galeria | o texto copiado e o teu produto | um vídeo novo com as molas, o obturador e o motion blur medidos, aprovado no loop de qualidade | ~18 min, US$ 5 | ok |
+| **Achar uma referência** | nada | a biblioteca: 1.323 vídeos classificados, 413 na galeria, com o texto pronto para colar | na hora | |
 
 \* Teste cego: sessão nova do Claude Code numa pasta vazia, só com o plugin e o texto que a pessoa copia da biblioteca,
-sem ninguém para responder perguntas. É o jeito que a gente prova que tu vai conseguir o mesmo que nós.
+sem ninguém para responder perguntas. É o jeito que a gente prova que tu vai conseguir o mesmo que nós. Os de 31/10
+rodaram no plugin instalado pelo GitHub (`/plugin install`), não numa cópia nossa; tempo e custo são os medidos neles.
 
 ## Primeiro vídeo
 
@@ -49,9 +52,9 @@ caminhos acima tu quer e termina com o próximo passo.
 
 ## O que ainda não faz
 
-- **Vídeo do zero sem referência nenhuma**: hoje sai pelo estilo calibrado com um prompt da biblioteca, sem medidor
-  próprio. Um montador de cenas está em construção.
-- **Misturar peças de moldes diferentes** e **clone que vira molde sozinho**: hoje virar molde pede o agente (~1h30).
+- **Nota de fidelidade no vídeo novo**: ele passa no loop de qualidade do estilo (molas, obturador, ritmo, texto
+  nítido), mas não é comparado com a referência quadro a quadro. Para ter a nota, clona a referência antes.
+- **Misturar peças de moldes diferentes** num vídeo só.
 - **Clone perfeito em detalhe rápido**: no último teste cego, os pontos de uma pílula caíram juntos quando no
   original caem em cascata, em 4 quadros. O medidor não pega eventos tão curtos; a receita 6 cobre o caso.
 - **Memoji e emoji da Apple** não podem ser distribuídos: o clone desenha os seus, e eles ficam diferentes.

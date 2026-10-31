@@ -50,7 +50,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 - Começa com "Faça este vídeo usando o estilo calibrado" seguido do prompt da ficha: não há molde nem clone dessa
   referência. Leia o prompt, avise que sai um vídeo novo no estilo (não uma cópia medida) e monte em HyperFrames com
   as molas, as entradas, o obturador e o motion blur do `estilo/estilo.js` (veja `estilo/ESTILO.md`), render com
-  `--workers 1`. Para ter nota de fidelidade, ofereça o caminho 2 com o link do prompt.
+  `--workers 1`. As peças listadas na ficha são para consulta: instale (`npx hyperframes add`) só a que for usar, e
+  com as molas trocadas pelas do `estilo.js`. Para ter nota de fidelidade, ofereça o caminho 2 com o link do prompt.
 
 ## 1. Quero começar (primeira vez, uns 5 minutos)
 1. Máquina: `command -v ffmpeg node npx python3 && python3 -c "import numpy, PIL"`. Se faltar algo, ofereça
@@ -108,8 +109,10 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
      do macOS, local). A regra já marca no máximo uma frase com `escura:` (a cena escura) no `destaques.txt`.
   5. Mostre o vídeo e o `<video>/destaques.txt`: "As palavras em destaque estão entre colchetes. Quer trocar alguma?"
      Para trocar, edite os colchetes (ou ponha ou tire `escura:` no começo da linha) e rode o mesmo comando; sai
-     um arquivo novo, nada é sobrescrito. O portão do **Fechar** ainda não conhece este molde: termine mostrando o
-     vídeo e perguntando "Aprovas este vídeo?".
+     um arquivo novo, nada é sobrescrito. O portão do **Fechar** ainda não conhece este molde, e o loop de qualidade
+     do estilo não vale aqui (ele mede a filmagem, que se mexe por natureza, e reprova qualquer gravação): confira no
+     olho a folha de quadros (texto fora do rosto e legível; em fundo carregado, como tela gravada, a frase ganha a
+     faixa escura sozinha) e termine mostrando o vídeo e perguntando "Aprovas este vídeo?".
 - **Tem molde** (a referência é o Satellite, o Joi ou o VoiceOS do @creatoroly; veja `moldes/<molde>/NOTAS.md`):
   1. Copie `moldes/<molde>/versoes/junior.json` para `<video>/versao.json` e troque os valores pedidos.
      As tabelas de campos estão no NOTAS.md do molde. O que não estiver no arquivo fica igual ao original. Ponha também o `"sons"` (veja **Som**).
@@ -120,7 +123,7 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
   3. Com o ok da folha, o mesmo comando sem `--previa`. Depois, **Fechar**.
 - **Não tem molde:** faça o caminho 2. Depois proponha transformar o clone em molde no padrão de
   `moldes/joi/NOTAS.md` (campos no `<html>`, montar.py, versão travada no MOLDE.json e em `versoes-travadas/<molde>-vN/`, prova de que com os padrões
-  sai o clone). Uns 35 min e US$ 7 de agente: só com o ok.
+  sai o clone). Uns 20 min e US$ 4 (teste cego E, 31/10): só com o ok.
 
 ## 4. Quero uma referência
 1. `open biblioteca/site/index.html` (a galeria curada; abre direto no navegador, sem servidor).

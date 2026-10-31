@@ -13,6 +13,7 @@
     {"id": "sombra", "type": "enum", "label": "Sombra das letras", "default": "nenhuma",
      "options": [{"value": "nenhuma", "label": "Nenhuma (a rodada 05 do clone)"}, {"value": "medida", "label": "A medida no original (60 %, σ 4 px): mais leitura em fundo claro"}]},
     {"id": "cenas", "type": "string", "label": "Cenas especiais: JSON {número da frase, a partir de 0: \"escura\"}. A frase escura vira caixa alta sobre o vídeo escurecido, com o destaque na serifa ao lado (a cena do neon do clone)", "default": "{\"2\": \"escura\"}"},
+    {"id": "faixas", "type": "string", "label": "Faixa escura suave atrás do texto, por frase: JSON [0 ou 1]; o montar.py liga onde o fundo é carregado (tela gravada, código, letreiro)", "default": "[]"},
     {"id": "alturas", "type": "string", "label": "Altura por frase: JSON [px da linha de base do destaque, ou null]; o montar.py tira do rosto (abaixo do queixo ou acima da cabeça). Vazio ou null: vale a altura (e 714 na cena escura)", "default": "[]"}
   ]'>
   <head>
@@ -57,6 +58,7 @@
       let FR = []; try { FR = JSON.parse(V.frases); } catch (e) { FR = JSON.parse(DEF.frases); }
       let CENAS = {}; try { CENAS = JSON.parse(V.cenas || "{}") || {}; } catch (e) { CENAS = {}; }
       let ALT = []; try { ALT = JSON.parse(V.alturas || "[]") || []; } catch (e) { ALT = []; }
+      let FX = []; try { FX = JSON.parse(V.faixas || "[]") || []; } catch (e) { FX = []; }
 
       const MEDIDAS = {
         baseDestaque: 1108,   // linha de base da serifa (px): 1096 a 1110 nos 4 grupos do clone
@@ -222,6 +224,13 @@
         const sigma = ultimo && falta < MEDIDAS.borra.length ? MEDIDAS.borra[MEDIDAS.borra.length - 1 - falta] : 0;
         const G = LAY[gi], E = MEDIDAS.escura;
         if (G.escura) { ctx.fillStyle = `rgba(0,0,0,${E.escurece})`; ctx.fillRect(0, 0, W, H); }
+        else if (FX[gi]) {  // fundo carregado atrás do texto: faixa escura de bordas suaves; entra em 0,2 s, salvo se a frase anterior já tinha
+          const b = ALT[gi] || +V.altura || MEDIDAS.baseDestaque, y0 = b - 240, y1 = b + 140;
+          const k = FX[gi - 1] && (ALT[gi - 1] || +V.altura) === b ? 1 : Math.min(1, (tc - G.ini) / 0.2);
+          const gr = ctx.createLinearGradient(0, y0, 0, y1), m = 0.72 * k;
+          gr.addColorStop(0, "rgba(0,0,0,0)"); gr.addColorStop(0.3, `rgba(0,0,0,${m})`); gr.addColorStop(0.7, `rgba(0,0,0,${m})`); gr.addColorStop(1, "rgba(0,0,0,0)");
+          ctx.fillStyle = gr; ctx.fillRect(0, y0, W, y1 - y0);
+        }
         // cena escura: a linha de cima desce enquanto a frase completa (ease de saída, medido no caminho do clone)
         const ud = G.escura ? Math.max(0, Math.min(1, (tc - G.desce[0]) / (G.desce[1] - G.desce[0]))) : 1;
         const dyCima = -E.desce * (1 - ud) * (1 - ud);

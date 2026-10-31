@@ -113,6 +113,18 @@ Prova (fora do repositório, `teste-cego/C-rosto/`): no C, frases 1 a 5 em 1335 
 também. Nenhum quadro das folhas antes e depois tem texto de olhos a boca. O autoteste confere close, tela dividida,
 rosto enorme, sem rosto, o corte no início e a altura que não pula.
 
+## Faixa escura atrás do texto em fundo carregado (31/10)
+
+Na tela dividida do teste cego GC, o texto acima da cabeça caía em cima do código da tela gravada e o branco sumia.
+Agora o `montar.py` mede, em cada frase, as bordas na faixa do texto (ffmpeg `edgedetect` 0,15/0,35 e média do
+`signalstats`, a 4 qps, mediana da frase; `faixas()`). Acima de 3,3 a frase ganha 1 no campo `faixas`, e o molde
+desenha atrás dela uma faixa preta de 72 % com bordas em degradê (380 px de altura em volta da linha de base), que
+entra em 0,2 s, salvo quando a frase anterior já tinha faixa na mesma altura. A cena escura nunca leva.
+
+Calibração: fundo da pessoa de 1,0 a 2,7 (as 5 frases em close do GC e o Pexels em 3 alturas), tela gravada de 3,9 a
+10,8. Com 60 % ainda se lia o código por trás das letras; 72 % deixa o texto limpo. Prova em
+`teste-cego/GC-faixa-depois-72.jpg` (fora do repositório). Uma `--versao` com `faixas` manda.
+
 ## O pingo do i encostado no "and" (resolvido em 30/10)
 
 No primeiro grupo dos padrões, o pingo do i de "reinvent" sobe até a linha de cima e ficava colado no "d" do "and"

@@ -189,6 +189,28 @@ def alturas(grupos, amostras, dur):
     return out
 
 
+CARREGADO = 3.3  # média de bordas (edgedetect 0,15/0,35) na faixa do texto: fundo da pessoa 1,0 a 2,7 (teste cego C e
+                 # Pexels), tela gravada com código 3,9 a 10,8 (tela dividida do C). Acima disso a frase ganha a faixa escura
+
+
+def faixas(entrada, grupos, alts, altura, dur, cenas):
+    """1 na frase cujo fundo atrás do texto é carregado (tela gravada, código, letreiro): ali o texto branco some e o
+    molde põe a faixa escura suave atrás dele. `entrada`: os argumentos de entrada do ffmpeg (o vídeo, ou um lavfi no teste)."""
+    out = []
+    for gi, g in enumerate(grupos):
+        a = min(p[1] for p in g); b = min(p[1] for p in grupos[gi + 1]) if gi + 1 < len(grupos) else dur
+        if cenas.get(str(gi)) == "escura":
+            out.append(0); continue
+        y = (alts[gi] if gi < len(alts) and alts[gi] else altura)
+        y0 = max(0, int(y - BLOCO[0] - 30)); h = min(1920 - y0, BLOCO[0] + BLOCO[1] + 60)
+        r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{max(0, a):.2f}", "-t", f"{max(0.25, b - a):.2f}", *entrada, "-vf",
+                            f"fps=4,crop=840:{h}:120:{y0},edgedetect=low=0.15:high=0.35,signalstats,metadata=print:file=-",
+                            "-f", "null", "-"], capture_output=True, text=True).stdout
+        e = sorted(float(x) for x in re.findall(r"YAVG=([\d.]+)", r))
+        out.append(int(bool(e) and e[len(e) // 2] > CARREGADO))
+    return out
+
+
 def autoteste():
     clone = json.loads(json.loads(re.search(r'"id": "frases".*?"default": ("(?:[^"\\]|\\.)*")', (AQUI / "index.html").read_text())
                                   .group(1)).replace("&apos;", "'"))
@@ -207,6 +229,10 @@ def autoteste():
         assert all(y + BLOCO[1] < r["olhos"] or y - BLOCO[0] > r["boca"] for r in rs), (y, rs)  # nunca de olhos a boca
     gs = [[["a", 0, 1]], [["b", 1, 1]]]  # duas frases com o mesmo rosto mexendo 40 px: a altura não pula
     assert len(set(alturas(gs, [dict(t=k / 5, rostos=[R(470 + 4 * k, 1000 + 4 * k, 520, 870, 1000 + 4 * k)]) for k in range(10)], 2))) == 1
+    # faixa: fundo liso não liga, fundo carregado (ruído) liga, cena escura nunca
+    lav = lambda f: ["-f", "lavfi", "-i", f"color=c=0x404850:size=1080x1920:rate=30:duration=1{f}"]
+    assert faixas(lav(""), [[["a", 0, 1]]], [1108], 1108, 1, {}) == [0]
+    assert faixas(lav(",noise=alls=60:allf=t"), [[["a", 0, 1]], [["b", 0.5, 1]]], [], 1108, 1, {"1": "escura"}) == [1, 0]
 
 
 def main():
@@ -274,6 +300,10 @@ def main():
         am = rostos(w / "assets" / "pessoa.mp4")
         valores["alturas"] = json.dumps(alturas(json.loads(valores["frases"]), am, nf / 30))
         aviso = None if am else "sem detector de rosto (o swift do macOS): a altura ficou a fixa"
+    if not (a.versao and "faixas" in vv):
+        valores["faixas"] = json.dumps(faixas(["-i", str(w / "assets" / "pessoa.mp4")], json.loads(valores["frases"]),
+                                              json.loads(valores["alturas"] or "[]"), float(valores["altura"]), nf / 30,
+                                              json.loads(valores["cenas"] or "{}")))
     (saida.parent / f"{nome}.versao.json").write_text(json.dumps(valores, ensure_ascii=False, indent=1))
     html = (w / "index.html").read_text()
     html = re.sub(r'data-duration="[0-9.]+"', f'data-duration="{d_}"', html)
