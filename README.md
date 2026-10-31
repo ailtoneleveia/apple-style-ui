@@ -33,6 +33,8 @@ Ele mostra os 3 exemplos (`exemplos/`), pergunta teu nome e tua cor e faz o víd
 vez ele baixa o HyperFrames e um Chrome (uns 300 MB). Depois, `/apple-style-ui:video` sempre pergunta qual dos
 caminhos acima tu quer e termina com o próximo passo.
 
+Para receber as correções novas: `/plugin marketplace update apple-style-ui` e depois `/plugin update apple-style-ui@apple-style-ui`.
+
 ## O que vem dentro (o saber de motion)
 
 - **`estilo/estilo.js` e `estilo/ESTILO.md`: o perfil de estilo.** As 3 molas medidas (suave, firme, elástica, com ζ

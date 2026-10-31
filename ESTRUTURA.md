@@ -6,6 +6,10 @@ No código, o nome é uma constante só: `NOME = "apple-style-ui"` no `montar.py
 (`~/.apple-style-ui/`) e a de bastidor (`.apple-style-ui/`, no vídeo e no clone). A sigla `ASUI_` fica só nas
 variáveis de ambiente.
 
+**Publicar mudança:** suba o `version` no `plugin.json` e no `marketplace.json` juntos. O Claude Code guarda a cópia
+instalada pela versão: sem subir, o `/plugin update` diz que já está na última e quem instalou não recebe nada
+(visto em 31/10 com a 0.1.0).
+
 ## O repositório (o próprio repositório é o marketplace)
 
 ```text
