@@ -1228,6 +1228,8 @@ def saida_de(a, video):
     v = Path(video).resolve()
     if v.parent.name == "saidas":
         return str(v.parent.parent / ".apple-style-ui" / f"qualidade-{v.stem}")
+    if Path(__file__).resolve().parents[2] in v.parents:  # vídeo do próprio plugin (exemplos/): a pasta dele muda a cada atualização
+        return str(Path.cwd() / f"{v.stem}-qualidade")
     return str(v.with_suffix("")) + "-qualidade"
 
 
