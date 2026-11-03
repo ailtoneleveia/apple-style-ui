@@ -1,6 +1,6 @@
 ---
 name: video
-description: Porta de entrada do produto. Pergunta qual dos 4 caminhos a pessoa quer (começar, só clonar, vídeo igual a uma referência, achar uma referência), roda os comandos reais dos moldes, da clonagem e da catraca e termina sempre com o próximo passo. Use quando alguém quiser um vídeo estilo Apple, trocar a marca de um molde, clonar um vídeo ou escolher uma referência.
+description: Porta de entrada do produto. Na primeira vez prepara a máquina (HyperFrames, Chrome, ambiente Python). Pergunta qual dos 4 caminhos a pessoa quer (começar, só clonar, vídeo igual a uma referência, achar uma referência), roda os comandos reais dos moldes, da clonagem e da catraca e termina sempre com o próximo passo. Use quando alguém quiser um vídeo estilo Apple, trocar a marca de um molde, clonar um vídeo ou escolher uma referência.
 ---
 
 # Porta de entrada
@@ -21,10 +21,16 @@ Arquivo da pessoa fica no diretório atual, nunca na raiz.
 - Os scripts devolvem JSON `{ok, resumo, proximo}` no stdout. Leia o `resumo` para a pessoa e use o `proximo`.
   Erro vem no stderr com `codigo`: explique em uma frase e diga o conserto.
 - Render sempre um por vez (o `montar.py` já usa `--workers 1`, e o `--lote` roda uma marca por vez). Nada é publicado nem enviado.
-- Pergunte antes de instalar programa, gastar API, apagar ou mover arquivo da pessoa. Nunca sobrescreva:
+- Pergunte antes de instalar programa no Mac (brew), apagar ou mover arquivo da pessoa. Nunca sobrescreva:
   antes de trocar um arquivo dela, copie com a data no nome, ao lado.
-- Não há comando separado para preparar a máquina ou ver em que pé está: se perguntarem, olhe a pasta do
-  vídeo e `python3 aprendizado/aprender.py lista` e responda com o próximo passo.
+- **Preparo da máquina, antes de qualquer caminho** (e quando pedirem `preparar`): se `~/.apple-style-ui/pronto.json`
+  não existe, avise numa frase que vai deixar a máquina pronta (uns 2 min na primeira vez) e rode
+  `python3 preparar.py`. Ele instala o que é do produto (o ambiente Python, o HyperFrames e o Chrome dele) e confere o
+  resto. Se faltar programa do Mac, ele devolve o `conserto` (o comando do brew): mostre e rode com o ok, e depois
+  `preparar.py` de novo; sem brew, a pessoa instala pelo brew.sh, porque pede a senha do Mac. Leia o `opcional` em
+  uma frase. Não instale pacote no Python do sistema: os scripts passam sozinhos para o ambiente do produto, e tu
+  segue chamando `python3`.
+- Em que pé está um vídeo: olhe a pasta do vídeo e `python3 aprendizado/aprender.py lista` e responda com o próximo passo.
 - O que é da máquina mora em `~/.apple-style-ui/` (perfil de estilo, ambiente Python, biblioteca, vídeos dos clones).
   Nada é gravado dentro de `${CLAUDE_PLUGIN_ROOT}`: ela muda a cada atualização.
 
@@ -54,13 +60,7 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
   com as molas trocadas pelas do `estilo.js`. Para ter nota de fidelidade, ofereça o caminho 2 com o link do prompt.
 
 ## 1. Quero começar (primeira vez, uns 5 minutos)
-1. Máquina: `command -v ffmpeg node npx && python3 -c "import sys; assert sys.version_info >= (3, 11)"`. Se faltar
-   algo, ofereça `brew install ffmpeg node python` e rode com o ok (leva alguns minutos). Sem `brew`: a própria pessoa
-   instala pelo brew.sh, porque pede a senha do Mac. Depois, se `python3 -c "import numpy, PIL"` falhar e
-   `~/.apple-style-ui/venv` não existir, crie o ambiente do produto (uns 100 MB, com o ok):
-   `python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt`.
-   Não instale pacote no Python do sistema: os scripts passam sozinhos para esse ambiente, e tu segue chamando
-   `python3`. Avise: o 1º render baixa o HyperFrames e um Chrome (~300 MB).
+1. Máquina: o **Preparo** (em Regras), se ainda não foi feito.
 2. Mostre os exemplos: `open exemplos/satellite.mp4 exemplos/joi.mp4 exemplos/voiceos.mp4` (feitos com a Inter,
    sem música e com o pacote de sons livre; o teu sai com a SF Pro do teu Mac se tu escolher `fonte: sf`).
    Diga que o primeiro vídeo sai no molde do Satellite (o kit troca cor, nome, fonte e logo nos três moldes: no Joi o
@@ -77,10 +77,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    (o caminho volta no JSON, em `arquivos`) e nada que já existia é sobrescrito. Depois, siga **Fechar**.
 
 ## 2. Quero só clonar
-1. Peça o link ou o arquivo. Avise o custo antes: 1h45 a 2h e US$ 12 a 17 de API por clone (medido nos dois últimos testes cegos). Só siga com o ok.
-2. Ambiente Python do kit, se `~/.apple-style-ui/venv` ainda não existe (pergunte antes, instala uns 100 MB):
-   `python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt`.
-   Os scripts do kit acham esse ambiente sozinhos.
+1. Peça o link ou o arquivo. Avise antes que um clone é trabalho longo, umas 2 horas do Claude rodando. Só siga com o ok.
+2. Máquina: o **Preparo** (em Regras), se ainda não foi feito. O ambiente Python do kit sai dele.
 3. Referência da biblioteca ou link: `python3 clonar/caso.py referencia <link ou arquivo> --pasta clone-<nome>`
    (baixa, guarda o `ORIGEM.md` e diz se é demonstrativa). Depois siga `clonar/README.md` e `clonar/CLONAR.md` a partir
    do `proximo` (`clonar.py novo`, `medir`, que é o raio-x, e as rodadas).
@@ -127,7 +125,7 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
   3. Com o ok da folha, o mesmo comando sem `--previa`. Depois, **Fechar**.
 - **Não tem molde:** faça o caminho 2. Depois proponha transformar o clone em molde no padrão de
   `moldes/joi/NOTAS.md` (campos no `<html>`, montar.py, versão travada no MOLDE.json e em `versoes-travadas/<molde>-vN/`, prova de que com os padrões
-  sai o clone). Uns 20 min e US$ 4 (teste cego E, 31/10): só com o ok.
+  sai o clone). Uns 20 min: só com o ok.
 
 ## 4. Quero uma referência
 1. `open biblioteca/site/index.html` (a galeria curada; abre direto no navegador, sem servidor).
@@ -145,6 +143,11 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
    pequeno com peso errado, cursor fora do lugar, avatar que vira mancha...), meça o que a receita manda e corrija com
    a técnica e os números dela, sempre paramétrica (nunca pose quadro a quadro). Renderize e meça de novo, até 6 voltas. Só entregue com `aprovada: true`; no fim do orçamento, diga o que ainda
    reprova. Detalhes em `clonar/CLONAR.md`, "O loop de qualidade".
+   **Molde provado (Satellite, Joi, VoiceOS) com o movimento do molde:** o movimento foi medido do original e quem
+   guarda ele é o portão do passo 2. Reprovação de `mola`, `molas`, `quebras`, `obturador` ou escalonamento aqui
+   é do molde, não do teu vídeo, e muda de volta para volta com o comprimento do texto (ζ 0,19 com o limite em 0,20,
+   visto em 03/11): não troque texto nem refaça render por ela, diga numa frase e siga. Corrija só o que é do texto
+   (`nitidez`, `area_segura`).
 1. O portão lê a versão resolvida (sem `"marca"` nem `"molde"`), que o `montar.py` já gravou em
    `<video>/.apple-style-ui/versao-resolvida.json`.
 2. Portão e registro pendente, num comando só (cerca de 1 min no Satellite):

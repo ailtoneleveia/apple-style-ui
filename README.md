@@ -1,74 +1,86 @@
 # Apple Style UI
 
-Motion design estilo Apple dentro do Claude Code. Não é uma lista de prompts: cada molde veio de um vídeo real,
-clonado e medido quadro a quadro (mola, motion blur, tempo de cada peça, peso da letra), e o que se aprendeu nesses
-clones virou código e receita. Tu pede em português e o vídeo sai com o movimento medido, não com uma mola inventada.
+Vídeo com cara de lançamento da Apple, feito no Claude Code, pedindo em português.
 
-## O que tu consegue fazer
+O que separa um vídeo da Apple de um vídeo qualquer é o movimento: a peça que assenta sem tremer, o desfoque de
+quem passa rápido, cada palavra entrando no seu tempo. A IA sozinha chuta esse movimento. Aqui ele vem medido: cada
+molde saiu de um vídeo real, analisado quadro a quadro, e o que se aprendeu virou código e receita.
 
-| Tu quer | Tu manda | Sai | Tempo | Prova (teste cego*) |
-|---|---|---|---|---|
-| **Vídeo com a tua marca** num molde provado (Satellite, Joi, VoiceOS) | nome, cor, fonte, logo, textos | o vídeo com as molas, o blur e o ritmo do original | ~12 min, US$ 1 | ok |
-| **Tua gravação editada** igual a uma referência de pessoa falando (molde fala-destaque) | o teu vídeo falando | legenda com palavra em destaque, transcrita e escolhida sozinha, fora do rosto e legível até sobre tela gravada | ~8 min, US$ 0,90 | ok |
-| **Clonar qualquer vídeo** de interface | o link | o clone em HTML (nada recortado do original), o lado a lado e a nota por peça | ~2 h, US$ 12 a 17 | ok, com limites abaixo |
-| **O estilo de um clone no teu vídeo** | o clone e a tua marca e textos | o clone vira molde (campos, versão travada, prova de que com os padrões sai o clone) e o teu vídeo nele | ~20 min, US$ 4 | ok |
-| **Vídeo novo** a partir de uma ficha da galeria | o texto copiado e o teu produto | um vídeo novo com as molas, o obturador e o motion blur medidos, aprovado no loop de qualidade | ~18 min, US$ 5 | ok |
-| **Achar uma referência** | nada | a biblioteca: 1.323 vídeos classificados, 413 na galeria, com o texto pronto para colar | na hora | |
+## O que dá para fazer
 
-\* Teste cego: sessão nova do Claude Code numa pasta vazia, só com o plugin e o texto que a pessoa copia da biblioteca,
-sem ninguém para responder perguntas. É o jeito que a gente prova que tu vai conseguir o mesmo que nós. Os de 31/10
-rodaram no plugin instalado pelo GitHub (`/plugin install`), não numa cópia nossa; tempo e custo são os medidos neles.
-O primeiro vídeo rodou também como num Mac sem nada (03/11): sem HyperFrames, Chrome nem Python do produto, em 9 min.
+- **Pôr a tua marca num vídeo pronto.** São três vídeos de interface prontos (Satellite, Joi e VoiceOS). Tu diz o
+  nome, a cor, a fonte, o logo e os textos, e sai o vídeo com a tua marca e o mesmo movimento do original.
+- **Editar a tua gravação nesse estilo.** Manda o vídeo de tu falando: ele transcreve, escolhe a palavra de
+  destaque de cada frase e põe a legenda fora do rosto, legível até em cima de tela gravada.
+- **Copiar o estilo de um vídeo que tu viu.** Manda o link de um vídeo de interface. Ele recria a animação em código,
+  sem recortar nada do original, e compara lado a lado, peça por peça, rodada após rodada.
+- **Usar esse estilo nos teus vídeos.** O vídeo copiado vira um molde teu: troca marca, cores e textos e usa quantas
+  vezes quiser.
+- **Fazer um vídeo novo** a partir de uma referência da galeria, no mesmo padrão de movimento.
+- **Achar referência.** Uma galeria com mais de 400 vídeos de interface escolhidos a dedo: filtra, assiste ali mesmo
+  e copia o pedido pronto para o Claude.
 
-## Primeiro vídeo
+## Como começar
 
 No Claude Code:
 
 ```
 /plugin marketplace add ailtoneleveia/apple-style-ui
 /plugin install apple-style-ui@apple-style-ui
-/apple-style-ui:video começar
 ```
 
-Ele mostra os 3 exemplos (`exemplos/`), pergunta teu nome e tua cor e faz o vídeo no molde do Satellite. Na primeira
-vez ele baixa o HyperFrames e um Chrome (uns 300 MB). Depois, `/apple-style-ui:video` sempre pergunta qual dos
-caminhos acima tu quer e termina com o próximo passo.
+Depois é um comando só:
 
-Para receber as correções novas: `/plugin marketplace update apple-style-ui` e depois `/plugin update apple-style-ui@apple-style-ui`.
+```
+/apple-style-ui:video
+```
 
-## O que vem dentro (o saber de motion)
+Na primeira vez ele prepara a máquina sozinho: baixa o HyperFrames, o Chrome que faz o render e as bibliotecas de
+Python, e confere o resto. Se faltar algum programa no Mac (ffmpeg, Node), ele mostra o comando e instala com o teu ok.
+Depois mostra os exemplos e faz o teu primeiro vídeo com o teu nome e a tua cor. Se o comando não aparecer logo depois
+de instalar, fecha e abre o Claude Code.
 
-- **`estilo/estilo.js` e `estilo/ESTILO.md`: o perfil de estilo.** As 3 molas medidas (suave, firme, elástica, com ζ
-  e ω), o obturador de 1/120 s com subquadros de verdade, o ritmo (palavra a cada 40 ms, item a cada 180 ms), a caixa
-  que se transforma em vez de cortar, o nascer desfocado e o peso da letra por função. Tudo em 8 regras, numa página.
-- **`estilo/RECEITAS.md`: 24 receitas por sintoma.** "A lista entra junta", "o cursor está no lugar errado",
-  "o texto entra nítido demais", "o memoji vira mancha". Cada uma diz o que medir, o número de referência e o código.
-- **`moldes/`**: Satellite, Joi, VoiceOS e fala-destaque, cada um com as notas do que foi medido e versões travadas.
-- **`clonar/`**: o kit de clonagem. Raio-x do vídeo, ficha por cena e o medidor por peça (trajetória, mola, quebra de
-  velocidade, rastro de motion blur, nitidez, forma, texto). Cada rodada gera imagens das manchas onde o clone ainda
-  difere, e o clone só fecha depois que alguém olha cada uma.
-- **`sons/`**: som por elemento (clique, tecla, chegada), todos CC0, encaixados no movimento.
-- **`aprendizado/`**: a catraca. Um vídeo novo não pode sair pior que o anterior em nota, tempo nem custo, e o que tu
-  aprova vira o teu perfil.
-- **`biblioteca/site/index.html`**: a galeria. Filtra por nível, tipo e peça, vê o vídeo ali mesmo (**Ver aqui**, o player oficial do Instagram ou do X), clica em **Copiar para o Claude** e cola.
-  Provada vai direto para o molde; clonável vai para o ciclo de clonagem; o resto vira vídeo novo no estilo calibrado.
+## No dia a dia
+
+Digita `/apple-style-ui:video` e diz o que tu quer, do teu jeito:
+
+- "põe a minha marca no Joi, cor #E54A26, o app se chama Rotina"
+- "edita a minha gravação nesse estilo" e o arquivo junto
+- "quero um vídeo igual a esse" e o link
+- "me mostra a galeria"
+
+Ele pergunta só o que faltar e termina sempre dizendo o próximo passo. Na galeria, cada vídeo tem **Ver aqui**, para
+assistir sem sair dela, e **Copiar para o Claude**, que copia o pedido pronto: é só colar no Claude Code.
+
+Os teus vídeos ficam na pasta onde tu abriu o Claude Code, em `marcas/<tua marca>/videos/`. Cada vídeo que tu aprova
+ensina o teu estilo, e o próximo não sai pior que o anterior.
+
+Para receber as novidades: `/plugin marketplace update apple-style-ui` e depois `/plugin update apple-style-ui@apple-style-ui`.
+
+## O que vem dentro
+
+- **O perfil de estilo** (`estilo/`): as molas medidas, o desfoque de movimento de verdade, o ritmo de entrada e o
+  peso da letra, em 8 regras numa página. E 24 receitas por sintoma, do tipo "a lista entra toda junta" ou "o texto
+  entra nítido demais", cada uma com o que medir e o código que resolve.
+- **Os moldes** (`moldes/`): Satellite, Joi, VoiceOS e o da pessoa falando, com as notas do que foi medido.
+- **O kit de clonagem** (`clonar/`): mede cada peça do vídeo original e mostra onde a cópia ainda difere.
+- **Os sons** (`sons/`): clique, tecla e chegada, de uso livre, encaixados no movimento.
+- **A galeria** (`biblioteca/`): as referências com o link do original e o crédito de quem fez.
 
 ## O que ainda não faz
 
-- **Nota de fidelidade no vídeo novo**: ele passa no loop de qualidade do estilo (molas, obturador, ritmo, texto
-  nítido), mas não é comparado com a referência quadro a quadro. Para ter a nota, clona a referência antes.
-- **Misturar peças de moldes diferentes** num vídeo só.
-- **Clone perfeito em detalhe rápido**: no último teste cego, os pontos de uma pílula caíram juntos quando no
-  original caem em cascata, em 4 quadros. O medidor não pega eventos tão curtos; a receita 6 cobre o caso.
-- **Memoji e emoji da Apple** não podem ser distribuídos: o clone desenha os seus, e eles ficam diferentes.
-- **Só Mac**, por enquanto (render e fontes do sistema).
+- Misturar peças de moldes diferentes num vídeo só.
+- Comparar o vídeo novo com a referência peça por peça. Ele segue o padrão de movimento, e a comparação só existe
+  quando tu copia a referência antes.
+- Detalhe muito rápido na cópia: uma cascata de 4 quadros pode sair toda junta.
+- Memoji e emoji da Apple não podem ir junto: a cópia desenha os seus, e eles ficam diferentes.
+- Só roda no Mac, por enquanto.
 
 ## O que precisa ter
 
-Mac, Claude Code, ffmpeg, Node e Python 3.11 ou mais novo (`brew install ffmpeg node python`). As bibliotecas de
-Python ficam num ambiente só do produto (`~/.apple-style-ui/venv`, uns 100 MB), que o primeiro vídeo cria com o teu
-ok; o Python do teu Mac não é tocado. Para transcrever fala, uma `GROQ_API_KEY`
-gratuita no `.env` da tua pasta (sem ela, a transcrição roda local, mais lenta, e a 1ª vez baixa ~3 GB).
+Mac e Claude Code. O resto o primeiro comando instala. Para transcrever fala mais rápido, uma `GROQ_API_KEY`
+gratuita (console.groq.com) no `.env` da tua pasta. Sem ela, a transcrição roda no teu Mac, e a primeira vez baixa
+uns 3 GB.
 
 ## Licenças
 

@@ -19,6 +19,8 @@ apple-style-ui/
 ├── README.md              uma tela
 ├── ESTRUTURA.md           este arquivo
 ├── LICENCAS-DE-TERCEIROS.md
+├── preparar.py            deixa a máquina pronta (ambiente Python, HyperFrames, Chrome) e diz o que falta
+├── hooks/                 hooks.json e aviso.sh: o aviso de abertura enquanto a máquina não foi preparada
 ├── montar.py              o montador único dos moldes de interface (Satellite, Joi e VoiceOS)
 ├── moldes/                só o formato de cada vídeo: estrutura, campos e padrões
 │   ├── satellite/         molde/ (projeto HyperFrames, com o sons.json), montar.py (invólucro), NOTAS.md, versoes/,
@@ -53,7 +55,11 @@ ficam na pasta de trabalho. O plugin nunca grava na própria raiz (ela muda a ca
 ## Comandos
 
 - **Um de entrada:** `/apple-style-ui:video` (o `SKILL.md`). Pergunta o caminho e roda os scripts. Atalhos pelo
-  argumento: `/apple-style-ui:video começar`, `clonar <link>`, `igual <link>`, `galeria`.
+  argumento: `/apple-style-ui:video começar`, `preparar`, `clonar <link>`, `igual <link>`, `galeria`.
+- **Preparo:** `preparar.py` instala o que é do produto (o ambiente Python, o HyperFrames e o Chrome dele), confere os
+  programas do Mac e grava `~/.apple-style-ui/pronto.json`. Enquanto esse arquivo não existe, o aviso de
+  `hooks/aviso.sh` aparece ao abrir o Claude Code dizendo o que digitar. O comando de entrada roda o preparo sozinho
+  na primeira vez.
 - **Por baixo:** `montar.py` (o montador dos três moldes de interface; os `moldes/<molde>/montar.py` são invólucros de
   3 linhas), `moldes/fala-destaque/montar.py` (chamado pelo `clonar/caso.py aplicar`), `aprendizado/portao.py`,
   `aprendizado/aprender.py` (`aprovar`, `travar`, `perfil`, `lista`, `decisoes`) e os de `clonar/` (`clonar.py`, `caso.py`).
