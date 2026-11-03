@@ -54,9 +54,13 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
   com as molas trocadas pelas do `estilo.js`. Para ter nota de fidelidade, ofereça o caminho 2 com o link do prompt.
 
 ## 1. Quero começar (primeira vez, uns 5 minutos)
-1. Máquina: `command -v ffmpeg node npx python3 && python3 -c "import numpy, PIL"`. Se faltar algo, ofereça
-   `brew install ffmpeg node numpy pillow` e rode com o ok (leva alguns minutos). Sem `brew`: a própria pessoa
-   instala pelo brew.sh, porque pede a senha do Mac. Avise: o 1º render baixa o HyperFrames e um Chrome (~300 MB).
+1. Máquina: `command -v ffmpeg node npx && python3 -c "import sys; assert sys.version_info >= (3, 11)"`. Se faltar
+   algo, ofereça `brew install ffmpeg node python` e rode com o ok (leva alguns minutos). Sem `brew`: a própria pessoa
+   instala pelo brew.sh, porque pede a senha do Mac. Depois, se `python3 -c "import numpy, PIL"` falhar e
+   `~/.apple-style-ui/venv` não existir, crie o ambiente do produto (uns 100 MB, com o ok):
+   `python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt`.
+   Não instale pacote no Python do sistema: os scripts passam sozinhos para esse ambiente, e tu segue chamando
+   `python3`. Avise: o 1º render baixa o HyperFrames e um Chrome (~300 MB).
 2. Mostre os exemplos: `open exemplos/satellite.mp4 exemplos/joi.mp4 exemplos/voiceos.mp4` (feitos com a Inter,
    sem música e com o pacote de sons livre; o teu sai com a SF Pro do teu Mac se tu escolher `fonte: sf`).
    Diga que o primeiro vídeo sai no molde do Satellite (o kit troca cor, nome, fonte e logo nos três moldes: no Joi o
@@ -74,7 +78,7 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
 
 ## 2. Quero só clonar
 1. Peça o link ou o arquivo. Avise o custo antes: 1h45 a 2h e US$ 12 a 17 de API por clone (medido nos dois últimos testes cegos). Só siga com o ok.
-2. Ambiente Python do kit, uma vez (pergunte antes, instala uns 100 MB):
+2. Ambiente Python do kit, se `~/.apple-style-ui/venv` ainda não existe (pergunte antes, instala uns 100 MB):
    `python3 -m venv ~/.apple-style-ui/venv && ~/.apple-style-ui/venv/bin/pip install -r clonar/requirements.txt`.
    Os scripts do kit acham esse ambiente sozinhos.
 3. Referência da biblioteca ou link: `python3 clonar/caso.py referencia <link ou arquivo> --pasta clone-<nome>`

@@ -18,6 +18,7 @@ clones virou código e receita. Tu pede em português e o vídeo sai com o movim
 \* Teste cego: sessão nova do Claude Code numa pasta vazia, só com o plugin e o texto que a pessoa copia da biblioteca,
 sem ninguém para responder perguntas. É o jeito que a gente prova que tu vai conseguir o mesmo que nós. Os de 31/10
 rodaram no plugin instalado pelo GitHub (`/plugin install`), não numa cópia nossa; tempo e custo são os medidos neles.
+O primeiro vídeo rodou também como num Mac sem nada (03/11): sem HyperFrames, Chrome nem Python do produto, em 9 min.
 
 ## Primeiro vídeo
 
@@ -64,8 +65,9 @@ Para receber as correções novas: `/plugin marketplace update apple-style-ui` e
 
 ## O que precisa ter
 
-Mac, Claude Code, ffmpeg, Node e Python 3 com numpy e pillow (`brew install ffmpeg node numpy pillow`). Para clonar,
-um ambiente Python a mais, que o caminho de clonagem cria com o teu ok. Para transcrever fala, uma `GROQ_API_KEY`
+Mac, Claude Code, ffmpeg, Node e Python 3.11 ou mais novo (`brew install ffmpeg node python`). As bibliotecas de
+Python ficam num ambiente só do produto (`~/.apple-style-ui/venv`, uns 100 MB), que o primeiro vídeo cria com o teu
+ok; o Python do teu Mac não é tocado. Para transcrever fala, uma `GROQ_API_KEY`
 gratuita no `.env` da tua pasta (sem ela, a transcrição roda local, mais lenta, e a 1ª vez baixa ~3 GB).
 
 ## Licenças

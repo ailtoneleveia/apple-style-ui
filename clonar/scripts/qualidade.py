@@ -1128,8 +1128,9 @@ def estilo(video, hf=None):
         if txt and conf >= 70:
             # as palavras lidas (não a mancha inteira) contra a área segura, em px do vídeo
             pal = [[(x0 + a_) / k, (y0 + b_) / k, (x0 + c_) / k, (y0 + d_) / k] for a_, b_, c_, d_ in ocr.caixas]
-            # palavra cortada pela borda do quadro é letreiro passando, não texto mal posto; folga de meia altura de letra
-            fora = [p_ for p_ in pal if min(p_[0], p_[1], W - p_[2], H - p_[3]) > 2
+            # palavra cortada pela borda do quadro é letreiro passando, não texto mal posto; folga de meia altura de letra.
+            # A caixa do OCR numa letra cortada começa até ~1 % da largura longe da borda ("otina Pro" a 4 px, 03/11)
+            fora = [p_ for p_ in pal if min(p_[0], p_[1], W - p_[2], H - p_[3]) > 0.01 * W
                     and max(seg[0] - p_[0], seg[1] - p_[1], p_[2] - seg[2], p_[3] - seg[3]) > 0.5 * (p_[3] - p_[1])]
             r["medidas"]["texto"] = dict(texto=txt, confianca=round(conf), nitidez=round(nitidez(cv2.cvtColor(crop, cv2.COLOR_RGB2GRAY)), 3),
                                          quadro=f0, caixa=[round(v) for v in (fora[0] if fora else caixa(t, t["f"].index(f0)))],

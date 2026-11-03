@@ -22,6 +22,14 @@ uma linha {"ok": false, "erro", "codigo"} no stderr. Códigos de saída: 0 ok, 1
 """
 import argparse, base64, hashlib, importlib.util, json, os, re, shlex, shutil, subprocess, sys, tempfile, zlib
 from functools import lru_cache
+
+# sem numpy e pillow no python3 da pessoa, roda no ambiente do produto (criado no passo 1 do SKILL.md)
+_VENV = os.path.expanduser("~/.apple-style-ui/venv")
+try:
+    import numpy, PIL  # noqa: F401,E401
+except ImportError:
+    if os.path.exists(f"{_VENV}/bin/python") and sys.prefix != _VENV:
+        os.execv(f"{_VENV}/bin/python", [f"{_VENV}/bin/python", *sys.argv])
 import numpy as np
 
 AQUI = os.path.dirname(os.path.abspath(__file__))

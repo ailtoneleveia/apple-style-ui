@@ -16,8 +16,8 @@
 #      aprovado para a QUARENTENA, porque a régua da junior mudou.
 # Sai com 0 quando os quatro dão o esperado, 1 quando algum não dá.
 #
-# Nas versões dos casos 2 e 4 a cor principal é laranja: com o verde padrão, o portão acusa o matiz de 160° como cor
-# fora da paleta (ver ESTRUTURA.md), e o motivo do teste ficaria misturado.
+# Nas versões dos casos 2 e 4 a cor principal é laranja, para o motivo do teste não se misturar com cor: o verde
+# padrão já reprovou por matiz de 160° (ver ESTRUTURA.md, resolvido).
 
 set -u
 AQUI=${0:A:h}

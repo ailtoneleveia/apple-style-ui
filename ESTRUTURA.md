@@ -77,11 +77,10 @@ ficam na pasta de trabalho. O plugin nunca grava na própria raiz (ela muda a ca
 - **A régua do portão é deste Mac.** `aprendizado/regressao/<molde>-original.txt` guarda o md5 e uma miniatura de cada
   quadro. A do Satellite saiu da prévia do clone; a do Joi e a do VoiceOS foram refeitas com as peças livres. A
   tolerância (16 em 255 na miniatura) foi calibrada só aqui: falta medir numa máquina de fora.
-- **O verde padrão reprova por cor.** Com a `cor_principal` padrão do Satellite, o portão acusa matiz de 160° fora da
-  paleta na própria versão original. Uma versão com outra cor não sofre disso. Conserto: igualar as duas faixas em
-  `fora_da_paleta` (portao.py).
-- **Portão de clone** procura `reference/analysis/` ao lado do mp4 (o formato antigo de clone); o desenho novo usa
-  `referencia/`.
+- **Resolvido: o verde padrão reprovava por cor.** As duas faixas de `fora_da_paleta` (portao.py) usam a mesma janela
+  de ±40°, e a versão original do Satellite passa.
+- **Resolvido: portão de clone** lê a análise do clone novo (`<clone>/.apple-style-ui/medidas/analise/`) e, sem ela, a
+  do formato antigo (`reference/analysis/`).
 - **Resolvido (30/10): decisões em jsonl.** Cada decisão do vídeo é uma linha nova em `.apple-style-ui/decisoes.jsonl`
   (o arquivo só cresce). O `decisoes.json` antigo (a lista reescrita) continua sendo lido antes das linhas novas e não é
   mais escrito: `python3 aprendizado/aprender.py decisoes --projeto <pasta do vídeo>`.
