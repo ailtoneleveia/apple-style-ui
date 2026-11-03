@@ -32,7 +32,7 @@ No Claude Code:
 Depois é um comando só:
 
 ```
-/apple-style-ui:video
+/apple-style-ui
 ```
 
 Na primeira vez ele prepara a máquina sozinho: baixa o HyperFrames, o Chrome que faz o render e as bibliotecas de
@@ -42,7 +42,8 @@ de instalar, fecha e abre o Claude Code.
 
 ## No dia a dia
 
-Digita `/apple-style-ui:video` e diz o que tu quer, do teu jeito:
+Digita `/apple-style-ui` e diz o que tu quer, do teu jeito. Nem precisa do comando: pedir um vídeo estilo Apple numa
+frase normal já chama o plugin.
 
 - "põe a minha marca no Joi, cor #E54A26, o app se chama Rotina"
 - "edita a minha gravação nesse estilo" e o arquivo junto

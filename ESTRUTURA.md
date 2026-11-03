@@ -1,7 +1,9 @@
 # Estrutura do repositório
 
 O nome é **Apple Style UI**; o identificador é `apple-style-ui`. Ele mora em `.claude-plugin/plugin.json`, e o
-`marketplace.json` repete o `name` porque o Claude Code exige. O comando de entrada sai dele: `/apple-style-ui:video`.
+`marketplace.json` repete o `name` porque o Claude Code exige. O comando de entrada sai dele: `/apple-style-ui`.
+A skill do `SKILL.md` tem o mesmo nome do plugin de propósito: assim a pessoa digita só `/apple-style-ui`, sem o
+`:<skill>` que o Claude Code põe nos comandos de plugin (`/apple-style-ui:apple-style-ui` também funciona).
 No código, o nome é uma constante só: `NOME = "apple-style-ui"` no `montar.py`. Dela saem a pasta da máquina
 (`~/.apple-style-ui/`) e a de bastidor (`.apple-style-ui/`, no vídeo e no clone). A sigla `ASUI_` fica só nas
 variáveis de ambiente.
@@ -15,7 +17,7 @@ instalada pela versão: sem subir, o `/plugin update` diz que já está na últi
 ```text
 apple-style-ui/
 ├── .claude-plugin/        plugin.json e marketplace.json
-├── SKILL.md               o comando de entrada, /apple-style-ui:video (os 4 caminhos)
+├── SKILL.md               o comando de entrada, /apple-style-ui (os 4 caminhos)
 ├── README.md              uma tela
 ├── ESTRUTURA.md           este arquivo
 ├── LICENCAS-DE-TERCEIROS.md
@@ -54,8 +56,8 @@ ficam na pasta de trabalho. O plugin nunca grava na própria raiz (ela muda a ca
 
 ## Comandos
 
-- **Um de entrada:** `/apple-style-ui:video` (o `SKILL.md`). Pergunta o caminho e roda os scripts. Atalhos pelo
-  argumento: `/apple-style-ui:video começar`, `preparar`, `clonar <link>`, `igual <link>`, `galeria`.
+- **Um de entrada:** `/apple-style-ui` (o `SKILL.md`). Pergunta o caminho e roda os scripts. Atalhos pelo
+  argumento: `/apple-style-ui começar`, `preparar`, `clonar <link>`, `igual <link>`, `galeria`.
 - **Preparo:** `preparar.py` instala o que é do produto (o ambiente Python, o HyperFrames e o Chrome dele), confere os
   programas do Mac e grava `~/.apple-style-ui/pronto.json`. Enquanto esse arquivo não existe, o aviso de
   `hooks/aviso.sh` aparece ao abrir o Claude Code dizendo o que digitar. O comando de entrada roda o preparo sozinho

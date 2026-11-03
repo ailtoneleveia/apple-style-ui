@@ -122,7 +122,7 @@ def main():
     if not a.conferir:
         PRONTO.write_text(json.dumps(dict(versao=plugin, hyperframes=HF, data=datetime.date.today().isoformat()), indent=1) + "\n")
     print(json.dumps(dict(ok=True, resumo="Máquina pronta: " + ", ".join(pronto) + ".", pronto=pronto, opcional=opcional,
-                          proximo=dict(comando="/apple-style-ui:video começar", motivo="o primeiro vídeo, com a tua marca",
+                          proximo=dict(comando="/apple-style-ui começar", motivo="o primeiro vídeo, com a tua marca",
                                        precisa_de_voce=True)), ensure_ascii=False, indent=1))
 
 

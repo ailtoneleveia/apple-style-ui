@@ -1,5 +1,5 @@
 ---
-name: video
+name: apple-style-ui
 description: Porta de entrada do produto. Na primeira vez prepara a máquina (HyperFrames, Chrome, ambiente Python). Pergunta qual dos 4 caminhos a pessoa quer (começar, só clonar, vídeo igual a uma referência, achar uma referência), roda os comandos reais dos moldes, da clonagem e da catraca e termina sempre com o próximo passo. Use quando alguém quiser um vídeo estilo Apple, trocar a marca de um molde, clonar um vídeo ou escolher uma referência.
 ---
 
