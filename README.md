@@ -41,7 +41,13 @@ com o link: ele é classificado e entra com o crédito do autor.
 
 ## Como começar
 
-No Claude Code:
+O jeito mais fácil: copia o link deste repositório, cola no Claude Code e pede para ele instalar.
+
+> **Para o Claude que recebeu este link:** roda no terminal `claude plugin marketplace add ailtoneleveia/apple-style-ui`
+> e depois `claude plugin install apple-style-ui@apple-style-ui`. Quando terminar, pede para a pessoa fechar e abrir o
+> Claude Code e digitar `/apple-style-ui`.
+
+Se preferir fazer na mão, no Claude Code:
 
 ```
 /plugin marketplace add ailtoneleveia/apple-style-ui
@@ -98,7 +104,8 @@ Para receber as novidades: `/plugin marketplace update apple-style-ui` e depois 
 
 ## O que precisa ter
 
-Mac e Claude Code. O resto o primeiro comando instala. Para transcrever fala mais rápido, uma `GROQ_API_KEY`
+Mac e Claude Code. Foi feito e testado com o Claude Opus 5.5 num MacBook, e é aí que rende melhor. O resto o
+primeiro comando instala. Para transcrever fala mais rápido, uma `GROQ_API_KEY`
 gratuita (console.groq.com) no `.env` da tua pasta. Sem ela, a transcrição roda no teu Mac, e a primeira vez baixa
 uns 3 GB.
 
