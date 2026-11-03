@@ -178,14 +178,17 @@ function ficha(e) {
   const bVer = el('button', { text: 'Ver aqui', 'aria-expanded': 'false' });
   bVer.onclick = () => {
     const card = bVer.closest('.card'), aberto = card.firstChild.tagName === 'IFRAME';
-    card.replaceChild(aberto ? capa() : el('iframe', { class: 'thumb', src: fonteEmbed, title: `Reel de @${e.autor}`, loading: 'lazy', allow: 'autoplay; encrypted-media' }), card.firstChild);
+    card.replaceChild(aberto ? capa() : player(), card.firstChild);
     bVer.textContent = aberto ? 'Ver aqui' : 'Fechar prévia'; bVer.setAttribute('aria-expanded', !aberto);
   };
   const meta = [e.data, `${e.duracao_s.toFixed(0)} s`, e.fonte, `♥ ${fmt(e.curtidas)}`, e.x ? 'X' : ''];
   if (e.som && e.som.tempo_bpm) meta.push(`${Math.round(e.som.tempo_bpm)} BPM`);
   if (e.som && e.som.onsets_per_s) meta.push(`${e.som.onsets_per_s.toFixed(1)} sons/s`);
+  const player = () => el('iframe', { class: 'thumb', src: fonteEmbed, title: `Reel de @${e.autor}`, loading: 'lazy', allow: 'autoplay; encrypted-media' });
+  // online (GitHub Pages) a capa já é o player oficial; aberta do disco, o player só carrega no botão "Ver aqui"
+  const auto = fonteEmbed && !e.thumb && location.protocol.startsWith('http');
   const capa = () => e.thumb ? el('img', { class: 'thumb', src: e.thumb, alt: `Quatro quadros do reel de ${e.autor}`, loading: 'lazy' })
-      : el('a', { class: 'thumb sem', href: e.url, target: '_blank', rel: 'noopener', text: `@${e.autor}` });
+      : auto ? player() : el('a', { class: 'thumb sem', href: e.url, target: '_blank', rel: 'noopener', text: `@${e.autor}` });
   return el('article', { class: 'card' },
     capa(),
     el('div', { class: 'info' },
@@ -199,7 +202,7 @@ function ficha(e) {
         el('span', { class: 'tag tipo', text: TIPOS[e.tipo] || e.tipo }),
         ...(ENTREGA[e.entrega] ? [el('span', { class: 'tag tipo', text: ENTREGA[e.entrega] + (e.palavra ? ` (comenta ${e.palavra})` : '') })] : []),
         ...e.pecas.map(p => el('span', { class: 'tag', text: nomes[p] || p }))),
-      el('div', { class: 'acoes' }, bCopiar, ...(fonteEmbed ? [bVer] : []), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'Ver original' }), bComo),
+      el('div', { class: 'acoes' }, bCopiar, ...(fonteEmbed && !auto ? [bVer] : []), el('a', { href: e.url, target: '_blank', rel: 'noopener', text: 'Ver original' }), bComo),
       pre));
 }
 

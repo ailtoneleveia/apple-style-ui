@@ -2,6 +2,10 @@
 
 Vídeo com cara de lançamento da Apple, feito no Claude Code, pedindo em português.
 
+![Joi, Satellite e VoiceOS: três vídeos clonados quadro a quadro, que vêm prontos para receber a tua marca](docs/vitrine.gif)
+
+**[▶ Abrir a galeria: 413 vídeos no estilo Apple, cada um com o pedido pronto para colar no Claude](https://ailtoneleveia.github.io/apple-style-ui/biblioteca/site/)**
+
 O que separa um vídeo da Apple de um vídeo qualquer é o movimento: a peça que assenta sem tremer, o desfoque de
 quem passa rápido, cada palavra entrando no seu tempo. A IA sozinha chuta esse movimento. Aqui ele vem medido: cada
 molde saiu de um vídeo real, analisado quadro a quadro, e o que se aprendeu virou código e receita.
@@ -17,8 +21,23 @@ molde saiu de um vídeo real, analisado quadro a quadro, e o que se aprendeu vir
 - **Usar esse estilo nos teus vídeos.** O vídeo copiado vira um molde teu: troca marca, cores e textos e usa quantas
   vezes quiser.
 - **Fazer um vídeo novo** a partir de uma referência da galeria, no mesmo padrão de movimento.
-- **Achar referência.** Uma galeria com mais de 400 vídeos de interface escolhidos a dedo: filtra, assiste ali mesmo
-  e copia o pedido pronto para o Claude.
+- **Achar referência.** A [galeria](https://ailtoneleveia.github.io/apple-style-ui/biblioteca/site/) tem mais de
+  400 vídeos de interface escolhidos a dedo: filtra pela peça (Dynamic Island, número girando, vidro...), assiste ali
+  mesmo e copia o pedido pronto para o Claude. Funciona até sem o plugin.
+
+## Original e clone
+
+Os três moldes saíram de vídeos do [@creatoroly](https://www.instagram.com/creatoroly/), refeitos em código e medidos
+peça por peça contra o original. Quanto menor a distância e mais perto de 1 a correlação de movimento, mais igual.
+
+| molde | original | o nosso | distância | correlação |
+|---|---|---|---|---|
+| Satellite | [ver no Instagram](https://www.instagram.com/p/DWWQEOmDfsf/) | [satellite.mp4](exemplos/satellite.mp4) | 0,010 | 0,981 |
+| Joi | [ver no Instagram](https://www.instagram.com/p/DPJJwcujV0X/) | [joi.mp4](exemplos/joi.mp4) | 0,004 | 0,997 |
+| VoiceOS | [ver no Instagram](https://www.instagram.com/p/DafsqUut4x1/) | [voiceos.mp4](exemplos/voiceos.mp4) | 0,010 | 0,999 |
+
+Achou um vídeo nesse estilo que não está na galeria? [Abre uma issue](https://github.com/ailtoneleveia/apple-style-ui/issues/new)
+com o link: ele é classificado e entra com o crédito do autor.
 
 ## Como começar
 

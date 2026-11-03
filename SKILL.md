@@ -128,7 +128,8 @@ Se a pessoa não disse o caminho nem mandou link ou arquivo junto do comando, pe
   sai o clone). Uns 20 min: só com o ok.
 
 ## 4. Quero uma referência
-1. `open biblioteca/site/index.html` (a galeria curada; abre direto no navegador, sem servidor).
+1. `open https://ailtoneleveia.github.io/apple-style-ui/biblioteca/site/` (a galeria curada, com o vídeo de cada ficha
+   já na capa). Sem internet: `open biblioteca/site/index.html`, e o vídeo abre no botão "Ver aqui".
 2. Como escolher: em "O que é", fique em filme (o vídeo final); em "Tipo", interface ou pessoa falando; em "Peça",
    a peça que tu quer; ordem "Fica melhor". Ficha **verificada** já tem molde e sai em minutos; **classificada**
    precisa de clone antes. Cada ficha traz o link do original, com crédito, e um prompt.

@@ -18,7 +18,9 @@ instalada pela versão: sem subir, o `/plugin update` diz que já está na últi
 apple-style-ui/
 ├── .claude-plugin/        plugin.json e marketplace.json
 ├── SKILL.md               o comando de entrada, /apple-style-ui (os 4 caminhos)
-├── README.md              uma tela
+├── README.md              a vitrine (docs/vitrine.gif) e como começar
+├── docs/                  vitrine.gif: os três moldes em movimento, para o README
+├── .nojekyll              o GitHub Pages serve a galeria como está (biblioteca/site/)
 ├── ESTRUTURA.md           este arquivo
 ├── LICENCAS-DE-TERCEIROS.md
 ├── preparar.py            deixa a máquina pronta (ambiente Python, HyperFrames, Chrome) e diz o que falta
@@ -76,7 +78,7 @@ ficam na pasta de trabalho. O plugin nunca grava na própria raiz (ela muda a ca
 | áudio dos originais e a música de teste | `assets/silencio.m4a` em cada molde; o pacote de sons CC0 por cima (`"sons"`) |
 | recortes do Joi e do VoiceOS (objetos, céu, vinhedo, ícones, memoji) | peças livres de `moldes/pecas_livres.py`, com o mesmo nome e tamanho |
 | vídeos dos clones (lado a lado) | `~/.apple-style-ui/originais/<molde>.mp4`; sem ele, sai só a versão |
-| vídeos e miniaturas da biblioteca | só o link do original, com crédito; o "Ver aqui" de cada ficha abre o player oficial do Instagram ou do X dentro da galeria (`ASUI_MINIATURAS=1` gera miniaturas na tua máquina) |
+| vídeos e miniaturas da biblioteca | só o link do original, com crédito; na galeria online (GitHub Pages, `ailtoneleveia.github.io/apple-style-ui/biblioteca/site/`) a capa de cada ficha é o player oficial do Instagram ou do X; aberta do disco, o player só carrega no botão "Ver aqui" (`ASUI_MINIATURAS=1` gera miniaturas na tua máquina) |
 | vídeo da pessoa do nº 5 e a voz sintética | o vídeo do Pexels (`moldes/fala-destaque/exemplo/`) e a tua gravação |
 | chaves e `.env` | o `.env` fica na pasta de trabalho (a `GROQ_API_KEY` da transcrição) |
 
