@@ -12,6 +12,7 @@ trechos ficam como estavam. Grava a câmera corrigida (mesmo formato, com ref_cc
 No 4º clone corrigiu até 17 px e baixou a reprojeção da placa de longe de 0,025-0,05 para 0,011-0,018.
 """
 import argparse, json, os, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

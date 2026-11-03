@@ -15,6 +15,7 @@ Saída: <pasta_saida>/NNNN.jpg (um por quadro, para a composição desenhar o qu
 (para o compara_mascara.py --placa). Uso interno: a placa é o vídeo original.
 """
 import argparse, os, subprocess, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

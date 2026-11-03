@@ -17,6 +17,7 @@ de 1080). Para mão ou cursor próprio: renderize o cursor DO CLONE num PNG (fun
 Grava {quadro: [x, y, escala, angulo, ncc]} em px do vídeo (ângulo em graus, horário) e devolve o JSON padrão.
 ncc abaixo de ~0,5: o cursor sumiu, está atrás de algo ou o modelo não serve."""
 import argparse, json, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

@@ -20,6 +20,7 @@ Deps: ffmpeg/ffprobe on PATH, numpy, Pillow.
 """
 from __future__ import annotations
 import argparse, json, math, os, subprocess, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 

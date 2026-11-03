@@ -21,6 +21,7 @@ Números (pesados pelos pixels da máscara, quadros em que ela existe):
   blocos: distância fina por trecho de 20 quadros (com a rodada anterior, se --prev).
 """
 import argparse, json, os, re, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

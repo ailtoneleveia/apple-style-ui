@@ -40,17 +40,12 @@ B2 (reprova). Números e motivo de cada limite: CLONAR.md, "O loop de qualidade"
 from __future__ import annotations
 import argparse, difflib, json, math, os, re, subprocess, sys, tempfile
 from pathlib import Path
-try:
-    import numpy as np
-    import cv2
-except ImportError:  # chamado pelo python do sistema: troca pelo ambiente do kit (~/.apple-style-ui/venv)
-    _py = os.environ.get("ASUI_PY") or str(Path.home() / ".apple-style-ui/venv/bin/python")
-    if Path(_py).exists() and Path(_py).resolve() != Path(sys.executable).resolve():
-        os.execv(_py, [_py] + sys.argv)
-    raise
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
+import numpy as np  # noqa: E402
+import cv2  # noqa: E402
 sys.dont_write_bytecode = True
 import raiox  # noqa: E402
 import burst  # noqa: E402

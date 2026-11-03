@@ -26,6 +26,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).parent))

@@ -24,6 +24,7 @@ Automático (como acha uma palavra, em uma linha cada):
 Vem do 4º clone (legenda estilo Apple), onde 27 trilhas assim montaram 22 elementos sem nenhum ease à mão.
 """
 import argparse, json, os, subprocess, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

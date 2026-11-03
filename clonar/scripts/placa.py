@@ -20,6 +20,7 @@ Memória: guarda o trecho inteiro levado para o mundo (float16); trechos longos 
 Uso interno: a placa é recorte do vídeo original.
 """
 import argparse, json, os, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

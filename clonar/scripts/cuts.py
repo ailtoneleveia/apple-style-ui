@@ -25,6 +25,7 @@ import re
 import sys
 from pathlib import Path
 
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import cv2
 import numpy as np
 

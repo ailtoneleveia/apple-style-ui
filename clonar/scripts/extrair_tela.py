@@ -23,6 +23,7 @@ filmado) e devolve esse vídeo endireitado, no tamanho nativo, com os trechos em
 Saída JSON padrão; com --json grava os cantos por quadro, o tamanho, o raio e os trechos.
 """
 import argparse, json, os, subprocess, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

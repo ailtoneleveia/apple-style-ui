@@ -26,6 +26,7 @@ Saída: JSON {ok, resumo, proximo, aprovada, motivo_reprovada, recortes, nitidez
 """
 import argparse, fnmatch, json, os, re, sys
 from pathlib import Path
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 

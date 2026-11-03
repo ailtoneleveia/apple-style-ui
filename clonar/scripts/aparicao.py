@@ -18,6 +18,7 @@ Na composição: desenhe a peça na caixa assentada e aplique, no quadro contín
 scale(k) no centro, filter blur(σ) e globalAlpha a. A placa tem de ser a limpa (placa_video.py).
 """
 import argparse, json, os, sys
+import ambiente  # noqa: F401,E402  sem numpy no python3, passa para o ambiente do produto
 import numpy as np
 import cv2
 
